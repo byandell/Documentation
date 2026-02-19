@@ -66,5 +66,9 @@ I have been working in System Genetics for several decades, with material
 gathered in the GitHub Organization
 [byandell-sysgen](https://github.com/byandell-sysgen).
 
-- [R Programming Language](https://github.com/UW-Madison-DataScience/R_for_data_sciences)
+- [R for Data Sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences)
+- [Environmental Systems References](./envsys.md)
+  - [Geospatial Resources](./geospatial.md)
+- [Python References](./python_references.md)
+  - [Python Coding Strategy](./python_strategy.md)
 - [Shiny Apps](./ShinyApps.md)
