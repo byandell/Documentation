@@ -36,6 +36,8 @@ and
 [datacube/notebooks](https://github.com/byandell-envsys/Maka-Sitomniya/tree/main/datacube/notebooks))
 and
 [Three Rivers (2025)](https://cu-esiil.github.io/resilience-rare-hydrologic-events-management-innovation-summit-2025__15/).
+The Maka Sitomniya working group led to an ongoing collaboration with the
+[Sicangu Climate Center](https://sicangudata.org/)
 
 I began attending the Friday noon meetings of the
 [Oglala Lakota College Math, Science, and Technology Department](https://www.olc.edu/current-students/degree-programs-areas-of-study/math-science-tech/),
