@@ -49,7 +49,8 @@ on [Earth Data Analytics](https://github.com/byandell-envsys/EarthDataAnalytics)
 To help me understand and organize code and ideas, I developed the
 [landmapy](https://github.com/byandell-envsys/landmapy) package.
 My notes on [Python](https://www.python.org/) and related topics developed during the course are in
-[Python Coding Strategy](python_strategy.md)
+[Python References](python_references.md),
+[Python Coding Strategy](python_strategy.md),
 and
 [Environmental Systems References](envsys.md),
 now gathered in this repository.

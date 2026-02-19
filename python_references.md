@@ -1,6 +1,9 @@
 # Python References
 
 This is a collection of Python references that I have found useful.
+These were originally in the
+[landmapy](https://github.com/byandell-envsys/landmapy)
+repository.
 See related in
 [EDA References](https://github.com/byandell-envsys/EarthDataAnalytics/blob/main/references.md).
 Please offer suggestions to improve.
@@ -52,8 +55,8 @@ Additional references beyond Python:
 - [EDA Scientific Data Structures in Python](https://www.earthdatascience.org/courses/intro-to-earth-data-science/scientific-data-structures-python/)
 - [Subtract One Raster from Another and Export a New GeoTIFF in Open Source Python](https://www.earthdatascience.org/courses/use-data-open-source-python/intro-raster-data-python/raster-data-processing/subtract-rasters-in-python/)
 - [Earth Analytics Python Env](https://github.com/earthlab/earth-analytics-python-env)
-  -  [EDA 4. Set Up Your Conda Earth Analytics Python Environment Setup earth analytics environment](https://www.earthdatascience.org/workshops/setup-earth-analytics-python/setup-python-conda-earth-analytics-environment/)
-      - [Python venv: How To Create, Activate, Deactivate, And Delete](https://python.land/virtual-environments/virtualenv) 
+  - [EDA 4. Set Up Your Conda Earth Analytics Python Environment Setup earth analytics environment](https://www.earthdatascience.org/workshops/setup-earth-analytics-python/setup-python-conda-earth-analytics-environment/)
+    - [Python venv: How To Create, Activate, Deactivate, And Delete](https://python.land/virtual-environments/virtualenv)
   - [EDA 6.15. Intro to Pandas Dataframes](https://www.earthdatascience.org/courses/intro-to-earth-data-science/scientific-data-structures-python/pandas-dataframes/)
 
 ## Useful Python Libraries
@@ -151,7 +154,6 @@ See `landmapy` [Plot Functions](plots.md).
   - [ipympl](https://matplotlib.org/ipympl/)
   - [Using %matplotlib widget](https://github.com/microsoft/vscode-jupyter/wiki/Using-%25matplotlib-widget-instead-of-%25matplotlib-notebook,tk,etc)
 
-  
 ## IPython Methods
 
 **AI overview:**
@@ -164,7 +166,7 @@ Provides detailed information about objects, functions, or modules using ? or ??
 - Magic Commands:
 Special commands prefixed with % for tasks like timing code execution (%timeit), running external scripts (%run), or accessing shell commands (!).
 - Input Caching:
-Stores previous commands and outputs, accessible via _, __, ___ for outputs and _i, _ii, _iii or In[n] for inputs.
+Stores previous commands and outputs, accessible via _, __, ___ for outputs and_i, _ii,_iii or In[n] for inputs.
 - Rich Display:
 Enables richer object representations using _ipython_display_() or _repr_*_() methods for custom display formats like HTML or images.
 - History:
@@ -221,7 +223,6 @@ This is useful for storing data between sessions or projects.
 The following code will try to retrieve the object `buffalo_gdf` if it was previously stored.
 The `try` statement checks if `buffalo_gdf` exists, creating a `NameError` exception if not,
 which leads to code to create and `%store` it.
-
 
 ```{python}
 %store -r buffalo_gdf
@@ -373,7 +374,7 @@ which changes with the HUC level 12 and HUC region.
 
 ### Classes
 
-A 
+A
 [class](https://docs.python.org/3/tutorial/classes.html)
 is a function with output of an object that has new methods, which are in turn functions
 defined in the class.
@@ -390,7 +391,7 @@ Classes facilitate object-oriented programming (OOP) principles,
 enabling code reusability, modularity, and organization.
 A class is defined using the class keyword, followed by the class name and a colon.
 Inside the class block, attributes and methods are defined.
-The __init__ method is a special method, known as the constructor,
+The **init** method is a special method, known as the constructor,
 which is automatically called when an object of the class is created
 to initialize the object's attributes.
 
