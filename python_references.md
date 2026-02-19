@@ -5,7 +5,7 @@ These were originally in the
 [landmapy](https://github.com/byandell-envsys/landmapy)
 repository.
 See related in
-[EDA References](https://github.com/byandell-envsys/EarthDataAnalytics/blob/main/references.md).
+[Environmental Systems](envsys.md).
 Please offer suggestions to improve.
 
 - [Python References](#python-references)

@@ -1,5 +1,7 @@
 # Geospatial Resources
 
+This was part of the [geospatial](https://github.com/byandell-envsys/geospatial) package.
+
 ## Books and Online Docs
 
 - [Data Carpentry Workshop](https://datacarpentry.org/geospatial-workshop/)
