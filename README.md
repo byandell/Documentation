@@ -1,6 +1,14 @@
 # Documentation
 
-## Useful Documentation and Tutorials
+- [My Documentation Journey](#my-documentation-journey)
+- [R for Data Sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences)
+- [Environmental Systems References](./envsys.md)
+  - [Geospatial Resources](./geospatial.md)
+- [Python References](./python_references.md)
+  - [Python Coding Strategy](./python_strategy.md)
+- [Shiny Apps](./ShinyApps.md)
+
+## My Documentation Journey
 
 This repository is a collection of useful documentation and tutorials for various topics, mostly related to code languages and tools.
 These were previously dispersed in various GitHub repositories and organizations, and have been consolidated here, with a few exceptions.
@@ -65,10 +73,3 @@ My learning about AI agents and tools is evolving, including the repository
 I have been working in System Genetics for several decades, with material
 gathered in the GitHub Organization
 [byandell-sysgen](https://github.com/byandell-sysgen).
-
-- [R for Data Sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences)
-- [Environmental Systems References](./envsys.md)
-  - [Geospatial Resources](./geospatial.md)
-- [Python References](./python_references.md)
-  - [Python Coding Strategy](./python_strategy.md)
-- [Shiny Apps](./ShinyApps.md)
