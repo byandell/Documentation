@@ -31,7 +31,7 @@ the concept and protocol developed by Anthropic (and first available in
 ### Google Gemini and Antigravity
 
 Google Gemini has an enterprise contract with UW-Madison; hence I concentrate a bit on it here.
-[Antigravity](https://antigravity.google/) is the integrated development environment (IDE) for Gemini.
+[Antigravity](https://antigravity.google/) is the google-native integrated development environment (IDE) for Gemini.
 
 - [Google Gemini](https://gemini.google.com/)
   - [Generative AI Services at UW–Madison: Tools, Policies & Resources](https://kb.wisc.edu/ai/)
