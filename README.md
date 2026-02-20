@@ -40,7 +40,7 @@ I attended the ESIIL Innovation Summit in 2023 (and every year since),
 which introduced me to many amazing people who have become friends.
 An exciting mix of top-notch IT experts gather to share learning and access to state-of-the-art tools.
 Through ESIIL I have gotten to know a collection of Tribal data scientists
-with amazing skills and perspectives on science and the earth.
+with amazing skills and perspectives on knowledge, science and the earth.
 
 My learning about environmental systems
 spans technical, cultural and environmental spheres.
