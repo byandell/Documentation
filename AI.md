@@ -26,7 +26,7 @@ Code generation using GitHub repos is improving with the nuanced integration of
 Initially, it seemed important to understand
 [Model context protocol (MCP)](https://modelcontextprotocol.io/),
 the concept and protocol developed by Anthropic (and first available in
-`Claude Code`). The revolutionary idea is that a large language model (LLM) is not just a text generator, but can interact with your other tools and data to get information and take actions. However, this has quickly been integrated into code environments so that one need not be concerned about the MCP mechanics of LLM communication with local (or cloud-based) tools and data to change (with your permission)your code or documents and create reports.
+`Claude Code`). The revolutionary idea is that a large language model (LLM) is not just a text generator, but can interact with your other tools and data to get information and take actions. However, this has quickly been integrated into code environments so that one need not be concerned about the MCP mechanics of LLM communication with local (or cloud-based) tools and data to (with explicit permission) change local code or documents and create reports.
 
 ### Google Gemini and Antigravity
 
