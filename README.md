@@ -38,7 +38,7 @@ I took some short courses on EDA through ESIIL, which led to my
 with references now migrated here in [geospatial.md](./geospatial.md).
 I attended the ESIIL Innovation Summit in 2023 (and every year since),
 which introduced me to many amazing people who have become friends.
-An exciting mix of top-notch IT experts gather toshare learning and access to state-of-the-art tools.
+An exciting mix of top-notch IT experts gather to share learning and access to state-of-the-art tools.
 Through ESIIL I have gotten to know a collection of Tribal data scientists
 with amazing skills and perspectives on science and the earth.
 
