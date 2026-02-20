@@ -73,8 +73,8 @@ Prompt engineering is about laying a digital trail of prompts that guide the AI 
 
 The goal of this prompt is to separate the functions from the workflow, so the workflow is more human-readable. The functions do the work but need not be viewed in the workflow. The workflow should be a concise document that shows the steps and the results together. The following steps should begin with a file ​`xxx.R`.
 
-- Place the functions in their own R file (functions.R). This file should retain the comments that organize them into the workflow steps.
-- Organize the workflow into a Quarto document (workflow.qmd). This file should invoke (source) the functions.R and have its R code in chunks, with the comments turned into section delimiters and text blocks.
+- Place the functions in their own R file (`functions.R`). This file should retain the comments that organize them into the workflow steps.
+- Organize the workflow into a Quarto document (workflow.qmd). This file should invoke (source) the `functions.R` and have its R code in chunks, with the comments turned into section delimiters and text blocks.
 - Modify the workflow to display results, with options to save images and tables as PDF and CSV files, respectively.
 - Present the workflow in source and rendered form to be readable by a human.
 
