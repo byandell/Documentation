@@ -42,6 +42,7 @@ Google Gemini has an enterprise contract with UW-Madison; hence I concentrate a 
 - [Antigravity](https://antigravity.google/)
   - [Antigravity Documentation](https://antigravity.google/docs/get-started)
   - [Full guide from install to Custom rules, workflows and MCP integration](https://antigravity.google/docs/get-started)
+  - [Getting Started with Google Antigravity](https://codelabs.developers.google.com/getting-started-google-antigravity).
   - [invoke R or radian from terminal in panel below editor](https://antigravity.google/docs/get-started)
 
 ### Other AI Environments
