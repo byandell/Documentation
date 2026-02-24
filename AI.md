@@ -43,17 +43,11 @@ Google Gemini has an enterprise contract with UW-Madison; hence I concentrate a 
   - [Antigravity Documentation](https://antigravity.google/docs/get-started)
   - [Full guide from install to Custom rules, workflows and MCP integration](https://antigravity.google/docs/get-started)
   - [Getting Started with Google Antigravity](https://codelabs.developers.google.com/getting-started-google-antigravity).
-  - [invoke R or radian from terminal in panel below editor](https://antigravity.google/docs/get-started)
 
 ### Other AI Environments
 
 `Antigravity` and other IDEs are essentially next-generation versions of
 [VS Code](https://code.visualstudio.com/).
-While you can use the enhanced R tool
-[radian](https://github.com/randian-r/radian)
-within these environments, they are not as seamless as
-[Posit's RStudio](https://posit.co/download/rstudio-desktop/).
-In fact, `radian` can interfere with the "memory" and operation of these tools.
 
 - [Anthropic'sClaude Code](https://www.anthropic.com/product/code)
 - [Posit's Positron](https://posit.co/products/open-source/positron/)
@@ -62,6 +56,9 @@ In fact, `radian` can interfere with the "memory" and operation of these tools.
 
 As I understand it, Cursor and Windsurf are less comprehensive IDEs.
 There are concepts of "AI-native" and "agent-native" IDEs, but I am not sure I fully grasp the distinction.
+
+See caution in [Using R in VS Code with Radian](radian.md)
+about `radian` and AI environments.
 
 ## Prompt Engineering
 
