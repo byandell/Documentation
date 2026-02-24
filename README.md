@@ -2,6 +2,7 @@
 
 - [My Documentation Journey](#my-documentation-journey)
 - [R for Data Sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences)
+  - [Using R in VS Code with Radian](./radian.md)
 - [Environmental Systems References](./envsys.md)
   - [Geospatial Resources](./geospatial.md)
 - [Python References](./python_references.md)
