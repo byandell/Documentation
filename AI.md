@@ -3,6 +3,16 @@
 This is a (growing?) collection of references about AI concept, tools and
 collaborative environments.
 
+## Table of Contents
+
+- [Articles about AI](#articles-about-ai)
+- [AI Tools and Agents](#ai-tools-and-agents)
+  - [Google Gemini and Antigravity](#google-gemini-and-antigravity)
+  - [Other AI Environments](#other-ai-environments)
+- [Prompt Engineering](#prompt-engineering)
+  - [Prompts to Organize Workflows](#prompts-to-organize-workflows)
+  - [Prompt Engineering References](#prompt-engineering-references)
+
 ## Articles about AI
 
 - [There is no AI](https://byandell.github.io/Jaron-Lanier-There-is-no-AI/)
@@ -67,29 +77,41 @@ Below is a schema I am developing.
 
 Prompt engineering is about laying a digital trail of prompts that guide the AI toward what one wants to investigate, gradually refining. These are embedded in conversations one develops. It is possible, and now done regularly by experts, to develop a set of AI agents that respond to their own prompts and do part of their work. I don’t yet know how to manage such agents.
 
-### Prompt to separate functions from workflow
+### Prompts to Organize Workflows
 
-The goal of this prompt is to separate the functions from the workflow, so the workflow is more human-readable. The functions do the work but need not be viewed in the workflow. The workflow should be a concise document that shows the steps and the results together. The following steps should begin with a file ​`xxx.R`.
+Workflows can get rather complicated.
+Often, it is helpful to organize them into human-size chunks to make them easier to manage and understand.
+
+I experimented with developing a series of prompts to transform a workflow into its compontents. The functions do the work but need not be viewed in the workflow. The workflow should be a concise document that shows the steps and the results together. The following steps should begin with a workflow file, e.g. ​`workflow.R`.
 
 - Place the functions in their own R file (`functions.R`). This file should retain the comments that organize them into the workflow steps.
-- Organize the workflow into a Quarto document (workflow.qmd). This file should invoke (source) the `functions.R` and have its R code in chunks, with the comments turned into section delimiters and text blocks.
+- Organize the workflow into a Quarto document (`workflow.qmd`). This file should invoke (source) the `functions.R` and have its R code in chunks, with the comments turned into section delimiters and text blocks.
 - Modify the workflow to display results, with options to save images and tables as PDF and CSV files, respectively.
 - Present the workflow in source and rendered form to be readable by a human.
 
 Later prompts would modify the workflow to have options to examine different datasets.
-Initial efforts with the
+Once I had understood these steps, I saw how I could have one comprehensive prompt that would orchestrate the process. I asked the AI agent to create this.
+These initial efforts are in the
 [sysgenAnalysis](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis)
-repository are shown in the
-[Script Transformation Prompt](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/prompt.md)
+repository, with the
+[Workflow Prompt](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-prompt)
 based on step-by-step instructions in the
-[Project Walkthroughs](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md)
+[Workflow Walkthroughs](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-walkthroughs)
 
-Another example of prompt engineering was in the
-[Three Rivers ESIIL working group](https://cu-esiil.github.io/resilience-rare-hydrologic-events-management-innovation-summit-2025__15/)
-where we developed
-[AI Prompt Engineering](https://github.com/CU-ESIIL/resilience-rare-hydrologic-events-management-innovation-summit-2025__15/blob/main/docs/index.md#ai-prompt-engineering)
-and
+I began learning about this from
+[Tyson Swetnam](https://www.tysonswetnam.com/),
+who demonstrated at the
+[ESIIL Innovation Summit 2025](https://cu-esiil.github.io/Innovation-Summit-2025/)
+how a natural language paragraph could become an AI prompt.
+I adapted this with the
 [Draft AI Task using Claude and MCP](https://github.com/CU-ESIIL/resilience-rare-hydrologic-events-management-innovation-summit-2025__15/blob/main/documentation/group-notes.md#draft-ai-task-using-claude-and-mcp)
+for the
+[Three Rivers ESIIL working group](https://cu-esiil.github.io/resilience-rare-hydrologic-events-management-innovation-summit-2025__15/),
+which became the section on
+[AI Prompt Engineering](https://github.com/CU-ESIIL/resilience-rare-hydrologic-events-management-innovation-summit-2025__15/blob/main/docs/index.md#ai-prompt-engineering).
+This exciting project is on hold but has great potential.
+
+### Prompt Engineering References
 
 Below are some references on prompt engineering quickly culled from the web:
 
