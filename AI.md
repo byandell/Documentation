@@ -3,8 +3,6 @@
 This is a (growing?) collection of references about AI concept, tools and
 collaborative environments.
 
-## Table of Contents
-
 - [Articles about AI](#articles-about-ai)
 - [AI Tools and Agents](#ai-tools-and-agents)
   - [Google Gemini and Antigravity](#google-gemini-and-antigravity)
