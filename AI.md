@@ -57,9 +57,11 @@ Google Gemini has an enterprise contract with UW-Madison; hence I concentrate a 
 ### Other AI Environments
 
 `Antigravity` and other IDEs are essentially next-generation versions of
-[VS Code](https://code.visualstudio.com/).
+[VS Code](https://code.visualstudio.com/)
+that integrate LLMs with collaboration on a user's local files and tools.
 
-- [Anthropic'sClaude Code](https://www.anthropic.com/product/code)
+- [Anthropic's Claude Code](https://www.anthropic.com/product/code)
+- [Open AI's Codex](https://openai.com/index/openai-codex/)
 - [Posit's Positron](https://posit.co/products/open-source/positron/)
 - [Cursor MCP Docs](https://docs.cursor.sh/mcp)
 - [Windsurf Review 2026: The AI IDE Redefining Coding Workflows | Second Talent](https://secondtalent.com/insights/windsurf-review-2026-the-ai-ide-redefining-coding-workflows/)
