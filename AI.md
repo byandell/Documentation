@@ -115,10 +115,11 @@ This exciting project is on hold but has great potential.
 
 Below are some references on prompt engineering quickly culled from the web:
 
-- [Prompt design strategies | Gemini API | Google AI for Developers](https://ai.google.dev/gemini-api/docs/prompt-design)
-- [What is prompt engineering? | Google Cloud](https://cloud.google.com/discover/what-is-prompt-engineering)
-- [IBMPrompt engineering](https://www.ibm.com/think/prompt-engineering)
-- [Prompt engineering](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering)
-- [Prompt engineering Guide](https://www.promptingguide.ai/)
-- [Coursera What Is Prompt Engineering?](https://cloud.google.com/discover/what-is-prompt-engineering)
-- [GitHubWhat is prompt engineering?](https://github.com/resources/articles/what-is-prompt-engineering)
+- [Generative AI & Prompt Engineering (Tyson Swetnam)](https://tyson-swetnam.github.io/intro-gpt/)
+- [Prompt design strategies (Google Gemini API)](https://ai.google.dev/gemini-api/docs/prompt-design)
+- [What is prompt engineering? (Google Cloud)](https://cloud.google.com/discover/what-is-prompt-engineering)
+- [Prompt engineering (IBM)](https://www.ibm.com/think/prompt-engineering)
+- [Prompt engineering (Microsoft)](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering)
+- [Prompt engineering Guide (Prompting Guide)](https://www.promptingguide.ai/)
+- [What Is Prompt Engineering? (Coursera)](https://cloud.google.com/discover/what-is-prompt-engineering)
+- [What is prompt engineering? (GitHub)](https://github.com/resources/articles/what-is-prompt-engineering)
