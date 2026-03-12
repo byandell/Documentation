@@ -14,11 +14,13 @@ collaborative environments.
 ## Articles about AI
 
 - [There is no AI](https://byandell.github.io/Jaron-Lanier-There-is-no-AI/)
-- [The A.I. Disruption We’ve Been Waiting for Has Arrived](https://www.theatlantic.com/technology/archive/2026/02/ai-disruption-future-of-work/708317/)
-- [Something Big Is Happening](https://www.theatlantic.com/technology/archive/2026/02/ai-disruption-future-of-work/708317/)
-- [The Atlantic: Josh Tyrangiel on AI and the Future of Work](https://www.theatlantic.com/technology/archive/2026/02/ai-disruption-future-of-work/708317/)
-- [AI Agents Are Taking America by Storm](https://www.theatlantic.com/technology/archive/2026/02/ai-disruption-future-of-work/708317/)
-- [The Great Software Quality Collapse: How We Normalized Catastrophe](https://www.theatlantic.com/technology/archive/2026/02/ai-disruption-future-of-work/708317/)
+- The Atlantic on AI (2026)
+  - [The AI-Panic Cycle—And What’s Actually Different Now](https://www.theatlantic.com/podcasts/2026/02/the-ai-panic-cycle-and-whats-actually-different-now/686077/)
+  - [What Do the People Building AI Believe? (The Atlantic)](https://www.theatlantic.com/podcasts/2026/02/what-do-the-people-building-ai-believe/686173/)
+  - [America Isn’t Ready for What AI Will Do to Jobs](https://www.theatlantic.com/magazine/2026/03/ai-economy-labor-market-transformation/685731/)
+  - [Don’t Call It ‘Intelligence’](https://www.theatlantic.com/ideas/2026/03/intelligence-concept/686121/)
+- [What is the Future of AI? (Forbes)](https://www.forbes.com/sites/gilpress/2026/02/16/what-is-the-future-of-ai-heres-what-one-successful-investor-says/?ctpv=searchpage)
+- [Coding After Coders: The End of Computer Programming as We Know It (NYTimes)](https://www.nytimes.com/2026/03/12/magazine/ai-coding-programming-jobs-claude-chatgpt.html)
 
 ## AI Tools and Agents
 
