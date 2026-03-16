@@ -4,6 +4,8 @@ This is a (growing?) collection of references about AI concept, tools and
 collaborative environments.
 
 - [Articles about AI](#articles-about-ai)
+  - [How might we think about AI?](#how-might-we-think-about-ai)
+  - [What about ethics and environmental impact of AI?](#what-about-ethics-and-environmental-impact-of-ai)
 - [AI Tools and Agents](#ai-tools-and-agents)
   - [Google Gemini and Antigravity](#google-gemini-and-antigravity)
   - [Other AI Environments](#other-ai-environments)
@@ -13,6 +15,10 @@ collaborative environments.
 
 ## Articles about AI
 
+Interestingly, when I started populating this list, AI halucinated several entries, which I had to go back and properly curate.
+
+### How might we think about AI?
+
 - [There is no AI](https://byandell.github.io/Jaron-Lanier-There-is-no-AI/)
 - The Atlantic on AI (2026)
   - [The AI-Panic Cycle—And What’s Actually Different Now](https://www.theatlantic.com/podcasts/2026/02/the-ai-panic-cycle-and-whats-actually-different-now/686077/)
@@ -21,6 +27,20 @@ collaborative environments.
   - [Don’t Call It ‘Intelligence’](https://www.theatlantic.com/ideas/2026/03/intelligence-concept/686121/)
 - [What is the Future of AI? (Forbes)](https://www.forbes.com/sites/gilpress/2026/02/16/what-is-the-future-of-ai-heres-what-one-successful-investor-says/?ctpv=searchpage)
 - [Coding After Coders: The End of Computer Programming as We Know It (NYTimes)](https://www.nytimes.com/2026/03/12/magazine/ai-coding-programming-jobs-claude-chatgpt.html)
+
+### What about ethics and environmental impact of AI?
+
+AI companies are trying to improve their efficiency, and their image.
+This includes making machines and algorithms that use less water and power.
+Also, there is an emerging effort to support the communities that are protecting and nourishing the water that weaves through their lands.
+
+Here are some approaches to this challenge,
+which range from zero-water data centers to rethinking how we train people to use data.
+
+- [Ethics of AI (Tyson Swetnam Blog)](https://tysonswetnam.com/blog/posts/2025-01-14-gpt101/#ethics-of-ai)
+- [Sustainable by Design (Microsoft)](https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/)
+- [Commitment to Climate Conscious Data Center Cooling (Google)](https://blog.google/company-news/outreach-and-initiatives/sustainability/our-commitment-to-climate-conscious-data-center-cooling/)
+- [AI Energy Innovation Climate Research (NVIDIA)](https://blogs.nvidia.com/blog/ai-energy-innovation-climate-research/)
 
 ## AI Tools and Agents
 
