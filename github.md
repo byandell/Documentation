@@ -17,6 +17,7 @@ with source at
 that was forked from
 <https://github.com/CU-ESIIL/Postdoc_OASIS>.
 
+- [R for Data Sciences GitHub Links](https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/organize/github.md)
 - [ESIIL Data Short Course: Create your own portfolio webpage](https://cu-esiil-edu.github.io/esiil-learning-portal/shortcourse/pages/03-git-github/03-github-portfolio/01-create-portfolio-website.html)
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)
 - [Publish Your Project Documentation with GitHub Pages](https://github.blog/developer-skills/github/publish-your-project-documentation-with-github-pages/)
