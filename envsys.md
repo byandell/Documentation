@@ -9,11 +9,10 @@ See also
 [Python Strategy](python_strategy.md).
 
 - [Earth Data Analytics](#earth-data-analytics)
-- [GitHub Pages](#github-pages)
-- [Codespaces](#codespaces)
-- [Python Coding](#python-coding)
 - [Open Street Map](#open-street-map)
 - [Google Maps Platform Access](#google-maps-platform-access)
+- [EDA Workbook on Python](python_references.md#earth-data-analytics-eda-workbook)
+- [GitHub & Codespaces](github.md)
 
 ## Earth Data Analytics
 
@@ -29,44 +28,6 @@ See also
   - [Earth Data Science Textbooks](https://www.earthdatascience.org/)
 - [Mapping Inequality](https://dsl.richmond.edu/panorama/redlining/)
 - [Geospatial Resources](https://github.com/byandell/geospatial/blob/main/README.md#geospatial-resources)
-
-## GitHub Pages
-
-My main GitHub Page
-[byandell.github.io](https://byandell.github.io),
-with source at
-<https://github.com/byandell/byandell.github.io>,
-was modeled on (forked from)
-<https://github.com/barryclark/jekyll-now>.
-This has to cool feature of blog pages.
-
-In addition to my main GitHub Page, I have a separately generated subpage
-[byandell.github.io/ESIIL](https://byandell.github.io/ESIIL),
-with source at
-<https://github.com/byandell/ESIIL>,
-that was forked from
-<https://github.com/CU-ESIIL/Postdoc_OASIS>.
-
-- [ESIIL Data Short Course: Create your own portfolio webpage](https://cu-esiil-edu.github.io/esiil-learning-portal/shortcourse/pages/03-git-github/03-github-portfolio/01-create-portfolio-website.html)
-- [GitHub Pages Documentation](https://docs.github.com/en/pages)
-- [Publish Your Project Documentation with GitHub Pages](https://github.blog/developer-skills/github/publish-your-project-documentation-with-github-pages/)
-- [GitHub Page Themes](https://pages.github.com/themes/)
-- [Jekyll Now](https://github.com/barryclark/jekyll-now)
-  - [Build A Blog With Jekyll And GitHub Pages](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
-  - [Other forkable themes](https://github.com/barryclark/jekyll-now/#other-forkable-themes)
-- [MkDocs](https://github.com/mkdocs/mkdocs/tree/master) (advanced topic)
-  - [Materials for MkDocs: Publishing your site](https://squidfunk.github.io/mkdocs-material/publishing-your-site/)
-  - [Deploying your docs](https://www.mkdocs.org/user-guide/deploying-your-docs/)
-
-## CodeSpaces
-
-Always stop a codespace when done to save resources!
-
-- [GitHub Codespaces overview](https://docs.github.com/en/codespaces/overview),
-[QuickStart](https://docs.github.com/en/codespaces/getting-started/quickstart) &
-[Documentation](https://docs.github.com/en/codespaces)
-- [GitHub Codespaces (Visual Studio Code)](https://code.visualstudio.com/docs/remote/codespaces)
-- [Stopping and starting a codespace](https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace#stopping-a-codespace)
   
 ## Home Computer Visual Studio Code & GitBash
 
@@ -108,16 +69,6 @@ subsequent paste to GitHub SSH key generation (2 ways).
 cat ~/.ssh/id_ed25519.pub | pbcopy
 pbcopy < ~/.ssh/id_ed25519.pub
 ```
-
-## Python Coding
-
-- [Pandas Library](https://pandas.pydata.org/docs/)
-  - [Pandas Tutorial](https://pandas.pydata.org/docs/user_guide/10min.html)
-  - [Pandas API Reference](https://pandas.pydata.org/docs/reference/)
-- [EDA Scientific Data Structures in Python](https://www.earthdatascience.org/courses/intro-to-earth-data-science/scientific-data-structures-python/)
-  - [EDA 6.15. Intro to Pandas Dataframes](https://www.earthdatascience.org/courses/intro-to-earth-data-science/scientific-data-structures-python/pandas-dataframes/)
-
- <https://github.com/earthlab/earth-analytics-python-env>
 
 ## Open Street Map
 
