@@ -90,6 +90,8 @@ that integrate LLMs with collaboration on a user's local files and tools.
 
 As I understand it, Cursor and Windsurf are less comprehensive IDEs.
 There are concepts of "AI-native" and "agent-native" IDEs, but I am not sure I fully grasp the distinction.
+It seems that "AI-native" concerns conversations with LLMs, while "agent-native" concerns the use of AI agents to do work.
+See for instance [Agentic AI](https://tyson-swetnam.github.io/intro-gpt/agentic/).
 
 See caution in [Using R in VS Code with Radian](radian.md)
 about `radian` and AI environments.
