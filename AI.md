@@ -13,6 +13,7 @@ To learn about (generative) AI, start with the self-paced workshop on
   - [Other AI Environments](#other-ai-environments)
 - [Prompt Engineering](#prompt-engineering)
   - [Prompts to Organize Workflows](#prompts-to-organize-workflows)
+  - [Learning about prompts](#learning-about-prompts)
   - [Prompt Engineering References](#prompt-engineering-references)
 
 ## Articles about AI
@@ -103,12 +104,24 @@ Below is a schema I am developing.
 
 Prompt engineering is about laying a digital trail of prompts that guide the AI toward what one wants to investigate, gradually refining. These are embedded in conversations one develops. It is possible, and now done regularly by experts, to develop a set of AI agents that respond to their own prompts and do part of their work. I don’t yet know how to manage such agents.
 
+Prompts, and
+[prompt engineering](https://www.promptingguide.ai/introduction/what-is-prompt-engineering),
+is a useful way to develop tools without having to directly write code.
+A great guide is Tyson Swetnam's
+[Getting Started with Prompts](https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure).
+However, if you just use prompts and don't keep track of them, you are missing an opportunity to easily document your work flow.
+That is, how will you later remember what you did and how? And how will you share your learning with others?
+
+A simple way to begin is to ask your AI agent to save your prompts in a file, e.g. `prompts.md`.
+If you do more work within the same conversation, ask the AI agent to update the file.
+The next section shows how I used this approach to organize a somewhat complicated workflow.
+
 ### Prompts to Organize Workflows
 
 Workflows can get rather complicated.
 Often, it is helpful to organize them into human-size chunks to make them easier to manage and understand.
 
-I experimented with developing a series of prompts to transform a workflow into its compontents. The functions do the work but need not be viewed in the workflow. The workflow should be a concise document that shows the steps and the results together. The following steps should begin with a workflow file, e.g. ​`workflow.R`.
+I experimented with developing a series of prompts to transform a workflow into its components. The functions do the work but need not be viewed in the workflow. The workflow should be a concise document that shows the steps and the results together. The following steps should begin with a workflow file, e.g. ​`workflow.R`.
 
 - Place the functions in their own R file (`functions.R`). This file should retain the comments that organize them into the workflow steps.
 - Organize the workflow into a Quarto document (`workflow.qmd`). This file should invoke (source) the `functions.R` and have its R code in chunks, with the comments turned into section delimiters and text blocks.
@@ -124,7 +137,9 @@ repository, with the
 based on step-by-step instructions in the
 [Workflow Walkthroughs](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-walkthroughs)
 
-I began learning about this from
+### Learning about prompts
+
+I began learning about prompts from
 [Tyson Swetnam](https://www.tysonswetnam.com/),
 who demonstrated at the
 [ESIIL Innovation Summit 2025](https://cu-esiil.github.io/Innovation-Summit-2025/)
