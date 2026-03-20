@@ -115,6 +115,8 @@ That is, how will you later remember what you did and how? And how will you shar
 A simple way to begin is to ask your AI agent to save your prompts in a file, e.g. `prompts.md`.
 If you do more work within the same conversation, ask the AI agent to update the file.
 The next section shows how I used this approach to organize a somewhat complicated workflow.
+For some of my examples, see
+[AI Prompt Examples](AI_prompts.md).
 
 ### Prompts to Organize Workflows
 
@@ -162,5 +164,7 @@ Below are some references on prompt engineering quickly culled from the web:
 - [Prompt engineering (IBM)](https://www.ibm.com/think/prompt-engineering)
 - [Prompt engineering (Microsoft)](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering)
 - [Prompt engineering Guide (Prompting Guide)](https://www.promptingguide.ai/)
+  - [What is prompt engineering?](https://www.promptingguide.ai/introduction/what-is-prompt-engineering)
 - [What Is Prompt Engineering? (Coursera)](https://cloud.google.com/discover/what-is-prompt-engineering)
 - [What is prompt engineering? (GitHub)](https://github.com/resources/articles/what-is-prompt-engineering)
+- [AI Prompt Examples](AI_prompts.md)

@@ -15,6 +15,7 @@
   - [Python Coding from Environmental Systems](./envsys.md#python-coding)
 - [Shiny Apps](./ShinyApps.md)
 - [Artificial Intelligence (AI](./AI.md)
+  - [AI Prompt Examples](./AI_prompts.md)
 
 ## My Documentation Journey
 
