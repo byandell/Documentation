@@ -8,9 +8,11 @@ They illustrate a few principles along the way.
 - [Getting Started with Prompts](https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure).
 
 If you just use prompts and don't keep track of them, you are missing an opportunity to easily document your work flow.
-A simple way to begin is to ask your AI agent to save your prompts in a file, e.g. `prompts.md`.
-If you do more work within the same conversation, ask the AI agent to update the file.
-The next section shows how I used this approach to organize a somewhat complicated workflow.
+A simple way to begin is to ask your AI agent to save your prompts in a file, e.g. `prompts.md`;
+alternatively, or in addition, save the Walkthrough artifact that the AI agent creates into
+a separate `walkthrough.md` file.
+If you do more work within the same conversation, ask the AI agent to update these files.
+Below are examples of prompts I have been developing.
 
 ## Create a README.md for a Folder
 
