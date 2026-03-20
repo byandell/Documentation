@@ -42,3 +42,7 @@ This particular prompt, which is described conceptually in
 [Prompts to Organize Workflows](AI.md#prompts-to-organize-workflows),
 transforms an R workflow into functions in an R package,
 including a function to run the workflow and another function to explore the results.
+
+- [sysgenAnalysis](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/)
+  - [workflow walkthroughs](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-walkthroughs)
+  - [workflow prompt](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-prompt)
