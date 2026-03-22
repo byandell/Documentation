@@ -57,7 +57,7 @@ You can also (by hand or by prompt to AI) update or append to these files.
 
 ## Create a Table of Contents for a File
 
-Just as you can create a `README.md` for a folder, you can create a table of contents for that `README.md` (or any) file.
+Just as you can create a `README.md` for a folder, you can create a table of contents for that `README.md` (or any markdown) file.
 
 **Prompts:**
 
