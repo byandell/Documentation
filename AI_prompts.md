@@ -25,6 +25,7 @@ Below are examples of prompts I have been developing.
   - [Key Improvements Made](#key-improvements-made)
 - [Resolve Git Hell Conflicts](#resolve-git-hell-conflicts)
 - [Organize a Workflow](#organize-a-workflow)
+  - [Workflow Prompt](#workflow-prompt)
 
 ## Saving Prompts and Walkthroughs
 
