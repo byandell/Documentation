@@ -66,8 +66,9 @@ Just as you can create a `README.md` for a folder, you can create a table of con
 
 **Example:**
 
+- [README for this repo](https://github.com/byandell/Documentation/blob/main/README.md)
 - [Table of Contents for this file](AI_prompts.md#table-of-contents)
-- [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
+- [Pipelines in mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md#pipelines)
 
 Once you have these and establish a "culture" of updating them, the AI will sometimes make the changes on the fly as you evolve your material.
 
