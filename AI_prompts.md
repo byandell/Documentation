@@ -14,20 +14,107 @@ a separate `walkthrough.md` file.
 If you do more work within the same conversation, ask the AI agent to update these files.
 Below are examples of prompts I have been developing.
 
+## Table of Contents
+
+- [Create a README.md for a Folder](#create-a-readmemd-for-a-folder)
+- [Convert DOCX files to Markdown](#convert-docx-files-to-markdown)
+- [Commit to GitHub multiple versions of an R file](#commit-to-github-multiple-versions-of-an-r-file)
+  - [Improved Multiple Versions Prompt](#improved-multiple-versions-prompt)
+  - [Key Improvements Made](#key-improvements-made)
+- [Resolve Git Hell Conflicts](#resolve-git-hell-conflicts)
+- [Organize a Workflow](#organize-a-workflow)
+
 ## Create a README.md for a Folder
 
-Prompt: "create a `README.md` document that concisely summarizes contents of this folder at a high level"
+**Prompt:** "create a `README.md` document that concisely summarizes contents of this folder at a high level"
 
-Examples:
+**Example:**
 
-- [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md) [private for now]
-- [sysgenDO1200](https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/README.md) has various examples [private for now]
+- [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
+- [sysgenDO1200](https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/README.md) has various examples
+
+## Convert DOCX files to Markdown
+
+**Prompt:** "find `docx` files and use pandoc to convert them to `md` versions"
+
+**Example:**
+
+- [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
+
+## Commit to GitHub multiple versions of an R file
+
+**Prompt:**
+Find files ending in `[ _]v[0-9]+.R$`
+that have the same name before this version.
+If there is more than one set, do the following steps for each set.
+Denote by `[basename]` the part of the filename before the version number.
+
+1. If there is not a `v1` version but there is the `[basename]`
+without a version, copy `[basename].R` to
+`[basename] v1.R` or `[basename]_v1.R` as appropriate.
+If there is already a `[basename] v1.R` or `[basename]_v1.R`,
+do not overwrite it,
+but instead copy the `v1` version to `[basename].R` for this set.
+2. Commit `[basename].R` with message `v1` and the date this file was created.
+(Be careful with files that have implicit `v1`.)
+3. For subsequent versions, copy the next highest version number
+to `[basename].R` and commit
+with the next version number and the date this file was created.
+Continue until all versions are committed.
+4. Do not include the singleton files such as `source*v2.R`.
+5. Make sure to keep the versioned files intact.
+
+***
+
+The above prompt is a great task for an AI or an automated script. The original prompt is logically sound but can be streamlined to be more "instructional" and clear about the desired state.
+Below is an improved, more concise version of the prompt:
+
+### Improved Multiple Versions Prompt
+
+"**Reconstruct Git history for versioned R scripts** matching `[basename][ _]v[0-9]+.R`.
+
+1. **Make sure to do a `git pull` first.**
+
+For each set of files:
+
+1. **Initialize v1**: If a `v1` file is missing but `[basename].R` exists, copy `[basename].R` to create the `v1` version. If `v1` already exists, overwrite `[basename].R` with its content to start the history.
+2. **Commit Sequence**: For each version ($N = 1, 2, 3...$) in order:
+    - Overwrite `[basename].R` with the content of version `vN`.
+    - Commit `[basename].R` with message `vN`, using the file's original creation date as the commit timestamp.
+3. **Safety Rules**:
+    - Ignore singleton files (e.g., `source*v2.R`).
+    - Keep all original versioned files (`v1`, `v2`, etc.) intact; do not delete them."
+
+***
+
+### Key Improvements Made
+
+- **Logical Grouping**: Instead of listing steps as separate actions, it frames them as a single "Workflow for each set," which is easier for an AI to parse.
+
+- **Clearer Conditional**: The "v1" logic is simplified into a "normalization" step that ensures the git history starts correctly regardless of whether the first version was named with a suffix or not.
+- **Punchy Directives**: Uses bold headers (**Initialize**, **Commit Sequence**, **Safety Rules**) to make the constraints stand out.
+- **Timestamp Clarity**: Explicitly mentions using the creation date as the "commit timestamp," which is the specific instruction needed for Git-based history reconstruction.
+
+**Would you like me to help you execute this workflow on your current files?** I can see you have several matching sets like `MafA_SNP_DEG_Integration` and `Shiny app prototype for Mafa SNP DEG analysis`.
+
+***
+
+**Example:**
+
+- [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
+
+## Resolve Git Hell Conflicts
+
+**Prompt:** "i messed up and forgot to do `git pull` before commiting new files. Now I am in git hell. See the message with `git status`. `Walk me through how to fix this.`"
+
+**Example:**
+This was used on the Multiple Versions prompt above.
 
 ## Organize a Workflow
 
-Prompt: "build a concise prompt that captures the essence of the walkthroughs in `inst/doc/walkthrough.md`"
+**Prompt:** "build a concise prompt that captures the essence of the walkthroughs in `inst/doc/walkthrough.md`"
 
-Example:
+**Example:**
 The
 [sysgenAnalysis](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/)
 workflow for organizing workflows (!) was developed organically.
