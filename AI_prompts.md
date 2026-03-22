@@ -175,3 +175,46 @@ including a function to run the workflow and another function to explore the res
 - [sysgenAnalysis](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/)
   - [workflow walkthroughs](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-walkthroughs)
   - [workflow prompt](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-prompt)
+
+Below is a copy of the workflow prompt used in the sysgenAnalysis repository.
+
+### Workflow Prompt
+
+**Goal**: Refactor a [workflow] into a modular R package structure.
+
+**Instructions**:
+
+0. **Set the [workflow] and [basename] variables from user input**:
+    - [workflow]: The name of the workflow to refactor .
+    - [basename]: The `basename` to use for the refactored workflow.
+
+1. **Understand the workflow**: Read the [workflow] and understand what it does.
+
+2. **Extract Functions**: Move all logical units (data processing, analysis, plotting) into `R/[basename].R`.
+    - Document each function with **Roxygen2** syntax (including `@param`, `@return`, and `@export`).
+    - Use R native pipes (`|>`) and explicit namespace calls (e.g., `dplyr::mutate`).
+    - Centralize shared constants (like coordinate maps) if not already in `common.R`.
+
+3. **Create Entry Script**: Create an execution script `inst/scripts/analyze_[basename].R`.
+    - Use it as a clean entry point that calls the functions defined in `R/`.
+    - Handle environment setup, file paths, and high-level execution flow here.
+
+4. **Return S3 Objects**: Refactor the main "run" function to return an S3 object of class `[basename]_analysis`.
+    - Implement `print`, `summary`, and `plot` methods in `R/[basename].R`.
+    - Move file-saving logic (`write.csv`, `ggsave`) out of the functions and into the entry script.
+
+5. **Verify Integration**: Check package and scripts, correcting any issues that arise.
+    - Verify documents with `devtools::document()`.
+    - Build the package.
+    - Ask user whether or not to run the analyze_[basename].R script to make sure it works.
+
+6. **Create Exploration Document**: Create a Quarto document `inst/scripts/explore_[basename].qmd` to explore the results saved by the analysis script.
+    - Use `sysgenAnalysis::read_[basename]_analysis(output_path)` to reconstruct the S3 object from CSV files.
+    - Focus on visualization and interactive summaries using the S3 methods (`print`, `summary`, `plot`).
+    - This approach ensures that exploration is fast (no re-running analysis) and transparent (uses human-readable CSVs).
+
+**Requested Files**:
+
+- `R/[basename].R`
+- `inst/scripts/analyze_[basename].R`
+- `inst/scripts/explore_[basename].qmd`
