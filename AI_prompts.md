@@ -29,7 +29,7 @@ Below are examples of prompts I have been developing.
 **Prompts:**
 
 - "create a `README.md` document that concisely summarizes contents of this folder at a high level"
-- "update README.md with any additional files, obeying restrictions in .gitignore
+- "update `README.md` with any additional files, obeying restrictions in .gitignore
 
 **Example:**
 
