@@ -4,8 +4,8 @@ How will you later remember how you used AI to advance your project? And how wil
 Here are some examples of prompts that I have used with AI agents to help me with my work.
 They illustrate a few principles along the way.
 
-- [Prompt engineering](https://www.promptingguide.ai/introduction/what-is-prompt-engineering),
-- [Getting Started with Prompts](https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure).
+- [Prompt engineering](https://www.promptingguide.ai/introduction/what-is-prompt-engineering)
+- [Getting Started with Prompts](https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure)
 
 If you just use prompts and don't keep track of them, you are missing an opportunity to easily document your work flow.
 A simple way to begin is to ask your AI agent to save your prompts in a file, e.g. `prompts.md`;
@@ -16,13 +16,32 @@ Below are examples of prompts I have been developing.
 
 ## Table of Contents
 
+- [Saving Prompts and Walkthroughs](#saving-prompts-and-walkthroughs)
 - [Create a README.md for a Folder](#create-a-readmemd-for-a-folder)
+- [Create a Table of Contents for a File](#create-a-table-of-contents-for-a-file)
 - [Convert DOCX files to Markdown](#convert-docx-files-to-markdown)
 - [Commit to GitHub multiple versions of an R file](#commit-to-github-multiple-versions-of-an-r-file)
   - [Improved Multiple Versions Prompt](#improved-multiple-versions-prompt)
   - [Key Improvements Made](#key-improvements-made)
 - [Resolve Git Hell Conflicts](#resolve-git-hell-conflicts)
 - [Organize a Workflow](#organize-a-workflow)
+
+## Saving Prompts and Walkthroughs
+
+**Prompts:**
+
+- "save the prompts used in this conversation to `prompts.md`"
+- "save the walkthrough to `walkthrough.md`"
+
+You can do this at the beginning or end of a conversation.
+You can do it by clicking the `Save` button in the top right corner of the conversation window, and the `Export` button on a walkthrough panel.
+You can also (by hand or by prompt to AI) update or append to these files.
+
+**Examples:**
+
+- [sysgenAnalysis workflow walkthroughs](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-walkthroughs)
+- [mkeller3Projects2: how I created this file and repo](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/tree/master#how-i-created-this-file-and-repo)
+- [sysgenDO1200 prompts](https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/prompts.md)
 
 ## Create a README.md for a Folder
 
@@ -35,6 +54,22 @@ Below are examples of prompts I have been developing.
 
 - [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
 - [sysgenDO1200](https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/README.md) has various examples
+
+## Create a Table of Contents for a File
+
+Just as you can create a `README.md` for a folder, you can create a table of contents for that `README.md` (or any) file.
+
+**Prompts:**
+
+- "create TOC for `README.md`"
+- "update TOC for `README.md`"
+
+**Example:**
+
+- [Table of Contents for this file](AI_prompts.md#table-of-contents)
+- [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
+
+Once you have these and establish a "culture" of updating them, the AI will sometimes make the changes on the fly as you evolve your material.
 
 ## Convert DOCX files to Markdown
 

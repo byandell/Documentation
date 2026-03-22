@@ -14,6 +14,7 @@
   - [Python Coding Strategy](./python_strategy.md)
   - [Python Coding from Environmental Systems](./envsys.md#python-coding)
 - [Shiny Apps](./ShinyApps.md)
+- [Quarto References](./quarto.md)
 - [Artificial Intelligence (AI)](./AI.md)
   - [AI Prompt Examples](./AI_prompts.md)
 
