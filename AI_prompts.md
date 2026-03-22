@@ -150,6 +150,7 @@ For each set of files:
 **Example:**
 This was used on the Multiple Versions prompt above.
 The first time, I forgot to `git pull` changes I made on `GitHub` before starting. I tried to solve by myself and got lost. AI sorted it out.
+See [GitHub references](./github.md) for more information.
 
 ## Organize a Workflow
 
