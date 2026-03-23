@@ -202,7 +202,7 @@ including a function to run the workflow and another function to explore the res
 
 Below is a copy of the workflow prompt used in the sysgenAnalysis repository.
 
-### Workflow Prompt
+## Workflow Prompt
 
 **Goal**: Refactor a [workflow] into a modular R package structure.
 
@@ -232,10 +232,13 @@ Below is a copy of the workflow prompt used in the sysgenAnalysis repository.
     - Build the package.
     - Ask user whether or not to run the analyze_[basename].R script to make sure it works.
 
-7. **Create Exploration Document**: Create a Quarto document `inst/scripts/explore_[basename].qmd` to explore the results saved by the analysis script.
-    - Use `sysgenAnalysis::read_[basename]_analysis(output_path)` to reconstruct the S3 object from CSV files.
-    - Focus on visualization and interactive summaries using the S3 methods (`print`, `summary`, `plot`).
-    - This approach ensures that exploration is fast (no re-running analysis) and transparent (uses human-readable CSVs).
+7. **Create Exploration Document**: Create an interactive Shiny-based Quarto document `inst/scripts/explore_[basename].qmd` allowing for dynamic filtering and exploration.
+    - Set `server: shiny` in the YAML header.
+    - Use `context: setup` to load data via `sysgenAnalysis::read_[basename]_analysis()`.
+    - Use `::: {.panel-tabset}` to organize sections into **Summary**, **Tables**, and **Plots**.
+    - Use Shiny's `fluidRow` and `column` within each tab to create a side-bar like experience for controls next to outputs.
+    - Integrate `downr::downloadUI` and `downr::downloadServer` for exporting tables and plots.
+    - This approach provides a premium, interactive experience while keeping rendering fast by loading pre-calculated CSVs.
 
 **Requested Files**:
 
