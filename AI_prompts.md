@@ -20,10 +20,11 @@ Below are examples of prompts I have been developing.
 - [Create a README.md for a Folder](#create-a-readmemd-for-a-folder)
 - [Create a Table of Contents for a File](#create-a-table-of-contents-for-a-file)
 - [Convert DOCX files to Markdown](#convert-docx-files-to-markdown)
-- [Commit to GitHub multiple versions of an R file](#commit-to-github-multiple-versions-of-an-r-file)
-  - [Improved Multiple Versions Prompt](#improved-multiple-versions-prompt)
-  - [Key Improvements Made](#key-improvements-made)
-- [Resolve Git Hell Conflicts](#resolve-git-hell-conflicts)
+- [GitHub Prompts](#github-prompts)
+  - [Commit to GitHub multiple versions of an R file](#commit-to-github-multiple-versions-of-an-r-file)
+    - [Improved Multiple Versions Prompt](#improved-multiple-versions-prompt)
+    - [Key Improvements Made](#key-improvements-made)
+  - [Resolve Git Hell Conflicts](#resolve-git-hell-conflicts)
 - [Organize a Workflow](#organize-a-workflow)
   - [Workflow Prompt](#workflow-prompt)
 - [Documenting Folders in ResearchDrive](#documenting-folders-in-researchdrive)
@@ -246,10 +247,10 @@ Below is a copy of the workflow prompt used in the sysgenAnalysis repository.
 
 Several of the prompts shown earlier concern building documentation for data and code kept in folders in the
 [ResearchDrive (RD)](https://it.wisc.edu/services/researchdrive/).
-While the RD is secure and private, I have made public versions of documentation in the
+While the RD is secure and private, I have made public versions of some code and documentation via the
 [Attie Lab Systems Genetics GitHub](https://github.com/AttieLab-Systems-Genetics).
-Having the code and documentation public allows me to share it with others and to use it as a reference for future projects,
-while keeping the data secure.
+Having these public allows us to share ideas with others and to use them as a reference for future projects,
+while still keeping research data secure.
 
 - Data and Scripts in folder `mkeller3/General/main_directory`
   - Added
@@ -264,3 +265,5 @@ while keeping the data secure.
     for this folder
   - Created GitHub repo for version control at
     [AttieLab-Systems-Genetics/mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2)
+  - Used version control to keep track of multiple versions of the same analysis (see
+  [Improved Multiple Versions Prompt](#improved-multiple-versions-prompt))
