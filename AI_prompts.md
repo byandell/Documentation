@@ -26,6 +26,7 @@ Below are examples of prompts I have been developing.
 - [Resolve Git Hell Conflicts](#resolve-git-hell-conflicts)
 - [Organize a Workflow](#organize-a-workflow)
   - [Workflow Prompt](#workflow-prompt)
+- [Documenting Folders in ResearchDrive](#documenting-folders-in-researchdrive)
 
 ## Saving Prompts and Walkthroughs
 
@@ -75,13 +76,22 @@ Once you have these and establish a "culture" of updating them, the AI will some
 
 ## Convert DOCX files to Markdown
 
+This prompt use
+[pandoc](https://pandoc.org/) to convert `docx` files to `md` files.
+This app needs to be installed once on a laptop to use.
+
 **Prompt:** "find `docx` files and use pandoc to convert them to `md` versions"
 
 **Example:**
 
 - [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
 
-## Commit to GitHub multiple versions of an R file
+## GitHub Prompts
+
+These prompts interact with Git and set up files to be pushed to GitHub. To use these, a GitHub account and working knowledge of how Git and GitHub work is assumed.
+See [GitHub references](./github.md) for more information.
+
+### Commit to GitHub multiple versions of an R file
 
 **Prompt:**
 Find files ending in `[ _]v[0-9]+.R$`
@@ -109,7 +119,7 @@ Continue until all versions are committed.
 The above prompt is a great task for an AI or an automated script. The original prompt is logically sound but can be streamlined to be more "instructional" and clear about the desired state.
 Below is an improved, more concise version of the prompt:
 
-### Improved Multiple Versions Prompt
+#### Improved Multiple Versions Prompt
 
 "**Reconstruct Git history for versioned R scripts** matching `[basename][ _]v[0-9]+.R`.
 
@@ -127,7 +137,7 @@ For each set of files:
 
 ***
 
-### Key Improvements Made
+#### Key Improvements Made
 
 - **Logical Grouping**: Instead of listing steps as separate actions, it frames them as a single "Workflow for each set," which is easier for an AI to parse.
 
@@ -143,7 +153,7 @@ For each set of files:
 
 - [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
 
-## Resolve Git Hell Conflicts
+### Resolve Git Hell Conflicts
 
 **Prompt:** "i messed up and forgot to do `git pull` before commiting new files. Now I am in git hell. See the message with `git status`. `Walk me through how to fix this.`"
 
@@ -153,6 +163,17 @@ The first time, I forgot to `git pull` changes I made on `GitHub` before startin
 See [GitHub references](./github.md) for more information.
 
 ## Organize a Workflow
+
+This complicated prompt requires various tools on one's laptop,
+notably
+[devtools](https://devtools.r-lib.org/)
+and
+[roxygen2](https://roxygen2.r-lib.org/)
+in `R`.
+Installing the standalone app
+[Quarto](https://quarto.org/)
+gives one a markdown engine that can render markdown files to html, docx, pdf, and other formats.
+Other `R` packages will likely be needed along the way.
 
 **Prompt:** "build a concise prompt that captures the essence of the walkthroughs in `inst/doc/walkthrough.md`"
 
@@ -220,3 +241,26 @@ Below is a copy of the workflow prompt used in the sysgenAnalysis repository.
 - `R/[basename].R`
 - `inst/scripts/analyze_[basename].R`
 - `inst/scripts/explore_[basename].qmd`
+
+## Documenting Folders in ResearchDrive
+
+Several of the prompts shown earlier concern building documentation for data and code kept in folders in the
+[ResearchDrive (RD)](https://it.wisc.edu/services/researchdrive/).
+While the RD is secure and private, I have made public versions of documentation in the
+[Attie Lab Systems Genetics GitHub](https://github.com/AttieLab-Systems-Genetics).
+Having the code and documentation public allows me to share it with others and to use it as a reference for future projects,
+while keeping the data secure.
+
+- Data and Scripts in folder `mkeller3/General/main_directory`
+  - Added
+    [README.md](https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/README.md)
+    for this folder and some sub-folders
+  - Created GitHub repo with these READMEs for version control at
+    [AttieLab-Systems-Genetics/sysgenDO1200](https://github.com/AttieLab-Systems-Genetics/sysgenDO1200)
+  - See info at top of this file for how I did this
+- Code in folder `mkeller3/General/Projects2/R scripts`
+  - Added
+    [README.md](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
+    for this folder
+  - Created GitHub repo for version control at
+    [AttieLab-Systems-Genetics/mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2)
