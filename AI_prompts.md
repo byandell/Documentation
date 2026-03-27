@@ -8,6 +8,7 @@ They illustrate a few principles along the way.
 - [Getting Started with Prompts](https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure)
 
 If you just use prompts and don't keep track of them, you are missing an opportunity to easily document your work flow.
+Not only that, saved prompts and walkthroughs can be used to reproduce your work.
 A simple way to begin is to ask your AI agent to save your prompts in a file, e.g. `prompts.md`;
 alternatively, or in addition, save the Walkthrough artifact that the AI agent creates into
 a separate `walkthrough.md` file.
@@ -20,6 +21,7 @@ Below are examples of prompts I have been developing.
 - [Create a README.md for a Folder](#create-a-readmemd-for-a-folder)
 - [Create a Table of Contents for a File](#create-a-table-of-contents-for-a-file)
 - [Convert DOCX files to Markdown](#convert-docx-files-to-markdown)
+- [Powerpoint Presentation](#powerpoint-presentation)
 - [GitHub Prompts](#github-prompts)
   - [Commit to GitHub multiple versions of an R file](#commit-to-github-multiple-versions-of-an-r-file)
     - [Improved Multiple Versions Prompt](#improved-multiple-versions-prompt)
@@ -86,6 +88,19 @@ This app needs to be installed once on a laptop to use.
 **Example:**
 
 - [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
+
+## Powerpoint Presentation
+
+**Prompt:**
+
+- "Use Quarto to automatically generate a PowerPoint deck (`.pptx`) embedding all of the outputted PNG figures."
+- "Add a table of contents slide to the presentation."
+
+This prompt assumes that you have installed
+[Quarto](https://quarto.org/) (only need to do once)
+and have already generated the PNG figures using the workflow prompt.
+It could be part of a more involved prompt that also generates the figures.
+The AI will likely include a title slide; you can also ask AI to add other material such as references or overview of experiment.
 
 ## GitHub Prompts
 
