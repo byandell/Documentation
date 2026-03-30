@@ -7,7 +7,7 @@ and `[codefile]` (e.g. `'Hsp90 GTT'`)
 and run the following prompt:
 
 **Execution Prompt Used:** "Run the prompt and do all the steps listed in
-[prompts/powerpoint.md](https://github.com/byandell/Documentation/blob/main/prompts/powerpoint.md) for `[datafile]` and `[codefile]`. Make sure all software needed is installed."
+[prompts/powerpoint.md](https://github.com/byandell/Documentation/blob/main/prompts/powerpoint.md) for `datafile = 'NDNB-25 B6 and NZO Masterdate sheet v2 R.xlsx'` and `codefile = 'Hsp90 GTT'`. Make sure all software needed is installed."
 
 Here is a consolidated record of the instructions used to build the `[codefile]` data analysis pipeline. They have been refined and grouped to reduce duplication while accurately capturing the complete workflow requirements.
 

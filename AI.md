@@ -13,6 +13,7 @@ To learn about (generative) AI, start with the self-paced workshop on
   - [Other AI Environments](#other-ai-environments)
 - [Prompt Engineering](#prompt-engineering)
   - [Prompts to Organize Workflows](#prompts-to-organize-workflows)
+  - [Sharing Prompts instead of Code](#sharing-prompts-instead-of-code)
   - [Learning about prompts](#learning-about-prompts)
   - [Prompt Engineering References](#prompt-engineering-references)
 
@@ -141,7 +142,22 @@ repository, with the
 based on step-by-step instructions in the
 [Workflow Walkthroughs](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-walkthroughs)
 
-### Learning about prompts
+### Sharing Prompts instead of Code
+
+On a Monday, I guided DE and Alan Attie to take a data table (XLSX file) and, through a series of prompts, generate a set of plots (PNG files), which were then organized into a powerpoint presentation (PPTX file). I guided Alan and DE to use AI to not only do the work for them (write code, create plots, etc.), but also to save the prompts in a markdown file (prompts.md​) for later use.
+
+On Wednesday, Diana had the data file and the prompts file from Alan—nothing else. She asked me to help her make it work for her. We found that the prompts file had the absolute file address for the data table, which we changed to a relative address (just filename.xlsx​). After that, it worked, locally creating the R code file, the plots and the powerpoint (via a Quarto file​).
+
+I blithely suggested this could be improved with a table of contents. Diana proposed adding information and references about the subject matter. She wrote prompts and, presto (with a few tweaks to improve viewing), the new powerpoint now had a TOC, descriptions, and references. FINALLY, Diana asked AI to modify the prompts markdown file to include this last addition.
+
+The point is that Diana learned how to reproduce earlier work, and to improve on it, using only the data and a prompts file. _The code and plot files were incidental artifacts._ We worked at a strategic level of collaboration toward a goal without getting mired in how-to detail.
+
+Actually I did a fair amount of guiding, particularly in getting Alan and Diana to document their steps. That effort led to a demonstrably reproducible piece of work, which can be a model for future collaborations in this lab.
+See
+[prompts/powerpoint.md](prompts/powerpoint.md) among
+[AI Prompt Examples](AI_prompts.md) for details.
+
+### Learning about Prompts
 
 I began learning about prompts from
 [Tyson Swetnam](https://www.tysonswetnam.com/),

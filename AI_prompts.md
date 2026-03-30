@@ -22,6 +22,7 @@ Below are examples of prompts I have been developing.
 - [Create a Table of Contents for a File](#create-a-table-of-contents-for-a-file)
 - [Convert DOCX files to Markdown](#convert-docx-files-to-markdown)
 - [Powerpoint Presentation](#powerpoint-presentation)
+  - [prompts/powerpoint.md](prompts/powerpoint.md)
 - [GitHub Prompts](#github-prompts)
   - [Commit to GitHub multiple versions of an R file](#commit-to-github-multiple-versions-of-an-r-file)
     - [prompts/file_versions.md](prompts/file_versions.md)
@@ -101,6 +102,16 @@ and have already generated the PNG figures using the workflow prompt.
 It could be part of a more involved prompt that also generates the figures.
 The AI will likely include a title slide; you can also ask AI to add other material such as references or overview of experiment.
 
+**Example:**
+
+- [prompts/powerpoint.md](prompts/powerpoint.md)
+
+This prompt was used to create the powerpoint presentation for the Hsp90 GTT project.
+The saved file includes earlier versions of the prompt as well as the final prompt that was used. For details on how the prompt evolved, click on `Blame` (top left) or `History` (top right).
+
+The semi-generic current version allows a user to cite this file and specify their `datafile` and `codefile` to be used. However, the prompt as written is rather specific to GTT for DO founder mice. It could be generalized, or a user could specify something like,
+"substite my version of step 2 and modify for the `xx` and `yy` mouse strains instead of `NZO` and `B6`".
+
 ## GitHub Prompts
 
 These prompts interact with Git and set up files to be pushed to GitHub. To use these, a GitHub account and working knowledge of how Git and GitHub work is assumed.
@@ -141,6 +152,10 @@ The file
 
 - [prompts/file_versions.md](prompts/file_versions.md)
 - [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
+
+For details of versions, see for instance
+[MafA_SNP_DEG_Integration.R](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/MafA_SNP_DEG_Integration.R)
+and click on `Blame` (top left) or `History` (top right).
 
 ### Resolve Git Hell Conflicts
 
