@@ -23,7 +23,34 @@ Interestingly, when I started populating this list, AI halucinated several entri
 
 ### How might we think about AI?
 
+As Ezra Klein noted
+[recently](https://www.nytimes.com/2026/03/29/opinion/ai-claude-chatgpt-gemini-mcluhan.html), John Culkin (1967) provided a helpful summary of Marshall McLuhan's ideas:
+
+- “We shape our tools and thereafter they shape us.”
+- “The environments set up by different media are not just containers for people; they are processes which shape people.”
+
+Klein went on 'to steal one more McLuhanism, “the numb stance of the technological idiot” [is] to treat A.I. as merely a tool waiting passively for our use. To use A.I. deeply is to engage in a process, not just to push a button. It will reshape us; it already is. We have to be attentive to how.'
+
+Jaron Lanier has written and spoken extensively about AI.
+His provocative
+[There is no AI](https://byandell.github.io/Jaron-Lanier-There-is-no-AI/)
+reframed AI as a tool for human social collaboration,
+particularly when credit for sources encourages data dignity.
+
+A couple articles point out that new startups have found
+early success in building new tools with AI agents
+while legacy companies (think Google)
+see only marginal replacement of human force by AI agents.
+AI's disruption of the workforce is real, and it may be radically changing
+what we do.
+However, rather than eliminating the need for people,
+many (most?) realms of society and industry have an opportunity to rethink
+how we work and collaborate.
+As multiple authors writing in early 2026 point out,
+this is not a future event, but something we are now experincing.
+
 - [There is no AI](https://byandell.github.io/Jaron-Lanier-There-is-no-AI/)
+- [I Saw Something New in San Francisco (Ezra Klein, NYTimes)](https://www.nytimes.com/2026/03/29/opinion/ai-claude-chatgpt-gemini-mcluhan.html)
 - The Atlantic on AI (2026)
   - [The AI-Panic Cycle—And What’s Actually Different Now](https://www.theatlantic.com/podcasts/2026/02/the-ai-panic-cycle-and-whats-actually-different-now/686077/)
   - [What Do the People Building AI Believe? (The Atlantic)](https://www.theatlantic.com/podcasts/2026/02/what-do-the-people-building-ai-believe/686173/)
