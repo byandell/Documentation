@@ -1,11 +1,15 @@
 # Workflow Prompt
 
 **Use**:
-Type the following prompt into AI, substituting for your file `xxx.R` and desired base name `yyy`:
+Be sure you are working in a folder where you want the new package components to live.
+Type the following prompt into AI, substituting for your file `xxx.R` and desired base name `yyy`
 
+**Prompt**:
 "follow the
-[workflow prompt](https://github.com/byandell/Documentation/blob/main/AI_prompts.md#workflow-prompt) to refactor a workflow into a modular R package structure
-`workflow` = `xxx.R` and `basename` = `yyy`".
+[workflow prompt](https://github.com/byandell/Documentation/blob/main/prompts/workflow.md) to refactor `workflow` = `xxx.R` into a modular R package structure
+with `basename` = `yyy`".
+
+---
 
 **Goal**: Refactor a [workflow] into a modular R package structure.
 

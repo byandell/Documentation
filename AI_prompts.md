@@ -24,11 +24,10 @@ Below are examples of prompts I have been developing.
 - [Powerpoint Presentation](#powerpoint-presentation)
 - [GitHub Prompts](#github-prompts)
   - [Commit to GitHub multiple versions of an R file](#commit-to-github-multiple-versions-of-an-r-file)
-    - [Improved Multiple Versions Prompt](#improved-multiple-versions-prompt)
-    - [Key Improvements Made](#key-improvements-made)
+    - [prompts/file_versions.md](prompts/file_versions.md)
   - [Resolve Git Hell Conflicts](#resolve-git-hell-conflicts)
 - [Organize a Workflow](#organize-a-workflow)
-  - [Workflow Prompt](#workflow-prompt)
+  - [prompts/workflow.md](prompts/workflow.md)
 - [Documenting Folders in ResearchDrive](#documenting-folders-in-researchdrive)
 
 ## Saving Prompts and Walkthroughs
@@ -133,40 +132,14 @@ Continue until all versions are committed.
 ***
 
 The above prompt is a great task for an AI or an automated script. The original prompt is logically sound but can be streamlined to be more "instructional" and clear about the desired state.
-Below is an improved, more concise version of the prompt:
-
-#### Improved Multiple Versions Prompt
-
-"**Reconstruct Git history for versioned R scripts** matching `[basename][ _]v[0-9]+.R`.
-
-1. **Make sure to do a `git pull` first.**
-
-For each set of files:
-
-1. **Initialize v1**: If a `v1` file is missing but `[basename].R` exists, copy `[basename].R` to create the `v1` version. If `v1` already exists, overwrite `[basename].R` with its content to start the history.
-2. **Commit Sequence**: For each version ($N = 1, 2, 3...$) in order:
-    - Overwrite `[basename].R` with the content of version `vN`.
-    - Commit `[basename].R` with message `vN`, using the file's original creation date as the commit timestamp.
-3. **Safety Rules**:
-    - Ignore singleton files (e.g., `source*v2.R`).
-    - Keep all original versioned files (`v1`, `v2`, etc.) intact; do not delete them."
+The file
+[file versions prompt](prompts/file_versions.md) has an improved, more concise version of the prompt.
 
 ***
 
-#### Key Improvements Made
+**Examples:**
 
-- **Logical Grouping**: Instead of listing steps as separate actions, it frames them as a single "Workflow for each set," which is easier for an AI to parse.
-
-- **Clearer Conditional**: The "v1" logic is simplified into a "normalization" step that ensures the git history starts correctly regardless of whether the first version was named with a suffix or not.
-- **Punchy Directives**: Uses bold headers (**Initialize**, **Commit Sequence**, **Safety Rules**) to make the constraints stand out.
-- **Timestamp Clarity**: Explicitly mentions using the creation date as the "commit timestamp," which is the specific instruction needed for Git-based history reconstruction.
-
-**Would you like me to help you execute this workflow on your current files?** I can see you have several matching sets like `MafA_SNP_DEG_Integration` and `Shiny app prototype for Mafa SNP DEG analysis`.
-
-***
-
-**Example:**
-
+- [prompts/file_versions.md](prompts/file_versions.md)
 - [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
 
 ### Resolve Git Hell Conflicts
@@ -174,6 +147,7 @@ For each set of files:
 **Prompt:** "i messed up and forgot to do `git pull` before commiting new files. Now I am in git hell. See the message with `git status`. `Walk me through how to fix this.`"
 
 **Example:**
+
 This was used on the Multiple Versions prompt above.
 The first time, I forgot to `git pull` changes I made on `GitHub` before starting. I tried to solve by myself and got lost. AI sorted it out.
 See [GitHub references](./github.md) for more information.
@@ -193,10 +167,22 @@ Other `R` packages will likely be needed along the way.
 
 **Prompt:** "build a concise prompt that captures the essence of the walkthroughs in `inst/doc/walkthrough.md`"
 
-**Example:**
+**Examples:**
+
+- [prompts/workflow.md](prompts/workflow.md)
+- [workflow prompt](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-prompt)
+- [workflow walkthroughs](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-walkthroughs)
+
 The
-[sysgenAnalysis](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/)
-workflow for organizing workflows (!) was developed organically.
+[prompts/workflow.md](prompts/workflow.md)
+is a refinement of the workflow developed for
+[sysgenAnalysis](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/).
+This particular prompt, which is described conceptually in
+[Prompts to Organize Workflows](AI.md#prompts-to-organize-workflows),
+transforms an R workflow into functions in an R package,
+including a function to run the workflow and another function to explore the results.
+
+This workflow for organizing workflows (!) was developed organically.
 Each day, I advanced the project through a series of prompts;
 at the end of the session, I asked the AI agent to save the
 [workflow walkthroughs](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-walkthroughs),
@@ -204,62 +190,6 @@ including the date of that step.
 At some point, I asked AI the above prompt, which resulted in a comprehensive
 [workflow prompt](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-prompt).
 I later asked the AI agent to modify the workflow prompt as I added subsequent workflow steps.
-This is still subject to some further refinement.
-
-This particular prompt, which is described conceptually in
-[Prompts to Organize Workflows](AI.md#prompts-to-organize-workflows),
-transforms an R workflow into functions in an R package,
-including a function to run the workflow and another function to explore the results.
-
-- [sysgenAnalysis](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/)
-  - [workflow walkthroughs](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-walkthroughs)
-  - [workflow prompt](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-prompt)
-
-Below is a copy of the workflow prompt used in the sysgenAnalysis repository.
-
-## Workflow Prompt
-
-**Goal**: Refactor a [workflow] into a modular R package structure.
-
-**Instructions**:
-
-1. **Set the [workflow] and [basename] variables from user input**:
-    - [workflow]: The name of the workflow to refactor .
-    - [basename]: The `basename` to use for the refactored workflow.
-
-2. **Understand the workflow**: Read the [workflow] and understand what it does.
-
-3. **Extract Functions**: Move all logical units (data processing, analysis, plotting) into `R/[basename].R`.
-    - Document each function with **Roxygen2** syntax (including `@param`, `@return`, and `@export`).
-    - Use R native pipes (`|>`) and explicit namespace calls (e.g., `dplyr::mutate`).
-    - Centralize shared constants (like coordinate maps) if not already in `common.R`.
-
-4. **Create Entry Script**: Create an execution script `inst/scripts/analyze_[basename].R`.
-    - Use it as a clean entry point that calls the functions defined in `R/`.
-    - Handle environment setup, file paths, and high-level execution flow here.
-
-5. **Return S3 Objects**: Refactor the main "run" function to return an S3 object of class `[basename]_analysis`.
-    - Implement `print`, `summary`, and `plot` methods in `R/[basename].R`.
-    - Move file-saving logic (`write.csv`, `ggsave`) out of the functions and into the entry script.
-
-6. **Verify Integration**: Check package and scripts, correcting any issues that arise.
-    - Verify documents with `devtools::document()`.
-    - Build the package.
-    - Ask user whether or not to run the analyze_[basename].R script to make sure it works.
-
-7. **Create Exploration Document**: Create an interactive Shiny-based Quarto document `inst/scripts/explore_[basename].qmd` allowing for dynamic filtering and exploration.
-    - Set `server: shiny` in the YAML header.
-    - Use `context: setup` to load data via `sysgenAnalysis::read_[basename]_analysis()`.
-    - Use `::: {.panel-tabset}` to organize sections into **Summary**, **Tables**, and **Plots**.
-    - Use Shiny's `fluidRow` and `column` within each tab to create a side-bar like experience for controls next to outputs.
-    - Integrate `downr::downloadUI` and `downr::downloadServer` for exporting tables and plots.
-    - This approach provides a premium, interactive experience while keeping rendering fast by loading pre-calculated CSVs.
-
-**Requested Files**:
-
-- `R/[basename].R`
-- `inst/scripts/analyze_[basename].R`
-- `inst/scripts/explore_[basename].qmd`
 
 ## Documenting Folders in ResearchDrive
 
