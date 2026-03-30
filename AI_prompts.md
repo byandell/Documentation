@@ -106,10 +106,13 @@ The AI will likely include a title slide; you can also ask AI to add other mater
 
 - [prompts/powerpoint.md](prompts/powerpoint.md)
 
-This prompt was used to create the powerpoint presentation for the Hsp90 GTT project.
-The saved file includes earlier versions of the prompt as well as the final prompt that was used. For details on how the prompt evolved, click on `Blame` (top left) or `History` (top right).
+This prompt was used to create the powerpoint presentation for a GTT project.
+The saved file includes Alan and Diana's versions of the prompt . For details on how the prompt evolved, click on `Blame` (top left) or `History` (top right).
 
-The semi-generic current version allows a user to cite this file and specify their `datafile` and `codefile` to be used. However, the prompt as written is rather specific to GTT for DO founder mice. It could be generalized, or a user could specify something like,
+Another user could cite as a prompt and substite different data and code files.
+However, the prompt as written is rather specific to GTT for DO founder mice,
+and in particular to NZO and B6 strains.
+It could be generalized, or a user could specify something like,
 "substite my version of step 2 and modify for the `xx` and `yy` mouse strains instead of `NZO` and `B6`".
 
 ## GitHub Prompts
