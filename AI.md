@@ -12,6 +12,7 @@ To learn about (generative) AI, start with the self-paced workshop on
   - [Google Gemini and Antigravity](#google-gemini-and-antigravity)
   - [Other AI Environments](#other-ai-environments)
 - [Prompt Engineering](#prompt-engineering)
+  - [AI Prompt Examples](AI_prompts.md)
   - [Prompts to Organize Workflows](#prompts-to-organize-workflows)
   - [Sharing Prompts instead of Code](#sharing-prompts-instead-of-code)
   - [Learning about prompts](#learning-about-prompts)
