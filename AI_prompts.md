@@ -11,7 +11,8 @@ They illustrate a few principles along the way.
 - [Getting Started with Prompts](https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure)
 
 If you just use prompts and don't keep track of them, you are missing an opportunity to easily document your work flow.
-Not only that, saved prompts and walkthroughs can be used to reproduce your work.
+Not only that, saved prompts and walkthroughs can be used to reproduce your work
+(see [Sharing Prompts Instead of Code](AI.md#sharing-prompts-instead-of-code)).
 A simple way to begin is to ask your AI agent to save your prompts in a file, e.g. `prompts.md`;
 alternatively, or in addition, save the Walkthrough artifact that the AI agent creates into
 a separate `walkthrough.md` file.
