@@ -1,7 +1,7 @@
 # AI Prompt Examples
 
 How will you later remember how you used
-[Artifical Intelligence AI](AI.md) to advance your projects?
+[Artifical Intelligence (AI)](AI.md) to advance your projects?
 And how will you share your learning with others?
 Here are some examples of prompts that I have used with AI agents to help me,
 and teams in interacting with projects.
