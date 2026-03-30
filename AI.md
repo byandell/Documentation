@@ -144,7 +144,7 @@ based on step-by-step instructions in the
 
 ### Sharing Prompts instead of Code
 
-On a Monday, I guided DE and Alan Attie to take a data table (XLSX file) and, through a series of prompts, generate a set of plots (PNG files), which were then organized into a powerpoint presentation (PPTX file). I guided Alan and DE to use AI to not only do the work for them (write code, create plots, etc.), but also to save the prompts in a markdown file (prompts.md​) for later use.
+On a Monday, I guided Diana and Alan to take a data table (XLSX file) and, through a series of prompts, generate a set of plots (PNG files), which were then organized into a powerpoint presentation (PPTX file). I guided Alan and Diana to use AI to not only do the work for them (write code, create plots, etc.), but also to save the prompts in a markdown file (prompts.md​) for later use.
 
 On Wednesday, Diana had the data file and the prompts file from Alan—nothing else. She asked me to help her make it work for her. We found that the prompts file had the absolute file address for the data table, which we changed to a relative address (just filename.xlsx​). After that, it worked, locally creating the R code file, the plots and the powerpoint (via a Quarto file​).
 
