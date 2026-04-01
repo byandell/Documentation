@@ -20,6 +20,8 @@ that was forked from
 - [R for Data Sciences GitHub Links](https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/organize/github.md)
   - [Get started with GitHub (Happy Git with R)](https://happygitwithr.com/usage-intro#usage-intro)
   - [Git and GitHub Troubleshooting](https://happygitwithr.com/troubleshooting)
+  - [Install Git for Windows (Git-SCM)](https://git-scm.com/install/windows)
+  - [Install Git (Git Guides)](https://github.com/git-guides/install-git)
 - [ESIIL Data Short Course: Create your own portfolio webpage](https://cu-esiil-edu.github.io/esiil-learning-portal/shortcourse/pages/03-git-github/03-github-portfolio/01-create-portfolio-website.html)
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)
 - [Publish Your Project Documentation with GitHub Pages](https://github.blog/developer-skills/github/publish-your-project-documentation-with-github-pages/)
