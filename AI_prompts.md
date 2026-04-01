@@ -12,7 +12,7 @@ They illustrate a few principles along the way.
 
 If you just use prompts and don't keep track of them, you are missing an opportunity to easily document your work flow.
 Not only that, saved prompts and walkthroughs can be used to reproduce your work
-(see [Sharing Prompts Instead of Code](AI.md#sharing-prompts-instead-of-code)).
+(see [Sharing Prompts Instead of Code](https://byandell.github.io/Gravity-and-Antigravity/#sharing-prompts-instead-of-code)).
 A simple way to begin is to ask your AI agent to save your prompts in a file, e.g. `prompts.md`;
 alternatively, or in addition, save the Walkthrough artifact that the AI agent creates into
 a separate `walkthrough.md` file.
@@ -22,6 +22,7 @@ Below are examples of prompts I have been developing.
 ## Table of Contents
 
 - [Saving Prompts and Walkthroughs](#saving-prompts-and-walkthroughs)
+  - [Sharing Prompts instead of Code](https://byandell.github.io/Gravity-and-Antigravity/#sharing-prompts-instead-of-code)
 - [Create a README.md for a Folder](#create-a-readmemd-for-a-folder)
 - [Create a Table of Contents for a File](#create-a-table-of-contents-for-a-file)
 - [Convert DOCX files to Markdown](#convert-docx-files-to-markdown)
@@ -111,13 +112,18 @@ The AI will likely include a title slide; you can also ask AI to add other mater
 - [prompts/powerpoint.md](prompts/powerpoint.md)
 
 This prompt was used to create the powerpoint presentation for a GTT project.
+For more detail, see
+[Sharing  Prompts instead of Code](https://byandell.github.io/Gravity-and-Antigravity/#sharing-prompts-instead-of-code).
 The saved file includes Alan and Diana's versions of the prompt . For details on how the prompt evolved, click on `Blame` (top left) or `History` (top right).
+The displayed version is the most recent (Diana's);
+the same file contains
+[Alan's earlier version](https://github.com/byandell/Documentation/commit/6bf9b23a9a2441bd8c60cd18d88bcbc4a00c6ae7#diff-0a4691c74dedbcb4de422d849e3ff48d756dfcc06d20f0253ef5315dbaf9d912).
 
-Another user could cite as a prompt and substite different data and code files.
+Another user could create a prompt that cites this prompt file and directs AI to
+substitute different data and code files.
 However, the prompt as written is rather specific to GTT for DO founder mice,
 and in particular to NZO and B6 strains.
-It could be generalized, or a user could specify something like,
-"substite my version of step 2 and modify for the `xx` and `yy` mouse strains instead of `NZO` and `B6`".
+A user could further specify to replace step 2 with their own version of instructions.
 
 ## GitHub Prompts
 
