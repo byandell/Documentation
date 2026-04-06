@@ -23,6 +23,7 @@ Below are examples of prompts I have been developing.
 
 - [Saving Prompts and Walkthroughs](#saving-prompts-and-walkthroughs)
   - [Sharing Prompts instead of Code](https://byandell.github.io/Gravity-and-Antigravity/#sharing-prompts-instead-of-code)
+- [System Instructions](#system-instructions)
 - [Create a README.md for a Folder](#create-a-readmemd-for-a-folder)
 - [Create a Table of Contents for a File](#create-a-table-of-contents-for-a-file)
 - [Convert DOCX files to Markdown](#convert-docx-files-to-markdown)
@@ -52,6 +53,28 @@ You can also (by hand or by prompt to AI) update or append to these files.
 - [sysgenAnalysis workflow walkthroughs](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-walkthroughs)
 - [mkeller3Projects2: how I created this file and repo](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/tree/master#how-i-created-this-file-and-repo)
 - [sysgenDO1200 prompts](https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/prompts.md)
+
+## System Instructions
+
+System instructions are prior prompts, which act as a global rule to subsequent prompt chaining.
+Tyson Swetnam has a nice example that I expand below for python _and_ R:
+
+```
+Please set up the following system instruction:
+# Project Context
+I'm a data scientist working on machine learning projects.
+For Python code, always provide examples using scikit-learn and pandas.
+For R code, always provide examples using tidyverse.
+Include docstrings (python) or roxygen2 (R)and type hints in all code.
+
+# Response Preferences
+- Be concise but thorough
+- Explain complex concepts with analogies
+- Always cite sources when making factual claims
+```
+
+- [System Instructions Intro](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/system-instruction-introduction)
+- [System Instructions Use](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/system-instructions)
 
 ## Create a README.md for a Folder
 
