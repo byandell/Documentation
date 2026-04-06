@@ -1,4 +1,4 @@
-# GitHub and CodeSpaces
+# GitHub, Connect, and CodeSpaces
 
 ## GitHub Pages
 
@@ -32,6 +32,39 @@ that was forked from
 - [MkDocs](https://github.com/mkdocs/mkdocs/tree/master) (advanced topic)
   - [Materials for MkDocs: Publishing your site](https://squidfunk.github.io/mkdocs-material/publishing-your-site/)
   - [Deploying your docs](https://www.mkdocs.org/user-guide/deploying-your-docs/)
+
+## Connect
+
+Posit's Connect is a platform for sharing resources such as R shiny apps, Quarto documents,
+and python apps.
+
+- [Posit Connect](https://posit.co/products/enterprise/connect/)
+
+Deployment of apps using GitHub repos to a Connect server can be tricky, as Connect relies on the
+`renv` package to create reproducible environments for your R projects.
+A message like
+**Deployment error: unknown package source**
+indicates that the `renv` package does not recognize where a package was installed,
+for instance if one uses `devtools::install_github()`.
+`renv` cannot track the source well enough to reproduce it, and it refuses to bundle the app as a result.
+The fix is to reinstall the package using `renv::install()` instead, which records the GitHub source in a way that `renv` can reproduce:
+
+```r
+renv::install("github_user/package_name")
+renv::snapshot()
+```
+
+After running those two lines, retry the deployment. The snapshot validator should pass and the bundle should reach the server cleanly.
+If for any reason that does not work, you can also try explicitly recording the source before deploying:
+
+```r
+renv::record("github_user/package_name")
+```
+
+- [renv](https://rstudio.github.io/renv/)
+- [Manage dependencies with renv](https://www.r-bloggers.com/2021/03/new-on-techguides-manage-dependencies-with-renv/)
+- [Using renv with Posit Connect](https://pkgs.rstudio.com/renv/articles/rsconnect.html)
+- [R Package Management](https://docs.posit.co/connect/admin/r/package-management/)
 
 ## CodeSpaces
 

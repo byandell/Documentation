@@ -4,7 +4,7 @@
 - [R for Data Sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences)
   - [Using R in VS Code with Radian](./radian.md)
   - [Base R(4.1+) `|>` vs magrittr `%>%` pipe](https://tidyverse.org/blog/2023/04/base-vs-magrittr-pipe/)
-- [GitHub & Codespaces](./github.md)
+- [GitHub, Connect, and CodeSpaces](./github.md)
 - [Environmental Systems References](./envsys.md)
   - [Geospatial Resources](./geospatial.md)
   - [Earth Data Analytics](./envsys.md#earth-data-analytics)
