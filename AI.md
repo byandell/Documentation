@@ -75,13 +75,15 @@ which range from zero-water data centers to rethinking how we train people to us
 - [AI Energy Innovation Climate Research (NVIDIA)](https://blogs.nvidia.com/blog/ai-energy-innovation-climate-research/)
 - [No Data Centers on Native Land Campaign (Honor Earth)](https://Honorearth.org/stopdatacolonialism)
 
-References on carbon-neutral data center forecasts and best practices:
+References on carbon-neutral and micro data center forecasts and best practices:
 
 - [Carbon Neutral Data Centers Market Forecasts (GII Research)](https://www.giiresearch.com/report/smrc2007748-carbon-neutral-data-centers-market-forecasts.html)
 - [Carbon Neutral Data Center 2030 (Computer Forecast)](https://www.computeforecast.com/blogs/carbon-neutral-data-center-2030/)
 - [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2589004225019662)
 - [Zero Edge Cloud Data Sovereignty (Salish Tribal Alliance)](https://salishtribalalliancegroup.com/data-centers)
 - [Modern data center sustainability best practices to consider (TechTarget)](https://www.techtarget.com/searchDataCenter/tip/Modern-data-center-sustainability-best-practices-to-consider)
+- [Micro Data Centers: The Future of Edge Computing (GBC Engineers)](https://gbc-engineers.com/news/micro-data-centers)
+- [Micro Data Centers: A Practical Guide for Small IT Teams (Data Center Knowledge)](https://www.datacenterknowledge.com/modular-data-centers/micro-data-centers-a-practical-guide-for-small-it-teams)
 
 Here are maps and reports of data centers in the US:
 
