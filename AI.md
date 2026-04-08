@@ -73,6 +73,21 @@ which range from zero-water data centers to rethinking how we train people to us
 - [Sustainable by Design (Microsoft)](https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/)
 - [Commitment to Climate Conscious Data Center Cooling (Google)](https://blog.google/company-news/outreach-and-initiatives/sustainability/our-commitment-to-climate-conscious-data-center-cooling/)
 - [AI Energy Innovation Climate Research (NVIDIA)](https://blogs.nvidia.com/blog/ai-energy-innovation-climate-research/)
+- [No Data Centers on Native Land Campaign (Honor Earth)](https://Honorearth.org/stopdatacolonialism)
+
+References on carbon-neutral data center forecasts and best practices:
+
+- [Carbon Neutral Data Centers Market Forecasts (GII Research)](https://www.giiresearch.com/report/smrc2007748-carbon-neutral-data-centers-market-forecasts.html)
+- [Carbon Neutral Data Center 2030 (Computer Forecast)](https://www.computeforecast.com/blogs/carbon-neutral-data-center-2030/)
+- [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2589004225019662)
+- [Zero Edge Cloud Data Sovereignty (Salish Tribal Alliance)](https://salishtribalalliancegroup.com/data-centers)
+- [Modern data center sustainability best practices to consider (TechTarget)](https://www.techtarget.com/searchDataCenter/tip/Modern-data-center-sustainability-best-practices-to-consider)
+
+Here are maps and reports of data centers in the US:
+
+- [United States Data Center Energy Usage Report (LBNL)](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf)
+- [Data Center Infrastructure in the United States, March 2026 (Nat Lib Rockies)](https://docs.nlr.gov/docs/gen/fy26/99908.jpg)
+- [Data Center Map](https://www.datacentermap.com/)
 
 ## AI Tools and Agents
 
