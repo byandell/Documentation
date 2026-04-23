@@ -32,6 +32,7 @@ that was forked from
 - [MkDocs](https://github.com/mkdocs/mkdocs/tree/master) (advanced topic)
   - [Materials for MkDocs: Publishing your site](https://squidfunk.github.io/mkdocs-material/publishing-your-site/)
   - [Deploying your docs](https://www.mkdocs.org/user-guide/deploying-your-docs/)
+- [Resolving Git Push for CI/CD Workflows (TutorialPedia)](https://www.tutorialpedia.org/blog/how-to-resolve-refusing-to-allow-an-oauth-app-to-create-or-update-workflow-on-git-push/)
 
 ## Connect
 
