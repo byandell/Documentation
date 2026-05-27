@@ -7,8 +7,10 @@ Here are some examples of prompts that I have used with AI agents to help me,
 and teams in interacting with projects.
 They illustrate a few principles along the way.
 
-- [Prompt engineering](https://www.promptingguide.ai/introduction/what-is-prompt-engineering)
-- [Getting Started with Prompts](https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure)
+- [Prompt Engineering Guide](https://www.promptingguide.ai)
+- [Prompt Engineering (Tyson Swetnam)](https://tyson-swetnam.github.io/intro-gpt/prompts/#core-features-of-todays-ai-tools)
+  - [Core Features of Today's AI Tools](https://tyson-swetnam.github.io/intro-gpt/prompts/#core-features-of-todays-ai-tools)
+  - [Getting Started with Prompts](https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure)
 
 If you just use prompts and don't keep track of them, you are missing an opportunity to easily document your work flow.
 Not only that, saved prompts and walkthroughs can be used to reproduce your work
@@ -24,6 +26,7 @@ Below are examples of prompts I have been developing.
 - [Saving Prompts and Walkthroughs](#saving-prompts-and-walkthroughs)
   - [Sharing Prompts instead of Code](https://byandell.github.io/Gravity-and-Antigravity/#sharing-prompts-instead-of-code)
 - [System Instructions](#system-instructions)
+- [Project CRAFTs](#project-crafts)
 - [Create a README.md for a Folder](#create-a-readmemd-for-a-folder)
 - [Create a Table of Contents for a File](#create-a-table-of-contents-for-a-file)
 - [Convert DOCX files to Markdown](#convert-docx-files-to-markdown)
@@ -75,6 +78,19 @@ Include docstrings (python) or roxygen2 (R)and type hints in all code.
 
 - [System Instructions Intro](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/system-instruction-introduction)
 - [System Instructions Use](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/system-instructions)
+
+## Project CRAFTs
+
+Each project should have a
+[CRAFT](https://tyson-swetnam.github.io/intro-gpt/prompts/#the-craft-framework)
+framework that guides AI agents to build out a project.
+To illustrate, here is Tyson's example for a grant proposal:
+
+Context: I'm preparing a grant proposal for NSF funding on AI in education  
+Role: Act as an experienced grant writer and education researcher  
+Action: Review my draft introduction and suggest improvements  
+Format: Provide feedback as tracked changes with explanations  
+Tone: Professional, constructive, and encouraging
 
 ## Create a README.md for a Folder
 
