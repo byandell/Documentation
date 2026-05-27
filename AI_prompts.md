@@ -106,7 +106,7 @@ Format: Provide feedback as tracked changes with explanations
 Tone: Professional, constructive, and encouraging
 ```
 
-Here is one for beginning to build a `python` notebook:
+Here is one for beginning to build a set of `python` notebooks:
 
 ```
 Context: I'm preparing a set of `python` notebooks to document flooding impact  
@@ -115,6 +115,9 @@ Action: Review my draft plan for building the setup notebook
 Format: Provide feedback as tracked changes with explanations  
 Tone: Professional, constructive, and encouraging
 ```
+
+Subsequent "chained" prompts would refine the "action" to build the first notebook,
+then move on to build related notebooks.
 
 ## Create a README.md for a Folder
 
