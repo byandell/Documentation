@@ -8,6 +8,7 @@ and teams in interacting with projects.
 They illustrate a few principles along the way.
 
 - [Prompt Engineering Guide](https://www.promptingguide.ai)
+- [Prompt Engineering (Claude)](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview)
 - [Prompt Engineering (Tyson Swetnam)](https://tyson-swetnam.github.io/intro-gpt/prompts/#core-features-of-todays-ai-tools)
   - [Core Features of Today's AI Tools](https://tyson-swetnam.github.io/intro-gpt/prompts/#core-features-of-todays-ai-tools)
   - [Getting Started with Prompts](https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure)
@@ -138,6 +139,15 @@ through edits documented through
 [version control](https://github.com/resources/articles/what-is-version-control).
 Of course, saving prompts for those conversation with a project
 will help with later recall of how the project developed.
+
+Another consideration is that chains of prompts in a conversation
+fill up the `context window`, which is finite.
+That is, at some point one must pay attention to what the user
+asks the AI agent to ingest.
+For instance, it is better to ask to have a document summarized
+than to have it read and retained.
+For more information, read about
+[context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents).
 
 ## Create a README.md for a Folder
 
