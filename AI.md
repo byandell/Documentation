@@ -123,9 +123,13 @@ focusing on a single task with underlying code development.
   - [Import a GitHub repository & ask about it in the Gemini web app](https://kb.wisc.edu/ai/135575)
   - [Connect Box | Gemini Enterprise | Google Cloud Documentation](https://cloud.google.com/gemini-enterprise/docs/connect-box)
 - [Antigravity](https://antigravity.google/)
-  - [Antigravity 2.0 Explained (OFOX)](https://ofox.ai/blog/google-antigravity-2-explained-gemini-desktop-agent-platform-2026/)
-  - [Antigravity 2.0 Complete Guide (AIMadeTools)](https://www.aimadetools.com/blog/antigravity-2-complete-guide/)
-  - [Google Antigravity 2.0 Explained (AgentUpdate)](https://www.agentupdate.ai/blog/google-antigravity-2-0-explained/)
+  - Antigravity 2.0
+    - [Antigravity 2.0 Explained (OFOX)](https://ofox.ai/blog/google-antigravity-2-explained-gemini-desktop-agent-platform-2026/)
+    - [Antigravity 2.0 Complete Guide (AIMadeTools)](https://www.aimadetools.com/blog/antigravity-2-complete-guide/)
+    - [Google Antigravity 2.0 Explained (AgentUpdate)](https://www.agentupdate.ai/blog/google-antigravity-2-0-explained/)
+    - [Google Antigravity 1.0 to 2.0/IDE Quick Migration Guide (Dev)](https://dev.to/gde/google-antigravity-10-to-20ide-quick-migration-guide-35p5)
+    - [Chat History Recovery Guide](https://discuss.ai.google.dev/t/chat-history-recovery-guide-recovered-26-missing-sessions-using-pb-injection/136496)
+([README](https://github.com/keisksw/antigravity-chat-recovery))
   - [Antigravity Documentation](https://antigravity.google/docs/get-started)
   - [Full guide from install to Custom rules, workflows and MCP integration](https://antigravity.google/docs/get-started)
   - [Getting Started with Google Antigravity](https://codelabs.developers.google.com/getting-started-google-antigravity).
