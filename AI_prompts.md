@@ -116,7 +116,8 @@ Format: Provide feedback as tracked changes with explanations
 Tone: Professional, constructive, and encouraging
 ```
 
-Subsequent "chained" prompts would refine the "action" to build the first notebook,
+Subsequent "chained" prompts would refine the `Action` framing
+to build the first notebook,
 then move on to build related notebooks.
 
 ## Create a README.md for a Folder
