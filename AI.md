@@ -124,6 +124,8 @@ focusing on a single task with underlying code development.
   - [Connect Box | Gemini Enterprise | Google Cloud Documentation](https://cloud.google.com/gemini-enterprise/docs/connect-box)
 - [Antigravity](https://antigravity.google/)
   - [Antigravity 2.0 Explained (OFOX)](https://ofox.ai/blog/google-antigravity-2-explained-gemini-desktop-agent-platform-2026/)
+  - [Antigravity 2.0 Complete Guide (AIMadeTools)](https://www.aimadetools.com/blog/antigravity-2-complete-guide/)
+  - [Google Antigravity 2.0 Explained (AgentUpdate)](https://www.agentupdate.ai/blog/google-antigravity-2-0-explained/)
   - [Antigravity Documentation](https://antigravity.google/docs/get-started)
   - [Full guide from install to Custom rules, workflows and MCP integration](https://antigravity.google/docs/get-started)
   - [Getting Started with Google Antigravity](https://codelabs.developers.google.com/getting-started-google-antigravity).
