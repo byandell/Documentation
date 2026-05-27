@@ -28,6 +28,7 @@ Below are examples of prompts I have been developing.
 - [AI Agent Conversation](#ai-agent-conversation)
   - [System Instructions](#system-instructions)
   - [Prompt CRAFTs](#prompt-crafts)
+  - [Conversations and Projects](#conversations-and-projects)
 - [Create a README.md for a Folder](#create-a-readmemd-for-a-folder)
 - [Create a Table of Contents for a File](#create-a-table-of-contents-for-a-file)
 - [Convert DOCX files to Markdown](#convert-docx-files-to-markdown)
@@ -60,7 +61,7 @@ You can also (by hand or by prompt to AI) update or append to these files.
 
 ## AI Agent Conversation
 
-A user interacts with an AI agent in a "conversation",
+A user interacts with an AI agent in a "conversation" or "chat session",
 which involves a chain of prompts, often starting with a system instruction
 and moving from a broad framing prompt to specific refinement prompts.
 See
@@ -87,8 +88,15 @@ Include `docstrings` (python) or `roxygen2` (R) and type hints in all code.
 - Always cite sources when making factual claims
 ```
 
+Systems instructions can be entered as prompts, or can be built into a
+`README for agents` as file
+[AGENTS.md](https://agents.md/).
+See for instance Cassie Buhler's
+[LLM lesson exemplar](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md).
+
 - [System Instructions Intro](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/system-instruction-introduction)
 - [System Instructions Use](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/system-instructions)
+- [AGENTS.md](https://agents.md/)
 
 ### Prompt CRAFTs
 
@@ -119,6 +127,17 @@ Tone: Professional, constructive, and encouraging
 Subsequent "chained" prompts would refine the `Action` framing
 to build the first notebook,
 then move on to build related notebooks.
+
+### Conversations and Projects
+
+There could be several different conversations within a project,
+with a project usually in its own workspace or folder.
+Best practices include saving projects as GitHub repos
+to both share with others and evolve the project over time
+through edits documented through
+[version control](https://github.com/resources/articles/what-is-version-control).
+Of course, saving prompts for those conversation with a project
+will help with later recall of how the project developed.
 
 ## Create a README.md for a Folder
 
