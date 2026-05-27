@@ -25,8 +25,9 @@ Below are examples of prompts I have been developing.
 
 - [Saving Prompts and Walkthroughs](#saving-prompts-and-walkthroughs)
   - [Sharing Prompts instead of Code](https://byandell.github.io/Gravity-and-Antigravity/#sharing-prompts-instead-of-code)
-- [System Instructions](#system-instructions)
-- [Project CRAFTs](#project-crafts)
+- [AI Agent Conversation](#ai-agent-conversation)
+  - [System Instructions](#system-instructions)
+  - [Prompt CRAFTs](#prompt-crafts)
 - [Create a README.md for a Folder](#create-a-readmemd-for-a-folder)
 - [Create a Table of Contents for a File](#create-a-table-of-contents-for-a-file)
 - [Convert DOCX files to Markdown](#convert-docx-files-to-markdown)
@@ -57,18 +58,28 @@ You can also (by hand or by prompt to AI) update or append to these files.
 - [mkeller3Projects2: how I created this file and repo](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/tree/master#how-i-created-this-file-and-repo)
 - [sysgenDO1200 prompts](https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/prompts.md)
 
-## System Instructions
+## AI Agent Conversation
 
-System instructions are prior prompts, which act as a global rule to subsequent prompt chaining.
+A user interacts with an AI agent in a "conversation",
+which involves a chain of prompts, often starting with a system instruction
+and moving from a broad framing prompt to specific refinement prompts.
+See
+[Tyson's Advanced Techniques](https://tyson-swetnam.github.io/intro-gpt/prompts/#advanced-techniques).
+
+### System Instructions
+
+System instructions are prior prompts, entered before specific prompts.
+They are meant to act as global rule to subsequent prompt chaining
+in an AI conversation.
 Tyson Swetnam has a nice example that I expand below for python _and_ R:
 
 ```
 Please set up the following system instruction:
 # Project Context
 I'm a data scientist working on machine learning projects.
-For Python code, always provide examples using scikit-learn and pandas.
-For R code, always provide examples using tidyverse.
-Include docstrings (python) or roxygen2 (R)and type hints in all code.
+For Python code, always provide examples using `scikit-learn` and `pandas`.
+For R code, always provide examples using `tidyverse`.
+Include `docstrings` (python) or `roxygen2` (R) and type hints in all code.
 
 # Response Preferences
 - Be concise but thorough
@@ -79,18 +90,31 @@ Include docstrings (python) or roxygen2 (R)and type hints in all code.
 - [System Instructions Intro](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/system-instruction-introduction)
 - [System Instructions Use](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/system-instructions)
 
-## Project CRAFTs
+### Prompt CRAFTs
 
-Each project should have a
+A prompt for a complicated task can have improved focus with the
 [CRAFT](https://tyson-swetnam.github.io/intro-gpt/prompts/#the-craft-framework)
-framework that guides AI agents to build out a project.
-To illustrate, here is Tyson's example for a grant proposal:
+framework.
+To illustrate, here is Tyson's example for a grant proposal.
+Note that this focuses on the "draft introduction" rather than the whole proposal.
 
+```
 Context: I'm preparing a grant proposal for NSF funding on AI in education  
 Role: Act as an experienced grant writer and education researcher  
 Action: Review my draft introduction and suggest improvements  
 Format: Provide feedback as tracked changes with explanations  
 Tone: Professional, constructive, and encouraging
+```
+
+Here is one for beginning to build a `python` notebook:
+
+```
+Context: I'm preparing a set of `python` notebooks to document flooding impact  
+Role: Act as an experienced python programmer and software project manager  
+Action: Review my draft plan for building the setup notebook  
+Format: Provide feedback as tracked changes with explanations  
+Tone: Professional, constructive, and encouraging
+```
 
 ## Create a README.md for a Folder
 
