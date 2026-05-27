@@ -111,6 +111,10 @@ the concept and protocol developed by Anthropic (and first available in
 
 Google Gemini has an enterprise contract with UW-Madison; hence I concentrate a bit on it here.
 [Antigravity](https://antigravity.google/) is the google-native integrated development environment (IDE) for Gemini.
+However, things are changing with 
+[Antigravity 2.0](https://ofox.ai/blog/google-antigravity-2-explained-gemini-desktop-agent-platform-2026/),
+and the jury is out on the best way forward if the goal is primarily
+focusing on a single task with underlying code development.
 
 - [Google Gemini](https://gemini.google.com/)
   - [Generative AI Services at UW–Madison: Tools, Policies & Resources](https://kb.wisc.edu/ai/)
@@ -119,6 +123,7 @@ Google Gemini has an enterprise contract with UW-Madison; hence I concentrate a 
   - [Import a GitHub repository & ask about it in the Gemini web app](https://kb.wisc.edu/ai/135575)
   - [Connect Box | Gemini Enterprise | Google Cloud Documentation](https://cloud.google.com/gemini-enterprise/docs/connect-box)
 - [Antigravity](https://antigravity.google/)
+  - [Antigravity 2.0 Explained (OFOX)](https://ofox.ai/blog/google-antigravity-2-explained-gemini-desktop-agent-platform-2026/)
   - [Antigravity Documentation](https://antigravity.google/docs/get-started)
   - [Full guide from install to Custom rules, workflows and MCP integration](https://antigravity.google/docs/get-started)
   - [Getting Started with Google Antigravity](https://codelabs.developers.google.com/getting-started-google-antigravity).
