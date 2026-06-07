@@ -144,7 +144,7 @@ as a suite of 4 tools
 - `Antigravity 2.0`: full agentic development platform
 - `Antigravity CLI`: command line interface (CLI), used in the terminal
 - `Antigravity SDK`: software development kit (SDK), used by developers to build apps
-- `Antigravity IDE`: integrated development environment (IDE), an updated version of the previous (1.0) IDE
+- `Antigravity IDE`: integrated development environment (IDE), an updated version of the previous (`1.x`) IDE
 
 Unfortunately, this release confused previous users.
 The new tool, with the same name as the previous tool, presents
