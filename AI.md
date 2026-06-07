@@ -118,12 +118,12 @@ We need not be concerned about the MCP mechanics of LLM
 communication with local (or cloud-based) tools and data.
 Instead, we carry on conversations with an AI agent who,
 with explicit permission from us,
-change local code or documents and create reports.
+changes local code or documents and creates reports.
 
 More sophisticated AI environments redesign such tools to offer
 a fully natural language experience in which we may guide a team
 of AI agents, each with its own role and expertise, to accomplish
-a larger task.
+a larger set of tasks.
 
 ### Google Gemini and Antigravity
 
