@@ -105,16 +105,61 @@ Code generation using GitHub repos is improving with the nuanced integration of
 Initially, it seemed important to understand
 [Model context protocol (MCP)](https://modelcontextprotocol.io/),
 the concept and protocol developed by Anthropic (and first available in
-`Claude Code`). The revolutionary idea is that a large language model (LLM) is not just a text generator, but can interact with your other tools and data to get information and take actions. However, this has quickly been integrated into code environments so that one need not be concerned about the MCP mechanics of LLM communication with local (or cloud-based) tools and data to (with explicit permission) change local code or documents and create reports.
+`Claude Code`). The revolutionary idea is that a large language model (LLM) is not just a text generator, but can interact with your other tools and data to get information and take actions.
+However, this was quickly integrated into an
+[integrated development environment (IDE)](https://www.geeksforgeeks.org/blogs/what-is-ide/)
+building on
+[Visual Studio Code (VScode or code)](https://code.visualstudio.com/)
+so that one can edit code manually and/or interact with an LLM via
+an AI agent in a side panel.
+This AI agent uses MCP to connect with your data and code
+under your guidance.
+We need not be concerned about the MCP mechanics of LLM
+communication with local (or cloud-based) tools and data.
+Instead, we carry on conversations with an AI agent who,
+with explicit permission from us,
+change local code or documents and create reports.
+
+More sophisticated AI environments redesign such tools to offer
+a fully natural language experience in which we may guide a team
+of AI agents, each with its own role and expertise, to accomplish
+a larger task.
 
 ### Google Gemini and Antigravity
 
 Google Gemini has an enterprise contract with UW-Madison; hence I concentrate a bit on it here.
-[Antigravity](https://antigravity.google/) is the google-native integrated development environment (IDE) for Gemini.
-However, things are changing with 
-[Antigravity 2.0](https://ofox.ai/blog/google-antigravity-2-explained-gemini-desktop-agent-platform-2026/),
-and the jury is out on the best way forward if the goal is primarily
-focusing on a single task with underlying code development.
+Much of this applies more broadly to other AI environments.
+While Gemini is available via the browser, it is also being embedded
+into a variety of tools.
+These tools are evolving fast, due to competition as well as
+tool advances through use of AI on the tool development process.
+
+Google initially offered `Antigravity 1.0` as an extension of
+[`VScode`](https://code.visualstudio.com/)
+with a Gemini AI agent in the right panel.
+On 19 May 2026, Google released
+[`Antigravity 2.0`](https://antigravity.google/)
+as a suite of 4 tools
+
+- `Antigravity 2.0`: full agentic development platform
+- `Antigravity CLI`: command line interface (CLI), used in the terminal
+- `Antigravity SDK`: software development kit (SDK), used by developers to build apps
+- `Antigravity IDE`: integrated development environment (IDE), an updated version of the previous (1.0) IDE
+
+Unfortunately, this release confused previous users.
+The new tool, with the same name as the previous tool, presents
+as a chat window without IDE-like features, and without clear indication
+about how it differs from the prior tool, or how to get back
+to the prior tool.
+This will be a useful tool for
+[vibe coding](https://vibe-coding.run/)
+but not directly relevant to those of us developing code-based tools.
+`Antigravity IDE` seems better suited for that task.
+Again, unfortunately, the IDE did not carry any previous chat history
+(known as `conversations`) over to 2.0.
+See
+[Recovering Antigravity Conversations](recover_conversations.md)
+for a guide I wrote to recover them based on community response.
 
 - [Google Gemini](https://gemini.google.com/)
   - [Generative AI Services at UW–Madison: Tools, Policies & Resources](https://kb.wisc.edu/ai/)
@@ -123,16 +168,10 @@ focusing on a single task with underlying code development.
   - [Import a GitHub repository & ask about it in the Gemini web app](https://kb.wisc.edu/ai/135575)
   - [Connect Box | Gemini Enterprise | Google Cloud Documentation](https://cloud.google.com/gemini-enterprise/docs/connect-box)
 - [Antigravity](https://antigravity.google/)
-  - Antigravity 2.0
-    - [Antigravity 2.0 Explained (OFOX)](https://ofox.ai/blog/google-antigravity-2-explained-gemini-desktop-agent-platform-2026/)
-    - [Antigravity 2.0 Complete Guide (AIMadeTools)](https://www.aimadetools.com/blog/antigravity-2-complete-guide/)
-    - [Google Antigravity 2.0 Explained (AgentUpdate)](https://www.agentupdate.ai/blog/google-antigravity-2-0-explained/)
-    - [Google Antigravity 1.0 to 2.0/IDE Quick Migration Guide (Dev)](https://dev.to/gde/google-antigravity-10-to-20ide-quick-migration-guide-35p5)
-    - [Chat History Recovery Guide](https://discuss.ai.google.dev/t/chat-history-recovery-guide-recovered-26-missing-sessions-using-pb-injection/136496)
-([README](https://github.com/keisksw/antigravity-chat-recovery))
-  - [Antigravity Documentation](https://antigravity.google/docs/get-started)
+  - [Google Antigravity Documentation](https://antigravity.google/docs/get-started)
   - [Full guide from install to Custom rules, workflows and MCP integration](https://antigravity.google/docs/get-started)
-  - [Getting Started with Google Antigravity](https://codelabs.developers.google.com/getting-started-google-antigravity).
+  - [Getting Started with Google Antigravity (CodeLabs)](https://codelabs.developers.google.com/getting-started-google-antigravity)
+  - [Recovering Antigravity 1.x Conversations](recover_conversations.md)
 
 ### Other AI Environments
 
