@@ -281,9 +281,11 @@ Further, there are things called `skills` that guide how agents work.
 - [Agent Skills.io](https://agentskills.io/home)
 - [GitHub Topics: agent-skills](https://github.com/topics/agent-skills)
 
-See also
-
-- [AGENTS.md](https://agents.md/)
+Systems instructions can be entered as prompts, or can be built into a
+`README for agents` as a project file
+[AGENTS.md](https://agents.md/).
+See for instance Cassie Buhler's
+[LLM lesson exemplar](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md).
 
 Based on the technical paradigms for AI coding assistants (such as Claude Code, GitHub Copilot, Cursor, and Codex), **Agent Skills** (or `SKILL.md`) and **`AGENTS.md`** are two complementary standards used to provide context and capabilities to AI agents.
 
