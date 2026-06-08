@@ -132,7 +132,7 @@ then move on to build related notebooks.
 ### Conversations and Projects
 
 There could be several different conversations within a project,
-with a project usually in its own workspace or folder.
+with a project usually in its own folder or set of folders.
 Best practices include saving projects as GitHub repos
 to both share with others and evolve the project over time
 through edits documented through

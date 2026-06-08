@@ -169,15 +169,15 @@ for a guide I wrote to recover them based on community response.
   - [Connect Box | Gemini Enterprise | Google Cloud Documentation](https://cloud.google.com/gemini-enterprise/docs/connect-box)
 - [Antigravity](https://antigravity.google/)
   - [Google Antigravity Documentation](https://antigravity.google/docs/get-started)
-  - [Full guide from install to Custom rules, workflows and MCP integration](https://antigravity.google/docs/get-started)
   - [Getting Started with Google Antigravity (CodeLabs)](https://codelabs.developers.google.com/getting-started-google-antigravity)
   - [Recovering Antigravity 1.x Conversations](recover_conversations.md)
 
 ### Other AI Environments
 
-`Antigravity` and other IDEs are essentially next-generation versions of
+`Antigravity` and other IDEs began as forks of the
 [VS Code](https://code.visualstudio.com/)
 that integrate LLMs with collaboration on a user's local files and tools.
+Some have evolved away from these roots toward standalone apps.
 
 - [Anthropic's Claude Code](https://www.anthropic.com/product/code)
 - [Open AI's Codex](https://openai.com/index/openai-codex/)
