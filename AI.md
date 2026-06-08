@@ -278,14 +278,45 @@ Further, there are things called `skills` that guide how agents work.
 - [Antigravity Skills (CodeLabs)](https://codelabs.developers.google.com/getting-started-google-antigravity#8)
 - [Claude Skills](https://claude.com/skills)
 - [Anthropic Skills](https://github.com/anthropics/skills)
-- [Agent Skills.io](https://agentskills.io/home)
+- [AgentSkills.io](https://agentskills.io/home)
 - [GitHub Topics: agent-skills](https://github.com/topics/agent-skills)
+
+### AGENTS.md Examples
 
 Systems instructions can be entered as prompts, or can be built into a
 `README for agents` as a project file
 [AGENTS.md](https://agents.md/).
-See for instance Cassie Buhler's
-[LLM lesson exemplar](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md).
+See for instance these example AGENTS.md files with listed sections:
+
+- [Working Group OASIS AGENTS.md](https://github.com/CU-ESIIL/Working_group_OASIS/blob/main/AGENTS.md) (CU ESIIL)
+  - Guidelines for agents
+  - Working Group OASIS and Project Group OASIS
+- [LLM lesson exemplar AGENTS.md](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md) (Cassie Buhler)
+  - [Repository Purpose](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#repository-purpose)
+  - [Step 1: Read the Example](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#step-1-read-the-example)
+  - [Core Steps](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#core-steps)
+  - [After It Runs](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#after-it-runs)
+  - [Directory Structure](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#directory-structure)
+  - [Region Boundaries](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#region-boundaries)
+  - [Required Script Header](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#required-script-header)
+  - [Output Requirements](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#output-requirements)
+  - [Failure Handling](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#failure-handling)
+  - [Resampling Rules](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#resampling-rules)
+  - [Ad-Hoc Preprocessing](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#ad-hoc-preprocessing)
+- [openclaw_container AGENTS.md](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md) (CU ESIIL OASIS ScienceClaw)
+  - [Core Operating Contract](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#core-operating-contract)
+  - [Default Workflow](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#default-workflow)
+  - [Documentation and Website Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#documentation-and-website-policy)
+  - [Testing Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#testing-policy)
+  - [Package and Structure Separation Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#package-and-structure-separation-policy)
+  - [Data Discovery and Data Use Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#data-discovery-and-data-use-policy)
+  - [Data Sovereignty and Intellectual Property Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#data-sovereignty-and-intellectual-property-policy)
+  - [Design and Usability Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#design-and-usability-policy)
+  - [Decision Logging](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#decision-logging)
+  - [OpenClaw Slack/Gateway Operations](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#openclaw-slackgateway-operations)
+  - [Model Routing Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#model-routing-policy)
+
+### Comparison of Agent Skills and AGENTS.md
 
 Based on the technical paradigms for AI coding assistants (such as Claude Code, GitHub Copilot, Cursor, and Codex), **Agent Skills** (or `SKILL.md`) and **`AGENTS.md`** are two complementary standards used to provide context and capabilities to AI agents.
 
