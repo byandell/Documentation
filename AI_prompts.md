@@ -90,15 +90,9 @@ Include `docstrings` (python) or `roxygen2` (R) and type hints in all code.
 - Always cite sources when making factual claims
 ```
 
-Systems instructions can be entered as prompts, or can be built into a
-`README for agents` as file
-[AGENTS.md](https://agents.md/).
-See for instance Cassie Buhler's
-[LLM lesson exemplar](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md).
-
 - [System Instructions Intro](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/system-instruction-introduction)
 - [System Instructions Use](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/system-instructions)
-- [AGENTS.md](https://agents.md/)
+- [Agent Skills](AI.md#agent-skills)
 
 ### Prompt CRAFTs
 
