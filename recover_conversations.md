@@ -33,7 +33,7 @@ The reason your past conversations do not appear in your Antigravity IDE sidebar
 
 1. **How the Sidebar Works:** The IDE sidebar displays past conversations by reading an index file or local metadata store (like `state.vscdb` or a `trajectorySummaries` index).
 2. **Index Reset/Desync:** When the IDE updates, this index file is frequently reset, cleared, or changes format, making the IDE "forget" that these past sessions exist.
-3. **Data is Safe:** Although the index was cleared, your actual chat logs—stored as protobuf (`.pb`) files in `/Users/brianyandell/.gemini/antigravity-ide/conversations`—remain entirely intact on your hard drive. They are just no longer referenced by the IDE's active index.
+3. **Data is Safe:** Although the index was cleared, your actual chat logs—stored as protobuf (`.pb`) files in `~/.gemini/antigravity-ide/conversations`—remain entirely intact on your hard drive. They are just no longer referenced by the IDE's active index.
 
 ### How to Recover Them
 
@@ -51,7 +51,7 @@ There are two parts to why this isn't fixed automatically—one regarding me (yo
 
 ### 1. Why I (the AI Agent) cannot fix it
 
-- **System Sandboxing and Security Rules:** To protect your active sessions and data integrity, my environment is strictly sandboxed. I am explicitly denied write access to your conversation files (`write_file(/Users/brianyandell/.gemini/antigravity-ide/conversations) : denied`). Because of this, I cannot rename files or edit the internal database index on your behalf.
+- **System Sandboxing and Security Rules:** To protect your active sessions and data integrity, my environment is strictly sandboxed. I am explicitly denied write access to your conversation files (`write_file(~/.gemini/antigravity-ide/conversations) : denied`). Because of this, I cannot rename files or edit the internal database index on your behalf.
 
 ### 2. Why the Antigravity application itself doesn't fix it
 
