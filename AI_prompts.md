@@ -30,18 +30,19 @@ Below are examples of prompts I have been developing.
   - [System Instructions](#system-instructions)
   - [Prompt CRAFTs](#prompt-crafts)
   - [Conversations and Projects](#conversations-and-projects)
-- [Create a README.md for a Folder](#create-a-readmemd-for-a-folder)
-- [Create a Table of Contents for a File](#create-a-table-of-contents-for-a-file)
-- [Convert DOCX files to Markdown](#convert-docx-files-to-markdown)
-- [Powerpoint Presentation](#powerpoint-presentation)
-  - [prompts/powerpoint.md](prompts/powerpoint.md)
-- [GitHub Prompts](#github-prompts)
-  - [Commit to GitHub multiple versions of an R file](#commit-to-github-multiple-versions-of-an-r-file)
-    - [prompts/file_versions.md](prompts/file_versions.md)
-  - [Resolve Git Hell Conflicts](#resolve-git-hell-conflicts)
-- [Organize a Workflow](#organize-a-workflow)
-  - [prompts/workflow.md](prompts/workflow.md)
-- [Documenting Folders in ResearchDrive](#documenting-folders-in-researchdrive)
+- [Several Prompt Examples](#several-prompt-examples  )
+  - [Create a README.md for a Folder](#create-a-readmemd-for-a-folder)
+  - [Create a Table of Contents for a File](#create-a-table-of-contents-for-a-file)
+  - [Convert DOCX files to Markdown](#convert-docx-files-to-markdown)
+  - [Powerpoint Presentation](#powerpoint-presentation)
+    - [prompts/powerpoint.md](prompts/powerpoint.md)
+  - [GitHub Prompts](#github-prompts)
+    - [Commit to GitHub multiple versions of an R file](#commit-to-github-multiple-versions-of-an-r-file)
+      - [prompts/file_versions.md](prompts/file_versions.md)
+    - [Resolve Git Hell Conflicts](#resolve-git-hell-conflicts)
+  - [Organize a Workflow](#organize-a-workflow)
+    - [prompts/workflow.md](prompts/workflow.md)
+  - [Documenting Folders in ResearchDrive](#documenting-folders-in-researchdrive)
 
 ## Saving Prompts and Walkthroughs
 
@@ -149,19 +150,11 @@ than to have it read and retained.
 For more information, read about
 [context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents).
 
-## Create a README.md for a Folder
+---
 
-**Prompts:**
+## Several Prompt Examples
 
-- "create a `README.md` document that concisely summarizes contents of this folder at a high level"
-- "update `README.md` with any additional files, obeying restrictions in `.gitignore`"
-
-**Example:**
-
-- [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
-- [sysgenDO1200](https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/README.md) has various examples
-
-## Create a Table of Contents for a File
+### Create a Table of Contents for a File
 
 Just as you can create a `README.md` for a folder, you can create a table of contents for that `README.md` (or any markdown) file.
 
@@ -178,7 +171,7 @@ Just as you can create a `README.md` for a folder, you can create a table of con
 
 Once you have these and establish a "culture" of updating them, the AI will sometimes make the changes on the fly as you evolve your material.
 
-## Convert DOCX files to Markdown
+### Convert DOCX files to Markdown
 
 This prompt use
 [pandoc](https://pandoc.org/) to convert `docx` files to `md` files.
@@ -190,7 +183,7 @@ This app needs to be installed once on a laptop to use.
 
 - [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
 
-## Powerpoint Presentation
+### Powerpoint Presentation
 
 **Prompt:**
 
@@ -221,12 +214,12 @@ However, the prompt as written is rather specific to GTT for DO founder mice,
 and in particular to NZO and B6 strains.
 A user could further specify to replace step 2 with their own version of instructions.
 
-## GitHub Prompts
+### GitHub Prompts
 
 These prompts interact with Git and set up files to be pushed to GitHub. To use these, a GitHub account and working knowledge of how Git and GitHub work is assumed.
 See [GitHub references](./github.md) for more information.
 
-### Commit to GitHub multiple versions of an R file
+#### Commit to GitHub multiple versions of an R file
 
 **Prompt:**
 Find files ending in `[ _]v[0-9]+.R$`
@@ -266,7 +259,7 @@ For details of versions, see for instance
 [MafA_SNP_DEG_Integration.R](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/MafA_SNP_DEG_Integration.R)
 and click on `Blame` (top left) or `History` (top right).
 
-### Resolve Git Hell Conflicts
+#### Resolve Git Hell Conflicts
 
 **Prompt:** "i messed up and forgot to do `git pull` before commiting new files. Now I am in git hell. See the message with `git status`. `Walk me through how to fix this.`"
 
@@ -276,7 +269,7 @@ This was used on the Multiple Versions prompt above.
 The first time, I forgot to `git pull` changes I made on `GitHub` before starting. I tried to solve by myself and got lost. AI sorted it out.
 See [GitHub references](./github.md) for more information.
 
-## Organize a Workflow
+### Organize a Workflow
 
 This complicated prompt requires various tools on one's laptop,
 notably
@@ -315,7 +308,7 @@ At some point, I asked AI the above prompt, which resulted in a comprehensive
 [workflow prompt](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-prompt).
 I later asked the AI agent to modify the workflow prompt as I added subsequent workflow steps.
 
-## Documenting Folders in ResearchDrive
+### Documenting Folders in ResearchDrive
 
 Several of the prompts shown earlier concern building documentation for data and code kept in folders in the
 [ResearchDrive (RD)](https://it.wisc.edu/services/researchdrive/).

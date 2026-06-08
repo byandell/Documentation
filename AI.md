@@ -17,6 +17,7 @@ To learn about (generative) AI, start with the self-paced workshop on
   - [Prompts to Organize Workflows](#prompts-to-organize-workflows)
   - [Learning about prompts](#learning-about-prompts)
   - [Prompt Engineering References](#prompt-engineering-references)
+- [Agent Skills](#agent-skills)
 
 ## Articles about AI
 
@@ -268,3 +269,80 @@ Below are some references on prompt engineering quickly culled from the web:
 - [What Is Prompt Engineering? (Coursera)](https://cloud.google.com/discover/what-is-prompt-engineering)
 - [What is prompt engineering? (GitHub)](https://github.com/resources/articles/what-is-prompt-engineering)
 - [AI Prompt Examples](AI_prompts.md)
+
+## Agent Skills
+
+Further, there are things called `skills` that guide how agents work.
+
+- [Antigravity Agent Skills](https://antigravity.google/docs/skills)
+- [Antigravity Skills (CodeLabs)](https://codelabs.developers.google.com/getting-started-google-antigravity#8)
+- [Claude Skills](https://claude.com/skills)
+- [Anthropic Skills](https://github.com/anthropics/skills)
+- [Agent Skills.io](https://agentskills.io/home)
+- [GitHub Topics: agent-skills](https://github.com/topics/agent-skills)
+
+See also
+
+- [AGENTS.md](https://agents.md/)
+
+Based on the technical paradigms for AI coding assistants (such as Claude Code, GitHub Copilot, Cursor, and Codex), **Agent Skills** (or `SKILL.md`) and **`AGENTS.md`** are two complementary standards used to provide context and capabilities to AI agents.
+
+A comparative breakdown highlights their distinct roles, structures, and intended use cases:
+
+| Feature | `AGENTS.md` | Agent Skills (`SKILL.md`) |
+| --- | --- | --- |
+| **Primary Purpose** | Defines **repository-specific context** (tech stack, coding standards, project layout, architecture rules). | Packages **procedural knowledge** or actionable automation capabilities (how to deploy, audit, generate code, or test). |
+| **Scope** | Bound to a specific codebase/repository (Static local context). | Portable across different repositories and platforms (Reusable "recipes"). |
+| **Core Components** | A single Markdown file matching the [agents.md specification](https://agents.md). | A folder structure containing `SKILL.md` (frontmatter + rules) and optional automation scripts (Bash, Python, Node). |
+| **Trigger Mechanism** | Loaded automatically when an agent begins working inside that repository. | Activated dynamically on-demand when the agent recognizes a relevant trigger phrase or task. |
+
+---
+
+### 1. `AGENTS.md` (Repository Context)
+
+Think of `AGENTS.md` as the **onboarding handbook** for an AI agent entering a specific project. It tells the agent *what* the project is and *how* it should behave to blend in seamlessly with human contributors.
+
+- **Target Audience:** The AI agent working *inside* that specific codebase.
+- **Content Focus:** * Tech stack definitions (e.g., React 18, TypeScript, Tailwind).
+- Directory layout (where to find hooks, components, or API services).
+- Design tokens and rigid rules (e.g., *"Do not introduce new dependencies," "Prefer existing `Button` component"*).
+
+- **Layering & Scope:** Can be nested. A root `AGENTS.md` might define company-wide standards, while a nested `services/api/AGENTS.md` layers on rules specific only to the backend service.
+
+### 2. Agent Skills / `SKILL.md` (Actionable Capabilities)
+
+Think of Agent Skills as a **toolbox or an app store** for the AI agent. Instead of general project guidelines, a skill teaches the agent how to execute a complex, multi-step workflow.
+
+- **Target Audience:** The AI agent across *any* project that requires this specific ability.
+- **Content Focus:**
+- Strict step-by-step procedural workflows (e.g., `/spec`, `/plan`, `/review`).
+- Structural anti-rationalization tables (rules preventing the agent from cutting corners, like skipping unit tests).
+- Executable automation helpers (scripts located in a nested `scripts/` directory).
+
+- **Structure Requirements:** Requires structured YAML frontmatter at the top:
+
+```markdown
+---
+name: vercel-deploy
+description: Deploy my web app to Vercel production.
+---
+# Deploy Skill
+...
+
+```
+
+### Summary of Differences
+
+While **`AGENTS.md`** sets the **boundaries and context** of *where* the agent is working, **Agent Skills** extend the **functional capability** of *what* the agent can actually execute. For example, your `AGENTS.md` might dictate that you use Vitest for unit testing, but you would activate an `agent-skill` to execute a structured test-driven development workflow using those tools.
+
+## Create a README.md for a Folder
+
+**Prompts:**
+
+- "create a `README.md` document that concisely summarizes contents of this folder at a high level"
+- "update `README.md` with any additional files, obeying restrictions in `.gitignore`"
+
+**Example:**
+
+- [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
+- [sysgenDO1200](https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/README.md) has various examples
