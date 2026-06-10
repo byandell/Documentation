@@ -9,6 +9,7 @@ To learn about (generative) AI, start with the self-paced workshop on
   - [How might we think about AI?](#how-might-we-think-about-ai)
   - [What about ethics and environmental impact of AI?](#what-about-ethics-and-environmental-impact-of-ai)
 - [AI Environments](#ai-environments)
+  - [Cloud-Based Educational Environments](#cloud-based-educational-environments)
   - [Google Gemini and Antigravity](#google-gemini-and-antigravity)
   - [Other AI Environments](#other-ai-environments)
   - [Agentic AI](#agentic-ai)
@@ -127,6 +128,18 @@ Instead, we carry on conversations with an AI agent who,
 with explicit permission from us,
 changes local code or documents and creates reports.
 
+More sophisticated AI environments redesign such tools to offer
+a fully natural language experience in which we may guide a team
+of AI agents, each with its own role and expertise, to accomplish
+a larger set of tasks.
+
+### Cloud-Based Educational Environments
+
+Cloud-based educational environments enable students and instructors
+to learn code, optionally with AI agent interactions,
+without having to try to set up systems on their
+own, idiosyncratic devices.
+
 For those working directly in GitHub,
 code generation within repos is improving with the nuanced integration of
 [GitHub Copilot](https://github.com/features/copilot),
@@ -135,10 +148,29 @@ both for repo editing and for use in
 which is an cloud-based IDE optionally
 integrated with each GitHub repo.
 
-More sophisticated AI environments redesign such tools to offer
-a fully natural language experience in which we may guide a team
-of AI agents, each with its own role and expertise, to accomplish
-a larger set of tasks.
+[Google Colab](https://colab.research.google.com/)
+ provides a free and simple way to code in R and Python,
+with optional AI support via
+[Google Gemini](https://gemini.google/about/).
+
+[CyVerse Discovery Environment](https://de.cyverse.org/)
+is a cloud-based enviroment for data science and bioinformatics.
+I have used this in conjunction with
+[Environmental Science and Innovation & Impact Laboratory (ESIIL)](https://esiil.org/)
+to catalyze instruction, research and tool development.
+Recently, they have added AI engines
+[Roo and Cline](https://www.openxcell.com/blog/roo-code-vs-cline/)
+to their VScode IDE environment.
+Alternatively, we can use
+[AI Verde](https://chat.cyverse.ai/)
+within the CyVerse DE to tunnel a variety of LLMs
+into either CyVerse DE or other IDEs of our choice.
+See
+[AI-VERDE Manual & Resource Site](https://aiverde-docs.cyverse.ai/)
+and
+[AI Verde API](https://aiverde-docs.cyverse.ai/api/).
+These require an educational account, such as via `ESIIL`
+or `CyVerse` and some technical guidance.
 
 ### Google Gemini and Antigravity
 
