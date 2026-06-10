@@ -169,8 +169,9 @@ See
 [AI-VERDE Manual & Resource Site](https://aiverde-docs.cyverse.ai/)
 and
 [AI Verde API](https://aiverde-docs.cyverse.ai/api/).
-These require an educational account, such as via `ESIIL`
-or `CyVerse` and some technical guidance.
+These require an educational account,
+such as via `ESIIL` or `CyVerse`,
+and some technical guidance.
 
 ### Google Gemini and Antigravity
 
