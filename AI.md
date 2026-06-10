@@ -8,16 +8,21 @@ To learn about (generative) AI, start with the self-paced workshop on
 - [Articles about AI](#articles-about-ai)
   - [How might we think about AI?](#how-might-we-think-about-ai)
   - [What about ethics and environmental impact of AI?](#what-about-ethics-and-environmental-impact-of-ai)
-- [AI Tools and Agents](#ai-tools-and-agents)
+- [AI Environments](#ai-environments)
   - [Google Gemini and Antigravity](#google-gemini-and-antigravity)
   - [Other AI Environments](#other-ai-environments)
+  - [Agentic AI](#agentic-ai)
 - [Prompt Engineering](#prompt-engineering)
   - [AI Prompt Examples](AI_prompts.md)
   - [Sharing Prompts instead of Code](https://byandell.github.io/Gravity-and-Antigravity/#sharing-prompts-instead-of-code)
   - [Prompts to Organize Workflows](#prompts-to-organize-workflows)
   - [Learning about prompts](#learning-about-prompts)
   - [Prompt Engineering References](#prompt-engineering-references)
-- [Agent Skills](#agent-skills)
+- [Context Engineering](#context-engineering)
+  - [Context Engineering References](#context-engineering-references)
+  - [Comparison of Agent Skills and AGENTS.md](#comparison-of-agent-skills-and-agentsmd)
+  - [AGENTS.md (Repository Context)](#agentsmd-repository-context)
+  - [Agent Skills / SKILL.md (Actionable Capabilities)](#agent-skills--skillmd-actionable-capabilities)
 
 ## Articles about AI
 
@@ -92,16 +97,17 @@ Here are maps and reports of data centers in the US:
 - [Data Center Infrastructure in the United States, March 2026 (Nat Lib Rockies)](https://docs.nlr.gov/docs/gen/fy26/99908.jpg)
 - [Data Center Map](https://www.datacentermap.com/)
 
-## AI Tools and Agents
+## AI Environments
 
+We typically work with AI within an environment.
+Most "traditional" tools are now flavored with AI suggestions,
+including messaging and email apps
+(which can be optionally turned off).
 There are now innumerable AI tools for coding and analysis,
 and this will not be a compendium.
 Instead, I am trying to keep abreast of the landscape
+that seems relevant to me,
 and will add notes here as I learn more.
-When using most "traditional" tools, there are now flavors of AI that
-have infiltrated, including messaging and email apps.
-Code generation using GitHub repos is improving with the nuanced integration of
-[GitHub Copilot](https://github.com/features/copilot).
 
 Initially, it seemed important to understand
 [Model context protocol (MCP)](https://modelcontextprotocol.io/),
@@ -120,6 +126,14 @@ communication with local (or cloud-based) tools and data.
 Instead, we carry on conversations with an AI agent who,
 with explicit permission from us,
 changes local code or documents and creates reports.
+
+For those working directly in GitHub,
+code generation within repos is improving with the nuanced integration of
+[GitHub Copilot](https://github.com/features/copilot),
+both for repo editing and for use in
+[GitHub Codespaces](https://github.com/features/codespaces),
+which is an cloud-based IDE optionally
+integrated with each GitHub repo.
 
 More sophisticated AI environments redesign such tools to offer
 a fully natural language experience in which we may guide a team
@@ -175,7 +189,7 @@ for a guide I wrote to recover them based on community response.
 
 ### Other AI Environments
 
-`Antigravity` and other IDEs began as forks of the
+`Antigravity` and many other IDEs began as forks of the
 [VS Code](https://code.visualstudio.com/)
 that integrate LLMs with collaboration on a user's local files and tools.
 Some have evolved away from these roots toward standalone apps.
@@ -186,13 +200,27 @@ Some have evolved away from these roots toward standalone apps.
 - [Cursor MCP Docs](https://docs.cursor.sh/mcp)
 - [Windsurf Review 2026: The AI IDE Redefining Coding Workflows | Second Talent](https://secondtalent.com/insights/windsurf-review-2026-the-ai-ide-redefining-coding-workflows/)
 
-As I understand it, Cursor and Windsurf are less comprehensive IDEs.
-There are concepts of "AI-native" and "agent-native" IDEs, but I am not sure I fully grasp the distinction.
-It seems that "AI-native" concerns conversations with LLMs, while "agent-native" concerns the use of AI agents to do work.
-See for instance [Agentic AI](https://tyson-swetnam.github.io/intro-gpt/agentic/).
-
 See caution in [Using R in VS Code with Radian](radian.md)
 about `radian` and AI environments.
+
+### Agentic AI
+
+There are concepts of "AI-native" and "agent-native" IDEs, but I am not sure I fully grasp the distinction.
+It seems that "AI-native" concerns conversations with LLMs, while "agent-native" concerns the use of AI agents to do work.
+Further, the straightforward use of conversations via prompt
+and context engineering is often described (as below) in the
+setting of using one AI agent at a time.
+Nowadays, sophisticated users of AI orchestrate multiple AI agents
+to accomplish complex tasks.
+This takes time and practice to build up both our ability
+to understand and use multiple agents,
+and selection and organization of appropriate agents for a task.
+Further, multiple agents will likely require a larger monthly
+fee, if using commercial agents.
+See for instance
+
+- [Agentic AI](https://tyson-swetnam.github.io/intro-gpt/agentic/)
+- [Multi-Agent Orchestration Guide](https://www.agensi.io/learn/multi-agent-orchestration-guide)
 
 ## Prompt Engineering
 
@@ -270,22 +298,83 @@ Below are some references on prompt engineering quickly culled from the web:
 - [What is prompt engineering? (GitHub)](https://github.com/resources/articles/what-is-prompt-engineering)
 - [AI Prompt Examples](AI_prompts.md)
 
-## Agent Skills
+## Context Engineering
 
-Further, there are things called `skills` that guide how agents work.
+A conversation with an AI agent involves a chain of prompts and their responses,
+which over time fill up an agent's limited attention budget,
+otherwise known as the `context window`.
+At some point the AI agent runs out of gas and
+either cannot proceed or starts hallucinating,
+and we might consider moving to a new conversation.
+Curating the material passed to an AI agent, including prompts
+and shared documents, is known as `context engineering`.
 
+Simply put, we should design our conversations
+so that they are sufficiently focused to achieve our goal.
+For instance, limit unnecessary background information, and limit the size of documents we
+ask the AI agent to ingest.
+It is better to ask an AI agent to summarize a document
+than to have it read and retained,
+and then perhaps save that summary
+for use in subsequent conversations.
+
+Project-level systems instructions and agent skills,
+project context, etc.
+can be built into a project's
+"README for agents" called
+[AGENTS.md](https://agents.md/).
+The challenge with `AGENTS.md` is that it is automatically loaded into the
+context window by AI agents working in the project.
+Hence, it already fills up part of the context window,
+limiting space for your conversation prompts and results.
+One solution is to have a concise `AGENTS.md`
+(with perhaps a more detailed `AGENTS-LONG.md` loaded when needed)
+This works well as long as the concise version is sufficient.
+
+Another trick is to use `agent skills` located
+in one or more `skills` folders, each containing a `SKILL.md` file.
+These are reusable packages of knowledge that extend what an agent
+can do to handle different aspects of a project.
+
+### Context Engineering References
+
+- [Agent Skills for Context Engineering (Murat Cankoylan)](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering)
 - [Antigravity Agent Skills](https://antigravity.google/docs/skills)
 - [Antigravity Skills (CodeLabs)](https://codelabs.developers.google.com/getting-started-google-antigravity#8)
 - [Claude Skills](https://claude.com/skills)
 - [Anthropic Skills](https://github.com/anthropics/skills)
+& [Anthropic Context Engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents).
 - [AgentSkills.io](https://agentskills.io/home)
 - [GitHub Topics: agent-skills](https://github.com/topics/agent-skills)
 
-### AGENTS.md Examples
+### Comparison of Agent Skills and AGENTS.md
 
-Systems instructions can be entered as prompts, or can be built into a
-`README for agents` as a project file
-[AGENTS.md](https://agents.md/).
+Based on the technical paradigms for AI coding assistants (such as Claude Code, GitHub Copilot, Cursor, and Codex), **Agent Skills** (or `SKILL.md`) and **`AGENTS.md`** are two complementary standards used to provide context and capabilities to AI agents.
+
+A comparative breakdown highlights their distinct roles, structures, and intended use cases:
+
+| Feature | `AGENTS.md` | Agent Skills (`SKILL.md`) |
+| --- | --- | --- |
+| **Primary Purpose** | Defines **repository-specific context** (tech stack, coding standards, project layout, architecture rules). | Packages **procedural knowledge** or actionable automation capabilities (how to deploy, audit, generate code, or test). |
+| **Scope** | Bound to a specific codebase/repository (Static local context). | Portable across different repositories and platforms (Reusable "recipes"). |
+| **Core Components** | A single Markdown file matching the [agents.md specification](https://agents.md). | A folder structure containing `SKILL.md` (frontmatter + rules) and optional automation scripts (Bash, Python, Node). |
+| **Trigger Mechanism** | Loaded automatically when an agent begins working inside that repository. | Activated dynamically on-demand when the agent recognizes a relevant trigger phrase or task. |
+
+---
+
+### `AGENTS.md` (Repository Context)
+
+Think of `AGENTS.md` as the **onboarding handbook** for an AI agent entering a specific project. It tells the agent *what* the project is and *how* it should behave to blend in seamlessly with human contributors.
+
+- **Target Audience:** The AI agent working *inside* that specific codebase.
+- **Content Focus:**
+  - Tech stack definitions (e.g., React 18, TypeScript, Tailwind).
+  - Directory layout (where to find hooks, components, or API services).
+  - Design tokens and rigid rules (e.g., *"Do not introduce new dependencies," "Prefer existing `Button` component"*).
+- **Layering & Scope:** Can be nested. A root `AGENTS.md` might define company-wide standards, while a nested `services/api/AGENTS.md` layers on rules specific only to the backend service.
+
+#### AGENTS.md Examples
+
 See for instance these example AGENTS.md files with listed sections:
 
 - [Working Group OASIS AGENTS.md](https://github.com/CU-ESIIL/Working_group_OASIS/blob/main/AGENTS.md) (CU ESIIL)
@@ -316,42 +405,15 @@ See for instance these example AGENTS.md files with listed sections:
   - [OpenClaw Slack/Gateway Operations](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#openclaw-slackgateway-operations)
   - [Model Routing Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#model-routing-policy)
 
-### Comparison of Agent Skills and AGENTS.md
-
-Based on the technical paradigms for AI coding assistants (such as Claude Code, GitHub Copilot, Cursor, and Codex), **Agent Skills** (or `SKILL.md`) and **`AGENTS.md`** are two complementary standards used to provide context and capabilities to AI agents.
-
-A comparative breakdown highlights their distinct roles, structures, and intended use cases:
-
-| Feature | `AGENTS.md` | Agent Skills (`SKILL.md`) |
-| --- | --- | --- |
-| **Primary Purpose** | Defines **repository-specific context** (tech stack, coding standards, project layout, architecture rules). | Packages **procedural knowledge** or actionable automation capabilities (how to deploy, audit, generate code, or test). |
-| **Scope** | Bound to a specific codebase/repository (Static local context). | Portable across different repositories and platforms (Reusable "recipes"). |
-| **Core Components** | A single Markdown file matching the [agents.md specification](https://agents.md). | A folder structure containing `SKILL.md` (frontmatter + rules) and optional automation scripts (Bash, Python, Node). |
-| **Trigger Mechanism** | Loaded automatically when an agent begins working inside that repository. | Activated dynamically on-demand when the agent recognizes a relevant trigger phrase or task. |
-
----
-
-### 1. `AGENTS.md` (Repository Context)
-
-Think of `AGENTS.md` as the **onboarding handbook** for an AI agent entering a specific project. It tells the agent *what* the project is and *how* it should behave to blend in seamlessly with human contributors.
-
-- **Target Audience:** The AI agent working *inside* that specific codebase.
-- **Content Focus:** * Tech stack definitions (e.g., React 18, TypeScript, Tailwind).
-- Directory layout (where to find hooks, components, or API services).
-- Design tokens and rigid rules (e.g., *"Do not introduce new dependencies," "Prefer existing `Button` component"*).
-
-- **Layering & Scope:** Can be nested. A root `AGENTS.md` might define company-wide standards, while a nested `services/api/AGENTS.md` layers on rules specific only to the backend service.
-
-### 2. Agent Skills / `SKILL.md` (Actionable Capabilities)
+### Agent Skills / `SKILL.md` (Actionable Capabilities)
 
 Think of Agent Skills as a **toolbox or an app store** for the AI agent. Instead of general project guidelines, a skill teaches the agent how to execute a complex, multi-step workflow.
 
 - **Target Audience:** The AI agent across *any* project that requires this specific ability.
 - **Content Focus:**
-- Strict step-by-step procedural workflows (e.g., `/spec`, `/plan`, `/review`).
-- Structural anti-rationalization tables (rules preventing the agent from cutting corners, like skipping unit tests).
-- Executable automation helpers (scripts located in a nested `scripts/` directory).
-
+  - Strict step-by-step procedural workflows (e.g., `/spec`, `/plan`, `/review`).
+  - Structural anti-rationalization tables (rules preventing the agent from cutting corners, like skipping unit tests).
+  - Executable automation helpers (scripts located in a nested `scripts/` directory).
 - **Structure Requirements:** Requires structured YAML frontmatter at the top:
 
 ```markdown
@@ -364,18 +426,15 @@ description: Deploy my web app to Vercel production.
 
 ```
 
+Comments gleaned from Gemini browser summary:
+
+- Agent skills typically refer to the capabilities or functions an AI can perform.
+- The context window includes the information the AI can reference during a conversation.
+- Skills may influence the AI's responses but are not directly counted in the context window.
+- The context window primarily consists of user inputs and previous exchanges.
+- Skills can enhance the AI's ability to interpret and respond to context effectively.
+- Understanding the distinction helps clarify how AI processes information during interactions.
+
 ### Summary of Differences
 
 While **`AGENTS.md`** sets the **boundaries and context** of *where* the agent is working, **Agent Skills** extend the **functional capability** of *what* the agent can actually execute. For example, your `AGENTS.md` might dictate that you use Vitest for unit testing, but you would activate an `agent-skill` to execute a structured test-driven development workflow using those tools.
-
-## Create a README.md for a Folder
-
-**Prompts:**
-
-- "create a `README.md` document that concisely summarizes contents of this folder at a high level"
-- "update `README.md` with any additional files, obeying restrictions in `.gitignore`"
-
-**Example:**
-
-- [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
-- [sysgenDO1200](https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/README.md) has various examples

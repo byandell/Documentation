@@ -135,18 +135,21 @@ through edits documented through
 Of course, saving prompts for those conversation with a project
 will help with later recall of how the project developed.
 
-Another consideration is that chains of prompts in a conversation
-fill up the `context window`, which is finite.
-That is, at some point one must pay attention to what the user
-asks the AI agent to ingest.
-For instance, it is better to ask to have a document summarized
-than to have it read and retained.
-For more information, read about
-[context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents).
-
 ---
 
 ## Several Prompt Examples
+
+### Create a README.md for a Folder
+
+**Prompts:**
+
+- "create a `README.md` document that concisely summarizes contents of this folder at a high level"
+- "update `README.md` with any additional files, obeying restrictions in `.gitignore`"
+
+**Example:**
+
+- [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
+- [sysgenDO1200](https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/README.md) has various examples
 
 ### Create a Table of Contents for a File
 
