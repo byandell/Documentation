@@ -13,6 +13,7 @@ To learn about (generative) AI, start with the self-paced workshop on
   - [Google Gemini and Antigravity](#google-gemini-and-antigravity)
   - [Other AI Environments](#other-ai-environments)
   - [Agentic AI](#agentic-ai)
+  - [Large Language Models](#large-language-models)
 - [Prompt Engineering](#prompt-engineering)
   - [AI Prompt Examples](AI_prompts.md)
   - [Sharing Prompts instead of Code](https://byandell.github.io/Gravity-and-Antigravity/#sharing-prompts-instead-of-code)
@@ -169,9 +170,17 @@ See
 [AI-VERDE Manual & Resource Site](https://aiverde-docs.cyverse.ai/)
 and
 [AI Verde API](https://aiverde-docs.cyverse.ai/api/).
-These require an educational account,
-such as via `ESIIL` or `CyVerse`,
-and some technical guidance.
+
+The NSF-funded
+[ACCESS](https://access-ci.org)
+provides free access to compute and AI resources at scale.
+These include
+[Jetstream2](https://jetstream-2.iu.edu),
+[HTCondor](https://htcondor.org)
+and
+[PATh](https://path-cc.io).
+These typically require an educational account
+and benefit from technical guidance.
 
 ### Google Gemini and Antigravity
 
@@ -254,6 +263,80 @@ See for instance
 
 - [Agentic AI](https://tyson-swetnam.github.io/intro-gpt/agentic/)
 - [Multi-Agent Orchestration Guide](https://www.agensi.io/learn/multi-agent-orchestration-guide)
+
+### Large Language Models
+
+Large language models (LLMs) are basically big transformer networks,
+with nodes joined by edges that have weights based on the
+strength of connection.
+The nodes and edges (connections) for a particular LLM
+are fixed, but the weights on the edges can be adjusted
+based on data.
+The nodes are representations (tokens) of (parts of) words,
+or images or audio or other snippets of data.
+Often this is described as learning patterns to predict
+the next token in a sequence.
+At scale, with billions or trillions of nodes,
+these LLMs are able to quickly string together useful
+responses to prompts to address a surprising range
+of tasks.
+I am a novice on this, so appeal to others
+through links below to find good explanations.
+
+#### What are large language models (LLMs)?
+
+- [IBM](https://www.ibm.com/think/topics/large-language-models)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/artificial-intelligence/large-language-model-llm/)
+- [AWS](https://aws.amazon.com/what-is/large-language-model/)
+
+#### How do encoders and decoders work?
+
+LLMs work by encoding text into numerical representations and then decoding them back into text. For instance, see
+[Understanding Encoder-Only and Decoder-Only Transformer Models (Sebastian Raschka)](https://magazine.sebastianraschka.com/p/understanding-encoder-and-decoder)
+
+- **Input Tokenization:** Text input is split into smaller units called tokens, which can be words or subwords.
+- **Encoding:** Tokens are converted into numerical representations (embeddings) that capture their meanings.
+- **Contextualization:** The model processes these embeddings through multiple layers to understand context and relationships between tokens.
+- **Decoding:** The model generates output tokens based on the processed information, predicting the next token in the sequence.
+- **Detokenization:** The generated tokens are converted back into human-readable text.
+- **Fine-tuning:** The model can be further trained on specific tasks to improve its performance in generating relevant responses.
+
+#### What is a Mixture of Experts (MoE)?
+
+- [Maarten Grootendorst](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/nlp/what-is-mixture-of-experts-moe/)
+- [Hugging Face](https://huggingface.co/blog/moe)
+- [Siyuan Mu and Sen Lin (2026)](https://arxiv.org/abs/2503.07137)
+
+#### Open Source LLMs
+
+The file
+[verde_models.csv](verde_models.csv)
+has open-source LLMs currently available (10 June 2026) via
+[AI Verde](https://chat.cyverse.ai/).
+Information includes:
+
+- Technical Specifications
+  - **Developer/Organization:** creator of model (e.g., Zhipu AI, Moonshot AI, Google, Meta). Tracking the lineage and ecosystem of the models.
+  - **Context Window:** maximum number of tokens model can process in a single prompt (e.g., 32k, 128k, 1M). Critical factor for use cases involving long documents.
+  - **Training Tokens:** number of tokens model was trained on, correlates with overall knowledge and reasoning capabilities.
+- Operational & Licensing Details
+ **Release Date:** how "state-of-the-art" it is relative to newer releases.
+  - **License Type:** open-source (e.g., Apache 2.0, Llama 3 License) or proprietary. Determines how the model can be used commercially.
+  - **Quantization Level:** bit-depth (e.g., FP16, INT8, 4-bit)Clarifies the memory requirements.
+- Performance & Capabilities
+  - **Benchmark Scores (e.g., MMLU, GSM8K):** Including scores from standardized tests provides a quantitative way to compare the "intelligence" or reasoning ability of different models.
+  - **Primary Modalities:** Note whether the model is text-only or multimodal (e.g., can process images, audio, or video).
+  - **Supported Languages:** A column indicating whether the model is English-centric, bilingual (e.g., English/Chinese), or multilingual.### Example of an expanded table structure:
+
+Sources researched by Gemini include:
+
+- [glm-4.7-flash - Ollama](https://ollama.com/library/glm-4.7-flash)
+- [Gemma 3 12B - API Pricing & Benchmarks | OpenRouter](https://openrouter.ai/models/google/gemma-3-12b)
+- [Phi-4 - Microsoft - NGC Catalog - NVIDIA](https://catalog.ngc.nvidia.com/models/nvidia/phi-4/overview)
+- [[2505.09388] Qwen3 Technical Report - arXiv](https://arxiv.org/abs/2505.09388)
+- [MiniMax M2 - API Pricing & Benchmarks - OpenRouter](https://openrouter.ai/models/minimax/minimax-m2)
+- [gpt-oss-120b - API Pricing & Benchmarks | OpenRouter](https://openrouter.ai/models/gpt-oss-120b)
 
 ## Prompt Engineering
 
