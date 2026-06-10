@@ -26,7 +26,7 @@ To learn about (generative) AI, start with the self-paced workshop on
 
 ## Articles about AI
 
-Interestingly, when I started populating this list, AI halucinated several entries, which I had to go back and properly curate.
+Interestingly, when I started populating this list, AI hallucinated several entries, which I had to go back and properly curate.
 
 ### How might we think about AI?
 
