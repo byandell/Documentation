@@ -145,7 +145,7 @@ code generation within repos is improving with the nuanced integration of
 [GitHub Copilot](https://github.com/features/copilot),
 both for repo editing and for use in
 [GitHub Codespaces](https://github.com/features/codespaces),
-which is an cloud-based IDE optionally
+which is a cloud-based IDE optionally
 integrated with each GitHub repo.
 
 [Google Colab](https://colab.research.google.com/)
