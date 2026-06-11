@@ -312,8 +312,11 @@ LLMs work by encoding text into numerical representations and then decoding them
 
 The file
 [verde_models.csv](verde_models.csv)
-has open-source LLMs currently available (10 June 2026) via
-[AI Verde](https://chat.cyverse.ai/).
+has open-source LLMs
+ currently available (10 June 2026) via
+[AI Verde](https://chat.cyverse.ai/),
+which are cataloged on
+[HuggingFace](https://huggingface.co/models).
 Information includes:
 
 - Technical Specifications
