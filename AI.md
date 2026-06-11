@@ -323,11 +323,11 @@ Information includes:
 - Operational & Licensing Details
  **Release Date:** how "state-of-the-art" it is relative to newer releases.
   - **License Type:** open-source (e.g., Apache 2.0, Llama 3 License) or proprietary. Determines how the model can be used commercially.
-  - **Quantization Level:** bit-depth (e.g., FP16, INT8, 4-bit)Clarifies the memory requirements.
+  - **Quantization Level:** bit-depth (e.g., FP16, INT8, 4-bit). Clarifies the memory requirements.
 - Performance & Capabilities
-  - **Benchmark Scores (e.g., MMLU, GSM8K):** Including scores from standardized tests provides a quantitative way to compare the "intelligence" or reasoning ability of different models.
-  - **Primary Modalities:** Note whether the model is text-only or multimodal (e.g., can process images, audio, or video).
-  - **Supported Languages:** A column indicating whether the model is English-centric, bilingual (e.g., English/Chinese), or multilingual.### Example of an expanded table structure:
+  - **Benchmark Scores (e.g., MMLU, GSM8K):** standardized tests  compare the "intelligence" or reasoning ability of different models.
+  - **Primary Modalities:** text-only or multimodal (e.g., can process images, audio, or video).
+  - **Supported Languages:** English-centric, bilingual (e.g., English/Chinese), or multilingual.
 
 Sources researched by Gemini include:
 
