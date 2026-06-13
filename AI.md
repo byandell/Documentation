@@ -159,27 +159,30 @@ is a cloud-based enviroment for data science and bioinformatics.
 I have used this in conjunction with
 [Environmental Science and Innovation & Impact Laboratory (ESIIL)](https://esiil.org/)
 to catalyze instruction, research and tool development.
-Recently, they have added AI engines
+Recently, CyVerse DE added AI engines
 [Roo and Cline](https://www.openxcell.com/blog/roo-code-vs-cline/)
 to their VScode IDE environment.
-Alternatively, we can use
+(**NB: Roo and Cline seem to work best in a Chrome browser**.)
+We can use LLM APIs from
 [AI Verde](https://chat.cyverse.ai/)
-within the CyVerse DE to tunnel a variety of LLMs
+to tunnel a variety of LLMs
 into either CyVerse DE or other IDEs of our choice.
 See
 [AI-VERDE Manual & Resource Site](https://aiverde-docs.cyverse.ai/)
 and
 [AI Verde API](https://aiverde-docs.cyverse.ai/api/).
 
-The NSF-funded
-[ACCESS](https://access-ci.org)
-provides free access to compute and AI resources at scale.
-These include
-[Jetstream2](https://jetstream-2.iu.edu),
+CyVerse and AI Verde use
+[Jetstream2](https://jetstream-2.iu.edu)
+to host computing tools at scale.
+Jetstream2 is part of the NSF-funded
+[ACCESS](https://access-ci.org),
+which provides free access to compute and AI resources at scale.
+These resources also include
 [HTCondor](https://htcondor.org)
 and
 [PATh](https://path-cc.io).
-These typically require an educational account
+ACCESS resources typically require an educational account
 and benefit from technical guidance.
 
 ### Google Gemini and Antigravity
@@ -252,8 +255,27 @@ It seems that "AI-native" concerns conversations with LLMs, while "agent-native"
 Further, the straightforward use of conversations via prompt
 and context engineering is often described (as below) in the
 setting of using one AI agent at a time.
-Nowadays, sophisticated users of AI orchestrate multiple AI agents
-to accomplish complex tasks.
+
+Nowadays (Spring 2026), sophisticated users of AI orchestrate multiple AI agents
+to accomplish complex tasks
+using platforms such as
+[OpenClaw](https://www.openclaw.ai/),
+[Hermes](https://github.com/hermes-cli/hermes)
+of perhaps
+[Antigravity 2.0](https://antigravity.google/).
+Likely many other AI platforms (Claude, OpenAI, etc.) have similar agentic capabilities.
+A science version of OpenClaw
+[ScienceClaw](https://github.com/beita6969/ScienceClaw)
+is under development for scientific teams.
+ESIIL is imagining ScienceClaw as a
+[digital twin](https://www.ibm.com/think/topics/digital-twin)
+of an
+[ESIIL Working Group](https://esiil.org/working_groups).
+There is an emerging concept of
+[SOUL](https://soul.md/)
+that defines an agent by the content
+of a markdown file in a project folder.
+
 This takes time and practice to build up both our ability
 to understand and use multiple agents,
 and selection and organization of appropriate agents for a task.
