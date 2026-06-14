@@ -71,12 +71,21 @@ this is not a future event, but something we are now experincing.
 ### What about ethics and environmental impact of AI?
 
 AI companies are trying to improve their efficiency, and their image.
-This includes making machines and algorithms that use less water and power.
+The power and water demands for rapid growth of data centers,
+including those for commercial AI companies,
+is a serious challenge
+even as machines and algorithms are becoming more efficient
+in their use of those scarce resources.
 Also, there is an emerging effort to support the communities that are protecting and nourishing the water that weaves through their lands.
+Below is an eclectic collection of resources about AI and its implications.
 
-Here are some approaches to this challenge,
-which range from zero-water data centers to rethinking how we train people to use data.
-
+- [The Pope and AI](https://byandell.github.io/The-Pope-and_AI/)
+- [What does AI cost? (CU ESIIL)](https://cu-esiil.github.io/Project_group_OASIS/ai-for-sustainability/what-does-it-cost/)
+- [Data centers are growing in Texas, but big questions remain about water use (UT News)](https://news.utexas.edu/2026/05/06/data-centers-are-growing-in-texas-but-big-questions-remain-about-water-use/)
+  - [Water Requirements for Data Centers (UT Bureau of Economic Geology)](https://compass.beg.utexas.edu/assets/publications/Water_Requirements_for_DC_White_Paper.pdf) (missing)
+  - [Thirsty Data: Water Use and the Projected Data Center Boom in Texas (HARC)](https://harcresearch.org/wp-content/uploads/2026/01/Thirsty-Data-Water-Use-and-The-Projected-Data-Center-Boom-in-Texas.pdf)
+- [The uncritical adoption of AI in science is alarming — we urgently need guard rails (Nature)](https://www.nature.com/articles/d41586-026-01557-x)
+- [On AI, Sustainability, and the Tensions Worth Keeping (Juan Maestre)](https://setx-uifl.org/esiil-2026/)
 - [Ethics of AI (Tyson Swetnam Blog)](https://tysonswetnam.com/blog/posts/2025-01-14-gpt101/#ethics-of-ai)
 - [Sustainable by Design (Microsoft)](https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/)
 - [Commitment to Climate Conscious Data Center Cooling (Google)](https://blog.google/company-news/outreach-and-initiatives/sustainability/our-commitment-to-climate-conscious-data-center-cooling/)
