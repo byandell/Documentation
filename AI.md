@@ -282,7 +282,7 @@ of an
 [ESIIL Working Group](https://esiil.org/working_groups).
 There is an emerging concept of
 [SOUL](https://soul.md/)
-that defines an agent by the content
+that defines each agent by the content
 of a markdown file in a project folder.
 
 This takes time and practice to build up both our ability
