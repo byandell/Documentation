@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>ai_prompts</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a21a96fda2a35a6034e035564d362780.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="ai-prompt-examples" class="level1">
+<h1>AI Prompt Examples</h1>
+<p>How will you later remember how you used <a href="./AI.html">Artifical Intelligence (AI)</a> to advance your projects? And how will you share your learning with others? Here are some examples of prompts that I have used with AI agents to help me, and teams in interacting with projects. They illustrate a few principles along the way.</p>
+<ul>
+<li><a href="https://www.promptingguide.ai">Prompt Engineering Guide</a></li>
+<li><a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview">Prompt Engineering (Claude)</a></li>
+<li><a href="https://tyson-swetnam.github.io/intro-gpt/prompts/#core-features-of-todays-ai-tools">Prompt Engineering (Tyson Swetnam)</a>
+<ul>
+<li><a href="https://tyson-swetnam.github.io/intro-gpt/prompts/#core-features-of-todays-ai-tools">Core Features of Today’s AI Tools</a></li>
+<li><a href="https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure">Getting Started with Prompts</a></li>
+</ul></li>
+</ul>
+<p>If you just use prompts and don’t keep track of them, you are missing an opportunity to easily document your work flow. Not only that, saved prompts and walkthroughs can be used to reproduce your work (see <a href="https://byandell.github.io/Gravity-and-Antigravity/#sharing-prompts-instead-of-code">Sharing Prompts Instead of Code</a>). A simple way to begin is to ask your AI agent to save your prompts in a file, e.g.&nbsp;<code>prompts.md</code>; alternatively, or in addition, save the Walkthrough artifact that the AI agent creates into a separate <code>walkthrough.md</code> file. If you do more work within the same conversation, ask the AI agent to update these files. Below are examples of prompts I have been developing.</p>
+<section id="table-of-contents" class="level2">
+<h2 class="anchored" data-anchor-id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#saving-prompts-and-walkthroughs">Saving Prompts and Walkthroughs</a>
+<ul>
+<li><a href="https://byandell.github.io/Gravity-and-Antigravity/#sharing-prompts-instead-of-code">Sharing Prompts instead of Code</a></li>
+</ul></li>
+<li><a href="#ai-agent-conversation">AI Agent Conversation</a>
+<ul>
+<li><a href="#system-instructions">System Instructions</a></li>
+<li><a href="#prompt-crafts">Prompt CRAFTs</a></li>
+<li><a href="#conversations-and-projects">Conversations and Projects</a></li>
+</ul></li>
+<li><a href="#several-prompt-examples">Several Prompt Examples</a>
+<ul>
+<li><a href="#create-a-readmemd-for-a-folder">Create a README.md for a Folder</a></li>
+<li><a href="#create-a-table-of-contents-for-a-file">Create a Table of Contents for a File</a></li>
+<li><a href="#convert-docx-files-to-markdown">Convert DOCX files to Markdown</a></li>
+<li><a href="#powerpoint-presentation">Powerpoint Presentation</a>
+<ul>
+<li><a href="./prompts/powerpoint.html">prompts/powerpoint.md</a></li>
+</ul></li>
+<li><a href="#github-prompts">GitHub Prompts</a>
+<ul>
+<li><a href="#commit-to-github-multiple-versions-of-an-r-file">Commit to GitHub multiple versions of an R file</a>
+<ul>
+<li><a href="./prompts/file_versions.html">prompts/file_versions.md</a></li>
+</ul></li>
+<li><a href="#resolve-git-hell-conflicts">Resolve Git Hell Conflicts</a></li>
+</ul></li>
+<li><a href="#organize-a-workflow">Organize a Workflow</a>
+<ul>
+<li><a href="./prompts/workflow.html">prompts/workflow.md</a></li>
+</ul></li>
+<li><a href="#documenting-folders-in-researchdrive">Documenting Folders in ResearchDrive</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="saving-prompts-and-walkthroughs" class="level2">
+<h2 class="anchored" data-anchor-id="saving-prompts-and-walkthroughs">Saving Prompts and Walkthroughs</h2>
+<p><strong>Prompts:</strong></p>
+<ul>
+<li>“save the prompts used in this conversation to <code>prompts.md</code>”</li>
+<li>“save the walkthrough to <code>walkthrough.md</code>”</li>
+</ul>
+<p>You can do this at the beginning or end of a conversation. You can do it by clicking the <code>Save</code> button in the top right corner of the conversation window, and the <code>Export</code> button on a walkthrough panel. You can also (by hand or by prompt to AI) update or append to these files.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-walkthroughs">sysgenAnalysis workflow walkthroughs</a></li>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/tree/master#how-i-created-this-file-and-repo">mkeller3Projects2: how I created this file and repo</a></li>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/prompts.md">sysgenDO1200 prompts</a></li>
+</ul>
+</section>
+<section id="ai-agent-conversation" class="level2">
+<h2 class="anchored" data-anchor-id="ai-agent-conversation">AI Agent Conversation</h2>
+<p>A user interacts with an AI agent in a “conversation” or “chat session”, which involves a chain of prompts, often starting with a system instruction and moving from a broad framing prompt to specific refinement prompts. See <a href="https://tyson-swetnam.github.io/intro-gpt/prompts/#advanced-techniques">Tyson’s Advanced Techniques</a>.</p>
+<section id="system-instructions" class="level3">
+<h3 class="anchored" data-anchor-id="system-instructions">System Instructions</h3>
+<p>System instructions are prior prompts, entered before specific prompts. They are meant to act as global rule to subsequent prompt chaining in an AI conversation. Tyson Swetnam has a nice example that I expand below for python <em>and</em> R:</p>
+<pre><code>Please set up the following system instruction:
+# Project Context
+I'm a data scientist working on machine learning projects.
+For Python code, always provide examples using `scikit-learn` and `pandas`.
+For R code, always provide examples using `tidyverse`.
+Include `docstrings` (python) or `roxygen2` (R) and type hints in all code.
+
+# Response Preferences
+- Be concise but thorough
+- Explain complex concepts with analogies
+- Always cite sources when making factual claims</code></pre>
+<ul>
+<li><a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/system-instruction-introduction">System Instructions Intro</a></li>
+<li><a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/system-instructions">System Instructions Use</a></li>
+<li><a href="./AI.html#agent-skills">Agent Skills</a></li>
+</ul>
+</section>
+<section id="prompt-crafts" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-crafts">Prompt CRAFTs</h3>
+<p>A prompt for a complicated task can have improved focus with the <a href="https://tyson-swetnam.github.io/intro-gpt/prompts/#the-craft-framework">CRAFT</a> framework. To illustrate, here is Tyson’s example for a grant proposal. Note that this focuses on the “draft introduction” rather than the whole proposal.</p>
+<pre><code>Context: I'm preparing a grant proposal for NSF funding on AI in education  
+Role: Act as an experienced grant writer and education researcher  
+Action: Review my draft introduction and suggest improvements  
+Format: Provide feedback as tracked changes with explanations  
+Tone: Professional, constructive, and encouraging</code></pre>
+<p>Here is one for beginning to build a set of <code>python</code> notebooks:</p>
+<pre><code>Context: I'm preparing a set of `python` notebooks to document flooding impact  
+Role: Act as an experienced python programmer and software project manager  
+Action: Review my draft plan for building the setup notebook  
+Format: Provide feedback as tracked changes with explanations  
+Tone: Professional, constructive, and encouraging</code></pre>
+<p>Subsequent “chained” prompts would refine the <code>Action</code> framing to build the first notebook, then move on to build related notebooks.</p>
+</section>
+<section id="conversations-and-projects" class="level3">
+<h3 class="anchored" data-anchor-id="conversations-and-projects">Conversations and Projects</h3>
+<p>There could be several different conversations within a project, with a project usually in its own folder or set of folders. Best practices include saving projects as GitHub repos to both share with others and evolve the project over time through edits documented through <a href="https://github.com/resources/articles/what-is-version-control">version control</a>. Of course, saving prompts for those conversation with a project will help with later recall of how the project developed.</p>
+<hr>
+</section>
+</section>
+<section id="several-prompt-examples" class="level2">
+<h2 class="anchored" data-anchor-id="several-prompt-examples">Several Prompt Examples</h2>
+<section id="create-a-readme.md-for-a-folder" class="level3">
+<h3 class="anchored" data-anchor-id="create-a-readme.md-for-a-folder">Create a README.md for a Folder</h3>
+<p><strong>Prompts:</strong></p>
+<ul>
+<li>“create a <code>README.md</code> document that concisely summarizes contents of this folder at a high level”</li>
+<li>“update <code>README.md</code> with any additional files, obeying restrictions in <code>.gitignore</code>”</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md">mkeller3Projects2</a></li>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/README.md">sysgenDO1200</a> has various examples</li>
+</ul>
+</section>
+<section id="create-a-table-of-contents-for-a-file" class="level3">
+<h3 class="anchored" data-anchor-id="create-a-table-of-contents-for-a-file">Create a Table of Contents for a File</h3>
+<p>Just as you can create a <code>README.md</code> for a folder, you can create a table of contents for that <code>README.md</code> (or any markdown) file.</p>
+<p><strong>Prompts:</strong></p>
+<ul>
+<li>“create TOC for <code>README.md</code>”</li>
+<li>“update TOC for <code>README.md</code>”</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li><a href="https://github.com/byandell/Documentation/blob/main/README.md">README for this repo</a></li>
+<li><a href="./AI_prompts.html#table-of-contents">Table of Contents for this file</a></li>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md#pipelines">Pipelines in mkeller3Projects2</a></li>
+</ul>
+<p>Once you have these and establish a “culture” of updating them, the AI will sometimes make the changes on the fly as you evolve your material.</p>
+</section>
+<section id="convert-docx-files-to-markdown" class="level3">
+<h3 class="anchored" data-anchor-id="convert-docx-files-to-markdown">Convert DOCX files to Markdown</h3>
+<p>This prompt use <a href="https://pandoc.org/">pandoc</a> to convert <code>docx</code> files to <code>md</code> files. This app needs to be installed once on a laptop to use.</p>
+<p><strong>Prompt:</strong> “find <code>docx</code> files and use pandoc to convert them to <code>md</code> versions”</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md">mkeller3Projects2</a></li>
+</ul>
+</section>
+<section id="powerpoint-presentation" class="level3">
+<h3 class="anchored" data-anchor-id="powerpoint-presentation">Powerpoint Presentation</h3>
+<p><strong>Prompt:</strong></p>
+<ul>
+<li>“Use Quarto to automatically generate a PowerPoint deck (<code>.pptx</code>) embedding all of the outputted PNG figures.”</li>
+<li>“Add a table of contents slide to the presentation.”</li>
+</ul>
+<p>This prompt assumes that you have installed <a href="https://quarto.org/">Quarto</a> (only need to do once) and have already generated the PNG figures using the workflow prompt. It could be part of a more involved prompt that also generates the figures. The AI will likely include a title slide; you can also ask AI to add other material such as references or overview of experiment.</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li><a href="./prompts/powerpoint.html">prompts/powerpoint.md</a></li>
+</ul>
+<p>This prompt was used to create the powerpoint presentation for a GTT project. For more detail, see <a href="https://byandell.github.io/Gravity-and-Antigravity/#sharing-prompts-instead-of-code">Sharing Prompts instead of Code</a>. The saved file includes Alan and Diana’s versions of the prompt . For details on how the prompt evolved, click on <code>Blame</code> (top left) or <code>History</code> (top right). The displayed version is the most recent (Diana’s); the same file contains <a href="https://github.com/byandell/Documentation/commit/6bf9b23a9a2441bd8c60cd18d88bcbc4a00c6ae7#diff-0a4691c74dedbcb4de422d849e3ff48d756dfcc06d20f0253ef5315dbaf9d912">Alan’s earlier version</a>.</p>
+<p>Another user could create a prompt that cites this prompt file and directs AI to substitute different data and code files. However, the prompt as written is rather specific to GTT for DO founder mice, and in particular to NZO and B6 strains. A user could further specify to replace step 2 with their own version of instructions.</p>
+</section>
+<section id="github-prompts" class="level3">
+<h3 class="anchored" data-anchor-id="github-prompts">GitHub Prompts</h3>
+<p>These prompts interact with Git and set up files to be pushed to GitHub. To use these, a GitHub account and working knowledge of how Git and GitHub work is assumed. See <a href="./github.html">GitHub references</a> for more information.</p>
+<section id="commit-to-github-multiple-versions-of-an-r-file" class="level4">
+<h4 class="anchored" data-anchor-id="commit-to-github-multiple-versions-of-an-r-file">Commit to GitHub multiple versions of an R file</h4>
+<p><strong>Prompt:</strong> Find files ending in <code>[ _]v[0-9]+.R$</code> that have the same name before this version. If there is more than one set, do the following steps for each set. Denote by <code>[basename]</code> the part of the filename before the version number.</p>
+<ol type="1">
+<li>If there is not a <code>v1</code> version but there is the <code>[basename]</code> without a version, copy <code>[basename].R</code> to <code>[basename] v1.R</code> or <code>[basename]_v1.R</code> as appropriate. If there is already a <code>[basename] v1.R</code> or <code>[basename]_v1.R</code>, do not overwrite it, but instead copy the <code>v1</code> version to <code>[basename].R</code> for this set.</li>
+<li>Commit <code>[basename].R</code> with message <code>v1</code> and the date this file was created. (Be careful with files that have implicit <code>v1</code>.)</li>
+<li>For subsequent versions, copy the next highest version number to <code>[basename].R</code> and commit with the next version number and the date this file was created. Continue until all versions are committed.</li>
+<li>Do not include the singleton files such as <code>source*v2.R</code>.</li>
+<li>Make sure to keep the versioned files intact.</li>
+</ol>
+<hr>
+<p>The above prompt is a great task for an AI or an automated script. The original prompt is logically sound but can be streamlined to be more “instructional” and clear about the desired state. The file <a href="./prompts/file_versions.html">file versions prompt</a> has an improved, more concise version of the prompt.</p>
+<hr>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><a href="./prompts/file_versions.html">prompts/file_versions.md</a></li>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md">mkeller3Projects2</a></li>
+</ul>
+<p>For details of versions, see for instance <a href="https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/MafA_SNP_DEG_Integration.R">MafA_SNP_DEG_Integration.R</a> and click on <code>Blame</code> (top left) or <code>History</code> (top right).</p>
+</section>
+<section id="resolve-git-hell-conflicts" class="level4">
+<h4 class="anchored" data-anchor-id="resolve-git-hell-conflicts">Resolve Git Hell Conflicts</h4>
+<p><strong>Prompt:</strong> “i messed up and forgot to do <code>git pull</code> before commiting new files. Now I am in git hell. See the message with <code>git status</code>. <code>Walk me through how to fix this.</code>”</p>
+<p><strong>Example:</strong></p>
+<p>This was used on the Multiple Versions prompt above. The first time, I forgot to <code>git pull</code> changes I made on <code>GitHub</code> before starting. I tried to solve by myself and got lost. AI sorted it out. See <a href="./github.html">GitHub references</a> for more information.</p>
+</section>
+</section>
+<section id="organize-a-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="organize-a-workflow">Organize a Workflow</h3>
+<p>This complicated prompt requires various tools on one’s laptop, notably <a href="https://devtools.r-lib.org/">devtools</a> and <a href="https://roxygen2.r-lib.org/">roxygen2</a> in <code>R</code>. Installing the standalone app <a href="https://quarto.org/">Quarto</a> gives one a markdown engine that can render markdown files to html, docx, pdf, and other formats. Other <code>R</code> packages will likely be needed along the way.</p>
+<p><strong>Prompt:</strong> “build a concise prompt that captures the essence of the walkthroughs in <code>inst/doc/walkthrough.md</code>”</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><a href="./prompts/workflow.html">prompts/workflow.md</a></li>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-prompt">workflow prompt</a></li>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-walkthroughs">workflow walkthroughs</a></li>
+</ul>
+<p>The <a href="./prompts/workflow.html">prompts/workflow.md</a> is a refinement of the workflow developed for <a href="https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/">sysgenAnalysis</a>. This particular prompt, which is described conceptually in <a href="./AI.html#prompts-to-organize-workflows">Prompts to Organize Workflows</a>, transforms an R workflow into functions in an R package, including a function to run the workflow and another function to explore the results.</p>
+<p>This workflow for organizing workflows (!) was developed organically. Each day, I advanced the project through a series of prompts; at the end of the session, I asked the AI agent to save the <a href="https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-walkthroughs">workflow walkthroughs</a>, including the date of that step. At some point, I asked AI the above prompt, which resulted in a comprehensive <a href="https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-prompt">workflow prompt</a>. I later asked the AI agent to modify the workflow prompt as I added subsequent workflow steps.</p>
+</section>
+<section id="documenting-folders-in-researchdrive" class="level3">
+<h3 class="anchored" data-anchor-id="documenting-folders-in-researchdrive">Documenting Folders in ResearchDrive</h3>
+<p>Several of the prompts shown earlier concern building documentation for data and code kept in folders in the <a href="https://it.wisc.edu/services/researchdrive/">ResearchDrive (RD)</a>. While the RD is secure and private, I have made public versions of some code and documentation via the <a href="https://github.com/AttieLab-Systems-Genetics">Attie Lab Systems Genetics GitHub</a>. Having these public allows us to share ideas with others and to use them as a reference for future projects, while still keeping research data secure.</p>
+<ul>
+<li>Data and Scripts in folder <code>mkeller3/General/main_directory</code>
+<ul>
+<li>Added <a href="https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/README.md">README.md</a> for this folder and some sub-folders</li>
+<li>Created GitHub repo with these READMEs for version control at <a href="https://github.com/AttieLab-Systems-Genetics/sysgenDO1200">AttieLab-Systems-Genetics/sysgenDO1200</a></li>
+<li>See info at top of this file for how I did this</li>
+</ul></li>
+<li>Code in folder <code>mkeller3/General/Projects2/R scripts</code>
+<ul>
+<li>Added <a href="https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md">README.md</a> for this folder</li>
+<li>Created GitHub repo for version control at <a href="https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2">AttieLab-Systems-Genetics/mkeller3Projects2</a></li>
+<li>Used version control to keep track of multiple versions of the same analysis (see <a href="#improved-multiple-versions-prompt">Improved Multiple Versions Prompt</a>)</li>
+</ul></li>
+</ul>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
