@@ -37,3 +37,5 @@ quarto preview --no-browser
 ```
 
 at the beginning of a work session.
+
+[_byandell.github.io_](https://byandell.github.io)
