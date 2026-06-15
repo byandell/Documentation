@@ -1,0 +1,152 @@
+/*-- scss:defaults --*/
+
+// Brand colors
+$body-bg: #f8fafc; // Tailwind Slate-50 (Light)
+$body-color: #1e293b; // Tailwind Slate-800
+$link-color: #0284c7; // Tailwind Sky-600 (Higher contrast for light theme)
+$link-color-hover: #e11d48; // Tailwind Rose-600
+$selection-bg: #e2e8f0; // Tailwind Slate-200
+
+// Typography
+$font-family-sans-serif: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+$presentation-title-color: #0f172a; // Tailwind Slate-900
+$presentation-subtitle-color: #0284c7; // Tailwind Sky-600
+$heading-color: #0f172a; // Tailwind Slate-900
+
+// Heading sizes & weights
+$presentation-title-font-size: 2.8em;
+$presentation-subtitle-font-size: 1.4em;
+
+/*-- scss:rules --*/
+
+// Main Reveal slide configurations
+.reveal {
+  font-size: 30px;
+  
+  h1, h2, h3, h4 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    color: #0284c7;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.15em;
+    margin-bottom: 0.4em;
+    font-size: 1.4em;
+  }
+
+  h3 {
+    color: #334155;
+    font-size: 1.0em;
+    margin-top: 0.3em;
+  }
+
+  // Links styling
+  a {
+    transition: color 0.2s ease;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // Smooth borders & shadows for code blocks (light mode)
+  pre {
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+    background: #f1f5f9 !important;
+    
+    code {
+      background: transparent !important;
+      padding: 0.8rem;
+      font-size: 0.65em;
+      line-height: 1.35;
+      color: #0f172a;
+    }
+  }
+
+  // Lists styling
+  ul, ol {
+    margin-bottom: 0.8em;
+    li {
+      margin-bottom: 0.3em;
+    }
+  }
+
+  // Incremental lists micro-animation
+  .fragment {
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  // Callout styling overrides for RevealJS
+  .callout {
+    border-left-width: 6px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin: 0.5rem 0 !important;
+    background-color: #f8fafc !important;
+    
+    &.callout-note { border-color: #0284c7 !important; }
+    &.callout-tip { border-color: #059669 !important; }
+    &.callout-warning { border-color: #d97706 !important; }
+    &.callout-caution { border-color: #dc2626 !important; }
+    &.callout-important { border-color: #7c3aed !important; }
+
+    .callout-header {
+      font-weight: 600;
+      color: #0f172a;
+      font-size: 0.85em;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      padding-bottom: 0.15rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .callout-body {
+      font-size: 0.8em;
+      color: #334155;
+    }
+  }
+
+  // Slide footer styling
+  .footer {
+    font-size: 0.45em;
+    color: #64748b;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 0.5em;
+  }
+
+  // Slide number styling
+  .slide-number {
+    font-size: 0.5em;
+    color: #64748b;
+    background-color: transparent;
+  }
+
+  // Blockquote styling (quoted text)
+  blockquote {
+    font-size: 0.85em !important;
+    line-height: 1.45 !important;
+    color: #64748b !important;
+    border-left: 4px solid #cbd5e1 !important;
+    padding: 0.25em 0.75em !important;
+    margin: 0.5rem 0 !important;
+    background: #f1f5f9 !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    text-align: left;
+    font-style: italic;
+  }
+
+  // Inline code styling
+  code:not(pre code) {
+    font-family: var(--r-code-font, monospace);
+    font-size: 0.85em;
+    background-color: #f1f5f9;
+    padding: 0.1em 0.3em;
+    border-radius: 4px;
+    color: #b91c1c;
+  }
+}

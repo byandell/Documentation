@@ -4,3 +4,11 @@
 .Ruserdata
 .DS_Store
 *.Rproj
+
+# Quarto
+.quarto/
+*_files/
+*_cache/
+
+*.html
+*.pptx

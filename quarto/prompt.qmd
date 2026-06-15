@@ -1,0 +1,223 @@
+---
+title: "AI Prompt Examples"
+subtitle: "Documenting and Sharing AI Agent Workflows"
+author: "Brian Yandell"
+date: last-modified
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    transition: slide
+    slide-number: true
+    show-slide-number: all
+    chalkboard: true
+    footer: "AI Prompt Examples | Documenting and Sharing Workflows"
+    highlight-style: github
+---
+
+# Introduction & Core Concepts {background-color="#e0f2fe"}
+
+## Documenting AI Workflows
+
+How will you later remember how you used [Artificial Intelligence (AI)](../AI.md) to advance your projects? And how will you share your learning with others?
+
+::: {.incremental}
+- Saved prompts and walkthroughs can be used to **reproduce your work**.
+- Share **prompts** instead of just raw code.
+- Ask your AI agent to save prompts to a file (e.g., `prompts.md`).
+- Save Walkthrough artifacts in a separate `walkthrough.md` file.
+:::
+
+## Prompt Engineering Resources
+
+Here are some guidebooks and frameworks to help refine your prompts:
+
+- **[Prompt Engineering Guide](https://www.promptingguide.ai)**
+- **[Claude Prompt Engineering](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview)**
+- **Tyson Swetnam's Intro to GPT**:
+  - [Core Features of Today's AI Tools](https://tyson-swetnam.github.io/intro-gpt/prompts/#core-features-of-todays-ai-tools)
+  - [Getting Started with Prompts](https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure)
+
+# Saving Prompts & Agent Conversations {background-color="#e0f2fe"}
+
+## Saving Prompts and Walkthroughs
+
+::: {.columns}
+::: {.column width="60%"}
+### Prompts to Save Progress:
+- `"save the prompts used in this conversation to prompts.md"`
+- `"save the walkthrough to walkthrough.md"`
+
+### When & How:
+- Run at the beginning or end of a conversation.
+- Click **Save** (top right) or **Export** on the walkthrough panel.
+:::
+
+::: {.column width="40%"}
+::: {.callout-note}
+### Real-world Examples:
+- [sysgenAnalysis Walkthroughs](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-walkthroughs)
+- [mkeller3Projects2 Repo Setup](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/tree/master#how-i-created-this-file-and-repo)
+- [sysgenDO1200 Prompts](https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/prompts.md)
+:::
+:::
+:::
+
+## AI Agent Conversation Structure
+
+::: {.incremental}
+- User interactions happen in **conversations** or **chat sessions**.
+- A session involves a **chain of prompts**:
+  1. **System Instruction**: Establishes global constraints/roles.
+  2. **Framing Prompt**: Broad definition of the task.
+  3. **Refinement Prompts**: Step-by-step guidance.
+- Keep different conversations within a project separated.
+- Store projects as GitHub repos for version control.
+:::
+
+## System Instructions
+
+Set global rules for prompt chaining in your session:
+
+```markdown
+# Project Context
+I'm a data scientist working on machine learning projects.
+For Python code, always provide examples using `scikit-learn` and `pandas`.
+For R code, always provide examples using `tidyverse`.
+Include `docstrings` (Python) or `roxygen2` (R) and type hints in all code.
+
+# Response Preferences
+- Be concise but thorough
+- Explain complex concepts with analogies
+- Always cite sources when making factual claims
+```
+
+## The CRAFT Framework
+
+For complicated tasks, structure your prompt using the **CRAFT** framework:
+
+- **C**ontext: Background information.
+- **R**ole: Person/identity the AI assumes.
+- **A**ction: The specific task to perform.
+- **F**ormat: Deliverable structure.
+- **T**one: Style of response.
+
+### Example: Grant Proposal
+```markdown
+Context: Grant proposal for NSF funding on AI in education  
+Role: Experienced grant writer & researcher  
+Action: Review draft introduction and suggest improvements  
+Format: Feedback as tracked changes with explanations  
+Tone: Professional, constructive, and encouraging
+```
+
+# Practical Prompt Examples {background-color="#e0f2fe"}
+
+## Documenting Files & Folders
+
+::: {.columns}
+::: {.column width="50%"}
+### Create a Folder README
+- **Prompt**:
+  - `"create a README.md document that concisely summarizes`<br>`contents of this folder at a high level"`
+  - `"update README.md with any additional files,`<br>`obeying restrictions in .gitignore"`
+:::
+
+::: {.column width="50%"}
+### Create a Table of Contents (TOC)
+- **Prompt**:
+  - `"create TOC for README.md"`
+  - `"update TOC for README.md"`
+:::
+:::
+
+::: {.callout-tip}
+### Pro-Tip
+Establishing a culture of updating these docs enables the AI to update files on the fly as your project evolves!
+:::
+
+## Convert DOCX to Markdown & Slides
+
+::: {.columns}
+::: {.column width="50%"}
+### Convert DOCX via Pandoc
+- **Prompt**:
+  - `"find docx files and use pandoc to convert them to md versions"`
+- **Prerequisites**: Pandoc installed locally.
+:::
+
+::: {.column width="50%"}
+### Generate Slides via Quarto
+- **Prompt**:
+  - `"Use Quarto to automatically generate a PowerPoint deck`<br>`(.pptx) embedding all of the outputted PNG figures."`
+  - `"Add a table of contents slide to the presentation."`
+:::
+:::
+
+::: {.callout-note}
+See Diana and Alan's evolved prompt versions in [prompts/powerpoint.md](../prompts/powerpoint.md).
+:::
+
+## GitHub Prompts: Versioning Files
+
+### Multi-Version Commit Prompt
+```markdown
+Find files ending in `[ _]v[0-9]+.R$`
+with matching base name.
+- If no `v1` exists but `basename.R`
+  does, copy to `v1.R`.
+- Commit `basename.R` with message `v1`
+  and original date.
+- For subsequent versions, copy the
+  next version to `basename.R` and commit.
+- Keep versioned files intact.
+```
+
+::: {.callout-tip}
+### Refined Prompts
+Check out [prompts/file_versions.md](../prompts/file_versions.md) for a streamlined, instruction-optimized version of this prompt.
+:::
+
+## GitHub Prompts: Git Conflict Resolution
+
+When you run into conflicts (e.g., forgetting to pull before committing):
+
+### The "Git Hell" Prompt
+- "I messed up and forgot to do `git pull` before committing new files.<br>Now I am in git hell. See the message with `git status`.<br>Walk me through how to fix this."
+
+::: {.callout-warning}
+### Outcome
+The AI successfully parsed the status and sorted out the repository state, providing step-by-step guidance.
+:::
+
+## Organizing a Workflow
+
+### The Goal
+Transform a complex organic R workflow into neat functions inside an R package, featuring:
+- A function to run the workflow.
+- A function to explore results.
+
+### The Prompt
+- `"build a concise prompt that captures the essence of the walkthroughs in inst/doc/walkthrough.md"`
+
+::: {.callout-note}
+### Key Packages
+Uses `devtools`, `roxygen2`, and `Quarto` to render markdown outputs (HTML, PDF, DOCX).
+:::
+
+## Folder Documentation in ResearchDrive
+
+::: {.columns}
+::: {.column width="50%"}
+### The Challenge
+Data and code are kept securely and privately on **ResearchDrive (RD)**, but sharing/version control is still needed.
+:::
+
+::: {.column width="50%"}
+### The Solution
+Maintain public markdown documentation and folder structures on **GitHub** (with data-less READMEs) while keeping raw data safe in RD.
+:::
+:::
+
+- **Examples**:
+  - [sysgenDO1200 README](https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/README.md)
+  - [mkeller3Projects2 R Scripts README](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)

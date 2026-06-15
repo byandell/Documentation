@@ -218,9 +218,9 @@ Google initially offered `Antigravity 1.0` as an extension of
 with a Gemini AI agent in the right panel.
 On 19 May 2026, Google released
 [`Antigravity 2.0`](https://antigravity.google/)
-as a suite of 4 tools
+as a suite of 4 tools:
 
-- `Antigravity 2.0`: full agentic development platform
+- `Antigravity 2.0`: full multi-agentic AI code development environment
 - `Antigravity CLI`: command line interface (CLI), used in the terminal
 - `Antigravity SDK`: software development kit (SDK), used by developers to build apps
 - `Antigravity IDE`: integrated development environment (IDE), an updated version of the previous (`1.x`) IDE
