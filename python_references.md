@@ -195,7 +195,7 @@ The
 [landmapy/initial.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/initial.py)
 has function `create_data_dir()` to create a directory if it does not exist.
 
-```{python}
+```python
 def create_data_dir(new_dir):
     import os
     import pathlib
@@ -223,7 +223,7 @@ The following code will try to retrieve the object `buffalo_gdf` if it was previ
 The `try` statement checks if `buffalo_gdf` exists, creating a `NameError` exception if not,
 which leads to code to create and `%store` it.
 
-```{python}
+```python
 %store -r buffalo_gdf
 try:
     buffalo_gdf
@@ -283,7 +283,7 @@ and
 
 One way of thinking about decorators with arguments is
 
-```{python}
+```python
 @decorator
 def foo(*args, **kwargs):
     pass
@@ -291,13 +291,13 @@ def foo(*args, **kwargs):
 
 translates to
 
-```{python}
+```python
 foo = decorator(foo)
 ```
 
 So if the decorator had arguments,
 
-```{python}
+```python
 @decorator_with_args(arg)
 def foo(*args, **kwargs):
     pass
@@ -305,7 +305,7 @@ def foo(*args, **kwargs):
 
 translates to
 
-```{python}
+```python
 foo = decorator_with_args(arg)(foo)
 ```
 
@@ -322,7 +322,7 @@ from
 to cache the results of the function.
 The original static use of the decorator was
 
-```{python}
+```python
 from landmapy.cached import cached
 
 @cached('wbd_08')
@@ -340,7 +340,7 @@ with data cached in the `jars` directory as `f'wbd_08_hu{huc_level}.pickle'`,
 with the HUC level 12 changeable, but not the HUC region.
 To make this more flexible, the code was changed as follows:
 
-```{python}
+```python
 from landmapy.cached import cached
 
 def read_wbd_file(wbd_filename, huc_level, cache_key,
@@ -402,4 +402,4 @@ to initialize the object's attributes.
 - [Python Classes: The Power of Object-Oriented Programming (RealPython)](https://realpython.com/python-classes/)
 - [Google's Python Class](https://developers.google.com/edu/python)
 - [earthpy](https://earthpy.readthedocs.io/en/latest/)
-  - [apppeears.py](https://github.com/earthlab/earthpy/blob/apppears/earthpy/appeears.py) (class Elsa created in `earthpy` package)
+  - [apppeears.py](https://github.com/earthlab/earthpy/blob/apppeears/earthpy/appeears.py) (class Elsa created in `earthpy` package)

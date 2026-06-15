@@ -1,9 +1,37 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Documentation",
+    "objectID": "geospatial.html",
+    "href": "geospatial.html",
+    "title": "Geospatial Resources",
     "section": "",
-    "text": "Redirecting to Geospatial Resources…"
+    "text": "This was part of the geospatial package.\n\n\n\nData Carpentry Workshop\n\nIntroduction to R for Geospatial Data\nIntroduction to Geospatial Concepts\nIntroduction to Geospatial Raster and Vector Data with R\n\nSpatial Data Science book by Edzer Pebesma and Roger Bivand\nGeospatial Vector Data in R with SF (Coding Club)\nOnline Comparisons of Some Spatial Packages\n\nComparison of terra and stars packages by Chris Brown\nMarius Appel - Creating and Analyzing Multi-Variable Earth Observation Data Cubes in R (part 1) (2 hours)\nStack Overflow: stack geotiff with stars ‘along’ when ‘band’ dimension contains band + time information\n\nArcGIS Online\n\nFree online accounts, with new features added over time\n\nQGIS\n\nRPubs: R to QGIS workflow\nSpatial stratified sampling with RStudio and QGIS\nRQGIS, Utilizing Rstudio as an alternative GIS\nProcessing lidar data using QGIS, LAStools and R\nESCAP: Land cover change maps with QGIS & RStudio\nColumbia U: GIS, Cartographic and Spatial Analysis Tools in R / Rstudio\n\n\n\n\n\n\n\n\ngdalcubes\n\nhttps://github.com/appelmar/gdalcubes\n1. Creating data cubes from local MODIS imagery by Marius Appel\n\nhttps://r-spatial.org/\n\nsf (https://github.com/r-spatial/sf)\nstarshttps://github.com/r-spatial/stars\n\nhttps://rspatial.org/\n\nterra (https://github.com/rspatial/terra)\nsf (https://github.com/rspatial/raster)\n\ntidyterra\n\nhttps://dieghernan.github.io/tidyterra/\nExtension of the ‘tidyverse’ for ‘SpatRaster’ and ‘SpatVector’ objects of the ‘terra’ package\n\n\nPackages to Access Data\n\nrstac: Access, search and download from SpatioTemporal Asset Catalog (STAC)\nosmdata: Download and import of ‘OpenStreetMap’ (‘OSM’) data\n\nhttps://www.openstreetmap.org/\nOpen Street Map Data\nRetrieving Open Street Map data using the osmdata package\nDatabase of Open Street Map Names\nhttps://osmnames.org/\n\ngeos: R API to the Open Source Geometry Engine (‘GEOS’)\nlandsat: Processing of Landsat and other multispectral satellite imagery\n\nPrevious package rgdal is now obsolete. Unsure about status of raster package.\n\n\n\n\n\nhttps://data-library.esiil.org\n\nAmerican Indian and Alaska Native Areas\n\nSee list on menu of https://cu-esiil.github.io/hackathon2023_datacube/code_for_building_cube/Pull_flood_data/\n\nThese have been compiled in datasets.csv.\nData are stored in different coordinating systems, which makes it important to transform between them. Some common ones:\n\nEPSG:4326: WGS84 = World Geodetic System 1984\nEPSG:32618: WGS84 for UTM zone 18N (North America)\nEPSG:32730: WGS84 for UTM zone 20S (South America)\n\n\n\n\n\n\nESIIL_Art_Data_Cube.Rmd: Yandell edit of Ty Tuff’s The Art of Making a Datacube\n\n\n\nCarpentries Etherpad\nGeospatial.Rmd: Rmarkdown from Workshop\n\n\nThe data have been organized in The Carpentries nicely in FigShare as workshop data from carpentries site. See also the https://datacarpentry.org/geospatial-workshop/ page section on Data and more information at https://datacarpentry.org/geospatial-workshop/data.html. The data seem to come from NEON Raster Intro page NEON Raster 00: Intro to Raster Data in R, via Download Dataset. The data are from two field sites:\n\nHarvard Forest (HARV)\nSan Joaquin Experimental Range (SJER)\n\nThe key raster data are the following “geotif” files:\n\nHARV_dsmCrop.tif\nHARV_dsmCrop.tif\nHARV_DSMhill.tif\n\nIt should be possible using some of the commands in the The art of making a data cube to elegantly download needed data on the fly."
+  },
+  {
+    "objectID": "geospatial.html#books-and-online-docs",
+    "href": "geospatial.html#books-and-online-docs",
+    "title": "Geospatial Resources",
+    "section": "",
+    "text": "Data Carpentry Workshop\n\nIntroduction to R for Geospatial Data\nIntroduction to Geospatial Concepts\nIntroduction to Geospatial Raster and Vector Data with R\n\nSpatial Data Science book by Edzer Pebesma and Roger Bivand\nGeospatial Vector Data in R with SF (Coding Club)\nOnline Comparisons of Some Spatial Packages\n\nComparison of terra and stars packages by Chris Brown\nMarius Appel - Creating and Analyzing Multi-Variable Earth Observation Data Cubes in R (part 1) (2 hours)\nStack Overflow: stack geotiff with stars ‘along’ when ‘band’ dimension contains band + time information\n\nArcGIS Online\n\nFree online accounts, with new features added over time\n\nQGIS\n\nRPubs: R to QGIS workflow\nSpatial stratified sampling with RStudio and QGIS\nRQGIS, Utilizing Rstudio as an alternative GIS\nProcessing lidar data using QGIS, LAStools and R\nESCAP: Land cover change maps with QGIS & RStudio\nColumbia U: GIS, Cartographic and Spatial Analysis Tools in R / Rstudio"
+  },
+  {
+    "objectID": "geospatial.html#r-packages",
+    "href": "geospatial.html#r-packages",
+    "title": "Geospatial Resources",
+    "section": "",
+    "text": "gdalcubes\n\nhttps://github.com/appelmar/gdalcubes\n1. Creating data cubes from local MODIS imagery by Marius Appel\n\nhttps://r-spatial.org/\n\nsf (https://github.com/r-spatial/sf)\nstarshttps://github.com/r-spatial/stars\n\nhttps://rspatial.org/\n\nterra (https://github.com/rspatial/terra)\nsf (https://github.com/rspatial/raster)\n\ntidyterra\n\nhttps://dieghernan.github.io/tidyterra/\nExtension of the ‘tidyverse’ for ‘SpatRaster’ and ‘SpatVector’ objects of the ‘terra’ package\n\n\nPackages to Access Data\n\nrstac: Access, search and download from SpatioTemporal Asset Catalog (STAC)\nosmdata: Download and import of ‘OpenStreetMap’ (‘OSM’) data\n\nhttps://www.openstreetmap.org/\nOpen Street Map Data\nRetrieving Open Street Map data using the osmdata package\nDatabase of Open Street Map Names\nhttps://osmnames.org/\n\ngeos: R API to the Open Source Geometry Engine (‘GEOS’)\nlandsat: Processing of Landsat and other multispectral satellite imagery\n\nPrevious package rgdal is now obsolete. Unsure about status of raster package."
+  },
+  {
+    "objectID": "geospatial.html#data-repositories",
+    "href": "geospatial.html#data-repositories",
+    "title": "Geospatial Resources",
+    "section": "",
+    "text": "https://data-library.esiil.org\n\nAmerican Indian and Alaska Native Areas\n\nSee list on menu of https://cu-esiil.github.io/hackathon2023_datacube/code_for_building_cube/Pull_flood_data/\n\nThese have been compiled in datasets.csv.\nData are stored in different coordinating systems, which makes it important to transform between them. Some common ones:\n\nEPSG:4326: WGS84 = World Geodetic System 1984\nEPSG:32618: WGS84 for UTM zone 18N (North America)\nEPSG:32730: WGS84 for UTM zone 20S (South America)"
+  },
+  {
+    "objectID": "geospatial.html#geospatial-workshops",
+    "href": "geospatial.html#geospatial-workshops",
+    "title": "Geospatial Resources",
+    "section": "",
+    "text": "ESIIL_Art_Data_Cube.Rmd: Yandell edit of Ty Tuff’s The Art of Making a Datacube\n\n\n\nCarpentries Etherpad\nGeospatial.Rmd: Rmarkdown from Workshop\n\n\nThe data have been organized in The Carpentries nicely in FigShare as workshop data from carpentries site. See also the https://datacarpentry.org/geospatial-workshop/ page section on Data and more information at https://datacarpentry.org/geospatial-workshop/data.html. The data seem to come from NEON Raster Intro page NEON Raster 00: Intro to Raster Data in R, via Download Dataset. The data are from two field sites:\n\nHarvard Forest (HARV)\nSan Joaquin Experimental Range (SJER)\n\nThe key raster data are the following “geotif” files:\n\nHARV_dsmCrop.tif\nHARV_dsmCrop.tif\nHARV_DSMhill.tif\n\nIt should be possible using some of the commands in the The art of making a data cube to elegantly download needed data on the fly."
   }
 ]
