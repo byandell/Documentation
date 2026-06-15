@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Yandell Documentation</title>
+<title>workflow</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,21 +23,21 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a21a96fda2a35a6034e035564d362780.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a21a96fda2a35a6034e035564d362780.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -78,62 +78,63 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Yandell Documentation</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
+<section id="workflow-prompt" class="level1">
+<h1>Workflow Prompt</h1>
+<p><strong>Use</strong>: Be sure you are working in a folder where you want the new package components to live. Type the following prompt into AI, substituting for your file <code>xxx.R</code> and desired base name <code>yyy</code></p>
+<p><strong>Prompt</strong>: “follow the <a href="https://github.com/byandell/Documentation/blob/main/prompts/workflow.md">workflow prompt</a> to refactor <code>workflow</code> = <code>xxx.R</code> into a modular R package structure with <code>basename</code> = <code>yyy</code>”.</p>
+<hr>
+<p><strong>Goal</strong>: Refactor a <a href="The name of the workflow to refactor .">workflow</a> into a modular R package structure.</p>
+<p><strong>Instructions</strong>:</p>
+<ol type="1">
+<li><p><strong>Set the <a href="The name of the workflow to refactor .">workflow</a> and <a href="The `basename` to use for the refactored workflow.">basename</a> variables from user input</strong>:</p>
 <ul>
-<li><a href="#my-documentation-journey">My Documentation Journey</a></li>
-<li><a href="./R.html">R</a></li>
-<li><a href="./github.html">GitHub, Connect, and CodeSpaces</a></li>
-<li><a href="./envsys.html">Environmental Systems References</a>
-<ul>
-<li><a href="./geospatial.html">Geospatial Resources</a></li>
-<li><a href="./envsys.html#earth-data-analytics">Earth Data Analytics</a></li>
-<li><a href="./envsys.html#open-street-map">Open Street Map</a></li>
-<li><a href="./envsys.html#google-maps-platform-access">Google Maps Platform Access</a></li>
+<li></li>
+<li></li>
 </ul></li>
-<li><a href="./python_references.html">Python References</a>
+<li><p><strong>Understand the workflow</strong>: Read the <a href="The name of the workflow to refactor .">workflow</a> and understand what it does.</p></li>
+<li><p><strong>Extract Functions</strong>: Move all logical units (data processing, analysis, plotting) into <code>R/[basename].R</code>.</p>
 <ul>
-<li><a href="./python_strategy.html">Python Coding Strategy</a></li>
-<li><a href="./envsys.html#python-coding">Python Coding from Environmental Systems</a></li>
+<li>Document each function with <strong>Roxygen2</strong> syntax (including <code>@param</code>, <code>@return</code>, and <code>@export</code>).</li>
+<li>Use R native pipes (<code>|&gt;</code>) and explicit namespace calls (e.g., <code>dplyr::mutate</code>).</li>
+<li>Centralize shared constants (like coordinate maps) if not already in <code>common.R</code>.</li>
 </ul></li>
-<li><a href="./ShinyApps.html">Shiny Apps</a></li>
-<li><a href="./quarto.html">Quarto References</a></li>
-<li><a href="./AI.html">Artificial Intelligence (AI)</a>
+<li><p><strong>Create Entry Script</strong>: Create an execution script <code>inst/scripts/analyze_[basename].R</code>.</p>
 <ul>
-<li><a href="./AI_prompts.html">AI Prompt Examples</a></li>
+<li>Use it as a clean entry point that calls the functions defined in <code>R/</code>.</li>
+<li>Handle environment setup, file paths, and high-level execution flow here.</li>
 </ul></li>
-<li><a href="https://github.com/byandell/Documentation">GitHub Repo</a></li>
+<li><p><strong>Return S3 Objects</strong>: Refactor the main “run” function to return an S3 object of class <code>[basename]_analysis</code>.</p>
+<ul>
+<li>Implement <code>print</code>, <code>summary</code>, and <code>plot</code> methods in <code>R/[basename].R</code>.</li>
+<li>Move file-saving logic (<code>write.csv</code>, <code>ggsave</code>) out of the functions and into the entry script.</li>
+</ul></li>
+<li><p><strong>Verify Integration</strong>: Check package and scripts, correcting any issues that arise.</p>
+<ul>
+<li>Verify documents with <code>devtools::document()</code>.</li>
+<li>Build the package.</li>
+<li>Ask user whether or not to run the analyze_<a href="The `basename` to use for the refactored workflow.">basename</a>.R script to make sure it works.</li>
+</ul></li>
+<li><p><strong>Create Exploration Document</strong>: Create an interactive Shiny-based Quarto document <code>inst/scripts/explore_[basename].qmd</code> allowing for dynamic filtering and exploration.</p>
+<ul>
+<li>Set <code>server: shiny</code> in the YAML header.</li>
+<li>Use <code>context: setup</code> to load data via <code>sysgenAnalysis::read_[basename]_analysis()</code>.</li>
+<li>Use <code>::: {.panel-tabset}</code> to organize sections into <strong>Summary</strong>, <strong>Tables</strong>, and <strong>Plots</strong>.</li>
+<li>Use Shiny’s <code>fluidRow</code> and <code>column</code> within each tab to create a side-bar like experience for controls next to outputs.</li>
+<li>Integrate <code>downr::downloadUI</code> and <code>downr::downloadServer</code> for exporting tables and plots.</li>
+<li>This approach provides a premium, interactive experience while keeping rendering fast by loading pre-calculated CSVs.</li>
+</ul></li>
+</ol>
+<p><strong>Requested Files</strong>:</p>
+<ul>
+<li><code>R/[basename].R</code></li>
+<li><code>inst/scripts/analyze_[basename].R</code></li>
+<li><code>inst/scripts/explore_[basename].qmd</code></li>
 </ul>
-<section id="my-documentation-journey" class="level2">
-<h2 class="anchored" data-anchor-id="my-documentation-journey">My Documentation Journey</h2>
-<p>This repository is a collection of useful documentation and tutorials for various topics, mostly related to code languages and tools. These were previously dispersed in various GitHub repositories and organizations, and have been consolidated here, with a few exceptions. These reflect my ideas on how <a href="https://byandell.github.io/Data-Evolve/">Data Evolve</a> in concert with the evolution of code-based tools and languages.</p>
-<p>My notes on <a href="cran.r-project.org">R</a> were organized for a short course in the <a href="https://hub.datascience.wisc.edu/">UW-Madison Data Science Hub</a>, which remain in their <a href="https://github.com/UW-Madison-DataScience/">UW-Madison-DataScience GitHub Organization</a> as the repository <a href="https://github.com/UW-Madison-DataScience/R_for_data_sciences">R_for_data_sciences</a>.</p>
-<p>I have been working in System Genetics for several decades, with material gathered in the GitHub Organization <a href="https://github.com/byandell-sysgen">byandell-sysgen</a>. There is an evolution of code in the repositories of this organization.</p>
-<p>My exploration of earth data science (EDA) is in my GitHub Organization <a href="https://github.com/byandell-envsys">byandell-envsys</a>. This journey began with my introduction to the <a href="https://esiil.org/">Environmental Data Science Innovation &amp; Impact Lab (ESIIL)</a>. I took some short courses on EDA through ESIIL, which led to my <a href="https://github.com/byandell-envsys/geospatial">geospatial</a> package; with references now migrated here in <a href="./geospatial.html">geospatial.md</a>. I attended the ESIIL Innovation Summit in 2023 (and every year since), which introduced me to many amazing people who have become friends. An exciting mix of top-notch IT experts gather to share learning and access to state-of-the-art tools. Through ESIIL I have gotten to know a collection of Tribal data scientists with amazing skills and perspectives on knowledge, science and the earth.</p>
-<p>My learning about environmental systems spans technical, cultural and environmental spheres. I have collaborated as part of the <a href="https://esiil.org/working-groups">ESIIL Working Groups</a> for <a href="https://github.com/byandell-envsys/Maka-Sitomniya">Maka Sitomniya (2024-2026)</a> (see <a href="https://cu-esiil.github.io/data-library/">ESIIL Data Library</a> and <a href="https://github.com/byandell-envsys/Maka-Sitomniya/tree/main/datacube/notebooks">datacube/notebooks</a>) and <a href="https://cu-esiil.github.io/resilience-rare-hydrologic-events-management-innovation-summit-2025__15/">Three Rivers (2025)</a>. The Maka Sitomniya working group led to an ongoing collaboration with the <a href="https://sicangudata.org/">Sicangu Climate Center</a>.</p>
-<p>I began attending the Friday noon meetings of the <a href="https://www.olc.edu/current-students/degree-programs-areas-of-study/math-science-tech/">Oglala Lakota College Math, Science, and Technology Department</a>, which has included a collaboration on Tribal boundary maps, gathered in the <a href="https://cran.r-project.org/">R</a> package <a href="https://github.com/byandell-envsys/landmapr">landmapr</a>.</p>
-<p>I attended the <a href="https://earthlab.colorado.edu/">CU Boulder EarthLab</a> course on <a href="https://github.com/byandell-envsys/EarthDataAnalytics">Earth Data Analytics</a>. To help me understand and organize code and ideas, I developed the <a href="https://github.com/byandell-envsys/landmapy">landmapy</a> package. My notes on <a href="https://www.python.org/">Python</a> and related topics developed during the course are in <a href="./python_references.html">Python References</a>, <a href="./python_strategy.html">Python Coding Strategy</a>, and <a href="./envsys.html">Environmental Systems References</a>, now gathered in this repository.</p>
-<p>I have been learning about <a href="https://shiny.posit.co/">Shiny</a> since before I attended the <a href="https://github.com/rstudio/rstudio-conf">2015 Rstudio conference</a>. Notes on my shiny apps are in <a href="./ShinyApps.html">ShinyApps.md</a>. I created the <a href="https://github.com/byandell/geyser">geyser</a> repository to help me consolidate my understanding of <code>Shiny</code> with concrete examples in <code>R</code> and <code>Python</code>. This uses the <a href="https://shiny.posit.co/r/gallery/start-simple/faithful">Old Faithful shiny app</a> where the data are included in the <code>R</code> system as <code>data(faithful)</code>, and in the Python package <a href="https://seaborn.pydata.org/">seaborn</a> as <code>geyser</code>. See also <a href="./quarto.html">Quarto references</a> for other types of interactive documents.</p>
-<p>My learning about AI agents and tools is evolving, including the repository <a href="https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis">sysgenAnalysis</a>. Initial thoughts on so-called artifical intelligence are in my blog about Jaron Lanier’s <a href="https://byandell.github.io/Jaron-Lanier-There-is-no-AI/">There is no AI</a>. References about the concept and evolution “AI” tools are in <a href="./AI.html">AI.md</a>.</p>
 
 
 </section>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>narrative</title>
+<title>file_versions</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,83 +23,137 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="narrative_files/libs/clipboard/clipboard.min.js"></script>
-<script src="narrative_files/libs/quarto-html/quarto.js"></script>
-<script src="narrative_files/libs/quarto-html/popper.min.js"></script>
-<script src="narrative_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="narrative_files/libs/quarto-html/anchor.min.js"></script>
-<link href="narrative_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="narrative_files/libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="narrative_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="narrative_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="narrative_files/libs/bootstrap/bootstrap-fe6593aca1dacbc749dc3d2ba78c8639.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a21a96fda2a35a6034e035564d362780.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
 <body class="fullcontent">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<section id="quarto-presentation" class="level1">
-<h1>Quarto Presentation</h1>
-<p><strong>Prompt:</strong> Create a quarto slide deck from <a href="../AI_prompts.md">AI_prompts.md</a> in light mode and place it in folder <a href="prompt.qmd">quarto/prompt.qmd</a>. Adjust slide styling to use a more compact layout so that content fits neatly on each slide Update <code>.gitignore</code> for quarto documents.</p>
-<p><strong>Response:</strong> I have created a Quarto slide deck based on the contents of <a href="file:///Users/brianyandell/Documents/GitHub/Documentation/AI_prompts.md">AI_prompts.md</a>.</p>
-<p>Here is a summary of the files created and configured:</p>
+<section id="improving-file-version-management-with-github" class="level1">
+<h1>Improving File Version Management with GitHub</h1>
+<p><strong>Challenge</strong>: As code (or other documents) evolve, it is too easy to just save another version. Here we assume that is done as <code>xxx_v1.R</code>, <code>xxx_v2.R</code> and so on. GitHub version control enables one to have just one file, <code>xxx.R</code>, and still have the history of all versions.</p>
+<p><strong>Use</strong>: Be sure you are working in a folder where you want the new package components to live, and that you have set this up as a git repository. Type the following prompt into AI; it will find all files with multiple versions ending in <code>_v[0-9]+.R</code> or <code>v[0-9]+.R</code>.</p>
+<p><strong>Prompt</strong>: “Run the <a href="https://github.com/byandell/Documentation/blob/main/prompts/file_versions.md">file versions prompt</a> in the current folder.”</p>
+<section id="github-version-control-prompt" class="level2">
+<h2 class="anchored" data-anchor-id="github-version-control-prompt">GitHub Version Control Prompt</h2>
+<p>“<strong>Reconstruct Git history for versioned R scripts</strong> matching <code>[basename][ _]v[0-9]+.R</code>.</p>
 <ol type="1">
-<li><strong>Quarto Slide Deck</strong>: <a href="file:///Users/brianyandell/Documents/GitHub/Documentation/quarto/prompt.qmd">quarto/prompt.qmd</a>
+<li><strong>Make sure to do a <code>git pull</code> first.</strong></li>
+</ol>
+<p>For each set of files:</p>
+<ol type="1">
+<li><strong>Initialize v1</strong>: If a <code>v1</code> file is missing but <code>[basename].R</code> exists, copy <code>[basename].R</code> to create the <code>v1</code> version. If <code>v1</code> already exists, overwrite <code>[basename].R</code> with its content to start the history.</li>
+<li><strong>Commit Sequence</strong>: For each version (<span class="math inline">\(N = 1, 2, 3...\)</span>) in order:
 <ul>
-<li>Converted to the modern web-based <strong>Reveal.js</strong> format.</li>
-<li>Structured into logical sections using background-colored slide breaks (<code># Section Title {background-color="..."}</code>).</li>
-<li>Utilizes advanced Quarto features such as column layouts (<code>::: {.columns}</code>), callout boxes, and incremental lists (<code>::: {.incremental}</code>).</li>
-<li>Adjusted all relative file links to match the new subdirectory structure.</li>
+<li>Overwrite <code>[basename].R</code> with the content of version <code>vN</code>.</li>
+<li>Commit <code>[basename].R</code> with message <code>vN</code>, using the file’s original creation date as the commit timestamp.</li>
 </ul></li>
-<li><strong>Custom Presentation Styling</strong>: <a href="file:///Users/brianyandell/Documents/GitHub/Documentation/quarto/custom.scss">quarto/custom.scss</a>
+<li><strong>Safety Rules</strong>:
 <ul>
-<li>Designed a premium dark-mode aesthetic using Slate and Sky/Rose accents.</li>
-<li>Customized typography using modern sans-serif fonts (<code>Outfit</code>, <code>Inter</code>).</li>
-<li>Added glowing shadows and rounded borders to code blocks, and styled Quarto callouts nicely to pop against the dark background.</li>
-</ul></li>
-<li><strong>Rendered Output</strong>: <a href="file:///Users/brianyandell/Documents/GitHub/Documentation/quarto/prompt.html">quarto/prompt.html</a>
-<ul>
-<li>Compiled using <code>quarto render</code> to ensure syntax validity. It rendered successfully without errors.</li>
+<li>Ignore singleton files (e.g., <code>source*v2.R</code>).</li>
+<li>Keep all original versioned files (<code>v1</code>, <code>v2</code>, etc.) intact; do not delete them.”</li>
 </ul></li>
 </ol>
-<section id="slide-structure-overview" class="level3">
-<h3 class="anchored" data-anchor-id="slide-structure-overview">Slide Structure Overview</h3>
+<hr>
+</section>
+<section id="key-improvements-made" class="level2">
+<h2 class="anchored" data-anchor-id="key-improvements-made">Key Improvements Made</h2>
 <ul>
-<li><strong>Section 1: Introduction &amp; Core Concepts</strong>
-<ul>
-<li><em>Documenting AI Workflows</em>: Core principles of saving prompt/walkthrough files.</li>
-<li><em>Prompt Engineering Resources</em>: Reference links and guides.</li>
-</ul></li>
-<li><strong>Section 2: Saving Prompts &amp; Agent Conversations</strong>
-<ul>
-<li><em>Saving Prompts and Walkthroughs</em>: Practical commands and real-world repository examples.</li>
-<li><em>AI Agent Conversation Structure</em>: Multi-turn prompt chaining and version control.</li>
-<li><em>System Instructions</em>: Config examples for Python (<code>scikit-learn</code> &amp; <code>pandas</code>) and R (<code>tidyverse</code>).</li>
-<li><em>The CRAFT Framework</em>: Context, Role, Action, Format, and Tone, with the grant proposal example.</li>
-</ul></li>
-<li><strong>Section 3: Practical Prompt Examples</strong>
-<ul>
-<li><em>Documenting Files &amp; Folders</em>: Automated README and TOC generation prompts.</li>
-<li><em>Convert DOCX to Markdown &amp; Slides</em>: Pandoc conversion and Reveal.js slide deck generation.</li>
-<li><em>GitHub Prompts (Versioning Files)</em>: R file multi-version commit workflow.</li>
-<li><em>GitHub Prompts (Git Conflict Resolution)</em>: The “Git Hell” walkthrough prompt.</li>
-<li><em>Organizing a Workflow</em>: Transforming R workflows into functions in packages.</li>
-<li><em>Folder Documentation in ResearchDrive</em>: Balancing private RD directories with public GitHub documentation.</li>
-</ul></li>
+<li><p><strong>Logical Grouping</strong>: Instead of listing steps as separate actions, it frames them as a single “Workflow for each set,” which is easier for an AI to parse.</p></li>
+<li><p><strong>Clearer Conditional</strong>: The “v1” logic is simplified into a “normalization” step that ensures the git history starts correctly regardless of whether the first version was named with a suffix or not.</p></li>
+<li><p><strong>Punchy Directives</strong>: Uses bold headers (<strong>Initialize</strong>, <strong>Commit Sequence</strong>, <strong>Safety Rules</strong>) to make the constraints stand out.</p></li>
+<li><p><strong>Timestamp Clarity</strong>: Explicitly mentions using the creation date as the “commit timestamp,” which is the specific instruction needed for Git-based history reconstruction.</p></li>
 </ul>
+<p><strong>Would you like me to help you execute this workflow on your current files?</strong> I can see you have several matching sets like <code>MafA_SNP_DEG_Integration</code> and <code>Shiny app prototype for Mafa SNP DEG analysis</code>.</p>
+
+
 </section>
 </section>
 
-</main>
-<!-- /main column -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

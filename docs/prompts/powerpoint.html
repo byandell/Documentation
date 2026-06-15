@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Yandell Documentation</title>
+<title>powerpoint</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,21 +23,21 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a21a96fda2a35a6034e035564d362780.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a21a96fda2a35a6034e035564d362780.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -78,64 +78,62 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Yandell Documentation</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
+<section id="r-analysis-prompt-history" class="level1">
+<h1>R Analysis Prompt History</h1>
+<p><em>Date: 2026-03-19</em> (Updated: 2026-03-25)</p>
+<p><strong>Execution Prompt Used:</strong> “Run the prompt and do all the steps listed in promptsAlan.md”. Make sure all software needed is installed.</p>
+<p>Here is a consolidated record of the instructions used to build the <code>Hsp90_GTT.R</code> data analysis pipeline. They have been refined and grouped to reduce duplication while accurately capturing the complete workflow requirements.</p>
+<section id="data-initialization" class="level3">
+<h3 class="anchored" data-anchor-id="data-initialization">1. Data Initialization</h3>
+<blockquote class="blockquote">
+<p>We will be analyzing Glucose Tolerance Test (GTT) data from this master spreadsheet: <code>'NDNB-25 B6 and NZO Masterdate sheet v2 R.xlsx'</code>.</p>
+</blockquote>
+</section>
+<section id="time-course-line-graphs-glucose-insulin-log-ratio" class="level3">
+<h3 class="anchored" data-anchor-id="time-course-line-graphs-glucose-insulin-log-ratio">2. Time-Course Line Graphs (Glucose, Insulin, &amp; Log Ratio)</h3>
+<blockquote class="blockquote">
+<p>Generate time-course line graphs for the GTT data at 0, 15, 30, and 120 minutes vs.&nbsp;time. Create separate plots for: - <strong>Glucose levels</strong> - <strong>Insulin levels</strong> - <strong>log(Insulin / Glucose) ratio</strong></p>
+<p>Output individual figures for both the <strong>NZO</strong> strain and <strong>B6</strong> strain across each of the three metrics (yielding 6 plots total). Format the aesthetics such that the Vehicle treated group maps to black dots and lines, and the Compound treated group maps to blue dots and lines. Include standard error bars.</p>
+</blockquote>
+</section>
+<section id="cross-sectional-scatter-plot" class="level3">
+<h3 class="anchored" data-anchor-id="cross-sectional-scatter-plot">3. Cross-Sectional Scatter Plot</h3>
+<blockquote class="blockquote">
+<p>Create a cross-sectional scatter plot mapping the <strong>change in fasting glucose</strong> (Glucose at 0 GTT minus glucose preinjection) on the Y-axis against the <strong>change in body weight</strong> (weight postinjection minus weight preinjection) on the X-axis for all mice.</p>
+<p>Format the scatter plot with the following aesthetics: - Color the NZO strain blue and the B6 strain black. - The drug-treated (compound) mice should be circles and vehicle-treated mice should be squares. - Add linear regression lines for each of the 4 individual subgroups. - Calculate and display the Pearson correlation coefficients (<code>r</code>) and associated <code>p-values</code> as explicit text directly on the graph.</p>
+</blockquote>
+</section>
+<section id="file-management" class="level3">
+<h3 class="anchored" data-anchor-id="file-management">4. File Management</h3>
+<blockquote class="blockquote">
+<p>Rename the script file formatting spaces to underscores (<code>Hsp90_GTT</code>), and explicitly add the <code>.R</code> file extension to properly follow standard naming conventions.</p>
+</blockquote>
+</section>
+<section id="documentation" class="level3">
+<h3 class="anchored" data-anchor-id="documentation">5. Documentation</h3>
+<blockquote class="blockquote">
+<p>Add the current date to this tracking file.</p>
+</blockquote>
+</section>
+<section id="presentation-generation" class="level3">
+<h3 class="anchored" data-anchor-id="presentation-generation">6. Presentation Generation</h3>
+<blockquote class="blockquote">
+<p>Use Quarto to automatically generate a PowerPoint deck (<code>.pptx</code>) embedding all of the outputted PNG figures. Ensure the presentation includes: - A two-column Table of Contents slide with functional intra-document hyperlinks. - A background section on Gluconeogenesis, split across multiple clean slides with academic references.</p>
+</blockquote>
+</section>
+<section id="insulin-baseline-normalization" class="level3">
+<h3 class="anchored" data-anchor-id="insulin-baseline-normalization">7. Insulin Baseline Normalization</h3>
+<blockquote class="blockquote">
+<p>Process the time 0 insulin baseline measurements by removing them from the time-course mapping and calculate two new subgroup metrics: the <code>Insulin / Insulin_0</code> ratio and the extracted log-regression residuals (<code>log(Insulin) ~ log(Insulin_0)</code>). Plot both the Insulin Ratio and Insulin Residuals over time, splitting the NZO and B6 strains side-by-side using <code>facet_wrap</code>. Add these newest plots to the Quarto presentation deck.</p>
+</blockquote>
 
 
-</header>
-
-
-<ul>
-<li><a href="#my-documentation-journey">My Documentation Journey</a></li>
-<li><a href="./R.html">R</a></li>
-<li><a href="./github.html">GitHub, Connect, and CodeSpaces</a></li>
-<li><a href="./envsys.html">Environmental Systems References</a>
-<ul>
-<li><a href="./geospatial.html">Geospatial Resources</a></li>
-<li><a href="./envsys.html#earth-data-analytics">Earth Data Analytics</a></li>
-<li><a href="./envsys.html#open-street-map">Open Street Map</a></li>
-<li><a href="./envsys.html#google-maps-platform-access">Google Maps Platform Access</a></li>
-</ul></li>
-<li><a href="./python_references.html">Python References</a>
-<ul>
-<li><a href="./python_strategy.html">Python Coding Strategy</a></li>
-<li><a href="./envsys.html#python-coding">Python Coding from Environmental Systems</a></li>
-</ul></li>
-<li><a href="./ShinyApps.html">Shiny Apps</a></li>
-<li><a href="./quarto.html">Quarto References</a></li>
-<li><a href="./AI.html">Artificial Intelligence (AI)</a>
-<ul>
-<li><a href="./AI_prompts.html">AI Prompt Examples</a></li>
-</ul></li>
-<li><a href="https://github.com/byandell/Documentation">GitHub Repo</a></li>
-</ul>
-<section id="my-documentation-journey" class="level2">
-<h2 class="anchored" data-anchor-id="my-documentation-journey">My Documentation Journey</h2>
-<p>This repository is a collection of useful documentation and tutorials for various topics, mostly related to code languages and tools. These were previously dispersed in various GitHub repositories and organizations, and have been consolidated here, with a few exceptions. These reflect my ideas on how <a href="https://byandell.github.io/Data-Evolve/">Data Evolve</a> in concert with the evolution of code-based tools and languages.</p>
-<p>My notes on <a href="cran.r-project.org">R</a> were organized for a short course in the <a href="https://hub.datascience.wisc.edu/">UW-Madison Data Science Hub</a>, which remain in their <a href="https://github.com/UW-Madison-DataScience/">UW-Madison-DataScience GitHub Organization</a> as the repository <a href="https://github.com/UW-Madison-DataScience/R_for_data_sciences">R_for_data_sciences</a>.</p>
-<p>I have been working in System Genetics for several decades, with material gathered in the GitHub Organization <a href="https://github.com/byandell-sysgen">byandell-sysgen</a>. There is an evolution of code in the repositories of this organization.</p>
-<p>My exploration of earth data science (EDA) is in my GitHub Organization <a href="https://github.com/byandell-envsys">byandell-envsys</a>. This journey began with my introduction to the <a href="https://esiil.org/">Environmental Data Science Innovation &amp; Impact Lab (ESIIL)</a>. I took some short courses on EDA through ESIIL, which led to my <a href="https://github.com/byandell-envsys/geospatial">geospatial</a> package; with references now migrated here in <a href="./geospatial.html">geospatial.md</a>. I attended the ESIIL Innovation Summit in 2023 (and every year since), which introduced me to many amazing people who have become friends. An exciting mix of top-notch IT experts gather to share learning and access to state-of-the-art tools. Through ESIIL I have gotten to know a collection of Tribal data scientists with amazing skills and perspectives on knowledge, science and the earth.</p>
-<p>My learning about environmental systems spans technical, cultural and environmental spheres. I have collaborated as part of the <a href="https://esiil.org/working-groups">ESIIL Working Groups</a> for <a href="https://github.com/byandell-envsys/Maka-Sitomniya">Maka Sitomniya (2024-2026)</a> (see <a href="https://cu-esiil.github.io/data-library/">ESIIL Data Library</a> and <a href="https://github.com/byandell-envsys/Maka-Sitomniya/tree/main/datacube/notebooks">datacube/notebooks</a>) and <a href="https://cu-esiil.github.io/resilience-rare-hydrologic-events-management-innovation-summit-2025__15/">Three Rivers (2025)</a>. The Maka Sitomniya working group led to an ongoing collaboration with the <a href="https://sicangudata.org/">Sicangu Climate Center</a>.</p>
-<p>I began attending the Friday noon meetings of the <a href="https://www.olc.edu/current-students/degree-programs-areas-of-study/math-science-tech/">Oglala Lakota College Math, Science, and Technology Department</a>, which has included a collaboration on Tribal boundary maps, gathered in the <a href="https://cran.r-project.org/">R</a> package <a href="https://github.com/byandell-envsys/landmapr">landmapr</a>.</p>
-<p>I attended the <a href="https://earthlab.colorado.edu/">CU Boulder EarthLab</a> course on <a href="https://github.com/byandell-envsys/EarthDataAnalytics">Earth Data Analytics</a>. To help me understand and organize code and ideas, I developed the <a href="https://github.com/byandell-envsys/landmapy">landmapy</a> package. My notes on <a href="https://www.python.org/">Python</a> and related topics developed during the course are in <a href="./python_references.html">Python References</a>, <a href="./python_strategy.html">Python Coding Strategy</a>, and <a href="./envsys.html">Environmental Systems References</a>, now gathered in this repository.</p>
-<p>I have been learning about <a href="https://shiny.posit.co/">Shiny</a> since before I attended the <a href="https://github.com/rstudio/rstudio-conf">2015 Rstudio conference</a>. Notes on my shiny apps are in <a href="./ShinyApps.html">ShinyApps.md</a>. I created the <a href="https://github.com/byandell/geyser">geyser</a> repository to help me consolidate my understanding of <code>Shiny</code> with concrete examples in <code>R</code> and <code>Python</code>. This uses the <a href="https://shiny.posit.co/r/gallery/start-simple/faithful">Old Faithful shiny app</a> where the data are included in the <code>R</code> system as <code>data(faithful)</code>, and in the Python package <a href="https://seaborn.pydata.org/">seaborn</a> as <code>geyser</code>. See also <a href="./quarto.html">Quarto references</a> for other types of interactive documents.</p>
-<p>My learning about AI agents and tools is evolving, including the repository <a href="https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis">sysgenAnalysis</a>. Initial thoughts on so-called artifical intelligence are in my blog about Jaron Lanier’s <a href="https://byandell.github.io/Jaron-Lanier-There-is-no-AI/">There is no AI</a>. References about the concept and evolution “AI” tools are in <a href="./AI.html">AI.md</a>.</p>
-
-
+</section>
 </section>
 
 </main> <!-- /main -->
