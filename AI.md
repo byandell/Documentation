@@ -94,7 +94,7 @@ Below is an eclectic collection of resources about AI and its implications.
 
 - [The Environmental Cost of Artificial Intelligence: Carbon, Water, and Land Footprints | United Nations University](https://unu.edu/inweh/collection/environmental-cost-of-AIs-Enrgy-Use-Carbon-water-and-land-footprints)
   - [Rising Emissions, Depleting Water and Vanishing Land—UN Scientists: AI Is Threatening Natural Resources for Billions | United Nations University](https://unu.edu/inweh/news/environmental-cost-of-AIs-Enrgy-use-carbon-water-and-land-footprints)
-  - [New Form of Imperialism": Renowned U.N. Scientist on AI Boom's Huge Water, Carbon & Land Footprint (DemocracyNow!)](https://www.youtube.com/watch?v=oZ-oc_7GRKE)
+  - [New Form of Imperialism": Renowned U.N. Scientist on AI Boom's Huge Water, Carbon & Land Footprint (DemocracyNow!)](https://www.democracynow.org/2026/6/12/ai_data_centers_water_waste)
 - [Data centers are growing in Texas, but big questions remain about water use (UT News)](https://news.utexas.edu/2026/05/06/data-centers-are-growing-in-texas-but-big-questions-remain-about-water-use/)
   - [Water Requirements for Data Centers (UT Bureau of Economic Geology)](https://compass.beg.utexas.edu/assets/publications/Water_Requirements_for_DC_White_Paper.pdf) (missing)
   - [Thirsty Data: Water Use and the Projected Data Center Boom in Texas (HARC)](https://harcresearch.org/wp-content/uploads/2026/01/Thirsty-Data-Water-Use-and-The-Projected-Data-Center-Boom-in-Texas.pdf)
