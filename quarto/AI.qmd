@@ -1,7 +1,7 @@
 ---
 title: "Artificial Intelligence (AI)"
 subtitle: "Concepts, Environments, and Collaboration"
-author: "Brian Yandell"
+author: "Brian Yandell ([_byandell.github.io_](https://byandell.github.io))"
 date: last-modified
 format:
   revealjs:

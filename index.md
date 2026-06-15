@@ -1,6 +1,8 @@
 ---
-title: "Yandell Documentation"
+title: "Brian Yandell Documentation"
 ---
+
+[_byandell.github.io_](https://byandell.github.io)
 
 - [My Documentation Journey](#my-documentation-journey)
 - [R](./R.md)
