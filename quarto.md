@@ -2,6 +2,7 @@
 
 ## Slideshows
 
+- [AI References](https://byandell.github.io/Documentation/quarto/AI.html)
 - [AI Prompt Examples](https://byandell.github.io/Documentation/quarto/prompt.html)
 - [Geyser Shiny Examples](https://github.com/byandell/geyser)
 - [AI Narrative](https://byandell.github.io/Documentation/quarto/narrative.html)

@@ -1,0 +1,261 @@
+---
+title: "Artificial Intelligence (AI)"
+subtitle: "Concepts, Environments, and Collaboration"
+author: "Brian Yandell"
+date: last-modified
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    transition: slide
+    slide-number: true
+    show-slide-number: all
+    chalkboard: true
+    footer: "Artificial Intelligence (AI) | Concepts & Environments"
+    highlight-style: github
+---
+
+# Perspectives & Environmental Impact {background-color="#e0f2fe"}
+
+## How Might We Think About AI?
+
+### Tools Reshaping Us
+> “We shape our tools and thereafter they shape us.”  
+> &mdash; *Marshall McLuhan (via John Culkin)*
+
+- Deeply engaging with AI is a process, not just pushing a button.
+- Treat it as a collaboration rather than just a passive tool.
+
+::: {.callout-note}
+### Social Collaboration
+Jaron Lanier's [There is no AI](https://byandell.github.io/Jaron-Lanier-There-is-no-AI/) reframes AI as a medium for human cooperation, emphasizing data dignity and creator credit.
+:::
+
+## The Disrupted & Rethought Workforce
+
+### Workforce Transformation
+- Early success is seen in AI-agent-native startups.
+- Legacy companies experience shifts in workforce dynamics.
+- Focus is shifting from replacing people to rethinking how we collaborate.
+
+::: {.callout-tip}
+### Core References
+- **NYT**: *Coding After Coders* (Thompson) &middot; *The Workers Letting AI Do Their Jobs* (Daily)
+- **NYT**: *The Small-Business Owners Managing Armies of A.I. Employees* (Thompson)
+- **Atlantic**: *AI Panic Cycle* &middot; *What Do the People Building AI Believe?* (Warzel)
+:::
+
+## Ethics & Environmental Impact
+
+### Environmental Footprint
+- Rapid growth of data centers strains local **power** and **water** resources.
+- Efficiency of algorithms is improving, but resource demand is rising.
+- Increasing focus on protecting natural resources and supporting indigenous lands.
+
+::: {.callout-important}
+### Call for Guardrails
+Scientists warn in *Nature* that uncritical adoption of AI in science requires urgent regulatory guardrails.
+:::
+
+- **Ethics Resources**: [Pope and AI](https://byandell.github.io/The-Pope-and_AI/) &middot; [Ethics of AI (Tyson Swetnam)](https://tysonswetnam.com/blog/posts/2025-01-14-gpt101/#ethics-of-ai) &middot; [No Data Centers on Native Land](https://Honorearth.org/stopdatacolonialism)
+
+## Data Center Resources & Efficiency
+
+::: {.columns}
+::: {.column width="50%"}
+### Energy & Water Reports
+- **UN Report**: Details footprints of carbon, water, and land usage.
+- **Texas HARC & UT News**: Reviews data center boom and water usage in Texas.
+- **LBNL**: U.S. Data Center Energy Usage Report.
+- **Data Center Map**: Tracker for infrastructure.
+:::
+
+::: {.column width="50%"}
+### Best Practices & Forecasts
+- **Microsoft**: Sustainable datacenter designs using zero water for cooling.
+- **Google**: Climate-conscious cooling commitments.
+- **Salish Tribal Alliance**: Zero Edge cloud data sovereignty.
+- **Micro Data Centers**: Shift toward Modular Edge Computing.
+:::
+:::
+
+# AI Environments {background-color="#e0f2fe"}
+
+## Connected Development Environments
+
+### Model Context Protocol (MCP)
+- Open protocol introduced by Anthropic.
+- Allows LLMs to interact securely with local/cloud tools and codebase context.
+- Enables AI agents to read files, run commands, and edit code under user guidance.
+
+::: {.callout-note}
+### Interactive Workflow
+Rather than copying and pasting code, the AI agent directly reads and modifies local code blocks based on natural conversations.
+:::
+
+## Cloud Educational Environments
+
+Enable students and teams to build and test code without complex local setup:
+
+- **GitHub Codespaces**: Cloud-hosted container integrated with GitHub and Copilot.
+- **Google Colab**: Interactive Python/R notebooks with Gemini integrations.
+- **CyVerse Discovery Environment**: Advanced biology and geospatial platform.
+  - Integrates AI assistants (Roo / Cline) into its VS Code IDE workspace.
+  - **AI Verde**: API tunnel providing access to high-performance LLMs.
+- **NSF ACCESS**: High-throughput computing via Jetstream2, HTCondor, and PATh.
+
+## Google Gemini & Antigravity
+
+### Antigravity 2.0 Suite
+Launched May 2026 with four primary tools:
+- **Antigravity 2.0**: Multi-agentic code platform.
+- **Antigravity CLI**: Command line terminal tool.
+- **Antigravity SDK**: Building custom agent apps.
+- **Antigravity IDE**: Workspace-integrated assistant.
+
+::: {.callout-warning}
+### Transition Note
+IDE version 2.0 does not carry over history automatically. See [Recovering Antigravity Conversations](../recover_conversations.md) for step-by-step help.
+:::
+
+- **Gemini Resources**: [Prompt Design Strategies](https://ai.google.dev/gemini-api/docs/prompt-design) &middot; [GitHub Repo Imports](https://kb.wisc.edu/ai/135575)
+
+## Standalone AI IDEs & Tools
+
+AI-native environments have quickly expanded beyond standard editor integrations:
+
+- **Claude Code**: Anthropic's terminal-based coding agent.
+- **OpenAI Codex**: Deeply integrated code generation models.
+- **Positron**: Posit's next-generation IDE built for R and Python data science.
+- **Windsurf**: Standalone AI editor optimizing code editing workflows.
+- **Cursor**: Advanced fork of VS Code featuring native MCP tool support.
+
+::: {.callout-caution}
+Be careful when using terminal-based interactive interpreters (like `radian`) alongside background AI terminal execution.
+:::
+
+## Agentic AI & Multi-Agent Orchestration
+
+::: {.columns}
+::: {.column width="50%"}
+### Orchestrating Agent Teams
+- Modern developers orchestrate multiple agents to tackle complex tasks.
+- Each agent holds its own role, persona, and technical skills.
+- Commercial frameworks exist in Claude, ChatGPT, and Antigravity.
+:::
+
+::: {.column width="50%"}
+### Open Source Platforms
+- **OpenClaw & Hermes**: Open orchestration engines.
+- **OASIS ScienceClaw**: ESIIL-developed clone of OpenClaw acting as a digital twin for scientific working groups.
+- **SOUL.md**: Markdown-based configuration files defining agent personalities.
+:::
+:::
+
+## Large Language Models (LLMs)
+
+::: {.columns}
+::: {.column width="50%"}
+### Neural Network Weights
+- LLMs are massive transformer networks predicting the next token in a sequence.
+- Neural weights are frozen after training, but context windows hold conversation state.
+- **Mixture of Experts (MoE)**: Activates only a subset of network layers for each query to save compute.
+:::
+
+::: {.column width="50%"}
+### Encoders & Decoders
+- **Tokenization**: Splitting text into tokens.
+- **Encoding**: Converting tokens into embeddings.
+- **Contextualization**: Processing context layers.
+- **Decoding**: Predicting and generating tokens.
+- **Detokenization**: Rendering back to text.
+:::
+:::
+
+## Open Source LLM Specifications
+
+Key characteristics of open-source models available viaCyVerse AI Verde:
+
+- **Context Window**: Max input token limit (ranging from 32k, 128k, up to 1M+).
+- **Quantization Level**: Bit-depth (e.g., FP16, INT8, 4-bit) defining the RAM memory requirements.
+- **Developer & License**: Lineage (Google Gemma, Meta Llama, Qwen, GLM) and licensing restrictions (Apache 2.0 vs Llama licenses).
+- **Modalities**: Support for text-only versus multimodal inputs (images, audio, video).
+
+# Prompt & Context Engineering {background-color="#e0f2fe"}
+
+## Prompt Engineering Fundamentals
+
+### Documenting the Trail
+- Prompt engineering designs inputs to guide an AI's output.
+- Always save your prompts to a file (e.g., `prompts.md`) to retain your workflow.
+- Ask the AI agent to update `prompts.md` and `walkthrough.md` as you code.
+
+::: {.callout-tip}
+### Core References
+[AI Prompt Examples](../AI_prompts.md) &middot; [Prompting Guide](https://www.promptingguide.ai/) &middot; Tyson Swetnam's [Getting Started with Prompts](https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure)
+:::
+
+## Prompts to Organize Workflows
+
+Split complex workflows into human-sized, manageable chunks:
+
+1. **Extract Functions**: Move heavy operations to a helper R file (`functions.R`).
+2. **Setup Notebook**: Create a clean Quarto document (`workflow.qmd`) that sources `functions.R`.
+3. **Handle Deliverables**: Configure the workflow to output figures and data tables (PDF/CSV).
+4. **Build Documentation**: Present the workflow in clear source and rendered forms.
+
+::: {.callout-note}
+Check out ESIIL's Three Rivers working group [AI Prompt Engineering docs](https://github.com/CU-ESIIL/resilience-rare-hydrologic-events-management-innovation-summit-2025__15/blob/main/docs/index.md#ai-prompt-engineering) for examples.
+:::
+
+## Context Engineering
+
+### Managing Attention Budgets
+- Every turn fills the agent's **context window**.
+- Excessive background context or giant documents cause hallucination or crash.
+- **Best Practice**: Request the agent to summarize files, then save and pass the summary to subsequent chats.
+
+::: {.callout-important}
+### Context Inflation
+Avoid oversized onboarding files. Keep repository rules focused to preserve conversation token budget.
+:::
+
+## Context: `AGENTS.md` vs `Agent Skills`
+
+AI coding assistants (Claude Code, Antigravity, Cursor) leverage two core standards to organize context:
+
+| Feature | `AGENTS.md` | Agent Skills (`SKILL.md`) |
+| --- | --- | --- |
+| **Purpose** | **Static repository context** (coding standards, project layout). | **Procedural knowledge** and automation recipes (deployment, tests). |
+| **Scope** | Bound to a single repository. | Reusable/portable across projects. |
+| **Structure** | Single Markdown file in root. | Folder with `SKILL.md` + scripts. |
+| **Trigger** | Loaded automatically. | Activated dynamically on keywords. |
+
+## `AGENTS.md` (Repository Context)
+
+Acts as the onboarding handbook for an AI agent entering a repository:
+
+- **Directory Layout**: Highlights where components, hooks, or styles live.
+- **Design & Coding Standards**: Strict rules (e.g., *"Prefer existing `Button` components"*).
+- **Layered Rules**: Nested `AGENTS.md` can layer constraints on specific sub-folders.
+
+### Real-world Examples:
+- [OASIS Group AGENTS.md](https://github.com/CU-ESIIL/Working_group_OASIS/blob/main/AGENTS.md)
+- [LLM Lesson Exemplar AGENTS.md](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md)
+- [OASIS ScienceClaw AGENTS.md](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md)
+
+## Agent Skills & `SKILL.md`
+
+Agent Skills represent a portable toolbox extending what an agent can perform:
+
+* **Trigger Actions**: YAML frontmatter defines triggers for specific command hooks.
+* **TDD Workflows**: Anti-rationalization rules prevent agents from skipping steps (e.g. bypassing test suites).
+* **Automation Scripts**: Scripts (Node, Python, Bash) execute complex deployment routines.
+
+```markdown
+---
+name: vercel-deploy
+description: Deploy my web app to Vercel production.
+---
+# Deploy Skill
+...
+```

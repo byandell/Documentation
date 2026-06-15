@@ -5,6 +5,7 @@ collaborative environments.
 To learn about (generative) AI, start with the self-paced workshop on
 [Generative AI & Prompt Engineering (Tyson Swetnam)](https://tyson-swetnam.github.io/intro-gpt/).
 
+- [AI References (Quarto Slideshow)](https://byandell.github.io/Documentation/quarto/AI.html)
 - [Articles about AI](#articles-about-ai)
   - [How might we think about AI?](#how-might-we-think-about-ai)
   - [What about ethics and environmental impact of AI?](#what-about-ethics-and-environmental-impact-of-ai)
