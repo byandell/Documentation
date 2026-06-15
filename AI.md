@@ -266,28 +266,41 @@ and context engineering is often described (as below) in the
 setting of using one AI agent at a time.
 
 Nowadays (Spring 2026), sophisticated users of AI orchestrate multiple AI agents
-to accomplish complex tasks
-using platforms such as
-[OpenClaw](https://www.openclaw.ai/),
-[Hermes](https://github.com/hermes-cli/hermes)
-of perhaps
-[Antigravity 2.0](https://antigravity.google/).
-Likely many other AI platforms (Claude, OpenAI, etc.) have similar agentic capabilities.
+to accomplish complex tasks.
+[Claude](https://claude.com/solutions/agents),
+[OpenAI ChatGPT][https://openai.com/index/introducing-workspace-agents-in-chatgpt/)
+and
+[Google Antigravity](https://antigravity.google/)
+have been evolving such capabilities quickly
+in the commercial world,
+while new open source platforms have emerged,
+notably
+[OpenClaw](https://www.openclaw.ai/) and
+[Hermes](https://hermes-agent.org/).
+
 A science version of OpenClaw
-[ScienceClaw](https://github.com/beita6969/ScienceClaw)
-is under development for scientific teams.
-ESIIL is imagining ScienceClaw as a
+[OASIS ScienceClaw](https://github.com/CU-ESIIL/openclaw_container)
+is under development for scientific teams by ESIIL.
+(See also
+[ScienceClaw](https://github.com/beita6969/ScienceClaw).)
+ESIIL is imagining OASIS ScienceClaw as a
 [digital twin](https://www.ibm.com/think/topics/digital-twin)
 of an
 [ESIIL Working Group](https://esiil.org/working_groups).
+
 There is an emerging concept of
-[SOUL](https://soul.md/)
+[SOUL.md](https://soul.md/)
 that defines each agent by the content
 of a markdown file in a project folder.
 
-This takes time and practice to build up both our ability
-to understand and use multiple agents,
-and selection and organization of appropriate agents for a task.
+- [SOUL Overview (Richard Weiss, Anthropic)](https://gist.github.com/Richard-Weiss/)
+- [SOUL Template (OpenClaw)](https://docs.openclaw.ai/reference/templates/SOUL/)
+- [SOUL Personality Guide (OpenClaw)](https://docs.openclaw.ai/concepts/soul)
+
+This all takes time and practice
+to build up both our ability
+to understand and use multiple agents.
+Selection and organization of appropriate agents for a task.
 Further, multiple agents will likely require a larger monthly
 fee, if using commercial agents.
 See for instance
