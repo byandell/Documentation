@@ -33,5 +33,12 @@
     "title": "Geospatial Resources",
     "section": "",
     "text": "ESIIL_Art_Data_Cube.Rmd: Yandell edit of Ty Tuff’s The Art of Making a Datacube\n\n\n\nCarpentries Etherpad\nGeospatial.Rmd: Rmarkdown from Workshop\n\n\nThe data have been organized in The Carpentries nicely in FigShare as workshop data from carpentries site. See also the https://datacarpentry.org/geospatial-workshop/ page section on Data and more information at https://datacarpentry.org/geospatial-workshop/data.html. The data seem to come from NEON Raster Intro page NEON Raster 00: Intro to Raster Data in R, via Download Dataset. The data are from two field sites:\n\nHarvard Forest (HARV)\nSan Joaquin Experimental Range (SJER)\n\nThe key raster data are the following “geotif” files:\n\nHARV_dsmCrop.tif\nHARV_dsmCrop.tif\nHARV_DSMhill.tif\n\nIt should be possible using some of the commands in the The art of making a data cube to elegantly download needed data on the fly."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Yandell Documentation",
+    "section": "",
+    "text": "GitHub, Connect, and CodeSpaces\nEnvironmental Systems References\n\nGeospatial Resources\nEarth Data Analytics\nOpen Street Map\nGoogle Maps Platform Access\n\nPython References\n\nPython Coding Strategy\nPython Coding from Environmental Systems\n\nShiny Apps\nQuarto References\nArtificial Intelligence (AI)\n\nAI Prompt Examples\n\nREADME"
   }
 ]

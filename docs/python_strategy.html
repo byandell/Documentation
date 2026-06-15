@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>python_strategy</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a21a96fda2a35a6034e035564d362780.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="python-coding-strategy" class="level1">
+<h1>Python Coding Strategy</h1>
+<p>These references were gathered while learning about environmental systems and data analytics while attending the <a href="https://earthlab.colorado.edu/">CU Boulder EarthLab</a> course on <a href="https://github.com/byandell-envsys/EarthDataAnalytics">Earth Data Analytics</a>. To help me understand and organize code and ideas, I developed the <a href="https://github.com/byandell-envsys/landmapy">landmapy</a> package. See also <a href="./envsys.html">Environmental Systems</a> references.</p>
+<ul>
+<li><a href="#python-coding-strategy">Python Coding Strategy</a>
+<ul>
+<li><a href="#make-coding-fun">Make Coding Fun</a></li>
+<li><a href="#build-a-function">Build a Function</a></li>
+<li><a href="#add-documentation">Add Documentation</a></li>
+<li><a href="#put-a-function-in-a-file">Put a Function in a File</a></li>
+<li><a href="#put-reusable-modules-in-their-own-directory">Put reusable Module(s) in their own Directory</a></li>
+<li><a href="#build-a-package-from-modules-in-a-directory">Build a Package from Modules in a Directory</a></li>
+<li><a href="#revisit-functions-in-modules-often">Revisit Functions in Modules Often</a></li>
+<li><a href="#use-github-as-organizing-tool">Use GitHub as Organizing Tool</a></li>
+<li><a href="#reorganize-a-package">Reorganize a Package</a></li>
+<li><a href="#import-functions-from-github">Import Functions from GitHub</a></li>
+<li><a href="#add-further-documentation">Add Further Documentation</a>
+<ul>
+<li><a href="#document-functions-in-modules-in-a-package">Document Functions in Modules in a Package</a></li>
+</ul></li>
+<li><a href="#migrate-from-jupyter-notebooks-to-quarto-documents">Migrate from Jupyter Notebooks to Quarto Documents</a></li>
+<li><a href="./kernel.html">Set Default Python Kernel for Quarto</a></li>
+</ul></li>
+</ul>
+<section id="make-coding-fun" class="level2">
+<h2 class="anchored" data-anchor-id="make-coding-fun">Make Coding Fun</h2>
+<p>This document has sections entitled with declarative verbs, in a sense urging me (and you) to follow these directions. Please take this with a light tone, as I offer suggestions that have been helpful for me, learned from many teachers over the years.</p>
+<p>My approach to coding is organic, intuitive and iterative. I like to start with a simple, working solution and then build on it. I find that this approach helps me to better understand the problem and evolve a simpler, more elegant solution over time. The goal of my code is to reveal patterns in data and to make them accessible to others.</p>
+<p><a href="https://byandell.github.io/Data-Evolve/">Data evolve</a> over time, and so does code, as my understanding of a project, and of the patterns in data, grows. I typically start with something simple. For instance, when working with envionmental data, it is often efficient to have a directory (folder) to place data files. In this course, we started with</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pathlib</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>data_dir <span class="op">=</span> os.path.join(</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    pathlib.Path.home(),</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'earth-analytics'</span>,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'data'</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'habitat'</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>os.makedirs(data_dir, exist_ok<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="build-a-function" class="level2">
+<h2 class="anchored" data-anchor-id="build-a-function">Build a Function</h2>
+<p>Once I repeatedly use code many times (at least twice), it is time to create a function that I can reuse. Note the generalization with a parameter <code>new_dir</code> to allow user to specify a different directory name.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> create_data_dir(new_dir<span class="op">=</span><span class="st">'habitat'</span>):</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> os</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> pathlib</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    data_dir <span class="op">=</span> os.path.join(</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        pathlib.Path.home(),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="st">'earth-analytics'</span>,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        <span class="st">'data'</span>,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        new_dir</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    os.makedirs(data_dir, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> data_dir</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>data_dir <span class="op">=</span> create_data_dir(<span class="st">'habitat'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="add-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="add-documentation">Add Documentation</h2>
+<p>To remind me of the purpose of the function, I added documentation using <a href="https://peps.python.org/pep-0257/">docstring</a>.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> create_data_dir(new_dir<span class="op">=</span><span class="st">'habitat'</span>):</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Create Data Directory if it does not exist.</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">        new_dir (char, optional): Name of new directory</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">        data_dir (char): path to new directory</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> os</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> pathlib</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    data_dir <span class="op">=</span> os.path.join(</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>        pathlib.Path.home(),</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>        <span class="st">'earth-analytics'</span>,</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>        <span class="st">'data'</span>,</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>        new_dir</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    os.makedirs(data_dir, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> data_dir</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="co"># data = create_data_dir('habitat')</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The last comment line is a reminder how to use this function. Once defined, I follow this suggestion:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>data_dir <span class="op">=</span> create_data_dir(<span class="st">'habitat'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="put-a-function-in-a-file" class="level2">
+<h2 class="anchored" data-anchor-id="put-a-function-in-a-file">Put a Function in a File</h2>
+<p>I then put the function in a (flat) python file, say using its name <code>create_data_dir.py</code>, which I could import into my notebook or script.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>run create_data_dir.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>data_dir <span class="op">=</span> create_data_dir(<span class="st">'habitat'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The file is re-read from disk with the <code>%run</code> magic command, which is useful for testing the script. Whenever the file is changed, I need to re-read with <code>%run</code>, with changes to <code>create_data_dir.py</code> available immediately.</p>
+<p>If the file is in the same folder as my notebook, I can instead import the function as follows:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> create_data_dir <span class="im">import</span> create_data_dir</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>data_dir <span class="op">=</span> create_data_dir(<span class="st">'habitat'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>However, to use <code>import</code> most effectively requires a few more steps.</p>
+</section>
+<section id="put-reusable-modules-in-their-own-directory" class="level2">
+<h2 class="anchored" data-anchor-id="put-reusable-modules-in-their-own-directory">Put reusable Module(s) in their own Directory</h2>
+<p>The <a href="references.md">references</a> become useful at this point, particularly <a href="https://ipython.org/ipython-doc/3/interactive/tutorial.html">IPython Interactive Computing</a>. When using <code>import</code>, we specifically reload the “module”, as we do with many of the python packages. Basically a <code>*.py</code> file is a module, and a directory containing <code>*.py</code> files is the beginnings of a package containing multiple modules. This is academic at this point, but becomes important when working with larger and/or multiple projects.</p>
+<p>Since I plan to use this function in multiple projects, I will separate it from any particular project by putting it in its own place. For my purposes, I have projects in folder <code>~/Documents/GitHub/</code>, so I will put the function in a folder <code>~/Documents/GitHub/landmapy/</code>. For technical reasons (below), I put the function in a subfolder, also called <code>landmapy</code>. Further, I expect to have several initializing functions, so I placed <code>create_data_director()</code> in a file <a href="https://github.com/byandell-envsys/landmapy/blob/main/landmapy/initial.py">initial.py</a>.</p>
+<p>On my local machine, I have the code for function <code>create_data_directory()</code> in module (file) <code>~/Documents/GitHub/landmapy/landmapy/initial.py</code>. I <code>%run</code> the function in this file</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>run <span class="op">~/</span>Documents<span class="op">/</span>GitHub<span class="op">/</span>landmapy<span class="op">/</span>landmapy<span class="op">/</span>initial.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>and use it as before,</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>data_dir <span class="op">=</span> create_data_dir(<span class="st">'habitat'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="build-a-package-from-modules-in-a-directory" class="level2">
+<h2 class="anchored" data-anchor-id="build-a-package-from-modules-in-a-directory">Build a Package from Modules in a Directory</h2>
+<p>Now I have a separate place for code functions used repeatedly, possibly across multiple projects. Over time, I create more functions and store them in files in this same place, <code>~/Documents/GitHub/landmapy/landmapy/</code>. While I can <code>%run</code> each file as needed as shown above, it is more efficient to create a package, which is a directory containing multiple modules.</p>
+<p>I chose to call my repo <a href="https://github.com/byandell-envsys/landmapy">landmapy</a> because it has python functions for land cover mapping. (I earlier created a repo called <a href="https://github.com/byandell-envsys/landmapr">landmapr</a> with R code for land cover mapping.)</p>
+<p>Again, the <a href="references.md">references</a> become useful at this point, particularly <a href="https://packaging.python.org/en/latest/tutorials/packaging-projects/">Packaging Python Projects</a>. This shows steps beyond organizing modules in a directory, to creating a package that can be installed and imported into any project. We start with the following directory structure:</p>
+<pre><code>landmapy/
+    landmapy/
+        __init__.py
+        initial.py</code></pre>
+<p>The <code>__init__.py</code> is a special file, which can be empty, required by python to identify this directory is a package.</p>
+<pre><code>landmapy/
+    LICENSE         # code license (typically open source)
+    README.md       # overview of the package
+    pyproject.toml  # or setup.py (there seem to be two ways to do this)
+    landmapy/       # package directory (this is the name the package will be imported as)
+        __init__.py # tells python this is a package
+        initial.py  # module containing functions</code></pre>
+<p>I can now import functions from the package as needed after I install the package with <a href="https://pypi.org/project/pip/">pip</a>:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: False</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>pip install <span class="op">~/</span>Documents<span class="op">/</span>GitHub<span class="op">/</span>landmapy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The import is slightly different as we access the <code>initial</code> module from the <code>landmapy</code> package and import the function <code>create_data_dir</code> from that module. (The comment line <code>#| eval: False</code> is a directive to the markdown interpreter to not evaluate the following code block.)</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> landmapy.initial <span class="im">import</span> create_data_dir</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>data_dir <span class="op">=</span> create_data_dir(<span class="st">'habitat'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="revisit-functions-in-modules-often" class="level2">
+<h2 class="anchored" data-anchor-id="revisit-functions-in-modules-often">Revisit Functions in Modules Often</h2>
+<p>I find that I revisit functions in modules often, to improve them, to add new capabilites, or to reorganize them. Some of this reorg might involve rethinking a function’s use in different settings.</p>
+<p>I also find that I revisit the package structure, to add new modules, to reorganize modules, or to add new packages. This might include moving functions among modules, or creating modules that collect functions of common purpose. More on that later, I hope.</p>
+<p>Once I have created a function, I begin to see how I can reuse it in other projects. I also ponder why I created the function in the first place, and what might make it more useful in its initial context and/or in other settings.</p>
+<p>How might I improve a function’s use? There are several reasons to revisit a function, such as changing its</p>
+<ul>
+<li>name to be more descriptive</li>
+<li>parameters to be more general</li>
+<li>return value to be more useful</li>
+<li>internal logic to be more efficient</li>
+<li>documentation to be more informative</li>
+</ul>
+<p>It seems best to do this in small steps based on my needs, rather than imagining a grand plan. For instance, consider plot functions. One of the first plots was of a DataArray:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_index(index_da, place, index<span class="op">=</span><span class="st">'NDVI'</span>):</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt <span class="co"># Overlay raster and vector data</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Plot the index_da to see CRS</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>index_da.plot(</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    cbar_kwargs<span class="op">=</span>{<span class="st">"label"</span>: place},</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    robust<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>plt.gca().<span class="bu">set</span>(</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    title <span class="op">=</span> <span class="ss">f'</span><span class="sc">{</span>place<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>index<span class="sc">}</span><span class="ss">'</span>,</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">=</span><span class="st">''</span>,</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">=</span><span class="st">''</span>)</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>I will probably rename this soon to <code>plot_da()</code>, as it has grown beyond its original usage to plot an NDVI index. I could imagine more parameters, and make it fancier. However, for awhile I just moved on. Later, I wanted to plot multiple DataArrays in a row, following the idea of another student. That led to <code>plot_das()</code>, which has options for titles, one or several color bars, overlay of a GeoDataFrame boundary, and a choice of colormap. These evolved as I started to use the new function in multiple settings in the same project. I realized that another function, <code>plot_gdf_da()</code> is now redundant. You can see these in <a href="https://github.com/byandell-envsys/landmapy/blob/main/landmapy/plot.py">plot.py</a>.</p>
+<p>I could eliminate <code>plot_da()</code> and <code>plot_gdf_da()</code> and use <code>plot_das()</code> instead. However, I would need to go back to earlier projects where I used them and update the code. I would also need to update the documentation in the package. It becomes more complicated if other people depend on the package. In that case, a “legacy” function might help for awhile, such as:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_da(index_da, place, index<span class="op">=</span><span class="st">'NDVI'</span>):</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Legacy function: use plot_das()."""</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> plot_das(index_da, titles <span class="op">=</span> <span class="ss">f'</span><span class="sc">{</span>place<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>index<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="use-github-as-organizing-tool" class="level2">
+<h2 class="anchored" data-anchor-id="use-github-as-organizing-tool">Use GitHub as Organizing Tool</h2>
+<p>GitHub can be klunky, and at times painful. However, it provides a place to store functions and modules, and to organize those into a package. This <code>landmapy</code> package started as a collection of functions, then modules, then a package, then a package with documentation. The history of that is embedded in the GitHub repo if anyone cares to look.</p>
+<p>As I re-imagine a function, or reorg functions in modules, I can just commit those changes to GitHub knowing that the earlier versions are still extant, albeit hidden from view. Further, I can use versioning in the <a href="https://github.com/byandell-envsys/landmapy/blob/main/pyproject.toml">pyproject.toml</a> file to mark major changes in package reorganization.</p>
+</section>
+<section id="reorganize-a-package" class="level2">
+<h2 class="anchored" data-anchor-id="reorganize-a-package">Reorganize a Package</h2>
+<p>Let’s revisit plot functions. I started with plot functions scattered across modules, placed there as we developed out projects. These seemed useful in place, but some had similar purposes, and I started using them across projects. At that point, it became helpful to gather them together in one module.</p>
+<p>However, I then had plot functions based on different engines, namely <code>matplotlib</code>, <code>HoloViews</code> and <code>GeoViews</code>, so I separated these out into different modules. Since <code>hv</code> and <code>gv</code> plots are interactive, they generate large html files that are not easily shared, and require a server to view. I began developing <code>matplotlib</code> versions that yielded more compact <code>png</code> files. This gave me pause to think about</p>
+<p>I also had plot functions based on different data types, such as DataArrays, DataFrames, and GeoDataFrames. This got me thinking about how different types of objects could be plotted in similar ways. I have not yet resolved this, but wonder if it would be useful to have a single function that could plot any of these objects in a similar way. That becomes helpful as I make plot functions more versatile, as in the <code>plot_das()</code> function discussed above. A reason <em>not</em> to generalize is that different plot functions for different data types have developed different methods to modify features. An even more compelling reason is “mission creep”, keeping on task to complete a project rather than build the all-powerful function.</p>
+</section>
+<section id="import-functions-from-github" class="level2">
+<h2 class="anchored" data-anchor-id="import-functions-from-github">Import Functions from GitHub</h2>
+<p>Building a package adds more machinery, but it enables me to import a variety of functions that I maintain on GitHub in a single location, the package <a href="https://github.com/byandell-envsys/landmapy">landmapy</a>. This package is a repo, just like repos for other projects.</p>
+<p>From GitHub, I (and anyone else) can install the package with <a href="https://pypi.org/project/pip/">pip</a>:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: False</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>pip install git<span class="op">+</span>https:<span class="op">//</span>github.com<span class="op">/</span>byandell<span class="op">-</span>envsys<span class="op">/</span>landmapy.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>(Again, comment line <code>#| eval: False</code> suppresses markdown evaluation.) As before, I can import the function as follows:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> landmapy.initial <span class="im">import</span> create_data_dir</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>data_dir <span class="op">=</span> create_data_dir(<span class="st">'habitat'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="add-further-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="add-further-documentation">Add Further Documentation</h2>
+<p>Documentation evolves, just as do data, code, and each data-rich project. My future self, and other users of my code, benefit from documentation of how functions work, why they are organized in modules, and what might still be needed to improve a package or project. The <a href="references.md">References</a> draw on documentation created by the broader community. This <a href="strategy.md">Coding Strategy</a> page is another form of documentation. In addition, each project that uses the package can have its own (compact) documentation referring to the <a href="https://github.com/byandell-envsys/landmapy">landmapy</a> and explaining how and why package tools are employed.</p>
+<section id="document-functions-in-modules-in-a-package" class="level3">
+<h3 class="anchored" data-anchor-id="document-functions-in-modules-in-a-package">Document Functions in Modules in a Package</h3>
+<p>Of course, I can add more functions to the package, but I am mindful that as the package grows, the need for coherent documentation expands. I add one-line function calls in <a href="landmapy/__init__.py">landmapy/__init__.py</a> and adapt the <a href="README.md">README.md</a> to describe how to access and use the package, provide use cases, and organize modules and functions by topic. There is a balance of adding documentation and keeping it simple. My documentation process has evolved to the following approach:</p>
+<ul>
+<li>Add a docstring to each function in a module <code>*.py</code></li>
+<li>Add one-line function descriptions in the top docstring of the module <code>*.py</code></li>
+<li>Add one-line function calls in the <code>landmapy/__init__.py</code> file</li>
+<li>Add one-line module and function information in the <code>README.md</code> file</li>
+</ul>
+<p>The <code>landmapy</code> package is now large enough that I find it helpful to organize <a href="README.md#package-modules-and-functions">Package Modules and Functions</a> in the <a href="README.md">README.md</a> into (drop-down) blocks around topics:</p>
+<ul>
+<li>Plot Data</li>
+<li>Access Data with APIs</li>
+<li>Explore Data</li>
+<li>Set up Data Mechanics</li>
+</ul>
+<p>Readers can then expand the block for a particular module to see the functions contained therein.</p>
+</section>
+</section>
+<section id="migrate-from-jupyter-notebooks-to-quarto-documents" class="level2">
+<h2 class="anchored" data-anchor-id="migrate-from-jupyter-notebooks-to-quarto-documents">Migrate from Jupyter Notebooks to Quarto Documents</h2>
+<p>We code in a computing environment, which includes languages (Python or R and/or <a href="https://julialang.org/">Julia</a>, document tools (say Quarto or Jupyter) and an Integrated Development Environment (<a href="https://www.codecademy.com/article/what-is-an-ide">IDE</a>), often <a href="https://code.visualstudio.com/">VS Code</a> or <a href="https://posit.co/download/rstudio-desktop/">Rstudio</a>. Most platform tools and many high-level coding documents, such as Quarto documents, Jupyter notebooks, and <a href="https://rmarkdown.rstudio.com/">Rmarkdown</a> documents, have methods to incorporate code from common languages.</p>
+<p><a href="https://quarto.org/">Quarto</a> documents are easy to read and use. To run a Quarto document <code>*.qmd</code>, you will need to install Quarto and some tools (see <a href="https://quarto.org/docs/get-started/">Get Started</a>). Perhaps, see notes in <a href="https://github.com/byandell/quarto">my quarto repo</a>.</p>
+<p>Quarto documents (<code>*.qmd</code>) are “flat” markdown files, an extension of <a href="https://www.markdownguide.org/">Markdown</a>. This makes the files small and offers options to render into common formats including md, html, pdf, and docx. <a href="https://jupyter.org/">Jupyter</a> notebooks (<code>*.ipynb</code>) are “nested” json files that are typically rendered rather than read in raw form. It is easy to convert between <code>*.ipynb</code> and <code>*.qmd</code> files from the shell command line</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> convert project.ipynb <span class="co"># convert Jupyter to Quarto</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> convert project.qmd   <span class="co"># convert Quarto to Jupyter</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Quarto offers a range of features and project organization tools that make it easier to read, maintain, edit and share than Jupyter. This gives the user subsantial flexibility and agency in how to present material. It is easy to blend code, text, images and math expressions. Interactive documents (hosted on a laptop or external server) can be in a variety of formats, including slide decks.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

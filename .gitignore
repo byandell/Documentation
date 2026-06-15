@@ -10,7 +10,7 @@
 *_files/
 *_cache/
 
-*.html
+# *.html
 *.pptx
 
 /.quarto/
