@@ -1,6 +1,6 @@
 # Artificial Intelligence (AI) References
 
-This is a (growing?) collection of references about AI concept, tools and
+This is a growing collection of references about AI concept, tools and
 collaborative environments.
 To learn about (generative) AI, start with the self-paced workshop on
 [Generative AI & Prompt Engineering (Tyson Swetnam)](https://tyson-swetnam.github.io/intro-gpt/).
