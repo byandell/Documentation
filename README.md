@@ -15,7 +15,7 @@ Now available as
   - [Python Coding Strategy](./python_strategy.md)
   - [Python Coding from Environmental Systems](./envsys.md#python-coding)
 - [Shiny Apps](./ShinyApps.md)
-- [Quarto References](./quarto.md)
+- [Quarto References](./quarto/)
 - [Artificial Intelligence (AI)](./AI.md)
   - [AI Prompt Examples](./AI_prompts.md)
 
@@ -100,7 +100,7 @@ This uses the
 where the data are included in the `R` system as `data(faithful)`,
 and in the Python package
 [seaborn](https://seaborn.pydata.org/) as `geyser`.
-See also [Quarto references](./quarto.md) for other types of interactive documents.
+See also [Quarto references](./quarto/) for other types of interactive documents.
 
 My learning about AI agents and tools is evolving, including the repository
 [sysgenAnalysis](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis).
