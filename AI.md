@@ -93,8 +93,8 @@ Below is an eclectic collection of resources about AI and its implications.
 
 #### Energy and Water Reports
 
-- [The Environmental Cost of Artificial Intelligence: Carbon, Water, and Land Footprints | United Nations University](https://unu.edu/inweh/collection/environmental-cost-of-AIs-Enrgy-Use-Carbon-water-and-land-footprints)
-  - [Rising Emissions, Depleting Water and Vanishing Land—UN Scientists: AI Is Threatening Natural Resources for Billions | United Nations University](https://unu.edu/inweh/news/environmental-cost-of-AIs-Enrgy-use-carbon-water-and-land-footprints)
+- [The Environmental Cost of Artificial Intelligence: Carbon, Water, and Land Footprints (UN University)](https://unu.edu/inweh/collection/environmental-cost-of-AIs-Enrgy-Use-Carbon-water-and-land-footprints)
+  - [Rising Emissions, Depleting Water and Vanishing Land—UN Scientists: AI Is Threatening Natural Resources for Billions (UN University)](https://unu.edu/inweh/news/environmental-cost-of-AIs-Enrgy-use-carbon-water-and-land-footprints)
   - [New Form of Imperialism": Renowned U.N. Scientist on AI Boom's Huge Water, Carbon & Land Footprint (DemocracyNow!)](https://www.democracynow.org/2026/6/12/ai_data_centers_water_waste)
 - [Data centers are growing in Texas, but big questions remain about water use (UT News)](https://news.utexas.edu/2026/05/06/data-centers-are-growing-in-texas-but-big-questions-remain-about-water-use/)
   - [Water Requirements for Data Centers (UT Bureau of Economic Geology)](https://compass.beg.utexas.edu/assets/publications/Water_Requirements_for_DC_White_Paper.pdf) (missing)
@@ -243,10 +243,10 @@ for a guide I wrote to recover them based on community response.
 
 - [Google Gemini](https://gemini.google.com/)
   - [Generative AI Services at UW–Madison: Tools, Policies & Resources](https://kb.wisc.edu/ai/)
-  - [Prompt design strategies | Gemini API | Google AI for Developers](https://ai.google.dev/gemini-api/docs/prompt-design)
-  - [File input methods | Gemini API | Google AI for Developers](https://ai.google.dev/gemini-api/docs/file-inputs)
-  - [Import a GitHub repository & ask about it in the Gemini web app](https://kb.wisc.edu/ai/135575)
-  - [Connect Box | Gemini Enterprise | Google Cloud Documentation](https://cloud.google.com/gemini-enterprise/docs/connect-box)
+  - [Prompt design strategies (Google AI for Developers)](https://ai.google.dev/gemini-api/docs/prompt-design)
+  - [File input methods (Google AI for Developers)](https://ai.google.dev/gemini-api/docs/file-inputs)
+  - [Import a GitHub repository & ask about it in the Gemini web app (UW-Madison)](https://kb.wisc.edu/ai/135575)
+  - [Connect Box (Google Cloud)](https://cloud.google.com/gemini-enterprise/docs/connect-box)
 - [Antigravity](https://antigravity.google/)
   - [Google Antigravity Documentation](https://antigravity.google/docs/get-started)
   - [Getting Started with Google Antigravity (CodeLabs)](https://codelabs.developers.google.com/getting-started-google-antigravity)
@@ -263,7 +263,7 @@ Some have evolved away from these roots toward standalone apps.
 - [Open AI's Codex](https://openai.com/index/openai-codex/)
 - [Posit's Positron](https://posit.co/products/open-source/positron/)
 - [Cursor MCP Docs](https://docs.cursor.sh/mcp)
-- [Windsurf Review 2026: The AI IDE Redefining Coding Workflows | Second Talent](https://secondtalent.com/insights/windsurf-review-2026-the-ai-ide-redefining-coding-workflows/)
+- [Windsurf Review 2026: The AI IDE Redefining Coding Workflows (Second Talent)](https://secondtalent.com/insights/windsurf-review-2026-the-ai-ide-redefining-coding-workflows/)
 
 See caution in [Using R in VS Code with Radian](radian.md)
 about `radian` and AI environments.
@@ -389,12 +389,12 @@ Information includes:
 
 Sources researched by Gemini include:
 
-- [glm-4.7-flash - Ollama](https://ollama.com/library/glm-4.7-flash)
-- [Gemma 3 12B - API Pricing & Benchmarks | OpenRouter](https://openrouter.ai/models/google/gemma-3-12b)
-- [Phi-4 - Microsoft - NGC Catalog - NVIDIA](https://catalog.ngc.nvidia.com/models/nvidia/phi-4/overview)
-- [[2505.09388] Qwen3 Technical Report - arXiv](https://arxiv.org/abs/2505.09388)
-- [MiniMax M2 - API Pricing & Benchmarks - OpenRouter](https://openrouter.ai/models/minimax/minimax-m2)
-- [gpt-oss-120b - API Pricing & Benchmarks | OpenRouter](https://openrouter.ai/models/gpt-oss-120b)
+- [glm-4.7-flash (Ollama)](https://ollama.com/library/glm-4.7-flash)
+- [Gemma 3 12B (OpenRouter)](https://openrouter.ai/models/google/gemma-3-12b)
+- [Phi-4 (NVIDIA)](https://catalog.ngc.nvidia.com/models/nvidia/phi-4/overview)
+- [[2505.09388] Qwen3 Technical Report (arXiv)](https://arxiv.org/abs/2505.09388)
+- [MiniMax M2 (OpenRouter)](https://openrouter.ai/models/minimax/minimax-m2)
+- [gpt-oss-120b (OpenRouter)](https://openrouter.ai/models/gpt-oss-120b)
 
 ## Prompt Engineering
 

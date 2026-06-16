@@ -40,7 +40,7 @@ This was part of the [geospatial](https://github.com/byandell-envsys/geospatial)
   - [sf](https://cran.r-project.org/package=sf) (<https://github.com/rspatial/raster>)
 - [tidyterra](https://cran.r-project.org/package=tidyterra)
   - <https://dieghernan.github.io/tidyterra/>
-  - Extension of the 'tidyverse' for 'SpatRaster' and 'SpatVector' objects of the 'terra' package
+  - Extension of the `tidyverse` for `SpatRaster` and `SpatVector` objects of the `terra` package
 
 Packages to Access Data
 

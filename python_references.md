@@ -151,7 +151,7 @@ See `landmapy` [Plot Functions](plots.md).
 - [matplotlib](https://matplotlib.org/)
   - [matplotlib.widgets](https://matplotlib.org/stable/api/widgets_api.html) (`%matplotlib widget`)
   - [ipympl](https://matplotlib.org/ipympl/)
-  - [Using %matplotlib widget](https://github.com/microsoft/vscode-jupyter/wiki/Using-%25matplotlib-widget-instead-of-%25matplotlib-notebook,tk,etc)
+  - [Using `%matplotlib` widget](https://github.com/microsoft/vscode-jupyter/wiki/Using-%25matplotlib-widget-instead-of-%25matplotlib-notebook,tk,etc)
 
 ## IPython Methods
 
@@ -161,13 +161,13 @@ IPython methods enhance interactive computing in Python, offering features beyon
 - Tab Completion:
 Simplifies code writing by suggesting attributes and methods of objects or modules as you type.
 - Introspection:
-Provides detailed information about objects, functions, or modules using ? or ??.
+Provides detailed information about objects, functions, or modules using `?` or `??`.
 - Magic Commands:
-Special commands prefixed with % for tasks like timing code execution (%timeit), running external scripts (%run), or accessing shell commands (!).
+Special commands prefixed with `%` for tasks like timing code execution (`%timeit`), running external scripts (`%run`), or accessing shell commands (`!`).
 - Input Caching:
-Stores previous commands and outputs, accessible via _, __, ___ for outputs and_i, _ii,_iii or In[n] for inputs.
+Stores previous commands and outputs, accessible via `_`, `__`, `___` for outputs and `_i`, `_ii`, `_iii` or `In[n]` for inputs.
 - Rich Display:
-Enables richer object representations using _ipython_display_() or _repr_*_() methods for custom display formats like HTML or images.
+Enables richer object representations using `_ipython_display_()` or `_repr_*_()` methods for custom display formats like HTML or images.
 - History:
 Allows browsing and reusing previous commands across sessions.
 These methods streamline development, debugging, and exploration in interactive Python environments.

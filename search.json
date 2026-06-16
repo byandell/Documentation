@@ -1,0 +1,205 @@
+[
+  {
+    "objectID": "quarto/AI.html#how-might-we-think-about-ai",
+    "href": "quarto/AI.html#how-might-we-think-about-ai",
+    "title": "Artificial Intelligence (AI)",
+    "section": "How Might We Think About AI?",
+    "text": "How Might We Think About AI?\nTools Reshaping Us\n\n“We shape our tools and thereafter they shape us.”\n— Marshall McLuhan (via John Culkin)\n\n\nDeeply engaging with AI is a process, not just pushing a button.\nTreat it as a collaboration rather than just a passive tool.\n\n\n\n\n\n\n\nSocial Collaboration\n\n\nJaron Lanier’s There is no AI reframes AI as a medium for human cooperation, emphasizing data dignity and creator credit."
+  },
+  {
+    "objectID": "quarto/AI.html#the-disrupted-rethought-workforce",
+    "href": "quarto/AI.html#the-disrupted-rethought-workforce",
+    "title": "Artificial Intelligence (AI)",
+    "section": "The Disrupted & Rethought Workforce",
+    "text": "The Disrupted & Rethought Workforce\nWorkforce Transformation\n\nEarly success is seen in AI-agent-native startups.\nLegacy companies experience shifts in workforce dynamics.\nFocus is shifting from replacing people to rethinking how we collaborate.\n\n\n\n\n\n\n\nCore References\n\n\n\nNYT: Coding After Coders (Thompson) · The Workers Letting AI Do Their Jobs (Daily)\nNYT: The Small-Business Owners Managing Armies of A.I. Employees (Thompson)\nAtlantic: AI Panic Cycle · What Do the People Building AI Believe? (Warzel)"
+  },
+  {
+    "objectID": "quarto/AI.html#ethics-environmental-impact",
+    "href": "quarto/AI.html#ethics-environmental-impact",
+    "title": "Artificial Intelligence (AI)",
+    "section": "Ethics & Environmental Impact",
+    "text": "Ethics & Environmental Impact\nEnvironmental Footprint\n\nRapid growth of data centers strains local power and water resources.\nEfficiency of algorithms is improving, but resource demand is rising.\nIncreasing focus on protecting natural resources and supporting indigenous lands.\n\n\n\n\n\n\n\nCall for Guardrails\n\n\nScientists warn in Nature that uncritical adoption of AI in science requires urgent regulatory guardrails.\n\n\n\n\nEthics Resources: Pope and AI · Ethics of AI (Tyson Swetnam) · No Data Centers on Native Land"
+  },
+  {
+    "objectID": "quarto/AI.html#data-center-resources-efficiency",
+    "href": "quarto/AI.html#data-center-resources-efficiency",
+    "title": "Artificial Intelligence (AI)",
+    "section": "Data Center Resources & Efficiency",
+    "text": "Data Center Resources & Efficiency\n\n\nEnergy & Water Reports\n\nUN Report: Details footprints of carbon, water, and land usage.\nTexas HARC & UT News: Reviews data center boom and water usage in Texas.\nLBNL: U.S. Data Center Energy Usage Report.\nData Center Map: Tracker for infrastructure.\n\n\nBest Practices & Forecasts\n\nMicrosoft: Sustainable datacenter designs using zero water for cooling.\nGoogle: Climate-conscious cooling commitments.\nSalish Tribal Alliance: Zero Edge cloud data sovereignty.\nMicro Data Centers: Shift toward Modular Edge Computing."
+  },
+  {
+    "objectID": "quarto/AI.html#connected-development-environments",
+    "href": "quarto/AI.html#connected-development-environments",
+    "title": "Artificial Intelligence (AI)",
+    "section": "Connected Development Environments",
+    "text": "Connected Development Environments\nModel Context Protocol (MCP)\n\nOpen protocol introduced by Anthropic.\nAllows LLMs to interact securely with local/cloud tools and codebase context.\nEnables AI agents to read files, run commands, and edit code under user guidance.\n\n\n\n\n\n\n\nInteractive Workflow\n\n\nRather than copying and pasting code, the AI agent directly reads and modifies local code blocks based on natural conversations."
+  },
+  {
+    "objectID": "quarto/AI.html#cloud-educational-environments",
+    "href": "quarto/AI.html#cloud-educational-environments",
+    "title": "Artificial Intelligence (AI)",
+    "section": "Cloud Educational Environments",
+    "text": "Cloud Educational Environments\nEnable students and teams to build and test code without complex local setup:\n\nGitHub Codespaces: Cloud-hosted container integrated with GitHub and Copilot.\nGoogle Colab: Interactive Python/R notebooks with Gemini integrations.\nCyVerse Discovery Environment: Advanced biology and geospatial platform.\n\nIntegrates AI assistants (Roo / Cline) into its VS Code IDE workspace.\nAI Verde: API tunnel providing access to high-performance LLMs.\n\nNSF ACCESS: High-throughput computing via Jetstream2, HTCondor, and PATh."
+  },
+  {
+    "objectID": "quarto/AI.html#google-gemini-antigravity",
+    "href": "quarto/AI.html#google-gemini-antigravity",
+    "title": "Artificial Intelligence (AI)",
+    "section": "Google Gemini & Antigravity",
+    "text": "Google Gemini & Antigravity\nAntigravity 2.0 Suite\nLaunched May 2026 with four primary tools: - Antigravity 2.0: Multi-agentic code platform. - Antigravity CLI: Command line terminal tool. - Antigravity SDK: Building custom agent apps. - Antigravity IDE: Workspace-integrated assistant.\n\n\n\n\n\n\nTransition Note\n\n\nIDE version 2.0 does not carry over history automatically. See Recovering Antigravity Conversations for step-by-step help.\n\n\n\n\nGemini Resources: Prompt Design Strategies · GitHub Repo Imports"
+  },
+  {
+    "objectID": "quarto/AI.html#standalone-ai-ides-tools",
+    "href": "quarto/AI.html#standalone-ai-ides-tools",
+    "title": "Artificial Intelligence (AI)",
+    "section": "Standalone AI IDEs & Tools",
+    "text": "Standalone AI IDEs & Tools\nAI-native environments have quickly expanded beyond standard editor integrations:\n\nClaude Code: Anthropic’s terminal-based coding agent.\nOpenAI Codex: Deeply integrated code generation models.\nPositron: Posit’s next-generation IDE built for R and Python data science.\nWindsurf: Standalone AI editor optimizing code editing workflows.\nCursor: Advanced fork of VS Code featuring native MCP tool support.\n\n\n\n\n\n\n\nCaution\n\n\nBe careful when using terminal-based interactive interpreters (like radian) alongside background AI terminal execution."
+  },
+  {
+    "objectID": "quarto/AI.html#agentic-ai-multi-agent-orchestration",
+    "href": "quarto/AI.html#agentic-ai-multi-agent-orchestration",
+    "title": "Artificial Intelligence (AI)",
+    "section": "Agentic AI & Multi-Agent Orchestration",
+    "text": "Agentic AI & Multi-Agent Orchestration\n\n\nOrchestrating Agent Teams\n\nModern developers orchestrate multiple agents to tackle complex tasks.\nEach agent holds its own role, persona, and technical skills.\nCommercial frameworks exist in Claude, ChatGPT, and Antigravity.\n\n\nOpen Source Platforms\n\nOpenClaw & Hermes: Open orchestration engines.\nOASIS ScienceClaw: ESIIL-developed clone of OpenClaw acting as a digital twin for scientific working groups.\nSOUL.md: Markdown-based configuration files defining agent personalities."
+  },
+  {
+    "objectID": "quarto/AI.html#large-language-models-llms",
+    "href": "quarto/AI.html#large-language-models-llms",
+    "title": "Artificial Intelligence (AI)",
+    "section": "Large Language Models (LLMs)",
+    "text": "Large Language Models (LLMs)\n\n\nNeural Network Weights\n\nLLMs are massive transformer networks predicting the next token in a sequence.\nNeural weights are frozen after training, but context windows hold conversation state.\nMixture of Experts (MoE): Activates only a subset of network layers for each query to save compute.\n\n\nEncoders & Decoders\n\nTokenization: Splitting text into tokens.\nEncoding: Converting tokens into embeddings.\nContextualization: Processing context layers.\nDecoding: Predicting and generating tokens.\nDetokenization: Rendering back to text."
+  },
+  {
+    "objectID": "quarto/AI.html#open-source-llm-specifications",
+    "href": "quarto/AI.html#open-source-llm-specifications",
+    "title": "Artificial Intelligence (AI)",
+    "section": "Open Source LLM Specifications",
+    "text": "Open Source LLM Specifications\nKey characteristics of open-source models available viaCyVerse AI Verde:\n\nContext Window: Max input token limit (ranging from 32k, 128k, up to 1M+).\nQuantization Level: Bit-depth (e.g., FP16, INT8, 4-bit) defining the RAM memory requirements.\nDeveloper & License: Lineage (Google Gemma, Meta Llama, Qwen, GLM) and licensing restrictions (Apache 2.0 vs Llama licenses).\nModalities: Support for text-only versus multimodal inputs (images, audio, video)."
+  },
+  {
+    "objectID": "quarto/AI.html#prompt-engineering-fundamentals",
+    "href": "quarto/AI.html#prompt-engineering-fundamentals",
+    "title": "Artificial Intelligence (AI)",
+    "section": "Prompt Engineering Fundamentals",
+    "text": "Prompt Engineering Fundamentals\nDocumenting the Trail\n\nPrompt engineering designs inputs to guide an AI’s output.\nAlways save your prompts to a file (e.g., prompts.md) to retain your workflow.\nAsk the AI agent to update prompts.md and walkthrough.md as you code.\n\n\n\n\n\n\n\nCore References\n\n\nAI Prompt Examples · Prompting Guide · Tyson Swetnam’s Getting Started with Prompts"
+  },
+  {
+    "objectID": "quarto/AI.html#prompts-to-organize-workflows",
+    "href": "quarto/AI.html#prompts-to-organize-workflows",
+    "title": "Artificial Intelligence (AI)",
+    "section": "Prompts to Organize Workflows",
+    "text": "Prompts to Organize Workflows\nSplit complex workflows into human-sized, manageable chunks:\n\nExtract Functions: Move heavy operations to a helper R file (functions.R).\nSetup Notebook: Create a clean Quarto document (workflow.qmd) that sources functions.R.\nHandle Deliverables: Configure the workflow to output figures and data tables (PDF/CSV).\nBuild Documentation: Present the workflow in clear source and rendered forms.\n\n\n\n\n\n\n\nNote\n\n\nCheck out ESIIL’s Three Rivers working group AI Prompt Engineering docs for examples."
+  },
+  {
+    "objectID": "quarto/AI.html#context-engineering",
+    "href": "quarto/AI.html#context-engineering",
+    "title": "Artificial Intelligence (AI)",
+    "section": "Context Engineering",
+    "text": "Context Engineering\nManaging Attention Budgets\n\nEvery turn fills the agent’s context window.\nExcessive background context or giant documents cause hallucination or crash.\nBest Practice: Request the agent to summarize files, then save and pass the summary to subsequent chats.\n\n\n\n\n\n\n\nContext Inflation\n\n\nAvoid oversized onboarding files. Keep repository rules focused to preserve conversation token budget."
+  },
+  {
+    "objectID": "quarto/AI.html#context-agents.md-vs-agent-skills",
+    "href": "quarto/AI.html#context-agents.md-vs-agent-skills",
+    "title": "Artificial Intelligence (AI)",
+    "section": "Context: AGENTS.md vs Agent Skills",
+    "text": "Context: AGENTS.md vs Agent Skills\nAI coding assistants (Claude Code, Antigravity, Cursor) leverage two core standards to organize context:\n\n\n\n\n\n\n\n\nFeature\nAGENTS.md\nAgent Skills (SKILL.md)\n\n\n\n\nPurpose\nStatic repository context (coding standards, project layout).\nProcedural knowledge and automation recipes (deployment, tests).\n\n\nScope\nBound to a single repository.\nReusable/portable across projects.\n\n\nStructure\nSingle Markdown file in root.\nFolder with SKILL.md + scripts.\n\n\nTrigger\nLoaded automatically.\nActivated dynamically on keywords."
+  },
+  {
+    "objectID": "quarto/AI.html#agents.md-repository-context",
+    "href": "quarto/AI.html#agents.md-repository-context",
+    "title": "Artificial Intelligence (AI)",
+    "section": "AGENTS.md (Repository Context)",
+    "text": "AGENTS.md (Repository Context)\nActs as the onboarding handbook for an AI agent entering a repository:\n\nDirectory Layout: Highlights where components, hooks, or styles live.\nDesign & Coding Standards: Strict rules (e.g., “Prefer existing Button components”).\nLayered Rules: Nested AGENTS.md can layer constraints on specific sub-folders.\n\nReal-world Examples:\n\nOASIS Group AGENTS.md\nLLM Lesson Exemplar AGENTS.md\nOASIS ScienceClaw AGENTS.md"
+  },
+  {
+    "objectID": "quarto/AI.html#agent-skills-skill.md",
+    "href": "quarto/AI.html#agent-skills-skill.md",
+    "title": "Artificial Intelligence (AI)",
+    "section": "Agent Skills & SKILL.md",
+    "text": "Agent Skills & SKILL.md\nAgent Skills represent a portable toolbox extending what an agent can perform:\n\nTrigger Actions: YAML frontmatter defines triggers for specific command hooks.\nTDD Workflows: Anti-rationalization rules prevent agents from skipping steps (e.g. bypassing test suites).\nAutomation Scripts: Scripts (Node, Python, Bash) execute complex deployment routines.\n\n---\nname: vercel-deploy\ndescription: Deploy my web app to Vercel production.\n---\n# Deploy Skill\n..."
+  },
+  {
+    "objectID": "quarto/prompt.html#documenting-ai-workflows",
+    "href": "quarto/prompt.html#documenting-ai-workflows",
+    "title": "AI Prompt Examples",
+    "section": "Documenting AI Workflows",
+    "text": "Documenting AI Workflows\nHow will you later remember how you used Artificial Intelligence (AI) to advance your projects? And how will you share your learning with others?\n\n\nSaved prompts and walkthroughs can be used to reproduce your work.\nShare prompts instead of just raw code.\nAsk your AI agent to save prompts to a file (e.g., prompts.md).\nSave Walkthrough artifacts in a separate walkthrough.md file."
+  },
+  {
+    "objectID": "quarto/prompt.html#prompt-engineering-resources",
+    "href": "quarto/prompt.html#prompt-engineering-resources",
+    "title": "AI Prompt Examples",
+    "section": "Prompt Engineering Resources",
+    "text": "Prompt Engineering Resources\nHere are some guidebooks and frameworks to help refine your prompts:\n\nPrompt Engineering Guide\nClaude Prompt Engineering\nTyson Swetnam’s Intro to GPT:\n\nCore Features of Today’s AI Tools\nGetting Started with Prompts"
+  },
+  {
+    "objectID": "quarto/prompt.html#saving-prompts-and-walkthroughs",
+    "href": "quarto/prompt.html#saving-prompts-and-walkthroughs",
+    "title": "AI Prompt Examples",
+    "section": "Saving Prompts and Walkthroughs",
+    "text": "Saving Prompts and Walkthroughs\n\n\nPrompts to Save Progress:\n\n\"save the prompts used in this conversation to prompts.md\"\n\"save the walkthrough to walkthrough.md\"\n\nWhen & How:\n\nRun at the beginning or end of a conversation.\nClick Save (top right) or Export on the walkthrough panel.\n\n\n\n\n\n\n\n\nReal-world Examples:\n\n\n\nsysgenAnalysis Walkthroughs\nmkeller3Projects2 Repo Setup\nsysgenDO1200 Prompts"
+  },
+  {
+    "objectID": "quarto/prompt.html#ai-agent-conversation-structure",
+    "href": "quarto/prompt.html#ai-agent-conversation-structure",
+    "title": "AI Prompt Examples",
+    "section": "AI Agent Conversation Structure",
+    "text": "AI Agent Conversation Structure\n\n\nUser interactions happen in conversations or chat sessions.\nA session involves a chain of prompts:\n\nSystem Instruction: Establishes global constraints/roles.\nFraming Prompt: Broad definition of the task.\nRefinement Prompts: Step-by-step guidance.\n\nKeep different conversations within a project separated.\nStore projects as GitHub repos for version control."
+  },
+  {
+    "objectID": "quarto/prompt.html#system-instructions",
+    "href": "quarto/prompt.html#system-instructions",
+    "title": "AI Prompt Examples",
+    "section": "System Instructions",
+    "text": "System Instructions\nSet global rules for prompt chaining in your session:\n# Project Context\nI'm a data scientist working on machine learning projects.\nFor Python code, always provide examples using `scikit-learn` and `pandas`.\nFor R code, always provide examples using `tidyverse`.\nInclude `docstrings` (Python) or `roxygen2` (R) and type hints in all code.\n\n# Response Preferences\n- Be concise but thorough\n- Explain complex concepts with analogies\n- Always cite sources when making factual claims"
+  },
+  {
+    "objectID": "quarto/prompt.html#the-craft-framework",
+    "href": "quarto/prompt.html#the-craft-framework",
+    "title": "AI Prompt Examples",
+    "section": "The CRAFT Framework",
+    "text": "The CRAFT Framework\nFor complicated tasks, structure your prompt using the CRAFT framework:\n\nContext: Background information.\nRole: Person/identity the AI assumes.\nAction: The specific task to perform.\nFormat: Deliverable structure.\nTone: Style of response.\n\nExample: Grant Proposal\nContext: Grant proposal for NSF funding on AI in education  \nRole: Experienced grant writer & researcher  \nAction: Review draft introduction and suggest improvements  \nFormat: Feedback as tracked changes with explanations  \nTone: Professional, constructive, and encouraging"
+  },
+  {
+    "objectID": "quarto/prompt.html#documenting-files-folders",
+    "href": "quarto/prompt.html#documenting-files-folders",
+    "title": "AI Prompt Examples",
+    "section": "Documenting Files & Folders",
+    "text": "Documenting Files & Folders\n\n\nCreate a Folder README\n\nPrompt:\n\n\"create a README.md document that concisely summarizescontents of this folder at a high level\"\n\"update README.md with any additional files,obeying restrictions in .gitignore\"\n\n\n\nCreate a Table of Contents (TOC)\n\nPrompt:\n\n\"create TOC for README.md\"\n\"update TOC for README.md\"\n\n\n\n\n\n\n\n\n\nPro-Tip\n\n\nEstablishing a culture of updating these docs enables the AI to update files on the fly as your project evolves!"
+  },
+  {
+    "objectID": "quarto/prompt.html#convert-docx-to-markdown-slides",
+    "href": "quarto/prompt.html#convert-docx-to-markdown-slides",
+    "title": "AI Prompt Examples",
+    "section": "Convert DOCX to Markdown & Slides",
+    "text": "Convert DOCX to Markdown & Slides\n\n\nConvert DOCX via Pandoc\n\nPrompt:\n\n\"find docx files and use pandoc to convert them to md versions\"\n\nPrerequisites: Pandoc installed locally.\n\n\nGenerate Slides via Quarto\n\nPrompt:\n\n\"Use Quarto to automatically generate a PowerPoint deck(.pptx) embedding all of the outputted PNG figures.\"\n\"Add a table of contents slide to the presentation.\"\n\n\n\n\n\n\n\n\n\nNote\n\n\nSee Diana and Alan’s evolved prompt versions in prompts/powerpoint.md."
+  },
+  {
+    "objectID": "quarto/prompt.html#github-prompts-versioning-files",
+    "href": "quarto/prompt.html#github-prompts-versioning-files",
+    "title": "AI Prompt Examples",
+    "section": "GitHub Prompts: Versioning Files",
+    "text": "GitHub Prompts: Versioning Files\nMulti-Version Commit Prompt\nFind files ending in `[ _]v[0-9]+.R$`\nwith matching base name.\n- If no `v1` exists but `basename.R`\n  does, copy to `v1.R`.\n- Commit `basename.R` with message `v1`\n  and original date.\n- For subsequent versions, copy the\n  next version to `basename.R` and commit.\n- Keep versioned files intact.\n\n\n\n\n\n\nRefined Prompts\n\n\nCheck out prompts/file_versions.md for a streamlined, instruction-optimized version of this prompt."
+  },
+  {
+    "objectID": "quarto/prompt.html#github-prompts-git-conflict-resolution",
+    "href": "quarto/prompt.html#github-prompts-git-conflict-resolution",
+    "title": "AI Prompt Examples",
+    "section": "GitHub Prompts: Git Conflict Resolution",
+    "text": "GitHub Prompts: Git Conflict Resolution\nWhen you run into conflicts (e.g., forgetting to pull before committing):\nThe “Git Hell” Prompt\n\n“I messed up and forgot to do git pull before committing new files.Now I am in git hell. See the message with git status.Walk me through how to fix this.”\n\n\n\n\n\n\n\nOutcome\n\n\nThe AI successfully parsed the status and sorted out the repository state, providing step-by-step guidance."
+  },
+  {
+    "objectID": "quarto/prompt.html#organizing-a-workflow",
+    "href": "quarto/prompt.html#organizing-a-workflow",
+    "title": "AI Prompt Examples",
+    "section": "Organizing a Workflow",
+    "text": "Organizing a Workflow\nThe Goal\nTransform a complex organic R workflow into neat functions inside an R package, featuring: - A function to run the workflow. - A function to explore results.\nThe Prompt\n\n\"build a concise prompt that captures the essence of the walkthroughs in inst/doc/walkthrough.md\"\n\n\n\n\n\n\n\nKey Packages\n\n\nUses devtools, roxygen2, and Quarto to render markdown outputs (HTML, PDF, DOCX)."
+  },
+  {
+    "objectID": "quarto/prompt.html#folder-documentation-in-researchdrive",
+    "href": "quarto/prompt.html#folder-documentation-in-researchdrive",
+    "title": "AI Prompt Examples",
+    "section": "Folder Documentation in ResearchDrive",
+    "text": "Folder Documentation in ResearchDrive\n\n\nThe Challenge\nData and code are kept securely and privately on ResearchDrive (RD), but sharing/version control is still needed.\n\nThe Solution\nMaintain public markdown documentation and folder structures on GitHub (with data-less READMEs) while keeping raw data safe in RD.\n\n\nExamples:\n\nsysgenDO1200 README\nmkeller3Projects2 R Scripts README"
+  }
+]
