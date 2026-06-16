@@ -1,0 +1,22 @@
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - AI_prompts.md
+  - AI.md
+  - envsys.md
+  - geospatial.md
+  - github.md
+  - index.md
+  - kernel.md
+  - python_references.md
+  - python_strategy.md
+  - quarto.md
+  - radian.md
+  - R.md
+  - ShinyApps.md
+  - verde_models.csv
+
+theme: jekyll-theme-tactile
