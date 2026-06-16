@@ -114,5 +114,5 @@ Migrated to GitHub Pages on 2026-06-16 with help of
 by
 [Nicolas Vanhoren](https://github.com/nicolas-van).
 
-[_byandell.github.io/Documentation_](https://byandell.github.io/Documentation)  
-[_github.com/byandell/Documentation](https://github.com/byandell/Documentation)
+_[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
+_[github.com/byandell/Documentation](https://github.com/byandell/Documentation)_
