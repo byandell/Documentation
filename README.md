@@ -108,3 +108,10 @@ Initial thoughts on so-called artifical intelligence are in my blog about
 Jaron Lanier's
 [There is no AI](https://byandell.github.io/Jaron-Lanier-There-is-no-AI/).
 References about the concept and evolution "AI" tools are in [AI.md](./AI.md).
+
+Migrated to GitHub Pages on 2026-06-16 with help of
+[Convert Markdown to GitHub Pages](https://nicolas-van.github.io/easy-markdown-to-github-pages/)
+by
+[Nicolas Vanhoren](https://github.com/nicolas-van).
+
+[_byandell.github.io/Documentation_](https://byandell.github.io/Documentation)
