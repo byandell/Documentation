@@ -24,7 +24,7 @@ remote_theme: just-the-docs/just-the-docs
 
 exclude:
   - "**/*.qmd"
-  - "site_libs/revealjs/plugin/reveal-chalkboard/README.md"
+  - "site_libs/*"
 
 defaults:
   - scope:

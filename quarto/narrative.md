@@ -1,16 +1,17 @@
 # Quarto Narrative
 
-**Prompt:** Create a quarto slide deck from [AI_prompts.md](../AI_prompts.md) in light mode and place it in folder
-[quarto/prompt.qmd](prompt.qmd).
-Adjust slide styling to use a more compact layout so that content fits neatly on each slide
-Update `.gitignore` for quarto documents.
+**Prompt:** Create a quarto slide deck from `[slidedeck].qmd`
+in light mode and place it in folder `quarto/`.
+Adjust slide styling to use a more compact layout so that content fits neatly on each slide.
+Do not use `chalkboard` features, instead embed all resources.
+Update `.gitignore` for quarto documents as needed.
 
 **Response:**
-I have created a Quarto slide deck based on the contents of [AI_prompts.md](file:///Users/brianyandell/Documents/GitHub/Documentation/AI_prompts.md).
+I have created a Quarto slide deck based on the contents of `[slidedeck].qmd`.
 
 Here is a summary of the files created and configured:
 
-1. **Quarto Slide Deck**: [quarto/prompt.qmd](file:///Users/brianyandell/Documents/GitHub/Documentation/quarto/prompt.qmd)
+1. **Quarto Slide Deck**: `[slidedeck].qmd`
    - Converted to the modern web-based **Reveal.js** format.
    - Structured into logical sections using background-colored slide breaks (`# Section Title {background-color="..."}`).
    - Utilizes advanced Quarto features such as column layouts (`::: {.columns}`), callout boxes, and incremental lists (`::: {.incremental}`).
@@ -21,7 +22,7 @@ Here is a summary of the files created and configured:
    - Customized typography using modern sans-serif fonts (`Outfit`, `Inter`).
    - Added glowing shadows and rounded borders to code blocks, and styled Quarto callouts nicely to pop against the dark background.
 
-3. **Rendered Output**: [quarto/prompt.html](file:///Users/brianyandell/Documents/GitHub/Documentation/quarto/prompt.html)
+3. **Rendered Output**: `[slidedeck].html`
    - Compiled using `quarto render` to ensure syntax validity. It rendered successfully without errors.
 
 ### Slide Structure Overview
