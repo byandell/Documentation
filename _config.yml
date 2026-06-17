@@ -20,4 +20,5 @@ include:
   - verde_models.csv
 
 #theme: jekyll-theme-tactile
-remote_theme: aterenin/minima-reboot
+theme: just-the-docs
+#remote_theme: aterenin/minima-reboot
