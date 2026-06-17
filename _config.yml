@@ -1,5 +1,6 @@
 plugins:
   - jekyll-relative-links
+  - jekyll-remote-theme
 relative_links:
   enabled: true
   collections: true
@@ -19,6 +20,11 @@ include:
   - ShinyApps.md
   - verde_models.csv
 
-theme: jekyll-theme-tactile
-#theme: just-the-docs
-#remote_theme: aterenin/minima-reboot
+remote_theme: just-the-docs/just-the-docs
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
