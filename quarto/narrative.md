@@ -1,4 +1,4 @@
-# Quarto Presentation
+# Quarto Narrative
 
 **Prompt:** Create a quarto slide deck from [AI_prompts.md](../AI_prompts.md) in light mode and place it in folder
 [quarto/prompt.qmd](prompt.qmd).

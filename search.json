@@ -201,5 +201,89 @@
     "title": "AI Prompt Examples",
     "section": "Folder Documentation in ResearchDrive",
     "text": "Folder Documentation in ResearchDrive\n\n\nThe Challenge\nData and code are kept securely and privately on ResearchDrive (RD), but sharing/version control is still needed.\n\nThe Solution\nMaintain public markdown documentation and folder structures on GitHub (with data-less READMEs) while keeping raw data safe in RD.\n\n\nExamples:\n\nsysgenDO1200 README\nmkeller3Projects2 R Scripts README"
+  },
+  {
+    "objectID": "quarto/prompts.html#documenting-ai-workflows",
+    "href": "quarto/prompts.html#documenting-ai-workflows",
+    "title": "AI Prompt Examples",
+    "section": "Documenting AI Workflows",
+    "text": "Documenting AI Workflows\nHow will you later remember how you used Artificial Intelligence (AI) to advance your projects? And how will you share your learning with others?\n\n\nSaved prompts and walkthroughs can be used to reproduce your work.\nShare prompts instead of just raw code.\nAsk your AI agent to save prompts to a file (e.g., prompts.md).\nSave Walkthrough artifacts in a separate walkthrough.md file."
+  },
+  {
+    "objectID": "quarto/prompts.html#prompt-engineering-resources",
+    "href": "quarto/prompts.html#prompt-engineering-resources",
+    "title": "AI Prompt Examples",
+    "section": "Prompt Engineering Resources",
+    "text": "Prompt Engineering Resources\nHere are some guidebooks and frameworks to help refine your prompts:\n\nPrompt Engineering Guide\nClaude Prompt Engineering\nTyson Swetnam’s Intro to GPT:\n\nCore Features of Today’s AI Tools\nGetting Started with Prompts"
+  },
+  {
+    "objectID": "quarto/prompts.html#saving-prompts-and-walkthroughs",
+    "href": "quarto/prompts.html#saving-prompts-and-walkthroughs",
+    "title": "AI Prompt Examples",
+    "section": "Saving Prompts and Walkthroughs",
+    "text": "Saving Prompts and Walkthroughs\n\n\nPrompts to Save Progress:\n\n\"save the prompts used in this conversation to prompts.md\"\n\"save the walkthrough to walkthrough.md\"\n\nWhen & How:\n\nRun at the beginning or end of a conversation.\nClick Save (top right) or Export on the walkthrough panel.\n\n\n\n\n\n\n\n\nReal-world Examples:\n\n\n\nsysgenAnalysis Walkthroughs\nmkeller3Projects2 Repo Setup\nsysgenDO1200 Prompts"
+  },
+  {
+    "objectID": "quarto/prompts.html#ai-agent-conversation-structure",
+    "href": "quarto/prompts.html#ai-agent-conversation-structure",
+    "title": "AI Prompt Examples",
+    "section": "AI Agent Conversation Structure",
+    "text": "AI Agent Conversation Structure\n\n\nUser interactions happen in conversations or chat sessions.\nA session involves a chain of prompts:\n\nSystem Instruction: Establishes global constraints/roles.\nFraming Prompt: Broad definition of the task.\nRefinement Prompts: Step-by-step guidance.\n\nKeep different conversations within a project separated.\nStore projects as GitHub repos for version control."
+  },
+  {
+    "objectID": "quarto/prompts.html#system-instructions",
+    "href": "quarto/prompts.html#system-instructions",
+    "title": "AI Prompt Examples",
+    "section": "System Instructions",
+    "text": "System Instructions\nSet global rules for prompt chaining in your session:\n# Project Context\nI'm a data scientist working on machine learning projects.\nFor Python code, always provide examples using `scikit-learn` and `pandas`.\nFor R code, always provide examples using `tidyverse`.\nInclude `docstrings` (Python) or `roxygen2` (R) and type hints in all code.\n\n# Response Preferences\n- Be concise but thorough\n- Explain complex concepts with analogies\n- Always cite sources when making factual claims"
+  },
+  {
+    "objectID": "quarto/prompts.html#the-craft-framework",
+    "href": "quarto/prompts.html#the-craft-framework",
+    "title": "AI Prompt Examples",
+    "section": "The CRAFT Framework",
+    "text": "The CRAFT Framework\nFor complicated tasks, structure your prompt using the CRAFT framework:\n\nContext: Background information.\nRole: Person/identity the AI assumes.\nAction: The specific task to perform.\nFormat: Deliverable structure.\nTone: Style of response.\n\nExample: Grant Proposal\nContext: Grant proposal for NSF funding on AI in education  \nRole: Experienced grant writer & researcher  \nAction: Review draft introduction and suggest improvements  \nFormat: Feedback as tracked changes with explanations  \nTone: Professional, constructive, and encouraging"
+  },
+  {
+    "objectID": "quarto/prompts.html#documenting-files-folders",
+    "href": "quarto/prompts.html#documenting-files-folders",
+    "title": "AI Prompt Examples",
+    "section": "Documenting Files & Folders",
+    "text": "Documenting Files & Folders\n\n\nCreate a Folder README\n\nPrompt:\n\n\"create a README.md document that concisely summarizescontents of this folder at a high level\"\n\"update README.md with any additional files,obeying restrictions in .gitignore\"\n\n\n\nCreate a Table of Contents (TOC)\n\nPrompt:\n\n\"create TOC for README.md\"\n\"update TOC for README.md\"\n\n\n\n\n\n\n\n\n\nPro-Tip\n\n\nEstablishing a culture of updating these docs enables the AI to update files on the fly as your project evolves!"
+  },
+  {
+    "objectID": "quarto/prompts.html#convert-docx-to-markdown-slides",
+    "href": "quarto/prompts.html#convert-docx-to-markdown-slides",
+    "title": "AI Prompt Examples",
+    "section": "Convert DOCX to Markdown & Slides",
+    "text": "Convert DOCX to Markdown & Slides\n\n\nConvert DOCX via Pandoc\n\nPrompt:\n\n\"find docx files and use pandoc to convert them to md versions\"\n\nPrerequisites: Pandoc installed locally.\n\n\nGenerate Slides via Quarto\n\nPrompt:\n\n\"Use Quarto to automatically generate a PowerPoint deck(.pptx) embedding all of the outputted PNG figures.\"\n\"Add a table of contents slide to the presentation.\"\n\n\n\n\n\n\n\n\n\nNote\n\n\nSee Diana and Alan’s evolved prompt versions in prompts/powerpoint.md."
+  },
+  {
+    "objectID": "quarto/prompts.html#github-prompts-versioning-files",
+    "href": "quarto/prompts.html#github-prompts-versioning-files",
+    "title": "AI Prompt Examples",
+    "section": "GitHub Prompts: Versioning Files",
+    "text": "GitHub Prompts: Versioning Files\nMulti-Version Commit Prompt\nFind files ending in `[ _]v[0-9]+.R$`\nwith matching base name.\n- If no `v1` exists but `basename.R`\n  does, copy to `v1.R`.\n- Commit `basename.R` with message `v1`\n  and original date.\n- For subsequent versions, copy the\n  next version to `basename.R` and commit.\n- Keep versioned files intact.\n\n\n\n\n\n\nRefined Prompts\n\n\nCheck out prompts/file_versions.md for a streamlined, instruction-optimized version of this prompt."
+  },
+  {
+    "objectID": "quarto/prompts.html#github-prompts-git-conflict-resolution",
+    "href": "quarto/prompts.html#github-prompts-git-conflict-resolution",
+    "title": "AI Prompt Examples",
+    "section": "GitHub Prompts: Git Conflict Resolution",
+    "text": "GitHub Prompts: Git Conflict Resolution\nWhen you run into conflicts (e.g., forgetting to pull before committing):\nThe “Git Hell” Prompt\n\n“I messed up and forgot to do git pull before committing new files.Now I am in git hell. See the message with git status.Walk me through how to fix this.”\n\n\n\n\n\n\n\nOutcome\n\n\nThe AI successfully parsed the status and sorted out the repository state, providing step-by-step guidance."
+  },
+  {
+    "objectID": "quarto/prompts.html#organizing-a-workflow",
+    "href": "quarto/prompts.html#organizing-a-workflow",
+    "title": "AI Prompt Examples",
+    "section": "Organizing a Workflow",
+    "text": "Organizing a Workflow\nThe Goal\nTransform a complex organic R workflow into neat functions inside an R package, featuring: - A function to run the workflow. - A function to explore results.\nThe Prompt\n\n\"build a concise prompt that captures the essence of the walkthroughs in inst/doc/walkthrough.md\"\n\n\n\n\n\n\n\nKey Packages\n\n\nUses devtools, roxygen2, and Quarto to render markdown outputs (HTML, PDF, DOCX)."
+  },
+  {
+    "objectID": "quarto/prompts.html#folder-documentation-in-researchdrive",
+    "href": "quarto/prompts.html#folder-documentation-in-researchdrive",
+    "title": "AI Prompt Examples",
+    "section": "Folder Documentation in ResearchDrive",
+    "text": "Folder Documentation in ResearchDrive\n\n\nThe Challenge\nData and code are kept securely and privately on ResearchDrive (RD), but sharing/version control is still needed.\n\nThe Solution\nMaintain public markdown documentation and folder structures on GitHub (with data-less READMEs) while keeping raw data safe in RD.\n\n\nExamples:\n\nsysgenDO1200 README\nmkeller3Projects2 R Scripts README"
   }
 ]

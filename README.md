@@ -16,8 +16,8 @@ Now available as
   - [Python Coding from Environmental Systems](./envsys.md#python-coding)
 - [Shiny Apps](./ShinyApps.md)
 - [Quarto References](./quarto/)
-- [Artificial Intelligence (AI)](./AI.md)
-  - [AI Prompt Examples](./prompts/)
+- [Artificial Intelligence (AI)](./AI.md) ([slide deck](./quarto/AI.html))
+  - [AI Prompt Examples](./prompts/) ([slide deck](./quarto/prompts.html))
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 

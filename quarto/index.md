@@ -1,13 +1,13 @@
-# Quarto Dynamic Content
+# Quarto Slide Decks
 
-## Slideshows
+## Slide Decks
 
 - [AI References](./AI.html)
-- [AI Prompt Examples](./prompt.html)
+- [AI Prompt Examples](./prompts.html)
 - [Geyser Shiny Examples](https://github.com/byandell/geyser)
-- [AI Narrative](./narrative.html)
+- [Quarto Narrative](./narrative.html)
 
-## References
+## Quarto References
 
 - [Quarto](https://quarto.org/)
   - [Get Started](https://quarto.org/docs/get-started/)
