@@ -10,7 +10,7 @@
   - [Google Maps Platform Access](./envsys.md#google-maps-platform-access)
 - [Python References](./python_references.md)
   - [Python Coding Strategy](./python_strategy.md)
-  - [Python Coding from Environmental Systems](./envsys.md#python-coding)
+  - [Python Coding in Environmental Systems](./envsys.md#python-coding)
 - [Shiny Apps](./ShinyApps.md)
 - [Quarto References](./quarto/)
 - [Artificial Intelligence (AI)](./AI.md) ([slide deck](./quarto/AI.html))
@@ -66,12 +66,17 @@ and
 [Three Rivers (2025)](https://cu-esiil.github.io/resilience-rare-hydrologic-events-management-innovation-summit-2025__15/).
 The Maka Sitomniya working group led to an ongoing collaboration with the
 [Sicangu Climate Center](https://sicangudata.org/).
+Lately, I have joined the
+[Wopasi Pazo ESIIL Working Group](https://esiil.org/working-groups/wopasi-pazo)
 
 I began attending the Friday noon meetings of the
-[Oglala Lakota College Math, Science, and Technology Department](https://www.olc.edu/current-students/degree-programs-areas-of-study/math-science-tech/),
+[Oglala Lakota College (OLC) Math, Science, and Technology Department](https://www.olc.edu/current-students/degree-programs-areas-of-study/math-science-tech/),
 which has included a collaboration on Tribal boundary maps, gathered in the
 [R](https://cran.r-project.org/) package
 [landmapr](https://github.com/byandell-envsys/landmapr).
+I was asked to be a senior advisor for the
+[ESIIL Stars program](https://esiil.org/esiil-stars)
+and am assisting with the OLC team.
 
 I attended the
 [CU Boulder EarthLab](https://earthlab.colorado.edu/) course
@@ -87,7 +92,7 @@ now gathered in this repository.
 
 I have been learning about [Shiny](https://shiny.posit.co/) since before I
 attended the
-[2015 Rstudio conference](https://github.com/rstudio/rstudio-conf).
+[2017 Rstudio conference](https://github.com/rstudio/rstudio-conf).
 Notes on my shiny apps are in
 [ShinyApps.md](./ShinyApps.md).
 I created the
