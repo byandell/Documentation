@@ -1,10 +1,7 @@
 # Documentation
 
-Now available as
-<https://byandell.github.io/Documentation>.
-
 - [My Documentation Journey](#my-documentation-journey)
-- [R](./R.md)
+- [R References](./R.md)
 - [GitHub, Connect, and CodeSpaces](./github.md)
 - [Environmental Systems References](./envsys.md)
   - [Geospatial Resources](./geospatial.md)
