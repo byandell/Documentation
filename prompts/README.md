@@ -1,7 +1,7 @@
 # AI Prompt Examples
 
 How will you later remember how you used
-[Artifical Intelligence (AI)](AI.md) to advance your projects?
+[Artificial Intelligence (AI)](../AI.md) to advance your projects?
 And how will you share your learning with others?
 Here are some examples of prompts that I have used with AI agents to help me,
 and teams in interacting with projects.
@@ -36,13 +36,13 @@ Below are examples of prompts I have been developing.
   - [Create a Table of Contents for a File](#create-a-table-of-contents-for-a-file)
   - [Convert DOCX files to Markdown](#convert-docx-files-to-markdown)
   - [Powerpoint Presentation](#powerpoint-presentation)
-    - [prompts/powerpoint.md](prompts/powerpoint.md)
+    - [powerpoint.md](powerpoint.md)
   - [GitHub Prompts](#github-prompts)
     - [Commit to GitHub multiple versions of an R file](#commit-to-github-multiple-versions-of-an-r-file)
-      - [prompts/file_versions.md](prompts/file_versions.md)
+      - [file_versions.md](./file_versions.md)
     - [Resolve Git Hell Conflicts](#resolve-git-hell-conflicts)
   - [Organize a Workflow](#organize-a-workflow)
-    - [prompts/workflow.md](prompts/workflow.md)
+    - [workflow.md](./workflow.md)
   - [Documenting Folders in ResearchDrive](#documenting-folders-in-researchdrive)
 - More detailed Prompt examples
   - [file_versions.md](./file_versions.md)
@@ -169,8 +169,8 @@ Just as you can create a `README.md` for a folder, you can create a table of con
 
 **Example:**
 
-- [README for this repo](https://github.com/byandell/Documentation/blob/main/README.md)
-- [Table of Contents for this file](AI_prompts.md#table-of-contents)
+- [README for this repo](../)
+- [Table of Contents for this file](#table-of-contents)
 - [Pipelines in mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md#pipelines)
 
 Once you have these and establish a "culture" of updating them, the AI will sometimes make the changes on the fly as you evolve your material.
@@ -202,7 +202,7 @@ The AI will likely include a title slide; you can also ask AI to add other mater
 
 **Example:**
 
-- [prompts/powerpoint.md](prompts/powerpoint.md)
+- [powerpoint.md](./powerpoint.md)
 
 This prompt was used to create the powerpoint presentation for a GTT project.
 For more detail, see
@@ -221,7 +221,7 @@ A user could further specify to replace step 2 with their own version of instruc
 ### GitHub Prompts
 
 These prompts interact with Git and set up files to be pushed to GitHub. To use these, a GitHub account and working knowledge of how Git and GitHub work is assumed.
-See [GitHub references](./github.md) for more information.
+See [GitHub references](../github.md) for more information.
 
 #### Commit to GitHub multiple versions of an R file
 
@@ -250,13 +250,13 @@ Continue until all versions are committed.
 
 The above prompt is a great task for an AI or an automated script. The original prompt is logically sound but can be streamlined to be more "instructional" and clear about the desired state.
 The file
-[file versions prompt](prompts/file_versions.md) has an improved, more concise version of the prompt.
+[file versions prompt](./file_versions.md) has an improved, more concise version of the prompt.
 
 ***
 
 **Examples:**
 
-- [prompts/file_versions.md](prompts/file_versions.md)
+- [file_versions.md](./file_versions.md)
 - [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
 
 For details of versions, see for instance
@@ -290,16 +290,16 @@ Other `R` packages will likely be needed along the way.
 
 **Examples:**
 
-- [prompts/workflow.md](prompts/workflow.md)
+- [workflow.md](./workflow.md)
 - [workflow prompt](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-prompt)
 - [workflow walkthroughs](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-walkthroughs)
 
 The
-[prompts/workflow.md](prompts/workflow.md)
+[workflow.md](./workflow.md)
 is a refinement of the workflow developed for
 [sysgenAnalysis](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/).
 This particular prompt, which is described conceptually in
-[Prompts to Organize Workflows](AI.md#prompts-to-organize-workflows),
+[Prompts to Organize Workflows](../AI.md#prompts-to-organize-workflows),
 transforms an R workflow into functions in an R package,
 including a function to run the workflow and another function to explore the results.
 
