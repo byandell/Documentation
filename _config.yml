@@ -22,6 +22,9 @@ include:
 
 remote_theme: just-the-docs/just-the-docs
 
+exclude:
+  - "**/*.qmd"
+
 defaults:
   - scope:
       path: ""
