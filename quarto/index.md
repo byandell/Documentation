@@ -20,3 +20,5 @@
    and [from](https://quarto.org/docs/get-started/) Quarto
 - [my quarto repo](https://github.com/byandell/quarto)
 - [quarto examples in geyser repo](https://github.com/byandell/geyser/tree/main/inst/quarto)
+
+_[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
