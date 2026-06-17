@@ -16,7 +16,8 @@
 - [Artificial Intelligence (AI)](./AI.md) ([slide deck](./quarto/AI.html))
   - [AI Prompt Examples](./prompts/) ([slide deck](./quarto/prompts.html))
 
-_[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
+_[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
+([GitHub](https://github.com/byandell/Documentation))
 
 ## My Documentation Journey
 
