@@ -19,4 +19,5 @@ include:
   - ShinyApps.md
   - verde_models.csv
 
-theme: jekyll-theme-tactile
+#theme: jekyll-theme-tactile
+remote_theme: aterenin/minima-reboot
