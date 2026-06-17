@@ -19,4 +19,4 @@ include:
   - ShinyApps.md
   - verde_models.csv
 
-theme: slate
+theme: jekyll-theme-tactile
