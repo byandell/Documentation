@@ -14,6 +14,8 @@ Below is my conversation with Antigravity IDE 2.0 about recovering those convers
 - [Result of Recovery](#result-of-recovery)
 - [Other Methods to Recover Some Conversations](#other-methods-to-recover-some-conversations)
 
+_[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
+
 **Prompt:**
 Use [Method 1: Antigravity History CLI Tool](#method-1-antigravity-history-cli-tool)
 to recover my lost conversations.
@@ -43,7 +45,7 @@ Use the community guides and tools developed
 - **Manual ".pb Injection":** A workaround where you create a new "dummy" chat session in the IDE (which registers a new entry in the index), then rename your old `.pb` file to replace the dummy file. When the IDE restarts, it loads the old content under the new index registration.
 - **Automated Scripts:** Tools like the `Resurrect` toolkit or the community [antigravity-chat-recovery](https://github.com/keisksw/antigravity-chat-recovery) script automate this injection/re-indexing process.
 
-*Note: If you decide to try recovering them, make sure to back up your entire `~/.gemini/antigravity-ide/conversations` folder first to prevent accidental data loss.*
+_Note: If you decide to try recovering them, make sure to back up your entire `~/.gemini/antigravity-ide/conversations` folder first to prevent accidental data loss._
 
 ## Why can't antigravity fix this itself?
 
@@ -110,7 +112,7 @@ To attempt restoring them directly into the IDE sidebar:
 aghistory recover
 ```
 
-*(Note: Close the Antigravity IDE application before running this command.)*
+_(Note: Close the Antigravity IDE application before running this command.)_
 
 ## Result of Recovery
 
@@ -140,7 +142,7 @@ All **81 conversations** (totaling **4,392 messages**) have been successfully ba
    - Saved them to a new backup folder on your Desktop at `/Users/brianyandell/Desktop/Antigravity_Backup`.
 3. **Re-Indexed in IDE:**
    - Triggered the recovery/activation process with the local LanguageServer API.
-   - All 81 sessions are now fully registered in your IDE session, complete with their original titles, step counts, and modification timestamps (e.g. *"Reviewing Environmental Data Science Papers"*, *"Identifying Landmapy Spatial Dependencies"*, *"Analyzing Hsp90 GTT Data"*).
+   - All 81 sessions are now fully registered in your IDE session, complete with their original titles, step counts, and modification timestamps (e.g. _"Reviewing Environmental Data Science Papers"_, _"Identifying Landmapy Spatial Dependencies"_, _"Analyzing Hsp90 GTT Data"_).
 
 Your chat history sidebar in the IDE should now display all these restored conversations!
 
@@ -172,7 +174,7 @@ If you only need to restore one or two specific conversations directly into the 
    ls -lt
    ```
 
-   *Identify the latest `.pb` file (e.g., `NEW_DUMMY_ID.pb`).*
+   _Identify the latest `.pb` file (e.g., `NEW_DUMMY_ID.pb`)._
 6. Copy that filename, delete the new `.pb` file, and rename the **old** `.pb` file you want to recover to match that name exactly:
 
    ```bash

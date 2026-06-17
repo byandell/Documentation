@@ -23,6 +23,8 @@ See also [Environmental Systems](envsys.md) references.
   - [Migrate from Jupyter Notebooks to Quarto Documents](#migrate-from-jupyter-notebooks-to-quarto-documents)
   - [Set Default Python Kernel for Quarto](kernel.md)
 
+_[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
+
 ## Make Coding Fun
 
 This document has sections entitled with declarative verbs,

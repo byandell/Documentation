@@ -19,7 +19,7 @@ Now available as
 - [Artificial Intelligence (AI)](./AI.md)
   - [AI Prompt Examples](./AI_prompts.md)
 
-[_byandell.github.io_](https://byandell.github.io)
+_[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 
 ## My Documentation Journey
 
@@ -113,6 +113,3 @@ Migrated to GitHub Pages on 2026-06-16 with help of
 [Convert Markdown to GitHub Pages](https://nicolas-van.github.io/easy-markdown-to-github-pages/)
 by
 [Nicolas Vanhoren](https://github.com/nicolas-van).
-
-_[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
-_[github.com/byandell/Documentation](https://github.com/byandell/Documentation)_

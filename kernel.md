@@ -52,3 +52,5 @@ By default, Quarto will automatically detect and use the Python interpreter that
 conda activate earth-analytics-python
 quarto render your_document.qmd
 ```
+
+_[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  

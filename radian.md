@@ -7,6 +7,8 @@
 - [Rmarkdown Code Chunks](https://rmarkdown.rstudio.com/lesson-3.html)
 - [VS Code: Add a Rmarkdown Code Chunk Snippet Key Binding](https://www.schmidtynotes.com/blog/r/2021-09-28-vscode-rmd-code-chunk-snippet/)
 
+_[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
+
 ## Radian and AI Environments
 
 While you can use the enhanced R tool

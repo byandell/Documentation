@@ -47,6 +47,8 @@ Below are discussions in reverse chronological order of these repos:
 Additional links on R in general can be found at
 [R for Data Sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences).
 
+_[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
+
 <hr>
 
 ## qtlApp: modular QTL visualization app

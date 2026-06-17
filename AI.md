@@ -27,6 +27,8 @@ To learn about (generative) AI, start with the self-paced workshop on
   - [AGENTS.md (Repository Context)](#agentsmd-repository-context)
   - [Agent Skills / SKILL.md (Actionable Capabilities)](#agent-skills--skillmd-actionable-capabilities)
 
+_[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
+
 ## Articles about AI
 
 Interestingly, when I started populating this list, AI hallucinated several entries, which I had to go back and properly curate.
@@ -538,13 +540,13 @@ A comparative breakdown highlights their distinct roles, structures, and intende
 
 ### `AGENTS.md` (Repository Context)
 
-Think of `AGENTS.md` as the **onboarding handbook** for an AI agent entering a specific project. It tells the agent *what* the project is and *how* it should behave to blend in seamlessly with human contributors.
+Think of `AGENTS.md` as the **onboarding handbook** for an AI agent entering a specific project. It tells the agent _what_ the project is and _how_ it should behave to blend in seamlessly with human contributors.
 
-- **Target Audience:** The AI agent working *inside* that specific codebase.
+- **Target Audience:** The AI agent working _inside_ that specific codebase.
 - **Content Focus:**
   - Tech stack definitions (e.g., React 18, TypeScript, Tailwind).
   - Directory layout (where to find hooks, components, or API services).
-  - Design tokens and rigid rules (e.g., *"Do not introduce new dependencies," "Prefer existing `Button` component"*).
+  - Design tokens and rigid rules (e.g., _"Do not introduce new dependencies," "Prefer existing `Button` component"_).
 - **Layering & Scope:** Can be nested. A root `AGENTS.md` might define company-wide standards, while a nested `services/api/AGENTS.md` layers on rules specific only to the backend service.
 
 #### AGENTS.md Examples
@@ -583,7 +585,7 @@ See for instance these example AGENTS.md files with listed sections:
 
 Think of Agent Skills as a **toolbox or an app store** for the AI agent. Instead of general project guidelines, a skill teaches the agent how to execute a complex, multi-step workflow.
 
-- **Target Audience:** The AI agent across *any* project that requires this specific ability.
+- **Target Audience:** The AI agent across _any_ project that requires this specific ability.
 - **Content Focus:**
   - Strict step-by-step procedural workflows (e.g., `/spec`, `/plan`, `/review`).
   - Structural anti-rationalization tables (rules preventing the agent from cutting corners, like skipping unit tests).
@@ -611,4 +613,4 @@ Comments gleaned from Gemini browser summary:
 
 ### Summary of Differences
 
-While **`AGENTS.md`** sets the **boundaries and context** of *where* the agent is working, **Agent Skills** extend the **functional capability** of *what* the agent can actually execute. For example, your `AGENTS.md` might dictate that you use Vitest for unit testing, but you would activate an `agent-skill` to execute a structured test-driven development workflow using those tools.
+While **`AGENTS.md`** sets the **boundaries and context** of _where_ the agent is working, **Agent Skills** extend the **functional capability** of _what_ the agent can actually execute. For example, your `AGENTS.md` might dictate that you use Vitest for unit testing, but you would activate an `agent-skill` to execute a structured test-driven development workflow using those tools.

@@ -30,6 +30,8 @@ Additional references beyond Python:
 - [ShinyApps](https://github.com/AttieLab-Systems-Genetics/Documentation/blob/main/ShinyApps.md)
 - [R for Data Sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences)
 
+_[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
+
 ## Python Overview
 
 - [Python Tutorial](https://docs.python.org/3/tutorial/)

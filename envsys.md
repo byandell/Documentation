@@ -14,6 +14,8 @@ See also
 - [EDA Workbook on Python](python_references.md#earth-data-analytics-eda-workbook)
 - [GitHub & Codespaces](github.md)
 
+_[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
+
 ## Earth Data Analytics
 
 - [Fundamentals of Earth Data Analytics (EDA)](https://cu-esiil-edu.github.io/esiil-learning-portal/foundations/pages/00-course-overviews/foundations/01-fundamentals/00-home.html)
