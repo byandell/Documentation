@@ -18,7 +18,7 @@ format:
 
 ## Documenting AI Workflows
 
-How will you later remember how you used [Artificial Intelligence (AI)](../AI.md) to advance your projects? And how will you share your learning with others?
+How will you later remember how you used [Artificial Intelligence (AI)](../AI.html) to advance your projects? And how will you share your learning with others?
 
 ::: {.incremental}
 - Saved prompts and walkthroughs can be used to **reproduce your work**.
@@ -154,7 +154,7 @@ Establishing a culture of updating these docs enables the AI to update files on 
 :::
 
 ::: {.callout-note}
-See Diana and Alan's evolved prompt versions in [prompts/powerpoint.md](../prompts/powerpoint.md).
+See Diana and Alan's evolved prompt versions for [creating PowerPoint slides](../prompts/powerpoint.html).
 :::
 
 ## GitHub Prompts: Versioning Files
@@ -174,7 +174,7 @@ with matching base name.
 
 ::: {.callout-tip}
 ### Refined Prompts
-Check out [prompts/file_versions.md](../prompts/file_versions.md) for a streamlined, instruction-optimized version of this prompt.
+Check out [file versions](../prompts/file_versions.html) for a streamlined, instruction-optimized version of this prompt.
 :::
 
 ## GitHub Prompts: Git Conflict Resolution

@@ -39,9 +39,13 @@ Jaron Lanier's [There is no AI](https://byandell.github.io/Jaron-Lanier-There-is
 
 ::: {.callout-tip}
 ### Core References
-- **NYT**: *Coding After Coders* (Thompson) &middot; *The Workers Letting AI Do Their Jobs* (Daily)
-- **NYT**: *The Small-Business Owners Managing Armies of A.I. Employees* (Thompson)
-- **Atlantic**: *AI Panic Cycle* &middot; *What Do the People Building AI Believe?* (Warzel)
+- **NYT**: 
+  - [*Coding After Coders*](https://www.nytimes.com/2026/03/12/magazine/ai-coding-programming-jobs-claude-chatgpt.html) (Thompson)
+  - [*The Workers Letting AI Do Their Jobs*](https://www.nytimes.com/2026/04/14/podcasts/the-daily/ai-coders.html) (Daily)
+  - [*The Small-Business Owners Managing Armies of A.I. Employees*](https://www.nytimes.com/2026/06/04/magazine/ai-agents-openclaw-small-business.html) (Thompson)
+- **Atlantic**:
+  - [*AI Panic Cycle*](https://www.theatlantic.com/podcasts/2026/02/the-ai-panic-cycle-and-whats-actually-different-now/686077/) (Warzel)
+  - [*What Do the People Building AI Believe?*](https://www.theatlantic.com/podcasts/2026/02/what-do-the-people-building-ai-believe/686173/) (Warzel)
 :::
 
 ## Ethics & Environmental Impact
@@ -56,7 +60,11 @@ Jaron Lanier's [There is no AI](https://byandell.github.io/Jaron-Lanier-There-is
 Scientists warn in *Nature* that uncritical adoption of AI in science requires urgent regulatory guardrails.
 :::
 
-- **Ethics Resources**: [Pope and AI](https://byandell.github.io/The-Pope-and_AI/) &middot; [Ethics of AI (Tyson Swetnam)](https://tysonswetnam.com/blog/posts/2025-01-14-gpt101/#ethics-of-ai) &middot; [No Data Centers on Native Land](https://Honorearth.org/stopdatacolonialism)
+**Ethics Resources**:
+
+- [Pope and AI](https://byandell.github.io/The-Pope-and_AI/)
+- [Ethics of AI (Tyson Swetnam)](https://tysonswetnam.com/blog/posts/2025-01-14-gpt101/#ethics-of-ai)
+- [No Data Centers on Native Land](https://Honorearth.org/stopdatacolonialism)
 
 ## Data Center Resources & Efficiency
 
@@ -114,10 +122,13 @@ Launched May 2026 with four primary tools:
 
 ::: {.callout-warning}
 ### Transition Note
-IDE version 2.0 does not carry over history automatically. See [Recovering Antigravity Conversations](../recover_conversations.md) for step-by-step help.
+IDE version 2.0 does not carry over history automatically. See [Recovering Antigravity Conversations](../recover_conversations.html) for step-by-step help.
 :::
 
-- **Gemini Resources**: [Prompt Design Strategies](https://ai.google.dev/gemini-api/docs/prompt-design) &middot; [GitHub Repo Imports](https://kb.wisc.edu/ai/135575)
+**Gemini Resources**:
+
+- [Prompt Design Strategies](https://ai.google.dev/gemini-api/docs/prompt-design)
+- [GitHub Repo Imports](https://kb.wisc.edu/ai/135575)
 
 ## Standalone AI IDEs & Tools
 
@@ -130,7 +141,9 @@ AI-native environments have quickly expanded beyond standard editor integrations
 - **Cursor**: Advanced fork of VS Code featuring native MCP tool support.
 
 ::: {.callout-caution}
-Be careful when using terminal-based interactive interpreters (like `radian`) alongside background AI terminal execution.
+Be careful when using terminal-based interactive interpreters (like
+[radian](../radian.html))
+alongside background AI terminal execution.
 :::
 
 ## Agentic AI & Multi-Agent Orchestration
@@ -191,7 +204,9 @@ Key characteristics of open-source models available viaCyVerse AI Verde:
 
 ::: {.callout-tip}
 ### Core References
-[AI Prompt Examples](../AI_prompts.md) &middot; [Prompting Guide](https://www.promptingguide.ai/) &middot; Tyson Swetnam's [Getting Started with Prompts](https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure)
+- **[AI Prompt Examples](../prompts/)**
+- **[Prompting Guide](https://www.promptingguide.ai/)**
+- **Tyson Swetnam's [Getting Started with Prompts](https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure)**
 :::
 
 ## Prompts to Organize Workflows
@@ -223,7 +238,7 @@ Avoid oversized onboarding files. Keep repository rules focused to preserve conv
 
 AI coding assistants (Claude Code, Antigravity, Cursor) leverage two core standards to organize context:
 
-| Feature | `AGENTS.md` | Agent Skills (`SKILL.md`) |
+| Feature | [AGENTS.md](https://AGENTS.md) | Agent Skills ([SKILL.md](https://agentskills.io)) |
 | --- | --- | --- |
 | **Purpose** | **Static repository context** (coding standards, project layout). | **Procedural knowledge** and automation recipes (deployment, tests). |
 | **Scope** | Bound to a single repository. | Reusable/portable across projects. |
