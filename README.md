@@ -113,3 +113,7 @@ Migrated to GitHub Pages on 2026-06-16 with help of
 [Convert Markdown to GitHub Pages](https://nicolas-van.github.io/easy-markdown-to-github-pages/)
 by
 [Nicolas Vanhoren](https://github.com/nicolas-van).
+Modified theme in
+[_config.yml](.config.yml)
+to
+[just-the-docs](https://just-the-docs.github.io/just-the-docs/).
