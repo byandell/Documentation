@@ -158,9 +158,10 @@ alongside background AI terminal execution.
 
 ::: {.column width="50%"}
 ### Open Source Platforms
-- **OpenClaw & Hermes**: Open orchestration engines.
-- **OASIS ScienceClaw**: ESIIL-developed clone of OpenClaw acting as a digital twin for scientific working groups.
-- **SOUL.md**: Markdown-based configuration files defining agent personalities.
+- **[OpenClaw](https://www.openclaw.ai/) &
+[Hermes](https://hermes-agent.org/)**: Open orchestration engines.
+- **[OASIS ScienceClaw](https://github.com/CU-ESIIL/openclaw_container)**: ESIIL-developed clone of OpenClaw acting as a digital twin for scientific working groups.
+- **[SOUL.md](https://soul.md/)**: Markdown-based configuration files defining agent personalities.
 :::
 :::
 
