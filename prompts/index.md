@@ -44,6 +44,10 @@ Below are examples of prompts I have been developing.
   - [Organize a Workflow](#organize-a-workflow)
     - [prompts/workflow.md](prompts/workflow.md)
   - [Documenting Folders in ResearchDrive](#documenting-folders-in-researchdrive)
+- More detailed Prompt examples
+  - [file_versions.md](./file_versions.md)
+  - [powerpoint.md](./powerpoint.md)
+  - [workflow.md](./workflow.md)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 

@@ -16,7 +16,7 @@ To learn about (generative) AI, start with the self-paced workshop on
   - [Agentic AI](#agentic-ai)
   - [Large Language Models](#large-language-models)
 - [Prompt Engineering](#prompt-engineering)
-  - [AI Prompt Examples](AI_prompts.md)
+  - [AI Prompt Examples](./prompts/)
   - [Sharing Prompts instead of Code](https://byandell.github.io/Gravity-and-Antigravity/#sharing-prompts-instead-of-code)
   - [Prompts to Organize Workflows](#prompts-to-organize-workflows)
   - [Learning about prompts](#learning-about-prompts)
@@ -419,7 +419,7 @@ The next section shows how I used this approach to organize a somewhat complicat
 For some of my examples, see
 [Sharing Prompts instead of Code](https://byandell.github.io/Gravity-and-Antigravity/#sharing-prompts-instead-of-code)
 and
-[AI Prompt Examples](AI_prompts.md).
+[AI Prompt Examples](./prompts/).
 
 ### Prompts to Organize Workflows
 
@@ -428,7 +428,7 @@ Often, it is helpful to organize them into human-size chunks to make them easier
 
 I experimented with developing a series of prompts to transform a workflow into its components. The functions do the work but need not be viewed in the workflow. The workflow should be a concise document that shows the steps and the results together. The following steps should begin with a workflow file, e.g. ​`workflow.R`.
 The workflow prompt is included in
-[AI Prompt Examples](AI_prompts.md#organize-a-workflow).
+[AI Prompt Examples](./prompts/#organize-a-workflow).
 
 - Place the functions in their own R file (`functions.R`). This file should retain the comments that organize them into the workflow steps.
 - Organize the workflow into a Quarto document (`workflow.qmd`). This file should invoke (source) the `functions.R` and have its R code in chunks, with the comments turned into section delimiters and text blocks.
@@ -472,7 +472,7 @@ Below are some references on prompt engineering quickly culled from the web:
   - [What is prompt engineering?](https://www.promptingguide.ai/introduction/what-is-prompt-engineering)
 - [What Is Prompt Engineering? (Coursera)](https://cloud.google.com/discover/what-is-prompt-engineering)
 - [What is prompt engineering? (GitHub)](https://github.com/resources/articles/what-is-prompt-engineering)
-- [AI Prompt Examples](AI_prompts.md)
+- [AI Prompt Examples](./prompts/)
 
 ## Context Engineering
 

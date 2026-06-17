@@ -17,7 +17,7 @@ Now available as
 - [Shiny Apps](./ShinyApps.md)
 - [Quarto References](./quarto/)
 - [Artificial Intelligence (AI)](./AI.md)
-  - [AI Prompt Examples](./AI_prompts.md)
+  - [AI Prompt Examples](./prompts/)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 
