@@ -90,9 +90,9 @@ and
 [Environmental Systems References](envsys.md),
 now gathered in this repository.
 
-I have been learning about [Shiny](https://shiny.posit.co/) since before I
+I had been learning about [Shiny](https://shiny.posit.co/) since before I
 attended the
-[2017 Rstudio conference](https://github.com/rstudio/rstudio-conf).
+[Rstudio.conf(2017)](https://github.com/rstudio/rstudio-conf/tree/main/2017).
 Notes on my shiny apps are in
 [ShinyApps.md](./ShinyApps.md).
 I created the
