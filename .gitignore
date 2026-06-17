@@ -14,3 +14,5 @@
 *.pptx
 
 /.quarto/
+search.json
+site_libs/
