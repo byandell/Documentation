@@ -6,7 +6,7 @@ on [Earth Data Analytics](https://github.com/byandell-envsys/EarthDataAnalytics)
 To help me understand and organize code and ideas, I developed the
 [landmapy](https://github.com/byandell-envsys/landmapy) package.
 See also [Python References](./)
-and [Environmental Systems References](./envsys.md).
+and [Environmental Systems References](../envsys/).
 
 - [Make Coding Fun](#make-coding-fun)
 - [Build a Function](#build-a-function)

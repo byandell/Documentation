@@ -5,7 +5,7 @@ These were originally in the
 [landmapy](https://github.com/byandell-envsys/landmapy)
 repository.
 See related in
-[Environmental Systems](envsys.md).
+[Environmental Systems](../envsys/).
 Please offer suggestions to improve.
 
 - [Python References & Coding Strategy (Quarto Slideshow)](https://byandell.github.io/Documentation/quarto/python.html)

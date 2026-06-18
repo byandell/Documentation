@@ -3,11 +3,7 @@
 - [My Documentation Journey](#my-documentation-journey)
 - [R References](./R.md)
 - [GitHub, Connect, and CodeSpaces](./github.md)
-- [Environmental Systems References](./envsys.md)
-  - [Geospatial Resources](./geospatial.md)
-  - [Earth Data Analytics](./envsys.md#earth-data-analytics)
-  - [Open Street Map](./envsys.md#open-street-map)
-  - [Google Maps Platform Access](./envsys.md#google-maps-platform-access)
+- [Environmental Systems References](./envsys/)
 - [Python References](./python/) ([slide deck](./quarto/python.html))
 - [Shiny Apps](./ShinyApps.md)
 - [Quarto Slide Decks & References](./quarto/)
@@ -85,7 +81,7 @@ My notes on [Python](https://www.python.org/) and related topics developed durin
 [Python References](python_references.md),
 [Python Coding Strategy](python_strategy.md),
 and
-[Environmental Systems References](envsys.md),
+[Environmental Systems References](envsys/),
 now gathered in this repository.
 
 I had been learning about [Shiny](https://shiny.posit.co/) since before I
