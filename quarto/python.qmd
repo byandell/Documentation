@@ -58,6 +58,28 @@ For multi-language workflows, refer to the guide on [Integrating Python Code wit
 Use [Raster Subtraction](https://www.earthdatascience.org/courses/use-data-open-source-python/intro-raster-data-python/raster-data-processing/subtract-rasters-in-python/) techniques to subtract one raster from another and export a new GeoTIFF in open source Python.
 :::
 
+## Coordinate Systems & Projections {.compact-slide}
+
+::: {.columns}
+::: {.column width="60%"}
+### CRS & Projection Resources
+- **[Python GIS Intro](https://pythongis.org)**: Introduction to Python for Geographic Data Analysis.
+  - [Working with Map Projections](https://pythongis.org/part2/chapter-06/nb/03-coordinate-reference-system.html) & [CRS Reference](https://www.python-gis.org/fundamentals-of-python-gis/coordinate-reference-systems/).
+  - [Building Custom Map Projections](https://www.python-gis.org/fundamentals-of-python-gis/coordinate-reference-systems/building-custom-map-projections-in-python/).
+- **[GeoPandas Geospatial Guide](https://realpython.com/geopandas/)**: RealPython introduction.
+- **[CRS & Projections (Univ. Tartu)](https://kodu.ut.ee/~kmoch/geopython2025/Py_02/crs-projections.html)**: Academic material.
+- **[Reprojecting & Transforming Data](https://py.geocompx.org/06-reproj)**: Geocomputation with Python.
+- **[Projection Transforms (Medium)](https://medium.com/@stacyfuende/python-projection-transforms-c047fecf2081)**: Reference guide.
+:::
+
+::: {.column width="40%"}
+### Common EPSG Codes
+- **[EPSG:4326](https://epsg.io/4326)**: WGS84 = World Geodetic System 1984
+- **[EPSG:32618](https://epsg.io/32618)**: WGS84 for UTM zone 18N (North America)
+- **[EPSG:32730](https://epsg.io/32720)**: WGS84 for UTM zone 20S (South America)
+:::
+:::
+
 ## Useful Python Libraries {.compact-slide}
 
 ::: {.columns}
