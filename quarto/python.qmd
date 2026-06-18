@@ -1,0 +1,415 @@
+---
+title: "Python References & Coding Strategy"
+subtitle: "Iterative Development, Package Structure, and Best Practices"
+author: "Brian Yandell ([_byandell.github.io_](https://byandell.github.io))"
+date: last-modified
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    transition: slide
+    slide-number: true
+    show-slide-number: all
+    embed-resources: true
+    footer: "Python References & Coding Strategy"
+    highlight-style: github
+---
+
+# Python Overview & Useful Libraries {background-color="#e0f2fe"}
+
+## Python Overview & Core Guides {.compact-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tutorials & Documentation
+- [Python Tutorial](https://docs.python.org/3/tutorial/): General reference.
+  - [Modules](https://docs.python.org/3/tutorial/modules.html) & [Importing Modules](https://docs.python.org/3/reference/import.html).
+  - [Packages](https://docs.python.org/3/tutorial/modules.html#packages).
+- [Pandas Library](https://pandas.pydata.org/docs/):
+  - [Pandas 10-Minute Tutorial](https://pandas.pydata.org/docs/user_guide/10min.html).
+  - [Pandas API Reference](https://pandas.pydata.org/docs/reference/).
+:::
+
+::: {.column width="50%"}
+### Style & Best Practices
+- [PEP 8 Style Guide](https://peps.python.org/pep-0008/#introduction): Formatting conventions.
+- [PEP 257 Docstrings](https://peps.python.org/pep-0257/): Conventions for documenting code.
+- [Documenting Python Code](https://realpython.com/documenting-python-code/): RealPython guide.
+- [Hitchhiker's Guide to Documentation](https://docs.python-guide.org/writing/documentation/).
+:::
+:::
+
+::: {.callout-note}
+### R Integration
+For multi-language workflows, refer to the guide on [Integrating Python Code with R](https://www.geeksforgeeks.org/integrating-python-code-with-r/). See related environmental topics in [Environmental Systems](../envsys.html).
+:::
+
+## Earth Data Analytics (EDA) {.compact-slide}
+
+### Workbooks & Environments
+- **[EDA Scientific Data Structures](https://www.earthdatascience.org/courses/intro-to-earth-data-science/scientific-data-structures-python/)**:
+  Overview of pandas and NumPy data structures for Earth data.
+- **[Earthlab Python Env Setup](https://www.earthdatascience.org/workshops/setup-earth-analytics-python/setup-python-conda-earth-analytics-environment/)**:
+  Setting up your Earth Analytics Conda environment.
+- **[Python venv Management](https://python.land/virtual-environments/virtualenv)**:
+  How to create, activate, and manage standard virtual environments.
+
+::: {.callout-tip}
+### Raster Processing
+Use [Raster Subtraction](https://www.earthdatascience.org/courses/use-data-open-source-python/intro-raster-data-python/raster-data-processing/subtract-rasters-in-python/) techniques to subtract one raster from another and export a new GeoTIFF in open source Python.
+:::
+
+## Useful Python Libraries {.compact-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Standard & Utility Libraries
+- `math`, `time`, `os`, `re`, `warnings`
+- `glob`: Directory pathname matching.
+- `csv` / `pathlib`: File path manipulation.
+- `zipfile` / `datetime`: Compressed files and time representation.
+- `scipy` / `sklearn` (scikit-learn):
+  - Machine learning utilities: `.model_selection`, `.metrics`, `.cluster`, `.tree`.
+:::
+
+::: {.column width="50%"}
+### Data Science & API Libraries
+- `numpy`: Multi-dimensional array processing.
+- `pandas`: Structured dataframes.
+- `seaborn` / `statsmodels`: Statistical analysis & plotting.
+- `pystac` / `pystac_client`: Access SpatioTemporal Asset Catalogs.
+- **Lists of Libraries**:
+  - [The Python Standard Library](https://docs.python.org/3/library/)
+  - [Awesome Python](https://awesome-python.com/)
+:::
+:::
+
+## Plotting & Spatial Libraries {.compact-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Plotting Systems
+- `matplotlib`: Foundation plotting.
+  - `matplotlib.pyplot`
+  - `matplotlib.colors`
+- `plotnine`: Grammar of graphics (`ggplot2` clone).
+- `HoloViews` / `GeoViews`: Interactive data exploration.
+- `panel` / `hvplot`: Dashboarding and quick plotting.
+:::
+
+::: {.column width="50%"}
+### Spatial Processing
+- `geopandas`: GeoDataFrames.
+- `shapely`: Geometric operations.
+- `rasterio` / `rasterstats`: Raster manipulation and statistics.
+- `xarray` / `rioxarray`: Multi-dimensional geospatial arrays.
+- `earthaccess` / `earthpy`: NASA Earthdata access and utilities.
+- `folium` / `cartopy`: Mapping and projections.
+:::
+:::
+
+## Interactive Plots & Animations {.compact-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Animated GIFs
+- Creating animated GIFs using Python:
+  - Pillow `Image` module.
+  - Matplotlib animation frameworks.
+  - [Geopandas & Matplotlib tutorial](https://towardsdatascience.com/how-to-make-a-gif-map-using-python-geopandas-and-matplotlib-cd8827cefbc8) for animated maps.
+:::
+
+::: {.column width="50%"}
+### Interactive Widgets
+- HoloViews interactive plots with gridded datasets and top-level sliders.
+- Interactive plots inside Jupyter Notebooks using `%matplotlib widget` and `ipympl`.
+:::
+:::
+
+# IPython Methods & Data Caching {background-color="#e0f2fe"}
+
+## IPython Interactive Methods {.compact-slide}
+
+IPython provides powerful tools that extend Python's standard interpreter:
+
+::: {.incremental}
+- **Tab Completion**: Suggests attributes and methods as you type.
+- **Introspection**: Use `?` or `??` to inspect object properties and source code.
+- **Magic Commands**: Prefixed with `%` (e.g., `%timeit` to benchmark, `%run` to execute scripts).
+- **Input/Output Caching**: Retrieve outputs via `_`, `__`, `___` and inputs via `_i`, `_ii`, or `In[n]`.
+- **Rich Display**: Custom renderings for HTML, images, and math via `_repr_*_` methods.
+- **Command History**: Browsing and reusing commands across sessions.
+:::
+
+## Data Read, Write & Store Magic {.compact-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Structured Data Directory
+By course guidelines, save data consistently in a dedicated data directory:
+```python
+def create_data_dir(new_dir):
+    import os, pathlib
+    data_dir = os.path.join(
+        pathlib.Path.home(),
+        'earth-analytics', 'data', new_dir
+    )
+    os.makedirs(data_dir, exist_ok=True)
+    return data_dir
+```
+:::
+
+::: {.column width="50%"}
+### Store Magic (%store)
+Allows user data to be persisted to disk on demand and retrieved across sessions:
+```python
+# Save variable
+%store buffalo_gdf
+
+# Retrieve variable
+%store -r buffalo_gdf
+```
+This is useful for persisting intermediate states in analysis notebooks.
+:::
+:::
+
+## Store Magic Retrieval Example {.compact-slide}
+
+Retrieve stored data, or initialize and store it if it does not exist:
+
+```python
+%store -r buffalo_gdf
+try:
+    buffalo_gdf
+except NameError:
+    import geopandas as gpd
+    # Assume data_dir is defined and grassland geojson is saved
+    grassland_url = f"{data_dir}/National_Grassland_Units_(Feature_Layer).geojson"
+    grassland_gdf = gpd.read_file(grassland_url)
+    
+    # Subset and store
+    buffalo_gdf = grassland_gdf.loc[grassland_gdf['GRASSLANDNAME'].isin(
+        ["Buffalo Gap National Grassland", "Oglala National Grassland"])]
+    %store buffalo_gdf
+    print("buffalo_gdf created and stored")
+else:
+    print("buffalo_gdf retrieved from StoreMagic")
+```
+
+## Cached Data via Decorators {.compact-slide}
+
+An alternative to Store Magic is custom caching via python [decorators](../python/#decorators) (e.g., in [landmapy/cached.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/cached.py)):
+
+### How `@cached` works:
+- Automatically **pickles** function results to `~/earth-analytics/data/jars/`.
+- Future function calls check the jar cache first, bypassing slow computations.
+- Override cache by passing `override=True` to force execution.
+
+::: {.callout-note}
+### Caching vs Store Magic
+[Decorators](../python/#decorators) automatically handle serialization for specific functions without manual [%store](https://ipython.readthedocs.io/en/stable/config/extensions/storemagic.html) commands.
+:::
+
+## Decorator Mechanics {.compact-slide}
+
+::: {.columns}
+::: {.column width="55%"}
+### Behind the Scenes
+A basic decorator wraps a function:
+```python
+@decorator
+def foo():
+    pass
+# translates to:
+foo = decorator(foo)
+```
+
+With arguments:
+```python
+@decorator_with_args(arg)
+def foo():
+    pass
+# translates to:
+foo = decorator_with_args(arg)(foo)
+```
+:::
+
+::: {.column width="45%"}
+### Advanced Module Caching
+To dynamically change parameters inside a module:
+```python
+def read_wbd_file(wbd_filename, huc_level,
+                  cache_key, func_key='wbd_08',
+                  override=False):
+    @cached(func_key, override)
+    def read_wbd_cached(wbd_filename, huc_level,
+                        cache_key):
+        ...
+    return read_wbd_cached(wbd_filename, 
+                           huc_level,
+                           cache_key=cache_key)
+```
+:::
+:::
+
+# Python Coding Strategy {background-color="#e0f2fe"}
+
+## Philosophy: Make Coding Fun {.compact-slide}
+
+::: {.columns}
+::: {.column width="60%"}
+### Iterative Development
+- Start with a simple, working solution.
+- Organic and iterative progression.
+- Evolve functions as understanding of patterns in data grows.
+- Revisit code often rather than designing an over-engineered grand plan initially.
+:::
+
+::: {.column width="40%"}
+> "[Data evolve](https://byandell.github.io/Data-Evolve/) over time, and so does code, as my understanding of a project, and of the patterns in data, grows."
+:::
+:::
+
+::: {.callout-tip}
+### Organic Start
+Begin by organizing files locally before creating folders or modules.
+:::
+
+## Evolving to Functions & Docstrings {.compact-slide}
+
+If you use code at least **twice**, wrap it in a function. Add a **docstring** to define arguments and return values:
+
+```python
+def create_data_dir(new_dir='habitat'):
+    """
+    Create Data Directory if it does not exist.
+
+    Args:
+        new_dir (char, optional): Name of new directory
+    Returns:
+        data_dir (char): path to new directory
+    """
+    import os, pathlib
+    data_dir = os.path.join(
+        pathlib.Path.home(), 'earth-analytics', 'data', new_dir
+    )
+    os.makedirs(data_dir, exist_ok=True)
+    return data_dir
+```
+
+## Creating Modules & Local Imports {.compact-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Step 1: Put in a file
+Put the function in `create_data_dir.py`. Load in notebook:
+```python
+%run create_data_dir.py
+data_dir = create_data_dir('habitat')
+```
+Or use a standard import:
+```python
+from create_data_dir import create_data_dir
+```
+:::
+
+::: {.column width="50%"}
+### Step 2: Organize in a Folder
+Keep functions reusable across projects by grouping them in a folder separate from any single project:
+```bash
+~/Documents/GitHub/landmapy/
+    landmapy/
+        initial.py
+```
+:::
+:::
+
+## Structuring a Python Package {.compact-slide}
+
+Create a directory layout containing packaging metadata (`pyproject.toml` or `setup.py`), documentation, and modules:
+
+```text
+landmapy/
+    LICENSE         # Open-source code license
+    README.md       # Package overview and function details
+    pyproject.toml  # Package metadata and requirements
+    landmapy/       # Main package folder
+        __init__.py # Marks the directory as a package
+        initial.py  # Modules containing functions
+        plot.py
+```
+
+### Installation
+Once structured, install the package locally in editable mode or standard mode:
+```bash
+pip install ~/Documents/GitHub/landmapy
+```
+
+## Refactoring & Backward Compatibility {.compact-slide}
+
+::: {.columns}
+::: {.column width="55%"}
+### Evolving Functions
+- Generalize parameter sets (e.g., expanding `plot_da()` to handle multiple DataArrays `plot_das()`).
+- Avoid mission creep. Don't build "all-powerful" functions; focus on completing the project.
+:::
+
+::: {.column width="45%"}
+### Handling Legacy Code
+Provide legacy wrapper functions to avoid breaking older notebooks or scripts:
+```python
+def plot_da(index_da, place, index='NDVI'):
+    """Legacy function: use plot_das()."""
+    return plot_das(index_da, 
+                    titles=f'{place} {index}')
+```
+:::
+:::
+
+## Versioning & GitHub Integration {.compact-slide}
+
+Use GitHub to organize, version, and share modules. 
+
+### Git Versioning
+- Commit changes incrementally.
+- Leverage versions in `pyproject.toml` to demarcate major changes or refactors.
+- Access earlier states using Git history if a refactor goes awry.
+
+### Remote Installation
+Allow users to install your package directly from GitHub:
+```bash
+pip install git+https://github.com/byandell-envsys/landmapy.git
+```
+
+## Package Documentation Strategy {.compact-slide}
+
+Ensure a balance between thoroughness and simplicity:
+
+::: {.incremental}
+1. **Docstring in Functions**: Every function inside a module should have its arguments and returns documented.
+2. **Module-level Docstrings**: Describe the purpose of the `*.py` module at the top of the file.
+3. **Function calls in `__init__.py`**: Provide direct imports at the package level for clean access.
+4. **README topic blocks**: Structure function summaries inside expandable (dropdown) details blocks in `README.md`.
+:::
+
+## Migrating Notebooks to Quarto {.compact-slide}
+
+::: {.columns}
+::: {.column width="60%"}
+### Why Quarto?
+- **Flat files**: `*.qmd` files are plain text Markdown, making them small and easy to version control in Git.
+- **Flexible output**: Compiles seamlessly to HTML, PDF, Word, or interactive slide decks.
+- **Executable code**: Integrates code chunks from Python, R, and Julia in a single document.
+:::
+
+::: {.column width="40%"}
+### Format Conversion
+Easily convert between Jupyter and Quarto formats using the Quarto CLI:
+```bash
+# Jupyter -> Quarto
+quarto convert project.ipynb
+
+# Quarto -> Jupyter
+quarto convert project.qmd
+```
+:::
+:::

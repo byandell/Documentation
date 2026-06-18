@@ -8,7 +8,7 @@
   - [Earth Data Analytics](./envsys.md#earth-data-analytics)
   - [Open Street Map](./envsys.md#open-street-map)
   - [Google Maps Platform Access](./envsys.md#google-maps-platform-access)
-- [Python References](./python/)
+- [Python References](./python/) ([slide deck](./quarto/python.html))
 - [Shiny Apps](./ShinyApps.md)
 - [Quarto Slide Decks & References](./quarto/)
 - [Artificial Intelligence (AI)](./AI.md) ([slide deck](./quarto/AI.html))

@@ -443,7 +443,7 @@
 
   <meta name="author" content="Brian Yandell (byandell.github.io)">
   <meta name="dcterms.date" content="2026-06-18">
-  <title>AI Prompt Examples</title>
+  <title>Python References &amp; Coding Strategy</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -1052,8 +1052,8 @@ margin-right: 0; }
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">AI Prompt Examples</h1>
-  <p class="subtitle">Documenting and Sharing AI Agent Workflows</p>
+  <h1 class="title">Python References &amp; Coding Strategy</h1>
+  <p class="subtitle">Iterative Development, Package Structure, and Best Practices</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -1066,291 +1066,425 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
   <p class="date">2026-06-18</p>
 </section>
 <section>
-<section id="introduction-core-concepts" class="title-slide slide level1 center" data-background-color="#e0f2fe">
-<h1>Introduction &amp; Core Concepts</h1>
+<section id="python-overview-useful-libraries" class="title-slide slide level1 center" data-background-color="#e0f2fe">
+<h1>Python Overview &amp; Useful Libraries</h1>
 
 </section>
-<section id="documenting-ai-workflows" class="slide level2">
-<h2>Documenting AI Workflows</h2>
-<p>How will you later remember how you used <a href="../AI.html">Artificial Intelligence (AI)</a> to advance your projects? And how will you share your learning with others?</p>
+<section id="python-overview-core-guides" class="slide level2 compact-slide">
+<h2>Python Overview &amp; Core Guides</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="tutorials-documentation">Tutorials &amp; Documentation</h3>
+<ul>
+<li><a href="https://docs.python.org/3/tutorial/">Python Tutorial</a>: General reference.
+<ul>
+<li><a href="https://docs.python.org/3/tutorial/modules.html">Modules</a> &amp; <a href="https://docs.python.org/3/reference/import.html">Importing Modules</a>.</li>
+<li><a href="https://docs.python.org/3/tutorial/modules.html#packages">Packages</a>.</li>
+</ul></li>
+<li><a href="https://pandas.pydata.org/docs/">Pandas Library</a>:
+<ul>
+<li><a href="https://pandas.pydata.org/docs/user_guide/10min.html">Pandas 10-Minute Tutorial</a>.</li>
+<li><a href="https://pandas.pydata.org/docs/reference/">Pandas API Reference</a>.</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="style-best-practices">Style &amp; Best Practices</h3>
+<ul>
+<li><a href="https://peps.python.org/pep-0008/#introduction">PEP 8 Style Guide</a>: Formatting conventions.</li>
+<li><a href="https://peps.python.org/pep-0257/">PEP 257 Docstrings</a>: Conventions for documenting code.</li>
+<li><a href="https://realpython.com/documenting-python-code/">Documenting Python Code</a>: RealPython guide.</li>
+<li><a href="https://docs.python-guide.org/writing/documentation/">Hitchhiker’s Guide to Documentation</a>.</li>
+</ul>
+</div></div>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>R Integration</strong></p>
+</div>
+<div class="callout-content">
+<p>For multi-language workflows, refer to the guide on <a href="https://www.geeksforgeeks.org/integrating-python-code-with-r/">Integrating Python Code with R</a>. See related environmental topics in <a href="../envsys.html">Environmental Systems</a>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="earth-data-analytics-eda" class="slide level2 compact-slide">
+<h2>Earth Data Analytics (EDA)</h2>
+<h3 id="workbooks-environments">Workbooks &amp; Environments</h3>
+<ul>
+<li><strong><a href="https://www.earthdatascience.org/courses/intro-to-earth-data-science/scientific-data-structures-python/">EDA Scientific Data Structures</a></strong>: Overview of pandas and NumPy data structures for Earth data.</li>
+<li><strong><a href="https://www.earthdatascience.org/workshops/setup-earth-analytics-python/setup-python-conda-earth-analytics-environment/">Earthlab Python Env Setup</a></strong>: Setting up your Earth Analytics Conda environment.</li>
+<li><strong><a href="https://python.land/virtual-environments/virtualenv">Python venv Management</a></strong>: How to create, activate, and manage standard virtual environments.</li>
+</ul>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Raster Processing</strong></p>
+</div>
+<div class="callout-content">
+<p>Use <a href="https://www.earthdatascience.org/courses/use-data-open-source-python/intro-raster-data-python/raster-data-processing/subtract-rasters-in-python/">Raster Subtraction</a> techniques to subtract one raster from another and export a new GeoTIFF in open source Python.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="useful-python-libraries" class="slide level2 compact-slide">
+<h2>Useful Python Libraries</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="standard-utility-libraries">Standard &amp; Utility Libraries</h3>
+<ul>
+<li><code>math</code>, <code>time</code>, <code>os</code>, <code>re</code>, <code>warnings</code></li>
+<li><code>glob</code>: Directory pathname matching.</li>
+<li><code>csv</code> / <code>pathlib</code>: File path manipulation.</li>
+<li><code>zipfile</code> / <code>datetime</code>: Compressed files and time representation.</li>
+<li><code>scipy</code> / <code>sklearn</code> (scikit-learn):
+<ul>
+<li>Machine learning utilities: <code>.model_selection</code>, <code>.metrics</code>, <code>.cluster</code>, <code>.tree</code>.</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="data-science-api-libraries">Data Science &amp; API Libraries</h3>
+<ul>
+<li><code>numpy</code>: Multi-dimensional array processing.</li>
+<li><code>pandas</code>: Structured dataframes.</li>
+<li><code>seaborn</code> / <code>statsmodels</code>: Statistical analysis &amp; plotting.</li>
+<li><code>pystac</code> / <code>pystac_client</code>: Access SpatioTemporal Asset Catalogs.</li>
+<li><strong>Lists of Libraries</strong>:
+<ul>
+<li><a href="https://docs.python.org/3/library/">The Python Standard Library</a></li>
+<li><a href="https://awesome-python.com/">Awesome Python</a></li>
+</ul></li>
+</ul>
+</div></div>
+</section>
+<section id="plotting-spatial-libraries" class="slide level2 compact-slide">
+<h2>Plotting &amp; Spatial Libraries</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="plotting-systems">Plotting Systems</h3>
+<ul>
+<li><code>matplotlib</code>: Foundation plotting.
+<ul>
+<li><code>matplotlib.pyplot</code></li>
+<li><code>matplotlib.colors</code></li>
+</ul></li>
+<li><code>plotnine</code>: Grammar of graphics (<code>ggplot2</code> clone).</li>
+<li><code>HoloViews</code> / <code>GeoViews</code>: Interactive data exploration.</li>
+<li><code>panel</code> / <code>hvplot</code>: Dashboarding and quick plotting.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="spatial-processing">Spatial Processing</h3>
+<ul>
+<li><code>geopandas</code>: GeoDataFrames.</li>
+<li><code>shapely</code>: Geometric operations.</li>
+<li><code>rasterio</code> / <code>rasterstats</code>: Raster manipulation and statistics.</li>
+<li><code>xarray</code> / <code>rioxarray</code>: Multi-dimensional geospatial arrays.</li>
+<li><code>earthaccess</code> / <code>earthpy</code>: NASA Earthdata access and utilities.</li>
+<li><code>folium</code> / <code>cartopy</code>: Mapping and projections.</li>
+</ul>
+</div></div>
+</section>
+<section id="interactive-plots-animations" class="slide level2 compact-slide">
+<h2>Interactive Plots &amp; Animations</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="animated-gifs">Animated GIFs</h3>
+<ul>
+<li>Creating animated GIFs using Python:
+<ul>
+<li>Pillow <code>Image</code> module.</li>
+<li>Matplotlib animation frameworks.</li>
+<li><a href="https://towardsdatascience.com/how-to-make-a-gif-map-using-python-geopandas-and-matplotlib-cd8827cefbc8">Geopandas &amp; Matplotlib tutorial</a> for animated maps.</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="interactive-widgets">Interactive Widgets</h3>
+<ul>
+<li>HoloViews interactive plots with gridded datasets and top-level sliders.</li>
+<li>Interactive plots inside Jupyter Notebooks using <code>%matplotlib widget</code> and <code>ipympl</code>.</li>
+</ul>
+</div></div>
+</section></section>
+<section>
+<section id="ipython-methods-data-caching" class="title-slide slide level1 center" data-background-color="#e0f2fe">
+<h1>IPython Methods &amp; Data Caching</h1>
+
+</section>
+<section id="ipython-interactive-methods" class="slide level2 compact-slide">
+<h2>IPython Interactive Methods</h2>
+<p>IPython provides powerful tools that extend Python’s standard interpreter:</p>
 <div>
 <ul>
-<li class="fragment">Saved prompts and walkthroughs can be used to <strong>reproduce your work</strong>.</li>
-<li class="fragment">Share <strong>prompts</strong> instead of just raw code.</li>
-<li class="fragment">Ask your AI agent to save prompts to a file (e.g., <code>prompts.md</code>).</li>
-<li class="fragment">Save Walkthrough artifacts in a separate <code>walkthrough.md</code> file.</li>
+<li class="fragment"><strong>Tab Completion</strong>: Suggests attributes and methods as you type.</li>
+<li class="fragment"><strong>Introspection</strong>: Use <code>?</code> or <code>??</code> to inspect object properties and source code.</li>
+<li class="fragment"><strong>Magic Commands</strong>: Prefixed with <code>%</code> (e.g., <code>%timeit</code> to benchmark, <code>%run</code> to execute scripts).</li>
+<li class="fragment"><strong>Input/Output Caching</strong>: Retrieve outputs via <code>_</code>, <code>__</code>, <code>___</code> and inputs via <code>_i</code>, <code>_ii</code>, or <code>In[n]</code>.</li>
+<li class="fragment"><strong>Rich Display</strong>: Custom renderings for HTML, images, and math via <code>_repr_*_</code> methods.</li>
+<li class="fragment"><strong>Command History</strong>: Browsing and reusing commands across sessions.</li>
 </ul>
 </div>
 </section>
-<section id="prompt-engineering-resources" class="slide level2">
-<h2>Prompt Engineering Resources</h2>
-<p>Here are some guidebooks and frameworks to help refine your prompts:</p>
+<section id="data-read-write-store-magic" class="slide level2 compact-slide">
+<h2>Data Read, Write &amp; Store Magic</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="structured-data-directory">Structured Data Directory</h3>
+<p>By course guidelines, save data consistently in a dedicated data directory:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="kw">def</span> create_data_dir(new_dir):</span>
+<span id="cb1-2"><a></a>    <span class="im">import</span> os, pathlib</span>
+<span id="cb1-3"><a></a>    data_dir <span class="op">=</span> os.path.join(</span>
+<span id="cb1-4"><a></a>        pathlib.Path.home(),</span>
+<span id="cb1-5"><a></a>        <span class="st">&#39;earth-analytics&#39;</span>, <span class="st">&#39;data&#39;</span>, new_dir</span>
+<span id="cb1-6"><a></a>    )</span>
+<span id="cb1-7"><a></a>    os.makedirs(data_dir, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-8"><a></a>    <span class="cf">return</span> data_dir</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<h3 id="store-magic-store">Store Magic (%store)</h3>
+<p>Allows user data to be persisted to disk on demand and retrieved across sessions:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="co"># Save variable</span></span>
+<span id="cb2-2"><a></a><span class="op">%</span>store buffalo_gdf</span>
+<span id="cb2-3"><a></a></span>
+<span id="cb2-4"><a></a><span class="co"># Retrieve variable</span></span>
+<span id="cb2-5"><a></a><span class="op">%</span>store <span class="op">-</span>r buffalo_gdf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This is useful for persisting intermediate states in analysis notebooks.</p>
+</div></div>
+</section>
+<section id="store-magic-retrieval-example" class="slide level2 compact-slide">
+<h2>Store Magic Retrieval Example</h2>
+<p>Retrieve stored data, or initialize and store it if it does not exist:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="op">%</span>store <span class="op">-</span>r buffalo_gdf</span>
+<span id="cb3-2"><a></a><span class="cf">try</span>:</span>
+<span id="cb3-3"><a></a>    buffalo_gdf</span>
+<span id="cb3-4"><a></a><span class="cf">except</span> <span class="pp">NameError</span>:</span>
+<span id="cb3-5"><a></a>    <span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
+<span id="cb3-6"><a></a>    <span class="co"># Assume data_dir is defined and grassland geojson is saved</span></span>
+<span id="cb3-7"><a></a>    grassland_url <span class="op">=</span> <span class="ss">f&quot;</span><span class="sc">{</span>data_dir<span class="sc">}</span><span class="ss">/National_Grassland_Units_(Feature_Layer).geojson&quot;</span></span>
+<span id="cb3-8"><a></a>    grassland_gdf <span class="op">=</span> gpd.read_file(grassland_url)</span>
+<span id="cb3-9"><a></a>    </span>
+<span id="cb3-10"><a></a>    <span class="co"># Subset and store</span></span>
+<span id="cb3-11"><a></a>    buffalo_gdf <span class="op">=</span> grassland_gdf.loc[grassland_gdf[<span class="st">&#39;GRASSLANDNAME&#39;</span>].isin(</span>
+<span id="cb3-12"><a></a>        [<span class="st">&quot;Buffalo Gap National Grassland&quot;</span>, <span class="st">&quot;Oglala National Grassland&quot;</span>])]</span>
+<span id="cb3-13"><a></a>    <span class="op">%</span>store buffalo_gdf</span>
+<span id="cb3-14"><a></a>    <span class="bu">print</span>(<span class="st">&quot;buffalo_gdf created and stored&quot;</span>)</span>
+<span id="cb3-15"><a></a><span class="cf">else</span>:</span>
+<span id="cb3-16"><a></a>    <span class="bu">print</span>(<span class="st">&quot;buffalo_gdf retrieved from StoreMagic&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="cached-data-via-decorators" class="slide level2 compact-slide">
+<h2>Cached Data via Decorators</h2>
+<p>An alternative to Store Magic is custom caching via python <a href="../python/#decorators">decorators</a> (e.g., in <a href="https://github.com/byandell-envsys/landmapy/blob/main/landmapy/cached.py">landmapy/cached.py</a>):</p>
+<h3 id="how-cached-works">How <code>@cached</code> works:</h3>
 <ul>
-<li><strong><a href="https://www.promptingguide.ai">Prompt Engineering Guide</a></strong></li>
-<li><strong><a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview">Claude Prompt Engineering</a></strong></li>
-<li><strong>Tyson Swetnam’s Intro to GPT</strong>:
-<ul>
-<li><a href="https://tyson-swetnam.github.io/intro-gpt/prompts/#core-features-of-todays-ai-tools">Core Features of Today’s AI Tools</a></li>
-<li><a href="https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure">Getting Started with Prompts</a></li>
-</ul></li>
+<li>Automatically <strong>pickles</strong> function results to <code>~/earth-analytics/data/jars/</code>.</li>
+<li>Future function calls check the jar cache first, bypassing slow computations.</li>
+<li>Override cache by passing <code>override=True</code> to force execution.</li>
 </ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Caching vs Store Magic</strong></p>
+</div>
+<div class="callout-content">
+<p><a href="../python/#decorators">Decorators</a> automatically handle serialization for specific functions without manual <a href="https://ipython.readthedocs.io/en/stable/config/extensions/storemagic.html">%store</a> commands.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="decorator-mechanics" class="slide level2 compact-slide">
+<h2>Decorator Mechanics</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<h3 id="behind-the-scenes">Behind the Scenes</h3>
+<p>A basic decorator wraps a function:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="at">@decorator</span></span>
+<span id="cb4-2"><a></a><span class="kw">def</span> foo():</span>
+<span id="cb4-3"><a></a>    <span class="cf">pass</span></span>
+<span id="cb4-4"><a></a><span class="co"># translates to:</span></span>
+<span id="cb4-5"><a></a>foo <span class="op">=</span> decorator(foo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>With arguments:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="at">@decorator_with_args</span>(arg)</span>
+<span id="cb5-2"><a></a><span class="kw">def</span> foo():</span>
+<span id="cb5-3"><a></a>    <span class="cf">pass</span></span>
+<span id="cb5-4"><a></a><span class="co"># translates to:</span></span>
+<span id="cb5-5"><a></a>foo <span class="op">=</span> decorator_with_args(arg)(foo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:45%;">
+<h3 id="advanced-module-caching">Advanced Module Caching</h3>
+<p>To dynamically change parameters inside a module:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="kw">def</span> read_wbd_file(wbd_filename, huc_level,</span>
+<span id="cb6-2"><a></a>                  cache_key, func_key<span class="op">=</span><span class="st">&#39;wbd_08&#39;</span>,</span>
+<span id="cb6-3"><a></a>                  override<span class="op">=</span><span class="va">False</span>):</span>
+<span id="cb6-4"><a></a>    <span class="at">@cached</span>(func_key, override)</span>
+<span id="cb6-5"><a></a>    <span class="kw">def</span> read_wbd_cached(wbd_filename, huc_level,</span>
+<span id="cb6-6"><a></a>                        cache_key):</span>
+<span id="cb6-7"><a></a>        ...</span>
+<span id="cb6-8"><a></a>    <span class="cf">return</span> read_wbd_cached(wbd_filename, </span>
+<span id="cb6-9"><a></a>                           huc_level,</span>
+<span id="cb6-10"><a></a>                           cache_key<span class="op">=</span>cache_key)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
 </section></section>
 <section>
-<section id="saving-prompts-agent-conversations" class="title-slide slide level1 center" data-background-color="#e0f2fe">
-<h1>Saving Prompts &amp; Agent Conversations</h1>
+<section id="python-coding-strategy" class="title-slide slide level1 center" data-background-color="#e0f2fe">
+<h1>Python Coding Strategy</h1>
 
 </section>
-<section id="saving-prompts-and-walkthroughs" class="slide level2">
-<h2>Saving Prompts and Walkthroughs</h2>
+<section id="philosophy-make-coding-fun" class="slide level2 compact-slide">
+<h2>Philosophy: Make Coding Fun</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
-<h3 id="prompts-to-save-progress">Prompts to Save Progress:</h3>
+<h3 id="iterative-development">Iterative Development</h3>
 <ul>
-<li><code>&quot;save the prompts used in this conversation to prompts.md&quot;</code></li>
-<li><code>&quot;save the walkthrough to walkthrough.md&quot;</code></li>
-</ul>
-<h3 id="when-how">When &amp; How:</h3>
-<ul>
-<li>Run at the beginning or end of a conversation.</li>
-<li>Click <strong>Save</strong> (top right) or <strong>Export</strong> on the walkthrough panel.</li>
+<li>Start with a simple, working solution.</li>
+<li>Organic and iterative progression.</li>
+<li>Evolve functions as understanding of patterns in data grows.</li>
+<li>Revisit code often rather than designing an over-engineered grand plan initially.</li>
 </ul>
 </div><div class="column" style="width:40%;">
-<div class="callout callout-note callout-titled callout-style-default">
+<blockquote>
+<p>“<a href="https://byandell.github.io/Data-Evolve/">Data evolve</a> over time, and so does code, as my understanding of a project, and of the patterns in data, grows.”</p>
+</blockquote>
+</div></div>
+<div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Real-world Examples:</strong></p>
+<p><strong>Organic Start</strong></p>
 </div>
 <div class="callout-content">
-<ul>
-<li><a href="https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-walkthroughs">sysgenAnalysis Walkthroughs</a></li>
-<li><a href="https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/tree/master#how-i-created-this-file-and-repo">mkeller3Projects2 Repo Setup</a></li>
-<li><a href="https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/prompts.md">sysgenDO1200 Prompts</a></li>
-</ul>
+<p>Begin by organizing files locally before creating folders or modules.</p>
 </div>
 </div>
 </div>
+</section>
+<section id="evolving-to-functions-docstrings" class="slide level2 compact-slide">
+<h2>Evolving to Functions &amp; Docstrings</h2>
+<p>If you use code at least <strong>twice</strong>, wrap it in a function. Add a <strong>docstring</strong> to define arguments and return values:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a></a><span class="kw">def</span> create_data_dir(new_dir<span class="op">=</span><span class="st">&#39;habitat&#39;</span>):</span>
+<span id="cb7-2"><a></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb7-3"><a></a><span class="co">    Create Data Directory if it does not exist.</span></span>
+<span id="cb7-4"><a></a></span>
+<span id="cb7-5"><a></a><span class="co">    Args:</span></span>
+<span id="cb7-6"><a></a><span class="co">        new_dir (char, optional): Name of new directory</span></span>
+<span id="cb7-7"><a></a><span class="co">    Returns:</span></span>
+<span id="cb7-8"><a></a><span class="co">        data_dir (char): path to new directory</span></span>
+<span id="cb7-9"><a></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb7-10"><a></a>    <span class="im">import</span> os, pathlib</span>
+<span id="cb7-11"><a></a>    data_dir <span class="op">=</span> os.path.join(</span>
+<span id="cb7-12"><a></a>        pathlib.Path.home(), <span class="st">&#39;earth-analytics&#39;</span>, <span class="st">&#39;data&#39;</span>, new_dir</span>
+<span id="cb7-13"><a></a>    )</span>
+<span id="cb7-14"><a></a>    os.makedirs(data_dir, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb7-15"><a></a>    <span class="cf">return</span> data_dir</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="creating-modules-local-imports" class="slide level2 compact-slide">
+<h2>Creating Modules &amp; Local Imports</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="step-1-put-in-a-file">Step 1: Put in a file</h3>
+<p>Put the function in <code>create_data_dir.py</code>. Load in notebook:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="op">%</span>run create_data_dir.py</span>
+<span id="cb8-2"><a></a>data_dir <span class="op">=</span> create_data_dir(<span class="st">&#39;habitat&#39;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Or use a standard import:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a><span class="im">from</span> create_data_dir <span class="im">import</span> create_data_dir</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<h3 id="step-2-organize-in-a-folder">Step 2: Organize in a Folder</h3>
+<p>Keep functions reusable across projects by grouping them in a folder separate from any single project:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a></a><span class="ex">~/Documents/GitHub/landmapy/</span></span>
+<span id="cb10-2"><a></a>    <span class="ex">landmapy/</span></span>
+<span id="cb10-3"><a></a>        <span class="ex">initial.py</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
 </section>
-<section id="ai-agent-conversation-structure" class="slide level2">
-<h2>AI Agent Conversation Structure</h2>
+<section id="structuring-a-python-package" class="slide level2 compact-slide">
+<h2>Structuring a Python Package</h2>
+<p>Create a directory layout containing packaging metadata (<code>pyproject.toml</code> or <code>setup.py</code>), documentation, and modules:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb11-1"><a></a>landmapy/</span>
+<span id="cb11-2"><a></a>    LICENSE         # Open-source code license</span>
+<span id="cb11-3"><a></a>    README.md       # Package overview and function details</span>
+<span id="cb11-4"><a></a>    pyproject.toml  # Package metadata and requirements</span>
+<span id="cb11-5"><a></a>    landmapy/       # Main package folder</span>
+<span id="cb11-6"><a></a>        __init__.py # Marks the directory as a package</span>
+<span id="cb11-7"><a></a>        initial.py  # Modules containing functions</span>
+<span id="cb11-8"><a></a>        plot.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<h3 id="installation">Installation</h3>
+<p>Once structured, install the package locally in editable mode or standard mode:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a></a><span class="ex">pip</span> install ~/Documents/GitHub/landmapy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="refactoring-backward-compatibility" class="slide level2 compact-slide">
+<h2>Refactoring &amp; Backward Compatibility</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<h3 id="evolving-functions">Evolving Functions</h3>
+<ul>
+<li>Generalize parameter sets (e.g., expanding <code>plot_da()</code> to handle multiple DataArrays <code>plot_das()</code>).</li>
+<li>Avoid mission creep. Don’t build “all-powerful” functions; focus on completing the project.</li>
+</ul>
+</div><div class="column" style="width:45%;">
+<h3 id="handling-legacy-code">Handling Legacy Code</h3>
+<p>Provide legacy wrapper functions to avoid breaking older notebooks or scripts:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a></a><span class="kw">def</span> plot_da(index_da, place, index<span class="op">=</span><span class="st">&#39;NDVI&#39;</span>):</span>
+<span id="cb13-2"><a></a>    <span class="co">&quot;&quot;&quot;Legacy function: use plot_das().&quot;&quot;&quot;</span></span>
+<span id="cb13-3"><a></a>    <span class="cf">return</span> plot_das(index_da, </span>
+<span id="cb13-4"><a></a>                    titles<span class="op">=</span><span class="ss">f&#39;</span><span class="sc">{</span>place<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>index<span class="sc">}</span><span class="ss">&#39;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+</section>
+<section id="versioning-github-integration" class="slide level2 compact-slide">
+<h2>Versioning &amp; GitHub Integration</h2>
+<p>Use GitHub to organize, version, and share modules.</p>
+<h3 id="git-versioning">Git Versioning</h3>
+<ul>
+<li>Commit changes incrementally.</li>
+<li>Leverage versions in <code>pyproject.toml</code> to demarcate major changes or refactors.</li>
+<li>Access earlier states using Git history if a refactor goes awry.</li>
+</ul>
+<h3 id="remote-installation">Remote Installation</h3>
+<p>Allow users to install your package directly from GitHub:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a></a><span class="ex">pip</span> install git+https://github.com/byandell-envsys/landmapy.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="package-documentation-strategy" class="slide level2 compact-slide">
+<h2>Package Documentation Strategy</h2>
+<p>Ensure a balance between thoroughness and simplicity:</p>
 <div>
-<ul>
-<li class="fragment">User interactions happen in <strong>conversations</strong> or <strong>chat sessions</strong>.</li>
-<li class="fragment">A session involves a <strong>chain of prompts</strong>:
 <ol type="1">
-<li class="fragment"><strong>System Instruction</strong>: Establishes global constraints/roles.</li>
-<li class="fragment"><strong>Framing Prompt</strong>: Broad definition of the task.</li>
-<li class="fragment"><strong>Refinement Prompts</strong>: Step-by-step guidance.</li>
-</ol></li>
-<li class="fragment">Keep different conversations within a project separated.</li>
-<li class="fragment">Store projects as GitHub repos for version control.</li>
-</ul>
+<li class="fragment"><strong>Docstring in Functions</strong>: Every function inside a module should have its arguments and returns documented.</li>
+<li class="fragment"><strong>Module-level Docstrings</strong>: Describe the purpose of the <code>*.py</code> module at the top of the file.</li>
+<li class="fragment"><strong>Function calls in <code>__init__.py</code></strong>: Provide direct imports at the package level for clean access.</li>
+<li class="fragment"><strong>README topic blocks</strong>: Structure function summaries inside expandable (dropdown) details blocks in <code>README.md</code>.</li>
+</ol>
 </div>
 </section>
-<section id="system-instructions" class="slide level2">
-<h2>System Instructions</h2>
-<p>Set global rules for prompt chaining in your session:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="fu"># Project Context</span></span>
-<span id="cb1-2"><a></a>I&#39;m a data scientist working on machine learning projects.</span>
-<span id="cb1-3"><a></a>For Python code, always provide examples using <span class="in">`scikit-learn`</span> and <span class="in">`pandas`</span>.</span>
-<span id="cb1-4"><a></a>For R code, always provide examples using <span class="in">`tidyverse`</span>.</span>
-<span id="cb1-5"><a></a>Include <span class="in">`docstrings`</span> (Python) or <span class="in">`roxygen2`</span> (R) and type hints in all code.</span>
-<span id="cb1-6"><a></a></span>
-<span id="cb1-7"><a></a><span class="fu"># Response Preferences</span></span>
-<span id="cb1-8"><a></a><span class="ss">- </span>Be concise but thorough</span>
-<span id="cb1-9"><a></a><span class="ss">- </span>Explain complex concepts with analogies</span>
-<span id="cb1-10"><a></a><span class="ss">- </span>Always cite sources when making factual claims</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="the-craft-framework" class="slide level2">
-<h2>The CRAFT Framework</h2>
-<p>For complicated tasks, structure your prompt using the <strong>CRAFT</strong> framework:</p>
-<ul>
-<li><strong>C</strong>ontext: Background information.</li>
-<li><strong>R</strong>ole: Person/identity the AI assumes.</li>
-<li><strong>A</strong>ction: The specific task to perform.</li>
-<li><strong>F</strong>ormat: Deliverable structure.</li>
-<li><strong>T</strong>one: Style of response.</li>
-</ul>
-<h3 id="example-grant-proposal">Example: Grant Proposal</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="an">Context:</span><span class="co"> Grant proposal for NSF funding on AI in education  </span></span>
-<span id="cb2-2"><a></a><span class="an">Role:</span><span class="co"> Experienced grant writer &amp; researcher  </span></span>
-<span id="cb2-3"><a></a><span class="an">Action:</span><span class="co"> Review draft introduction and suggest improvements  </span></span>
-<span id="cb2-4"><a></a><span class="an">Format:</span><span class="co"> Feedback as tracked changes with explanations  </span></span>
-<span id="cb2-5"><a></a><span class="an">Tone:</span><span class="co"> Professional, constructive, and encouraging</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section></section>
-<section>
-<section id="practical-prompt-examples" class="title-slide slide level1 center" data-background-color="#e0f2fe">
-<h1>Practical Prompt Examples</h1>
-
-</section>
-<section id="documenting-files-folders" class="slide level2">
-<h2>Documenting Files &amp; Folders</h2>
+<section id="migrating-notebooks-to-quarto" class="slide level2 compact-slide">
+<h2>Migrating Notebooks to Quarto</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="create-a-folder-readme">Create a Folder README</h3>
+<div class="column" style="width:60%;">
+<h3 id="why-quarto">Why Quarto?</h3>
 <ul>
-<li><strong>Prompt</strong>:
-<ul>
-<li><code>&quot;create a README.md document that concisely summarizes</code><br><code>contents of this folder at a high level&quot;</code></li>
-<li><code>&quot;update README.md with any additional files,</code><br><code>obeying restrictions in .gitignore&quot;</code></li>
-</ul></li>
+<li><strong>Flat files</strong>: <code>*.qmd</code> files are plain text Markdown, making them small and easy to version control in Git.</li>
+<li><strong>Flexible output</strong>: Compiles seamlessly to HTML, PDF, Word, or interactive slide decks.</li>
+<li><strong>Executable code</strong>: Integrates code chunks from Python, R, and Julia in a single document.</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<h3 id="create-a-table-of-contents-toc">Create a Table of Contents (TOC)</h3>
-<ul>
-<li><strong>Prompt</strong>:
-<ul>
-<li><code>&quot;create TOC for README.md&quot;</code></li>
-<li><code>&quot;update TOC for README.md&quot;</code></li>
-</ul></li>
-</ul>
+</div><div class="column" style="width:40%;">
+<h3 id="format-conversion">Format Conversion</h3>
+<p>Easily convert between Jupyter and Quarto formats using the Quarto CLI:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a></a><span class="co"># Jupyter -&gt; Quarto</span></span>
+<span id="cb15-2"><a></a><span class="ex">quarto</span> convert project.ipynb</span>
+<span id="cb15-3"><a></a></span>
+<span id="cb15-4"><a></a><span class="co"># Quarto -&gt; Jupyter</span></span>
+<span id="cb15-5"><a></a><span class="ex">quarto</span> convert project.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Pro-Tip</strong></p>
-</div>
-<div class="callout-content">
-<p>Establishing a culture of updating these docs enables the AI to update files on the fly as your project evolves!</p>
-</div>
-</div>
-</div>
-</section>
-<section id="convert-docx-to-markdown-slides" class="slide level2">
-<h2>Convert DOCX to Markdown &amp; Slides</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="convert-docx-via-pandoc">Convert DOCX via Pandoc</h3>
-<ul>
-<li><strong>Prompt</strong>:
-<ul>
-<li><code>&quot;find docx files and use pandoc to convert them to md versions&quot;</code></li>
-</ul></li>
-<li><strong>Prerequisites</strong>: Pandoc installed locally.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<h3 id="generate-slides-via-quarto">Generate Slides via Quarto</h3>
-<ul>
-<li><strong>Prompt</strong>:
-<ul>
-<li><code>&quot;Use Quarto to automatically generate a PowerPoint deck</code><br><code>(.pptx) embedding all of the outputted PNG figures.&quot;</code></li>
-<li><code>&quot;Add a table of contents slide to the presentation.&quot;</code></li>
-</ul></li>
-</ul>
-</div></div>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p>See Diana and Alan’s evolved prompt versions for <a href="../prompts/powerpoint.html">creating PowerPoint slides</a>.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="github-prompts-versioning-files" class="slide level2">
-<h2>GitHub Prompts: Versioning Files</h2>
-<h3 id="multi-version-commit-prompt">Multi-Version Commit Prompt</h3>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a>Find files ending in <span class="in">`[ _]v[0-9]+.R$`</span></span>
-<span id="cb3-2"><a></a>with matching base name.</span>
-<span id="cb3-3"><a></a><span class="ss">- </span>If no <span class="in">`v1`</span> exists but <span class="in">`basename.R`</span></span>
-<span id="cb3-4"><a></a>  does, copy to <span class="in">`v1.R`</span>.</span>
-<span id="cb3-5"><a></a><span class="ss">- </span>Commit <span class="in">`basename.R`</span> with message <span class="in">`v1`</span></span>
-<span id="cb3-6"><a></a>  and original date.</span>
-<span id="cb3-7"><a></a><span class="ss">- </span>For subsequent versions, copy the</span>
-<span id="cb3-8"><a></a>  next version to <span class="in">`basename.R`</span> and commit.</span>
-<span id="cb3-9"><a></a><span class="ss">- </span>Keep versioned files intact.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Refined Prompts</strong></p>
-</div>
-<div class="callout-content">
-<p>Check out <a href="../prompts/file_versions.html">file versions</a> for a streamlined, instruction-optimized version of this prompt.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="github-prompts-git-conflict-resolution" class="slide level2">
-<h2>GitHub Prompts: Git Conflict Resolution</h2>
-<p>When you run into conflicts (e.g., forgetting to pull before committing):</p>
-<h3 id="the-git-hell-prompt">The “Git Hell” Prompt</h3>
-<ul>
-<li>“I messed up and forgot to do <code>git pull</code> before committing new files.<br>Now I am in git hell. See the message with <code>git status</code>.<br>Walk me through how to fix this.”</li>
-</ul>
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Outcome</strong></p>
-</div>
-<div class="callout-content">
-<p>The AI successfully parsed the status and sorted out the repository state, providing step-by-step guidance.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="organizing-a-workflow" class="slide level2">
-<h2>Organizing a Workflow</h2>
-<h3 id="the-goal">The Goal</h3>
-<p>Transform a complex organic R workflow into neat functions inside an R package, featuring: - A function to run the workflow. - A function to explore results.</p>
-<h3 id="the-prompt">The Prompt</h3>
-<ul>
-<li><code>&quot;build a concise prompt that captures the essence of the walkthroughs in inst/doc/walkthrough.md&quot;</code></li>
-</ul>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Key Packages</strong></p>
-</div>
-<div class="callout-content">
-<p>Uses <code>devtools</code>, <code>roxygen2</code>, and <code>Quarto</code> to render markdown outputs (HTML, PDF, DOCX).</p>
-</div>
-</div>
-</div>
-</section>
-<section id="folder-documentation-in-researchdrive" class="slide level2">
-<h2>Folder Documentation in ResearchDrive</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="the-challenge">The Challenge</h3>
-<p>Data and code are kept securely and privately on <strong>ResearchDrive (RD)</strong>, but sharing/version control is still needed.</p>
-</div><div class="column" style="width:50%;">
-<h3 id="the-solution">The Solution</h3>
-<p>Maintain public markdown documentation and folder structures on <strong>GitHub</strong> (with data-less READMEs) while keeping raw data safe in RD.</p>
-</div></div>
-<ul>
-<li><strong>Examples</strong>:
-<ul>
-<li><a href="https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/README.md">sysgenDO1200 README</a></li>
-<li><a href="https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md">mkeller3Projects2 R Scripts README</a></li>
-</ul></li>
-</ul>
 
 
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>AI Prompt Examples | Documenting and Sharing Workflows</p>
+<p>Python References &amp; Coding Strategy</p>
 </div>
 </div></div>
 

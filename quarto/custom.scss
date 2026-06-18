@@ -69,9 +69,9 @@ $presentation-subtitle-font-size: 1.4em;
 
   // Lists styling
   ul, ol {
-    margin-bottom: 0.8em;
+    margin-bottom: 0.6em;
     li {
-      margin-bottom: 0.3em;
+      margin-bottom: 0.2em;
     }
   }
 
@@ -148,5 +148,50 @@ $presentation-subtitle-font-size: 1.4em;
     padding: 0.1em 0.3em;
     border-radius: 4px;
     color: #b91c1c;
+  }
+
+  // Compact slide class to reduce overall size of content for slides with high density
+  .compact-slide {
+    font-size: 0.8em !important;
+
+    h2 {
+      font-size: 1.25em !important;
+      margin-bottom: 0.25em !important;
+    }
+
+    h3 {
+      font-size: 0.95em !important;
+      margin-top: 0.2em !important;
+    }
+
+    ul, ol {
+      margin-bottom: 0.4em !important;
+      li {
+        margin-bottom: 0.15em !important;
+      }
+    }
+
+    pre {
+      margin-bottom: 0.4em !important;
+      code {
+        font-size: 0.58em !important;
+        line-height: 1.25 !important;
+      }
+    }
+
+    .callout {
+      margin: 0.3rem 0 !important;
+      padding: 0.25rem 0.5rem !important;
+
+      .callout-header {
+        font-size: 0.8em !important;
+        margin-bottom: 0.15rem !important;
+        padding-bottom: 0.1rem !important;
+      }
+
+      .callout-body {
+        font-size: 0.75em !important;
+      }
+    }
   }
 }
