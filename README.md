@@ -2,13 +2,13 @@
 
 - [My Documentation Journey](#my-documentation-journey)
 - [R References](./R.md) ([slide deck](./quarto/R.html))
+- [Python References](./python/) ([slide deck](./quarto/python.html))
 - [GitHub, Connect, and CodeSpaces](./github.md) ([slide deck](./quarto/github.html))
 - [Environmental Systems References](./envsys/) ([slide deck](./quarto/envsys.html))
-- [Python References](./python/) ([slide deck](./quarto/python.html))
 - [Shiny Apps](./ShinyApps.md) ([slide deck](./quarto/ShinyApps.html))
-- [Quarto Slide Decks & References](./quarto/)
 - [Artificial Intelligence (AI)](./AI.md) ([slide deck](./quarto/AI.html))
   - [AI Prompt Examples](./prompts/) ([slide deck](./quarto/prompts.html))
+- [Quarto Slide Decks & References](./quarto/)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
 ([GitHub](https://github.com/byandell/Documentation))

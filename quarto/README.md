@@ -2,13 +2,13 @@
 
 ## Slide Decks
 
-- [Python References & Coding Strategy](./python.html)
 - [R for the Data Sciences](./R.html)
+- [Python References & Coding Strategy](./python.html)
 - [GitHub, Connect, and CodeSpaces](./github.html)
 - [Environmental Systems & Geospatial References](./envsys.html)
 - [Modular Shiny Applications](./ShinyApps.html)
-- [AI References](./AI.html)
-- [AI Prompt Examples](./prompts.html)
+- [Artificial Intelligence (AI) References](./AI.html)
+  - [AI Prompt Examples](./prompts.html)
 - [Geyser Shiny Examples](https://github.com/byandell/geyser)
 - [Quarto Narrative](./narrative.html)
 
