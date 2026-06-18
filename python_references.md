@@ -8,27 +8,21 @@ See related in
 [Environmental Systems](envsys.md).
 Please offer suggestions to improve.
 
-- [Python References](#python-references)
-  - [Python Overview](#python-overview)
-  - [Earth Data Analytics (EDA) Workbook](#earth-data-analytics-eda-workbook)
-  - [Useful Python Libraries](#useful-python-libraries)
-    - [Lists of Python Libraries](#lists-of-python-libraries)
-  - [Plot Libraries and Systems](#plot-libraries-and-systems)
-    - [Spatial Libraries](#spatial-libraries)
-    - [Interactive Plots](#interactive-plots)
-  - [IPython Methods](#ipython-methods)
-    - [Data](#data)
-      - [Read and Write](#read-and-write)
-      - [Store Magic Data](#store-magic-data)
-      - [Cached Data via Decorator](#cached-data-via-decorator)
-    - [Decorators](#decorators)
-    - [Classes](#classes)
-
-Additional references beyond Python:
-
-- [EDA References](https://github.com/byandell-envsys/EarthDataAnalytics/blob/main/references.md)
-- [ShinyApps](https://github.com/AttieLab-Systems-Genetics/Documentation/blob/main/ShinyApps.md)
-- [R for Data Sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences)
+- [Python Overview](#python-overview)
+- [Python Coding Strategy](./python_strategy.md)
+- [Earth Data Analytics (EDA) Workbook](#earth-data-analytics-eda-workbook)
+- [Useful Python Libraries](#useful-python-libraries)
+  - [Lists of Python Libraries](#lists-of-python-libraries)
+- [Plot Libraries and Systems](#plot-libraries-and-systems)
+  - [Spatial Libraries](#spatial-libraries)
+  - [Interactive Plots](#interactive-plots)
+- [IPython Methods](#ipython-methods)
+  - [Data](#data)
+    - [Read and Write](#read-and-write)
+    - [Store Magic Data](#store-magic-data)
+    - [Cached Data via Decorator](#cached-data-via-decorator)
+  - [Decorators](#decorators)
+  - [Classes](#classes)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 

@@ -10,7 +10,7 @@
   - [Google Maps Platform Access](./envsys.md#google-maps-platform-access)
 - [Python References](./python_references.md)
   - [Python Coding Strategy](./python_strategy.md)
-  - [Python Coding in Environmental Systems](./envsys.md#python-coding)
+  - [EDA Workbook on Python](python_references.md#earth-data-analytics-eda-workbook)
 - [Shiny Apps](./ShinyApps.md)
 - [Quarto References](./quarto/)
 - [Artificial Intelligence (AI)](./AI.md) ([slide deck](./quarto/AI.html))
@@ -92,7 +92,8 @@ now gathered in this repository.
 
 I had been learning about [Shiny](https://shiny.posit.co/) since before I
 attended the
-[Rstudio.conf(2017)](https://github.com/rstudio/rstudio-conf/tree/main/2017).
+[rstudio::conf(2017)](https://global.rstudio.com/resources/rstudioconf-2017/)
+([GitHub](https://github.com/rstudio/rstudio-conf/tree/main/2017)).
 Notes on my shiny apps are in
 [ShinyApps.md](./ShinyApps.md).
 I created the

@@ -5,23 +5,23 @@ These references were gathered while learning about environmental systems and da
 on [Earth Data Analytics](https://github.com/byandell-envsys/EarthDataAnalytics).
 To help me understand and organize code and ideas, I developed the
 [landmapy](https://github.com/byandell-envsys/landmapy) package.
-See also [Environmental Systems](envsys.md) references.
+See also [Python References](./python_references.md)
+and [Environmental Systems References](./envsys.md).
 
-- [Python Coding Strategy](#python-coding-strategy)
-  - [Make Coding Fun](#make-coding-fun)
-  - [Build a Function](#build-a-function)
-  - [Add Documentation](#add-documentation)
-  - [Put a Function in a File](#put-a-function-in-a-file)
-  - [Put reusable Module(s) in their own Directory](#put-reusable-modules-in-their-own-directory)
-  - [Build a Package from Modules in a Directory](#build-a-package-from-modules-in-a-directory)
-  - [Revisit Functions in Modules Often](#revisit-functions-in-modules-often)
-  - [Use GitHub as Organizing Tool](#use-github-as-organizing-tool)
-  - [Reorganize a Package](#reorganize-a-package)
-  - [Import Functions from GitHub](#import-functions-from-github)
-  - [Add Further Documentation](#add-further-documentation)
-    - [Document Functions in Modules in a Package](#document-functions-in-modules-in-a-package)
-  - [Migrate from Jupyter Notebooks to Quarto Documents](#migrate-from-jupyter-notebooks-to-quarto-documents)
-  - [Set Default Python Kernel for Quarto](kernel.md)
+- [Make Coding Fun](#make-coding-fun)
+- [Build a Function](#build-a-function)
+- [Add Documentation](#add-documentation)
+- [Put a Function in a File](#put-a-function-in-a-file)
+- [Put reusable Module(s) in their own Directory](#put-reusable-modules-in-their-own-directory)
+- [Build a Package from Modules in a Directory](#build-a-package-from-modules-in-a-directory)
+- [Revisit Functions in Modules Often](#revisit-functions-in-modules-often)
+- [Use GitHub as Organizing Tool](#use-github-as-organizing-tool)
+- [Reorganize a Package](#reorganize-a-package)
+- [Import Functions from GitHub](#import-functions-from-github)
+- [Add Further Documentation](#add-further-documentation)
+- [Document Functions in Modules in a Package](#document-functions-in-modules-in-a-package)
+- [Migrate from Jupyter Notebooks to Quarto Documents](#migrate-from-jupyter-notebooks-to-quarto-documents)
+- [Set Default Python Kernel for Quarto](kernel.md)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 
