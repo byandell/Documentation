@@ -12,6 +12,7 @@ Please offer suggestions to improve.
 - [Python Overview](#python-overview)
 - [Python Coding Strategy](./strategy.md)
 - [Earth Data Analytics (EDA) Workbook](#earth-data-analytics-eda-workbook)
+- [Coordinate Systems](#coordinate-systems)
 - [Useful Python Libraries](#useful-python-libraries)
   - [Lists of Python Libraries](#lists-of-python-libraries)
 - [Plot Libraries and Systems](#plot-libraries-and-systems)
@@ -55,6 +56,23 @@ _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
     - [Python venv: How To Create, Activate, Deactivate, And Delete](https://python.land/virtual-environments/virtualenv)
   - [EDA 6.15. Intro to Pandas Dataframes](https://www.earthdatascience.org/courses/intro-to-earth-data-science/scientific-data-structures-python/pandas-dataframes/)
 
+## Coordinate Systems
+
+- [Introduction to Python for Geographic Data Analysis (Python GIS)](https://pythongis.org)
+  - [Working with map projections (Python GIS)](https://pythongis.org/part2/chapter-06/nb/03-coordinate-reference-system.html)
+  - [Coordinate Reference Systems (Python GIS)](https://www.python-gis.org/fundamentals-of-python-gis/coordinate-reference-systems/)
+    - [Building Custom Map Projections in Python (Python GIS)](https://www.python-gis.org/fundamentals-of-python-gis/coordinate-reference-systems/building-custom-map-projections-in-python/)
+- [GeoPandas: Working with Geospatial Data in Python (realpython)](https://realpython.com/geopandas/)
+- [Spatial data in Python – CRS and projections (University of Tartu)](https://kodu.ut.ee/~kmoch/geopython2025/Py_02/crs-projections.html)
+- [Reprojecting and transforming data — Geocomputation with Python](https://py.geocompx.org/06-reproj)
+- [Python Projection Transforms (Medium)](https://medium.com/@stacyfuende/python-projection-transforms-c047fecf2081)
+
+Some common coordinate systems:
+
+- [EPSG:4326](https://epsg.io/4326): WGS84 = World Geodetic System 1984
+- [EPSG:32618](https://epsg.io/32618): WGS84 for UTM zone 18N (North America)
+- [EPSG:32730](https://epsg.io/32720): WGS84 for UTM zone 20S (South America)
+  
 ## Useful Python Libraries
 
 - [pandas](https://pandas.pydata.org/)

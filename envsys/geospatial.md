@@ -67,12 +67,9 @@ Previous package `rgdal` is now obsolete. Unsure about status of `raster` packag
 
 These have been compiled in [datasets.csv](https://github.com/byandell/geospatial/blob/main/datasets.csv).
 
-Data are stored in different coordinating systems, which makes it important
-to transform between them. Some common ones:
-
-- [EPSG:4326](https://epsg.io/4326): WGS84 = World Geodetic System 1984
-- [EPSG:32618](https://epsg.io/32618): WGS84 for UTM zone 18N (North America)
-- [EPSG:32730](https://epsg.io/32720): WGS84 for UTM zone 20S (South America)
+Data are stored in different
+[coordinate systems](./python/#coordinate-systems), which makes it important
+to transform between them.
 
 ## Geospatial Workshops
 

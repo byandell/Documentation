@@ -11,6 +11,7 @@ See also
 - [Environmental Systems & Geospatial References (Quarto Slideshow)](https://byandell.github.io/Documentation/quarto/envsys.html)
 - [Earth Data Analytics](#earth-data-analytics)
 - [Open Street Map](#open-street-map)
+- [Geospatial References](./geospatial.md)
 - [Google Maps Platform Access](#google-maps-platform-access)
 - [EDA Workbook on Python](python/#earth-data-analytics-eda-workbook)
 - [GitHub & Codespaces](github.md)
