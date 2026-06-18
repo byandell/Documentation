@@ -68,8 +68,8 @@ Previous package `rgdal` is now obsolete. Unsure about status of `raster` packag
 These have been compiled in [datasets.csv](https://github.com/byandell/geospatial/blob/main/datasets.csv).
 
 Data are stored in different
-[coordinate systems](../python/#coordinate-systems-projections), which makes it important
-to transform between them.
+[coordinate systems](../python/#coordinate-systems-projections),
+which makes it important to transform between them.
 
 ## Geospatial Workshops
 
