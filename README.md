@@ -5,7 +5,7 @@
 - [GitHub, Connect, and CodeSpaces](./github.md)
 - [Environmental Systems References](./envsys/) ([slide deck](./quarto/envsys.html))
 - [Python References](./python/) ([slide deck](./quarto/python.html))
-- [Shiny Apps](./ShinyApps.md)
+- [Shiny Apps](./ShinyApps.md) ([slide deck](./quarto/ShinyApps.html))
 - [Quarto Slide Decks & References](./quarto/)
 - [Artificial Intelligence (AI)](./AI.md) ([slide deck](./quarto/AI.html))
   - [AI Prompt Examples](./prompts/) ([slide deck](./quarto/prompts.html))

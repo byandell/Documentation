@@ -4,6 +4,7 @@
 
 - [Python References & Coding Strategy](./python.html)
 - [Environmental Systems & Geospatial References](./envsys.html)
+- [Modular Shiny Applications](./ShinyApps.html)
 - [AI References](./AI.html)
 - [AI Prompt Examples](./prompts.html)
 - [Geyser Shiny Examples](https://github.com/byandell/geyser)

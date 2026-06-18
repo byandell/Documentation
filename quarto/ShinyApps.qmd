@@ -1,0 +1,219 @@
+---
+title: "Modular Shiny Applications"
+subtitle: "Design, Development, Reactivity, and Scale"
+author: "Brian Yandell ([_byandell.github.io_](https://byandell.github.io))"
+date: last-modified
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    transition: slide
+    slide-number: true
+    show-slide-number: all
+    embed-resources: true
+    footer: "Modular Shiny Applications"
+    highlight-style: github
+---
+
+# Reactive Complexity & Design {background-color="#e0f2fe"}
+
+## The Challenge of Large Shiny Apps {.compact-slide}
+
+::: {.columns}
+::: {.column width="60%"}
+### Why Modularize?
+- Shiny apps are highly interactive, but large apps can become complicated and frustrating to debug.
+- Single apps longer than **500 lines** often suffer from subtle paradoxes caused by reactive elements.
+- Modularization breaks code into self-contained components (like functions) to allow piece-by-piece testing and reuse.
+:::
+
+::: {.column width="40%"}
+::: {.callout-note}
+### Core References
+- **[Mastering Shiny](https://mastering-shiny.org)**: Chapters 19 on [Shiny Modules](https://mastering-shiny.org/scaling-modules.html).
+- **[Modularizing Shiny app code](https://shiny.rstudio.com/articles/modules.html)** (RStudio).
+:::
+:::
+:::
+
+- For multi-language comparisons, see python vs R implementations in the [Shiny Geyser App](https://github.com/byandell/geyser).
+
+## Key Repositories Overview {.compact-slide}
+
+Several packages and applications illustrate an evolving design pattern aimed at improving usability, performance, and debuggability:
+
+- **[helperApps](https://github.com/byandell/helperApps)**: General-purpose modules designed for direct reuse in other Shiny apps.
+- **[qtlApp](https://github.com/AttieLab-Systems-Genetics/qtlApp)**: Hierarchical module design for QTL visualization at scale.
+- **[geyser](https://github.com/byandell/geyser)**: Learning sandbox showcasing simple module connection patterns.
+- **[foundrShiny](https://github.com/AttieLab-Systems-Genetics/foundrShiny)**: Multi-portal package driven by collaborator layout requirements.
+- **[qtl2shiny](https://github.com/byandell-sysgen/qtl2shiny)**: Multi-module app for local genomic analysis.
+- **[shiny_module](https://github.com/byandell/shiny_module)**: Interactive repository for testing early reactivity concepts.
+
+# Case Studies: qtlApp & geyser {background-color="#e0f2fe"}
+
+## qtlApp: QTL Visualization at Scale {.compact-slide}
+
+Designed for QTL analysis at scale, organized as an R package with separate shiny modules.
+
+::: {.columns}
+::: {.column width="55%"}
+### Calling Hierarchy
+- **`qtlServer.R`**: Top-level server logic.
+  - **`mainParServer.R`**: Shared parameters.
+    - **`traitServer.R`**: Dataset display and returns `trait_list`.
+  - **`scanServer.R`**: Reads scans from files.
+  - **`peakServer.R`**: Reads peaks from files.
+:::
+
+::: {.column width="45%"}
+### Infrastructure & Setup
+- **`qtlSetup.R`**: Standard initialization script to locate and load files into the environment.
+- **`app.R`**: Deployable entry-point script calling the modules.
+- **Helper Scripts**: Decouple visualization (`QTL_plot_visualizer.R`) and analysis (`trait_scan.R`, `peak_finder.R`).
+:::
+:::
+
+## geyser: Modular Concepts {.compact-slide}
+
+Uses the standard Old Faithful geyser app to illustrate module composition and connection logic:
+
+::: {.columns}
+::: {.column width="50%"}
+### Module Library (geyser/R)
+- **Plots**:
+  - `hist.R` / `gghist.R`: Base & ggplot histogram.
+  - `ggpoint.R`: Scatterplot modules.
+- **Data**:
+  - `data.R` / `datasets.R`: Data loader modules.
+- **Connections**:
+  - `rows.R` / `wrapper.R` / `switch.R`: Connect controllers.
+:::
+
+::: {.column width="50%"}
+### Connection Layout Apps
+- **Over Pages**: `appPages.R`.
+- **Rows & Columns**: `appRows.R` / `appRowsModule.R`.
+- **Twin Reuse**: `appTwin.R` / `appDupe.R` / `appFlip.R`.
+- **Nested**: `app.R` (see deployed [Geyser Demo](https://connect.doit.wisc.edu/geyserDemo)).
+:::
+:::
+
+::: {.callout-tip}
+See the [Geyser Shiny Modules Slides](https://connect.doit.wisc.edu/geyserShinyModules) and [11 Dec 2024 Presentation](https://drive.google.com/file/d/1BGSIhihpBc-2TfRza5RGeXBCB55EC6-l) for walk-throughs.
+:::
+
+# foundrShiny: Collaborator-Driven Architecture {background-color="#e0f2fe"}
+
+## foundrShiny: Lab Portals {.compact-slide}
+
+Powers three active research portals for the Attie Lab:
+
+::: {.incremental}
+- **Study Portals**: [Founder Calcium Study](https://connect.doit.wisc.edu/FounderCalciumStudy/), [Founder Diet Study](https://connect.doit.wisc.edu/FounderDietStudy/), and [Founder Liver Diet Study](https://connect.doit.wisc.edu/FounderLiverDietStudy/).
+- **Dependency**: Leverages the [foundr](https://github.com/AttieLab-Systems-Genetics/foundr) data analysis package.
+- **Scale**: Over **30 interconnected modules** (e.g. `download.R` for exports, `volcano.R` for plots).
+- **Iteration**: Evolved over **1.5 years** through collaboration on layouts, panel structures, and feature additions.
+:::
+
+## Parameter Scoping & Hierarchy {.compact-slide}
+
+::: {.columns}
+::: {.column width="55%"}
+### Input Scoping Levels
+To prevent code duplication, inputs are scoped at three distinct levels:
+1. **`mainPar`**: Shared parameters (e.g. dataset choice, height) globally available.
+2. **`panelPar`**: Localized settings for a specific dashboard panel (e.g. strains, sex, facet overlays).
+3. **`plotPar`**: Specific options limited to visualization plots.
+:::
+
+::: {.column width="45%"}
+### calling hierarchy
+- **foundr**: mainPar, about, download, entry, contrast, stats, time, trait
+  - **contrast**: panelPar, contrastGroup, contrastTime, contrastTable, contrastTrait, timePlot
+    - **contrastGroup**: contrastPlot
+    - **contrastTrait**: contrastPlot
+  - **stats**: panelPar, contrastPlot
+  - **time**: panelPar, timePlot, timeTable
+  - **trait**: panelPar, corPlot, corTable, traitNames, traitOrder, traitPairs, traitSolos, traitTable
+:::
+:::
+
+::: {.callout-note}
+### Reactive Data Flow
+Inputs are passed directly into the
+[foundr](https://github.com/AttieLab-Systems-Genetics/foundr)
+module. The application avoids global variables; instead, static inputs are filtered into small reactive subsets based on user panels.
+:::
+
+## Decoupling Reactivity from Analysis {.compact-slide}
+
+A key architectural shift was completely separating data analysis from the reactive Shiny interface.
+
+::: {.columns}
+::: {.column width="50%"}
+### Legacy Layout
+- **Mixed Code**: Early versions (such as the [foundr v1.4 branch](https://github.com/byandell-sysgen/foundr/tree/v1.4)) mixed reactivity, analysis calculations, and plotting configurations in single files.
+- **Risk**: Hard to debug, poor test coverage, and fragile scaling.
+:::
+
+::: {.column width="50%"}
+### Decoupled Layout
+- **Analysis Package ([foundr](https://github.com/AttieLab-Systems-Genetics/foundr))**: Houses clean, non-reactive R code (ggplot structures, mathematical steps).
+- **Shiny Package ([foundrShiny](https://github.com/AttieLab-Systems-Genetics/foundrShiny))**: Manages UI wrappers, reactivity, session states, and client connections.
+:::
+:::
+
+- **R Helpers**: Analysis helpers are strictly organized by category (e.g. plotting, summary, calculation, and utilities).
+
+# qtl2shiny: Scaling & Modernization {background-color="#e0f2fe"}
+
+## qtl2shiny: Local QTL Analytics {.compact-slide}
+
+Designed for local QTL investigations within a 1-4Mb peak region, including LOD scans, SNP association, and mediation:
+
+::: {.columns}
+::: {.column width="60%"}
+### Server Refactoring Tree
+The modernization branch (`byandell-refactor`) reorganizes server calls:
+- **`mainServer.R`**
+  - **`dashServer.R`**
+    - **`setupServer.R`**: project, pheno, peaks.
+    - **`haploServer.R`**: probs, snpSetup, scanCoef, mediate.
+    - **`diploServer.R`**: pairProbs, snpSetup, pattern.
+:::
+
+::: {.column width="40%"}
+### Modernization Goals
+- **Dashboard Upgrades**: Transition older screens from `shinydashboard` layouts to modern, responsive `bslib` dashboards.
+- **Consolidation**: Eliminate duplicate download routines using the unified `download.R` module.
+:::
+:::
+
+- See screenshots and vignettes in the [User Guide](https://github.com/byandell/qtl2shiny/blob/master/vignettes/UserGuide.Rmd) and [Developer Guide](https://github.com/byandell/qtl2shiny/blob/master/vignettes/DeveloperGuide.Rmd).
+
+## Dependencies & Reactive Debugging {.compact-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### qtl2 Package Stack
+- [qtl2](https://kbroman.org/qtl2/): Genotyping and mapping calculations.
+- [qtl2ggplot2](https://github.com/byandell-sysgen/qtl2ggplot2): ggplot2-based plotting extension.
+- [qtl2fst](https://github.com/byandell-sysgen/qtl2fst): Database storing scans.
+- [qtl2pattern](https://github.com/byandell-sysgen/qtl2pattern): SNP association patterns.
+- [qtl2mediate](https://github.com/byandell-sysgen/qtl2mediate) /
+[intermediate](https://github.com/byandell-sysgen/intermediate): Mediation calculations.
+:::
+
+::: {.column width="50%"}
+### Sandbox Learning
+- **[`shiny_module`](https://github.com/byandell/shiny_module)`package`**:
+  - Sandbox designed to understand core reactivity rules and event sequences.
+  - Useful reference for tracing reactive logs and resolving unresponsive inputs.
+:::
+:::
+
+::: {.callout-warning}
+### Version Notes
+The original
+[qtl2shiny](https://github.com/byandell-sysgen/qtl2shiny)
+repository contains legacy module syntax. Active retooling is recommended to migrate functions into compliant server/UI wrappers for easier testing.
+:::

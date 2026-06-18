@@ -1,7 +1,7 @@
 # Quarto Narrative
 
-**Prompt:** Create a quarto slide deck from `[slidedeck].qmd`
-in light mode and place it in folder `quarto/`.
+**Prompt:** Create a quarto slide deck from `[slidedeck].md`
+in light mode and place it in folder `quarto/` as `[slidedeck].qmd`.
 Adjust slide styling to use a more compact layout so that content fits neatly on each slide.
 Do not use `chalkboard` features, instead embed all resources.
 Update `.gitignore` for quarto documents as needed.
