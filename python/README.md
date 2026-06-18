@@ -9,7 +9,7 @@ See related in
 Please offer suggestions to improve.
 
 - [Python Overview](#python-overview)
-- [Python Coding Strategy](./python_strategy.md)
+- [Python Coding Strategy](./strategy.md)
 - [Earth Data Analytics (EDA) Workbook](#earth-data-analytics-eda-workbook)
 - [Useful Python Libraries](#useful-python-libraries)
   - [Lists of Python Libraries](#lists-of-python-libraries)

@@ -5,7 +5,7 @@ These references were gathered while learning about environmental systems and da
 on [Earth Data Analytics](https://github.com/byandell-envsys/EarthDataAnalytics).
 To help me understand and organize code and ideas, I developed the
 [landmapy](https://github.com/byandell-envsys/landmapy) package.
-See also [Python References](./python_references.md)
+See also [Python References](./)
 and [Environmental Systems References](./envsys.md).
 
 - [Make Coding Fun](#make-coding-fun)

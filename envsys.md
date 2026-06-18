@@ -11,7 +11,7 @@ See also
 - [Earth Data Analytics](#earth-data-analytics)
 - [Open Street Map](#open-street-map)
 - [Google Maps Platform Access](#google-maps-platform-access)
-- [EDA Workbook on Python](python_references.md#earth-data-analytics-eda-workbook)
+- [EDA Workbook on Python](python/#earth-data-analytics-eda-workbook)
 - [GitHub & Codespaces](github.md)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  

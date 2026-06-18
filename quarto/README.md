@@ -1,4 +1,4 @@
-# Quarto Slide Decks
+# Quarto Slide Decks & References
 
 ## Slide Decks
 
