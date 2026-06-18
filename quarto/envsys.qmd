@@ -1,0 +1,318 @@
+---
+title: "Environmental Systems & Geospatial References"
+subtitle: "Earth Data Analytics, Mapping Packages, and Data Cubes"
+author: "Brian Yandell ([_byandell.github.io_](https://byandell.github.io))"
+date: last-modified
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    transition: slide
+    slide-number: true
+    show-slide-number: all
+    embed-resources: true
+    footer: "Environmental Systems & Geospatial References"
+    highlight-style: github
+---
+
+# Earth Data Analytics & Setup {background-color="#e0f2fe"}
+
+## Earth Data Analytics (EDA) Foundations {.compact-slide}
+
+::: {.columns}
+::: {.column width="60%"}
+### ESIIL & EarthLab Programs
+- **[Fundamentals of EDA](https://cu-esiil-edu.github.io/esiil-learning-portal/foundations/pages/00-course-overviews/foundations/01-fundamentals/00-home.html)**:
+  - 1. Open reproducible science.
+  - 2. Time-series data analysis.
+  - 3. Geospatial vector data.
+  - 4. Final project (raster data).
+- **[Introduction to Earth Data Science](https://www.earthdatascience.org/courses/intro-to-earth-data-science/)**:
+  - [Syllabus Wiki](https://github.com/earthlab-education/Earth-Analytics-AY24/wiki).
+  - [EDA Foundations Textbook](https://cu-esiil-edu.github.io/esiil-learning-portal/foundations/pages/00-course-overviews/foundations/00-home.html).
+:::
+
+::: {.column width="40%"}
+### Key References
+- **[Mapping Inequality](https://dsl.richmond.edu/panorama/redlining/)**: Historical redlining and spatial disparity resources.
+- **[Python Strategy](../python/)**: Related programming strategy.
+- **[landmapy Package](https://github.com/byandell-envsys/landmapy)**: Helper tools for environmental coding.
+:::
+:::
+
+## Local Environment Setup {.compact-slide}
+
+### Required Tools
+- **[Visual Studio Code](https://code.visualstudio.com/download)**: Primary IDE.
+- **[Git Version Control](https://git-scm.com/downloads)**: Already included in tools like RStudio, or install separately.
+- **[Miniconda](https://docs.anaconda.com/miniconda/)**: Lightweight Conda package manager.
+  - For macOS (M1/M2 Apple Silicon), download and run the Apple Silicon bash installer.
+
+### Conda Terminal Commands
+Run the following commands in the terminal to set up Miniconda:
+```bash
+# Create target directory
+mkdir -p ~/miniconda3
+
+# Download Apple Silicon installer
+curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh
+
+# Run bash installation script
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+
+# Clean up installer script
+rm ~/miniconda3/miniconda.sh
+```
+See further setup steps in [Git, Conda & Bash Setup](https://www.earthdatascience.org/workshops/setup-earth-analytics-python/setup-git-bash-conda/).
+
+## GitHub SSH Key Configuration {.compact-slide}
+
+Securely connect your local terminal to GitHub using SSH authentication:
+
+::: {.columns}
+::: {.column width="60%"}
+### Step 1: Generate an SSH Key
+Open your terminal and run the key-generator:
+```bash
+ssh-keygen -t ed25519 -C "byandell@wisc.edu"
+```
+Press enter to accept the default storage location:
+`~/.ssh/id_ed25519`
+:::
+
+::: {.column width="40%"}
+### Step 2: Copy Public Key
+Copy the key to your clipboard using macOS `pbcopy`:
+```bash
+cat ~/.ssh/id_ed25519.pub | pbcopy
+# or alternative pipe syntax
+pbcopy < ~/.ssh/id_ed25519.pub
+```
+Add the copied key under GitHub settings.
+:::
+:::
+
+::: {.callout-note}
+For troubleshooting, see GitHub's guide on [Generating SSH Keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+:::
+
+# Mapping Platforms & R APIs {background-color="#e0f2fe"}
+
+## Open Street Map (OSM) in R {.compact-slide}
+
+::: {.columns}
+::: {.column width="60%"}
+### OSM Ecosystem
+- **[OpenStreetMap](https://www.openstreetmap.org/)**: Free, crowdsourced maps and spatial layers.
+- **`osmdata` package**: Access and download features (pois, polygons, highways) directly inside R.
+- **R vs Python**: While Python is highly popular for GIS, R has robust mapping integration.
+:::
+
+::: {.column width="40%"}
+::: {.callout-tip}
+### R Plotting Workflow
+- Plot vector overlays with
+[ggplot2](https://ggplot2.tidyverse.org)
++
+[sf](https://r-spatial.github.io/sf/)
+using
+[geom_sf](https://ggplot2.tidyverse.org/reference/ggsf.html)
+- Add basemaps with
+[annotation_map_tile](https://paleolimbot.github.io/ggspatial/reference/annotation_map_tile.html)
+from the
+[ggspatial](https://paleolimbot.github.io/ggspatial/)
+package.
+:::
+:::
+:::
+
+### Documentation & Guides:
+- [OSM Contribution Wiki](https://wiki.openstreetmap.org/wiki/How_to_contribute)
+- [osmdata Vignette](https://cran.r-project.org/web/packages/osmdata/vignettes/osmdata.html)
+- [Mapping OSM in R (JColiver)](https://jcoliver.github.io/learn-r/017-open-street-map.html)
+- [ggspatial documentation](https://paleolimbot.github.io/ggspatial/)
+
+## Thematic & Interactive Mapping {.compact-slide}
+
+::: {.columns}
+::: {.column width="55%"}
+### Interactive tmap
+- **`tmap` package**: Thematic map rendering with static/interactive modes.
+- Toggle between plot mode and interactive viewer.
+- Use `make-valid` function from `sf` package to solve multipolygon rendering errors.
+:::
+
+::: {.column width="45%"}
+### Useful Resources
+- [tmap Quickstart](https://r-tmap.github.io/tmap/): Thematic maps in R.
+- [tmap book](https://r-tmap.github.io/tmap-book/): Advanced visual layouts.
+- [Making Maps with R](https://bookdown.org/nicohahn/making_maps_with_r5/docs/introduction.html).
+- [Multipolygon Fixes](https://stackoverflow.com/questions/76455486/impossible-to-plot-osm-multipolygons-in-tmap-and-leaflet) on Stack Overflow.
+:::
+:::
+
+::: {.callout-note}
+For automated shapefile processing, see [Automating maps with GeoPandas and Matplotlib](https://medium.com/@sooryanarayan_5231/automating-map-generation-from-multi-polygon-shapefiles-using-python-with-geopandas-and-matplotlib-aad4c79f8d5e).
+:::
+
+## Google Maps Platform Access {.compact-slide}
+
+Google Maps layers are accessible in R via the `ggmap` package, but require strict authentication:
+
+::: {.columns}
+::: {.column width="55%"}
+### API Key Setup
+1. Register on the [Google Maps Platform](https://mapsplatform.google.com/).
+2. Enable the **Maps Static API**.
+3. Generate and secure your API Key.
+4. Note that Google Maps requires billing setup (credit card).
+:::
+
+::: {.column width="45%"}
+### Integration Code
+Register the key inside your R script:
+```R
+library(ggmap)
+register_google(key = "YOUR_API_KEY")
+```
+
+### Institutional Guidelines
+- [Get Static Maps API Key](https://developers.google.com/maps/documentation/maps-static/get-api-key/).
+- [UW-Madison Guidelines on Google Maps Embedding](https://wiscweb.wisc.edu/2018/11/30/events-calendar-embedded-map-display-changes/).
+:::
+:::
+
+# Geospatial Packages & Resources {background-color="#e0f2fe"}
+
+## Books & Online Literature {.compact-slide}
+
+::: {.columns}
+::: {.column width="55%"}
+### Data Carpentry Workshops
+- **[Intro to R for Geospatial Data](https://datacarpentry.org/r-intro-geospatial/)**
+- **[Intro to Geospatial Concepts](https://datacarpentry.org/organization-geospatial/)**
+- **[Geospatial Raster/Vector with R](https://uw-madison-datascience.github.io/r-raster-vector-geospatial/)**
+:::
+
+::: {.column width="45%"}
+### Key Books & Discussions
+- **[Spatial Data Science (Pebesma & Bivand)](https://r-spatial.org/book/)**: Core text for R spatial analysis.
+- **[Geospatial Vector with sf (Coding Club)](https://ourcodingclub.github.io/tutorials/spatial-vector-sf/)**.
+- **[stars vs terra package comparison](https://www.seascapemodels.org/rstats/2021/06/01/STARS.html)**.
+:::
+:::
+
+::: {.callout-tip}
+### Stack Overflow Tips
+See threads like [stack geotiff with stars along](https://stackoverflow.com/questions/75249639/stack-geotiff-with-stars-along-when-band-dimension-contains-band-time-info) to handle complex band + time dimensions.
+:::
+
+## Desktop GIS & Integration {.compact-slide}
+
+For advanced geospatial processing, combine R scripts with desktop GIS interfaces:
+
+::: {.columns}
+::: {.column width="50%"}
+### QGIS Integrations
+- **QGIS**: Open-source desktop GIS.
+- **[R to QGIS workflows](https://rpubs.com/DUE-methods1/r-qgis)**.
+- **[Spatial Stratified Sampling](https://bookdown.org/einavg7/sp_technical_guide/spatial-stratified-sampling-with-rstudio-and-qgis.html)**.
+- **[RQGIS package](https://dges.carleton.ca/CUOSGwiki/index.php/RQGIS,_Utilizing_Rstudio_as_an_alternative_GIS)**: Interface QGIS functions directly from RStudio.
+- **[Processing lidar data](https://rstudio-pubs-static.s3.amazonaws.com/230154_30a0bbf22e2a49ecbfa1b72b2c7a8f96.html)** using QGIS, LAStools, and R.
+:::
+
+::: {.column width="50%"}
+### Other Platforms & Guides
+- **[ArcGIS Online](https://www.arcgis.com/sharing/rest/oauth2/signup?client_id=arcgisonline&response_type=token)**: Free accounts available for online map sharing and storage.
+- **[Land cover change mapping](https://www.unescap.org/resources/producing-land-cover-change-maps-and-statistics-step-step-guide-use-qgis-and-rstudio)** using QGIS and RStudio.
+- **[Columbia Library Guide](https://guides.library.columbia.edu/geotools/R)** on GIS & Cartography tools in R.
+:::
+:::
+
+## R Geospatial Packages {.compact-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Data Cube Creation
+- **`gdalcubes`**: Form Earth observation data cubes from satellite image collections (e.g. MODIS).
+- **`sf`**: Modern vector processing (replacing `sp`).
+- **`stars`**: Spatiotemporal arrays, raster data cubes.
+:::
+
+::: {.column width="50%"}
+### Raster & Tidy Extensions
+- **`terra`**: Modern raster & vector processing (replacing legacy `raster` package).
+- **`tidyterra`**: Extends standard `tidyverse` methods (like ggplot, filter, mutate) to `terra` raster and vector objects.
+:::
+:::
+
+> [!WARNING]
+> The legacy geospatial package `rgdal` is now obsolete and has been retired. Developers should transition all workflows to `sf` and `terra`.
+
+# Repositories & Workshops {background-color="#e0f2fe"}
+
+## Geospatial APIs & Repositories {.compact-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Download APIs
+- **`rstac`**: Search and download satellite data via SpatioTemporal Asset Catalog (STAC) API.
+- **`osmdata`**: Retrieve OpenStreetMap coordinates.
+- **`geos`**: R API wrapper for the GEOS geometry engine.
+- **`landsat`**: Process Landsat multispectral imagery.
+:::
+
+::: {.column width="50%"}
+### Repositories
+- **[ESIIL Data Library](https://data-library.esiil.org)**:
+  - Features [American Indian & Alaska Native Areas](https://data-library.esiil.org/indian_country/aiannh/AIANNH/) datasets.
+- **[ESIIL Flood Data](https://cu-esiil.github.io/hackathon2023_datacube/code_for_building_cube/Pull_flood_data/)**: Flood and moisture layers.
+- **[datasets.csv](https://github.com/byandell/geospatial/blob/main/datasets.csv)**: Compiled dataset list.
+:::
+:::
+
+## Coordinate Projections & Datasets {.compact-slide}
+
+Geospatial data use different Coordinate Reference Systems (CRS). Coordinate transformation is crucial:
+
+::: {.columns}
+::: {.column width="55%"}
+### Key Reference Projections
+- **[EPSG:4326](https://epsg.io/4326)**: WGS84 - World Geodetic System 1984 (lat/lon coordinates).
+- **[EPSG:32618](https://epsg.io/32618)**: WGS84 for UTM zone 18N (North America projections).
+- **[EPSG:32730](https://epsg.io/32720)**: WGS84 for UTM zone 20S (South America projections).
+:::
+
+::: {.column width="45%"}
+### NEON Project Areas
+Geospatial workshop datasets focus on two primary field sites:
+- **Harvard Forest (HARV)**:
+  - `HARV_dsmCrop.tif` (surface model).
+  - `HARV_DSMhill.tif` (hillshade model).
+- **San Joaquin Range (SJER)**.
+:::
+:::
+
+::: {.callout-note}
+Data is hosted on FigShare. See the [NEON Raster Introduction](https://www.neonscience.org/resources/learning-hub/tutorials/dc-raster-data-r) for raster tutorials in R.
+:::
+
+## Geospatial Workshops {.compact-slide}
+
+Interactive worksheets and hackathons are excellent starting points for hands-on learning:
+
+::: {.columns}
+::: {.column width="50%"}
+### ESIIL Hackathon 2023
+- Focus: Creating Datacubes.
+- **[The Art of Making a Datacube](https://cu-esiil.github.io/hackathon2023_datacube/)**.
+- **[ESIIL_Art_Data_Cube.Rmd](https://github.com/byandell/geospatial/blob/main/ESIIL_Art_Data_Cube.Rmd)**: Edit of Ty Tuff's datacube creation methods.
+- Mounted STAC dataset access and on-the-fly downloads.
+:::
+
+::: {.column width="50%"}
+### UW-Madison Workshop 2023
+- **[Data Carpentry Workshop](https://uw-madison-datascience.github.io/2023-06-05-uwmadison-dc/)**.
+- **[Carpentries Etherpad](https://pad.carpentries.org/2023-06-05-uwmadison-dc)**: Collaborative notes.
+- **[Geospatial.Rmd](https://github.com/byandell/geospatial/blob/main/Geospatial.Rmd)**: Rmarkdown compilation of workshop exercises.
+:::
+:::

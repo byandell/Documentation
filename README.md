@@ -3,7 +3,7 @@
 - [My Documentation Journey](#my-documentation-journey)
 - [R References](./R.md)
 - [GitHub, Connect, and CodeSpaces](./github.md)
-- [Environmental Systems References](./envsys/)
+- [Environmental Systems References](./envsys/) ([slide deck](./quarto/envsys.html))
 - [Python References](./python/) ([slide deck](./quarto/python.html))
 - [Shiny Apps](./ShinyApps.md)
 - [Quarto Slide Decks & References](./quarto/)

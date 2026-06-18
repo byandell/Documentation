@@ -8,6 +8,7 @@ To help me understand and organize code and ideas, I developed the
 See also
 [Python Strategy](python_strategy.md).
 
+- [Environmental Systems & Geospatial References (Quarto Slideshow)](https://byandell.github.io/Documentation/quarto/envsys.html)
 - [Earth Data Analytics](#earth-data-analytics)
 - [Open Street Map](#open-street-map)
 - [Google Maps Platform Access](#google-maps-platform-access)
@@ -76,9 +77,20 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 [OpenStreetMap (OSM)](https://www.openstreetmap.org/).
 Data can be accessed via `osmdata`.
-Static maps are plotted using `ggplot2` with `sf` bridging via `geom_sf` for polygon and point layers.
-OSM base map layer is added with `annotation_map_tile` from `ggspatial` package.
-Interactive maps can be produces with package `tmap`.
+Static maps are plotted using
+[ggplot2](https://ggplot2.tidyverse.org)
+with
+[sf](https://r-spatial.github.io/sf/)
+bridging via
+[geom_sf](https://ggplot2.tidyverse.org/reference/ggsf.html)
+for polygon and point layers.
+OSM base map layer is added with
+[annotation_map_tile](https://paleolimbot.github.io/ggspatial/reference/annotation_map_tile.html)
+from
+[ggspatial](https://paleolimbot.github.io/ggspatial)
+package.
+Interactive maps can be produces with package
+[tmap](https://r-tmap.github.io/tmap/).
 
 OSM is a free resource with maps and features (but should be cited).
 Most people seem to use Python to work with such maps, but there
