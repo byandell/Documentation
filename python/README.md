@@ -12,7 +12,7 @@ Please offer suggestions to improve.
 - [Python Overview](#python-overview)
 - [Python Coding Strategy](./strategy.md)
 - [Earth Data Analytics (EDA) Workbook](#earth-data-analytics-eda-workbook)
-  - [Coordinate Systems & Projections](#coordinate-systems-projections)
+  - [Coordinate Systems & Projections](#coordinate-systems--projections)
 - [Useful Python Libraries](#useful-python-libraries)
   - [Lists of Python Libraries](#lists-of-python-libraries)
 - [Plot Libraries and Systems](#plot-libraries-and-systems)
