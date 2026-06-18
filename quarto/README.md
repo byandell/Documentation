@@ -18,9 +18,9 @@
   - [Get Started](https://quarto.org/docs/get-started/)
   - [Quarto offers a range of features and project organization tools](https://quarto.org/docs/get-started/)
   - [Quarto presentations (including PowerPoint)](https://quarto.org/docs/presentations/)
-  - [Quarto books](https://quarto.org/docs/books/)
-  - [Quarto websites](https://quarto.org/docs/websites/)
-  - [Quarto articles](https://quarto.org/docs/articles/)
+  - Quarto [books](https://quarto.org/docs/books/) &
+[websites](https://quarto.org/docs/websites/) &
+[articles](https://quarto.org/docs/articles/)
   - [Quarto guide](https://quarto.org/docs/guide/)
     - Computations: [Python](https://quarto.org/docs/computations/python) & [R](https://quarto.org/docs/computations/r/)
     - Tools: [JupyterLab](https://quarto.org/docs/tools/jupyter-lab.html) & [RStudio](https://quarto.org/docs/tools/rstudio.html) & [VS Code](https://quarto.org/docs/tools/vs-code.html)
