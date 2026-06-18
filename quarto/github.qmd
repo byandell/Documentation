@@ -1,0 +1,139 @@
+---
+title: "GitHub, Posit Connect & CodeSpaces"
+subtitle: "Static Portfolios, Environment Caching, and Cloud Workspaces"
+author: "Brian Yandell ([_byandell.github.io_](https://byandell.github.io))"
+date: last-modified
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    transition: slide
+    slide-number: true
+    show-slide-number: all
+    embed-resources: true
+    footer: "GitHub, Posit Connect & CodeSpaces"
+    highlight-style: github
+---
+
+# GitHub Pages & Portfolios {background-color="#e0f2fe"}
+
+## GitHub Pages & Blogging {.compact-slide}
+
+::: {.columns}
+::: {.column width="60%"}
+### Static Portfolio Hosting
+- **[GitHub Pages](https://docs.github.com/en/pages)**: Free static web hosting directly from GitHub repositories.
+- **Main Portfolio**: [byandell.github.io](https://byandell.github.io) (source: [byandell.github.io repo](https://github.com/byandell/byandell.github.io)), modeled on the [Jekyll Now](https://github.com/barryclark/jekyll-now) template.
+- **Subpages**: Separately generated project pages, such as [byandell.github.io/ESIIL](https://byandell.github.io/ESIIL) (source: [ESIIL repo](https://github.com/byandell/ESIIL)), forked from `Postdoc_OASIS`.
+:::
+
+::: {.column width="40%"}
+::: {.callout-note}
+### Core References
+- [Publishing Project Docs](https://github.blog/developer-skills/github/publish-your-project-documentation-with-github-pages/)
+- [Jekyll Now Blog Setup](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
+- [Portfolio Creation Guide](https://cu-esiil-edu.github.io/esiil-learning-portal/shortcourse/pages/03-git-github/03-github-portfolio/01-create-portfolio-website.html) (ESIIL)
+:::
+:::
+:::
+
+## Jekyll, MkDocs & Git Resources {.compact-slide}
+
+::: {.columns}
+::: {.column width="55%"}
+### Static Generators & Themes
+- **Jekyll**: Default Ruby-based builder used by GitHub Pages. Fast setup using forkable themes.
+- **[MkDocs](https://github.com/mkdocs/mkdocs)**: Advanced Python-based alternative for technical docs.
+  - Deploys clean layouts using themes like [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/publishing-your-site/).
+:::
+
+::: {.column width="45%"}
+### Git Troubleshooting & Help
+- **[Happy Git with R](https://happygitwithr.com/)**: Standard resource for version control onboarding and troubleshooting.
+- **Git Clients**:
+  - [Install Git for Windows](https://git-scm.com/install/windows) (Git-SCM).
+  - [Install Git Guides](https://github.com/git-guides/install-git).
+:::
+:::
+
+::: {.callout-warning}
+### CI/CD Workflow Security
+OAuth authentication errors can prevent git pushes if you modify GitHub Actions files (`.github/workflows/`). See the [TutorialPedia resolution guide](https://www.tutorialpedia.org/blog/how-to-resolve-refusing-to-allow-an-oauth-app-to-create-or-update-workflow-on-git-push/) to resolve permission issues.
+:::
+
+# Posit Connect Hosting {background-color="#e0f2fe"}
+
+## Posit Connect & Package Locking {.compact-slide}
+
+::: {.columns}
+::: {.column width="60%"}
+### Enterprise Sharing Platform
+- **[Posit Connect](https://posit.co/products/enterprise/connect/)**: Deployment platform to host R Shiny applications, Quarto documents, and python web models.
+- **Environment Replication**: Connect uses the **`renv`** package to capture local project dependencies and rebuild them on the server.
+- **GitHub Integration**: Packages installed via standard devtools (`devtools::install_github`) can lead to package resolution issues on compilation.
+:::
+
+::: {.column width="40%"}
+::: {.callout-note}
+### Documentation Links
+- [renv Home Page](https://rstudio.github.io/renv/)
+- [Using renv with Connect](https://pkgs.rstudio.com/renv/articles/rsconnect.html)
+- [Posit Package Management](https://docs.posit.co/connect/admin/r/package-management/)
+:::
+:::
+:::
+
+## Resolving Deployment Errors {.compact-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### The Unknown Source Bug
+- **Symptoms**: RStudio displays `Deployment error: unknown package source`.
+- **Cause**: Packages installed via `devtools` may lack complete lockfile metadata. Connect is unable to determine the precise repository source, and deployment fails.
+:::
+
+::: {.column width="50%"}
+### The renv Caching Solution
+Force `renv` to explicitly write the GitHub source link to the lockfile:
+```R
+# Install package through renv API
+renv::install("github_user/package_name")
+
+# Snapshot changes to renv.lock
+renv::snapshot()
+```
+
+If it still fails, record the source metadata manually:
+```R
+renv::record("github_user/package_name")
+```
+:::
+:::
+
+::: {.callout-tip}
+Always inspect your `renv.lock` file before deploying to confirm all external GitHub package metadata has been saved cleanly.
+:::
+
+# GitHub Codespaces {background-color="#e0f2fe"}
+
+## Cloud-Hosted Containers {.compact-slide}
+
+::: {.columns}
+::: {.column width="60%"}
+### Dynamic Cloud Workspaces
+- **[GitHub Codespaces](https://docs.github.com/en/codespaces/overview)**: Instant, preconfigured container development workspaces hosted in the cloud.
+- **Fast Onboarding**: Integrates seamlessly with Git repositories, preloading extensions, scripts, and runtime dependencies.
+- **VS Code Integration**: Develop directly in your web browser or connect via local Visual Studio Code remote editors.
+:::
+
+::: {.column width="40%"}
+::: {.callout-important}
+### Resource Conservation
+Always **stop** your codespaces when done! Inactive but running codespaces continue to consume subscription hours, memory quotas, and active storage allocations.
+:::
+:::
+:::
+
+### Useful Links:
+- [Codespaces Quickstart](https://docs.github.com/en/codespaces/getting-started/quickstart)
+- [Visual Studio Code Codespaces Guide](https://code.visualstudio.com/docs/remote/codespaces)
+- [How to Stop a Codespace](https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace#stopping-a-codespace)

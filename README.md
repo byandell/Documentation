@@ -1,8 +1,8 @@
 # [Documentation](https://byandell.github.io/Documentation)
 
 - [My Documentation Journey](#my-documentation-journey)
-- [R References](./R.md)
-- [GitHub, Connect, and CodeSpaces](./github.md)
+- [R References](./R.md) ([slide deck](./quarto/R.html))
+- [GitHub, Connect, and CodeSpaces](./github.md) ([slide deck](./quarto/github.html))
 - [Environmental Systems References](./envsys/) ([slide deck](./quarto/envsys.html))
 - [Python References](./python/) ([slide deck](./quarto/python.html))
 - [Shiny Apps](./ShinyApps.md) ([slide deck](./quarto/ShinyApps.html))

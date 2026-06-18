@@ -2,6 +2,8 @@
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 
+- [GitHub, Connect, and CodeSpaces (Quarto Slideshow)](https://byandell.github.io/Documentation/quarto/github.html)
+
 ## GitHub Pages
 
 My main GitHub Page

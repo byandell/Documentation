@@ -3,6 +3,8 @@
 ## Slide Decks
 
 - [Python References & Coding Strategy](./python.html)
+- [R for the Data Sciences](./R.html)
+- [GitHub, Connect, and CodeSpaces](./github.html)
 - [Environmental Systems & Geospatial References](./envsys.html)
 - [Modular Shiny Applications](./ShinyApps.html)
 - [AI References](./AI.html)

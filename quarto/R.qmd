@@ -1,0 +1,333 @@
+---
+title: "R for the Data Sciences"
+subtitle: "Study Groups, Radian in VS Code, and Core Workflows"
+author: "Brian Yandell ([_byandell.github.io_](https://byandell.github.io))"
+date: last-modified
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    transition: slide
+    slide-number: true
+    show-slide-number: all
+    embed-resources: true
+    footer: "R for the Data Sciences"
+    highlight-style: github
+---
+
+# COMBEE Study Groups & Syllabus {background-color="#e0f2fe"}
+
+## R for Teams in the Data Sciences {.compact-slide}
+
+::: {.columns}
+::: {.column width="60%"}
+### Overview & Purpose
+- Assumes a basic introduction to data analytics (e.g., [Data Carpentry](http://datacarpentry.org) courses).
+- Designed for collaborative teams to use R effectively to address data science problems.
+- Housed in the **[UW Madison Data Science Hub GitHub Organization](https://github.com/UW-Madison-DataScience)**, which Brian Yandell helped establish.
+- Used in the **[COMBEE R Study Group](https://github.com/UW-Madison-DataScience/R_for_data_sciences)** at UW-Madison.
+:::
+
+::: {.column width="40%"}
+::: {.callout-note}
+### Web References
+- Repo: [R for Data Sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences)
+- Live Web Version: [R for Data Sciences Web](http://www.stat.wisc.edu/~yandell/R_for_data_sciences)
+:::
+:::
+:::
+
+## Broad Syllabus Organization {.compact-slide}
+
+Material is organized into "verb" folders representing key stages of the data science workflow:
+
+::: {.incremental}
+- **[curate](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/curate)**: Manage and transform data structures.
+- **[visualize](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/visualize)**: Explore data relationships visually.
+- **[organize](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/organize)**: Document and structure reproducible workflows.
+- **[analyze](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/analyze)**: Fit linear models and run statistical analyses.
+- **[profile](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/profile)**: Check efficiency and test code performance.
+- **[connect](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/connect)**: Bridge R with other computing environments and databases.
+:::
+
+## Study Materials & Indices {.compact-slide}
+
+Additional resources located in the repository root directory:
+
+::: {.columns}
+::: {.column width="50%"}
+### Core Documentation
+- **[overview.md](https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/overview.md)**: Index of R materials.
+- **[reference.md](https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/reference.md)**: Hand-selected external resources.
+- **[repositories.md](https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/repositories.md)**: Public dataset libraries.
+- **[learnR.md](https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/learnR.md)**: R syntax tips and tricks.
+:::
+
+::: {.column width="50%"}
+### Background & Legacy
+- **[background.md](https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/background.md)**: Introductory slides on R history.
+- **[Bates.md](https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/Bates.md)**: Special teaching index developed by Douglas Bates.
+- **`data`**: Local sample folders.
+:::
+:::
+
+::: {.callout-tip}
+Many thanks to Douglas Bates and the COMBEE Study Group for co-teaching and sharing the early versions of these materials in 2014–2017.
+:::
+
+# The 6 Data Science Verbs {background-color="#f0fdf4"}
+
+## 1. Curate: Data Structures & Import {.compact-slide}
+
+::: {.columns}
+::: {.column width="60%"}
+### Tidyverse Curation
+- Read, manipulate, and display data summaries in concise tables.
+- Work with data frames using **[tidyverse](http://tidyverse.org/)** tools.
+- Write cleaned up data tables in CSV/flat formats.
+- String manipulation and cleaning using characters/regular expressions.
+:::
+
+::: {.column width="40%"}
+### Key Repository Modules
+- `tidyverse` / `intro_dplyr` / `data_tables`
+- `purrr`: List/vector iteration mapping (`map` & `transpose`).
+- `species`: Integrated `dplyr`, `tidyr`, and `purrr` workflow.
+- `string` / `regex` / `file`
+:::
+:::
+
+## 2. Visualize: Grammar of Graphics {.compact-slide}
+
+::: {.columns}
+::: {.column width="60%"}
+### Graphical Explorations
+- Understand key components of the **grammar of graphics**.
+- Visualize data relationships with the **[ggplot2](http://ggplot2.org/)** package.
+- Examine formatting/layout packages (`cowplot` / `GGally`).
+- Create network observations in connected graphs (`network`).
+- Share results on the web with interactive **[shiny](shiny.Rmd)** apps.
+:::
+
+::: {.column width="40%"}
+### Key Repository Modules
+- `surveys_ggplot.R`
+- `ggplot2.Rmd`
+- `visualize.md`
+- `graphics.md`
+- `shiny.Rmd`
+:::
+:::
+
+## 3. Organize: Workflows & Databases {.compact-slide}
+
+::: {.columns}
+::: {.column width="60%"}
+### Structure & Reproducibility
+- Document ongoing research with **[R Markdown](http://rmarkdown.rstudio.com/)** reports.
+- Collapse repeated code blocks into reusable **[functions](function.Rmd)**.
+- Use **[git and GitHub](http://happygitwithr.com/)** for version control.
+- Organize documentation and tasks into shared **[packages](package.Rmd)**.
+- Manage external databases using `SQLite`, `DBI`, `dbplyr`, `RDS`, or `feather` formats.
+:::
+
+::: {.column width="40%"}
+### Key Repository Modules
+- `Rmarkdown.md` / `RmarkdownExample.Rmd`
+- `function.Rmd`
+- `package.Rmd`
+- `github.md`
+- `database.md` / `SQLiteDplyr.Rmd`
+- `writing.md`
+:::
+:::
+
+## 4. Analyze: Models & Formulas {.compact-slide}
+
+::: {.columns}
+::: {.column width="60%"}
+### Statistical Foundations
+- Correlate measurements and compare across groups using **linear models** (`lm`).
+- Specify layout matrices and regression variables using R **formulas**.
+- Organize model parameters cleanly using **`broom`**, `car`, or `emmeans` packages.
+- Study GLMs, non-linear models, and hierarchical systems genetics.
+:::
+
+::: {.column width="40%"}
+### Key Repository Modules
+- `linear_model.Rmd`
+- `Formulas.Rmd`
+- `correlate.Rmd`
+- `covary.Rmd`
+- `sysgen.md`
+:::
+:::
+
+## 5. Profile: Optimization & Simulation {.compact-slide}
+
+::: {.columns}
+::: {.column width="60%"}
+### Performance & Testing
+- Profile code to identify speed bottlenecks using `Rprof` and **`profvis`**.
+- Debug code using `traceback`, interactive `browser` sessions, and RMarkdown breakpoints.
+- Simulate data to study statistical properties (fitting speed, simulations).
+- Create diagnostic plots to test statistical model assumptions.
+:::
+
+::: {.column width="40%"}
+### Key Repository Modules
+- `profile.Rmd` / `lineprof.Rmd`
+- `simulate.Rmd`: Simulation studies (Doug Bates).
+- `SimSpeed.Rmd` / `LmSimulation.Rmd`
+:::
+:::
+
+## 6. Connect: Interoperability {.compact-slide}
+
+::: {.columns}
+::: {.column width="60%"}
+### Beyond R
+- Use the **Unix/Linux shell** to search, edit, and organize projects.
+- Build automated, reproducible pipelines using **GNU Make**.
+- Scale up workflows and the split-apply-combine paradigm using remote clusters.
+- Create reproducible, isolated containers of software using **Docker** and Guix.
+- Typesetting scientific articles using **LaTeX**.
+:::
+
+::: {.column width="40%"}
+### Key Repository Modules
+- `linux.md` / `beyondR.md`
+- `docker.md`
+- `latex.md`
+- `reproducible.md`
+- `scaling_up.md`
+:::
+:::
+
+# Development Environments & Radian {background-color="#e0f2fe"}
+
+## Using R in VS Code {.compact-slide}
+
+VS Code has become a highly customizable IDE for R programming, matching RStudio functions:
+
+::: {.columns}
+::: {.column width="55%"}
+### Interactive VS Code Setup
+- Install the VS Code R extension to execute lines of code and preview datasets.
+- Set up markdown engines for inline output rendering.
+- Configure customized code chunk snippets to improve keyboard speed.
+- Bind keyboard shortcuts to quickly insert RMarkdown/Quarto code chunks.
+:::
+
+::: {.column width="45%"}
+### Key Guides
+- **[R in Visual Studio Code](https://code.visualstudio.com/docs/languages/r)** (VS Code docs).
+- **[Interactive R Programming](https://www.datanovia.com/books/r-in-vscode/)** (Datanovia).
+- **[Setup VS Code to run R](https://www.r-bloggers.com/2021/01/setup-visual-studio-code-to-run-r-on-vscode-2021/)** (R-Bloggers).
+- **[Snippet Key Bindings](https://www.schmidtynotes.com/blog/r/2021-09-28-vscode-rmd-code-chunk-snippet/)** (Schmidty Notes).
+:::
+:::
+
+## Radian: A Modern Console for R {.compact-slide}
+
+::: {.columns}
+::: {.column width="55%"}
+### Features of Radian
+- **[Radian](https://github.com/randian-r/radian)** is a modern console alternative for R.
+- Built on Python's `prompt_toolkit` to provide:
+  - Syntax highlighting.
+  - Multi-line editing and completion.
+  - Bracketed pasting (copying whole code blocks).
+  - Searchable command history.
+:::
+
+::: {.column width="45%"}
+::: {.callout-warning}
+### AI Environments Note
+Radian is not always seamless within terminal-based AI environments (like cursor or terminal agents). It can interfere with the interactive memory or command execution of these tools. Use **Posit's RStudio** if debugging issues.
+:::
+:::
+:::
+
+- Learn more at [radian: a modern console for R](https://fromthebottomoftheheap.net/2019/06/18/radian-console-for-r/).
+
+## Radian VS Code Configuration {.compact-slide}
+
+Add the following settings to your VS Code `settings.json` and system path:
+
+```json
+// Define binary path based on OS
+"r.rterm.mac": "/usr/local/bin/radian",
+"r.rterm.linux": "/usr/local/bin/radian",
+"r.rterm.windows": "C:\\Users\\<username>\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\radian.exe",
+
+// Set console behaviors
+"r.bracketedPast": true,
+"r.alwaysUseActiveTerminal": true, // Run code (CTRL + ENTER) in current terminal
+"r.rterm.option": [
+    "--no-save",
+    "--no-restore",
+    "--quiet",
+    "--r-binary=/usr/local/bin/radian"
+],
+"r.sessionWatcher": true,
+"r.sessionWatcher.showSavePrompt": false
+```
+
+In your `.Rprofile` home file, disable automatic completion-on-type to prevent latency:
+```R
+options(radian.complete_while_typing = FALSE)
+```
+
+# Core Coding: Native vs Magrittr Pipes {background-color="#e0f2fe"}
+
+## Pipes: Native `|>` vs Magrittr `%>%` {.compact-slide}
+
+Pipes chain multiple nested function calls into sequential, readable steps. 
+
+::: {.columns}
+::: {.column width="50%"}
+### magrittr Pipe (`%>%`)
+- Loaded via `magrittr` or `dplyr`.
+- Rewrites the AST via function wrappers.
+- Allows placing arguments anywhere using the dot `.` placeholder.
+```R
+# magrittr style
+df %>% filter(x > 10)
+```
+:::
+
+::: {.column width="50%"}
+### Native Pipe (`|>`)
+- Built directly into R base (version 4.1+).
+- Zero packages needed, no function call overhead (compiled on parse).
+- Requires using the underscore `_` placeholder (introduced in R 4.2+).
+```R
+# Native style
+df |> filter(x > 10)
+```
+:::
+:::
+
+::: {.callout-note}
+### Key Resource
+Check the tidyverse blog post [Base R (4.1+) |> vs magrittr %>% pipe](https://tidyverse.org/blog/2023/04/base-vs-magrittr-pipe/) for detailed performance differences.
+:::
+
+## Pipe Comparison Matrix {.compact-slide}
+
+| Feature | magrittr Pipe (`%>%`) | Native Pipe (`|>`) |
+| :--- | :--- | :--- |
+| **Availability** | Requires `library(magrittr)` or `tidyverse` | Built-in base R since version 4.1 |
+| **Execution Speed** | Slower (function wrapper wrapper) | Faster (parsed directly to standard calls) |
+| **Placeholder** | Support for `.` placeholder anywhere | Support for `_` placeholder (R 4.2+, named args only) |
+| **Syntax Errors** | Caught during runtime | Caught during parsing |
+| **Debugging** | Deep nested stack traces | Standard simple stack traces |
+
+```R
+# Placeholder comparison:
+# magrittr:
+mtcars %>% lm(mpg ~ cyl, data = .)
+
+# Native R (4.2+):
+mtcars |> lm(mpg ~ cyl, data = _)
+```
