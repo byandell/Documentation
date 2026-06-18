@@ -70,6 +70,9 @@ These have been compiled in [datasets.csv](https://github.com/byandell/geospatia
 Data are stored in different
 [coordinate systems](../python/#coordinate-systems--projections),
 which makes it important to transform between them.
+See for instance
+[GPS Coordinates](https://gps-coordinates.org/)
+to relate, for instance, latitude and longitude to UTM (decimal) coordinates.
 
 ## Geospatial Workshops
 
