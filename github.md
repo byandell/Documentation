@@ -14,12 +14,20 @@ was modeled on (forked from)
 <https://github.com/barryclark/jekyll-now>.
 This has to cool feature of blog pages.
 
-In addition to my main GitHub Page, I have a separately generated subpage
-[byandell.github.io/ESIIL](https://byandell.github.io/ESIIL),
-with source at
-<https://github.com/byandell/ESIIL>,
-that was forked from
-<https://github.com/CU-ESIIL/Postdoc_OASIS>.
+In addition to my main GitHub Page, I have a subpages
+that are built separately in different GitHub repos:
+
+- [byandell.github.io/ESIIL](https://byandell.github.io/ESIIL),
+([GitHub](https://github.com/byandell/ESIIL)):
+ESIIL EDA Course
+- [byandell.github.io/Documentation](https://byandell.github.io/Documentation):
+Documentation of Digital Tools
+- [byandell.github.io/geyser](https://byandell.github.io/geyser/):
+Geyser Shiny App with Modules
+- [byandell.github.io/landmapyr](https://byandell.github.io/landmapyr/):
+Land Mapping with Python, R and Quarto (coming)
+
+## General GitHub and Git Information
 
 - [R for Data Sciences GitHub Links](https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/organize/github.md)
   - [Get started with GitHub (Happy Git with R)](https://happygitwithr.com/usage-intro#usage-intro)
