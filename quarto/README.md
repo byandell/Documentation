@@ -2,14 +2,14 @@
 
 ## Slide Decks
 
-- [R for the Data Sciences](./R.html)
-- [Python References & Coding Strategy](./python.html)
-- [GitHub, Connect, and CodeSpaces](./github.html)
-- [Environmental Systems & Geospatial References](./envsys.html)
-- [Modular Shiny Applications](./ShinyApps.html)
-- [Artificial Intelligence (AI) References](./AI.html)
-  - [AI Prompt Examples](./prompts.html)
-- [Geyser Shiny Examples](https://github.com/byandell/geyser)
+- [R for the Data Sciences](./R.html) ([`qmd`](../R.qmd))
+- [Python References & Coding Strategy](./python.html) ([`qmd`](../python.qmd))
+- [GitHub, Connect, and CodeSpaces](./github.html) ([`qmd`](../github.qmd))
+- [Environmental Systems & Geospatial References](./envsys.html) ([`qmd`](../envsys.qmd))
+- [Modular Shiny Applications](./ShinyApps.html) ([`qmd`](../ShinyApps.qmd))
+- [Artificial Intelligence (AI) References](./AI.html) ([`qmd`](../AI.qmd))
+  - [AI Prompt Examples](./prompts.html) ([`qmd`](../prompts.qmd))
+- [Geyser Shiny Examples](https://byandell.github.io/geyser)
 - [Quarto Narrative](./narrative.html)
 
 ## Quarto References
