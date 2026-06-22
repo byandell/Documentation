@@ -2,13 +2,13 @@
 
 ## Slide Decks
 
-- [R for the Data Sciences](./R.html) ([`qmd`](../R.qmd))
-- [Python References & Coding Strategy](./python.html) ([`qmd`](../python.qmd))
-- [GitHub, Connect, and CodeSpaces](./github.html) ([`qmd`](../github.qmd))
-- [Environmental Systems & Geospatial References](./envsys.html) ([`qmd`](../envsys.qmd))
-- [Modular Shiny Applications](./ShinyApps.html) ([`qmd`](../ShinyApps.qmd))
-- [Artificial Intelligence (AI) References](./AI.html) ([`qmd`](../AI.qmd))
-  - [AI Prompt Examples](./prompts.html) ([`qmd`](../prompts.qmd))
+- [R for the Data Sciences](./R.html) ([`qmd`](https://github.com/byandell/Documentation/blob/main/quarto/R.qmd))
+- [Python References & Coding Strategy](./python.html) ([`qmd`](https://github.com/byandell/Documentation/blob/main/quarto/python.qmd))
+- [GitHub, Connect, and CodeSpaces](./github.html) ([`qmd`](https://github.com/byandell/Documentation/blob/main/quarto/github.qmd))
+- [Environmental Systems & Geospatial References](./envsys.html) ([`qmd`](https://github.com/byandell/Documentation/blob/main/quarto/envsys.qmd))
+- [Modular Shiny Applications](./ShinyApps.html) ([`qmd`](https://github.com/byandell/Documentation/blob/main/quarto/ShinyApps.qmd))
+- [Artificial Intelligence (AI) References](./AI.html) ([`qmd`](https://github.com/byandell/Documentation/blob/main/quarto/AI.qmd))
+  - [AI Prompt Examples](./prompts.html) ([`qmd`](https://byandell/Documentation/quarto/prompts.qmd))
 - [Geyser Shiny Examples](https://byandell.github.io/geyser)
 - [Quarto Narrative](./narrative.html)
 
