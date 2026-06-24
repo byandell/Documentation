@@ -27,7 +27,7 @@ format:
   - [Documentation](https://byandell.github.io/Documentation) ([source](https://github.com/byandell/Documentation)): Digital Tools
   - [geyser](https://byandell.github.io/geyser/) ([source](https://github.com/byandell/geyser)): Shiny App with Modules
   - [landmapyr](https://byandell-envsys.github.io/landmapyr/) ([source](https://github.com/byandell-envsys/landmapyr)): Land Mapping Package
-  - [esiil-stars](https://byandell.github.io/esiil-stars) ([source](https://github.com/byandell/esiil-stars)): ESIIL Stars Training Notes
+  - [esiil-stars](https://byandell.github.io/esiil-stars) ([source](https://github.com/byandell/esiil-stars)): ESIIL Stars Training
   - [ESIIL](https://byandell.github.io/ESIIL) ([source](https://github.com/byandell/ESIIL)): ESIIL Research
 :::
 
