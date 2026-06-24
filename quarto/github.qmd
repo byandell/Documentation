@@ -22,16 +22,24 @@ format:
 ::: {.column width="60%"}
 ### Static Portfolio Hosting
 - **[GitHub Pages](https://docs.github.com/en/pages)**: Free static web hosting directly from GitHub repositories.
-- **Main Portfolio**: [byandell.github.io](https://byandell.github.io) (source: [byandell.github.io repo](https://github.com/byandell/byandell.github.io)), modeled on the [Jekyll Now](https://github.com/barryclark/jekyll-now) template.
-- **Subpages**: Separately generated project pages, such as [byandell.github.io/ESIIL](https://byandell.github.io/ESIIL) (source: [ESIIL repo](https://github.com/byandell/ESIIL)), forked from `Postdoc_OASIS`.
+- **Main Portfolio**: [byandell.github.io](https://byandell.github.io) ([source](https://github.com/byandell/byandell.github.io)), modeled on [Jekyll Now](https://github.com/barryclark/jekyll-now).
+- **Subpages** (separate repos):
+  - [Documentation](https://byandell.github.io/Documentation) ([source](https://github.com/byandell/Documentation)): Digital Tools
+  - [geyser](https://byandell.github.io/geyser/) ([source](https://github.com/byandell/geyser)): Shiny App with Modules
+  - [landmapyr](https://byandell-envsys.github.io/landmapyr/) ([source](https://github.com/byandell-envsys/landmapyr)): Land Mapping Package
+  - [esiil-stars](https://byandell.github.io/esiil-stars) ([source](https://github.com/byandell/esiil-stars)): ESIIL Stars Training Notes
+  - [ESIIL](https://byandell.github.io/ESIIL) ([source](https://github.com/byandell/ESIIL)): ESIIL Research
 :::
 
 ::: {.column width="40%"}
 ::: {.callout-note}
 ### Core References
+- [GitHub Pages Docs](https://docs.github.com/en/pages)
 - [Publishing Project Docs](https://github.blog/developer-skills/github/publish-your-project-documentation-with-github-pages/)
 - [Jekyll Now Blog Setup](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
+- [GitHub Page Themes](https://pages.github.com/themes/) & [Other Themes](https://github.com/barryclark/jekyll-now/#other-forkable-themes)
 - [Portfolio Creation Guide](https://cu-esiil-edu.github.io/esiil-learning-portal/shortcourse/pages/03-git-github/03-github-portfolio/01-create-portfolio-website.html) (ESIIL)
+- [GitHub Actions](https://docs.github.com/en/actions)
 :::
 :::
 :::
@@ -42,16 +50,21 @@ format:
 ::: {.column width="55%"}
 ### Static Generators & Themes
 - **Jekyll**: Default Ruby-based builder used by GitHub Pages. Fast setup using forkable themes.
-- **[MkDocs](https://github.com/mkdocs/mkdocs)**: Advanced Python-based alternative for technical docs.
-  - Deploys clean layouts using themes like [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/publishing-your-site/).
+- **[MkDocs](https://github.com/mkdocs/mkdocs/tree/master)**: Advanced Python-based alternative for technical docs.
+  - Deploys layouts using themes like [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/publishing-your-site/).
+  - See [Deploying your docs](https://www.mkdocs.org/user-guide/deploying-your-docs/).
 :::
 
 ::: {.column width="45%"}
 ### Git Troubleshooting & Help
-- **[Happy Git with R](https://happygitwithr.com/)**: Standard resource for version control onboarding and troubleshooting.
-- **Git Clients**:
-  - [Install Git for Windows](https://git-scm.com/install/windows) (Git-SCM).
-  - [Install Git Guides](https://github.com/git-guides/install-git).
+- **[Happy Git with R](https://happygitwithr.com/)**: Standard resource for onboarding and troubleshooting.
+  - [Get Started with GitHub](https://happygitwithr.com/usage-intro#usage-intro)
+  - [Git Troubleshooting](https://happygitwithr.com/troubleshooting)
+- **UW-Madison DataScience**:
+  - [GitHub Links](https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/organize/github.md)
+- **Git Clients & Setup**:
+  - [Install Git for Windows](https://git-scm.com/install/windows) (Git-SCM)
+  - [Install Git Guides](https://github.com/git-guides/install-git)
 :::
 :::
 
@@ -76,6 +89,7 @@ OAuth authentication errors can prevent git pushes if you modify GitHub Actions 
 ::: {.callout-note}
 ### Documentation Links
 - [renv Home Page](https://rstudio.github.io/renv/)
+- [Manage dependencies with renv](https://www.r-bloggers.com/2021/03/new-on-techguides-manage-dependencies-with-renv/)
 - [Using renv with Connect](https://pkgs.rstudio.com/renv/articles/rsconnect.html)
 - [Posit Package Management](https://docs.posit.co/connect/admin/r/package-management/)
 :::
@@ -134,6 +148,7 @@ Always **stop** your codespaces when done! Inactive but running codespaces conti
 :::
 
 ### Useful Links:
+- [GitHub Codespaces Overview](https://docs.github.com/en/codespaces/overview) & [Documentation](https://docs.github.com/en/codespaces)
 - [Codespaces Quickstart](https://docs.github.com/en/codespaces/getting-started/quickstart)
 - [Visual Studio Code Codespaces Guide](https://code.visualstudio.com/docs/remote/codespaces)
-- [How to Stop a Codespace](https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace#stopping-a-codespace)
+- [Stopping and starting a codespace](https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace#stopping-a-codespace)

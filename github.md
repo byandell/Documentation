@@ -3,8 +3,13 @@
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 
 - [GitHub, Connect, and CodeSpaces (Quarto Slideshow)](https://byandell.github.io/Documentation/quarto/github.html)
+- [My GitHub Pages](#my-github-pages)
+- [General GitHub and Git Information](#general-github-and-git-information)
+- [GitHub Pages](#github-pages)
+- [Connect](#connect)
+- [CodeSpaces](#codespaces)
 
-## GitHub Pages
+## My GitHub Pages
 
 My main GitHub Page
 [byandell.github.io](https://byandell.github.io),
@@ -12,28 +17,34 @@ with source at
 <https://github.com/byandell/byandell.github.io>,
 was modeled on (forked from)
 <https://github.com/barryclark/jekyll-now>.
-This has to cool feature of blog pages.
+This has cool features like blog pages.
 
 In addition to my main GitHub Page, I have a subpages
 that are built separately in different GitHub repos:
 
+- [byandell.github.io/Documentation](https://byandell.github.io/Documentation):
+Documentation of Digital Tools (whole repo)
+- [byandell.github.io/geyser](https://byandell.github.io/geyser/):
+Geyser Shiny App with Modules (`docs/` folder)  
+- [byandell-envsys.github.io/landmapyr](https://byandell-envsys.github.io/landmapyr/):
+Land Mapping Package (`docs/` folder)
+- [byandell.github.io/esiil-stars](https://byandell.github.io/esiil-stars):
+ESIIL Stars Training Notes (whole repo)
 - [byandell.github.io/ESIIL](https://byandell.github.io/ESIIL),
 ([GitHub](https://github.com/byandell/ESIIL)):
-ESIIL EDA Course
-- [byandell.github.io/Documentation](https://byandell.github.io/Documentation):
-Documentation of Digital Tools
-- [byandell.github.io/geyser](https://byandell.github.io/geyser/):
-Geyser Shiny App with Modules
-- [byandell.github.io/landmapyr](https://byandell.github.io/landmapyr/):
-Land Mapping with Python, R and Quarto (coming)
+ESIIL Research (`docs/` folder using
+[MkDocs](https://www.mkdocs.org/))
 
 ## General GitHub and Git Information
 
-- [R for Data Sciences GitHub Links](https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/organize/github.md)
-  - [Get started with GitHub (Happy Git with R)](https://happygitwithr.com/usage-intro#usage-intro)
-  - [Git and GitHub Troubleshooting](https://happygitwithr.com/troubleshooting)
-  - [Install Git for Windows (Git-SCM)](https://git-scm.com/install/windows)
-  - [Install Git (Git Guides)](https://github.com/git-guides/install-git)
+- [GitHub Links (UW-Madison-DataScience)](https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/organize/github.md)
+- [Get started with GitHub (Happy Git with R)](https://happygitwithr.com/usage-intro#usage-intro)
+- [Git and GitHub Troubleshooting](https://happygitwithr.com/troubleshooting)
+- [Install Git for Windows (Git-SCM)](https://git-scm.com/install/windows)
+- [Install Git (Git Guides)](https://github.com/git-guides/install-git)
+
+## GitHub Pages
+
 - [ESIIL Data Short Course: Create your own portfolio webpage](https://cu-esiil-edu.github.io/esiil-learning-portal/shortcourse/pages/03-git-github/03-github-portfolio/01-create-portfolio-website.html)
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)
 - [Publish Your Project Documentation with GitHub Pages](https://github.blog/developer-skills/github/publish-your-project-documentation-with-github-pages/)
@@ -41,6 +52,7 @@ Land Mapping with Python, R and Quarto (coming)
 - [Jekyll Now](https://github.com/barryclark/jekyll-now)
   - [Build A Blog With Jekyll And GitHub Pages](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
   - [Other forkable themes](https://github.com/barryclark/jekyll-now/#other-forkable-themes)
+- [GitHub Actions](https://docs.github.com/en/actions)
 - [MkDocs](https://github.com/mkdocs/mkdocs/tree/master) (advanced topic)
   - [Materials for MkDocs: Publishing your site](https://squidfunk.github.io/mkdocs-material/publishing-your-site/)
   - [Deploying your docs](https://www.mkdocs.org/user-guide/deploying-your-docs/)

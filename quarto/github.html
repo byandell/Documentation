@@ -442,7 +442,7 @@
   <meta name="generator" content="quarto-1.6.33">
 
   <meta name="author" content="Brian Yandell (byandell.github.io)">
-  <meta name="dcterms.date" content="2026-06-18">
+  <meta name="dcterms.date" content="2026-06-24">
   <title>GitHub, Posit Connect &amp; CodeSpaces</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1063,7 +1063,7 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
 </div>
 </div>
 
-  <p class="date">2026-06-18</p>
+  <p class="date">2026-06-24</p>
 </section>
 <section>
 <section id="github-pages-portfolios" class="title-slide slide level1 center" data-background-color="#e0f2fe">
@@ -1077,8 +1077,15 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
 <h3 id="static-portfolio-hosting">Static Portfolio Hosting</h3>
 <ul>
 <li><strong><a href="https://docs.github.com/en/pages">GitHub Pages</a></strong>: Free static web hosting directly from GitHub repositories.</li>
-<li><strong>Main Portfolio</strong>: <a href="https://byandell.github.io">byandell.github.io</a> (source: <a href="https://github.com/byandell/byandell.github.io">byandell.github.io repo</a>), modeled on the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now</a> template.</li>
-<li><strong>Subpages</strong>: Separately generated project pages, such as <a href="https://byandell.github.io/ESIIL">byandell.github.io/ESIIL</a> (source: <a href="https://github.com/byandell/ESIIL">ESIIL repo</a>), forked from <code>Postdoc_OASIS</code>.</li>
+<li><strong>Main Portfolio</strong>: <a href="https://byandell.github.io">byandell.github.io</a> (<a href="https://github.com/byandell/byandell.github.io">source</a>), modeled on <a href="https://github.com/barryclark/jekyll-now">Jekyll Now</a>.</li>
+<li><strong>Subpages</strong> (separate repos):
+<ul>
+<li><a href="https://byandell.github.io/Documentation">Documentation</a> (<a href="https://github.com/byandell/Documentation">source</a>): Digital Tools</li>
+<li><a href="https://byandell.github.io/geyser/">geyser</a> (<a href="https://github.com/byandell/geyser">source</a>): Shiny App with Modules</li>
+<li><a href="https://byandell-envsys.github.io/landmapyr/">landmapyr</a> (<a href="https://github.com/byandell-envsys/landmapyr">source</a>): Land Mapping Package</li>
+<li><a href="https://byandell.github.io/esiil-stars">esiil-stars</a> (<a href="https://github.com/byandell/esiil-stars">source</a>): ESIIL Stars Training Notes</li>
+<li><a href="https://byandell.github.io/ESIIL">ESIIL</a> (<a href="https://github.com/byandell/ESIIL">source</a>): ESIIL Research</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:40%;">
 <div class="callout callout-note callout-titled callout-style-default">
@@ -1091,9 +1098,12 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
 </div>
 <div class="callout-content">
 <ul>
+<li><a href="https://docs.github.com/en/pages">GitHub Pages Docs</a></li>
 <li><a href="https://github.blog/developer-skills/github/publish-your-project-documentation-with-github-pages/">Publishing Project Docs</a></li>
 <li><a href="https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/">Jekyll Now Blog Setup</a></li>
+<li><a href="https://pages.github.com/themes/">GitHub Page Themes</a> &amp; <a href="https://github.com/barryclark/jekyll-now/#other-forkable-themes">Other Themes</a></li>
 <li><a href="https://cu-esiil-edu.github.io/esiil-learning-portal/shortcourse/pages/03-git-github/03-github-portfolio/01-create-portfolio-website.html">Portfolio Creation Guide</a> (ESIIL)</li>
+<li><a href="https://docs.github.com/en/actions">GitHub Actions</a></li>
 </ul>
 </div>
 </div>
@@ -1107,19 +1117,28 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
 <h3 id="static-generators-themes">Static Generators &amp; Themes</h3>
 <ul>
 <li><strong>Jekyll</strong>: Default Ruby-based builder used by GitHub Pages. Fast setup using forkable themes.</li>
-<li><strong><a href="https://github.com/mkdocs/mkdocs">MkDocs</a></strong>: Advanced Python-based alternative for technical docs.
+<li><strong><a href="https://github.com/mkdocs/mkdocs/tree/master">MkDocs</a></strong>: Advanced Python-based alternative for technical docs.
 <ul>
-<li>Deploys clean layouts using themes like <a href="https://squidfunk.github.io/mkdocs-material/publishing-your-site/">Material for MkDocs</a>.</li>
+<li>Deploys layouts using themes like <a href="https://squidfunk.github.io/mkdocs-material/publishing-your-site/">Material for MkDocs</a>.</li>
+<li>See <a href="https://www.mkdocs.org/user-guide/deploying-your-docs/">Deploying your docs</a>.</li>
 </ul></li>
 </ul>
 </div><div class="column" style="width:45%;">
 <h3 id="git-troubleshooting-help">Git Troubleshooting &amp; Help</h3>
 <ul>
-<li><strong><a href="https://happygitwithr.com/">Happy Git with R</a></strong>: Standard resource for version control onboarding and troubleshooting.</li>
-<li><strong>Git Clients</strong>:
+<li><strong><a href="https://happygitwithr.com/">Happy Git with R</a></strong>: Standard resource for onboarding and troubleshooting.
 <ul>
-<li><a href="https://git-scm.com/install/windows">Install Git for Windows</a> (Git-SCM).</li>
-<li><a href="https://github.com/git-guides/install-git">Install Git Guides</a>.</li>
+<li><a href="https://happygitwithr.com/usage-intro#usage-intro">Get Started with GitHub</a></li>
+<li><a href="https://happygitwithr.com/troubleshooting">Git Troubleshooting</a></li>
+</ul></li>
+<li><strong>UW-Madison DataScience</strong>:
+<ul>
+<li><a href="https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/organize/github.md">GitHub Links</a></li>
+</ul></li>
+<li><strong>Git Clients &amp; Setup</strong>:
+<ul>
+<li><a href="https://git-scm.com/install/windows">Install Git for Windows</a> (Git-SCM)</li>
+<li><a href="https://github.com/git-guides/install-git">Install Git Guides</a></li>
 </ul></li>
 </ul>
 </div></div>
@@ -1164,6 +1183,7 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
 <div class="callout-content">
 <ul>
 <li><a href="https://rstudio.github.io/renv/">renv Home Page</a></li>
+<li><a href="https://www.r-bloggers.com/2021/03/new-on-techguides-manage-dependencies-with-renv/">Manage dependencies with renv</a></li>
 <li><a href="https://pkgs.rstudio.com/renv/articles/rsconnect.html">Using renv with Connect</a></li>
 <li><a href="https://docs.posit.co/connect/admin/r/package-management/">Posit Package Management</a></li>
 </ul>
@@ -1238,9 +1258,10 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
 </div></div>
 <h3 id="useful-links">Useful Links:</h3>
 <ul>
+<li><a href="https://docs.github.com/en/codespaces/overview">GitHub Codespaces Overview</a> &amp; <a href="https://docs.github.com/en/codespaces">Documentation</a></li>
 <li><a href="https://docs.github.com/en/codespaces/getting-started/quickstart">Codespaces Quickstart</a></li>
 <li><a href="https://code.visualstudio.com/docs/remote/codespaces">Visual Studio Code Codespaces Guide</a></li>
-<li><a href="https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace#stopping-a-codespace">How to Stop a Codespace</a></li>
+<li><a href="https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace#stopping-a-codespace">Stopping and starting a codespace</a></li>
 </ul>
 
 
