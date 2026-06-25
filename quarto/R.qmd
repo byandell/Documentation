@@ -14,7 +14,7 @@ format:
     highlight-style: github
 ---
 
-# R Digital Tools 
+# R Digital Tools Contents 
 
 - [Study Group Syllabus](#study-group-syllabus)
 - [6 Data Science Verbs](#data-science-verbs)
