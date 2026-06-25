@@ -76,7 +76,7 @@ Many thanks to Douglas Bates and the COMBEE Study Group for co-teaching and shar
 
 # The 6 Data Science Verbs {background-color="#f0fdf4"}
 
-## 1. Curate: Data Structures & Import {.compact-slide}
+## [1. Curate: Data Structures & Import](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/curate) {.compact-slide}
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -96,7 +96,7 @@ Many thanks to Douglas Bates and the COMBEE Study Group for co-teaching and shar
 :::
 :::
 
-## 2. Visualize: Grammar of Graphics {.compact-slide}
+## [2. Visualize: Grammar of Graphics](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/visualize) {.compact-slide}
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -118,7 +118,7 @@ Many thanks to Douglas Bates and the COMBEE Study Group for co-teaching and shar
 :::
 :::
 
-## 3. Organize: Workflows & Databases {.compact-slide}
+## [3. Organize: Workflows & Databases](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/organize) {.compact-slide}
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -141,7 +141,7 @@ Many thanks to Douglas Bates and the COMBEE Study Group for co-teaching and shar
 :::
 :::
 
-## 4. Analyze: Models & Formulas {.compact-slide}
+## [4. Analyze: Models & Formulas](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/analyze) {.compact-slide}
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -162,7 +162,7 @@ Many thanks to Douglas Bates and the COMBEE Study Group for co-teaching and shar
 :::
 :::
 
-## 5. Profile: Optimization & Simulation {.compact-slide}
+## [5. Profile: Optimization & Simulation](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/profile) {.compact-slide}
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -181,7 +181,7 @@ Many thanks to Douglas Bates and the COMBEE Study Group for co-teaching and shar
 :::
 :::
 
-## 6. Connect: Interoperability {.compact-slide}
+## [6. Connect: Interoperability](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/connect) {.compact-slide}
 
 ::: {.columns}
 ::: {.column width="60%"}
