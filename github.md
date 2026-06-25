@@ -6,6 +6,7 @@ _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
 - [My GitHub Pages](#my-github-pages)
 - [General GitHub and Git Information](#general-github-and-git-information)
 - [GitHub Pages](#github-pages)
+- [Shinylive](#shinylive)
 - [Connect](#connect)
 - [CodeSpaces](#codespaces)
 
@@ -57,6 +58,23 @@ ESIIL Research (`docs/` folder using
   - [Materials for MkDocs: Publishing your site](https://squidfunk.github.io/mkdocs-material/publishing-your-site/)
   - [Deploying your docs](https://www.mkdocs.org/user-guide/deploying-your-docs/)
 - [Resolving Git Push for CI/CD Workflows (TutorialPedia)](https://www.tutorialpedia.org/blog/how-to-resolve-refusing-to-allow-an-oauth-app-to-create-or-update-workflow-on-git-push/)
+
+## Shinylive
+
+It is possible to host a client-side (browser run)
+Shiny app provided it is fairly simple.
+The tool to do this is
+[Shinylive](https://shiny.posit.co/py/get-started/shinylive.html),
+which was probably originally developed for `Python`
+and is now available for `R` as
+[r-shinylive](https://posit-dev.github.io/r-shinylive/).
+It has some challenges as all material must
+be self-contained in the app, including data.
+
+- [Python Shinylive: Shiny + WebAssembly (Posit)](https://shiny.posit.co/py/get-started/shinylive.html)
+- [r-shinylive](https://posit-dev.github.io/r-shinylive/)
+- [py-shinylive](https://github.com/posit-dev/py-shinylive)
+- [Using Shinylive to host Shiny app on GitHub Pages (HBC Training)](https://hbctraining.github.io/Training-modules/RShiny/lessons/shinylive.html).
 
 ## Connect
 
