@@ -1,6 +1,6 @@
 ---
-title: "R for the Data Sciences"
-subtitle: "Study Groups, Radian in VS Code, and Core Workflows"
+title: "R Digital Tools"
+subtitle: "Study Group, 6 Verbs, IDEs, Pipes"
 author: "Brian Yandell ([_byandell.github.io_](https://byandell.github.io))"
 date: last-modified
 format:
@@ -14,7 +14,14 @@ format:
     highlight-style: github
 ---
 
-# COMBEE Study Groups & Syllabus {background-color="#e0f2fe"}
+# R Digital Tools 
+
+- [Study Group Syllabus](#study-group-syllabus)
+- [6 Data Science Verbs](#data-science-verbs)
+- [Interactive Development Environments (IDEs)](#interactive-development-environments)
+- [Pipes in R](#pipes-in-r)
+
+# Study Group Syllabus {background-color="#e0f2fe"}
 
 ## R for Teams in the Data Sciences {.compact-slide}
 
@@ -74,7 +81,7 @@ Additional resources located in the repository root directory:
 Many thanks to Douglas Bates and the COMBEE Study Group for co-teaching and sharing the early versions of these materials in 2014–2017.
 :::
 
-# The 6 Data Science Verbs {background-color="#f0fdf4"}
+# 6 Data Science Verbs {background-color="#f0fdf4"}
 
 ## [1. Curate: Data Structures & Import](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/curate) {.compact-slide}
 
@@ -203,7 +210,7 @@ Many thanks to Douglas Bates and the COMBEE Study Group for co-teaching and shar
 :::
 :::
 
-# Development Environments & Radian {background-color="#e0f2fe"}
+# Interactive Development Environments {background-color="#e0f2fe"}
 
 ## Using R in VS Code {.compact-slide}
 
@@ -278,7 +285,7 @@ In your `.Rprofile` home file, disable automatic completion-on-type to prevent l
 options(radian.complete_while_typing = FALSE)
 ```
 
-# Core Coding: Native vs Magrittr Pipes {background-color="#e0f2fe"}
+# Pipes in R {background-color="#e0f2fe"}
 
 ## Pipes: Native `|>` vs Magrittr `%>%` {.compact-slide}
 
