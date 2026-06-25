@@ -2,7 +2,7 @@
 
 ## Slide Decks
 
-- [R for the Data Sciences](./R.html) ([source](https://github.com/byandell/Documentation/blob/main/quarto/R.qmd))
+- [R Digital Tools](./R.html) ([source](https://github.com/byandell/Documentation/blob/main/quarto/R.qmd))
 - [Python References & Coding Strategy](./python.html) ([source](https://github.com/byandell/Documentation/blob/main/quarto/python.qmd))
 - [GitHub, Connect, and CodeSpaces](./github.html) ([source](https://github.com/byandell/Documentation/blob/main/quarto/github.qmd))
 - [Environmental Systems & Geospatial References](./envsys.html) ([source](https://github.com/byandell/Documentation/blob/main/quarto/envsys.qmd))
