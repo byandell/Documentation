@@ -360,4 +360,4 @@ They help streamline the process of scaling AI solutions across different enviro
 - [What is Harness Engineering? (Emily Winks, atlan)](https://atlan.com/know/what-is-harness-engineering/)
 - [AI Harnesses and CLIs, Explained (Grant Harvey, eero)](https://www.theneuron.ai/explainer-articles/ai-harnesses-and-clis-explained-the-real-reason-everyones-talking-about-infrastructure/)
 - [What is a Harness? (Agentic Engineering, Jaymin West)](https://www.jayminwest.com/agentic-engineering-book/6-harnesses/1-what-is-a-harness)
-- [What the Rapid Adoption of the “Harness” Metaphor in Artificial Intelligence Reveals About How We Conceptualize Human–AI Relations (Andrew Maynard)](https://andrewmaynard.net/preprints-and-works-in-progress/)
+- [What the Rapid Adoption of the “Harness” Metaphor in Artificial Intelligence Reveals About How We Conceptualize Human–AI Relations (Andrew Maynard)](https://andrewmaynard.net/what-the-rapid-adoption-of-the-harness-metaphor-in-artificial-intelligence-reveals-about-how-we-conceptualize-human-ai-relations/)
