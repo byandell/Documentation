@@ -6,7 +6,7 @@
 - [GitHub, Connect, and CodeSpaces](./github/) ([slide deck](./quarto/github.html))
 - [Environmental Systems References](./envsys/) ([slide deck](./quarto/envsys.html))
 - [Shiny Apps](./ShinyApps.md) ([slide deck](./quarto/ShinyApps.html))
-- [Artificial Intelligence (AI)](./AI.md) ([slide deck](./quarto/AI.html))
+- [Artificial Intelligence (AI)](./AI/) ([slide deck](./quarto/AI.html))
   - [AI Prompt Examples](./prompts/) ([slide deck](./quarto/prompts.html))
 - [Quarto Slide Decks & References](./quarto/)
 
@@ -105,7 +105,7 @@ My learning about AI agents and tools is evolving, including the repository
 Initial thoughts on so-called artifical intelligence are in my blog about
 Jaron Lanier's
 [There is no AI](https://byandell.github.io/Jaron-Lanier-There-is-no-AI/).
-References about the concept and evolution "AI" tools are in [AI.md](./AI.md).
+References about the concept and evolution "AI" tools are in [AI/](./AI/).
 
 Migrated to GitHub Pages on 2026-06-16 with help of
 [Convert Markdown to GitHub Pages](https://nicolas-van.github.io/easy-markdown-to-github-pages/)

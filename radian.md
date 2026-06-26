@@ -14,7 +14,7 @@ _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
 While you can use the enhanced R tool
 [radian](https://github.com/randian-r/radian)
 within
-[AI environments](AI.md), they are not as seamless as
+[AI environments](AI/env.md), they are not as seamless as
 [Posit's RStudio](https://posit.co/download/rstudio-desktop/).
 In fact, `radian` can interfere with the "memory" and operation of these tools.
 

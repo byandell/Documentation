@@ -14,6 +14,12 @@ format:
     highlight-style: github
 ---
 
+# Artificial Intelligence (AI) Contents
+
+- [Perspectives & Environmental Impact](#perspectives-environmental-impact)
+- [AI Environments](#ai-environments)
+- [Prompt & Context Engineering](#prompt-context-engineering)
+
 # Perspectives & Environmental Impact {background-color="#e0f2fe"}
 
 ## How Might We Think About AI?
@@ -87,6 +93,20 @@ Scientists warn in *Nature* that uncritical adoption of AI in science requires u
 :::
 
 # AI Environments {background-color="#e0f2fe"}
+
+## What is an AI Environment?
+
+### Setting for AI Systems to Operate & Interact
+
+- **Components**: Hardware, software, data, and algorithms.
+- **Types**: Physical (robots) or virtual (simulations, cloud platforms).
+- **Feedback**: Allows real-time interaction and feedback with surroundings.
+- **Machine Learning**: Enables adaptation and improvement over time.
+
+::: {.callout-note}
+### Applications
+Autonomous vehicles, smart homes, virtual assistants, and connected IDEs.
+:::
 
 ## Connected Development Environments
 
@@ -193,6 +213,24 @@ Key characteristics of open-source models available viaCyVerse AI Verde:
 - **Quantization Level**: Bit-depth (e.g., FP16, INT8, 4-bit) defining the RAM memory requirements.
 - **Developer & License**: Lineage (Google Gemma, Meta Llama, Qwen, GLM) and licensing restrictions (Apache 2.0 vs Llama licenses).
 - **Modalities**: Support for text-only versus multimodal inputs (images, audio, video).
+
+## What is an AI Harness?
+
+::: {.columns}
+::: {.column width="50%"}
+### The Harness Metaphor
+- **Horse Metaphor**: Ethan Mollick compares an LLM to a powerful horse. Without a harness (bridle, reins, saddle), it has no direction or boundaries.
+- **Harness Engineering**: Mitchell Hashimoto defines it as engineering solutions so an agent never repeats a mistake.
+- **Normalizing Term**: Mollick organizes AI into *Models, Apps, and Harnesses*.
+:::
+
+::: {.column width="50%"}
+### Analogies & Purpose
+- *"The model is commodity. The harness is the moat."* (Sarah Chen)
+- *"The model is the engine. The harness is the car."* (Grant Harvey)
+- **Integration**: A framework to channel raw model capabilities into directed, controlled, and useful workflows.
+:::
+:::
 
 # Prompt & Context Engineering {background-color="#e0f2fe"}
 

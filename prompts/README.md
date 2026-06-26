@@ -1,7 +1,7 @@
 # AI Prompt Examples
 
 How will you later remember how you used
-[Artificial Intelligence (AI)](../AI.md) to advance your projects?
+[Artificial Intelligence (AI)](../AI/) to advance your projects?
 And how will you share your learning with others?
 Here are some examples of prompts that I have used with AI agents to help me,
 and teams in interacting with projects.
@@ -99,7 +99,7 @@ Include `docstrings` (python) or `roxygen2` (R) and type hints in all code.
 
 - [System Instructions Intro](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/system-instruction-introduction)
 - [System Instructions Use](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/system-instructions)
-- [Agent Skills](AI.md#agent-skills)
+- [Agent Skills](../AI/context.md#agent-skills--skillmd-actionable-capabilities)
 
 ### Prompt CRAFTs
 
@@ -299,7 +299,7 @@ The
 is a refinement of the workflow developed for
 [sysgenAnalysis](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/).
 This particular prompt, which is described conceptually in
-[Prompts to Organize Workflows](../AI.md#prompts-to-organize-workflows),
+[Prompts to Organize Workflows](../AI/prompt.md#prompts-to-organize-workflows),
 transforms an R workflow into functions in an R package,
 including a function to run the workflow and another function to explore the results.
 
