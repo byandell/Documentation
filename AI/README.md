@@ -10,11 +10,6 @@ To learn about (generative) AI, start with the self-paced workshop on
   - [How might we think about AI?](#how-might-we-think-about-ai)
   - [What about ethics and environmental impact of AI?](#what-about-ethics-and-environmental-impact-of-ai)
 - [AI Environments](env.md)
-  - [Cloud-Based Research Environments](env.md#cloud-based-research-environments)
-  - [Google Gemini and Antigravity](env.md#google-gemini-and-antigravity)
-  - [Other AI Environments](env.md#other-ai-environments)
-  - [Agentic AI](env.md#agentic-ai)
-  - [Large Language Models](env.md#large-language-models)
 - [Prompt Engineering](prompt.md)
 - [Context Engineering](context.md)
 
