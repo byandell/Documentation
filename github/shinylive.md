@@ -7,7 +7,7 @@ so that it can be published with `shinylive`.
 
 **Response:**
 AI successfully updated the app setup to work natively in Shinylive / WebAssembly without requiring the `geyser` package to be pre-built and downloaded from a Wasm repository.
-[Turns out this did not work as the app is too complicated. However, it offers useful insights.]
+[Turns out this did not work as the app is too complicated. I reversed these changes. However, it offers useful insights.]
 
 ## R commands
 
@@ -24,11 +24,11 @@ httpuv::runStaticServer("docs/shiny/", port = 8008)
 
 ### 1. Copied Package Modules to App Directory
 
-Copied the package module R scripts from the root `R/` directory directly into the [inst/connect_modules/R/](file:///Users/brianyandell/Documents/GitHub/geyser/inst/connect_modules/R) directory so they are bundled into `docs/shiny` during `shinylive::export()`.
+Copied the package module R scripts from the root `R/` directory directly into the `inst/connect_modules/R/` directory so they are bundled into `docs/shiny` during `shinylive::export()`.
 
 ### 2. Created Load Helper
 
-Created [load_geyser.R](file:///Users/brianyandell/Documents/GitHub/geyser/inst/connect_modules/load_geyser.R) in the app directory to handle loading package code dynamically depending on the execution context:
+Created `load_geyser.R` in the app directory to handle loading package code dynamically depending on the execution context:
 
 - Sourcing from `R/` (when running inside the Shinylive bundle).
 - Sourcing from `../../R/` (when running app files directly from `inst/connect_modules/` during local development).

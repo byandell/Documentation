@@ -25,7 +25,7 @@ If you want a serverless, static version of this dashboard, you have two options
 
 #### Option A: Use the R Shiny App (Already Done)
 
-The Shiny application in [inst/connect_modules/app.R](file:///Users/brianyandell/Documents/GitHub/geyser/inst/connect_modules/app.R) already contains the same plots and logic as `demo.qmd`.
+The Shiny application in [inst/connect_modules/app.R](https://github.com/byandell/geyser/blob/main/inst/connect_modules/app.R) already contains the same plots and logic as `demo.qmd`.
 
 * Because it is a standard Shiny app, it is fully compatible with `shinylive::export()`.
 * It is already successfully exported as a serverless, static app in your `docs/shiny/` directory.
