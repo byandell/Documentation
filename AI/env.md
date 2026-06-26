@@ -18,7 +18,7 @@ and will add notes here as I learn more.
 - [Agentic AI](#agentic-ai)
 - [Large Language Models](#large-language-models)
   - [What are large language models (LLMs)?](#what-are-large-language-models-llms)
-  - [How do encoders and decoders work?](#how-do-encoders-and-decoders-work)
+  - [What are AI tokens?](#what-are-ai-tokens)
   - [What is a Mixture of Experts (MoE)?](#what-is-a-mixture-of-experts-moe)
   - [Open Source LLMs](#open-source-llms)
 - [What is an AI Harness?](#what-is-an-ai-harness)
@@ -260,17 +260,32 @@ through links below to find good explanations.
 - [GeeksforGeeks](https://www.geeksforgeeks.org/artificial-intelligence/large-language-model-llm/)
 - [AWS](https://aws.amazon.com/what-is/large-language-model/)
 
-### How do encoders and decoders work?
+### What are AI tokens?
 
-LLMs work by encoding text into numerical representations and then decoding them back into text. For instance, see
-[Understanding Encoder-Only and Decoder-Only Transformer Models (Sebastian Raschka)](https://magazine.sebastianraschka.com/p/understanding-encoder-and-decoder)
+LLMs work by encoding text into numerical representations (tokens), then decoding them back into text.
+According to
+[Google Gemini](https://gemini.google.com)
+AI tokens are units of data used in natural language processing models to represent words or phrases.
+Tokenization is the method of breaking down text into smaller components (tokens) for easier analysis and understanding.
+Encoding converts text into tokens that the AI model can understand.
+Tokens can be words or subwords (or images or audio snippets, etc.),
+which are converted into numerical representations (embeddings) that capture their meanings.
+Token embeddings can carry contextual meanings, allowing models to understand nuances in language.
+The model processes (contextualizes) embeddings through multiple layers to understand context and relationships among tokens.
 
-- **Input Tokenization:** Text input is split into smaller units called tokens, which can be words or subwords.
-- **Encoding:** Tokens are converted into numerical representations (embeddings) that capture their meanings.
-- **Contextualization:** The model processes these embeddings through multiple layers to understand context and relationships between tokens.
-- **Decoding:** The model generates output tokens based on the processed information, predicting the next token in the sequence.
-- **Detokenization:** The generated tokens are converted back into human-readable text.
-- **Fine-tuning:** The model can be further trained on specific tasks to improve its performance in generating relevant responses.
+The model generates output tokens based on the processed information, predicting the next token in the sequence.
+Decoding reverses the process, transforming tokens back into human-readable form.
+AI tokens are used in various applications, including chatbots, translation services, and content generation.
+Each model has a maximum token limit, which can affect the amount of text processed at once.
+The choice of tokenization method can significantly impact the performance and accuracy of AI models.
+The model can be further trained on specific tasks to improve its performance in generating relevant responses.
+
+- [Understanding Encoder-Only and Decoder-Only Transformer Models (Sebastian Raschka)](https://magazine.sebastianraschka.com/p/understanding-encoder-and-decoder)
+- [What Are AI Tokens? (NVIDIA)](https://blogs.nvidia.com/blog/ai-tokens-explained/)
+- [What Are AI Tokens? How Models Read Text, Images & Code (Aiinsights)](https://aiinsightsnews.net/what-are-tokens-in-ai/)
+- [Tokens Explained: The New Currency of Generative AI (Sentisight)](https://www.sentisight.ai/tokens-explained-new-currency-of-generative-ai/)
+- [The Invisible Building Blocks of AI: What You Need to Know About Tokenization (Medium: Data Science Collective)](https://medium.com/data-science-collective/the-invisible-building-blocks-of-ai-what-you-need-to-know-about-tokenization-acadd86a63ba)
+- [gpt-tokenizer playground](https://gpt-tokenizer.dev/)
 
 ### What is a Mixture of Experts (MoE)?
 
@@ -328,17 +343,23 @@ the process of normalizing the term as it organized its entire framework around 
 “Models, Apps, and Harnesses”
 [(Mollick, 2026)](https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the)."
 
-As state by Jaymin West,
+As stated by Jaymin West,
 "Ethan Mollick introduced the horse harness metaphor to explain why the term is well-chosen (Mollick, ~2026-Q1). A horse has raw physical capability — strength, speed, endurance. But raw capability cannot pull a plow, draw a carriage, or haul freight without a harness. The harness converts raw power into directed, controlled, useful work."
 Sarah Chen stated,
 "The Large Language Model (LLM) is a powerful horse, enormous raw capability, but no sense of direction, no understanding of boundaries, and no concept of “stop.” The harness is the bridle, reins, and saddle. It channels that power into controlled, useful work. Without it, the horse runs wherever it wants."
 
 [Google Gemini](https://gemini.google.com)
 attributed the horse metaphor for AI harness
-to
-[John McCarthy, founder of the field of AI](http://jmc.stanford.edu/), who died in 2011,
+to the late
+[John McCarthy](http://jmc.stanford.edu/),
+founder of the field of AI,
 although I have not been able to find the term connected
 with his name.
+Interestingly, there is a horse photographer named
+[Jon McCarthy](https://www.jonmccarthyphoto.com/),
+and a (deceased) noted breeder of Irish Draft Horses named
+[John McCarthy](https://chronofhorse.com/en/article/john-mccarthy/)
+Perhaps Gemini conflated these?
 
 - [My AI Adoption Journey (Mitchell Hashimoto)](https://mitchellh.com/writing/my-ai-adoption-journey)
 - [A Guide to Which AI to Use in the Agentic Era (One Useful Thing, Ethan Mollick)](https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the)

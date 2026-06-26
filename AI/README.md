@@ -48,6 +48,7 @@ As multiple authors writing in early 2026 point out,
 this is not a future event, but something we are now experincing.
 
 - [There is no AI](https://byandell.github.io/Jaron-Lanier-There-is-no-AI/)
+- [An Inconvenient Truth About AI (Rutger Bregman, Substack)](https://rutgerbregman.substack.com/p/an-inconvenient-truth-about-ai)
 - The Atlantic on AI (2026)
   - [The AI-Panic Cycle—And What’s Actually Different Now (Charlie Warzel)](https://www.theatlantic.com/podcasts/2026/02/the-ai-panic-cycle-and-whats-actually-different-now/686077/)
   - [What Do the People Building AI Believe? (Charlie Warzel)](https://www.theatlantic.com/podcasts/2026/02/what-do-the-people-building-ai-believe/686173/)
