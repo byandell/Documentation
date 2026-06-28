@@ -77,7 +77,7 @@ I generated a
 using
 [Adobe Express](https://www.adobe.com/express/feature/image/qr-code-generator).
 
-![](https://github.com/byandell/byandell.github.io/blob/master/images/adobe-express-qr-code.png)
+![](../images/adobe-express-qr-code.png)
 
 You cannot add an image directly to your wallet, but you can use third party
 apps to create a pass that is added to your wallet.
