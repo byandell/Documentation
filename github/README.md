@@ -7,7 +7,7 @@ _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
 - [GitHub Pages](#github-pages)
   - [My GitHub Pages](#my-github-pages)
   - [GitHub Pages References](#github-pages-references)
-- [GitHub Pages with Shinylive](#github-pages-with-shinylive)
+  - [GitHub Pages with Shinylive](#github-pages-with-shinylive)
 - [Connect](#connect)
 - [CodeSpaces](#codespaces)
 
@@ -109,7 +109,7 @@ For instance, see
   - [Deploying your docs](https://www.mkdocs.org/user-guide/deploying-your-docs/)
 - [Resolving Git Push for CI/CD Workflows (TutorialPedia)](https://www.tutorialpedia.org/blog/how-to-resolve-refusing-to-allow-an-oauth-app-to-create-or-update-workflow-on-git-push/)
 
-## GitHub Pages with Shinylive
+### GitHub Pages with Shinylive
 
 It is possible to host a client-side (browser run)
 Shiny app provided it is fairly simple.
