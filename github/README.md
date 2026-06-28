@@ -70,6 +70,22 @@ ESIIL Stars Training Notes (whole repo)
 ESIIL Research (`docs/` folder using
 [MkDocs](https://www.mkdocs.org/))
 
+#### QR Codes for Github Page
+
+I generated a
+[QR Code](https://github.com/byandell/byandell.github.io/blob/master/images/adobe-express-qr-code.png)
+using
+[Adobe Express](https://www.adobe.com/express/feature/image/qr-code-generator).
+
+![](https://github.com/byandell/byandell.github.io/blob/master/images/adobe-express-qr-code.png)
+
+You cannot add an image directly to your wallet, but you can use third party
+apps to create a pass that is added to your wallet.
+For instance, see
+
+- [How to add a QR code to Apple Wallet (QRCG)](https://www.qr-code-generator.com/blog/add-qr-code-to-apple-wallet/)
+- [How to add a QR code to Apple Wallet (qrcodedynamic)](https://qrcodedynamic.com/blog/how-to-add-a-qr-code-to-apple-wallet/)
+
 ### GitHub Pages References
 
 - [ESIIL Data Short Course: Create your own portfolio webpage](https://cu-esiil-edu.github.io/esiil-learning-portal/shortcourse/pages/03-git-github/03-github-portfolio/01-create-portfolio-website.html)
