@@ -88,7 +88,9 @@ are easily findable from my profile page.
 
 You cannot add an image directly to your wallet, but you can use third party
 apps to create a pass that is added to your wallet.
-For instance, see
+I used
+[Pass4Wallet](https://apps.apple.com/us/app/pass4wallet-store-cards/id1423106610). 
+other choices include
 
 - [Add a QR code to Apple Wallet (QRCG)](https://www.qr-code-generator.com/blog/add-qr-code-to-apple-wallet/)
 - [How to add a QR code to Apple Wallet (qrcodedynamic)](https://qrcodedynamic.com/blog/how-to-add-a-qr-code-to-apple-wallet/)
