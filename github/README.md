@@ -74,6 +74,8 @@ ESIIL Research (`docs/` folder using
 
 I generated a
 [QR Code](https://github.com/byandell/byandell.github.io/blob/master/images/adobe-express-qr-code.png)
+that points to my profile page
+<https://byandell.github.io>
 using
 [Adobe Express](https://www.adobe.com/express/feature/image/qr-code-generator).
 
