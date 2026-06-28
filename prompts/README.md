@@ -45,9 +45,14 @@ Below are examples of prompts I have been developing.
     - [workflow.md](./workflow.md)
   - [Documenting Folders in ResearchDrive](#documenting-folders-in-researchdrive)
 - More detailed Prompt examples
-  - [file_versions.md](./file_versions.md)
-  - [powerpoint.md](./powerpoint.md)
-  - [workflow.md](./workflow.md)
+  - [Improving File Version Management with GitHub](./file_versions.md)
+  - [R Analysis to Powerpoint](./powerpoint.md)
+  - [Workflow Prompt](./workflow.md)
+  - [Quarto Prompts](./quarto.md)
+  - [GitHub Pages with Shinylive](../github/#github-pages-with-shinylive)
+    - [Prepare R app for Shinylive Export](../github/shinylive.md)
+    - [Quarto Dashboard with Shinylive](../github/quartolive.md)
+    - [Deploy Shinylive apps to GitHub Pages](../github/deploy.md)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 

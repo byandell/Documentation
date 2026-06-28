@@ -7,7 +7,7 @@ _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
 - [GitHub Pages](#github-pages)
   - [My GitHub Pages](#my-github-pages)
   - [GitHub Pages References](#github-pages-references)
-- [Shinylive](#shinylive)
+- [GitHub Pages with Shinylive](#github-pages-with-shinylive)
 - [Connect](#connect)
 - [CodeSpaces](#codespaces)
 
@@ -86,7 +86,7 @@ ESIIL Research (`docs/` folder using
   - [Deploying your docs](https://www.mkdocs.org/user-guide/deploying-your-docs/)
 - [Resolving Git Push for CI/CD Workflows (TutorialPedia)](https://www.tutorialpedia.org/blog/how-to-resolve-refusing-to-allow-an-oauth-app-to-create-or-update-workflow-on-git-push/)
 
-## Shinylive
+## GitHub Pages with Shinylive
 
 It is possible to host a client-side (browser run)
 Shiny app provided it is fairly simple.
@@ -104,6 +104,12 @@ be self-contained in the app, including data.
 - [Using Shinylive to host Shiny app on GitHub Pages (HBC Training)](https://hbctraining.github.io/Training-modules/RShiny/lessons/shinylive.html)
 - [Prepare R app for Shinylive Export](shinylive.md)
 - [Quarto Dashboard Shinylive](quartolive.md)
+
+See AI prompts used for creating shinylive apps:
+
+- [Prepare R app for Shinylive Export](shinylive.md)
+- [Quarto Dashboard with Shinylive](quartolive.md)
+- [Deploy Shinylive apps to GitHub Pages](deploy.md)
 
 ## Connect
 
