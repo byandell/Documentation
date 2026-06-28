@@ -73,6 +73,7 @@ ESIIL Research (`docs/` folder using
 ### GitHub Pages References
 
 - [ESIIL Data Short Course: Create your own portfolio webpage](https://cu-esiil-edu.github.io/esiil-learning-portal/shortcourse/pages/03-git-github/03-github-portfolio/01-create-portfolio-website.html)
+- [The Least You Need to Know About GitHub Pages](https://tomcam.github.io/least-github-pages/set-github-pages-master-branch.html)
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)
 - [Publish Your Project Documentation with GitHub Pages](https://github.blog/developer-skills/github/publish-your-project-documentation-with-github-pages/)
 - [GitHub Page Themes](https://pages.github.com/themes/)
