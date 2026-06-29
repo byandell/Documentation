@@ -234,6 +234,8 @@ See for instance
 - [Agent-Environment Interface in AI](https://www.geeksforgeeks.org/artificial-intelligence/agent-environment-interface-in-ai/)
 - [Multi-Agent Orchestration Guide](https://www.agensi.io/learn/multi-agent-orchestration-guide)
 - [Agentic Engineering (Jaymin West)](https://www.jayminwest.com/agentic-engineering-book/)
+- [A multi-agent system for automating scientific discovery (Nature)](https://doi.org/10.1038/s41586-026-10652-y)
+- [Digital twins as a tool for ecosystem research (Trends in Ecol & Evol)](https://doi.org/10.1016/j.tree.2026.04.016)
 
 ## Large Language Models
 

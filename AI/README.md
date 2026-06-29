@@ -9,6 +9,7 @@ To learn about (generative) AI, start with the self-paced workshop on
 - [Articles about AI](#articles-about-ai)
   - [How might we think about AI?](#how-might-we-think-about-ai)
   - [What about ethics and environmental impact of AI?](#what-about-ethics-and-environmental-impact-of-ai)
+  - [AI and Scientific Community](#ai-and-scientific-community)
 - [AI Environments](env.md)
 - [Prompt Engineering](prompt.md)
 - [Context Engineering](context.md)
@@ -75,10 +76,26 @@ Below is an eclectic collection of resources about AI and its implications.
 
 - [The Pope and AI](https://byandell.github.io/The-Pope-and_AI/)
 - [What does AI cost? (CU ESIIL)](https://cu-esiil.github.io/Project_group_OASIS/ai-for-sustainability/what-does-it-cost/)
-- [The uncritical adoption of AI in science is alarming — we urgently need guard rails (Nature)](https://www.nature.com/articles/d41586-026-01557-x)
 - [On AI, Sustainability, and the Tensions Worth Keeping (Juan Maestre)](https://setx-uifl.org/esiil-2026/)
 - [Ethics of AI (Tyson Swetnam Blog)](https://tysonswetnam.com/blog/posts/2025-01-14-gpt101/#ethics-of-ai)
+- [The uncritical adoption of AI in science is alarming — we urgently need guard rails (Nature)](https://www.nature.com/articles/d41586-026-01557-x)
 - [No Data Centers on Native Land Campaign (Honor Earth)](https://Honorearth.org/stopdatacolonialism)
+
+### AI and Scientific Community
+
+These references were gleaned from the [ESIIL Network Slack Channel](https://esiil.slack.com/archives/C03KLSEEYF8).
+
+- [ESIIL AI for Sustainability Summit 2026 (Juan Maestre, LinkedIn)](https://www.linkedin.com/posts/juanpedromaestre_esiil-2026-share-7463707566229991425-mPDk)
+- [Algorithmic Monocultures in Hiring (arXiv)](https://arxiv.org/abs/2605.27371)
+- [The Machine Consumes Itself: Artificial Intelligence and the End of Publish-or-Perish (Postdigital Science & Education)](https://doi.org/10.1007/s42438-026-00666-0)
+- [Ecology is not yet ready for AI—and why that matters (PNAS)](https://doi.org/10.1073/pnas.253397612)
+- [Legacies of foundation species shape life after death (Science Advances)](https://doi.org/10.1126/sciadv.aef9983)
+- [The governance gap threatening long-term ecological archives (EOS)](https://eos.org/opinions/the-governance-gap-threatening-long-term-ecological-archives/)
+- [Researchers who use hallucinated references to face arXiv ban (Nature)](https://www.nature.com/articles/d41586-026-01595-5)
+- [Leveraging Al for Greenhouse Gas Monitoring and Accountability: Webinar Series
+Ensuring Data Quality, Access, and Trust in GH Emissions Information
+ (National Academies)](https://www.nationalacademies.org/projects/DEPS-BEES-25-P-692/events/archive)
+- [Generating novel scientific hypotheses with Co-Scientist (YouTube)](https://www.youtube.com/watch?v=aSY_vFFmkW0)
 
 #### Energy and Water Reports
 

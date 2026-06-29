@@ -63,7 +63,8 @@ Jaron Lanier's [There is no AI](https://byandell.github.io/Jaron-Lanier-There-is
 
 ::: {.callout-important}
 ### Call for Guardrails
-Scientists warn in *Nature* that uncritical adoption of AI in science requires urgent regulatory guardrails.
+Scientists warn in
+[*Nature* that uncritical adoption of AI in science requires urgent regulatory guardrails](https://www.nature.com/articles/d41586-026-01557-x).
 :::
 
 **Ethics Resources**:
@@ -89,6 +90,27 @@ Scientists warn in *Nature* that uncritical adoption of AI in science requires u
 - **Google**: Climate-conscious cooling commitments.
 - **Salish Tribal Alliance**: Zero Edge cloud data sovereignty.
 - **Micro Data Centers**: Shift toward Modular Edge Computing.
+:::
+:::
+
+## AI & the Scientific Community
+
+Gleanings from the [ESIIL Network Slack Channel](https://esiil.slack.com/archives/C03KLSEEYF8):
+
+::: {.columns}
+::: {.column width="50%"}
+- [ESIIL AI Summit 2026](https://www.linkedin.com/posts/juanpedromaestre_esiil-2026-share-7463707566229991425-mPDk)
+- [Algorithmic Monocultures in Hiring](https://arxiv.org/abs/2605.27371)
+- [The Machine Consumes Itself](https://doi.org/10.1007/s42438-026-00666-0)
+- [Ecology is not yet ready for AI](https://doi.org/10.1073/pnas.2533976123)
+- [Legacies of foundation species](https://doi.org/10.1126/sciadv.aef9983)
+:::
+
+::: {.column width="50%"}
+- [Ecological archives governance](https://eos.org/opinions/the-governance-gap-threatening-long-term-ecological-archives/)
+- [Hallucinated references arXiv ban](https://www.nature.com/articles/d41586-026-01595-5)
+- [AI for GHG Monitoring Webinar](https://www.nationalacademies.org/projects/DEPS-BEES-25-P-692/events/archive)
+- [Co-Scientist Hypothesis Generation](https://www.youtube.com/watch?v=aSY_vFFmkW0)
 :::
 :::
 
@@ -154,11 +176,11 @@ IDE version 2.0 does not carry over history automatically. See [Recovering Antig
 
 AI-native environments have quickly expanded beyond standard editor integrations:
 
-- **Claude Code**: Anthropic's terminal-based coding agent.
-- **OpenAI Codex**: Deeply integrated code generation models.
-- **Positron**: Posit's next-generation IDE built for R and Python data science.
-- **Windsurf**: Standalone AI editor optimizing code editing workflows.
-- **Cursor**: Advanced fork of VS Code featuring native MCP tool support.
+- **[Claude Code](https://www.anthropic.com/product/code)**: Anthropic's terminal-based coding agent.
+- **[OpenAI Codex](https://openai.com/index/openai-codex/)**: Deeply integrated code generation models.
+- **[Positron](https://posit.co/products/open-source/positron/)**: Posit's next-generation IDE built for R and Python data science.
+- **[Windsurf](https://secondtalent.com/insights/windsurf-review-2026-the-ai-ide-redefining-coding-workflows/)**: Standalone AI editor optimizing code editing workflows.
+- **[Cursor](https://docs.cursor.sh/mcp)**: Advanced fork of VS Code featuring native MCP tool support.
 
 ::: {.callout-caution}
 Be careful when using terminal-based interactive interpreters (like
@@ -180,10 +202,20 @@ alongside background AI terminal execution.
 ### Open Source Platforms
 - **[OpenClaw](https://www.openclaw.ai/) &
 [Hermes](https://hermes-agent.org/)**: Open orchestration engines.
-- **[OASIS ScienceClaw](https://github.com/CU-ESIIL/openclaw_container)**: ESIIL-developed clone of OpenClaw acting as a digital twin for scientific working groups.
+- **[OASIS ScienceClaw](https://github.com/CU-ESIIL/openclaw_container) &
+[ScienceClaw](https://github.com/beita6969/ScienceClaw)**: Clone of OpenClaw acting as a digital twins for scientific working groups.
 - **[SOUL.md](https://soul.md/)**: Markdown-based configuration files defining agent personalities.
 :::
 :::
+
+## Agentic AI References
+
+- [Agentic AI](https://tyson-swetnam.github.io/intro-gpt/agentic/) (Swetnam)
+- [Agent-Environment Interface in AI](https://www.geeksforgeeks.org/artificial-intelligence/agent-environment-interface-in-ai/) (GeeksforGeeks)
+- [Multi-Agent Orchestration Guide](https://www.agensi.io/learn/multi-agent-orchestration-guide) (Agensi)
+- [Agentic Engineering](https://www.jayminwest.com/agentic-engineering-book/) (Jaymin West)
+- [A multi-agent system for automating scientific discovery](https://doi.org/10.1038/s41586-026-10652-y) (Nature)
+- [Digital twins as a tool for ecosystem research](https://doi.org/10.1016/j.tree.2026.04.016) (Trends in Ecol & Evol)
 
 ## Large Language Models (LLMs)
 
