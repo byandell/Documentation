@@ -110,7 +110,7 @@ Gleanings from the [ESIIL Network Slack Channel](https://esiil.slack.com/archive
 - [Ecological archives governance](https://eos.org/opinions/the-governance-gap-threatening-long-term-ecological-archives/)
 - [Hallucinated references arXiv ban](https://www.nature.com/articles/d41586-026-01595-5)
 - [AI for GHG Monitoring Webinar](https://www.nationalacademies.org/projects/DEPS-BEES-25-P-692/events/archive)
-- [Co-Scientist Hypothesis Generation](https://www.youtube.com/watch?v=aSY_vFFmkW0)
+- [Accelerating scientific discovery with Co-Scientist](https://doi.org/10.1038/s41586-026-10644-y)
 :::
 :::
 
@@ -204,6 +204,7 @@ alongside background AI terminal execution.
 [Hermes](https://hermes-agent.org/)**: Open orchestration engines.
 - **[OASIS ScienceClaw](https://github.com/CU-ESIIL/openclaw_container) &
 [ScienceClaw](https://github.com/beita6969/ScienceClaw)**: Clone of OpenClaw acting as a digital twins for scientific working groups.
+- **[Co-Scientist](https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/)**: AI agents working in teams (DeepMind) ([YouTube](https://www.youtube.com/watch?v=aSY_vFFmkW0))
 - **[SOUL.md](https://soul.md/)**: Markdown-based configuration files defining agent personalities.
 :::
 :::
