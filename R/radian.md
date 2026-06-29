@@ -1,4 +1,4 @@
-# Using R in VS Code with Radian
+# R in VS Code with Radian
 
 - [R in Visual Studio Code](https://code.visualstudio.com/docs/languages/r)
 - [6  Interactive R Programming in VSCode (Datanovia)](https://www.datanovia.com/books/r-in-vscode/interactive-r-programming-and-running-code-in-vscode.html#google_vignette)

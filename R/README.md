@@ -9,7 +9,7 @@ where it is now largely maintained by others.
 
 - [R Digital Tools (Quarto Slideshow)](https://byandell.github.io/Documentation/quarto/R.html)
 - [R for Teams in the Data Sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences)
-  - [Using R in VS Code with Radian](./radian.md)
+  - [R in VS Code with Radian](./radian.md)
   - [Base R(4.1+) `|>` vs magrittr `%>%` pipe](https://tidyverse.org/blog/2023/04/base-vs-magrittr-pipe/)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
