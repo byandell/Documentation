@@ -8,6 +8,7 @@ _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
   - [My GitHub Pages](#my-github-pages)
   - [GitHub Pages References](#github-pages-references)
   - [GitHub Pages with Shinylive](#github-pages-with-shinylive)
+- [Collaborating with GitHub Organizations](#collaborating-with-github-organizations)
 - [Connect](#connect)
 - [CodeSpaces](#codespaces)
 
@@ -31,7 +32,7 @@ Subpages are built using `[username].github.io/[reponame]`
 where `[reponame]` can is the name of a repo owned by
 `[username]`.
 The `[username]` can also be a
-[GitHub Organization](https://docs.github.com/en/organizations).
+[GitHub Organization](#collaborating-with-github-organizations).
 
 The resources below cover the basics of GitHub Pages
 and provide links to my published pages and
@@ -50,7 +51,8 @@ This has cool features like blog pages.
 In addition to my main GitHub Page, I have several subpages
 that are built separately in different GitHub repos.
 Note that the `landmapyr` page is built within
-the `byandell-envsys` GitHub organization,
+the `byandell-envsys`
+[GitHub organization](#collaborating-with-github-organizations),
 which I created to organize my environment systems research projects.
 
 - [byandell.github.io/Documentation](https://byandell.github.io/Documentation)
@@ -89,7 +91,7 @@ are easily findable from my profile page.
 You cannot add an image directly to your wallet, but you can use third party
 apps to create a pass that is added to your wallet.
 I used
-[Pass4Wallet](https://apps.apple.com/us/app/pass4wallet-store-cards/id1423106610). 
+[Pass4Wallet](https://apps.apple.com/us/app/pass4wallet-store-cards/id1423106610).
 other choices include
 
 - [Add a QR code to Apple Wallet (QRCG)](https://www.qr-code-generator.com/blog/add-qr-code-to-apple-wallet/)
@@ -135,6 +137,63 @@ See AI prompts used for creating shinylive apps:
 - [Prepare R app for Shinylive Export](shinylive.md)
 - [Quarto Dashboard with Shinylive](quartolive.md)
 - [Deploy Shinylive apps to GitHub Pages](deploy.md)
+
+## Collaborating with GitHub Organizations
+
+A GitHub organization allows a team (or an individual like me)
+to collaborate on related repositories.
+The organization `owner`(s) manage `member`(s) and repositories (repos).
+Each repo can be `public` or `private`, and members can have one of 5 `permission` levels
+with increasing level of control/danger: read, triage, write, maintain or admin.
+Organization and repo membership are managed, respectively,
+with the `Settings` menu in the upper right-hand corner.
+
+- [How to Create a GitHub Organization From Scratch (GeeksforGeeks)](https://www.geeksforgeeks.org/git/how-to-create-github-organization-from-scratch/)
+- [What Are GitHub Organizations and Should You Use One? (How-To Geek)](https://www.howtogeek.com/devops/what-are-github-organizations-and-should-you-use-one/)
+- [GitHub Organizations and Teams Documentation (GitHub)](https://docs.github.com/organizations)
+- [Managing an organization (git-scm.com)](https://git-scm.com/book/en/v2/GitHub-Managing-an-organization.html)
+
+I belong to a variety of
+[GitHub Organizations](https://github.com/settings/organizations):
+
+- My Organizations
+  - [byandell-envsys](https://github.com/byandell-envsys)
+  - [byandell-sysgen](https://github.com/byandell-sysgen)
+- UW-Madison Organizations:
+  - [UW-Madison Data Science Institut (DSI](https://github.com/UW-Madison-DSI)
+  - [UW-Madison Data Science Hub](https://github.com/UW-Madison-DataScience)
+- CU-Boulder Environmental Organizations:
+  - [Environmental Data Science Innovation and Impact Lab (ESIIL)](https://github.com/cu-esiil)
+  - [ESIIL Education](https://github.com/cu-esiil-edu)
+  - [Earth Analytics Education Program (Earth Lab)](https://github.com/earthlab-education)
+- Oglala Lakota College (OLC)
+  - [OLC Geospatial Data Science Hub](https://github.com/olc-techsupport)
+
+An optional special repo in an organization, `.github`, can be used to provide an organization-level README and default settings.
+I use mine to provide a brief introduction to an organization and links to its resources.
+For instance, see the
+`.github/README.md`
+file in my
+[byandell-envsys](https://github.com/byandell-envsys)
+and
+[byandell-sysgen](https://github.com/byandell-sysgen)
+repositories.
+The
+[`envsys` README.md](https://github.com/byandell-envsys/.github/blob/main/profile/README.md)
+is very simple, providing a one-paragraph intro and links to resources.
+In contrast, the
+[`sysgen` README.md](https://github.com/byandell-sysgen/.github/blob/main/profile/README.md)
+has dropdown sections to help
+organize multiple repos.
+This is done with old style HTML code:
+
+```
+<details>
+<summary>QTL Repos</summary>
+<br>
+...
+</details>
+```
 
 ## Connect
 

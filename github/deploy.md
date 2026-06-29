@@ -1,4 +1,4 @@
-# Deploy Shinylive apps to GitHub Pages
+# Prompts to Deploy Shinylive apps to GitHub Pages
 
 The following prompts are modified from the original conversation in the
 [geyser](https://github.com/byandell/geyser) repo with Gemini.

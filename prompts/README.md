@@ -7,7 +7,7 @@ Here are some examples of prompts that I have used with AI agents to help me,
 and teams in interacting with projects.
 They illustrate a few principles along the way.
 
-- [AI Prompt Examples (Quarto Slideshow)](https://byandell.github.io/Documentation/quarto/prompt.html)
+- [Prompt Examples (Quarto Slideshow)](https://byandell.github.io/Documentation/quarto/prompt.html)
 - [Prompt Engineering Guide](https://www.promptingguide.ai)
 - [Prompt Engineering (Claude)](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview)
 - [Prompt Engineering (Tyson Swetnam)](https://tyson-swetnam.github.io/intro-gpt/prompts/#core-features-of-todays-ai-tools)
@@ -45,14 +45,14 @@ Below are examples of prompts I have been developing.
     - [workflow.md](./workflow.md)
   - [Documenting Folders in ResearchDrive](#documenting-folders-in-researchdrive)
 - More detailed Prompt examples
-  - [Improving File Version Management with GitHub](./file_versions.md)
-  - [R Analysis to Powerpoint](./powerpoint.md)
-  - [Workflow Prompt](./workflow.md)
-  - [Quarto Prompts](./quarto.md)
+  - [Prompts for GitHub File Version Management](./file_versions.md)
+  - [Prompts for R Analysis to Powerpoint](./powerpoint.md)
+  - [Prompts for Workflow Refactoring](./workflow.md)
+  - [Prompts to Create Quarto Slide Decks](./quarto.md)
   - [GitHub Pages with Shinylive](../github/#github-pages-with-shinylive)
-    - [Prepare R app for Shinylive Export](../github/shinylive.md)
-    - [Quarto Dashboard with Shinylive](../github/quartolive.md)
-    - [Deploy Shinylive apps to GitHub Pages](../github/deploy.md)
+    - [Prompts for Shinylive App Export](../github/shinylive.md)
+    - [Prompts for Quarto Dashboard with Shinylive](../github/quartolive.md)
+    - [Prompts to Deploy Shinylive Apps to GitHub Pages](../github/deploy.md)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 

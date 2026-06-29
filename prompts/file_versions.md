@@ -1,4 +1,4 @@
-# Improving File Version Management with GitHub
+# Prompts for GitHub File Version Management
 
 **Challenge**:
 As code (or other documents) evolve, it is too easy to just save another version.

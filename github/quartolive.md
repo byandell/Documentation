@@ -1,4 +1,4 @@
-# Quarto Dashboard with Shinylive
+# Prompts for Quarto Dashboard with Shinylive
 
 **Prompt**:
 Is there a way to use shinylive to publish demo.qmd (demo.html) as a static file much as we did with the shiny app?

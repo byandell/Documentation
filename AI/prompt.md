@@ -1,6 +1,6 @@
-# Prompt Engineering
+# AI Prompt Engineering
 
-Prompt engineering is the process of designing prompts that elicit the desired output from an AI model. It is a general approach to using AI tools, and can be applied to a wide range of tasks. So far, my focus has been on prompt engineering of code, or at least GitHub repositories.
+AI prompt engineering is the process of designing prompts that elicit the desired output from an AI model. It is a general approach to using AI tools, and can be applied to a wide range of tasks. So far, my focus has been on prompt engineering of code, or at least GitHub repositories.
 Below is a schema I am developing.
 
 - [What is Prompt Engineering?](#what-is-prompt-engineering)

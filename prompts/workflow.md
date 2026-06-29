@@ -1,4 +1,4 @@
-# Workflow Prompt
+# Prompts for Workflow Refactoring
 
 **Use**:
 Be sure you are working in a folder where you want the new package components to live.

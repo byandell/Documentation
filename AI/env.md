@@ -155,7 +155,7 @@ but not directly relevant to those of us developing code-based tools.
 Again, unfortunately, the IDE did not carry any previous chat history
 (known as `conversations`) over to 2.0.
 See
-[Recovering Antigravity Conversations](../recover_conversations.md)
+[AI Recovering Antigravity Conversations](../recover_conversations.md)
 for a guide I wrote to recover them based on community response.
 
 - [Google Gemini](https://gemini.google.com/)
@@ -167,7 +167,7 @@ for a guide I wrote to recover them based on community response.
 - [Antigravity](https://antigravity.google/)
   - [Google Antigravity Documentation](https://antigravity.google/docs/get-started)
   - [Getting Started with Google Antigravity (CodeLabs)](https://codelabs.developers.google.com/getting-started-google-antigravity)
-  - [Recovering Antigravity 1.x Conversations](../recover_conversations.md)
+  - [AI Recovering Antigravity 1.x Conversations](../recover_conversations.md)
 
 ### Other AI Environments
 

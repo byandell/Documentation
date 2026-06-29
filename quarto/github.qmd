@@ -73,6 +73,31 @@ format:
 OAuth authentication errors can prevent git pushes if you modify GitHub Actions files (`.github/workflows/`). See the [TutorialPedia resolution guide](https://www.tutorialpedia.org/blog/how-to-resolve-refusing-to-allow-an-oauth-app-to-create-or-update-workflow-on-git-push/) to resolve permission issues.
 :::
 
+## Collaborating with GitHub Organizations {.compact-slide}
+
+::: {.columns}
+::: {.column width="55%"}
+### Organization Structure
+- **Collaboration**: Allows teams/individuals to manage related repositories.
+- **Roles & Permissions**: Owners manage members/repos. Repos can be `public` or `private` with 5 permission levels (read, triage, write, maintain, admin).
+- **Profile Repos**: Special `.github` repositories can store an organization-level profile `README.md` (e.g., [byandell-envsys](https://github.com/byandell-envsys/.github/blob/main/profile/README.md) or [byandell-sysgen](https://github.com/byandell-sysgen/.github/blob/main/profile/README.md) using `<details>` HTML tabs).
+:::
+
+::: {.column width="45%"}
+### Reference Guides
+- **[GitHub Organizations Docs](https://docs.github.com/organizations)** (GitHub)
+- **[Create an Org from Scratch](https://www.geeksforgeeks.org/git/how-to-create-github-organization-from-scratch/)** (GeeksforGeeks)
+- **[Managing an Organization](https://git-scm.com/book/en/v2/GitHub-Managing-an-organization.html)** (Git SCM)
+- **[Why Use an Org?](https://www.howtogeek.com/devops/what-are-github-organizations-and-should-you-use-one/)** (How-To Geek)
+
+### Key Organizations
+- **My Orgs**: [byandell-envsys](https://github.com/byandell-envsys) | [byandell-sysgen](https://github.com/byandell-sysgen)
+- **UW-Madison**: [DSI](https://github.com/UW-Madison-DSI) | [Data Science Hub](https://github.com/UW-Madison-DataScience)
+- **ESIIL**: [ESIIL Hub](https://github.com/cu-esiil) | [ESIIL Edu](https://github.com/cu-esiil-edu) | [Earth Lab](https://github.com/earthlab-education)
+- **OLC**: [Geospatial Hub](https://github.com/olc-techsupport)
+:::
+:::
+
 # Posit Connect Hosting {background-color="#e0f2fe"}
 
 ## Posit Connect & Package Locking {.compact-slide}

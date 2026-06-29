@@ -1,4 +1,6 @@
-# Quarto Narrative
+# Prompts to Create Quarto Slide Decks
+
+## Prompt and Response
 
 **Prompt:** Create a quarto slide deck from `[slidedeck].md`
 in light mode and place it in folder `quarto/` as `[slidedeck].qmd`.

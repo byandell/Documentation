@@ -1,4 +1,4 @@
-# Prepare R app for Shinylive Export
+# Prompts for Shinylive App Export
 
 **Prompt:*
 Modify `geyser` package `R` app in
