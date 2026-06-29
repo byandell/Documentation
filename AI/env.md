@@ -18,12 +18,13 @@ and will add notes here as I learn more.
 - [Agentic AI](#agentic-ai)
   - [SOUL.md](#soulmd)
   - [Agentic AI References](#agentic-ai-references)
-- [Large Language Models](#large-language-models)
+- [Large Language Models (LLMs)](#large-language-models-llms)
   - [What are large language models (LLMs)?](#what-are-large-language-models-llms)
   - [What are AI tokens?](#what-are-ai-tokens)
   - [What is a Mixture of Experts (MoE)?](#what-is-a-mixture-of-experts-moe)
   - [Open Source LLMs](#open-source-llms)
 - [What is an AI Harness?](#what-is-an-ai-harness)
+  - [Harness Engineering References](#harness-engineering-references)
 
 ## What is an AI Environment?
 
@@ -245,7 +246,7 @@ fee, if using commercial agents.
   - [Accelerating scientific discovery with Co-Scientist (Nature)](https://doi.org/10.1038/s41586-026-10644-y)
   - [Generating novel scientific hypotheses with Co-Scientist (YouTube)](https://www.youtube.com/watch?v=aSY_vFFmkW0)
 
-## Large Language Models
+## Large Language Models (LLMs)
 
 Large language models (LLMs) are basically big transformer networks,
 with nodes joined by edges that have weights based on the
@@ -269,6 +270,7 @@ through links below to find good explanations.
 - [IBM](https://www.ibm.com/think/topics/large-language-models)
 - [GeeksforGeeks](https://www.geeksforgeeks.org/artificial-intelligence/large-language-model-llm/)
 - [AWS](https://aws.amazon.com/what-is/large-language-model/)
+- [Geospatial Harmonization with LLMs (CU-ESIIL)](https://github.com/CU-ESIIL/LLM_lesson_exemplar)
 
 ### What are AI tokens?
 
@@ -386,6 +388,8 @@ The harness often includes pre-built algorithms and data processing pipelines.
 It facilitates the management of AI workflows, from training to deployment.
 AI harnesses can enhance collaboration among data scientists and engineers.
 They help streamline the process of scaling AI solutions across different environments.
+
+### Harness Engineering References
 
 - [Complete Guide to Agent Harness: What It Is and Why It Matters (Sarah Chen, Harness Engineering)](https://harness-engineering.ai/blog/agent-harness-complete-guide/)
 - [What is Harness Engineering? (Emily Winks, atlan)](https://atlan.com/know/what-is-harness-engineering/)

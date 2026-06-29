@@ -442,7 +442,7 @@
   <meta name="generator" content="quarto-1.6.33">
 
   <meta name="author" content="Brian Yandell (byandell.github.io)">
-  <meta name="dcterms.date" content="2026-06-28">
+  <meta name="dcterms.date" content="2026-06-29">
   <title>Artificial Intelligence (AI)</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1063,7 +1063,7 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
 </div>
 </div>
 
-  <p class="date">2026-06-28</p>
+  <p class="date">2026-06-29</p>
 </section>
 <section id="artificial-intelligence-ai-contents" class="title-slide slide level1 center">
 <h1>Artificial Intelligence (AI) Contents</h1>
@@ -1354,32 +1354,88 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
 <h2>Large Language Models (LLMs)</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="neural-network-weights">Neural Network Weights</h3>
+<h3 id="transformer-networks">Transformer Networks</h3>
 <ul>
-<li>LLMs are massive transformer networks predicting the next token in a sequence.</li>
-<li>Neural weights are frozen after training, but context windows hold conversation state.</li>
-<li><strong>Mixture of Experts (MoE)</strong>: Activates only a subset of network layers for each query to save compute.</li>
+<li><strong>Structure</strong>: Massive transformer networks with nodes joined by weighted edges.</li>
+<li><strong>Weights</strong>: Nodes/edges are fixed; weights are adjusted based on training data.</li>
+<li><strong>Sequence Prediction</strong>: Learning patterns to predict the next token in a sequence.</li>
+<li><strong>Scale</strong>: Billions or trillions of nodes to generate rich responses to prompts.</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<h3 id="encoders-decoders">Encoders &amp; Decoders</h3>
+<h3 id="llm-explanations-guides">LLM Explanations &amp; Guides</h3>
 <ul>
-<li><strong>Tokenization</strong>: Splitting text into tokens.</li>
-<li><strong>Encoding</strong>: Converting tokens into embeddings.</li>
-<li><strong>Contextualization</strong>: Processing context layers.</li>
-<li><strong>Decoding</strong>: Predicting and generating tokens.</li>
-<li><strong>Detokenization</strong>: Rendering back to text.</li>
+<li><strong><a href="https://www.ibm.com/think/topics/large-language-models">IBM: What are LLMs?</a></strong></li>
+<li><strong><a href="https://www.geeksforgeeks.org/artificial-intelligence/large-language-model-llm/">GeeksforGeeks LLM Guide</a></strong></li>
+<li><strong><a href="https://aws.amazon.com/what-is/large-language-model/">AWS: What is an LLM?</a></strong></li>
+<li><strong><a href="https://github.com/CU-ESIIL/LLM_lesson_exemplar">Geospatial Harmonization with LLMs</a></strong> (CU-ESIIL)</li>
+</ul>
+</div></div>
+</section>
+<section id="what-are-ai-tokens" class="slide level2">
+<h2>What are AI Tokens?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="how-models-process-language">How Models Process Language</h3>
+<ul>
+<li><strong>Tokens</strong>: Units of data representing words, subwords, images, or audio snippets.</li>
+<li><strong>Encoding</strong>: Converting text to numerical embeddings that capture contextual meaning.</li>
+<li><strong>Contextualization</strong>: Processing embeddings through layers to understand relationships.</li>
+<li><strong>Decoding</strong>: Predicting and generating output tokens, then transforming them back to human text.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="tokenization-resources">Tokenization Resources</h3>
+<ul>
+<li><strong><a href="https://magazine.sebastianraschka.com/p/understanding-encoder-and-decoder">Encoder vs. Decoder Models</a></strong> (Sebastian Raschka)</li>
+<li><strong><a href="https://blogs.nvidia.com/blog/ai-tokens-explained/">What Are AI Tokens?</a></strong> (NVIDIA)</li>
+<li><strong><a href="https://aiinsightsnews.net/what-are-tokens-in-ai/">How Models Read Text</a></strong> (AI Insights)</li>
+<li><strong><a href="https://www.sentisight.ai/tokens-explained-new-currency-of-generative-ai/">Tokens: GenAI Currency</a></strong> (Sentisight)</li>
+<li><strong><a href="https://medium.com/data-science-collective/the-invisible-building-blocks-of-ai-what-you-need-to-know-about-tokenization-acadd86a63ba">Tokenization Building Blocks</a></strong> (Medium)</li>
+<li><strong><a href="https://gpt-tokenizer.dev/">gpt-tokenizer playground</a></strong></li>
+</ul>
+</div></div>
+</section>
+<section id="mixture-of-experts-moe" class="slide level2">
+<h2>Mixture of Experts (MoE)</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="computational-efficiency">Computational Efficiency</h3>
+<ul>
+<li><strong>Conditional Routing</strong>: Activates only a subset of network layers for each query rather than the whole model.</li>
+<li><strong>Expert Sub-networks</strong>: Inputs are routed to specialized expert layers via a gating network.</li>
+<li><strong>Parameter Scaling</strong>: Allows massive scaling of parameters without a proportional increase in compute cost.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="moe-resources">MoE Resources</h3>
+<ul>
+<li><strong><a href="https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts">A Visual Guide to MoE</a></strong> (Maarten Grootendorst)</li>
+<li><strong><a href="https://www.geeksforgeeks.org/nlp/what-is-mixture-of-experts-moe/">What is MoE?</a></strong> (GeeksforGeeks)</li>
+<li><strong><a href="https://huggingface.co/blog/moe">Mixture of Experts Blog</a></strong> (Hugging Face)</li>
+<li><strong><a href="https://arxiv.org/abs/2503.07137">Mu &amp; Lin (2026) paper</a></strong> (arXiv)</li>
 </ul>
 </div></div>
 </section>
 <section id="open-source-llm-specifications" class="slide level2">
 <h2>Open Source LLM Specifications</h2>
-<p>Key characteristics of open-source models available viaCyVerse AI Verde:</p>
+<div class="columns">
+<div class="column" style="width:55%;">
+<h3 id="key-characteristics">Key Characteristics</h3>
 <ul>
-<li><strong>Context Window</strong>: Max input token limit (ranging from 32k, 128k, up to 1M+).</li>
-<li><strong>Quantization Level</strong>: Bit-depth (e.g., FP16, INT8, 4-bit) defining the RAM memory requirements.</li>
-<li><strong>Developer &amp; License</strong>: Lineage (Google Gemma, Meta Llama, Qwen, GLM) and licensing restrictions (Apache 2.0 vs Llama licenses).</li>
-<li><strong>Modalities</strong>: Support for text-only versus multimodal inputs (images, audio, video).</li>
+<li><strong>Technical Specs</strong>: Developer lineage (Google Gemma, Meta Llama, Qwen, GLM), context windows (32k to 1M+), training tokens.</li>
+<li><strong>Operational &amp; Licensing</strong>: Release dates, open vs. proprietary license types, quantization levels (FP16, INT8, 4-bit) defining memory/RAM needs.</li>
+<li><strong>Capabilities</strong>: Benchmark scores (MMLU, GSM8K), text-only vs. multimodal (images, audio, video), language support.</li>
 </ul>
+</div><div class="column" style="width:45%;">
+<h3 id="model-sources-ai-verde">Model Sources (AI Verde)</h3>
+<ul>
+<li><strong><a href="https://ollama.com/library/glm-4.7-flash">glm-4.7-flash</a></strong> (Ollama)</li>
+<li><strong><a href="https://openrouter.ai/models/google/gemma-3-12b">Gemma 3 12B</a></strong> (OpenRouter)</li>
+<li><strong><a href="https://catalog.ngc.nvidia.com/models/nvidia/phi-4/overview">Phi-4</a></strong> (NVIDIA)</li>
+<li><strong><a href="https://arxiv.org/abs/2505.09388">Qwen3 Tech Report</a></strong> (arXiv)</li>
+<li><strong><a href="https://openrouter.ai/models/minimax/minimax-m2">MiniMax M2</a></strong> (OpenRouter)</li>
+<li><strong><a href="https://openrouter.ai/models/gpt-oss-120b">gpt-oss-120b</a></strong> (OpenRouter)</li>
+<li><strong><a href="https://github.com/byandell/Documentation/blob/main/verde_models.csv">Verde Model Spec Catalog</a></strong></li>
+</ul>
+</div></div>
 </section>
 <section id="what-is-an-ai-harness" class="slide level2">
 <h2>What is an AI Harness?</h2>
@@ -1392,13 +1448,27 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
 <li><strong>Normalizing Term</strong>: Mollick organizes AI into <em>Models, Apps, and Harnesses</em>.</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<h3 id="analogies-purpose">Analogies &amp; Purpose</h3>
+<h3 id="core-origins-analogies">Core Origins &amp; Analogies</h3>
+<ul>
+<li><strong><a href="https://mitchellh.com/writing/my-ai-adoption-journey">My AI Adoption Journey</a></strong> (Mitchell Hashimoto)</li>
+<li><strong><a href="https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the">A Guide to Which AI to Use in the Agentic Era</a></strong> (Ethan Mollick)</li>
+<li><strong>Analogies</strong>:
 <ul>
 <li><em>“The model is commodity. The harness is the moat.”</em> (Sarah Chen)</li>
 <li><em>“The model is the engine. The harness is the car.”</em> (Grant Harvey)</li>
-<li><strong>Integration</strong>: A framework to channel raw model capabilities into directed, controlled, and useful workflows.</li>
+</ul></li>
 </ul>
 </div></div>
+</section>
+<section id="harness-engineering-references" class="slide level2">
+<h2>Harness Engineering References</h2>
+<ul>
+<li><strong><a href="https://harness-engineering.ai/blog/agent-harness-complete-guide/">Complete Guide to Agent Harness</a></strong> (Sarah Chen, Harness Engineering)</li>
+<li><strong><a href="https://atlan.com/know/what-is-harness-engineering/">What is Harness Engineering?</a></strong> (Emily Winks, atlan)</li>
+<li><strong><a href="https://www.theneuron.ai/explainer-articles/ai-harnesses-and-clis-explained-the-real-reason-everyones-talking-about-infrastructure/">AI Harnesses and CLIs, Explained</a></strong> (Grant Harvey, eero)</li>
+<li><strong><a href="https://www.jayminwest.com/agentic-engineering-book/6-harnesses/1-what-is-a-harness">What is a Harness?</a></strong> (Jaymin West, Agentic Engineering)</li>
+<li><strong><a href="https://andrewmaynard.net/what-the-rapid-adoption-of-the-harness-metaphor-in-artificial-intelligence-reveals-about-how-we-conceptualize-human-ai-relations/">Harness Metaphor &amp; Human-AI Relations</a></strong> (Andrew Maynard)</li>
+</ul>
 </section></section>
 <section>
 <section id="prompt-context-engineering" class="title-slide slide level1 center" data-background-color="#e0f2fe">

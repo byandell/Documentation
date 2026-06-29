@@ -222,30 +222,84 @@ alongside background AI terminal execution.
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Neural Network Weights
-- LLMs are massive transformer networks predicting the next token in a sequence.
-- Neural weights are frozen after training, but context windows hold conversation state.
-- **Mixture of Experts (MoE)**: Activates only a subset of network layers for each query to save compute.
+### Transformer Networks
+- **Structure**: Massive transformer networks with nodes joined by weighted edges.
+- **Weights**: Nodes/edges are fixed; weights are adjusted based on training data.
+- **Sequence Prediction**: Learning patterns to predict the next token in a sequence.
+- **Scale**: Billions or trillions of nodes to generate rich responses to prompts.
 :::
 
 ::: {.column width="50%"}
-### Encoders & Decoders
-- **Tokenization**: Splitting text into tokens.
-- **Encoding**: Converting tokens into embeddings.
-- **Contextualization**: Processing context layers.
-- **Decoding**: Predicting and generating tokens.
-- **Detokenization**: Rendering back to text.
+### LLM Explanations & Guides
+- **[IBM: What are LLMs?](https://www.ibm.com/think/topics/large-language-models)**
+- **[GeeksforGeeks LLM Guide](https://www.geeksforgeeks.org/artificial-intelligence/large-language-model-llm/)**
+- **[AWS: What is an LLM?](https://aws.amazon.com/what-is/large-language-model/)**
+- **[Geospatial Harmonization with LLMs](https://github.com/CU-ESIIL/LLM_lesson_exemplar)** (CU-ESIIL)
+:::
+:::
+
+## What are AI Tokens?
+
+::: {.columns}
+::: {.column width="50%"}
+### How Models Process Language
+- **Tokens**: Units of data representing words, subwords, images, or audio snippets.
+- **Encoding**: Converting text to numerical embeddings that capture contextual meaning.
+- **Contextualization**: Processing embeddings through layers to understand relationships.
+- **Decoding**: Predicting and generating output tokens, then transforming them back to human text.
+:::
+
+::: {.column width="50%"}
+### Tokenization Resources
+- **[Encoder vs. Decoder Models](https://magazine.sebastianraschka.com/p/understanding-encoder-and-decoder)** (Sebastian Raschka)
+- **[What Are AI Tokens?](https://blogs.nvidia.com/blog/ai-tokens-explained/)** (NVIDIA)
+- **[How Models Read Text](https://aiinsightsnews.net/what-are-tokens-in-ai/)** (AI Insights)
+- **[Tokens: GenAI Currency](https://www.sentisight.ai/tokens-explained-new-currency-of-generative-ai/)** (Sentisight)
+- **[Tokenization Building Blocks](https://medium.com/data-science-collective/the-invisible-building-blocks-of-ai-what-you-need-to-know-about-tokenization-acadd86a63ba)** (Medium)
+- **[gpt-tokenizer playground](https://gpt-tokenizer.dev/)**
+:::
+:::
+
+## Mixture of Experts (MoE)
+
+::: {.columns}
+::: {.column width="50%"}
+### Computational Efficiency
+- **Conditional Routing**: Activates only a subset of network layers for each query rather than the whole model.
+- **Expert Sub-networks**: Inputs are routed to specialized expert layers via a gating network.
+- **Parameter Scaling**: Allows massive scaling of parameters without a proportional increase in compute cost.
+:::
+
+::: {.column width="50%"}
+### MoE Resources
+- **[A Visual Guide to MoE](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts)** (Maarten Grootendorst)
+- **[What is MoE?](https://www.geeksforgeeks.org/nlp/what-is-mixture-of-experts-moe/)** (GeeksforGeeks)
+- **[Mixture of Experts Blog](https://huggingface.co/blog/moe)** (Hugging Face)
+- **[Mu & Lin (2026) paper](https://arxiv.org/abs/2503.07137)** (arXiv)
 :::
 :::
 
 ## Open Source LLM Specifications
 
-Key characteristics of open-source models available viaCyVerse AI Verde:
+::: {.columns}
+::: {.column width="55%"}
+### Key Characteristics
+- **Technical Specs**: Developer lineage (Google Gemma, Meta Llama, Qwen, GLM), context windows (32k to 1M+), training tokens.
+- **Operational & Licensing**: Release dates, open vs. proprietary license types, quantization levels (FP16, INT8, 4-bit) defining memory/RAM needs.
+- **Capabilities**: Benchmark scores (MMLU, GSM8K), text-only vs. multimodal (images, audio, video), language support.
+:::
 
-- **Context Window**: Max input token limit (ranging from 32k, 128k, up to 1M+).
-- **Quantization Level**: Bit-depth (e.g., FP16, INT8, 4-bit) defining the RAM memory requirements.
-- **Developer & License**: Lineage (Google Gemma, Meta Llama, Qwen, GLM) and licensing restrictions (Apache 2.0 vs Llama licenses).
-- **Modalities**: Support for text-only versus multimodal inputs (images, audio, video).
+::: {.column width="45%"}
+### Model Sources (AI Verde)
+- **[glm-4.7-flash](https://ollama.com/library/glm-4.7-flash)** (Ollama)
+- **[Gemma 3 12B](https://openrouter.ai/models/google/gemma-3-12b)** (OpenRouter)
+- **[Phi-4](https://catalog.ngc.nvidia.com/models/nvidia/phi-4/overview)** (NVIDIA)
+- **[Qwen3 Tech Report](https://arxiv.org/abs/2505.09388)** (arXiv)
+- **[MiniMax M2](https://openrouter.ai/models/minimax/minimax-m2)** (OpenRouter)
+- **[gpt-oss-120b](https://openrouter.ai/models/gpt-oss-120b)** (OpenRouter)
+- **[Verde Model Spec Catalog](https://github.com/byandell/Documentation/blob/main/verde_models.csv)**
+:::
+:::
 
 ## What is an AI Harness?
 
@@ -258,12 +312,22 @@ Key characteristics of open-source models available viaCyVerse AI Verde:
 :::
 
 ::: {.column width="50%"}
-### Analogies & Purpose
-- *"The model is commodity. The harness is the moat."* (Sarah Chen)
-- *"The model is the engine. The harness is the car."* (Grant Harvey)
-- **Integration**: A framework to channel raw model capabilities into directed, controlled, and useful workflows.
+### Core Origins & Analogies
+- **[My AI Adoption Journey](https://mitchellh.com/writing/my-ai-adoption-journey)** (Mitchell Hashimoto)
+- **[A Guide to Which AI to Use in the Agentic Era](https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the)** (Ethan Mollick)
+- **Analogies**:
+  - *"The model is commodity. The harness is the moat."* (Sarah Chen)
+  - *"The model is the engine. The harness is the car."* (Grant Harvey)
 :::
 :::
+
+## Harness Engineering References
+
+- **[Complete Guide to Agent Harness](https://harness-engineering.ai/blog/agent-harness-complete-guide/)** (Sarah Chen, Harness Engineering)
+- **[What is Harness Engineering?](https://atlan.com/know/what-is-harness-engineering/)** (Emily Winks, atlan)
+- **[AI Harnesses and CLIs, Explained](https://www.theneuron.ai/explainer-articles/ai-harnesses-and-clis-explained-the-real-reason-everyones-talking-about-infrastructure/)** (Grant Harvey, eero)
+- **[What is a Harness?](https://www.jayminwest.com/agentic-engineering-book/6-harnesses/1-what-is-a-harness)** (Jaymin West, Agentic Engineering)
+- **[Harness Metaphor & Human-AI Relations](https://andrewmaynard.net/what-the-rapid-adoption-of-the-harness-metaphor-in-artificial-intelligence-reveals-about-how-we-conceptualize-human-ai-relations/)** (Andrew Maynard)
 
 # Prompt & Context Engineering {background-color="#e0f2fe"}
 
