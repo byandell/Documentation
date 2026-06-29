@@ -167,7 +167,7 @@ for a guide I wrote to recover them based on community response.
 - [Antigravity](https://antigravity.google/)
   - [Google Antigravity Documentation](https://antigravity.google/docs/get-started)
   - [Getting Started with Google Antigravity (CodeLabs)](https://codelabs.developers.google.com/getting-started-google-antigravity)
-  - [AI Recovering Antigravity 1.x Conversations](../recover_conversations.md)
+  - [AI Recovering Antigravity 1.x Conversations](recover_conversations.md)
 
 ### Other AI Environments
 
@@ -182,7 +182,7 @@ Some have evolved away from these roots toward standalone apps.
 - [Cursor MCP Docs](https://docs.cursor.sh/mcp)
 - [Windsurf Review 2026: The AI IDE Redefining Coding Workflows (Second Talent)](https://secondtalent.com/insights/windsurf-review-2026-the-ai-ide-redefining-coding-workflows/)
 
-See caution in [Using R in VS Code with Radian](../radian.md)
+See caution in [Using R in VS Code with Radian](../R/radian.md)
 about `radian` and AI environments.
 
 ## Agentic AI

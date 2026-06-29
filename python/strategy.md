@@ -21,7 +21,7 @@ and [Environmental Systems References](../envsys/).
 - [Add Further Documentation](#add-further-documentation)
 - [Document Functions in Modules in a Package](#document-functions-in-modules-in-a-package)
 - [Migrate from Jupyter Notebooks to Quarto Documents](#migrate-from-jupyter-notebooks-to-quarto-documents)
-- [Set Default Python Kernel for Quarto](kernel.md)
+- [Python Default Kernel for Quarto](kernel.md)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 

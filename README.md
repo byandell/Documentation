@@ -1,7 +1,7 @@
 # [Documentation for Digital Tools](https://byandell.github.io/Documentation)
 
 - [My Documentation Journey](#my-documentation-journey)
-- [R References](./R.md) ([slide deck](./quarto/R.html))
+- [R References](./R/) ([slide deck](./quarto/R.html))
 - [Python References](./python/) ([slide deck](./quarto/python.html))
 - [GitHub, Connect, and CodeSpaces](./github/) ([slide deck](./quarto/github.html))
 - [Environmental Systems References](./envsys/) ([slide deck](./quarto/envsys.html))

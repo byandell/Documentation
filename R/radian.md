@@ -12,7 +12,7 @@ _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
 ## Radian and AI Environments
 
 While you can use the enhanced R tool
-[radian](https://github.com/randian-r/radian)
+[radian](https://github.com/randy3k/radian)
 within
 [AI environments](AI/env.md), they are not as seamless as
 [Posit's RStudio](https://posit.co/download/rstudio-desktop/).

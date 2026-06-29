@@ -239,7 +239,7 @@ VS Code has become a highly customizable IDE for R programming, matching RStudio
 ::: {.columns}
 ::: {.column width="55%"}
 ### Features of Radian
-- **[Radian](https://github.com/randian-r/radian)** is a modern console alternative for R.
+- **[Radian](https://github.com/randy3k/radian)** is a modern console alternative for R.
 - Built on Python's `prompt_toolkit` to provide:
   - Syntax highlighting.
   - Multi-line editing and completion.
