@@ -95,9 +95,6 @@ These references were gleaned from the [ESIIL Network Slack Channel](https://esi
 - [Leveraging Al for Greenhouse Gas Monitoring and Accountability: Webinar Series
 Ensuring Data Quality, Access, and Trust in GH Emissions Information
  (National Academies)](https://www.nationalacademies.org/projects/DEPS-BEES-25-P-692/events/archive)
-- [AI agents working in teams (DeepMind)](https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/)
-  - [Accelerating scientific discovery with Co-Scientist (Nature)](https://doi.org/10.1038/s41586-026-10644-y)
-  - [Generating novel scientific hypotheses with Co-Scientist (YouTube)](https://www.youtube.com/watch?v=aSY_vFFmkW0)
 
 #### Energy and Water Reports
 

@@ -16,6 +16,8 @@ and will add notes here as I learn more.
   - [Google Gemini and Antigravity](#google-gemini-and-antigravity)
   - [Other AI Environments](#other-ai-environments)
 - [Agentic AI](#agentic-ai)
+  - [SOUL.md](#soulmd)
+  - [Agentic AI References](#agentic-ai-references)
 - [Large Language Models](#large-language-models)
   - [What are large language models (LLMs)?](#what-are-large-language-models-llms)
   - [What are AI tokens?](#what-are-ai-tokens)
@@ -213,6 +215,8 @@ ESIIL is imagining OASIS ScienceClaw as a
 of an
 [ESIIL Working Group](https://esiil.org/working_groups).
 
+### SOUL.md
+
 There is an emerging concept of
 [SOUL.md](https://soul.md/)
 that defines each agent by the content
@@ -228,7 +232,8 @@ to understand and use multiple agents.
 Selection and organization of appropriate agents for a task.
 Further, multiple agents will likely require a larger monthly
 fee, if using commercial agents.
-See for instance
+
+### Agentic AI References
 
 - [Agentic AI](https://tyson-swetnam.github.io/intro-gpt/agentic/)
 - [Agent-Environment Interface in AI](https://www.geeksforgeeks.org/artificial-intelligence/agent-environment-interface-in-ai/)
@@ -236,6 +241,9 @@ See for instance
 - [Agentic Engineering (Jaymin West)](https://www.jayminwest.com/agentic-engineering-book/)
 - [A multi-agent system for automating scientific discovery (Nature)](https://doi.org/10.1038/s41586-026-10652-y)
 - [Digital twins as a tool for ecosystem research (Trends in Ecol & Evol)](https://doi.org/10.1016/j.tree.2026.04.016)
+- [Co-Scientist: AI agents working in teams (DeepMind)](https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/)
+  - [Accelerating scientific discovery with Co-Scientist (Nature)](https://doi.org/10.1038/s41586-026-10644-y)
+  - [Generating novel scientific hypotheses with Co-Scientist (YouTube)](https://www.youtube.com/watch?v=aSY_vFFmkW0)
 
 ## Large Language Models
 
