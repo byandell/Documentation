@@ -88,7 +88,7 @@ These references were gleaned from the [ESIIL Network Slack Channel](https://esi
 - [ESIIL AI for Sustainability Summit 2026 (Juan Maestre, LinkedIn)](https://www.linkedin.com/posts/juanpedromaestre_esiil-2026-share-7463707566229991425-mPDk)
 - [Algorithmic Monocultures in Hiring (arXiv)](https://arxiv.org/abs/2605.27371)
 - [The Machine Consumes Itself: Artificial Intelligence and the End of Publish-or-Perish (Postdigital Science & Education)](https://doi.org/10.1007/s42438-026-00666-0)
-- [Ecology is not yet ready for AI—and why that matters (PNAS)](https://doi.org/10.1073/pnas.253397612)
+- [Ecology is not yet ready for AI—and why that matters (PNAS)](https://doi.org/10.1073/pnas.2533976123)
 - [Legacies of foundation species shape life after death (Science Advances)](https://doi.org/10.1126/sciadv.aef9983)
 - [The governance gap threatening long-term ecological archives (EOS)](https://eos.org/opinions/the-governance-gap-threatening-long-term-ecological-archives/)
 - [Researchers who use hallucinated references to face arXiv ban (Nature)](https://www.nature.com/articles/d41586-026-01595-5)
