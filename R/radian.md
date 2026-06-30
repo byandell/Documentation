@@ -1,7 +1,8 @@
 ---
-layout: default
-nav_exclude: true
+title: "R in VS Code with Radian"
+parent: "R References"
 ---
+
 # R in VS Code with Radian
 
 - [R in Visual Studio Code](https://code.visualstudio.com/docs/languages/r)

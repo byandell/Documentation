@@ -1,8 +1,9 @@
 ---
-layout: default
-nav_exclude: true
+title: "Powerpoint for R Analysis"
+parent: "Prompt Examples"
 ---
-# Prompts for R Analysis to Powerpoint
+
+# Powerpoint for R Analysis
 
 *Date: 2026-03-19* (Updated: 2026-03-25)
 

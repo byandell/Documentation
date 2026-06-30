@@ -1,8 +1,9 @@
 ---
-layout: default
-nav_exclude: true
+title: "Recovering Antigravity 1.x Conversations"
+parent: "AI Environments"
 ---
-# AI Recovering Antigravity 1.x Conversations
+
+# Recovering Antigravity 1.x Conversations
 
 `Antigravity IDE 2.0` is an improvement over `Antigravity 1.x`,
 but it lost contact with any previously created conversations.

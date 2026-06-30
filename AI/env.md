@@ -1,3 +1,8 @@
+---
+title: "AI Environments"
+parent: "AI (Artificial Intelligence)"
+---
+
 # AI Environments
 
 We typically work with AI within an environment.
@@ -14,6 +19,7 @@ and will add notes here as I learn more.
 - [Integrated Development Environments (IDEs)](#integrated-development-environments-ides)
   - [Cloud-Based Research Environments](#cloud-based-research-environments)
   - [Google Gemini and Antigravity](#google-gemini-and-antigravity)
+    - [Recovering Antigravity 1.x Conversations](recover_conversations.md)
   - [Other AI Environments](#other-ai-environments)
 - [Agentic AI](#agentic-ai)
   - [SOUL.md](#soulmd)
@@ -155,7 +161,7 @@ but not directly relevant to those of us developing code-based tools.
 Again, unfortunately, the IDE did not carry any previous chat history
 (known as `conversations`) over to 2.0.
 See
-[AI Recovering Antigravity Conversations](../recover_conversations.md)
+[Recovering Antigravity Conversations](recover_conversations.md)
 for a guide I wrote to recover them based on community response.
 
 - [Google Gemini](https://gemini.google.com/)

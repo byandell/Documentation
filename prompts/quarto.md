@@ -1,8 +1,9 @@
 ---
-layout: default
-nav_exclude: true
+title: "Creating Quarto Slides"
+parent: "Prompt Examples"
 ---
-# Prompts Creating Quarto Slides
+
+# Creating Quarto Slides
 
 ## Prompt and Response
 

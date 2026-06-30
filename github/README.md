@@ -1,8 +1,12 @@
+---
+title: "GitHub, Connect, and CodeSpaces"
+---
+
 # GitHub, Connect, and CodeSpaces
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 
-- [GitHub, Connect, and CodeSpaces (Quarto Slideshow)](https://byandell.github.io/Documentation/quarto/github.html)
+- [GitHub Slides](https://byandell.github.io/Documentation/quarto/github.html)
 - [General GitHub and Git Information](#general-github-and-git-information)
 - [GitHub Pages](#github-pages)
   - [My GitHub Pages](#my-github-pages)

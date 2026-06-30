@@ -1,7 +1,9 @@
 ---
-title: "AI Prompt Examples"
-parent: "AI (Artificial Intelligence)"
+title: "Prompt Examples"
+parent: "Prompt Engineering"
 ---
+
+# Prompt Examples
 
 How will you later remember how you used
 [Artificial Intelligence (AI)](../AI/) to advance your projects?
@@ -10,7 +12,7 @@ Here are some examples of prompts that I have used with AI agents to help me,
 and teams in interacting with projects.
 They illustrate a few principles along the way.
 
-- [Prompt Examples (Quarto Slideshow)](https://byandell.github.io/Documentation/quarto/prompts.html)
+- [Prompt Slides](https://byandell.github.io/Documentation/quarto/prompts.html)
 - [Prompt Engineering Guide](https://www.promptingguide.ai)
 - [Prompt Engineering (Claude)](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview)
 - [Prompt Engineering (Tyson Swetnam)](https://tyson-swetnam.github.io/intro-gpt/prompts/#core-features-of-todays-ai-tools)
@@ -48,10 +50,10 @@ Below are examples of prompts I have been developing.
     - [workflow.md](./workflow.md)
   - [Documenting Folders in ResearchDrive](#documenting-folders-in-researchdrive)
 - More detailed Prompt examples
-  - [Prompts for GitHub File Version Management](./file_versions.md)
-  - [Prompts for R Analysis to Powerpoint](./powerpoint.md)
+  - [GitHub File Version Management](./file_versions.md)
+  - [Powerpoint for R Analysis](./powerpoint.md)
   - [Workflow Prompt](./workflow.md)
-  - [Prompts for Creating Quarto Slides](./quarto.md)
+  - [Creating Quarto Slides](./quarto.md)
   - [GitHub Pages with Shinylive](../github/#github-pages-with-shinylive)
     - [Prompts for Shinylive App Export](../github/shinylive.md)
     - [Prompts for Quarto Dashboard with Shinylive](../github/quartolive.md)

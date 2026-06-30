@@ -1,4 +1,9 @@
-## AI Context Engineering
+---
+title: "Context Engineering"
+parent: "AI (Artificial Intelligence)"
+---
+
+# Context Engineering
 
 - [What is Context Engineering?](#what-is-context-engineering)
 - [Context Engineering References](#context-engineering-references)

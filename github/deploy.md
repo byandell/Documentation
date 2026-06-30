@@ -1,8 +1,10 @@
 ---
-layout: default
+title: "Deploy Shinylive apps to GitHub Pages"
+parent: "GitHub, Connect, and CodeSpaces"
 nav_exclude: true
 ---
-# Prompts to Deploy Shinylive apps to GitHub Pages
+
+# Deploy Shinylive apps to GitHub Pages
 
 The following prompts are modified from the original conversation in the
 [geyser](https://github.com/byandell/geyser) repo with Gemini.

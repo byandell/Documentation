@@ -1,7 +1,8 @@
 ---
-layout: default
-nav_exclude: true
+title: "Geospatial Resources"
+parent: "Environmental Systems References"
 ---
+
 # Geospatial Resources
 
 This was part of the [geospatial](https://github.com/byandell-envsys/geospatial) package.

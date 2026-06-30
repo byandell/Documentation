@@ -2,18 +2,20 @@
 title: "AI (Artificial Intelligence)"
 ---
 
+# AI (Artificial Intelligence)
+
 This is a growing collection of references and material about AI, concepts, tools and environments.
 To learn about (generative) AI, start with the self-paced workshop on
 [Generative AI & Prompt Engineering (Tyson Swetnam)](https://tyson-swetnam.github.io/intro-gpt/).
 
-- [AI References (Quarto Slideshow)](https://byandell.github.io/Documentation/quarto/AI.html)
+- [AI References Slides](https://byandell.github.io/Documentation/quarto/AI.html)
 - [Articles about AI](#articles-about-ai)
   - [How might we think about AI?](#how-might-we-think-about-ai)
   - [What about ethics and environmental impact of AI?](#what-about-ethics-and-environmental-impact-of-ai)
   - [AI and Scientific Community](#ai-and-scientific-community)
 - [AI Environments](env.md)
-- [AI Prompt Engineering](prompt.md)
-- [AI Context Engineering](context.md)
+- [Prompt Engineering](prompt.md)
+- [Context Engineering](context.md)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 

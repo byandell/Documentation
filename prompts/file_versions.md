@@ -1,8 +1,9 @@
 ---
-layout: default
-nav_exclude: true
+title: "GitHub File Version Management"
+parent: "Prompt Examples"
 ---
-# Prompts for GitHub File Version Management
+
+# GitHub File Version Management
 
 **Challenge**:
 As code (or other documents) evolve, it is too easy to just save another version.

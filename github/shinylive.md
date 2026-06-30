@@ -1,10 +1,12 @@
 ---
-layout: default
+title: "Shinylive App Export"
+parent: "GitHub, Connect, and CodeSpaces"
 nav_exclude: true
 ---
-# Prompts for Shinylive App Export
 
-**Prompt:*
+# Shinylive App Export
+
+**Prompt:**
 Modify `geyser` package `R` app in
 [inst/connect_modules/app.R](https://github.com/byandell/geyser/blob/main/inst/connect_modules/app.R)
 so that it can be published with `shinylive`.

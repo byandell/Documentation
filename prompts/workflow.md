@@ -1,6 +1,6 @@
 ---
 title: "Workflow Prompt"
-parent: "AI Prompt Examples"
+parent: "Prompt Examples"
 ---
 
 **Use**:

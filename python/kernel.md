@@ -1,3 +1,8 @@
+---
+title: "Python Default Kernel for Quarto"
+parent: "Python References"
+---
+
 # Python Default Kernel for Quarto
 
 To set the default Python kernel for Quarto, you have a few options depending on whether you want to set it globally, per-project, or per-document.
