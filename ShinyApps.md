@@ -11,7 +11,7 @@ have subtle paradoxes caused by reactive elements.
 It is helpful to think carefully about how to modularize apps,
 much as we do with functions, so that we can debug piece by piece.
 
-- [View Modular Shiny Apps Slides](https://byandell.github.io/Documentation/quarto/ShinyApps.html)
+- [View Shiny Apps Slides](https://byandell.github.io/Documentation/quarto/ShinyApps.html)
 
 R language apps developed with collaborators by [Brian Yandell](https://github.com/byandell)
 using the
