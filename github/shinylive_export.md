@@ -1,5 +1,6 @@
 ---
-nav_exclude: true
+title: "Shinylive App Export"
+parent: "GitHub Pages with Shinylive"
 ---
 
 # Shinylive App Export

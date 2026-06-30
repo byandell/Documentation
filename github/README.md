@@ -7,12 +7,12 @@ nav_order: 3
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 
-- [GitHub Slides](https://byandell.github.io/Documentation/quarto/github.html)
+- [View GitHub Slides](https://byandell.github.io/Documentation/quarto/github.html)
 - [General GitHub and Git Information](#general-github-and-git-information)
 - [GitHub Pages](#github-pages)
   - [My GitHub Pages](#my-github-pages)
   - [GitHub Pages References](#github-pages-references)
-  - [GitHub Pages with Shinylive](#github-pages-with-shinylive)
+  - [GitHub Pages with Shinylive](shinylive.md)
 - [Collaborating with GitHub Organizations](#collaborating-with-github-organizations)
 - [Connect with GitHub](#connect-with-github)
 - [CodeSpaces within GitHub](#codespaces-within-github)
@@ -117,31 +117,6 @@ other choices include
   - [Materials for MkDocs: Publishing your site](https://squidfunk.github.io/mkdocs-material/publishing-your-site/)
   - [Deploying your docs](https://www.mkdocs.org/user-guide/deploying-your-docs/)
 - [Resolving Git Push for CI/CD Workflows (TutorialPedia)](https://www.tutorialpedia.org/blog/how-to-resolve-refusing-to-allow-an-oauth-app-to-create-or-update-workflow-on-git-push/)
-
-### GitHub Pages with Shinylive
-
-It is possible to host a client-side (browser run)
-Shiny app provided it is fairly simple.
-The tool to do this is
-[Shinylive](https://shiny.posit.co/py/get-started/shinylive.html),
-which was probably originally developed for `Python`
-and is now available for `R` as
-[r-shinylive](https://posit-dev.github.io/r-shinylive/).
-It has some challenges as all material must
-be self-contained in the app, including data.
-
-- [Python Shinylive: Shiny + WebAssembly (Posit)](https://shiny.posit.co/py/get-started/shinylive.html)
-- [r-shinylive](https://posit-dev.github.io/r-shinylive/)
-- [py-shinylive](https://github.com/posit-dev/py-shinylive)
-- [Using Shinylive to host Shiny app on GitHub Pages (HBC Training)](https://hbctraining.github.io/Training-modules/RShiny/lessons/shinylive.html)
-- [Prepare R app for Shinylive Export](shinylive.md)
-- [Quarto Dashboard Shinylive](quartolive.md)
-
-See AI prompts used for creating shinylive apps:
-
-- [Prepare R app for Shinylive Export](shinylive.md)
-- [Quarto Dashboard with Shinylive](quartolive.md)
-- [Deploy Shinylive apps to GitHub Pages](deploy.md)
 
 ## Collaborating with GitHub Organizations
 

@@ -1,5 +1,6 @@
 ---
-nav_exclude: true
+title: "Quarto Dashboard with Shinylive"
+parent: "GitHub Pages with Shinylive"
 ---
 
 # Quarto Dashboard with Shinylive

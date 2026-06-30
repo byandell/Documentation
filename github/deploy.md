@@ -1,5 +1,6 @@
 ---
-nav_exclude: true
+title: "Deploy Shinylive apps to GitHub Pages"
+parent: "GitHub Pages with Shinylive"
 ---
 
 # Deploy Shinylive apps to GitHub Pages
