@@ -1,5 +1,5 @@
 ---
-title: "AI Prompt Examples"
+title: "Prompt Examples"
 subtitle: "Documenting and Sharing AI Agent Workflows"
 author: "Brian Yandell ([_byandell.github.io_](https://byandell.github.io))"
 date: last-modified
@@ -10,7 +10,7 @@ format:
     slide-number: true
     show-slide-number: all
     embed-resources: true
-    footer: "AI Prompt Examples | Documenting and Sharing Workflows"
+    footer: "Prompt Examples | Documenting and Sharing Workflows"
     highlight-style: github
 ---
 

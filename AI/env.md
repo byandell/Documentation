@@ -206,21 +206,7 @@ to accomplish complex tasks.
 and
 [Google Antigravity](https://antigravity.google/)
 have been evolving such capabilities quickly
-in the commercial world,
-while new open source platforms have emerged,
-notably
-[OpenClaw](https://www.openclaw.ai/) and
-[Hermes](https://hermes-agent.org/).
-
-A science version of OpenClaw
-[OASIS ScienceClaw](https://github.com/CU-ESIIL/openclaw_container)
-is under development for scientific teams by ESIIL.
-(See also
-[ScienceClaw](https://github.com/beita6969/ScienceClaw).)
-ESIIL is imagining OASIS ScienceClaw as a
-[digital twin](https://www.ibm.com/think/topics/digital-twin)
-of an
-[ESIIL Working Group](https://esiil.org/working_groups).
+in the commercial world.
 
 ### SOUL.md
 
@@ -247,6 +233,24 @@ fee, if using commercial agents.
 - [Multi-Agent Orchestration Guide](https://www.agensi.io/learn/multi-agent-orchestration-guide)
 - [Agentic Engineering (Jaymin West)](https://www.jayminwest.com/agentic-engineering-book/)
 - [A multi-agent system for automating scientific discovery (Nature)](https://doi.org/10.1038/s41586-026-10652-y)
+
+### Team Science Platforms
+
+New open source platforms have emerged, notably
+[OpenClaw](https://www.openclaw.ai/) and
+[Hermes](https://hermes-agent.org/).
+
+A science version of OpenClaw
+[OASIS ScienceClaw](https://github.com/CU-ESIIL/openclaw_container)
+is under development for scientific teams by ESIIL.
+(See also
+[ScienceClaw](https://github.com/beita6969/ScienceClaw).)
+ESIIL is imagining OASIS ScienceClaw as a
+[digital twin](https://www.ibm.com/think/topics/digital-twin)
+of an
+[ESIIL Working Group](https://esiil.org/working_groups).
+More new developments:
+
 - [Digital twins as a tool for ecosystem research (Trends in Ecol & Evol)](https://doi.org/10.1016/j.tree.2026.04.016)
 - [Co-Scientist: AI agents working in teams (DeepMind)](https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/)
   - [Accelerating scientific discovery with Co-Scientist (Nature)](https://doi.org/10.1038/s41586-026-10644-y)

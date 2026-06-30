@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Shiny Apps</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a21a96fda2a35a6034e035564d362780.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Shiny Apps</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="shiny-apps" class="level1">
+<h1>Shiny Apps</h1>
+<p>Shiny apps are cool, but they can get complicated, and frustrating to debug. Complicated apps–longer than 500 lines of code–can have subtle paradoxes caused by reactive elements. It is helpful to think carefully about how to modularize apps, much as we do with functions, so that we can debug piece by piece.</p>
+<ul>
+<li><a href="https://byandell.github.io/Documentation/quarto/ShinyApps.html">View Shiny Apps Slides</a></li>
+</ul>
+<p>R language apps developed with collaborators by <a href="https://github.com/byandell">Brian Yandell</a> using the <a href="https://shiny.posit.co/">Shiny</a> package illustrate in various ways an evoling design over time, which made the apps easier to use, understand and debug. These repos include some lessons learned that hopefully will help others as they design and evolve apps for this project. For those interested in comparing shiny apps built in R vs.&nbsp;python, there is a useful development in the <a href="https://github.com/byandell/geyser">Shiny Geyser App</a> repo.</p>
+<p>The best reference for building shiny apps is <a href="https://mastering-shiny.org">Mastering Shiny</a>, with particular attention to Ch 19 on <a href="https://mastering-shiny.org/scaling-modules.html">Shiny modules</a>. See also <a href="https://shiny.rstudio.com/articles/modules.html">Modularizing Shiny app code</a>. Yandell’s key working repos that inform this document are</p>
+<ul>
+<li><a href="https://github.com/byandell/helperApps">Helper Apps</a></li>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/qtlApp">Shiny app for QTL visualization</a></li>
+<li><a href="https://github.com/byandell/geyser">Shiny Geyser App with and without Modules</a></li>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/foundrShiny">Founder Shiny App</a></li>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny">Shiny app for R/qtl2</a></li>
+<li><a href="https://github.com/byandell/shiny_module">Learning about Shiny Modules</a></li>
+</ul>
+<p>Below are discussions in reverse chronological order of these repos:</p>
+<ul>
+<li><a href="https://github.com/byandell/helperApps/blob/main/README.md">helperApps: modules for reuse in other Shiny Apps</a></li>
+<li><a href="#qtlapp-modular-qtl-visualization-app">qtlApp: modular QTL visualization app</a></li>
+<li><a href="#geyser-modular-concepts-and-construction">geyser: modular concepts and construction</a></li>
+<li><a href="#foundrshiny-pragmatic-code-reuse-driven-by-collaborators">foundrShiny: pragmatic code reuse driven by collaborators</a></li>
+<li><a href="#qtl2shiny-localized-qtl-analysis-and-visualization">qtl2shiny: localized QTL analysis and visualization</a></li>
+<li><a href="#shiny_module-learning-about-reactivity">shiny_module: learning about reactivity</a></li>
+</ul>
+<p>Additional links on R in general can be found at <a href="https://github.com/UW-Madison-DataScience/R_for_data_sciences">R for Data Sciences</a>.</p>
+<p><em><a href="https://byandell.github.io/Documentation">byandell.github.io/Documentation</a></em></p>
+<hr>
+<section id="qtlapp-modular-qtl-visualization-app" class="level2">
+<h2 class="anchored" data-anchor-id="qtlapp-modular-qtl-visualization-app">qtlApp: modular QTL visualization app</h2>
+<p>This is an ongoing project that is designed for QTL visualization and analysis at scale. It is organized as a package with multiple small shiny modules, each with its own app. The goal is to make this straightforward and easy enough for team members to develop their own modules as the tools evolve.</p>
+<p>The package has several analysis files used by shiny modules:</p>
+<ul>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/trait_scan.R">trait_scan.R</a></li>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/QTL_plot_visualizer.R">QTL_plot_visualizer.R</a></li>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/peak_finder.R">peak_finder.R</a></li>
+</ul>
+<p>The shiny modules in hierarchy of calling are:</p>
+<ul>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/qtlServer.R">qtlServer.R</a>: QTL app
+<ul>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/mainParServer.R">mainParServer.R</a>: main parameters
+<ul>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/traitServer.R">traitServer.R</a>: break out display of <code>datasets</code> and return of <code>trait_list</code></li>
+</ul></li>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/scanServer.R">scanServer.R</a>: QTL scan read from file</li>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/peakServer.R">peakServer.R</a>: QTL peaks read from file</li>
+</ul></li>
+</ul>
+<p>The deployable app <a href="https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/inst/shinyApp/app.R">app.R</a> sources the file <a href="https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/inst/shinyApp/qtlSetup.R">qtlSetup.R</a> to load data files and then calls the <a href="https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/qtlServer.R">qtlServer.R</a>.</p>
+<ul>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/inst/shinyApp/qtlSetup.R">qtlSetup.R</a>: file setup</li>
+<li><a href="https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/inst/shinyApp/app.R">app.R</a>: app that calls the modules</li>
+</ul>
+</section>
+<section id="geyser-modular-concepts-and-construction" class="level2">
+<h2 class="anchored" data-anchor-id="geyser-modular-concepts-and-construction">geyser: modular concepts and construction</h2>
+<p>The <a href="https://github.com/byandell/geyser">geyser</a> repo studies a simple app (<a href="https://shiny.posit.co/r/gallery/start-simple/faithful">Faithful</a>) to illustrate the components of a shiny app, and how to develop more complicated apps using shiny modules. It starts with <a href="https://github.com/byandell/geyser/tree/main/inst/build_module">building one shiny module</a> around this classic example, and then <a href="https://github.com/byandell/geyser/tree/main/inst/connect_modules">connects multiple modules</a> that organize the logic (server) and app view (ui) in various ways. About a half-dozen shiny modules in <a href="https://github.com/byandell/geyser/tree/main/R">geyser/R</a> comprise the geyser R package, or library. These are of three types:</p>
+<ul>
+<li>plots: <a href="https://github.com/byandell/geyser/blob/main/R/hist.R">hist.R</a>, <a href="https://github.com/byandell/geyser/blob/main/R/gghist.R">gghist.R</a>, <a href="https://github.com/byandell/geyser/blob/main/R/ggpoint.R">ggpoint.R</a></li>
+<li>data: data.R, datasets.R <a href="https://github.com/byandell/geyser/blob/main/R/data.R">data.R</a>, <a href="https://github.com/byandell/geyser/blob/main/R/datasets.R">datasets.R</a></li>
+<li>connections: rows.R, wrapper.R, switch.R <a href="https://github.com/byandell/geyser/blob/main/R/rows.R">rows.R</a>, <a href="https://github.com/byandell/geyser/blob/main/R/wrappeer.R">wrapper.R</a>, <a href="https://github.com/byandell/geyser/blob/main/R/switch.R">switch.R</a></li>
+</ul>
+<p>In addition, in the <a href="https://github.com/byandell/geyser/tree/main/inst/connect_modules">connects_modules</a> folder, there are multiple apps that illustrate different concepts of connecting modules:</p>
+<ul>
+<li>modules over pages: <a href="https://github.com/byandell/geyser/blob/main/inst/connect_modules/appPages.R">appPages.R</a></li>
+<li>modules in rows and columns: <a href="https://github.com/byandell/geyser/blob/main/inst/connect_modules/appRows.R">appRows.R</a>, <a href="https://github.com/byandell/geyser/blob/main/inst/connect_modules/appRowsModule.R">appRowsModule.R</a></li>
+<li>reuse of one module: <a href="https://github.com/byandell/geyser/blob/main/inst/connect_modules/appTwin.R">appTwin.R</a>, <a href="https://github.com/byandell/geyser/blob/main/inst/connect_modules/appDupe.R">appDupe.R</a>, <a href="https://github.com/byandell/geyser/blob/main/inst/connect_modules/appFlip.R">appFlip.R</a></li>
+<li>modules within modules: <a href="https://github.com/byandell/geyser/blob/main/inst/connect_modules/app.R">app.R</a> (see deployed <a href="https://connect.doit.wisc.edu/geyserDemo">Geyser Demo</a>)</li>
+</ul>
+<p>For more information that puts these in context, see the <a href="https://connect.doit.wisc.edu/geyserShinyModules">Geyser Shiny Modules</a> slide deck, as well as the <a href="https://drive.google.com/file/d/1BGSIhihpBc-2TfRza5RGeXBCB55EC6-l">11 Dec 2024 Presentation</a>. There are more aspects of this package, including exploration of modular apps with Quarto and Python.</p>
+</section>
+<section id="foundrshiny-pragmatic-code-reuse-driven-by-collaborators" class="level2">
+<h2 class="anchored" data-anchor-id="foundrshiny-pragmatic-code-reuse-driven-by-collaborators">foundrShiny: pragmatic code reuse driven by collaborators</h2>
+<p>The <a href="https://github.com/AttieLab-Systems-Genetics/foundrShiny">foundrShiny</a> repo is the basis of three tools actively used by the Attie Lab</p>
+<ul>
+<li><a href="https://connect.doit.wisc.edu/FounderCalciumStudy/" class="uri">https://connect.doit.wisc.edu/FounderCalciumStudy/</a></li>
+<li><a href="https://connect.doit.wisc.edu/FounderDietStudy/" class="uri">https://connect.doit.wisc.edu/FounderDietStudy/</a> (requires password)</li>
+<li><a href="https://connect.doit.wisc.edu/FounderLiverDietStudy/" class="uri">https://connect.doit.wisc.edu/FounderLiverDietStudy/</a> (requires password)</li>
+</ul>
+<p>This is an R package, which depends on another R package, <a href="https://github.com/AttieLab-Systems-Genetics/foundr">foundr</a>, that has the data analysis details.</p>
+<p>Each code file in the <a href="https://github.com/AttieLab-Systems-Genetics/foundrShiny/tree/main/R">founderShiny/R</a> folder itself is a shiny module with a server function, UI functions, and an app function. These ~30 shiny modules are interconnected in various ways as described in the <a href="https://docs.google.com/presentation/d/171HEopFlSTtf_AbrA28YIAJxJHvkzihB4_lcV6Ct-eI">Foundr App Developer Guide</a> in order to build the tools cited above. This was not the first, or even the second, iteration to build these tools. It took about 1.5 years to develop this system, driven and guided by interactions with Attie Lab members about use, function, and layout.</p>
+<p>Some of those modules could be used (almost) directly for creating new shiny modules. For instance, the <a href="https://github.com/AttieLab-Systems-Genetics/foundrShiny/blob/main/R/download.R">download.R</a> module takes a list containing filename, plot, and table objects and arranges downloads. There are also ideas about creating and visualizing plots and tables that could prove useful. Further, there was a lot of work on figuring out how to organize input parameters across shiny modules to share inputs without duplication of code.</p>
+<ul>
+<li>app infrastructure: <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/about.R">about.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/foundr.R">foundr.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/entry.R">entry.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/download.R">download.R</a></li>
+<li>plots: <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/biplot.R">biplot.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/dotplot.R">dotplot.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/volcano.R">volcano.R</a></li>
+<li>parameters: <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/mainPar.R">mainPar.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/panelPar.R">panelPar.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/plotPar.R">plotPar.R</a></li>
+<li>panels: see <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/panel.R">panel.R</a> or <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/foundr.R">foundr.R</a>
+<ul>
+<li>trait panel: <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/trait.R">trait.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/traitNames.R">traitNames.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/traitOrder.R">traitOrder.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/traitPairs.R">traitPairs.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/traitSolos.R">traitSolos.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/traitTable.R">traitTable.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/corPlot.R">corPlot.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/corTable.R">corTable.R</a></li>
+<li>stats panel: <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/stats.R">stats.R</a></li>
+<li>time panel: <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/time.R">time.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/timePlot.R">timePlot.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/timeTable.R">timeTable.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/timeTraits.R">timeTraits.R</a></li>
+<li>contrast panel: <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/contrast.R">contrast.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/contrastGroup.R">contrastGroup.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/contrastPlot.R">contrastPlot.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/contrastTable.R">contrastTable.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/contrastTime.R">contrastTime.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/contrastTrait.R">contrastTrait.R</a></li>
+</ul></li>
+<li>non-app helpers: <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/foundrSetup.R">foundrSetup.R</a>, <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/foundr_helper.R">foundr_helpers.R</a></li>
+</ul>
+<p>The <code>foundr</code> module draws together the other modules into the app to be deployed through the panel modules <code>contrast</code>, <code>stats</code>, <code>time</code>, <code>trait</code>. The <code>panel</code> module is just used for testing the panels, but is not part of the <code>foundr</code> app; it could be modified to pull out the panel infrastructure from <code>foundr</code>. Several of these modules are reused. For instance, <code>contrastPlot</code> is used in <code>contrastTrait</code> and <code>stats</code>, <code>timePlot</code> is used in <code>time</code> and <code>contrast</code>, <code>traitOrder</code> is used in <code>trait</code> and <code>time</code>, and the parameter modules (<code>mainPar</code>, <code>panelPar</code>, <code>plotPar</code>) are used repeatedly. The <code>traitNames</code> and <code>contrastTable</code> modules are used multiple times in the <code>trait</code> and <code>contrast</code> panel modules, respectively. The app function of each module might use other modules (notably parameter and download modules) to test that module. Here is the hierarchy of what modules are used directly by other modules:</p>
+<ul>
+<li>foundr: mainPar, about, download, entry, contrast, stats, time, trait
+<ul>
+<li>panel: mainPar, contrast, stats, time, trait</li>
+</ul></li>
+<li>contrast: panelPar, contrastGroup, contrastTime, contrastTable(3), contrastTrait, timePlot
+<ul>
+<li>contrastGroup: contrastPlot</li>
+<li>contrastTable: traitOrder</li>
+<li>contrastTime: timeTraits</li>
+<li>contrastTrait: contrastPlot</li>
+<li>contrastPlot: plotPar, biplot, dotplot, volcano
+<ul>
+<li>biplot: mainPar, panelPar, plotPar, contrastTable</li>
+</ul></li>
+</ul></li>
+<li>stats: panelPar, contrastPlot</li>
+<li>time: panelPar, timePlot, timeTable
+<ul>
+<li>timeTable: timeTraits, traitOrder</li>
+</ul></li>
+<li>trait: panelPar, corPlot, corTable, traitNames(2), traitOrder, traitPairs, traitSolos, traitTable</li>
+</ul>
+<p>The parameter modules scope inputs at different levels of the app. For instance, <code>mainPar</code> parameters (<code>dataset</code>, <code>order</code>, <code>height</code>) are common across many modules, while <code>panelPar</code> parameters (<code>strains</code>, <code>sex</code>, <code>facet</code>) are localized by panel; <code>plotPar</code> parameters are specific to plot modules. This took some careful thinking about how information is passed among modules.</p>
+<p>Note that for this app, input data are <em>not</em> treated as global, but rather passed to the <code>foundr</code> module and on to each panel. Typically, static input data are subset to create reactive objects that are much smaller (focused on a particular dataset and one or a few traits) based on user input.</p>
+<p>Having this many modules was initially confusing, but they enable a developer to concentrate app improvement on isolated parts of the app, using each module’s app function to do unit testing.</p>
+<p>Another important aspect of this project was separating out analysis and visualization code from the reactive (shiny) code into a separate package. In fact, this app started with the <a href="https://github.com/AttieLab-Systems-Genetics/foundr">foundr</a> repo, with shiny code mixed in. The <a href="https://github.com/byandell-sysgen/foundr/tree/v1.4">foundr v1.4 branch</a> contains the earlier version from Summer 2024, where shiny, analysis and viz code are mixed together. The current main branch is complicated enough without shiny code, having ggplot2-based viz code and analytical computations. In addition, it has utility routines; helper routines used by <code>foundrShiny</code> modules but not needed for <code>foundr</code> routines remain in <a href="https://github.com/byandell-sysgen/foundrShiny/blob/main/R/foundr_helpers.R">foundrShiny/R/foundr_helpers.R</a> as mentioned earlier. Additional helpers from <a href="https://github.com/AttieLab-Systems-Genetics/foundr">foundr</a> are organized by function</p>
+<ul>
+<li>ploting
+<ul>
+<li>ggplot_bestcor, ggplot_conditionContrasts, ggplot_traitPairs, ggplot_traitSolos ggplot_traitTimes</li>
+</ul></li>
+<li>utilities
+<ul>
+<li>CCcolors, is_bestcor, keptDatatraits, subset_trait_names, timetraits, timetraitsall, unite_datatraits</li>
+</ul></li>
+<li>analysis
+<ul>
+<li>bestcor, conditionContrasts, eigen_contrast, eigen_traits, traitPairs, traitSolos, traitTimes</li>
+</ul></li>
+<li>summary
+<ul>
+<li>summary_bestcor, summary_conditionContrasts, summary_strainstats</li>
+</ul></li>
+</ul>
+</section>
+<section id="qtl2shiny-localized-qtl-analysis-and-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="qtl2shiny-localized-qtl-analysis-and-visualization">qtl2shiny: localized QTL analysis and visualization</h2>
+<p>The <a href="https://github.com/byandell-sysgen/qtl2shiny">qtl2shiny</a> app was designed to investigate local QTL, within a small (1-4Mb) region of a peak. It performs allele-based LOD scans, SNP-based association mapping, <a href="https://smcclatchy.github.io/mapping/12-snp-assoc/">SNP distribution pattern</a> analysis, and mediation. This work was never published in a peer-reviewed journal, only as a set of packages in CRAN and GitHub. It is in the process of major redesign, which is documented in <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/inst/doc/module.md">Shiny Module Organization</a>.</p>
+<p>The <a href="https://github.com/byandell-sysgen/qtl2shiny">qtl2shiny</a> repo was designed about a decade ago. It is currently working on a laptop with data organized in a particular fashion. However, one can view screenshots and the User’s Guide. This repo has ~25 shiny modules in <a href="https://github.com/byandell-sysgen/qtl2shiny/tree/main/R">qtl2shiny/R</a>, although they do not (yet) follow the conventional naming of server and UI functions, and they do not have app functions. Nevertheless, they have many features that are being considered in current development; these could be usefully retooled for a modernized qtl2 shiny app.</p>
+<p>The hierarchy of module calling is approximately shown in the following figure (with some missing links) and file layout here:</p>
+<p><img src="images/qtl2shiny.png" class="img-fluid"></p>
+<ul>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyMain.R">Main</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyDash.R">Dash</a>,
+<ul>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyDash.R">Dash</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySetup.R">Setup</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyHaplo.R">Haplo</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyDiplo.R">Diplo</a></li>
+</ul></li>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySetup.R">Setup</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyProject.R">Project</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPhenos.R">Phenos</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPeaks.R">Peaks</a>
+<ul>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPhenos.R">Phenos</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPhenoPlot.R">PhenoPlot</a></li>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPeaks.R">Peaks</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyHotspot.R">Hotspot</a></li>
+</ul></li>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyHaplo.R">Haplo</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyProbs.R">Probs</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPSetup.R">SNPSetup</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyScanCoef.R">ScanCoef</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyMediate.R">Mediate</a>
+<ul>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyMediate.R">Mediate</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyTriad.R">Triad</a></li>
+</ul></li>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyDiplo.R">Diplo</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPairProbs.R">PairProbs</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPSetup.R">SNPSetup</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPattern.R">Pattern</a>
+<ul>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPSetup.R">SNPSetup</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPProbs.R">SNPProbs</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPPattern.R">SNPPattern</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPGene.R">SNPGene</a>
+<ul>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPPattern.R">SNPPattern</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPFeature.R">SNPFeature</a></li>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPGene.R">SNPGene</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPSum.R">SNPSum</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPPlot.R">SNPPlot</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyGeneRegion.R">GeneRegion</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyGeneExon.R">GeneExon</a></li>
+</ul></li>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPattern.R">Pattern</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyAllele.R">Allele</a></li>
+</ul></li>
+</ul>
+<p>The above table is based on the <code>master</code> branch; the <code>byandell-refactor</code> branch is modernizing this code. Below are the branch links:</p>
+<ul>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/mainServer.R">main</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/dashServer.R">dash</a>
+<ul>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/dashServer.R">dash</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/setupServer.R">setup</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/haploServer.R">haplo</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/diploServer.R">diplo</a></li>
+</ul></li>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/setupServer.R">setup</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/projectServer.R">project</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/phenoServer.R">pheno</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/peaksServer.R">peaks</a>
+<ul>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/phenoServer.R">pheno</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/phenoPlotServer.R">phenoPlot</a></li>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/peaksServer.R">peaks</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/hotspotServer.R">hotspot</a></li>
+</ul></li>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/haploServer.R">haplo</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/probsServer.R">probs</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpSetupServer.R">snpSetup</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/scanCoefServer.R">scanCoef</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/mediateServer.R">mediate</a>
+<ul>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/mediateServer.R">mediate</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/triadServer.R">triad</a></li>
+</ul></li>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/diploServer.R">diplo</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/probsServer.R">pairProbs</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpSetupServer.R">snpSetup</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/patternServer.R">pattern</a>
+<ul>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpSetupServer.R">snpSetup</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/probsServer.R">snpProbs</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpPatternServer.R">snpPattern</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpGeneServer.R">snpGene</a>
+<ul>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpPatternServer.R">snpPattern</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpFeatureServer.R">snpFeature</a></li>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpGeneServer.R">snpGene</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpSumServer.R">snpSum</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpPlotServer.R">snpPlot</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/geneRegionServer.R">geneRegion</a>, <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/geneExonServer.R">geneExon</a></li>
+</ul></li>
+<li><a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/patternServer.R">pattern</a>: <a href="https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/alleleServer.R">allele</a></li>
+</ul></li>
+</ul>
+<p>The <code>main</code> module calls <code>dash</code>, which then invokes <code>setup</code> and the two primary modules, <code>haplo</code> and <code>diplo</code>, for haplotype and diplotype analyses. Each of those call multiple other modules. The app has a side panel where switches among different types of analyses and plots are performed. Some shiny technology is older–would be good to switch from <a href="https://shiny.posit.co/blog/posts/bslib-dashboards/">shinydashboard to bslib</a>–and more modularity is possible. Download operations are currently duplicated in multiple modules, but should be pulled out as was done for <code>foundShiny</code>, ideally using that same <a href="https://github.com/AttieLab-Systems-Genetics/foundrShiny/blob/main/R/download.R">download.R</a> module. See screenshots and guides:</p>
+<ul>
+<li><a href="http://pages.stat.wisc.edu/~yandell/software/qtl2shiny/screenshots.html">Screen Shots</a></li>
+<li><a href="https://github.com/byandell/qtl2shiny/blob/master/vignettes/UserGuide.Rmd">User Guide</a></li>
+<li><a href="https://github.com/byandell/qtl2shiny/blob/master/vignettes/DeveloperGuide.Rmd">Developer Guide</a></li>
+<li><a href="https://github.com/byandell/qtl2shiny/blob/master/vignettes/qtl2shinyData.Rmd">Data Preparation</a></li>
+</ul>
+<p>Finally, <code>qtl2shiny</code> depends on several other R packages (some in CRAN, all in GitHub):</p>
+<ul>
+<li><a href="https://cran.r-project.org/package=qtl2">qtl2</a></li>
+<li><a href="https://cran.r-project.org/package=qtl2ggplot">qtl2ggplot2</a></li>
+<li><a href="https://cran.r-project.org/package=qtl2fst">qtl2fst</a></li>
+<li><a href="https://cran.r-project.org/package=qtl2pattern">qtl2pattern</a></li>
+<li><a href="https://github.com/byandell/qtl2mediate">qtl2mediate</a></li>
+<li><a href="https://github.com/byandell/intermediate">intermediate</a></li>
+</ul>
+</section>
+<section id="shiny_module-learning-about-reactivity" class="level2">
+<h2 class="anchored" data-anchor-id="shiny_module-learning-about-reactivity">shiny_module: learning about reactivity</h2>
+<p>Finally, the <a href="https://github.com/byandell/shiny_module">shiny_module</a> repo has some early learnings about reactivity. It is perhaps useful as a reference when trying to figure out why reactive code is not working. However, it is rather dated at this point.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
