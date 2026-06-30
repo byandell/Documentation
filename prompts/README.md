@@ -1,6 +1,7 @@
 ---
 title: "Prompt Examples"
 parent: "Prompt Engineering"
+permalink: /prompts/
 ---
 
 # Prompt Examples

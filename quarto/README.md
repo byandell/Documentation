@@ -1,6 +1,7 @@
 ---
 title: "Quarto Slides & References"
 nav_order: 7
+permalink: /quarto/
 ---
 
 # Quarto Slides & References

@@ -1,6 +1,7 @@
 ---
 title: "GitHub"
 nav_order: 3
+permalink: /github/
 ---
 
 # GitHub
@@ -90,12 +91,13 @@ as the theme, which includes many useful navigation features.
 It interprets `README.md` files in folders
 as top-level pages, with the `README.md` in the top-most
 folder displayed as the homepage.
-One mistake I made with putting navigation order (`nav_order`)
-in the top-most
-[README.md](https://github.com/byandell/Documentation/blob/main/README.md)
-in the YAML front matter without adding a permalink to the homepage,
+One mistake I made was that putting YAML front matter
+in a `README.md`
+such as for navigation order (`nav_order`),
+requires adding a `permalink`,
 which forces Jekyll to use that page as the top-level `index` page.
-The corrected front matter is:
+The corrected front matter, say for the top
+[README.md](https://github.com/byandell/Documentation/blob/main/README.md):
 
 ```
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Environmental Systems"
 nav_order: 4
+permalink: /envsys/
 ---
 
 # Environmental Systems

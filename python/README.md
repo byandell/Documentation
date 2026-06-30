@@ -1,6 +1,7 @@
 ---
 title: "Python Language"
 nav_order: 2
+permalink: /python/
 ---
 
 This is a collection of Python language references that I have found useful.

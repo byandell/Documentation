@@ -1,6 +1,7 @@
 ---
 title: "AI (Artificial Intelligence)"
 nav_order: 6
+permalink: /AI/
 ---
 
 # AI (Artificial Intelligence)

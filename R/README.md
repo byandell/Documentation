@@ -1,6 +1,7 @@
 ---
 title: "R Language"
 nav_order: 1
+permalink: /R/
 ---
 
 # R Language
