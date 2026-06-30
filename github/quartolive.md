@@ -1,6 +1,4 @@
 ---
-title: "Quarto Dashboard with Shinylive"
-parent: "GitHub, Connect, and CodeSpaces"
 nav_exclude: true
 ---
 

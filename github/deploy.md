@@ -1,6 +1,4 @@
 ---
-title: "Deploy Shinylive apps to GitHub Pages"
-parent: "GitHub, Connect, and CodeSpaces"
 nav_exclude: true
 ---
 

@@ -19,7 +19,7 @@ See also
 - [Geospatial References](./geospatial.md)
 - [Google Maps Platform Access](#google-maps-platform-access)
 - [EDA Workbook on Python](python/#earth-data-analytics-eda-workbook)
-- [GitHub & Codespaces](github.md)
+- [GitHub](../github/)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 

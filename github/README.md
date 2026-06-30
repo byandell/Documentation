@@ -1,9 +1,9 @@
 ---
-title: "GitHub, Connect, and CodeSpaces"
+title: "GitHub"
 nav_order: 3
 ---
 
-# GitHub, Connect, and CodeSpaces
+# GitHub
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 
@@ -14,8 +14,8 @@ _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
   - [GitHub Pages References](#github-pages-references)
   - [GitHub Pages with Shinylive](#github-pages-with-shinylive)
 - [Collaborating with GitHub Organizations](#collaborating-with-github-organizations)
-- [Connect](#connect)
-- [CodeSpaces](#codespaces)
+- [Connect with GitHub](#connect-with-github)
+- [CodeSpaces within GitHub](#codespaces-within-github)
 
 ## General GitHub and Git Information
 
@@ -200,7 +200,7 @@ This is done with old style HTML code:
 </details>
 ```
 
-## Connect
+## Connect with GitHub
 
 Posit's Connect is a platform for sharing resources such as R shiny apps, Quarto documents,
 and python apps.
@@ -233,7 +233,7 @@ renv::record("github_user/package_name")
 - [Using renv with Posit Connect](https://pkgs.rstudio.com/renv/articles/rsconnect.html)
 - [R Package Management](https://docs.posit.co/connect/admin/r/package-management/)
 
-## CodeSpaces
+## CodeSpaces within GitHub
 
 Always stop a codespace when done to save resources!
 

@@ -8,7 +8,7 @@ nav_order: 0
 - [My Documentation Journey](#my-documentation-journey)
 - [R Language](./R/) ([slides](./quarto/R.html))
 - [Python Language](./python/) ([slides](./quarto/python.html))
-- [GitHub, Connect, and CodeSpaces](./github/) ([slides](./quarto/github.html))
+- [GitHub](./github/) ([slides](./quarto/github.html))
 - [Environmental Systems](./envsys/) ([slides](./quarto/envsys.html))
 - [Shiny Apps](./ShinyApps.md) ([slides](./quarto/ShinyApps.html))
 - [Artificial Intelligence (AI)](./AI/) ([slides](./quarto/AI.html))

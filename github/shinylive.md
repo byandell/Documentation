@@ -1,6 +1,4 @@
 ---
-title: "Shinylive App Export"
-parent: "GitHub, Connect, and CodeSpaces"
 nav_exclude: true
 ---
 
