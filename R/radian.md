@@ -1,6 +1,6 @@
 ---
 title: "R in VS Code with Radian"
-parent: "R References"
+parent: "R Language"
 ---
 
 # R in VS Code with Radian

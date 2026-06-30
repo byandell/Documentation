@@ -1,5 +1,5 @@
 ---
-title: "R Digital Tools"
+title: "R Language"
 subtitle: "Study Group, 6 Verbs, IDEs, Pipes"
 author: "Brian Yandell ([_byandell.github.io_](https://byandell.github.io))"
 date: last-modified
@@ -10,7 +10,7 @@ format:
     slide-number: true
     show-slide-number: all
     embed-resources: true
-    footer: "R for the Data Sciences"
+    footer: "R Language"
     highlight-style: github
 ---
 

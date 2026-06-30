@@ -1,3 +1,8 @@
+---
+title: "Shiny Apps"
+nav_order: 5
+---
+
 # Shiny Apps
 
 Shiny apps are cool, but they can get complicated, and frustrating to debug.

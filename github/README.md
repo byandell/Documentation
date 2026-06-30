@@ -1,5 +1,6 @@
 ---
 title: "GitHub, Connect, and CodeSpaces"
+nav_order: 3
 ---
 
 # GitHub, Connect, and CodeSpaces

@@ -1,8 +1,9 @@
 ---
-title: "Python References"
+title: "Python Language"
+nav_order: 2
 ---
 
-This is a collection of Python references that I have found useful.
+This is a collection of Python language references that I have found useful.
 These were originally in the
 [landmapy](https://github.com/byandell-envsys/landmapy)
 repository.
@@ -10,7 +11,7 @@ See related in
 [Environmental Systems](../envsys/).
 Please offer suggestions to improve.
 
-- [Python Slides](https://byandell.github.io/Documentation/quarto/python.html)
+- [View Python Slides](https://byandell.github.io/Documentation/quarto/python.html)
 - [Python Overview](#python-overview)
 - [Python Coding Strategy](./strategy.md)
 - [Earth Data Analytics (EDA) Workbook](#earth-data-analytics-eda-workbook)

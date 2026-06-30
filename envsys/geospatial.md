@@ -1,6 +1,6 @@
 ---
 title: "Geospatial Resources"
-parent: "Environmental Systems References"
+parent: "Environmental Systems"
 ---
 
 # Geospatial Resources

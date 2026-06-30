@@ -1,15 +1,18 @@
 ---
 title: "Python Coding Strategy"
-parent: Python References
+parent: "Python Language"
+nav_order: 1
 ---
+
+# Python Coding Strategy
 
 These references were gathered while learning about environmental systems and data analytics while attending the
 [CU Boulder EarthLab](https://earthlab.colorado.edu/) course
 on [Earth Data Analytics](https://github.com/byandell-envsys/EarthDataAnalytics).
 To help me understand and organize code and ideas, I developed the
 [landmapy](https://github.com/byandell-envsys/landmapy) package.
-See also [Python References](./)
-and [Environmental Systems References](../envsys/).
+See also [Python Language](./)
+and [Environmental Systems](../envsys/).
 
 - [Make Coding Fun](#make-coding-fun)
 - [Build a Function](#build-a-function)

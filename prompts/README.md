@@ -12,7 +12,7 @@ Here are some examples of prompts that I have used with AI agents to help me,
 and teams in interacting with projects.
 They illustrate a few principles along the way.
 
-- [Prompt Slides](https://byandell.github.io/Documentation/quarto/prompts.html)
+- [View Prompt Slides](https://byandell.github.io/Documentation/quarto/prompts.html)
 - [Prompt Engineering Guide](https://www.promptingguide.ai)
 - [Prompt Engineering (Claude)](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview)
 - [Prompt Engineering (Tyson Swetnam)](https://tyson-swetnam.github.io/intro-gpt/prompts/#core-features-of-todays-ai-tools)

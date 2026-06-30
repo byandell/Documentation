@@ -1,5 +1,6 @@
 ---
 title: "AI (Artificial Intelligence)"
+nav_order: 6
 ---
 
 # AI (Artificial Intelligence)
@@ -8,7 +9,7 @@ This is a growing collection of references and material about AI, concepts, tool
 To learn about (generative) AI, start with the self-paced workshop on
 [Generative AI & Prompt Engineering (Tyson Swetnam)](https://tyson-swetnam.github.io/intro-gpt/).
 
-- [AI References Slides](https://byandell.github.io/Documentation/quarto/AI.html)
+- [View AI Slides](https://byandell.github.io/Documentation/quarto/AI.html)
 - [Articles about AI](#articles-about-ai)
   - [How might we think about AI?](#how-might-we-think-about-ai)
   - [What about ethics and environmental impact of AI?](#what-about-ethics-and-environmental-impact-of-ai)

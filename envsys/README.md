@@ -1,8 +1,9 @@
 ---
-title: "Environmental Systems References"
+title: "Environmental Systems"
+nav_order: 4
 ---
 
-# Environmental Systems References
+# Environmental Systems
 
 These references were gathered while learning about environmental systems and data analytics while attending the
 [CU Boulder EarthLab](https://earthlab.colorado.edu/) course
@@ -12,7 +13,7 @@ To help me understand and organize code and ideas, I developed the
 See also
 [Python Strategy](python_strategy.md).
 
-- [Environmental Systems & Geospatial References Slides](https://byandell.github.io/Documentation/quarto/envsys.html)
+- [View Environmental Systems Slides](https://byandell.github.io/Documentation/quarto/envsys.html)
 - [Earth Data Analytics](#earth-data-analytics)
 - [Open Street Map](#open-street-map)
 - [Geospatial References](./geospatial.md)

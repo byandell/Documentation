@@ -1,10 +1,15 @@
+---
+title: "Documentation for Digital Tools"
+nav_order: 0
+---
+
 # [Documentation for Digital Tools](https://byandell.github.io/Documentation)
 
 - [My Documentation Journey](#my-documentation-journey)
-- [R References](./R/) ([slides](./quarto/R.html))
-- [Python References](./python/) ([slides](./quarto/python.html))
+- [R Language](./R/) ([slides](./quarto/R.html))
+- [Python Language](./python/) ([slides](./quarto/python.html))
 - [GitHub, Connect, and CodeSpaces](./github/) ([slides](./quarto/github.html))
-- [Environmental Systems References](./envsys/) ([slides](./quarto/envsys.html))
+- [Environmental Systems](./envsys/) ([slides](./quarto/envsys.html))
 - [Shiny Apps](./ShinyApps.md) ([slides](./quarto/ShinyApps.html))
 - [Artificial Intelligence (AI)](./AI/) ([slides](./quarto/AI.html))
   - [AI Prompt Examples](./prompts/) ([slides](./quarto/prompts.html))
@@ -78,10 +83,7 @@ on [Earth Data Analytics](https://github.com/byandell-envsys/EarthDataAnalytics)
 To help me understand and organize code and ideas, I developed the
 [landmapy](https://github.com/byandell-envsys/landmapy) package.
 My notes on [Python](https://www.python.org/) and related topics developed during the course are in
-[Python References](python_references.md),
-[Python Coding Strategy](python_strategy.md),
-and
-[Environmental Systems References](envsys/),
+[Python Language](python/) and [Environmental Systems](envsys/),
 now gathered in this repository.
 
 I had been learning about [Shiny](https://shiny.posit.co/) since before I
@@ -112,6 +114,6 @@ Migrated to GitHub Pages on 2026-06-16 with help of
 by
 [Nicolas Vanhoren](https://github.com/nicolas-van).
 Modified theme in
-[_config.yml](.config.yml)
+[_config.yml](_config.yml)
 to
 [just-the-docs](https://just-the-docs.github.io/just-the-docs/).

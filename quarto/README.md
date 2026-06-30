@@ -1,13 +1,18 @@
+---
+title: "Quarto Slides & References"
+nav_order: 7
+---
+
 # Quarto Slides & References
 
 ## Slides
 
-- [R Digital Tools](./R.html) ([source](https://github.com/byandell/Documentation/blob/main/quarto/R.qmd))
-- [Python References & Coding Strategy](./python.html) ([source](https://github.com/byandell/Documentation/blob/main/quarto/python.qmd))
+- [R Language](./R.html) ([source](https://github.com/byandell/Documentation/blob/main/quarto/R.qmd))
+- [Python Language](./python.html) ([source](https://github.com/byandell/Documentation/blob/main/quarto/python.qmd))
 - [GitHub, Connect, and CodeSpaces](./github.html) ([source](https://github.com/byandell/Documentation/blob/main/quarto/github.qmd))
-- [Environmental Systems & Geospatial References](./envsys.html) ([source](https://github.com/byandell/Documentation/blob/main/quarto/envsys.qmd))
+- [Environmental Systems](./envsys.html) ([source](https://github.com/byandell/Documentation/blob/main/quarto/envsys.qmd))
 - [Modular Shiny Applications](./ShinyApps.html) ([source](https://github.com/byandell/Documentation/blob/main/quarto/ShinyApps.qmd))
-- [Artificial Intelligence (AI) References](./AI.html) ([source](https://github.com/byandell/Documentation/blob/main/quarto/AI.qmd))
+- [AI (Artificial Intelligence)](./AI.html) ([source](https://github.com/byandell/Documentation/blob/main/quarto/AI.qmd))
   - [AI Prompt Examples](./prompts.html) ([source](https://byandell/Documentation/quarto/prompts.qmd))
 - [Geyser Shiny Examples](https://byandell.github.io/geyser)
 - [Quarto Narrative](./narrative.html)

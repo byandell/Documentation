@@ -3,6 +3,8 @@ title: "Workflow Prompt"
 parent: "Prompt Examples"
 ---
 
+# Workflow Prompt
+
 **Use**:
 Be sure you are working in a folder where you want the new package components to live.
 Type the following prompt into AI, substituting for your file `xxx.R` and desired base name `yyy`
