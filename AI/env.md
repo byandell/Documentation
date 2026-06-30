@@ -251,6 +251,7 @@ fee, if using commercial agents.
 - [Co-Scientist: AI agents working in teams (DeepMind)](https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/)
   - [Accelerating scientific discovery with Co-Scientist (Nature)](https://doi.org/10.1038/s41586-026-10644-y)
   - [Generating novel scientific hypotheses with Co-Scientist (YouTube)](https://www.youtube.com/watch?v=aSY_vFFmkW0)
+- [Claude Science](https://claude.com/product/claude-science)
 
 ## Large Language Models (LLMs)
 
