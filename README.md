@@ -1,6 +1,7 @@
 ---
 title: "Documentation for Digital Tools"
 nav_order: 0
+permalink: /
 ---
 
 # [Documentation for Digital Tools](https://byandell.github.io/Documentation)
