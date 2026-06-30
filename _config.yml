@@ -6,7 +6,7 @@ relative_links:
   collections: true
 nav_external_links:
   - title: Documentation GitHub
-    url: https://github.com/brianyandell/Documentation
+    url: https://github.com/byandell/Documentation
     hide_icon: false # set to true to hide the external link icon - defaults to false
     opens_in_new_tab: true # set to true to open this link in a new tab - defaults to false
 include:
