@@ -1,14 +1,14 @@
 # [Documentation for Digital Tools](https://byandell.github.io/Documentation)
 
 - [My Documentation Journey](#my-documentation-journey)
-- [R References](./R/) ([slide deck](./quarto/R.html))
-- [Python References](./python/) ([slide deck](./quarto/python.html))
-- [GitHub, Connect, and CodeSpaces](./github/) ([slide deck](./quarto/github.html))
-- [Environmental Systems References](./envsys/) ([slide deck](./quarto/envsys.html))
-- [Shiny Apps](./ShinyApps.md) ([slide deck](./quarto/ShinyApps.html))
-- [Artificial Intelligence (AI)](./AI/) ([slide deck](./quarto/AI.html))
-  - [AI Prompt Examples](./prompts/) ([slide deck](./quarto/prompts.html))
-- [Quarto Slide Decks & References](./quarto/)
+- [R References](./R/) ([slides](./quarto/R.html))
+- [Python References](./python/) ([slides](./quarto/python.html))
+- [GitHub, Connect, and CodeSpaces](./github/) ([slides](./quarto/github.html))
+- [Environmental Systems References](./envsys/) ([slides](./quarto/envsys.html))
+- [Shiny Apps](./ShinyApps.md) ([slides](./quarto/ShinyApps.html))
+- [Artificial Intelligence (AI)](./AI/) ([slides](./quarto/AI.html))
+  - [AI Prompt Examples](./prompts/) ([slides](./quarto/prompts.html))
+- [Quarto Slides & References](./quarto/)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
 ([GitHub](https://github.com/byandell/Documentation))

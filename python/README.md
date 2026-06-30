@@ -1,4 +1,6 @@
-# Python References & Coding Strategy
+---
+title: "Python References"
+---
 
 This is a collection of Python references that I have found useful.
 These were originally in the
@@ -8,7 +10,7 @@ See related in
 [Environmental Systems](../envsys/).
 Please offer suggestions to improve.
 
-- [Python References & Coding Strategy (Quarto Slideshow)](https://byandell.github.io/Documentation/quarto/python.html)
+- [Python Slides](https://byandell.github.io/Documentation/quarto/python.html)
 - [Python Overview](#python-overview)
 - [Python Coding Strategy](./strategy.md)
 - [Earth Data Analytics (EDA) Workbook](#earth-data-analytics-eda-workbook)

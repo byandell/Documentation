@@ -1,3 +1,7 @@
+---
+layout: default
+nav_exclude: true
+---
 # R in VS Code with Radian
 
 - [R in Visual Studio Code](https://code.visualstudio.com/docs/languages/r)

@@ -1,3 +1,7 @@
+---
+layout: default
+nav_exclude: true
+---
 # Geospatial Resources
 
 This was part of the [geospatial](https://github.com/byandell-envsys/geospatial) package.

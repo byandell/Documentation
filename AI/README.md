@@ -1,4 +1,6 @@
-# AI (Artificial Intelligence)
+---
+title: "AI (Artificial Intelligence)"
+---
 
 This is a growing collection of references and material about AI, concepts, tools and environments.
 To learn about (generative) AI, start with the self-paced workshop on

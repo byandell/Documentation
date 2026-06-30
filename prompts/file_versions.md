@@ -1,3 +1,7 @@
+---
+layout: default
+nav_exclude: true
+---
 # Prompts for GitHub File Version Management
 
 **Challenge**:

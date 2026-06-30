@@ -1,6 +1,6 @@
-# Quarto Slide Decks & References
+# Quarto Slides & References
 
-## Slide Decks
+## Slides
 
 - [R Digital Tools](./R.html) ([source](https://github.com/byandell/Documentation/blob/main/quarto/R.qmd))
 - [Python References & Coding Strategy](./python.html) ([source](https://github.com/byandell/Documentation/blob/main/quarto/python.qmd))

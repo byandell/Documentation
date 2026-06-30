@@ -1,3 +1,7 @@
+---
+layout: default
+nav_exclude: true
+---
 # Prompts for Quarto Dashboard with Shinylive
 
 **Prompt**:

@@ -4,6 +4,9 @@ plugins:
 relative_links:
   enabled: true
   collections: true
+aux_links:
+  Documentation GitHub:
+    - https://github.com/brianyandell/Documentation
 include:
   - verde_models.csv
 

@@ -1,4 +1,7 @@
-# Python Coding Strategy
+---
+title: "Python Coding Strategy"
+parent: Python References
+---
 
 These references were gathered while learning about environmental systems and data analytics while attending the
 [CU Boulder EarthLab](https://earthlab.colorado.edu/) course

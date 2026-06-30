@@ -1,4 +1,8 @@
-# Prompts to Create Quarto Slide Decks
+---
+layout: default
+nav_exclude: true
+---
+# Prompts Creating Quarto Slides
 
 ## Prompt and Response
 

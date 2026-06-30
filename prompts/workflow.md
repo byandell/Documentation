@@ -1,4 +1,7 @@
-# Prompts for Workflow Refactoring
+---
+title: "Workflow Prompt"
+parent: "AI Prompt Examples"
+---
 
 **Use**:
 Be sure you are working in a folder where you want the new package components to live.

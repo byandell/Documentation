@@ -1,4 +1,7 @@
-# AI Prompt Examples
+---
+title: "AI Prompt Examples"
+parent: "AI (Artificial Intelligence)"
+---
 
 How will you later remember how you used
 [Artificial Intelligence (AI)](../AI/) to advance your projects?
@@ -47,8 +50,8 @@ Below are examples of prompts I have been developing.
 - More detailed Prompt examples
   - [Prompts for GitHub File Version Management](./file_versions.md)
   - [Prompts for R Analysis to Powerpoint](./powerpoint.md)
-  - [Prompts for Workflow Refactoring](./workflow.md)
-  - [Prompts to Create Quarto Slide Decks](./quarto.md)
+  - [Workflow Prompt](./workflow.md)
+  - [Prompts for Creating Quarto Slides](./quarto.md)
   - [GitHub Pages with Shinylive](../github/#github-pages-with-shinylive)
     - [Prompts for Shinylive App Export](../github/shinylive.md)
     - [Prompts for Quarto Dashboard with Shinylive](../github/quartolive.md)

@@ -1,3 +1,7 @@
+---
+layout: default
+nav_exclude: true
+---
 # Prompts to Deploy Shinylive apps to GitHub Pages
 
 The following prompts are modified from the original conversation in the

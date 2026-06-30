@@ -1,3 +1,7 @@
+---
+layout: default
+nav_exclude: true
+---
 # Prompts for R Analysis to Powerpoint
 
 *Date: 2026-03-19* (Updated: 2026-03-25)
