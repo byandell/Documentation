@@ -11,6 +11,8 @@ _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
 - [General GitHub and Git Information](#general-github-and-git-information)
 - [GitHub Pages](#github-pages)
   - [My GitHub Pages](#my-github-pages)
+    - [My Documentation GitHub Pages](#my-documentation-github-pages)
+    - [QR Codes for Github Pages](#qr-codes-for-github-pages)
   - [GitHub Pages References](#github-pages-references)
   - [GitHub Pages with Shinylive](shinylive.md)
 - [Collaborating with GitHub Organizations](#collaborating-with-github-organizations)
@@ -76,6 +78,35 @@ ESIIL Stars Training Notes (whole repo)
 ([source](https://github.com/byandell/ESIIL)):
 ESIIL Research (`docs/` folder using
 [MkDocs](https://www.mkdocs.org/))
+
+#### My Documentation GitHub Pages
+
+I developed my
+[Documentation GitHub Pages](https://byandell.github.io/Documentation)
+to serve as a reference for the Digital Tools I use.
+In the process, I learned how to use
+[Just-the-Docs](https://just-the-docs.com/)
+as the theme, which includes many useful navigation features.
+It interprets `README.md` files in folders
+as top-level pages, with the `README.md` in the top-most
+folder displayed as the homepage.
+One mistake I made with putting navigation order (`nav_order`)
+in the top-most
+[README.md](https://github.com/byandell/Documentation/blob/main/README.md)
+in the YAML front matter without adding a permalink to the homepage,
+which forces Jekyll to use that page as the top-level `index` page.
+The corrected front matter is:
+
+```
+---
+title: "Documentation for Digital Tools"
+nav_order: 0
+permalink: /
+---
+```
+
+I also learned that using `title:` and `parent:`
+was a useful way to create a navigation hierarchy.
 
 #### QR Codes for Github Pages
 
