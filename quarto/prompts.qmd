@@ -174,7 +174,7 @@ with matching base name.
 
 ::: {.callout-tip}
 ### Refined Prompts
-Check out [file versions](../prompts/file_versions.html) for a streamlined, instruction-optimized version of this prompt.
+Check out [Version GitHub Docs](../prompts/github.html) for a streamlined, instruction-optimized version of this prompt.
 :::
 
 ## GitHub Prompts: Git Conflict Resolution

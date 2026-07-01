@@ -30,7 +30,7 @@ They illustrate a few principles along the way.
   - [Organize a Workflow](#organize-a-workflow)
   - [Document Folders in ResearchDrive](#document-folders-in-researchdrive)
 - More detailed Prompt examples
-  - [Version GitHub Docs](./file_versions.md)
+  - [Version GitHub Docs](./github.md)
   - [Assemble Powerpoint](./powerpoint.md)
   - [Create Quarto Slides](./quarto.md)
   - [Refactor Workflows](./workflow.md)
@@ -222,7 +222,7 @@ To use these, a GitHub account and working knowledge of how Git and GitHub work 
 - [Commit to GitHub multiple versions of an R file](#commit-to-github-multiple-versions-of-an-r-file)
 - [Resolve Git Hell Conflicts](#resolve-git-hell-conflicts)
 - Additional Pages
-  - [Version GitHub Docs](./file_versions.md)
+  - [Version GitHub Docs](./github.md)
   - [Refactor Workflows](./workflow.md)
   - [GitHub](../github/)
 
@@ -253,13 +253,13 @@ Continue until all versions are committed.
 
 The above prompt is a great task for an AI or an automated script. The original prompt is logically sound but can be streamlined to be more "instructional" and clear about the desired state.
 The file
-[file versions prompt](./file_versions.md) has an improved, more concise version of the prompt.
+[Version GitHub Docs](./github.md) has an improved, more concise version of the prompt.
 
 ***
 
 **Examples:**
 
-- [file_versions.md](./file_versions.md)
+- [Version GitHub Docs](./github.md)
 - [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
 
 For details of versions, see for instance
