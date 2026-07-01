@@ -1,14 +1,15 @@
 ---
-title: "GitHub File Version Management"
+title: "Version GitHub Docs"
 parent: "Prompt Examples"
+nav_order: 1
 ---
 
-# GitHub File Version Management
+# Version GitHub Docs
 
 **Challenge**:
 As code (or other documents) evolve, it is too easy to just save another version.
-Here we assume that is done as `xxx_v1.R`, `xxx_v2.R` and so on.
-GitHub version control enables one to have just one file, `xxx.R`, and still have the history of all versions.
+Here we assume that is done as `[basename]_.R`, `[basename]_v1.R`, `[basename]_v2.R` and so on.
+GitHub version control enables one to have just one file, `[basename].R`, and still have the history of all versions.
 
 **Use**:
 Be sure you are working in a folder where you want the new package components to live,
@@ -17,9 +18,9 @@ Type the following prompt into AI; it will find all files with multiple versions
 
 **Prompt**:
 "Run the
-[file versions prompt](https://github.com/byandell/Documentation/blob/main/prompts/file_versions.md) in the current folder."
+[Version GitHub Docs Prompt](#version-github-docs-prompt) in the current folder. Ask for `[basename]`."
 
-## GitHub Version Control Prompt
+## Version GitHub Docs Prompt
 
 "**Reconstruct Git history for versioned R scripts** matching `[basename][ _]v[0-9]+.R`.
 

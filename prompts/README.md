@@ -35,15 +35,11 @@ They illustrate a few principles along the way.
     - [workflow.md](./workflow.md)
   - [Documenting Folders in ResearchDrive](#documenting-folders-in-researchdrive)
 - More detailed Prompt examples
-  - [GitHub File Version Management](./file_versions.md)
-  - [Powerpoint for R Analysis](./powerpoint.md)
-  - [Workflow Prompt](./workflow.md)
-  - [Creating Quarto Slides](./quarto.md)
-  - [Just the Docs Configuration](./justthedocs.md)
-  - [GitHub Pages with Shinylive](../github/#github-pages-with-shinylive)
-    - [Prompts for Shinylive App Export](../github/shinylive.md)
-    - [Prompts for Quarto Dashboard with Shinylive](../github/quartolive.md)
-    - [Prompts to Deploy Shinylive Apps to GitHub Pages](../github/deploy.md)
+  - [Version GitHub Docs](./file_versions.md)
+  - [Assemble Powerpoint](./powerpoint.md)
+  - [Create Quarto Slides](./quarto.md)
+  - [Refactor Workflows](./workflow.md)
+  - [Configure Just-the-Docs](./justthedocs.md)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 

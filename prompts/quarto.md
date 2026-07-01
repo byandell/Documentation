@@ -1,9 +1,10 @@
 ---
-title: "Creating Quarto Slides"
+title: "Create Quarto Slides"
 parent: "Prompt Examples"
+nav_order: 3
 ---
 
-# Creating Quarto Slides
+# Create Quarto Slides
 
 ## Prompt and Response
 

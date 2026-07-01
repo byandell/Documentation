@@ -1,25 +1,32 @@
 ---
-title: "Workflow Prompt"
+title: "Refactor Workflows"
 parent: "Prompt Examples"
+nav_order: 4
 ---
 
-# Workflow Prompt
+# Refactor Workflows
 
 This was developed as I began using AI agents in creating the R package
 [sysgenAnalysis](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis)
 based on analysis workflows developed in the
 [Attie Lab](https://attie.lab.wisc.edu/).
+The goal was to refactor a set of analysis workflows, one at a time, into a modular R package structure.
 
----
+The process starts with a single-file analysis workflow script, say `[basename].R`,
+for an analysis named `[workflow]`.
+Typically `[basename].R` has a mix of analysis steps, data cleaning and organization steps, and plotting steps.
+There may be several data objects used by the script,
+and the script may write several data objects and plots to files.
+Further, different scripts may share common functions.
 
 **Use**:
 Be sure you are working in a folder where you want the new package components to live.
-Type the following prompt into AI, substituting for your file `xxx.R` and desired base name `yyy`
+Type the following prompt into AI, substituting for `[basename].R` and `[workflow]`
 
 **Prompt**:
 "follow the
-[workflow prompt](https://github.com/byandell/Documentation/blob/main/prompts/workflow.md) to refactor `workflow` = `xxx.R` into a modular R package structure
-with `basename` = `yyy`".
+[workflow prompt](https://github.com/byandell/Documentation/blob/main/prompts/workflow.md) to refactor `[basename].R` into a modular R package structure
+for the analysis `[workflow]`".
 
 ---
 
@@ -28,7 +35,7 @@ with `basename` = `yyy`".
 **Instructions**:
 
 1. **Set the [workflow] and [basename] variables from user input**:
-    - [workflow]: The name of the workflow to refactor .
+    - [workflow]: The name of the workflow to refactor.
     - [basename]: The `basename` to use for the refactored workflow.
 
 2. **Understand the workflow**: Read the [workflow] and understand what it does.

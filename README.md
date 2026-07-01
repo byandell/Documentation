@@ -36,8 +36,8 @@ short course in the
 as the repository
 [R_for_data_sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences).
 
-I have been working in System Genetics for several decades, with material
-gathered in the GitHub Organization
+I collaborated with System Genetics researchers for several decades,
+with material gathered in my GitHub Organization
 [byandell-sysgen](https://github.com/byandell-sysgen).
 There is an evolution of code in the repositories of this organization.
 

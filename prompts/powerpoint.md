@@ -1,9 +1,10 @@
 ---
-title: "Powerpoint for R Analysis"
+title: "Assemble Powerpoint"
 parent: "Prompt Examples"
+nav_order: 2
 ---
 
-# Powerpoint for R Analysis
+# Assemble Powerpoint
 
 *Date: 2026-03-19* (Updated: 2026-03-25)
 

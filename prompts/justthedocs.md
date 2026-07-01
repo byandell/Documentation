@@ -1,9 +1,10 @@
 ---
-title: "Just the Docs Configuration"
+title: "Configure Just-the-Docs"
 parent: "Prompt Examples"
+nav_order: 5
 ---
 
-# Just the Docs Configuration
+# Configure Just-the-Docs
 
 **Challenge**:
 When setting up a documentation site using GitHub Pages, you want a clean, modern, responsive design with hierarchical navigation (headings, sub-pages) and proper SEO tags (including page names in browser tabs), without having to build a custom site from scratch.
@@ -14,11 +15,11 @@ Set up a standard Jekyll repository and apply the following configuration to ena
 theme, customize navigation hierarchy, and configure site metadata.
 
 **Prompt**:
-"Follow the [Just the Docs Configuration Prompt](justthedocs.md) to set up and configure the `just-the-docs` remote theme, establish a site-wide navigation structure, and enable page names in browser tabs."
+"Follow [Configure Just-the-Docs](justthedocs.md) to set up and configure the `just-the-docs` remote theme, establish a site-wide navigation structure, and enable page names in browser tabs."
 
 ---
 
-## Just the Docs Configuration Guide
+## Just-the-Docs Configuration Guide
 
 ### 1. Remote Theme Configuration
 
@@ -110,10 +111,10 @@ nav_order: 2
 
 ### 3. Enabling Page Names in Browser Tabs
 
-To display tab titles in the browser as `Page Title | Site Title` (e.g. `Just the Docs Configuration | Documentation`), the site must have:
+To display tab titles in the browser as `Page Title | Site Title` (e.g. `Configure Just the Docs | Documentation`), the site must have:
 
 1. `title` defined in `_config.yml` (e.g., `title: "Documentation"`).
-2. `title` defined in the page's YAML front matter (e.g., `title: "Just the Docs Configuration"`).
+2. `title` defined in the page's YAML front matter (e.g., `title: "Configure Just the Docs"`).
 3. The `jekyll-seo-tag` plugin (which is loaded automatically by the
 [just-the-docs](https://just-the-docs.com/)
 theme through its `{% seo %}` block in `_includes/head.html`).
