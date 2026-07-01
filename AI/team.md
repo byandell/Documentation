@@ -40,7 +40,7 @@ Going big may involve more sophisticated AI environments with
 a natural language experience that orchestrates
 a team of AI agents, each with its own role and expertise, to accomplish
 a larger set of tasks.
-ESIIL is imagining using such platforms as
+ESIIL tech team imagines using such platforms as
 [digital twins](https://www.ibm.com/think/topics/digital-twin)
 for some
 [ESIIL Working Groups](https://esiil.org/working_groups).
@@ -67,12 +67,12 @@ they will replace or supplement current methods.
 - [Digital twins as a tool for ecosystem research (Trends in Ecol & Evol)](https://doi.org/10.1016/j.tree.2026.04.016)
 - Open Source Platforms
   - [OpenClaw](https://www.openclaw.ai/)
-  - [Hermes](https://hermes-agent.org/).
+  - [Hermes](https://hermes-agent.org/)
   - [ESIIL OASIS ScienceClaw](https://github.com/CU-ESIIL/openclaw_container)
   - [ScienceClaw](https://github.com/beita6969/ScienceClaw)
 - Commercial Platforms
   - [Co-Scientist: AI agents working in teams (DeepMind)](https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/)
     - [Accelerating scientific discovery with Co-Scientist (Nature)](https://doi.org/10.1038/s41586-026-10644-y)
     - [Generating novel scientific hypotheses with Co-Scientist (YouTube)](https://www.youtube.com/watch?v=aSY_vFFmkW0)
-  - [Claude Science](https://claude.com/product/claude-science)
+  - [Claude Science (Anthropic)](https://claude.com/product/claude-science)
   - [Prism (OpenAI)](https://openai.com/index/introducing-prism/)
