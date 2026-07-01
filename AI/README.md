@@ -16,6 +16,8 @@ To learn about (generative) AI, start with the self-paced workshop on
   - [What about ethics and environmental impact of AI?](#what-about-ethics-and-environmental-impact-of-ai)
   - [AI and Scientific Community](#ai-and-scientific-community)
 - [AI Environments](env.md)
+- [Large Language Models (LLMs)](LLM.md)
+- [Team Science Platforms](team.md)
 - [Prompt Engineering](prompt.md)
 - [Context Engineering](context.md)
 

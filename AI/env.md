@@ -25,6 +25,7 @@ and will add notes here as I learn more.
 - [Agentic AI](#agentic-ai)
   - [SOUL.md](#soulmd)
   - [Agentic AI References](#agentic-ai-references)
+- [Team Science Platforms](team.md)
 - [Large Language Models (LLMs)](LLM.md)
 - [What is an AI Harness?](#what-is-an-ai-harness)
   - [Harness Engineering References](#harness-engineering-references)
@@ -63,11 +64,6 @@ communication with local (or cloud-based) tools and data.
 Instead, we carry on conversations with an AI agent who,
 with explicit permission from us,
 changes local code or documents and creates reports.
-
-More sophisticated AI environments redesign such tools to offer
-a fully natural language experience in which we may guide a team
-of AI agents, each with its own role and expertise, to accomplish
-a larger set of tasks.
 
 ### Cloud-Based Research Environments
 
@@ -230,29 +226,6 @@ fee, if using commercial agents.
 - [Multi-Agent Orchestration Guide](https://www.agensi.io/learn/multi-agent-orchestration-guide)
 - [Agentic Engineering (Jaymin West)](https://www.jayminwest.com/agentic-engineering-book/)
 - [A multi-agent system for automating scientific discovery (Nature)](https://doi.org/10.1038/s41586-026-10652-y)
-
-### Team Science Platforms
-
-New open source platforms have emerged, notably
-[OpenClaw](https://www.openclaw.ai/) and
-[Hermes](https://hermes-agent.org/).
-
-A science version of OpenClaw
-[OASIS ScienceClaw](https://github.com/CU-ESIIL/openclaw_container)
-is under development for scientific teams by ESIIL.
-(See also
-[ScienceClaw](https://github.com/beita6969/ScienceClaw).)
-ESIIL is imagining OASIS ScienceClaw as a
-[digital twin](https://www.ibm.com/think/topics/digital-twin)
-of an
-[ESIIL Working Group](https://esiil.org/working_groups).
-More new developments:
-
-- [Digital twins as a tool for ecosystem research (Trends in Ecol & Evol)](https://doi.org/10.1016/j.tree.2026.04.016)
-- [Co-Scientist: AI agents working in teams (DeepMind)](https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/)
-  - [Accelerating scientific discovery with Co-Scientist (Nature)](https://doi.org/10.1038/s41586-026-10644-y)
-  - [Generating novel scientific hypotheses with Co-Scientist (YouTube)](https://www.youtube.com/watch?v=aSY_vFFmkW0)
-- [Claude Science](https://claude.com/product/claude-science)
 
 ## What is an AI Harness?
 

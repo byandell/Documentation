@@ -11,6 +11,10 @@ nav_order: 2
 - [What is a Mixture of Experts (MoE)?](#what-is-a-mixture-of-experts-moe)
 - [Open Source LLMs](#open-source-llms)
   - [verde_models.csv](https://github.com/byandell/Documentation/blob/main/verde_models.csv) (Verde Model Spec Catalog)
+- [Team Science Platforms](team.md)
+  - [Geospatial Harmonization with LLMs (CU-ESIIL)](https://github.com/CU-ESIIL/LLM_lesson_exemplar)
+
+## What are large language models (LLMs)?
 
 Large language models (LLMs) are basically big transformer networks,
 with nodes joined by edges that have weights based on the
@@ -29,12 +33,9 @@ of tasks.
 I am a novice on this, so appeal to others
 through links below to find good explanations.
 
-## What are large language models (LLMs)?
-
 - [IBM](https://www.ibm.com/think/topics/large-language-models)
 - [GeeksforGeeks](https://www.geeksforgeeks.org/artificial-intelligence/large-language-model-llm/)
 - [AWS](https://aws.amazon.com/what-is/large-language-model/)
-- [Geospatial Harmonization with LLMs (CU-ESIIL)](https://github.com/CU-ESIIL/LLM_lesson_exemplar)
 
 ## What are AI tokens?
 
