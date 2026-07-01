@@ -12,7 +12,7 @@ nav_order: 2
 - [Open Source LLMs](#open-source-llms)
   - [verde_models.csv](https://github.com/byandell/Documentation/blob/main/verde_models.csv) (Verde Model Spec Catalog)
 - [Team Science Platforms](team.md)
-  - [Geospatial Harmonization with LLMs (CU-ESIIL)](https://github.com/CU-ESIIL/LLM_lesson_exemplar)
+  - [Geospatial Harmonization with LLMs (CU-ESIIL)](https://cu-esiil.github.io/LLM_lesson_exemplar/)
 
 ## What are large language models (LLMs)?
 

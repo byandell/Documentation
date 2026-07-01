@@ -28,7 +28,7 @@ Small systems may be easier to tailor and design the interface of.
 [Large language models (LLMs)](LLM.md)
 enable teams to express intent in natural language and generate working code.
 The
-[Geospatial Harmonization with LLMs (CU-ESIIL)](https://github.com/CU-ESIIL/LLM_lesson_exemplar)
+[Geospatial Harmonization with LLMs (CU-ESIIL)](https://cu-esiil.github.io/LLM_lesson_exemplar/)
 project is an agentic repository that contains code, data access patterns, workflows,
 and, critically, the rules that govern how an AI agent interacts with them.
 At the core of this structure is a simple idea: if you want to use AI in science,
@@ -62,7 +62,7 @@ they will replace or supplement current methods.
 
 ## Team Science Resources
 
-- [Geospatial Harmonization with LLMs (CU-ESIIL)](https://github.com/CU-ESIIL/LLM_lesson_exemplar)
+- [Geospatial Harmonization with LLMs (CU-ESIIL)](https://cu-esiil.github.io/LLM_lesson_exemplar/)
 - [Digital twins as a tool for ecosystem research (Trends in Ecol & Evol)](https://doi.org/10.1016/j.tree.2026.04.016)
 - Open Source Platforms
   - [OpenClaw](https://www.openclaw.ai/)
