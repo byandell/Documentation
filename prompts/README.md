@@ -14,23 +14,7 @@ and teams in interacting with projects.
 They illustrate a few principles along the way.
 
 - [View Prompt Slides](https://byandell.github.io/Documentation/quarto/prompts.html)
-- [Prompt Engineering Guide](https://www.promptingguide.ai)
-- [Prompt Engineering (Claude)](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview)
-- [Prompt Engineering (Tyson Swetnam)](https://tyson-swetnam.github.io/intro-gpt/prompts/#core-features-of-todays-ai-tools)
-  - [Core Features of Today's AI Tools](https://tyson-swetnam.github.io/intro-gpt/prompts/#core-features-of-todays-ai-tools)
-  - [Getting Started with Prompts](https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure)
-
-If you just use prompts and don't keep track of them, you are missing an opportunity to easily document your work flow.
-Not only that, saved prompts and walkthroughs can be used to reproduce your work
-(see [Sharing Prompts Instead of Code](https://byandell.github.io/Gravity-and-Antigravity/#sharing-prompts-instead-of-code)).
-A simple way to begin is to ask your AI agent to save your prompts in a file, e.g. `prompts.md`;
-alternatively, or in addition, save the Walkthrough artifact that the AI agent creates into
-a separate `walkthrough.md` file.
-If you do more work within the same conversation, ask the AI agent to update these files.
-Below are examples of prompts I have been developing.
-
-## Table of Contents
-
+- [Prompt Engineering](../AI/prompt.md)
 - [Saving Prompts and Walkthroughs](#saving-prompts-and-walkthroughs)
   - [Sharing Prompts instead of Code](https://byandell.github.io/Gravity-and-Antigravity/#sharing-prompts-instead-of-code)
 - [AI Agent Conversation](#ai-agent-conversation)
@@ -63,6 +47,15 @@ Below are examples of prompts I have been developing.
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 
 ## Saving Prompts and Walkthroughs
+
+If you just use prompts and don't keep track of them, you are missing an opportunity to easily document your work flow.
+Not only that, saved prompts and walkthroughs can be used to reproduce your work
+(see [Sharing Prompts Instead of Code](https://byandell.github.io/Gravity-and-Antigravity/#sharing-prompts-instead-of-code)).
+A simple way to begin is to ask your AI agent to save your prompts in a file, e.g. `prompts.md`;
+alternatively, or in addition, save the Walkthrough artifact that the AI agent creates into
+a separate `walkthrough.md` file.
+If you do more work within the same conversation, ask the AI agent to update these files.
+Below are examples of prompts I have been developing.
 
 **Prompts:**
 

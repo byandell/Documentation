@@ -80,13 +80,16 @@ This exciting project is on hold but has great potential.
 
 Below are some references on prompt engineering quickly culled from the web:
 
+- What is Prompt Engineering?
+[Coursera](https://cloud.google.com/discover/what-is-prompt-engineering),
+[GitHub](https://github.com/resources/articles/what-is-prompt-engineering),
+[Google Cloud](https://cloud.google.com/discover/what-is-prompt-engineering),
+[IBM](https://www.ibm.com/think/prompt-engineering),
+[Microsoft](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering),
+[Prompting Guide](https://www.promptingguide.ai/introduction/what-is-prompt-engineering)
 - [Generative AI & Prompt Engineering (Tyson Swetnam)](https://tyson-swetnam.github.io/intro-gpt/)
-- [Prompt design strategies (Google Gemini API)](https://ai.google.dev/gemini-api/docs/prompt-design)
-- [What is prompt engineering? (Google Cloud)](https://cloud.google.com/discover/what-is-prompt-engineering)
-- [Prompt engineering (IBM)](https://www.ibm.com/think/prompt-engineering)
-- [Prompt engineering (Microsoft)](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering)
+  - [Core Features of Today's AI Tools](https://tyson-swetnam.github.io/intro-gpt/prompts/#core-features-of-todays-ai-tools)
+  - [Getting Started with Prompts](https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure)
 - [Prompt engineering Guide (Prompting Guide)](https://www.promptingguide.ai/)
-  - [What is prompt engineering?](https://www.promptingguide.ai/introduction/what-is-prompt-engineering)
-- [What Is Prompt Engineering? (Coursera)](https://cloud.google.com/discover/what-is-prompt-engineering)
-- [What is prompt engineering? (GitHub)](https://github.com/resources/articles/what-is-prompt-engineering)
-- [AI Prompt Examples](./prompts/)
+- [Prompt design strategies (Google Gemini API)](https://ai.google.dev/gemini-api/docs/prompt-design)
+- [Prompt Engineering Overview (Claude)](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview)
