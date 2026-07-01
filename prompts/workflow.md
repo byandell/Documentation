@@ -5,6 +5,13 @@ parent: "Prompt Examples"
 
 # Workflow Prompt
 
+This was developed as I began using AI agents in creating the R package
+[sysgenAnalysis](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis)
+based on analysis workflows developed in the
+[Attie Lab](https://attie.lab.wisc.edu/).
+
+---
+
 **Use**:
 Be sure you are working in a folder where you want the new package components to live.
 Type the following prompt into AI, substituting for your file `xxx.R` and desired base name `yyy`

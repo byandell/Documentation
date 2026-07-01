@@ -27,9 +27,11 @@ These reflect my ideas on how
 [Data Evolve](https://byandell.github.io/Data-Evolve/) in concert with
 the evolution of code-based tools and languages.
 
-My notes on [R](cran.r-project.org) were organized for a short course in the
-[UW-Madison Data Science Hub](https://hub.datascience.wisc.edu/), which remain
-in their
+My notes on [R](cran.r-project.org) were organized for a
+2017
+[COMBEE](https://hub.datascience.wisc.edu/communities/combee/)
+short course in the
+[UW-Madison Data Science Hub](https://hub.datascience.wisc.edu/), which remain in their
 [UW-Madison-DataScience GitHub Organization](https://github.com/UW-Madison-DataScience/)
 as the repository
 [R_for_data_sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences).
@@ -51,7 +53,7 @@ I attended the ESIIL Innovation Summit in 2023 (and every year since),
 which introduced me to many amazing people who have become friends.
 An exciting mix of top-notch IT experts gather to share learning and access to state-of-the-art tools.
 Through ESIIL I have gotten to know a collection of Tribal data scientists
-with amazing skills and perspectives on knowledge, science and the earth.
+with amazing skills and perspectives on knowledge, science, the earth and all our relatives.
 
 My learning about environmental systems
 spans technical, cultural and environmental spheres.
@@ -79,19 +81,22 @@ I was asked to be a senior advisor for the
 [ESIIL Stars program](https://esiil.org/esiil-stars)
 and am assisting with the OLC team.
 
-I attended the
+The 2024-25
 [CU Boulder EarthLab](https://earthlab.colorado.edu/) course
-on [Earth Data Analytics](https://github.com/byandell-envsys/EarthDataAnalytics).
-To help me understand and organize code and ideas, I developed the
-[landmapy](https://github.com/byandell-envsys/landmapy) package.
+on [Earth Data Analytics](https://github.com/byandell-envsys/EarthDataAnalytics)
+helped learn to organize
+[Python](python/)
+code and ideas.
+I developed these into the
+[landmapyr](https://github.com/byandell-envsys/landmapyr) package.
 My notes on [Python](https://www.python.org/) and related topics developed during the course are in
 [Python Language](python/) and [Environmental Systems](envsys/),
 now gathered in this repository.
 
-I had been learning about [Shiny](https://shiny.posit.co/) since before I
+I have been learning about [Shiny](https://shiny.posit.co/) since before I
 attended the
 [rstudio::conf(2017)](https://global.rstudio.com/resources/rstudioconf-2017/)
-([GitHub](https://github.com/rstudio/rstudio-conf/tree/main/2017)).
+([slides](https://github.com/rstudio/rstudio-conf/tree/main/2017)).
 Notes on my shiny apps are in
 [Shiny Apps](./ShinyApps.md).
 I created the
@@ -102,22 +107,28 @@ This uses the
 where the data are included in the `R` system as `data(faithful)`,
 and in the Python package
 [seaborn](https://seaborn.pydata.org/) as `geyser`.
-See also
-[Quarto Slides & References](./quarto/)
-for other types of interactive documents.
 
-My learning about AI agents and tools is evolving, including the repository
-[sysgenAnalysis](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis).
+Developing the
+[geyser](https://github.com/byandell/geyser) repo
+gave me more experience with
+[Quarto](https://quarto.org/)
+for interactive slides and demos.
+See
+[Quarto Slides & References](./quarto/).
+
+My learning about AI agents and tools continues to evolve.
 Initial thoughts on so-called artifical intelligence are in my blog about
 Jaron Lanier's
 [There is no AI](https://byandell.github.io/Jaron-Lanier-There-is-no-AI/).
-References about the concept and evolution "AI" tools are in [AI/](./AI/).
+Ideas and notes on the concept and evolution of "AI" tools are in the
+[AI ("Artificial Intelligence")](./AI/)
+pages.
 
-Migrated to GitHub Pages on 2026-06-16 with help of
+_Migrated to GitHub Pages on 2026-06-16 with help of
 [Convert Markdown to GitHub Pages](https://nicolas-van.github.io/easy-markdown-to-github-pages/)
 by
 [Nicolas Vanhoren](https://github.com/nicolas-van).
 Modified theme in
 [_config.yml](_config.yml)
 to
-[just-the-docs](prompts/justthedocs.md).
+[just-the-docs](prompts/justthedocs.md)._
