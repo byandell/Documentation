@@ -23,7 +23,8 @@ resources (funding, expertise, energy and water) and more time.
 Going small involves using smaller, open-source LLMs,
 local platforms (say behind firewalls to respect data sovereignty)
 and implementing smaller and simpler agentic systems.
-Small systems may be easier to tailor and design the interface of.
+Small systems may be easier to tailor and design an interface
+but may be more stochastic (variable or even hallucinatory in response to prompts).
 
 [Large language models (LLMs)](LLM.md)
 enable teams to express intent in natural language and generate working code.
