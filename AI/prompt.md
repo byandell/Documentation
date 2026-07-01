@@ -14,7 +14,7 @@ Below is a schema I am developing.
 - [Learning about prompts](#learning-about-prompts)
 - [Prompt Engineering References](#prompt-engineering-references)
 - [Sharing Prompts instead of Code](https://byandell.github.io/Gravity-and-Antigravity/#sharing-prompts-instead-of-code)
-- [AI Prompt Examples](../prompts/)
+- [Prompt Examples](../prompts/)
 - [Reproducible prompts (ESIIL IGNITE Data Analytics)](https://earthdatascience.org/notebooks/15-reproducible-prompts/reproducible-prompts.html)
 
 ## What is Prompt Engineering?
