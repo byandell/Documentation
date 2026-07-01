@@ -1,3 +1,9 @@
+# Site settings
+title: "Documentation"
+description: "Documentation for Digital Tools"
+url: "https://byandell.github.io"
+baseurl: "/Documentation"
+
 plugins:
   - jekyll-relative-links
   - jekyll-remote-theme

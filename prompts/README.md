@@ -39,6 +39,7 @@ They illustrate a few principles along the way.
   - [Powerpoint for R Analysis](./powerpoint.md)
   - [Workflow Prompt](./workflow.md)
   - [Creating Quarto Slides](./quarto.md)
+  - [Just the Docs Configuration](./justthedocs.md)
   - [GitHub Pages with Shinylive](../github/#github-pages-with-shinylive)
     - [Prompts for Shinylive App Export](../github/shinylive.md)
     - [Prompts for Quarto Dashboard with Shinylive](../github/quartolive.md)

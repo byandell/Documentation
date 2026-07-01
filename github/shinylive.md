@@ -1,6 +1,6 @@
 ---
 title: "GitHub Pages with Shinylive"
-parent: "GitHub"
+parent: "GitHub Pages"
 ---
 
 ## GitHub Pages with Shinylive
