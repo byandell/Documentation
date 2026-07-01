@@ -1,6 +1,7 @@
 ---
 title: "Large Language Models (LLMs)"
-parent: "AI Environments"
+parent: "AI (Artificial Intelligence)"
+nav_order: 2
 ---
 
 # Large Language Models (LLMs)

@@ -1,6 +1,7 @@
 ---
 title: "Context Engineering"
 parent: "AI (Artificial Intelligence)"
+nav_order: 4
 ---
 
 # Context Engineering

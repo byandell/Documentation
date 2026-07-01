@@ -1,6 +1,7 @@
 ---
 title: "Prompt Engineering"
 parent: "AI (Artificial Intelligence)"
+nav_order: 3
 ---
 
 # Prompt Engineering
