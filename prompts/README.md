@@ -25,15 +25,10 @@ They illustrate a few principles along the way.
   - [Create a README.md for a Folder](#create-a-readmemd-for-a-folder)
   - [Create a Table of Contents for a File](#create-a-table-of-contents-for-a-file)
   - [Convert DOCX files to Markdown](#convert-docx-files-to-markdown)
-  - [Powerpoint Presentation](#powerpoint-presentation)
-    - [powerpoint.md](powerpoint.md)
-  - [GitHub Prompts](#github-prompts)
-    - [Commit to GitHub multiple versions of an R file](#commit-to-github-multiple-versions-of-an-r-file)
-      - [file_versions.md](./file_versions.md)
-    - [Resolve Git Hell Conflicts](#resolve-git-hell-conflicts)
+  - [Assemble a Powerpoint Presentation](#assemble-a-powerpoint-presentation)
+  - [Use GitHub Effectively](#use-github-effectively)
   - [Organize a Workflow](#organize-a-workflow)
-    - [workflow.md](./workflow.md)
-  - [Documenting Folders in ResearchDrive](#documenting-folders-in-researchdrive)
+  - [Document Folders in ResearchDrive](#document-folders-in-researchdrive)
 - More detailed Prompt examples
   - [Version GitHub Docs](./file_versions.md)
   - [Assemble Powerpoint](./powerpoint.md)
@@ -188,7 +183,7 @@ This app needs to be installed once on a laptop to use.
 
 - [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
 
-### Powerpoint Presentation
+### Assemble a Powerpoint Presentation
 
 **Prompt:**
 
@@ -219,10 +214,17 @@ However, the prompt as written is rather specific to GTT for DO founder mice,
 and in particular to NZO and B6 strains.
 A user could further specify to replace step 2 with their own version of instructions.
 
-### GitHub Prompts
+### Use GitHub Effectively
 
-These prompts interact with Git and set up files to be pushed to GitHub. To use these, a GitHub account and working knowledge of how Git and GitHub work is assumed.
-See [GitHub](../github/) for more information.
+These prompts interact with Git and set up files to be pushed to GitHub.
+To use these, a GitHub account and working knowledge of how Git and GitHub work is assumed.
+
+- [Commit to GitHub multiple versions of an R file](#commit-to-github-multiple-versions-of-an-r-file)
+- [Resolve Git Hell Conflicts](#resolve-git-hell-conflicts)
+- Additional Pages
+  - [Version GitHub Docs](./file_versions.md)
+  - [Refactor Workflows](./workflow.md)
+  - [GitHub](../github/)
 
 #### Commit to GitHub multiple versions of an R file
 
@@ -313,7 +315,7 @@ At some point, I asked AI the above prompt, which resulted in a comprehensive
 [workflow prompt](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis/blob/main/inst/doc/walkthrough.md#workflow-prompt).
 I later asked the AI agent to modify the workflow prompt as I added subsequent workflow steps.
 
-### Documenting Folders in ResearchDrive
+### Document Folders in ResearchDrive
 
 Several of the prompts shown earlier concern building documentation for data and code kept in folders in the
 [ResearchDrive (RD)](https://it.wisc.edu/services/researchdrive/).
