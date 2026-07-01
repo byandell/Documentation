@@ -10,10 +10,10 @@ _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
 
 - [View GitHub Slides](https://byandell.github.io/Documentation/quarto/github.html)
 - [General GitHub and Git Information](#general-github-and-git-information)
-- [GitHub Pages](pages/)
 - [Collaborating with GitHub Organizations](#collaborating-with-github-organizations)
 - [Connect with GitHub](#connect-with-github)
 - [CodeSpaces within GitHub](#codespaces-within-github)
+- [GitHub Pages](pages/)
 
 ## General GitHub and Git Information
 
