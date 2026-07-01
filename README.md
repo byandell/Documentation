@@ -117,4 +117,4 @@ by
 Modified theme in
 [_config.yml](_config.yml)
 to
-[just-the-docs](https://just-the-docs.github.io/just-the-docs/).
+[just-the-docs](prompts/justthedocs.md).

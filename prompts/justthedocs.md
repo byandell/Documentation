@@ -9,17 +9,22 @@ parent: "Prompt Examples"
 When setting up a documentation site using GitHub Pages, you want a clean, modern, responsive design with hierarchical navigation (headings, sub-pages) and proper SEO tags (including page names in browser tabs), without having to build a custom site from scratch.
 
 **Use**:
-Set up a standard Jekyll repository and apply the following configuration to enable the `just-the-docs` theme, customize navigation hierarchy, and configure site metadata.
+Set up a standard Jekyll repository and apply the following configuration to enable the
+[just-the-docs](https://just-the-docs.com/)
+theme, customize navigation hierarchy, and configure site metadata.
 
 **Prompt**:
-"Follow the [Just the Docs Configuration Prompt](https://github.com/byandell/Documentation/blob/main/prompts/justthedocs.md) to set up and configure the `just-the-docs` remote theme, establish a site-wide navigation structure, and enable page names in browser tabs."
+"Follow the [Just the Docs Configuration Prompt](justthedocs.md) to set up and configure the `just-the-docs` remote theme, establish a site-wide navigation structure, and enable page names in browser tabs."
 
 ---
 
 ## Just the Docs Configuration Guide
 
 ### 1. Remote Theme Configuration
-To run `just-the-docs` directly on GitHub Pages without installing local gems, configure `_config.yml` in the root of your repository:
+
+To run
+[just-the-docs](https://just-the-docs.com/)
+directly on GitHub Pages without installing local gems, configure `_config.yml` in the root of your repository:
 
 ```yaml
 # Site branding and URLs
@@ -50,10 +55,13 @@ defaults:
 ```
 
 ### 2. Page Navigation and Hierarchy
+
 Use Jekyll front matter at the top of each Markdown (`.md`) file to configure where it appears in the navigation sidebar:
 
 #### Homepage (`index.md` or `README.md`)
+
 Specify `permalink: /` to render this page at the root URL.
+
 ```yaml
 ---
 title: "Documentation for Digital Tools"
@@ -63,7 +71,9 @@ permalink: /
 ```
 
 #### Top-level Navigation Page
+
 Set a high-level page order using `nav_order`.
+
 ```yaml
 ---
 title: "AI (Artificial Intelligence)"
@@ -73,7 +83,9 @@ has_children: true
 ```
 
 #### Second-level child page
+
 Link to a parent page by matching its exact title in `parent`.
+
 ```yaml
 ---
 title: "AI Prompt Examples"
@@ -84,7 +96,9 @@ has_children: true
 ```
 
 #### Third-level grandchild page
+
 Link to a parent and grandparent page.
+
 ```yaml
 ---
 title: "Just the Docs Configuration"
@@ -95,7 +109,11 @@ nav_order: 2
 ```
 
 ### 3. Enabling Page Names in Browser Tabs
+
 To display tab titles in the browser as `Page Title | Site Title` (e.g. `Just the Docs Configuration | Documentation`), the site must have:
+
 1. `title` defined in `_config.yml` (e.g., `title: "Documentation"`).
 2. `title` defined in the page's YAML front matter (e.g., `title: "Just the Docs Configuration"`).
-3. The `jekyll-seo-tag` plugin (which is loaded automatically by the `just-the-docs` theme through its `{% seo %}` block in `_includes/head.html`).
+3. The `jekyll-seo-tag` plugin (which is loaded automatically by the
+[just-the-docs](https://just-the-docs.com/)
+theme through its `{% seo %}` block in `_includes/head.html`).
