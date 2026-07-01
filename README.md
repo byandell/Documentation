@@ -45,7 +45,8 @@ This journey began with my introduction to the
 [Environmental Data Science Innovation & Impact Lab (ESIIL)](https://esiil.org/).
 I took some short courses on EDA through ESIIL, which led to my
 [geospatial](https://github.com/byandell-envsys/geospatial) package;
-with references now migrated here in [geospatial.md](./geospatial.md).
+with references now migrated to
+[Environmental Systems](./envsys/).
 I attended the ESIIL Innovation Summit in 2023 (and every year since),
 which introduced me to many amazing people who have become friends.
 An exciting mix of top-notch IT experts gather to share learning and access to state-of-the-art tools.
@@ -92,7 +93,7 @@ attended the
 [rstudio::conf(2017)](https://global.rstudio.com/resources/rstudioconf-2017/)
 ([GitHub](https://github.com/rstudio/rstudio-conf/tree/main/2017)).
 Notes on my shiny apps are in
-[ShinyApps.md](./ShinyApps.md).
+[Shiny Apps](./ShinyApps.md).
 I created the
 [geyser](https://github.com/byandell/geyser) repository
 to help me consolidate my understanding of `Shiny` with concrete examples in `R` and `Python`.
@@ -101,7 +102,9 @@ This uses the
 where the data are included in the `R` system as `data(faithful)`,
 and in the Python package
 [seaborn](https://seaborn.pydata.org/) as `geyser`.
-See also [Quarto references](./quarto/) for other types of interactive documents.
+See also
+[Quarto Slides & References](./quarto/)
+for other types of interactive documents.
 
 My learning about AI agents and tools is evolving, including the repository
 [sysgenAnalysis](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis).

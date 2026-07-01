@@ -75,13 +75,17 @@ is under development for scientific teams by ESIIL.
 has a collaboration with
 [HTCondor](https://htcondor.org/)
 and
-[PATh](https://path-cc.io/).
+[PATh](https://path-cc.io/)
+reported upon at
+[High Throughput Computing Week 2026 (HTCondor)](https://agenda.hep.wisc.edu/event/2432/).
 
 - [OpenClaw](https://www.openclaw.ai/)
 - [Hermes](https://hermes-agent.org/)
 - [ESIIL OASIS ScienceClaw](https://github.com/CU-ESIIL/openclaw_container)
 - [ScienceClaw](https://github.com/beita6969/ScienceClaw)
 - [PegasusAI](https://pegasus-ai.org/)
+  - See slides at [HTCondor](https://htcondor.org/)
+  for `High Throughput Computing Week 2026` (not posted yet)
 
 ## Commercial Platforms
 
