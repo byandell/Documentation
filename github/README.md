@@ -10,7 +10,7 @@ _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
 
 - [View GitHub Slides](https://byandell.github.io/Documentation/quarto/github.html)
 - [General GitHub and Git Information](#general-github-and-git-information)
-- [Collaborating with GitHub Organizations](#collaborating-with-github-organizations)
+- [Collaborate with GitHub Organizations](#collaborate-with-github-organizations)
 - [Connect with GitHub](#connect-with-github)
 - [CodeSpaces within GitHub](#codespaces-within-github)
 - [GitHub Pages](pages.md)
@@ -23,7 +23,7 @@ _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
 - [Install Git for Windows (Git-SCM)](https://git-scm.com/install/windows)
 - [Install Git (Git Guides)](https://github.com/git-guides/install-git)
 
-## Collaborating with GitHub Organizations
+## Collaborate with GitHub Organizations
 
 A GitHub organization allows a team (or an individual like me)
 to collaborate on related repositories.
