@@ -13,7 +13,7 @@ _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
 - [Collaborating with GitHub Organizations](#collaborating-with-github-organizations)
 - [Connect with GitHub](#connect-with-github)
 - [CodeSpaces within GitHub](#codespaces-within-github)
-- [GitHub Pages](pages/)
+- [GitHub Pages](pages.md)
 
 ## General GitHub and Git Information
 
