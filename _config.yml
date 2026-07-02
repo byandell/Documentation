@@ -1,6 +1,6 @@
 # Site settings
 title: "Documentation"
-description: "Documentation for Digital Tools"
+description: "Document Digital Tools"
 url: "https://byandell.github.io"
 baseurl: "/Documentation"
 
@@ -11,7 +11,7 @@ relative_links:
   enabled: true
   collections: true
 nav_external_links:
-  - title: Documentation GitHub
+  - title: Documentation Source
     url: https://github.com/byandell/Documentation
     hide_icon: false # set to true to hide the external link icon - defaults to false
     opens_in_new_tab: true # set to true to open this link in a new tab - defaults to false

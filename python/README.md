@@ -1,5 +1,6 @@
 ---
 title: "Python Language"
+parent: "Document Digital Tools"
 nav_order: 2
 permalink: /python/
 ---

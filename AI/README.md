@@ -1,5 +1,6 @@
 ---
 title: "AI (Artificial Intelligence)"
+parent: "Document Digital Tools"
 nav_order: 6
 permalink: /AI/
 ---
@@ -21,8 +22,6 @@ To learn about (generative) AI, start with the self-paced workshop on
   - [Team Science Platforms](team.md)
   - [Prompt Engineering](prompt.md)
   - [Context Engineering](context.md)
-
-_[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 
 ## Articles about AI
 

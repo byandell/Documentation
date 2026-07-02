@@ -1,5 +1,6 @@
 ---
 title: "Environmental Systems"
+parent: "Document Digital Tools"
 nav_order: 4
 permalink: /envsys/
 ---
@@ -22,8 +23,6 @@ See also
 - Additional Pages
   - [EDA Workbook on Python](python/#earth-data-analytics-eda-workbook)
   - [GitHub](../github/)
-
-_[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 
 ## Earth Data Analytics
 

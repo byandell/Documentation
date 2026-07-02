@@ -1,5 +1,6 @@
 ---
 title: "Shiny Apps"
+parent: "Document Digital Tools"
 nav_order: 5
 ---
 

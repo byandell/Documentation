@@ -1,12 +1,11 @@
 ---
 title: "GitHub"
+parent: "Document Digital Tools"
 nav_order: 3
 permalink: /github/
 ---
 
 # GitHub
-
-_[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 
 - [View GitHub Slides](https://byandell.github.io/Documentation/quarto/github.html)
 - [General GitHub and Git Information](#general-github-and-git-information)
