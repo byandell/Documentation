@@ -30,6 +30,11 @@ will display it in another page when clicked.
 
 [QR Code](../images/adobe-express-qr-code.png)
 
+This is my profile QR Code.
+See
+[QR Codes for Github Pages](pages.md#qr-codes-for-github-pages)
+for explanation.
+
 ## Linking and Embedding PDFs
 
 Use the following HTML code to link to the PDF in your webpage:
