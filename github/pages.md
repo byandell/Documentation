@@ -1,10 +1,10 @@
 ---
-title: "publish GitHub Pages"
+title: "Publish GitHub Pages"
 parent: "GitHub"
 nav_order: 10
 ---
 
-# publish GitHub Pages
+# Publish GitHub Pages
 
 Publishing web-based materials is easy with
 [GitHub Pages](https://docs.github.com/en/pages),
