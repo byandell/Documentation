@@ -26,7 +26,7 @@ as shown with
 
 Simply linking to the image file
 `[QR Code](../images/adobe-express-qr-code.png)`
-will not display in markdown.
+will display it in another page when clicked.
 
 [QR Code](../images/adobe-express-qr-code.png)
 
@@ -58,11 +58,12 @@ The
 [local copy](tasiyagnunpa_migration.html)
 does not display well in github, preview mode, or on the portfolio page.
 
-Here are 2 versions of the same HTML file with explicit link
-the last two display as they are located in github pages.
+Here are 2 versions of the same HTML file with an explicit link.
+The latter does display as it is located in a GitHub repo rather than
+published in GitHub Pages.
 
-- [portfolio page](https://byandell.github.io/Documentation/github/tasiyagnunpa_migration.html) (renders)
-- [portfolio repo](https://github.com/byandell/Documentation/blob/main/github/tasiyagnunpa_migration.html) (does not render)
+- [portfolio page](https://byandell.github.io/Documentation/images/tasiyagnunpa_migration.html) (renders in separate page)
+- [portfolio repo](https://github.com/byandell/Documentation/blob/main/images/tasiyagnunpa_migration.html) (does not display on page)
 
 ## Embedding a Dynamic HTML Page
 
