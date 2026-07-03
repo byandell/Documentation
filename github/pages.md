@@ -26,7 +26,9 @@ more detailed guides and tutorials.
   - [My Documentation GitHub Pages](#my-documentation-github-pages)
   - [QR Codes for Github Pages](#qr-codes-for-github-pages)
 - [GitHub Pages References](#github-pages-references)
-- [GitHub Pages with Shinylive](shinylive.md)
+- Additional Pages
+  - [Embed Object Files with GitHub Pages](embed.html)
+  - [GitHub Pages with Shinylive](shinylive.md)
 
 ## My GitHub Pages
 
@@ -101,7 +103,7 @@ that points to my profile page
 using
 [Adobe Express](https://www.adobe.com/express/feature/image/qr-code-generator).
 
-![](../images/adobe-express-qr-code.png)
+![QR Code](../images/adobe-express-qr-code.png)
 
 **Warning:**
 Be careful generating QR codes. Do you really need more than one?

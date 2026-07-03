@@ -1,6 +1,7 @@
 ---
 title: "GitHub Pages with Shinylive"
 parent: "GitHub Pages"
+nav_order: 2
 ---
 
 ## GitHub Pages with Shinylive

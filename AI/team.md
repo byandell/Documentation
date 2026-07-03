@@ -72,7 +72,9 @@ is under development for scientific teams by ESIIL.
 (See also
 [ScienceClaw](https://github.com/beita6969/ScienceClaw).)
 [PegasusAI](https://pegasus-ai.org/)
-has a collaboration with
+is a workflow system that uses
+[Specification.md](https://specification.md/)
+in a collaboration with
 [HTCondor](https://htcondor.org/)
 and
 [PATh](https://path-cc.io/)
@@ -84,6 +86,7 @@ reported upon at
 - [ESIIL OASIS ScienceClaw](https://github.com/CU-ESIIL/openclaw_container)
 - [ScienceClaw](https://github.com/beita6969/ScienceClaw)
 - [PegasusAI](https://pegasus-ai.org/)
+  - [Specification.md](https://specification.md/)
   - See slides at [HTCondor](https://htcondor.org/)
   for `High Throughput Computing Week 2026` (not posted yet)
 

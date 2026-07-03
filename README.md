@@ -12,7 +12,7 @@ permalink: /
 - [GitHub](./github/) ([slides](./quarto/github.html))
 - [Environmental Systems](./envsys/) ([slides](./quarto/envsys.html))
 - [Shiny Apps](./ShinyApps.md) ([slides](./quarto/ShinyApps.html))
-- [Artificial Intelligence (AI)](./AI/) ([slides](./quarto/AI.html))
+- [AI (Artificial Intelligence)](./AI/) ([slides](./quarto/AI.html))
   - [AI Prompt Examples](./prompts/) ([slides](./quarto/prompts.html))
 - [Quarto Slides & References](./quarto/)
 

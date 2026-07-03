@@ -1,5 +1,5 @@
 ---
-title: "Artificial Intelligence (AI)"
+title: "AI (Artificial Intelligence)"
 subtitle: "Concepts, Environments, and Collaboration"
 author: "Brian Yandell ([_byandell.github.io_](https://byandell.github.io))"
 date: last-modified
@@ -10,11 +10,11 @@ format:
     slide-number: true
     show-slide-number: all
     embed-resources: true
-    footer: "Artificial Intelligence (AI) | Concepts & Environments"
+    footer: "AI (Artificial Intelligence) | Concepts & Environments"
     highlight-style: github
 ---
 
-# Artificial Intelligence (AI) Contents
+# AI (Artificial Intelligence) Contents
 
 - [Perspectives & Environmental Impact](#perspectives-environmental-impact)
 - [AI Environments](#ai-environments)
