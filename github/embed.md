@@ -67,7 +67,15 @@ published via GitHub Pages.
 
 ## Embedding a Dynamic HTML Page
 
-Here we embed the dynamic HTML page in this page:
+Here we embed the dynamic HTML page in this page using an
+[iframe tag](https://www.w3schools.com/TAGS/tag_iframe.asp):
+
+```
+<iframe src="../images/tasiyagnunpa_migration.html" title="Tasiyagnunpa Migration" width="100%" height="600px"></iframe>
+```
+
+Note the `width` and `height`, which can be tweeked.
+The `title` option is useful if for some reason the page does not render.
 
 <iframe src="../images/tasiyagnunpa_migration.html" title="Tasiyagnunpa Migration" width="100%" height="600px"></iframe>
 
@@ -76,11 +84,3 @@ This image will not display properly in `Preview` mode or in the GitHub repo,
 but it will display on the published page
 <https://byandell.github.io/Documentation/github/embed.html>
 once the edits are committed to GitHub.
-
-Here is the code used in this `README.md` document.
-It is actually written in HTML that can be included in a markdown document.
-Note the `width` and `height`, which can be tweeked.
-
-```
-<iframe src="../images/tasiyagnunpa_migration.html" title="Tasiyagnunpa Migration" width="100%" height="600px"></iframe>
-```
