@@ -12,7 +12,7 @@ permalink: /github/
 - [Collaborate with GitHub Organizations](#collaborate-with-github-organizations)
 - [Connect with GitHub](#connect-with-github)
 - [CodeSpaces within GitHub](#codespaces-within-github)
-- [GitHub Pages](pages.md)
+- [Publish GitHub Pages](pages.md)
 
 ## General GitHub and Git Information
 
