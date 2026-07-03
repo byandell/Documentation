@@ -61,7 +61,11 @@ Packages to Access Data
 - [geos](https://cran.r-project.org/package=geos): R API to the Open Source Geometry Engine ('GEOS')
 - [landsat](https://cran.r-project.org/package=landsat): Processing of Landsat and other multispectral satellite imagery
 
-Previous package `rgdal` is now obsolete. Unsure about status of `raster` package.
+Previous package `rgdal` is now obsolete; see
+[Progress in modernizing and replacing infrastructure packages in R-spatial workflows (r-spatial)](https://r-spatial.github.io/evolution/ogh23_bivand.html)
+[GDAL](https://gdal.org/) is a complicated package that is challenging to use
+and install.
+Unsure about status of `raster` package.
 
 ## Data Repositories
 
