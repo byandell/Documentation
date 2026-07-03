@@ -27,7 +27,7 @@ more detailed guides and tutorials.
   - [QR Codes for Github Pages](#qr-codes-for-github-pages)
 - [GitHub Pages References](#github-pages-references)
 - Additional Pages
-  - [Embed Object Files with GitHub Pages](embed.html)
+  - [Embed Objects in GitHub Pages](embed.md)
   - [GitHub Pages with Shinylive](shinylive.md)
 
 ## My GitHub Pages

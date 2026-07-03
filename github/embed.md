@@ -1,10 +1,10 @@
 ---
-title: "Embedding Dynamic HTML in Published GitHub Pages"
+title: "Embed Objects in GitHub Pages"
 parent: "GitHub Pages"
 nav_order: 1
 ---
 
-# Embed Object Files with GitHub Pages
+# Embed Objects in GitHub Pages
 
 The way to link an object file, such as a image, PDF, or dynamic HTML,
 is to save it in a portfolio repo that is rendered via GitHub pages,
