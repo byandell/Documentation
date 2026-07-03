@@ -60,7 +60,7 @@ does not display well in github, preview mode, or on the portfolio page.
 
 Here are 2 versions of the same HTML file with an explicit link.
 The latter does display as it is located in a GitHub repo rather than
-published in GitHub Pages.
+published via GitHub Pages.
 
 - [portfolio page](https://byandell.github.io/Documentation/images/tasiyagnunpa_migration.html) (renders in separate page)
 - [portfolio repo](https://github.com/byandell/Documentation/blob/main/images/tasiyagnunpa_migration.html) (does not display on page)
@@ -71,10 +71,10 @@ Here we embed the dynamic HTML page in this page:
 
 <iframe src="../images/tasiyagnunpa_migration.html" title="Tasiyagnunpa Migration" width="100%" height="600px"></iframe>
 
-**Warning:**
+**Note:**
 This image will not display properly in `Preview` mode or in the GitHub repo,
 but it will display on the published page
-<https://byandell.github.io/esiil-stars/>
+<https://byandell.github.io/Documentation/github/embed.html>
 once the edits are committed to GitHub.
 
 Here is the code used in this `README.md` document.
