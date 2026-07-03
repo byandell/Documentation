@@ -16,12 +16,12 @@ or an HTML
 [iframe tag](https://www.w3schools.com/TAGS/tag_iframe.asp).
 (Note that the HTML tag `embed` is deprecated and should not be used.)
 
-- [Displaying an Image](#displaying-an-image)
-- [Linking and Embedding PDFs](#linking-and-embedding-pdfs)
-- [Linking a Dynamic HTML Page](#linking-a-dynamic-html-page)
-- [Embedding a Dynamic HTML Page](#embedding-a-dynamic-html-page)
+- [Display an Image](#display-an-image)
+- [Link and Embed PDFs](#link-and-embed-pdfs)
+- [Link a Dynamic HTML Page](#link-a-dynamic-html-page)
+- [Embed a Dynamic HTML Page](#embed-a-dynamic-html-page)
 
-## Displaying an Image
+## Display an Image
 
 An image stored for GitHub Pages use is displayed using
 `![QR Code](../images/adobe-express-qr-code.png)`
@@ -40,7 +40,7 @@ See
 [QR Codes for Github Pages](pages.md#qr-codes-for-github-pages)
 for explanation.
 
-## Linking and Embedding PDFs
+## Link and Embed PDFs
 
 Use the following HTML code to link to the PDF in your webpage:
 
@@ -57,7 +57,7 @@ using an
 <iframe src="path/to/yourfile.pdf" title="Title for the PDF" width="100%" height="600px"></iframe>
 ```
 
-## Linking a Dynamic HTML Page
+## Link a Dynamic HTML Page
 
 We use Western Meadowlark (_Tasiyagnunpa_) migration from
 [cu-esiil-edu/stars-03-migration-template](https://github.com/cu-esiil-edu/stars-03-migration-template)
@@ -75,19 +75,23 @@ published via GitHub Pages.
 - [portfolio page](https://byandell.github.io/Documentation/images/tasiyagnunpa_migration.html) (renders in separate page)
 - [portfolio repo](https://github.com/byandell/Documentation/blob/main/images/tasiyagnunpa_migration.html) (does not display on page)
 
-## Embedding a Dynamic HTML Page
+## Embed a Dynamic HTML Page
 
 Here we embed the dynamic HTML page in this page using an
 [iframe tag](https://www.w3schools.com/TAGS/tag_iframe.asp):
 
 ```
-<iframe src="../images/tasiyagnunpa_migration.html" title="Tasiyagnunpa Migration" width="100%" height="600px"></iframe>
+<iframe src="../images/tasiyagnunpa_migration.html"
+ title="Tasiyagnunpa Migration"
+ width="100%" height="600px"></iframe>
 ```
 
 Note the `width` and `height`, which can be tweeked.
 The `title` option is useful if for some reason the page does not render.
 
-<iframe src="../images/tasiyagnunpa_migration.html" title="Tasiyagnunpa Migration" width="100%" height="600px"></iframe>
+<iframe src="../images/tasiyagnunpa_migration.html"
+ title="Tasiyagnunpa Migration"
+ width="100%" height="600px"></iframe>
 
 **Note:**
 This image will not display properly in `Preview` mode or in the GitHub repo,
