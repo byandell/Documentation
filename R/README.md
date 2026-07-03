@@ -16,6 +16,8 @@ where it is now largely maintained by others.
 
 - [View R Slides](https://byandell.github.io/Documentation/quarto/R.html)
 - [R for Teams in the Data Sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences)
+  - [toolero: A Toolkit for Research Workflows](https://erwinlares.github.io/toolero/)
+([CRAN](https://CRAN.R-project.org/package=toolero))
   - [R in VS Code with Radian](./radian.md)
   - [Base R(4.1+) `|>` vs magrittr `%>%` pipe](https://tidyverse.org/blog/2023/04/base-vs-magrittr-pipe/)
 

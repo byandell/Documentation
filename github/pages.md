@@ -28,7 +28,7 @@ more detailed guides and tutorials.
 - [GitHub Pages References](#github-pages-references)
 - Additional Pages
   - [Embed Objects in GitHub Pages](embed.md)
-  - [GitHub Pages with Shinylive](shinylive.md)
+  - [Automate with GitHub Actions](actions.md)
 
 ## My GitHub Pages
 

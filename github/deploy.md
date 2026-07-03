@@ -1,9 +1,10 @@
 ---
-title: "Deploy Shinylive apps to GitHub Pages"
-parent: "GitHub Pages with Shinylive"
+title: "Deploy Shinylive Apps "
+parent: "Automate with GitHub Actions"
+nav_order: 3
 ---
 
-# Deploy Shinylive apps to GitHub Pages
+# Deploy Shinylive Apps
 
 The following prompts are modified from the original conversation in the
 [geyser](https://github.com/byandell/geyser) repo with Gemini.

@@ -1,6 +1,6 @@
 ---
 title: "Embed Objects in GitHub Pages"
-parent: "GitHub Pages"
+parent: "Publish GitHub Pages"
 nav_order: 1
 ---
 

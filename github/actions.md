@@ -1,19 +1,25 @@
 ---
-title: "GitHub Actions"
+title: "Automate with GitHub Actions"
 parent: "Publish GitHub Pages"
 nav_order: 2
 ---
 
-# GitHub Actions
+# Automate with GitHub Actions
 
-This at present illustrates
-[GitHub Pages with Shinylive](#github-pages-with-shinylive).
+This at present illustrates a way to
+[Publish Apps with Shinylive](#publish-apps-with-shinylive).
 While this may be of limited utility at this time,
-it does illustrate one way to use
+it does illustrate how one might use
 [GitHub Actions](https://github.com/features/actions)
 to automate a workflow.
+More to come.
 
-## GitHub Pages with Shinylive
+- [Publish Apps with Shinylive](#publish-apps-with-shinylive)
+  - [Prepare Shinylive Apps](shinylive.md)
+  - [Publish Quarto Dashboard](quartolive.md)
+  - [Deploy Shinylive Apps](deploy.md)
+
+## Publish Apps with Shinylive
 
 It is possible to host a client-side (browser run)
 Shiny app provided it is fairly simple.
@@ -34,6 +40,6 @@ be self-contained in the app, including data.
 
 See AI prompts used for creating shinylive apps:
 
-- [Prepare R app for Shinylive Export](shinylive.md)
-- [Quarto Dashboard with Shinylive](quartolive.md)
-- [Deploy Shinylive apps to GitHub Pages](deploy.md)
+- [Prepare Shinylive Apps](shinylive.md)
+- [Publish Quarto Dashboard](quartolive.md)
+- [Deploy Shinylive Apps](deploy.md)

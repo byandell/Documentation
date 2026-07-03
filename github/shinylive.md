@@ -1,9 +1,10 @@
 ---
-title: "Shinylive App Export"
-parent: "GitHub Pages with Shinylive"
+title: "Prepare Shinylive App Export"
+parent: "Automate with GitHub Actions"
+nav_order: 1
 ---
 
-# Shinylive App Export
+# Prepare Shinylive App Export
 
 **Prompt:**
 Modify `geyser` package `R` app in

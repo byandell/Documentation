@@ -1,9 +1,10 @@
 ---
-title: "Quarto Dashboard with Shinylive"
-parent: "GitHub Pages with Shinylive"
+title: "Publish Quarto Dashboard"
+parent: "Automate with GitHub Actions"
+nav_order: 2
 ---
 
-# Quarto Dashboard with Shinylive
+# Publish Quarto Dashboard
 
 **Prompt**:
 Is there a way to use shinylive to publish demo.qmd (demo.html) as a static file much as we did with the shiny app?
