@@ -16,6 +16,11 @@ or an HTML
 [iframe tag](https://www.w3schools.com/TAGS/tag_iframe.asp).
 (Note that the HTML tag `embed` is deprecated and should not be used.)
 
+- [Displaying an Image](#displaying-an-image)
+- [Linking and Embedding PDFs](#linking-and-embedding-pdfs)
+- [Linking a Dynamic HTML Page](#linking-a-dynamic-html-page)
+- [Embedding a Dynamic HTML Page](#embedding-a-dynamic-html-page)
+
 ## Displaying an Image
 
 An image stored for GitHub Pages use is displayed using
@@ -52,11 +57,11 @@ using an
 <iframe src="path/to/yourfile.pdf" title="Title for the PDF" width="100%" height="600px"></iframe>
 ```
 
-## Linking an HTML Page
+## Linking a Dynamic HTML Page
 
 We use Western Meadowlark (_Tasiyagnunpa_) migration from
 [cu-esiil-edu/stars-03-migration-template](https://github.com/cu-esiil-edu/stars-03-migration-template)
-to explore access an HTML object.
+to explore access a dynamic HTML object.
 We try to display the remote file,
 then using GitHub Pages rendering the locally stored in this repo.
 The
