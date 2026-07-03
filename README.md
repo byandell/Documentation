@@ -78,7 +78,7 @@ which has included a collaboration on Tribal boundary maps, gathered in the
 [R](https://cran.r-project.org/) package
 [landmapr](https://github.com/byandell-envsys/landmapr).
 I was asked to be a senior advisor for the
-[ESIIL Stars program](https://byandell.github.org/esiil-stars)
+[ESIIL Stars program](https://byandell.github.io/esiil-stars)
 and am assisting with the OLC team.
 
 The 2024-25
