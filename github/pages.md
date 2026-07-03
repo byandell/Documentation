@@ -70,7 +70,7 @@ I developed
 [Document Digital Tools](https://byandell.github.io/Documentation)
 to serve as a reference for the Digital Tools I use.
 In the process, I learned how to use
-[Just-the-Docs](https://just-the-docs.com/)
+[Just-the-Docs](../prompts/justthedocs.md)
 as the theme, which includes many useful navigation features.
 It interprets `README.md` files in folders
 as top-level pages, with the `README.md` in the top-most
