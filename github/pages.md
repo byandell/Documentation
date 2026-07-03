@@ -1,10 +1,10 @@
 ---
-title: "GitHub Pages"
+title: "publish GitHub Pages"
 parent: "GitHub"
 nav_order: 10
 ---
 
-# GitHub Pages
+# publish GitHub Pages
 
 Publishing web-based materials is easy with
 [GitHub Pages](https://docs.github.com/en/pages),
@@ -66,8 +66,8 @@ ESIIL Research (`docs/` folder using
 
 ### My Documentation GitHub Pages
 
-I developed my
-[Documentation GitHub Pages](https://byandell.github.io/Documentation)
+I developed
+[Document Digital Tools](https://byandell.github.io/Documentation)
 to serve as a reference for the Digital Tools I use.
 In the process, I learned how to use
 [Just-the-Docs](https://just-the-docs.com/)
