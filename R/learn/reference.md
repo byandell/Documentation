@@ -6,9 +6,15 @@ date: "6/29/2017"
 nav_order: 5
 ---
 
-## R References
+# R References
 
-- [Data Repositories](/data/repositories.md)
+- [Learning R](#learning-r)
+- [Courses, Intros, and Webinars](#courses-intros-and-webinars)
+- [Specific Topics](#specific-topics)
+- [Miscellaneous](#miscellaneous)
+- [Yandell Material (dated)](#yandell-material-dated)
+
+## Learning R
 
 - [R generation 25 (Significance)](http://blog.revolutionanalytics.com/2018/08/r-generation.html)
 - [R for Data Science by Garrett Grolemund and Hadley Wickham (ebook)](http://r4ds.had.co.nz/)
@@ -23,6 +29,8 @@ nav_order: 5
 - [Data Skeptic by Kyle Polich](https://dataskeptic.com/)
 - [Data 8: The Foundations of Data Science (UC Berkeley)](http://data8.org/) (see [undergrad program report](https://data.berkeley.edu/sites/default/files/dsepsummaryreportyear1.pdf))
 
+## Courses, Intros, and Webinars
+
 - [Statistical Computing Courses by Karl Broman](http://www.biostat.wisc.edu/~kbroman/teaching/)
 - [Introduction to R for Python Users by Ramnath Vaidyanathan](https://ramnathv.github.io/pycon2014-r/)
 - [Advanced R by Hadley Wickham (ebook)](http://adv-r.had.co.nz/)
@@ -34,6 +42,16 @@ nav_order: 5
 - <https://open.nasa.gov/explore/>
 - [Modern Dive by Chester Ismay and Albert Y. Kim](https://ismayc.github.io/moderndiver-book/)
 - [Stackoverflow R Tags](https://stackoverflow.com/tags/r/info)
+
+## Miscellaneous
+
+- [Data Repositories](/data/repositories.md)
+- [toolero: A Toolkit for Research Workflows](https://erwinlares.github.io/toolero/)
+([CRAN](https://CRAN.R-project.org/package=toolero))
+- [R in VS Code with Radian](./radian.md)
+- [Base R(4.1+) `|>` vs magrittr `%>%` pipe](https://tidyverse.org/blog/2023/04/base-vs-magrittr-pipe/)
+
+## Yandell Material (dated)
 
 - [Yandell Data Club](https://github.com/byandell/data_club)
 - [Profession Skills for Data Science](http://www.stat.wisc.edu/network-skills) ([markdown version](skills/README.md))
