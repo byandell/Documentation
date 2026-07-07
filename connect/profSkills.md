@@ -11,7 +11,7 @@ organize your work (using Rstudio), how to build excellent graphics
 other things. This is being led by Brian Yandell and Doug Bates in Fall
 2015; see [moodle
 site](https://ay15-16.moodle.wisc.edu/prod/local/wiscservices/login/index.php),
-[Stat 627 Syllabus](/~yandell/data_science/Stat627Syllabus.pdf) and
+[Stat 627 Syllabus](http://www.stat.wisc.edu/~yandell/data_science/Stat627Syllabus.pdf) and
 [Jenny Bryan's Stat 545 at UBC](http://stat545-ubc.github.io). The
 course covers
 

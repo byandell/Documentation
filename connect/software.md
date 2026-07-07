@@ -3,7 +3,7 @@ Software Packages, Languages & Writing Tools
 
 -   [Statistical Packages &
     Languages](http://www.amstat.org/profession/index.cfm?fuseaction=software)
--   [SWI Software Links](/~yandell/www/wright/software.html)
+-   [SWI Software Links](http://www.stat.wisc.edu/~yandell/www/wright/software.html)
 -   [Writing, Editing and References](#writing)
 -   [Graphics: Viewing and Printing](graphics.html)
 -   [Statistical Reporting with S/R (Frank Harrell, Vanderbilt Medical
@@ -91,4 +91,4 @@ to use CIS on the World Wide Web](/statistics/cis/).
 Return to [U WI Statistics Home Page](/)
 
 Last modified: sat 3 jul 2004 by Brian Yandell
-[*(yandell@stat.wisc.edu)*](/~yandell)
+[*(yandell@stat.wisc.edu)*](http://www.stat.wisc.edu/~yandell)

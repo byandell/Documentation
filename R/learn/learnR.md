@@ -61,8 +61,8 @@ nav_order: 3
 - [RStudio Training](http://www.rstudio.com/training/)
 - [Google's R Style
     Guide](http://google-styleguide.googlecode.com/svn/trunk/Rguide.xml)
-- [R Software Introduction for Stat 571](/~yandell/st571/R/) | [R
-    Appendices for Course Notes](/~yandell/st571/R/append.html)
+- [R Software Introduction for Stat 571](http://www.stat.wisc.edu/~yandell/st571/R/) | [R
+    Appendices for Course Notes](http://www.stat.wisc.edu/~yandell/st571/R/append.html)
 - [Advanced Programming in R](http://adv-r.had.co.nz) ([Hadley
     Wickham](http://had.co.nz))
 - [Knitr Reproducible

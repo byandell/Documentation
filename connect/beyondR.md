@@ -41,9 +41,9 @@ staticians.
         Broman)](http://kbroman.github.io/github_tutorial)
 -   [GNU Make Tutorial (Karl
     Broman)](http://kbroman.github.io/minimal_make)
--   [Information on SAS](/~yandell/software/sas/)
+-   [Information on SAS](http://www.stat.wisc.edu/~yandell/software/sas/)
 -   [Software Packages & Languages
-    Information](/~yandell/software/software.html)
+    Information](http://www.stat.wisc.edu/~yandell/software/software.html)
 -   See also [Reproducible Research](/reproducible)
 -   [StackOverflow Tags](http://stackoverflow.com/tags)
 -   [ElasticSearch](https://www.elastic.co/products/elasticsearch)
