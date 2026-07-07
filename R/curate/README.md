@@ -2,7 +2,7 @@
 title: "Curate R Data"
 parent: "R Language"
 author: "Brian S. Yandell"
-date: "6/29/2017"
+date: 2017-06-29
 nav_order: 2
 permalink: /R/curate/
 ---

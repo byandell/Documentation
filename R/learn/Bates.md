@@ -1,7 +1,7 @@
 ---
 title: "Douglas Bates Stat 692 Notes"
 author: "Brian S. Yandell"
-date: "7/3/2017"
+date: 2017-07-03
 nav_order: 4
 ---
 

@@ -2,7 +2,7 @@
 title: "Network Observatins in Connected Graphs"
 parent: "Visualize Data with R"
 author: "Brian S. Yandell"
-date: "6/29/2017"
+date: 2017-06-29
 permalink: /R/visualize/network/
 ---
 

@@ -2,7 +2,7 @@
 title: "R for Data Sciences Syllabus"
 parent: "Overview of R Material"
 author: "Brian S Yandell"
-date: "July 2017"
+date: 2017-07-01
 nav_order: 1
 ---
 

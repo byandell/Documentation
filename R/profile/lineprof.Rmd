@@ -1,7 +1,7 @@
 ---
 title: "lineprof"
 author: "Brian S. Yandell"
-date: "11/21/2017"
+date: 2017-11-21
 output: html_document
 ---
 

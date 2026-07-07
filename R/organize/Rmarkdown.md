@@ -1,7 +1,7 @@
 ---
 title: "Rmarkdown Report Writing"
 author: "Brian S. Yandell"
-date: "7/5/2017"
+date: 2017-07-05
 output: html_document
 ---
 

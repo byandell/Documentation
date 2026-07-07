@@ -1,7 +1,7 @@
 ---
 title: "purrr package"
 author: "Brian S. Yandell"
-date: "9/18/2017"
+date: 2017-09-18
 output: html_document
 ---
 

@@ -2,7 +2,7 @@
 title: "Version GitHub Docs"
 parent: "Organize Projects with GitHub"
 author: "Brian S. Yandell"
-date: "7/5/2017"
+date: 2017-07-05
 nav_order: 3
 ---
 

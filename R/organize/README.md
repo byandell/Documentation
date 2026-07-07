@@ -2,7 +2,7 @@
 title: "Organize Data & Docs"
 parent: "R Language"
 author: "Brian S. Yandell"
-date: "6/29/2017"
+date: 2017-06-29
 permalink: /R/organize/
 ---
 

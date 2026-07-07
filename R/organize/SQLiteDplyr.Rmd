@@ -1,7 +1,7 @@
 ---
 title: "sqlite"
 author: "Brian S Yandell"
-date: "September 1, 2016"
+date: 2016-09-01
 output:
   html_document: default
 ---
