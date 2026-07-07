@@ -27,6 +27,26 @@ These reflect my ideas on how
 [Data Evolve](https://byandell.github.io/Data-Evolve/) in concert with
 the evolution of code-based tools and languages.
 
+- [R Language](#r-language)
+- [Systems Genetics](#systems-genetics)
+- [Environmental Systems](#environmental-systems)
+- [Shiny Apps](#shiny-apps)
+- [Learning about AI](#learning-about-ai)
+- [Quarto Slides & References](#quarto-slides--references)
+- [About These Pages](#about-these-pages)
+
+### R Language
+
+I first encountered `S` in the mid-1970's while at UC-Berkeley,
+when David Brillinger brought a copy from Bell Labs.
+Fellow student Ross Ihaka later went on to co-design `R`
+(see
+[Background R Material](R/learn/background.md)).
+When I joined UW-Madison in 1982, I became friends with
+[Doug Bates](https://www.stat.wisc.edu/~bates/)
+who became (and still is) a key member of the core `R` development team.
+I kept coming back to this system as it matured over coming decades.
+
 My notes on [R](cran.r-project.org) were organized for a
 2017
 [COMBEE](https://hub.datascience.wisc.edu/communities/combee/)
@@ -36,10 +56,16 @@ short course in the
 as the repository
 [R_for_data_sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences).
 
-I collaborated with System Genetics researchers for several decades,
+### Systems Genetics
+
+I have collaborated with System Genetics researchers for several decades,
 with material gathered in my GitHub Organization
-[byandell-sysgen](https://github.com/byandell-sysgen).
-There is an evolution of code in the repositories of this organization.
+[byandell-sysgen](https://github.com/byandell-sysgen)
+and in multiple publications
+([see my CV](https://www.stat.wisc.edu/~yandell/vita.pdf)).
+There is an evolution of code in the repositories of the `byandell-sysgen` organization.
+
+### Environmental Systems
 
 My exploration of earth data science (EDA) is in my GitHub Organization
 [byandell-envsys](https://github.com/byandell-envsys).
@@ -93,6 +119,8 @@ My notes on [Python](https://www.python.org/) and related topics developed durin
 [Python Language](python/) and [Environmental Systems](envsys/),
 now gathered in this repository.
 
+### Shiny Apps
+
 I have been learning about [Shiny](https://shiny.posit.co/) since before I
 attended the
 [rstudio::conf(2017)](https://global.rstudio.com/resources/rstudioconf-2017/)
@@ -116,6 +144,8 @@ for interactive slides and demos.
 See
 [Quarto Slides & References](./quarto/).
 
+### Learning about AI
+
 My learning about AI agents and tools continues to evolve.
 Initial thoughts on so-called artifical intelligence are in my blog about
 Jaron Lanier's
@@ -123,6 +153,8 @@ Jaron Lanier's
 Ideas and notes on the concept and evolution of "AI" tools are in the
 [AI ("Artificial Intelligence")](./AI/)
 pages.
+
+### About These Pages
 
 _Migrated to GitHub Pages on 2026-06-16 with help of
 [Convert Markdown to GitHub Pages](https://nicolas-van.github.io/easy-markdown-to-github-pages/)
