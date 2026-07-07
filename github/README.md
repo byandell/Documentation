@@ -1,5 +1,5 @@
 ---
-title: "GitHub"
+title: "Organize Projects with GitHub"
 parent: "Document Digital Tools"
 nav_order: 3
 permalink: /github/
@@ -12,7 +12,11 @@ permalink: /github/
 - [Collaborate with GitHub Organizations](#collaborate-with-github-organizations)
 - [Connect with GitHub](#connect-with-github)
 - [CodeSpaces within GitHub](#codespaces-within-github)
-- [Publish GitHub Pages](pages.md)
+- Additional Pages
+  - [Publish GitHub Pages](pages.md)
+  - [Automate with GitHub Actions](actions.md)
+  - [Version GitHub Docs](version.md)
+  - [Version GitHub Docs Prompt](../prompts/github.md)
 
 ## General GitHub and Git Information
 

@@ -1,7 +1,7 @@
 ---
 title: "Publish GitHub Pages"
-parent: "GitHub"
-nav_order: 10
+parent: "Organize Projects with GitHub"
+nav_order: 1
 ---
 
 # Publish GitHub Pages

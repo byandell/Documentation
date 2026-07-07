@@ -1,5 +1,5 @@
 ---
-title: "GitHub, Posit Connect & CodeSpaces"
+title: "Organize Projects with GitHub"
 subtitle: "Static Portfolios, Environment Caching, and Cloud Workspaces"
 author: "Brian Yandell ([_byandell.github.io_](https://byandell.github.io))"
 date: last-modified
@@ -10,7 +10,7 @@ format:
     slide-number: true
     show-slide-number: all
     embed-resources: true
-    footer: "GitHub, Posit Connect & CodeSpaces"
+    footer: "Organize Projects with GitHub"
     highlight-style: github
 ---
 
