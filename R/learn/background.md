@@ -12,7 +12,11 @@ This is a bit of background material to place `R` in broader context. It is opti
 
 ## Some R history
 
-[R](https://www.r-project.org/) was developed in the late 1980s in New Zealand by [Ross Ihaka and Robert Gentleman](http://blog.revolutionanalytics.com/2012/06/the-influences-that-shaped-r-inferno-ish-r.html), known as `R & R`. It was built on LISP language ideas adopting the syntax of the `S` language, which was in turn created by John Chambers and colleagues at AT&T in the 1970s. While `S` was proprietary, limiting distribution, `R` has been freely available and open source since the beginning. Since the 1997, `R` has been maintained by a core development team of about 20 people. For more information, see <https://www.r-project.org/about.html>.
+[R](https://www.r-project.org/) was developed in the late 1980s in New Zealand by
+[Ross Ihaka](https://www.stat.auckland.ac.nz/people/r.ihaka/)
+and
+[Robert Gentleman](https://hsph.harvard.edu/profile/robert-gentleman/), known as `R & R`. It was built on LISP language ideas adopting the syntax of the `S` language, which was in turn created by John Chambers and colleagues at AT&T in the 1970s. While `S` was proprietary, limiting distribution, `R` has been freely available and open source since the beginning. Since the 1997, `R` has been maintained by a core development team of about 20 people. For more information, see <https://www.r-project.org/about.html>
+and [R : Past and Future History (Ross Ihaka)](https://www.stat.auckland.ac.nz/~ihaka/downloads/Interface98.pdf).
 
 Originally, `R` ran on a "dumb" terminal. There were many efforts to build a useful graphical user interface, or GUI. [RStudio](http://www.rstudio.com) was founded in 2008 with public release in 2011, and was quickly adopted by the `R` community. See <https://www.rstudio.com/about/>.
 

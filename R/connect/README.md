@@ -1,13 +1,13 @@
 ---
-title: "Connecting Data Tools Beyond R"
+title: "Connect Data Tools Beyond `R`"
 parent: "R Language"
 author: "Brian S. Yandell"
 date: 2017-06-29
-permalink: /connect/
+permalink: /R/connect/
 nav_order: 7
 ---_
 
-# Connecting Data Tools Beyond R
+# Connect Data Tools Beyond `R`
 
 > ## Learning Objectives
 >

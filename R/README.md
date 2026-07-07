@@ -9,26 +9,25 @@ permalink: /R/
 
 In 2017 I gathered together material on R and other tools for the
 [ComBEE R Study Group at University of Wisconsin-Madison](https://sites.google.com/a/wisc.edu/combee/r-study-group)
-in
-<https://github.com/ComBEE-UW-Madison/RStudyGroup>.
-This later migrated to
+([GitHub](https://github.com/ComBEE-UW-Madison/RStudyGroup)).
+This later migrated as
 [R for Teams in the Data Sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences/)
-as part of the
+to the
 [UW Madison Data Science Hub GitHub Organization](https://github.com/UW-Madison-DataScience),
 which I helped establish.
 It is now largely maintained by others.
 Much of that content has migrated to these pages.
 
 - [View R Slides](https://byandell.github.io/Documentation/quarto/R.html)
-- Folder of `R` Material
+- Folders of `R` Material
   - [Overview of R Material](./learn/)
   - [Curate R Data](./curate/)
   - [Visualize with R](./visualize/)
   - [Organize Data & Docs](./organize/)
   - [Analyze R Data](./analyze/)
   - [Profile & Simulate](./profile/)
+  - [Connect Data Tools Beyond `R`](./connect/)
 - Additional R Pages
-  - [connect](../connect/)
   - [datasci](../datasci/)
   - [Environmental Systems](../envsys/)
     - [R for Open Street Map](../envsys/#open-street-map)

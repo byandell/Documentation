@@ -4,7 +4,10 @@ parent: "R Language"
 author: "Brian S. Yandell"
 date: 2017-06-29
 permalink: /R/learn/
+nav_order: 1
 ---
+
+# Overview of R Material
 
 This course is a blend of introductory and advanced material using `R` for data science.
 It draws on material from [Data Carpentry](http://datacarpentry.org) and courses taught by a variety of people. Rather than try to repeat that material, links are made at various points.
@@ -33,7 +36,7 @@ The primary focus is the `R` language and the `RStudio` environment. However, th
 - [R Packages](#r-packages)
 - [Developing Your Own Style](#developing-your-own-style)
 - Additional Pages
-  - [Syllabus](syllabus.md)
+  - [R Syllabus](syllabus.md)
   - [Background R Material](background.md)
   - [R Language Tips & Tricks](learnR.md)
   - [Douglas Bates Stat 692 Notes](Bates.md)

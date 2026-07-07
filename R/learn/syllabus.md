@@ -1,12 +1,12 @@
 ---
-title: "R for Data Sciences Syllabus"
+title: "R Syllabus"
 parent: "Overview of R Material"
 author: "Brian S Yandell"
 date: 2017-07-01
 nav_order: 1
 ---
 
-# R for Data Sciences Syllabus
+# R Syllabus
 
 **Description:** This material is aimed at providing teams in the data sciences with an understanding of and experience with professional skills in data science. Researchers today must organize data projects to be able to repeat tasks and share data, ideas, reports and code with others in diverse teams. They need to do this quickly in real time and on a longer term, being able to reproduce tasks -- either their own or those of others -- months or years later. This involves building documents as a project evolves to capture work flow,
 and sharing data methods and results with team collaborators.
