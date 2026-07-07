@@ -30,15 +30,16 @@ format:
 ### Overview & Purpose
 - Assumes a basic introduction to data analytics (e.g., [Data Carpentry](http://datacarpentry.org) courses).
 - Designed for collaborative teams to use R effectively to address data science problems.
-- Housed in the **[UW Madison Data Science Hub GitHub Organization](https://github.com/UW-Madison-DataScience)**, which Brian Yandell helped establish.
-- Used in the **[COMBEE R Study Group](https://github.com/UW-Madison-DataScience/R_for_data_sciences)** at UW-Madison.
+- Originally developed for the **[COMBEE R Study Group](https://github.com/ComBEE-UW-Madison/RStudyGroup)** at UW-Madison.
+- Migrated to the [R for Teams in the Data Sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences/) repository.
+- Now consolidated and maintained locally in this [Document Digital Tools](../R/) project.
 :::
 
 ::: {.column width="40%"}
 ::: {.callout-note}
 ### Web References
-- Repo: [R for Data Sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences)
-- Live Web Version: [R for Data Sciences Web](http://www.stat.wisc.edu/~yandell/R_for_data_sciences)
+- Legacy Repo: [R for Data Sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences)
+- Document Site: [R Language Overview](../R/)
 :::
 :::
 :::
@@ -48,32 +49,32 @@ format:
 Material is organized into "verb" folders representing key stages of the data science workflow:
 
 ::: {.incremental}
-- **[curate](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/curate)**: Manage and transform data structures.
-- **[visualize](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/visualize)**: Explore data relationships visually.
-- **[organize](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/organize)**: Document and structure reproducible workflows.
-- **[analyze](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/analyze)**: Fit linear models and run statistical analyses.
-- **[profile](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/profile)**: Check efficiency and test code performance.
-- **[connect](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/connect)**: Bridge R with other computing environments and databases.
+- **[curate](../R/curate/)**: Manage and transform data structures.
+- **[visualize](../R/visualize/)**: Explore data relationships visually.
+- **[organize](../R/organize/)**: Document and structure reproducible workflows.
+- **[analyze](../R/analyze/)**: Fit linear models and run statistical analyses.
+- **[profile](../R/profile/)**: Check efficiency and test code performance.
+- **[connect](../R/connect/)**: Bridge R with other computing environments and databases.
 :::
 
 ## Study Materials & Indices {.compact-slide}
 
-Additional resources located in the repository root directory:
+Additional resources located in the `R` directory:
 
 ::: {.columns}
 ::: {.column width="50%"}
 ### Core Documentation
-- **[overview.md](https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/overview.md)**: Index of R materials.
-- **[reference.md](https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/reference.md)**: Hand-selected external resources.
-- **[repositories.md](https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/repositories.md)**: Public dataset libraries.
-- **[learnR.md](https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/learnR.md)**: R syntax tips and tricks.
+- **[Overview](../R/learn/)**: Index of R materials.
+- **[R References](../R/learn/reference.html)**: Hand-selected external resources.
+- **[Repositories](../datasci/repositories.html)**: Public dataset libraries.
+- **[Tips & Tricks](../R/learn/learnR.html)**: R syntax tips and tricks.
 :::
 
 ::: {.column width="50%"}
 ### Background & Legacy
-- **[background.md](https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/background.md)**: Introductory slides on R history.
-- **[Bates.md](https://github.com/UW-Madison-DataScience/R_for_data_sciences/blob/master/Bates.md)**: Special teaching index developed by Douglas Bates.
-- **`data`**: Local sample folders.
+- **[Background](../R/learn/background.html)**: Introductory slides on R history.
+- **[Bates Index](../R/learn/Bates.html)**: Special teaching index developed by Douglas Bates.
+- **[R in VS Code](../R/radian.html)**: Modern R console with Radian.
 :::
 :::
 
@@ -83,7 +84,7 @@ Many thanks to Douglas Bates and the COMBEE Study Group for co-teaching and shar
 
 # 6 Data Science Verbs {background-color="#f0fdf4"}
 
-## [1. Curate: Data Structures & Import](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/curate) {.compact-slide}
+## [1. Curate: Data Structures & Import](../R/curate/) {.compact-slide}
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -96,59 +97,59 @@ Many thanks to Douglas Bates and the COMBEE Study Group for co-teaching and shar
 
 ::: {.column width="40%"}
 ### Key Repository Modules
-- `tidyverse` / `intro_dplyr` / `data_tables`
-- `purrr`: List/vector iteration mapping (`map` & `transpose`).
-- `species`: Integrated `dplyr`, `tidyr`, and `purrr` workflow.
-- `string` / `regex` / `file`
+- [tidyverse](../R/curate/tidyverse.html) / [data_tables](../R/curate/data_tables.html)
+- [purrr](../R/curate/purrr.html): Vector iteration/mapping
+- [species](../R/curate/species.html): Integrated curation workflow
+- [string](../R/curate/string.html) / [regex](../R/curate/regex.html)
+- [file](../R/curate/file.html) / [applyExample](../R/curate/applyExample.html)
 :::
 :::
 
-## [2. Visualize: Grammar of Graphics](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/visualize) {.compact-slide}
+## [2. Visualize: Grammar of Graphics](../R/visualize/) {.compact-slide}
 
 ::: {.columns}
 ::: {.column width="60%"}
 ### Graphical Explorations
 - Understand key components of the **grammar of graphics**.
 - Visualize data relationships with the **[ggplot2](http://ggplot2.org/)** package.
-- Examine formatting/layout packages (`cowplot` / `GGally`).
-- Create network observations in connected graphs (`network`).
-- Share results on the web with interactive **[shiny](shiny.Rmd)** apps.
+- Examine formatting/layout options for research graphics.
+- Create network observations in connected graphs.
+- Share results on the web with interactive **[shiny](../R/visualize/shiny.html)** apps.
 :::
 
 ::: {.column width="40%"}
 ### Key Repository Modules
-- `surveys_ggplot.R`
-- `ggplot2.Rmd`
-- `visualize.md`
-- `graphics.md`
-- `shiny.Rmd`
+- [ggplot2](../R/visualize/ggplot2.html)
+- [visualize](../R/visualize/visualize.html)
+- [graphics](../R/visualize/graphics.html)
+- [shiny](../R/visualize/shiny.html)
+- [network](../R/visualize/network/)
 :::
 :::
 
-## [3. Organize: Workflows & Databases](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/organize) {.compact-slide}
+## [3. Organize: Workflows & Databases](../R/organize/) {.compact-slide}
 
 ::: {.columns}
 ::: {.column width="60%"}
 ### Structure & Reproducibility
 - Document ongoing research with **[R Markdown](http://rmarkdown.rstudio.com/)** reports.
-- Collapse repeated code blocks into reusable **[functions](function.Rmd)**.
+- Collapse repeated code blocks into reusable **[functions](../R/organize/function.html)**.
 - Use **[git and GitHub](http://happygitwithr.com/)** for version control.
-- Organize documentation and tasks into shared **[packages](package.Rmd)**.
-- Manage external databases using `SQLite`, `DBI`, `dbplyr`, `RDS`, or `feather` formats.
+- Organize documentation and tasks into shared **[packages](../R/organize/package.html)**.
+- Manage external databases using `SQLite` and the `dplyr`/`dbplyr` interface.
 :::
 
 ::: {.column width="40%"}
 ### Key Repository Modules
-- `Rmarkdown.md` / `RmarkdownExample.Rmd`
-- `function.Rmd`
-- `package.Rmd`
-- `github.md`
-- `database.md` / `SQLiteDplyr.Rmd`
-- `writing.md`
+- [Rmarkdown](../R/organize/Rmarkdown.html) / [RmarkdownExample](../R/organize/RmarkdownExample.html)
+- [function](../R/organize/function.html) / [package](../R/organize/package.html)
+- [BatesNotes](../R/organize/BatesNotes.html)
+- [SQLiteDplyr](../R/organize/SQLiteDplyr.html) (Database / dplyr)
+- [GitHub](../github/) (Version Control)
 :::
 :::
 
-## [4. Analyze: Models & Formulas](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/analyze) {.compact-slide}
+## [4. Analyze: Models & Formulas](../R/analyze/) {.compact-slide}
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -161,15 +162,14 @@ Many thanks to Douglas Bates and the COMBEE Study Group for co-teaching and shar
 
 ::: {.column width="40%"}
 ### Key Repository Modules
-- `linear_model.Rmd`
-- `Formulas.Rmd`
-- `correlate.Rmd`
-- `covary.Rmd`
-- `sysgen.md`
+- [linear_model](../R/analyze/linear_model.html)
+- [Formulas](../R/analyze/Formulas.html)
+- [correlate](../R/analyze/correlate.html) / [covary](../R/analyze/covary.html)
+- [sysgen](../R/analyze/sysgen.html) (Systems Genetics)
 :::
 :::
 
-## [5. Profile: Optimization & Simulation](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/profile) {.compact-slide}
+## [5. Profile: Optimization & Simulation](../R/profile/) {.compact-slide}
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -182,16 +182,15 @@ Many thanks to Douglas Bates and the COMBEE Study Group for co-teaching and shar
 
 ::: {.column width="40%"}
 ### Key Repository Modules
-- `profile.Rmd` / `lineprof.Rmd`
-- `simulate.Rmd`: Simulation studies (Doug Bates).
-- `SimSpeed.Rmd` / `LmSimulation.Rmd`
+- [profile](../R/profile/profile.html) / [lineprof](../R/profile/lineprof.html)
+- [simulate](../R/profile/simulate.html): Simulation studies (Doug Bates)
 :::
 :::
 
-## [6. Connect: Interoperability](https://github.com/UW-Madison-DataScience/R_for_data_sciences/tree/master/connect) {.compact-slide}
+## [6. Connect: Interoperability](../R/connect/) {.compact-slide}
 
 ::: {.columns}
-::: {.column width="60%"}
+::: {.column width="55%"}
 ### Beyond R
 - Use the **Unix/Linux shell** to search, edit, and organize projects.
 - Build automated, reproducible pipelines using **GNU Make**.
@@ -200,13 +199,14 @@ Many thanks to Douglas Bates and the COMBEE Study Group for co-teaching and shar
 - Typesetting scientific articles using **LaTeX**.
 :::
 
-::: {.column width="40%"}
+::: {.column width="45%"}
 ### Key Repository Modules
-- `linux.md` / `beyondR.md`
-- `docker.md`
-- `latex.md`
-- `reproducible.md`
-- `scaling_up.md`
+- [linux](../R/connect/linux.html) / [beyondR](../R/connect/beyondR.html)
+- [docker](../R/connect/docker.html) / [latex](../R/connect/latex.html)
+- [reproducible](../R/connect/reproducible.html) / [scaling_up](../R/connect/scaling_up.html)
+- [profSkills](../R/connect/profSkills.html) / [writing](../R/connect/writing.html)
+- [software](../R/connect/software.html) / [programs](../R/connect/programs.html)
+- [stat692notes](../R/connect/stat692notes.html) / [blended_online](../R/connect/blended_online.html)
 :::
 :::
 
