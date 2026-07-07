@@ -5,7 +5,7 @@ author: "Brian S. Yandell"
 date: 2017-06-29
 permalink: /R/connect/
 nav_order: 7
----_
+---
 
 # Connect Data Tools Beyond `R`
 
