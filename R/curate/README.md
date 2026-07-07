@@ -4,6 +4,7 @@ parent: "R Language"
 author: "Brian S. Yandell"
 date: "6/29/2017"
 nav_order: 2
+permalink: /R/curate/
 ---
 
 # Curate R Data

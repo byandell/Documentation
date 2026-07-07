@@ -87,8 +87,8 @@ reported upon at
 - [ScienceClaw](https://github.com/beita6969/ScienceClaw)
 - [PegasusAI](https://pegasus-ai.org/)
   - [Specification.md](https://specification.md/)
-  - See slides at [HTCondor](https://htcondor.org/)
-  for `High Throughput Computing Week 2026` (not posted yet)
+  - [Pegasus and AI:
+Use a Napkin, Run a Workflow (HTCondor Week 2026)](https://agenda.hep.wisc.edu/event/2432/contributions/37654/)
 
 ## Commercial Platforms
 

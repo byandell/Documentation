@@ -1,0 +1,32 @@
+---
+title: "Network Observatins in Connected Graphs"
+parent: "Visualize Data with R"
+author: "Brian S. Yandell"
+date: "6/29/2017"
+permalink: /R/visualize/network/
+---
+
+# Network Observatins in Connected Graphs
+
+These are examples using two network visualization packages in R.
+First run `network_data.Rmd` to get data files. Then run igraph or visNetwork Rmd's to learn how to use these.
+
+base name | details
+--------- | ---------
+[network_data](network_data.Rmd) | set up network data
+[network_igraph](network_igraph.Rmd) | igraph example with dataset 1
+[network2_igraph](network2_igraph.Rmd) | igraph example with dataset 2
+[network_visNetwork](network_visNetwork.Rmd) | visNetwork example with dataset 1
+
+The `network_data.Rmd` file will download the ZIP file, data files, and Katya Ognyanova's tutorial as PDF and R. See **Network Visualization with R**, [Polnet 2016](http://www.kateto.net/polnet2016) by [Katya Ognyanova](http://kateto.net/network-visualization). Katya discusses other packages as well as igraph and visNetwork.
+
+See also [Network Visualization Examples with the ggplot2 Package](https://mran.microsoft.com/snapshot/2017-08-18/web/packages/ggCompNet/vignettes/examples-from-paper.html), which highlights the `geomnet` and `ggnetwork` packages and the `GGally::ggnet2` function.
+
+Files from Katya:
+
+file | description
+-----|------------
+`polnet2016.zip` | ZIP file with Katya's material
+`Polnet 2016 R Network Visualization Workshop.pdf` | Katya tutorial
+`data files/Polnet 2016 R Network Visualization Workshop.R` | Katya R code
+`data/` | folder with data files
