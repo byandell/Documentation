@@ -90,12 +90,21 @@ Think of `AGENTS.md` as the **onboarding handbook** for an AI agent entering a s
 
 #### AGENTS.md Examples
 
-See for instance these example AGENTS.md files with listed sections:
+Ask an AI agent to "create `AGENTS.md` for this project".
+I just did this for multiple projects, including this one.
+See for instance these example `AGENTS.md` files with listed sections:
 
-- [Working Group OASIS AGENTS.md](https://github.com/CU-ESIIL/Working_group_OASIS/blob/main/AGENTS.md) (CU ESIIL)
+- [Document Digital Tools `AGENTS.md`](../AGENTS.md)
+  - Purpose
+  - Repository Structure
+  - Key Files
+  - Conventions
+  - Related Organizations & Repositories
+  - Code Preferences
+- [Working Group OASIS `AGENTS.md`](https://github.com/CU-ESIIL/Working_group_OASIS/blob/main/AGENTS.md) (CU ESIIL)
   - Guidelines for agents
   - Working Group OASIS and Project Group OASIS
-- [LLM lesson exemplar AGENTS.md](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md) (Cassie Buhler)
+- [LLM lesson exemplar `AGENTS.md`](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md) (Cassie Buhler)
   - [Repository Purpose](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#repository-purpose)
   - [Step 1: Read the Example](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#step-1-read-the-example)
   - [Core Steps](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#core-steps)
@@ -107,7 +116,7 @@ See for instance these example AGENTS.md files with listed sections:
   - [Failure Handling](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#failure-handling)
   - [Resampling Rules](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#resampling-rules)
   - [Ad-Hoc Preprocessing](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#ad-hoc-preprocessing)
-- [openclaw_container AGENTS.md](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md) (CU ESIIL OASIS ScienceClaw)
+- [openclaw_container `AGENTS.md`](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md) (CU ESIIL OASIS ScienceClaw)
   - [Core Operating Contract](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#core-operating-contract)
   - [Default Workflow](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#default-workflow)
   - [Documentation and Website Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#documentation-and-website-policy)
