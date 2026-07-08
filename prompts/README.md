@@ -22,7 +22,8 @@ They illustrate a few principles along the way.
   - [Prompt CRAFTs](#prompt-crafts)
   - [Conversations and Projects](#conversations-and-projects)
 - [Several Prompt Examples](#several-prompt-examples  )
-  - [Create a README.md for a Folder](#create-a-readmemd-for-a-folder)
+  - [Create a `README.md` for a Folder](#create-a-readmemd-for-a-folder)
+  - [Create an `AGENTS.md` for a Project](#create-an-agentsmd-for-a-project)
   - [Create a Table of Contents for a File](#create-a-table-of-contents-for-a-file)
   - [Convert DOCX files to Markdown](#convert-docx-files-to-markdown)
   - [Assemble a Powerpoint Presentation](#assemble-a-powerpoint-presentation)
@@ -142,7 +143,7 @@ will help with later recall of how the project developed.
 
 ## Several Prompt Examples
 
-### Create a README.md for a Folder
+### Create a `README.md` for a Folder
 
 **Prompts:**
 
@@ -153,6 +154,21 @@ will help with later recall of how the project developed.
 
 - [mkeller3Projects2](https://github.com/AttieLab-Systems-Genetics/mkeller3Projects2/blob/master/README.md)
 - [sysgenDO1200](https://github.com/AttieLab-Systems-Genetics/sysgenDO1200/blob/main/README.md) has various examples
+
+### Create an `AGENTS.md` for a Project
+
+An
+[AGENTS.md](https://agents.md/)
+file is basically a readme for AI agents that are
+working on the project.  Ask
+
+**Prompt:**
+
+- "create `AGENTS.md` for this project"
+
+**Example:**
+
+- [Document Digital Tools `AGENTS.md`](../AI/context.md#document-digital-tools-agentsmd)  
 
 ### Create a Table of Contents for a File
 
