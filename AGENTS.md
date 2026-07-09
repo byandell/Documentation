@@ -1,6 +1,6 @@
 ---
 title: "AGENTS.md — Documentation Repository"
-parent: "Document Digital Tools"
+parent: "Prompt Examples"
 ---
 
 # AGENTS.md — Documentation Repository

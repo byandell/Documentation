@@ -1,8 +1,7 @@
 ---
 title: "AGENTS_mini.md (Mini)"
-parent: "Document Digital Tools"
+parent: "Prompt Examples"
 ---
-
 
 # AGENTS.md (Mini)
 
