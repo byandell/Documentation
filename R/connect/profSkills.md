@@ -1,4 +1,9 @@
-## Professional Skills for Data Science
+---
+title: "Professional Skills for Data Science"
+parent: "Connect Data Tools Beyond `R`"
+---
+
+# Professional Skills for Data Science
 
 These materials are for statisticians at all levels who want to learn
 more about modern network and computing tools for statistics. The course
@@ -15,23 +20,21 @@ site](https://ay15-16.moodle.wisc.edu/prod/local/wiscservices/login/index.php),
 [Jenny Bryan's Stat 545 at UBC](http://stat545-ubc.github.io). The
 course covers
 
--   installation of the RStudio application on personal computers and
+- installation of the RStudio application on personal computers and
     use of RStudio on departmental computers.
--   Representation of data in R, including factors and data frames.
--   Manipulation and display of data in R.
--   Visualization of data with the ggplot2 package for R.
--   The "R Markdown" language for literate programming and reproducible
+- Representation of data in R, including factors and data frames.
+- Manipulation and display of data in R.
+- Visualization of data with the ggplot2 package for R.
+- The "R Markdown" language for literate programming and reproducible
     research.
--   The R formula language and its use for fitting linear models and
+- The R formula language and its use for fitting linear models and
     generalized linear models.
--   Contrast specifications for factors and their impact on
+- Contrast specifications for factors and their impact on
     interpretation of coefficient estimates.
 
-The raw material for Fall 2014 was at https://github.com/dmbates/stat692
+The raw material for Fall 2014 was at <https://github.com/dmbates/stat692>
 with more material in [Yandell's Stat 692
 Notes](/network-skills/stat692-notes) related to Bates's talks.
-
-* * * * *
 
 Much of the material below was added for Fall 2013. We used the
 following network tools to deliver information:
@@ -41,23 +44,22 @@ following network tools to deliver information:
 [moodle](https://courses.moodle.wisc.edu/prod/course/view.php?id=1758)
 (course collaboration environment).
 
-Resource Topics and Useful Links
---------------------------------
+## Resource Topics and Useful Links
 
--   [Communication & Writing](../organize/writing.md)
--   [Visualization & Graphics](../visualize/graphics.md)
--   [Linux Operating System & bash Shell](../connect/linux.md)
--   [R Language Tips & Tricks](learnR.md)
--   [Going Beyond R](../connect/beyondR.md)
--   [High Throughput & High Performance Computing](../connect/reproducible.md)
+- [Communication & Writing](../organize/writing.md)
+- [Visualization & Graphics](../visualize/graphics.md)
+- [Linux Operating System & bash Shell](../connect/linux.md)
+- [R Language Tips & Tricks](learnR.md)
+- [Going Beyond R](../connect/beyondR.md)
+- [High Throughput & High Performance Computing](../connect/reproducible.md)
     (distribute work across multiple processors)
--   [Reproducible Research](../organize/reproducible.md) (workflows, exact
+- [Reproducible Research](../organize/reproducible.md) (workflows, exact
     reproduction of work)
--   [Big Data](bigdata.md) (going beyond the laptop)
--   [Programs in Data Science](programs.md) (discovery & communication of patterns in
+- [Big Data](bigdata.md) (going beyond the laptop)
+- [Programs in Data Science](programs.md) (discovery & communication of patterns in
     data)
--   Online Courses (learning & teaching tools)
--   [Data Repositories](../repositories.md)
+- Online Courses (learning & teaching tools)
+- [Data Repositories](../repositories.md)
 
 We are in the age of [big data](bigdata.md), when it is not enough to
 think of what you can do with the computer on your desk or lap. Further,

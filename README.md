@@ -13,7 +13,7 @@ permalink: /
 - [Environmental Systems](./envsys/) ([slides](./quarto/envsys.html))
 - [Shiny Apps](./ShinyApps.md) ([slides](./quarto/ShinyApps.html))
 - [AI (Artificial Intelligence)](./AI/) ([slides](./quarto/AI.html))
-  - [AI Prompt Examples](./prompts/) ([slides](./quarto/prompts.html))
+  - [Prompt Examples](./prompts/) ([slides](./quarto/prompts.html))
 - [Quarto Slides & References](./quarto/)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_

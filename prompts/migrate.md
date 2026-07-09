@@ -1,3 +1,8 @@
+---
+title: "Migrate Documentation from DSHub"
+parent: "Prompt Examples"
+---
+
 # Migrate Documentation from DSHub
 
 In 2017 I gathered together material on R and other tools that I had been accumulating

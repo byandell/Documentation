@@ -1,3 +1,11 @@
+---
+parent: "Organizing Data & Docs"
+title: "Organizing data in R"
+date: "2017-10-03"
+author: "Doug Bates"
+type: "lesson"
+---
+
 # Organizing data in R (Doug Bates)
 
 ```{r preliminaries,cache=FALSE,include=FALSE}

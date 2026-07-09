@@ -1,12 +1,17 @@
-## Docker and Guix
+---
+title: "Docker and Guix"
+parent: "Connect Data Tools Beyond `R`"
+---
+
+# Docker and Guix
 
 [Docker](https://www.docker.com/) and [Guix](https://www.gnu.org/s/guix) are mechanisms for building and running isolated “containers” of software.
-They eliminate “works on my machine” problems when collaborating on code with co-workers; enable running and managing apps side-by-side in isolated containers to get better compute density; and can be used to build agile, updateable software delivery pipelines. 
+They eliminate “works on my machine” problems when collaborating on code with co-workers; enable running and managing apps side-by-side in isolated containers to get better compute density; and can be used to build agile, updateable software delivery pipelines.
 They offer package management features, support transactional upgrades and roll-backs, and per-user profiles. While Docker is better known, it requires privileged (root) management. Guix works without need for root privilege.
 
 ### [Docker](https://www.docker.com/)
 
-- [A hands on introduction to docker](http://angus.readthedocs.io/en/2016/week3/CTB_docker.html) 
+- [A hands on introduction to docker](http://angus.readthedocs.io/en/2016/week3/CTB_docker.html)
 - [AntiSMASH](http://antismash.secondarymetabolites.org/)
 - Multiplatform
 - Requires root permissions to install but not to run(?)

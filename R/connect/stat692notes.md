@@ -1,4 +1,9 @@
-## Stat 692 Fall 2014 Notes 
+---
+title: "Stat 692 Fall 2014 Notes"
+parent: "Connect Data Tools Beyond `R`"
+---
+
+# Stat 692 Fall 2014 Notes
 
 These are Yandell's notes from Fall 2014
 sessions to augment lectures. These are open to read, somewhat for my
@@ -6,29 +11,29 @@ benefit and yours. Comments welcome. First link is to [Bates's
 GitHub](https://github.com/dmbates/stat692) document; second is to notes
 below by date.
 
-1.  Introduction to R and RStudio
+1. Introduction to R and RStudio
     ([Intro.Rmd](https://github.com/dmbates/stat692/blob/master/Intro.Rmd))
-2.  Organizing Data in R
+2. Organizing Data in R
     ([Data.Rmd](https://github.com/dmbates/stat692/blob/master/Data.Rmd);
     [2014-09-12](#2014-09-12))
-3.  Data Visualization with ggplot2
+3. Data Visualization with ggplot2
     ([ggplot2.Rmd](https://github.com/dmbates/stat692/blob/master/ggplot2.Rmd);
     [2014-09-19](#2014-09-19))
-4.  Quadrat Data Project
+4. Quadrat Data Project
     ([Quadrat.Rmd](https://github.com/dmbates/stat692/blob/master/Quadrat.Rmd);
     [2014-09-26](#2014-09-26))
-5.  Linear Models
+5. Linear Models
     ([lm.Rmd](https://github.com/dmbates/stat692/blob/master/lm.Rmd);
     [2014-10-10](#2014-10-10))
-6.  Reading Big Data
+6. Reading Big Data
     ([ReadingBigData.Rmd](https://github.com/dmbates/stat692/blob/master/ReadingBigData.Rmd)
     ([2014-10-17](#2014-10-17))
-7.  Sleep Transcriptome Data Project
+7. Sleep Transcriptome Data Project
     ([sleepTranscriptome.Rmd](https://github.com/dmbates/stat692/blob/master/sleepTranscriptome.Rmd))
-8.  Multi-factor experiments
+8. Multi-factor experiments
     ([ch09.Rmd](https://github.com/dmbates/stat692/blob/master/ch09.Rmd);
     [2014-10-31](#2014-10-31))
-9.  Regression models
+9. Regression models
     ([ch10.Rmd](https://github.com/dmbates/stat692/blob/master/ch10.Rmd);
     [2014-11-07](#2014-11-07))
 10. Plotting Densities
@@ -44,215 +49,229 @@ below by date.
 14. Creating Packages with R ([2014-12-05](#2014-12-05))
 15. Special Topics Suggested by Students ([2014-12-12](#2014-12-12))
 
-* * * * *
+## 2014-09-12
 
-2014-09-12
-----------
+```
+github notes
 
-    github notes
+cd 
+git clone https://github.com/dmbates/stat692
+cd stat692
+git pull
+```
 
-    cd 
-    git clone https://github.com/dmbates/stat692
-    cd stat692
-    git pull
+See also github links at [Going Beyond R](beyondR.md)
+Add notes how to clone git repositorywithin Rstudio (if possible)
 
-    See also github links at http://www.stat.wisc.edu/network-skills#beyondR
-    Add notes how to clone git repositorywithin Rstudio (if possible)
+## Using Install button to get package polynom
 
-    ===============
+Kernighan and Plaugher
+[Elements of Programming Style](http://en.m.wikipedia.org/wiki/The_Elements_of_Programming_Style)
 
-    Using Install button to get package polynom
+```
+stopifnot()
+```
 
-    Kernighan and Plaugher
-    Elements of Programming Style
-    http://en.m.wikipedia.org/wiki/The_Elements_of_Programming_Style
+See [Bates's stat692 notes](Bates.md)
 
-    stopifnot()
-    see Doug's Data.Rmd at his github
+```
+help for package
+search path
+datasets for intro classes--what is out there
+count.fields
+$ as "syntactic sugar" vs [[]]
+```
 
-    help for package
-    search path
-    datasets for intro classes--what is out there
-    count.fields
+## 2014-09-19
 
-    $ as "syntactic sugar" vs [[]]
+moodle.wisc.edu course page
+first homework assignment at moodle
 
+```
+with() better than attach() ... detach()
+within() to change assignments in structure
+count.fields()
+manual: input/output
+    read.table: tell what fields are
 
+data organization
+wide and long formats
+long format--need example
+factor and ordered factor
+subset
+    factors, can use drop=TRUE to explicily drop unused levels
+    or apply factor() to a factor()
+stack/unstack; reshape
+xtabs(~xtabs(~schoolid, classroom))
+xtabs(~xtabs(~classid, classroom))
 
-    2014-09-19
+data visualization
+ggplot2.org
+pima indian data from faraway
+qplot
+empirical density plot
 
-    moodle.wisc.edu course page
-    first homework assignment at moodle
-    Data.Rmd
-    with() better than attach() ... detach()
-    within() to change assignments in structure
-    count.fields()
-    manual: input/output ... http://cran.r-project.org/doc/manuals/r-release/R-data.html
-        read.table: tell what fields are
+use factors for things that should be factors
+don't do dumb things with boxplots
+```
 
-    data organization
-    wide and long formats
-    long format--need example
-    factor and ordered factor
-    subset
-        factors, can use drop=TRUE to explicily drop unused levels
-        or apply factor() to a factor()
-    stack/unstack; reshape
-    xtabs(~xtabs(~schoolid, classroom))
-    xtabs(~xtabs(~classid, classroom))
+## 2014-09-26
 
-    data visualization
-    ggplot2.org
-    pima indian data from faraway
-    qplot
-    empirical density plot
+Homework comments
 
-    use factors for things that should be factors
-    don't do dumb things with boxplots
+```
+be sure to document what you did so you will later recall details
+childid problem
+classroom <- withing(classroom, {sex <- factor(sex, labels=c("M","F"))
+    minority <- factor(minority, labels=c("N","Y"))
+    childid <- factor(childid)
+    schoolid <- factor(schoolid)
+    classid <- factor(classid)
+}
+str(rownames(classroom))
+## note: evaluates as character string
+all(str(rownames(classroom) == classroom$childid))
 
+loops
+R prefers vectorized calculation--work on the whole object
 
+look ahead
+cd /afs/cs.wisc.edu/p/stat/data
+ls
+cd MS.exam
+ls -l
+cd s11
+ls -l
+linux basic tools
+head file.txt
+wc -l file.txt
+ls -lh
+wc
+less or zless
+zcat file.gz | wc -l
 
-    2014-09-26
+homework
+ex2.Rmd
 
-    homework comments
-    be sure to document what you did so you will later recall details
-    childid problem
-    classroom <- withing(classroom, {sex <- factor(sex, labels=c("M","F"))
-       minority <- factor(minority, labels=c("N","Y"))
-       childid <- factor(childid)
-       schoolid <- factor(schoolid)
-       classid <- factor(classid)
-    }
-    str(rownames(classroom))
-    ## note: evaluates as character string
-    all(str(rownames(classroom) == classroom$childid))
+details of Rmd document
+"---" YAML metadata section at top
+html_document to pdf_document
+preliminary section
+set options
+```
 
-    loops
-    R prefers vectorized calculation--work on the whole object
+```
+ {r initial,echo=FALSE,print=FALSE,cache=FALSE}
+library(knitr)
+library(ggplot2)
+load("classroom.rda")
+opts_chunk$set(cache=TRUE)
+options(width=76, show,signif.stars=FALSE, str=strOptions(strict.width="cut"))
+set.seed(1234)
+```
 
-    look ahead
-    cd /afs/cs.wisc.edu/p/stat/data
-    ls
-    cd MS.exam
-    ls -l
-    cd s11
-    ls -l
-    linux basic tools
-    head file.txt
-    wc -l file.txt
-    ls -lh
-    wc
-    less or zless
-    zcat file.gz | wc -l
+```
+comments on cache and chunks
+see Rstudio home->products->R packages
+    knitr (caution--poor navigation of document)
+    R markdown (read this one)
+        full specification of pandoc markdown
+note: Rstudio has lookahead for options as you type
+```
 
-    homework
-    ex2.Rmd
-
-    details of Rmd document
-    "---" YAML metadata section at top
-    html_document to pdf_document
-    preliminary section
-    set options
-    ```{r initial,echo=FALSE,print=FALSE,cache=FALSE}
-    library(knitr)
-    library(ggplot2)
-    load("classroom.rda")
-    opts_chunk$set(cache=TRUE)
-    options(width=76, show,signif.stars=FALSE, str=strOptions(strict.width="cut"))
-    set.seed(1234
-    ```
-    comments on cache and chunks
-    see Rstudio home->products->R packages
-        knitr (caution--poor navigation of document)
-        R markdown (read this one)
-            full specification of pandoc markdown
-    note: Rstudio has lookahead for options as you type
-    ```{r hist1,echo=FALSE,fig.align="center",fig.cap="Histogram of blah blah",
+```{r hist1,echo=FALSE,fig.align="center",fig.cap="Histogram of blah blah",
        fig.height=2.5,fig.width=6.5,fig.lp="fig:hist1",fig.pos="top"}
-    qplot(mathkind,data=classroom, geom="histogram")
-    ```
-    somehow this did not work; will fix later
+qplot(mathkind,data=classroom, geom="histogram")
+```
 
-    back to ggplot2 slides
-    bivariate plots
-    log-log scale spreads data out nicely
-    comparative box plots--horizontal
-    regression or ancova
-    stat500 data with geom_smooth(method="lm") + coord_equal()
-    watch aspect ratio (studied by Bill Cleveland): should be ~45 degree angle
-    add reference line using geom_abline
-        note Galton's regression toward the mean
-    ancova
-    cathedral data
-    geom_point(aes(color=style)) + geom_smooth(aes=(col=style),method="lm")
-    different panels or facets using formula (left=rows, right=columns)
-    facet_grid(.~style)
-    Tufte's small multiples
-    Cleveland: details of how to do this well
+somehow this did not work; will fix later
 
+```
+back to ggplot2 slides
+bivariate plots
+log-log scale spreads data out nicely
+comparative box plots--horizontal
+regression or ancova
+stat500 data with geom_smooth(method="lm") + coord_equal()
+watch aspect ratio (studied by Bill Cleveland): should be ~45 degree angle
+add reference line using geom_abline
+    note Galton's regression toward the mean
+ancova
+cathedral data
+geom_point(aes(color=style)) + geom_smooth(aes=(col=style),method="lm")
+different panels or facets using formula (left=rows, right=columns)
+facet_grid(.~style)
+Tufte's small multiples
+Cleveland: details of how to do this well
+```
 
+## 2014-10-10
 
-    2014-10-10
+```
+assignment due NEXT Tuesday to produce several figures
+look at MS exam data
+ex: Spring 2011 MS exam problem on Quadrat Summary
+auto conversion
+think of names of variables and number of unique values--are they labels?
+note "X" prefix on variable identifier
 
-    assignment due NEXT Tuesday to produce several figures
-    look at MS exam data
-    ex: Spring 2011 MS exam problem on Quadrat Summary
-    auto conversion
-    think of names of variables and number of unique values--are they labels?
-    note "X" prefix on variable identifier
+single bracket on data.frame gets data.frame: summ[1] vs summ[[1]]
+the first one is like using subset() on a data.frame
 
-    single bracket on data.frame gets data.frame: summ[1] vs summ[[1]]
-    the first one is like using subset() on a data.frame
+single vs double ampersand (&)
+single: component-wise AND
+double: programmatic AND (evaluates first as scalar; if FALSE do not evaluate second)
 
-    single vs double ampersand (&)
-    single: component-wise AND
-    double: programmatic AND (evaluates first as scalar; if FALSE do not evaluate second)
+are there any entries that have Browsed but not Present?
+nrow(subset(summ, X2m_SppPresent == "N" & X2m_SPPBrowsed == "Y"))
+```
 
-    are there any entries that have Browsed but not Present?
-    nrow(subset(summ, X2m_SppPresent == "N" & X2m_SPPBrowsed == "Y"))
-    -----------------------
-    Linear Models
-    brain weight data
-    ggplot, scale_x_log10()
-    geom_smooth(): mostly linear but a bit of a bump
-    linear: geom_smooth(method="lm")
-    model fitting functions
-    style suggestion for reproducibility
-        use data option with data.frame after cleaned
-        keep Rmd document with steps of cleaning and steps in analysis
-    note explicit inclusion of intercept as "~ 1 +"
+### Linear Models
 
-    model.matrix()
-    gaussian model: y ~ N(Xb, s^2 I)
-    linear model form works here, but not for more general models (e.g. Poisson)
-    str() of model.matrix -- notice "assign" attribute
-    many subtle things go on behind the scenes
-    model matrix more appropriate name than "design matrix"
-    suppress intercept: "~ 0 +"
-    coef(summary(fm1)) includes variability but coef(fm1) does not
-    vcov(fm1) provides variance-covariance matrix of coefficients
-    note: stderr() is error message stream, NOT standard error
-    offset(log(BodyWt)) to test if slope is 1
-    plot of model fit: get 4 of 6 possible diagnostic plots
-    think about aspect ratio
+```
+brain weight data
+ggplot, scale_x_log10()
+geom_smooth(): mostly linear but a bit of a bump
+linear: geom_smooth(method="lm")
+model fitting functions
+style suggestion for reproducibility
+    use data option with data.frame after cleaned
+    keep Rmd document with steps of cleaning and steps in analysis
+note explicit inclusion of intercept as "~ 1 +"
 
-    diagnostics useful, but designed for blind selection of "best" model
-    often better these days to use visualization tools to explore
+model.matrix()
+gaussian model: y ~ N(Xb, s^2 I)
+linear model form works here, but not for more general models (e.g. Poisson)
+str() of model.matrix -- notice "assign" attribute
+many subtle things go on behind the scenes
+model matrix more appropriate name than "design matrix"
+suppress intercept: "~ 0 +"
+coef(summary(fm1)) includes variability but coef(fm1) does not
+vcov(fm1) provides variance-covariance matrix of coefficients
+note: stderr() is error message stream, NOT standard error
+offset(log(BodyWt)) to test if slope is 1
+plot of model fit: get 4 of 6 possible diagnostic plots
+think about aspect ratio
 
-    methods for lm objects 
-    generic functions such as print, summary, plot
-    what methods does a particular class have?
-    non-visible functions (not in NAMESPACE)
-    extractor functions such as coef, deviance, logLik
-    use methods that exist to "future proof" your code
-        role of methods can change in the future
-        provide extractors in the code
+diagnostics useful, but designed for blind selection of "best" model
+often better these days to use visualization tools to explore
 
+methods for lm objects
+generic functions such as print, summary, plot
+what methods does a particular class have?
+non-visible functions (not in NAMESPACE)
+extractor functions such as coef, deviance, logLik
+use methods that exist to "future proof" your code
+    role of methods can change in the future
+provide extractors in the code
+```
 
-    2014-10-17
+## 2014-10-17
 
-    Rmd and figures
-    short wide figures more flexible
+### Rmd and figures
+
+```
+short wide figures more flexible
     ---
     title:
     author:
@@ -310,23 +329,25 @@ below by date.
 
     digression on multilevel modelling/hierarchical modeling
         caution on longitudinal data and migration
+```
 
-    ==========================
-    Dealing with Big Data
-    what is Big Data? (http://www.stat.wisc.edu/bigdata)
-        volume: very large
-        velocity: arriving and changing rapidly
-        variety: many sources
-        veracity: 
-        validity
-        volatility
+## Dealing with Big Data
 
-    Big Data in R
-    R is slow interpreter and is single threaded
-    in-memory storate, conservative copying
-    R is not sutied to real-time processing of data streams
+```
+what is Big Data?
+    volume: very large
+    velocity: arriving and changing rapidly
+    variety: many sources
+    veracity:
+    validity
+    volatility
 
-    Moore's law
+Big Data in R
+R is slow interpreter and is single threaded
+in-memory storate, conservative copying
+R is not sutied to real-time processing of data streams
+
+Moore's law
     number of transistors on IC would double in approximately 18 months
     roughly interpreted as speed of processor
     density of circuits is now incredible (sub-micron geometries)
@@ -346,14 +367,15 @@ below by date.
     archive.ics.uci.edu/ml/machine-learning-databases/00216
     4.5 Gb size
 
-    next time: linear models,extractors,contrasts
+next time: linear models,extractors,contrasts
+```
 
+## 2014-10-31
 
+### Linear models
 
-    2014-10-31
-
-    Linear Models
-    QR decomposition
+```
+QR decomposition
     see notes
     log(BodyWt) as response for brain weight data
     methods for qr objects
@@ -361,9 +383,9 @@ below by date.
     decomposing into orthogonal subspaces
     Fisher with poor eyesight spent evenings thinking rather than reading
 
-    statistics is not a formula, instead it refers to the model
+statistics is not a formula, instead it refers to the model
 
-    note: Householder usually yields negative intercept, due to reflection
+note: Householder usually yields negative intercept, due to reflection
 
     style: extract pieces from model rather than going back to original data
     slides show how to extract RSS, coefficients, etc.
@@ -404,12 +426,12 @@ below by date.
     contr.sum(2) for 2-level factorial designs
     Box, Hunter and Hunter book: http://www.wiley.com/WileyCDA/WileyTitle/productCd-0471718130.html
     details of 2^3 model matrix and design matrix
+```
 
+## 2014-11-07
 
-
-    2014-11-07
-
-    questions on homework
+```
+questions on homework
     facet wrap
 
     ch 9: multi-factor experiments
@@ -469,11 +491,13 @@ below by date.
     factor coefficient typeOEM is important: repaired vs OEM
     change in slope measured by typeOEM:temp
 
+```
 
+## 2014-11-14
 
-    2014-11-14
+```
 
-    SimSpeed.Rmd for today
+SimSpeed.Rmd for today
 
     case study with large simulation of student
 
@@ -524,8 +548,12 @@ below by date.
     summary(m3 <- lm(log(Height) ~ 1 + Species + log(Dbh), data = reduced))
     anova(m3)
     ## and also model with interaction (replace "+" by "*")
-    -------------------------------------------
-    Simulation Speed handout
+
+```
+
+## Simulation Speed handout
+
+```
 
     ## pull out R code
     library(knitr)
@@ -556,12 +584,13 @@ below by date.
 
     family of apply meta-functions
 
+```
 
+## 2014-11-21
 
-    2014-11-21
+```
 
-    case study of analysis
-
+case study of analysis
     lessons
         use profiling capabilities (based on functions)
             things take a long time in areas of code you don't expect
@@ -649,11 +678,13 @@ below by date.
 
     lst[1] vs lst[[1]] for list: what do you get
 
+```
 
+## 2014-12-05
 
-    2014-12-05
+<http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/>
 
-    http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/
+```
 
     install.packages("devtools")
     install.packages("roxygen2")
@@ -750,11 +781,13 @@ below by date.
 
     transfer of "program culture" training across packages
 
+```
 
+## 2014-12-12
 
-    2014-12-12
+```
 
-    Special Topics Suggested by Students
+Special Topics Suggested by Students
 
     publication, tables, graphics
         LaTeX: Rmd -> Rnw
@@ -841,3 +874,4 @@ below by date.
         see Bates presentations under github account
         powerful, flexible language where the future lies
 
+```

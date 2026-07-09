@@ -1,21 +1,21 @@
-Software Packages, Languages & Writing Tools
-============================================
+---
+title: "Software Packages, Languages & Writing Tools"
+parent: "Connect Data Tools Beyond `R`"
+---
 
--   [Statistical Packages &
+# Software Packages, Languages & Writing Tools
+
+- [Statistical Packages &
     Languages](http://www.amstat.org/profession/index.cfm?fuseaction=software)
--   [SWI Software Links](http://www.stat.wisc.edu/~yandell/www/wright/software.html)
--   [Writing, Editing and References](#writing)
--   [Graphics: Viewing and Printing](graphics.html)
--   [Statistical Reporting with S/R (Frank Harrell, Vanderbilt Medical
-    Center)](http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/StatReport)
--   [UNIX Guides](unix.html)
--   [Auckland S Workshop](http://www.stat.auckland.ac.nz/S-Workshop/)
--   [Yandell's Software Page](./)
+- [SWI Software Links](http://www.stat.wisc.edu/~yandell/www/wright/software.html)
+- [Writing, Editing and References](#writing)
+- [Graphics: Viewing and Printing](graphics.html)
+- [Statistical Reporting with S/R (Frank Harrell, Vanderbilt Medical Center)](http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/StatReport)
+- [UNIX Guides](unix.html)
+- [Auckland S Workshop](http://www.stat.auckland.ac.nz/S-Workshop/)
+- [Yandell's Software Page](./)
 
-* * * * *
-
-Writing, Editing and References
--------------------------------
+## Writing, Editing and References
 
 Most people use either [emacs](http://www.emacs.org/) or
 [vi](http://weber.u.washington.edu/~rells/R110/) as a full-screen editor
@@ -86,9 +86,4 @@ these for your own purposes, see the CIS manual page and the file
 [/usr/stat/lib/CIS/ab.v92.](file:///usr/stat/lib/CIS/ab.v92) [Click here
 to use CIS on the World Wide Web](/statistics/cis/).
 
-* * * * *
-
-Return to [U WI Statistics Home Page](/)
-
-Last modified: sat 3 jul 2004 by Brian Yandell
-[*(yandell@stat.wisc.edu)*](http://www.stat.wisc.edu/~yandell)
+_Created: sat 3 jul 2004 by Brian Yandell_
