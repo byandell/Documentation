@@ -15,7 +15,7 @@ The [ESIIL team](https://esiil.org/our-team)
 imagines using such platforms as
 [digital twins](https://www.ibm.com/think/topics/digital-twin)
 for some
-[ESIIL Working Groups](https://esiil.org/working_groups).
+[ESIIL Working Groups](https://esiil.org/working-groups).
 
 One open challenge is whether it makes sense to
 "go big" or "go small" ("go local")
