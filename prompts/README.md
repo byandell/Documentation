@@ -36,6 +36,7 @@ They illustrate a few principles along the way.
   - [Create Quarto Slides](./quarto.md)
   - [Refactor Workflows](./workflow.md)
   - [Configure Just-the-Docs](./justthedocs.md)
+  - [Check External Links](./check_links.md)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 
