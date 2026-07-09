@@ -26,6 +26,9 @@ These were previously dispersed in various GitHub repositories and organizations
 These reflect my ideas on how
 [Data Evolve](https://byandell.github.io/Data-Evolve/) in concert with
 the evolution of code-based tools and languages.
+This historical collection has many broken links,
+indicated by ⚠️ icons,
+which I plan to fix over time.
 
 - [R Language](#r-language)
 - [Systems Genetics](#systems-genetics)
