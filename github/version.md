@@ -36,12 +36,12 @@ While GitHub can be used for any type of documents, the `RStudio` folks have mad
 
 ## Github for Course Organization
 
-- [How to point a domain on Google Domains to GitHub pages](http://www.curtismlarson.com/blog/2015/04/12/github-pages-google-domains/)
+- [How to point a domain on Google Domains to GitHub pages](http://www.curtismlarson.com/blog/2015/04/12/github-pages-google-domains/) ⚠️
 - [Happy Git Classroom Overview](http://happygitwithr.com/classroom-overview.html)
 - [GitHub Education Staff](https://education.github.community) (<education@github.com>)
   - [CS50 at Harvard, automated tests, and portfolios](https://github.com/blog/2322-how-cs50-at-harvard-uses-github-to-teach-computer-science)
   - [Real-time feedback for students using continuous integration tools](https://github.com/blog/2324-real-time-feedback-for-students-using-continuous-integration-tools)
-  - [Student-created portfolios using GitHub Pages](https://education.github.community/t/who-uses-github-pages-portfolios-peer-learning/9365)
+  - [Student-created portfolios using GitHub Pages](https://education.github.community/t/who-uses-github-pages-portfolios-peer-learning/9365) ⚠️
 - [COMBEE Git Workshop](https://combee-uw-madison.github.io/2017-09-29-git-workshop/setup/)
 
 ## Using Github for Pull Requests
@@ -81,7 +81,7 @@ git merge main
 This is a **<span style="color:red">DANGEROUS</span>** thing to do as it is irreversible.
 **ALWAYS** cache a copy before doing something like this.
 
-- [https://git-scm.com/2011/07/11/reset.html]
+- [https://git-scm.com/2011/07/11/reset.html ⚠️]
 - [Want to change my master to an older commit (Stack Overflow)](http://stackoverflow.com/questions/4359681/want-to-change-my-master-to-an-older-commit-how-can-i-do-this)
 - [Create new branch with git and manage branches (Kunena Forum)](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches)
 - [How to move the changes from one branch to another branch (Stack Overflow)](http://stackoverflow.com/questions/8085838/how-to-move-the-changes-from-one-branch-to-another-branch-git)

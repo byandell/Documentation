@@ -14,8 +14,8 @@ permalink: /R/visualize/
 > After completing this section, an individual will be able to visualize data with annotated plots.
 >
 > * understand key components of the grammar of graphics
-> * visualize data with the [ggplot2](http://ggplot2.org/) package
-> * develop interactive graphics ([plotly](https://plot.ly/ggplot2/), [ggvis](http://blog.revolutionanalytics.com/2014/06/interactive-web-ready-ggplot2-style-graphics-with-ggvis.html))
+> * visualize data with the [ggplot2](http://ggplot2.org/) ⚠️ package
+> * develop interactive graphics ([plotly](https://plot.ly/ggplot2/), [ggvis](http://blog.revolutionanalytics.com/2014/06/interactive-web-ready-ggplot2-style-graphics-with-ggvis.html) ⚠️)
 > * examine related packages ([cowplot](https://github.com/wilkelab/cowplot), [GGally](https://ggobi.github.io/ggally/), [grid viewports](https://stat.ethz.ch/R-manual/R-devel/library/grid/doc/viewports.pdf))
 > * create heatmaps ([pheatmap](https://github.com/raivokolde/pheatmap))
 > * [network](analyze/network/README.md) observations in connected graphs
@@ -38,17 +38,17 @@ permalink: /R/visualize/
 * [Lattice Book Figures with R Code (Deepayan
     Sarkar)](http://lmdvr.r-forge.r-project.org)
   * [Lattice Demo (John
-        Gillett)](http://pages.stat.wisc.edu/~jgillett/327-1/5lattice.pdf)
-        with [R Code](http://pages.stat.wisc.edu/~jgillett/327-1/5.R)
+        Gillett)](http://pages.stat.wisc.edu/~jgillett/327-1/5lattice.pdf) ⚠️
+        with [R Code](http://pages.stat.wisc.edu/~jgillett/327-1/5.R) ⚠️
   * [Lattice Graphics
-        (inside-R)](http://www.inside-r.org/r-doc/lattice/A_01_Lattice)
+        (inside-R)](http://www.inside-r.org/r-doc/lattice/A_01_Lattice) ⚠️
   * [Lattice Graphics (Weka Learn
         Studios)](http://www.wekaleamstudios.co.uk/topics/r-environment/lattice-graphics/)
-* [ggplot2 Plotting System for R](http://ggplot2.org)
+* [ggplot2 Plotting System for R](http://ggplot2.org) ⚠️
   * [Grammar of Graphics (Weka Learn
         Studios)](http://www.wekaleamstudios.co.uk/topics/r-environment/ggplot2-r-environment/)
   * [ggplot2 and the grammar of graphics (Revolution
-        Analytics)](http://blog.revolutionanalytics.com/2009/09/ggplot2-and-the-grammar-of-graphics.html)
+        Analytics)](http://blog.revolutionanalytics.com/2009/09/ggplot2-and-the-grammar-of-graphics.html) ⚠️
   * [Graphics with ggplot2
         (r4stats.com)](http://r4stats.com/examples/graphics-ggplot2/)
   * [History of ggplot2
@@ -65,11 +65,11 @@ permalink: /R/visualize/
         [FPS package to be posted on [Vince Vu's Software
         Page](http://www.vince.vu/software/) when completed.]
 * [R Graph Gallery on
-    Facebook](https://www.facebook.com/pages/R-Graph-Gallery/169231589826661)
+    Facebook](https://www.facebook.com/pages/R-Graph-Gallery/169231589826661) ⚠️
 * [Revolution Analytics Graph
-    Gallery](http://blog.revolutionanalytics.com/2009/01/r-graph-gallery.html)
+    Gallery](http://blog.revolutionanalytics.com/2009/01/r-graph-gallery.html) ⚠️
 * [R Graphics Gallery (Alastair
-    Sanderson)](http://www.sr.bham.ac.uk/~ajrs/R/r-gallery.html)
+    Sanderson)](http://www.sr.bham.ac.uk/~ajrs/R/r-gallery.html) ⚠️
 * [William S Cleveland's *Visualizing Data*
     Book](http://www.stat.purdue.edu/~wsc/visualizing.html)
 * [A Comprehensive Guide to the Grammar of Graphics for Effective Visualization of Multi-dimensional Data by Depanjan Sarkar](https://towardsdatascience.com/a-comprehensive-guide-to-the-grammar-of-graphics-for-effective-visualization-of-multi-dimensional-1f92b4ed4149)

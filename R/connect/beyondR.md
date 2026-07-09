@@ -16,15 +16,15 @@ staticians.
 ## General References
 
 - [Statistical Computing Courses by Karl
-    Broman](http://www.biostat.wisc.edu/~kbroman/teaching/)
+    Broman](http://www.biostat.wisc.edu/~kbroman/teaching/) ⚠️
   - [Tools for Reproducible Research
         (2014)](http://kbroman.github.io/Tools4RR/)
   - [Notes for a Statistical Programming Course
         (2012)](http://kbroman.wordpress.com/2012/05/25/a-course-in-statistical-programming/)
   - [Advanced Statistical Computing (Karl Broman 2001
-        Course)](http://www.biostat.wisc.edu/~kbroman/teaching/statcomp)
+        Course)](http://www.biostat.wisc.edu/~kbroman/teaching/statcomp) ⚠️
 - [UW ACI Data- and Software-Carpentry
-    Workshops](http://aci.wisc.edu/data-carpentry-and-software-carpentry-workshops/)
+    Workshops](http://aci.wisc.edu/data-carpentry-and-software-carpentry-workshops/) ⚠️
     ([Software-Carpentry.org](http://software-carpentry.org) &
     [Data-Carpentry.org](http://www.datacarpentry.org))
 - [Statistical Computing](http://www.stat.cmu.edu/~cshalizi/statcomp/)
@@ -35,7 +35,7 @@ staticians.
 - [Julia Language (distribute-enabled language that is similar to,
     faster than, younger than R)](http://julialang.org/)
   - [Julia: a new language for technical computing (Revolution
-        Analytics)](http://blog.revolutionanalytics.com/2012/04/julia-a-new-language-for-technical-computing.html)
+        Analytics)](http://blog.revolutionanalytics.com/2012/04/julia-a-new-language-for-technical-computing.html) ⚠️
   - [Doug Bates's empirical CDF in Rcpp &
         Julia](https://github.com/dmbates/ecdfExample)
   - [Gist regarding handling large data sets for genome-wide
@@ -44,7 +44,7 @@ staticians.
   - [Julia Workshop (Doub
         Bates)](http://nbviewer.ipython.org/github/dmbates/JuliaWorkshop/tree/master/)
   - [Julia Language
-        Documentation](http://media.readthedocs.org/pdf/julia/latest/julia.pdf)
+        Documentation](http://media.readthedocs.org/pdf/julia/latest/julia.pdf) ⚠️
 - [GitHub](http://github.org)
   - [How GitHub uses GitHub to Build
         GitHub](https://speakerdeck.com/holman/how-github-uses-github-to-build-github)

@@ -143,6 +143,6 @@ Please go to your repository on GitHub, navigate to **Settings** > **Pages**, an
 
 ### What this means for your site structure
 
-- The rest of your files in `docs/` (such as `docs/geyserShinyPython.html` and `docs/geyserShinyR.html`) will be served at the root of your GitHub Pages site (e.g., `https://username.github.io/geyser/geyserShinyR.html`).
+- The rest of your files in `docs/` (such as `docs/geyserShinyPython.html` and `docs/geyserShinyR.html`) will be served at the root of your GitHub Pages site (e.g., `https://username.github.io/geyser/geyserShinyR.html ⚠️`).
 
-- The Shinylive app will be built and served inside the `/shiny/` subfolder (e.g., `https://username.github.io/geyser/shiny/`).
+- The Shinylive app will be built and served inside the `/shiny/` subfolder (e.g., `https://username.github.io/geyser/shiny/ ⚠️`).

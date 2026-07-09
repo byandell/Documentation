@@ -13,7 +13,7 @@ layout: topic
 
 ------------
 
-Modern data analysis with R and Rstudio tends to use a growing set of tools developed by Hadley Wickham and the Rstudio crew. This so-called [Hadleyverse](http://blog.revolutionanalytics.com/2015/03/hadleyverse.html) reimagines many of the basic concepts, nouns and verbs of R. Fundamental to this is `dplyr`. This companion to the [Aggregating and analyzing data with dplyr](http://kbroman.org/datacarpentry_R_2016-06-01/03-dplyr.html) lesson looks at some of the concepts from the [Data and data frames](http://kbroman.org/datacarpentry_R_2016-06-01/02-data-frames.html) lesson using `dplyr`.
+Modern data analysis with R and Rstudio tends to use a growing set of tools developed by Hadley Wickham and the Rstudio crew. This so-called [Hadleyverse](http://blog.revolutionanalytics.com/2015/03/hadleyverse.html) ⚠️ reimagines many of the basic concepts, nouns and verbs of R. Fundamental to this is `dplyr`. This companion to the [Aggregating and analyzing data with dplyr](http://kbroman.org/datacarpentry_R_2016-06-01/03-dplyr.html) lesson looks at some of the concepts from the [Data and data frames](http://kbroman.org/datacarpentry_R_2016-06-01/02-data-frames.html) lesson using `dplyr`.
 
 ## Learning Objectives
 

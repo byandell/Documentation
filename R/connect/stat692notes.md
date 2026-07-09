@@ -12,7 +12,7 @@ GitHub](https://github.com/dmbates/stat692) document; second is to notes
 below by date.
 
 1. Introduction to R and RStudio
-    ([Intro.Rmd](https://github.com/dmbates/stat692/blob/master/Intro.Rmd))
+    ([Intro.Rmd](https://github.com/dmbates/stat692/blob/master/Intro.Rmd) ⚠️)
 2. Organizing Data in R
     ([Data.Rmd](https://github.com/dmbates/stat692/blob/master/Data.Rmd);
     [2014-09-12](#2014-09-12))
@@ -40,7 +40,7 @@ below by date.
     ([densities.Rmd](https://github.com/dmbates/stat692/blob/master/densities.Rmd);
     [2014-11-14](#2014-11-14))
 11. Plotting PMF's and Probability Densities
-    ([PMFs.Rmd](https://github.com/dmbates/stat692/blob/master/PMFs.Rmd);
+    ([PMFs.Rmd](https://github.com/dmbates/stat692/blob/master/PMFs.Rmd) ⚠️;
     [2014-11-21](#2014-11-21))
 12. Simulations
     ([Simulations.Rmd](https://github.com/dmbates/stat692/blob/master/Simulations.Rmd),
@@ -401,7 +401,7 @@ note: Householder usually yields negative intercept, due to reflection
 
     basic linear algebra subroutines
     LAPACK benchmark
-    Revolution R Open (http://www.revolutionanalytics.com/revolution-r-open) has accelerated BLAS using multi-threading
+    Revolution R Open (http://www.revolutionanalytics.com/revolution-r-open) ⚠️ has accelerated BLAS using multi-threading
     but does not affect LS calculations due to rank deficiencies with factors (more later)
 
     Categorical covariates
@@ -424,7 +424,7 @@ note: Householder usually yields negative intercept, due to reflection
     contr.treatment and contr.poly are most often used
     contr.SAS matches SAS
     contr.sum(2) for 2-level factorial designs
-    Box, Hunter and Hunter book: http://www.wiley.com/WileyCDA/WileyTitle/productCd-0471718130.html
+    Box, Hunter and Hunter book: http://www.wiley.com/WileyCDA/WileyTitle/productCd-0471718130.html ⚠️
     details of 2^3 model matrix and design matrix
 ```
 

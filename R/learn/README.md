@@ -93,7 +93,7 @@ It is useful to organize `R` work into projects. Click `File → New Project →
 
 The "working directory" is the folder where you do `R` work. You can use the command `getwd()` to find out what the working directory is. Here is a sample layout (from Data Carpentry lesson) with some suggested sub-folder names to further organize work:
 
-![](http://www.datacarpentry.org/R-ecology-lesson/img/working-directory-structure.png)
+![](http://www.datacarpentry.org/R-ecology-lesson/img/working-directory-structure.png) ⚠️
 
 ## Scripts
 
@@ -121,4 +121,4 @@ You exit from RStudio in the usual manner for apps on your system. For instance,
 `RStudio` allows great flexibility within its structure in how you organize your work.
 The key thing is to intentionally organize what you do so that you can recreate, or
 reproduce your work steps and results in the future. We will talk about various ways this can be done along the way (scripts, Rmarkdown documents, github repositories, function, packages, workflows).
-At a big picture level, it might be useful to consider [Jenny Bryan's grading rubric](http://stat545.com/peer-review01_marking-rubric.html), which breaks work down in terms of coding style and strategy, presentation in tables and graphs, mastery and creativity, and ease of access.
+At a big picture level, it might be useful to consider [Jenny Bryan's grading rubric](http://stat545.com/peer-review01_marking-rubric.html) ⚠️, which breaks work down in terms of coding style and strategy, presentation in tables and graphs, mastery and creativity, and ease of access.

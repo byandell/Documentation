@@ -34,11 +34,11 @@ References
 - [Gallery](http://shiny.rstudio.com/gallery/) | [Tutorial](http://shiny.rstudio.com/tutorial/) | [Webinars](https://www.rstudio.com/resources/webinars/) [Webinar Github](https://github.com/rstudio/webinars) | [Articles](http://shiny.rstudio.com/articles/)
 - [Shiny Developer Conference 2016](https://www.rstudio.com/resources/webinars/shiny-developer-conference/) | [Materials](https://github.com/rstudio/ShinyDeveloperConference) | [Blog Announcement](https://blog.rstudio.org/2016/05/05/shinydevcon-videos-now-available/)
 - Contributions
-    + [R Graph Catalog (Jenny Bryan)](http://shiny.stat.ubc.ca/r-graph-catalog/) | [r-graph-catalog GitHub repository](https://github.com/jennybc/r-graph-catalog)
+    + [R Graph Catalog (Jenny Bryan)](http://shiny.stat.ubc.ca/r-graph-catalog/) ⚠️ | [r-graph-catalog GitHub repository](https://github.com/jennybc/r-graph-catalog)
     + [Zev Ross Shiny Material](http://zevross.com/blog/2016/04/19/r-powered-web-applications-with-shiny-a-tutorial-and-cheat-sheet-with-40-example-apps/) | [Jenny Bryan Interactive Tutorial](http://www.r-bloggers.com/building-shiny-apps-an-interactive-tutorial/)
-    + [Steph Locke Shiny Design Patterns](http://itsalocke.com/tag/shiny-design-patterns/) ([github](https://github.com/stephlocke/shinymodulesdesignpatterns))
-    + [Garrett Grolemund Blog](https://blog.rstudio.org/author/garrettgman/)
-- <http://www.shinyapps.io/> | <http://www.rstudio.com//products.connect>
+    + [Steph Locke Shiny Design Patterns](http://itsalocke.com/tag/shiny-design-patterns/) ⚠️ ([github](https://github.com/stephlocke/shinymodulesdesignpatterns))
+    + [Garrett Grolemund Blog](https://blog.rstudio.org/author/garrettgman/) ⚠️
+- <http://www.shinyapps.io/> | <http://www.rstudio.com//products.connect> ⚠️
     
 Building blocks for shiny
 
@@ -54,13 +54,13 @@ Miscellaneous
 - d3 and shiny
     + [Binding d3 to shiny](http://stackoverflow.com/questions/26650561/binding-javascript-d3-js-to-shiny)
     + [Shiny d3 plot](http://www.r-bloggers.com/d3-and-r-interacting-through-shiny/)
-    + [d3 Shiny Integration](http://myinspirationinformation.com/visualisation/d3-js/integrating-d3-js-into-r-shiny/)
+    + [d3 Shiny Integration](http://myinspirationinformation.com/visualisation/d3-js/integrating-d3-js-into-r-shiny/) ⚠️
 Network Visualization
 
 
 Debugging Shiny
 
-- [options(shiny.reactlog=TRUE)](http://shiny.rstudio.com/reference/shiny/latest/showReactLog.html) then <kbd>`command`</kbd>-<kbd>`fn`</kbd>-<kbd>`F3`</kbd>
+- [options(shiny.reactlog=TRUE)](http://shiny.rstudio.com/reference/shiny/latest/showReactLog.html) ⚠️ then <kbd>`command`</kbd>-<kbd>`fn`</kbd>-<kbd>`F3`</kbd>
 - `cat(file=stderr(), ...)`
 - `options(shiny.error=browser)`
 - Web browser: right-click inspect element
@@ -74,7 +74,7 @@ Advanced tools (javascript, updated URLs, widgets)
 
 - [ShinyURL](https://gallery.shinyapps.io/shinyURL)
 - [Custom objects](http://shiny.rstudio.com/articles/building-outputs.html) 
-- [HTMLWidgets Showcase](http://www.htmlwidgets.org/showcase_leaflet.html) | [D3 Heatmap](http://www.htmlwidgets.org/showcase_d3heatmap.html)
+- [HTMLWidgets Showcase](http://www.htmlwidgets.org/showcase_leaflet.html) | [D3 Heatmap](http://www.htmlwidgets.org/showcase_d3heatmap.html) ⚠️
 - Karl Broman’s [Horizon](https://github.com/kbroman/horizon) | [Notes on Making Horizon](https://github.com/kbroman/horizon/blob/master/inst/doc/making_horizon.md)
 
 

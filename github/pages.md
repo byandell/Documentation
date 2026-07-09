@@ -101,7 +101,7 @@ I generated a
 that points to my profile page
 <https://byandell.github.io>
 using
-[Adobe Express](https://www.adobe.com/express/feature/image/qr-code-generator).
+[Adobe Express](https://www.adobe.com/express/feature/image/qr-code-generator) ⚠️.
 
 ![QR Code](../images/adobe-express-qr-code.png)
 

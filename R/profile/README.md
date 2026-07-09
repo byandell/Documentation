@@ -14,7 +14,7 @@ nav_order: 6
 >
 > - [profile](profile.Rmd) code to identify bottlenecks and logic errors
 >   - traceback, browser, [Rmarkdown breakpoints](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
->   - [Rprof](https://www.r-bloggers.com/profiling-r-code/), [profviz](https://rstudio.github.io/profvis/)
+>   - [Rprof](https://www.r-bloggers.com/profiling-r-code/), [profviz](https://rstudio.github.io/profvis/) ⚠️
 >   - [lineprof](lineprof.Rmd)
 >   - [Optimizing code](http://adv-r.had.co.nz/Profiling.html)
 >   - package build and checking; TravisCI

@@ -30,7 +30,7 @@ Interestingly, when I started populating this list, AI hallucinated several entr
 ### How might we think about AI?
 
 As Ezra Klein noted
-[recently](https://www.nytimes.com/2026/03/29/opinion/ai-claude-chatgpt-gemini-mcluhan.html), John Culkin (1967) provided a helpful summary of Marshall McLuhan's ideas:
+[recently](https://www.nytimes.com/2026/03/29/opinion/ai-claude-chatgpt-gemini-mcluhan.html) ⚠️, John Culkin (1967) provided a helpful summary of Marshall McLuhan's ideas:
 
 - “We shape our tools and thereafter they shape us.”
 - “The environments set up by different media are not just containers for people; they are processes which shape people.”
@@ -63,11 +63,11 @@ this is not a future event, but something we are now experincing.
   - [America Isn’t Ready for What AI Will Do to Jobs (Josh Tyrangiel)](https://www.theatlantic.com/magazine/2026/03/ai-economy-labor-market-transformation/685731/)
   - [Don’t Call It ‘Intelligence’ (Charles Yu)](https://www.theatlantic.com/ideas/2026/03/intelligence-concept/686121/)
 - New York Times on AI (2026)
-  - [I Saw Something New in San Francisco (Ezra Klein)](https://www.nytimes.com/2026/03/29/opinion/ai-claude-chatgpt-gemini-mcluhan.html)
-  - [Coding After Coders: The End of Computer Programming as We Know It (Clive Thompson)](https://www.nytimes.com/2026/03/12/magazine/ai-coding-programming-jobs-claude-chatgpt.html)
-  - [The Workers Letting AI Do Their Jobs (The Daily)](https://www.nytimes.com/2026/04/14/podcasts/the-daily/ai-coders.html)
-  - [The Small-Business Owners Managing Whole Armies of A.I. Employees (Clive Thompson)](https://www.nytimes.com/2026/06/04/magazine/ai-agents-openclaw-small-business.html)
-  - [The World’s Leading Deepfake Expert No Longer Trusts His Own Eyes (Hany Farid)](https://www.nytimes.com/2026/06/14/us/ai-deepfake-hany-farid.html)
+  - [I Saw Something New in San Francisco (Ezra Klein)](https://www.nytimes.com/2026/03/29/opinion/ai-claude-chatgpt-gemini-mcluhan.html) ⚠️
+  - [Coding After Coders: The End of Computer Programming as We Know It (Clive Thompson)](https://www.nytimes.com/2026/03/12/magazine/ai-coding-programming-jobs-claude-chatgpt.html) ⚠️
+  - [The Workers Letting AI Do Their Jobs (The Daily)](https://www.nytimes.com/2026/04/14/podcasts/the-daily/ai-coders.html) ⚠️
+  - [The Small-Business Owners Managing Whole Armies of A.I. Employees (Clive Thompson)](https://www.nytimes.com/2026/06/04/magazine/ai-agents-openclaw-small-business.html) ⚠️
+  - [The World’s Leading Deepfake Expert No Longer Trusts His Own Eyes (Hany Farid)](https://www.nytimes.com/2026/06/14/us/ai-deepfake-hany-farid.html) ⚠️
 - [What is the Future of AI? (Forbes)](https://www.forbes.com/sites/gilpress/2026/02/16/what-is-the-future-of-ai-heres-what-one-successful-investor-says/?ctpv=searchpage)
 
 ### What about ethics and environmental impact of AI?
@@ -95,8 +95,8 @@ These references were gleaned from the [ESIIL Network Slack Channel](https://esi
 - [ESIIL AI for Sustainability Summit 2026 (Juan Maestre, LinkedIn)](https://www.linkedin.com/posts/juanpedromaestre_esiil-2026-share-7463707566229991425-mPDk)
 - [Algorithmic Monocultures in Hiring (arXiv)](https://arxiv.org/abs/2605.27371)
 - [The Machine Consumes Itself: Artificial Intelligence and the End of Publish-or-Perish (Postdigital Science & Education)](https://doi.org/10.1007/s42438-026-00666-0)
-- [Ecology is not yet ready for AI—and why that matters (PNAS)](https://doi.org/10.1073/pnas.2533976123)
-- [Legacies of foundation species shape life after death (Science Advances)](https://doi.org/10.1126/sciadv.aef9983)
+- [Ecology is not yet ready for AI—and why that matters (PNAS)](https://doi.org/10.1073/pnas.2533976123) ⚠️
+- [Legacies of foundation species shape life after death (Science Advances)](https://doi.org/10.1126/sciadv.aef9983) ⚠️
 - [The governance gap threatening long-term ecological archives (EOS)](https://eos.org/opinions/the-governance-gap-threatening-long-term-ecological-archives/)
 - [Researchers who use hallucinated references to face arXiv ban (Nature)](https://www.nature.com/articles/d41586-026-01595-5)
 - [Leveraging Al for Greenhouse Gas Monitoring and Accountability: Webinar Series
@@ -126,8 +126,8 @@ Ensuring Data Quality, Access, and Trust in GH Emissions Information
 
 - [Carbon Neutral Data Centers Market Forecasts (GII Research)](https://www.giiresearch.com/report/smrc2007748-carbon-neutral-data-centers-market-forecasts.html)
 - [Carbon Neutral Data Center 2030 (Computer Forecast)](https://www.computeforecast.com/blogs/carbon-neutral-data-center-2030/)
-- [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2589004225019662)
-- [Zero Edge Cloud Data Sovereignty (Salish Tribal Alliance)](https://salishtribalalliancegroup.com/data-centers)
+- [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2589004225019662) ⚠️
+- [Zero Edge Cloud Data Sovereignty (Salish Tribal Alliance)](https://salishtribalalliancegroup.com/data-centers) ⚠️
 - [Modern data center sustainability best practices to consider (TechTarget)](https://www.techtarget.com/searchDataCenter/tip/Modern-data-center-sustainability-best-practices-to-consider)
 - [Micro Data Centers: The Future of Edge Computing (GBC Engineers)](https://gbc-engineers.com/news/micro-data-centers)
 - [Micro Data Centers: A Practical Guide for Small IT Teams (Data Center Knowledge)](https://www.datacenterknowledge.com/modular-data-centers/micro-data-centers-a-practical-guide-for-small-it-teams)

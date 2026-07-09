@@ -23,7 +23,7 @@ Below is a schema I am developing.
 Prompt engineering is about laying a digital trail of prompts that guide the AI toward what one wants to investigate, gradually refining. These are embedded in conversations one develops. It is possible, and now done regularly by experts, to develop a set of AI agents that respond to their own prompts and do part of their work. I don’t yet know how to manage such agents.
 
 Prompts, and
-[prompt engineering](https://www.promptingguide.ai/introduction/what-is-prompt-engineering),
+[prompt engineering](https://www.promptingguide.ai/introduction/what-is-prompt-engineering) ⚠️,
 is a useful way to develop tools without having to directly write code.
 A great guide is Tyson Swetnam's
 [Getting Started with Prompts](https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure).
@@ -86,10 +86,10 @@ Below are some references on prompt engineering quickly culled from the web:
 [Google Cloud](https://cloud.google.com/discover/what-is-prompt-engineering),
 [IBM](https://www.ibm.com/think/prompt-engineering),
 [Microsoft](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering),
-[Prompting Guide](https://www.promptingguide.ai/introduction/what-is-prompt-engineering)
+[Prompting Guide](https://www.promptingguide.ai/introduction/what-is-prompt-engineering) ⚠️
 - [Generative AI & Prompt Engineering (Tyson Swetnam)](https://tyson-swetnam.github.io/intro-gpt/)
   - [Core Features of Today's AI Tools](https://tyson-swetnam.github.io/intro-gpt/prompts/#core-features-of-todays-ai-tools)
   - [Getting Started with Prompts](https://tyson-swetnam.github.io/intro-gpt/prompts/#getting-started-basic-prompt-structure)
 - [Prompt engineering Guide (Prompting Guide)](https://www.promptingguide.ai/)
-- [Prompt design strategies (Google Gemini API)](https://ai.google.dev/gemini-api/docs/prompt-design)
+- [Prompt design strategies (Google Gemini API)](https://ai.google.dev/gemini-api/docs/prompt-design) ⚠️
 - [Prompt Engineering Overview (Claude)](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview)

@@ -122,7 +122,7 @@ Some common coordinate systems:
 See `landmapy` [Plot Functions](plots.md).
 
 - [matplotlib](https://matplotlib.org/)
-  - [matplotlib.pyplot](https://matplotlib.org/stable/api/pyplot_api.html)
+  - [matplotlib.pyplot](https://matplotlib.org/stable/api/pyplot_api.html) ⚠️
   - [matplotlib.colors](https://matplotlib.org/stable/api/colors_api.html)
 - [shapely](https://shapely.readthedocs.io/en/stable/)
   - [shapely.geometry](https://shapely.readthedocs.io/en/stable/manual.html#geometric-objects)
@@ -131,8 +131,8 @@ See `landmapy` [Plot Functions](plots.md).
 - [contextily](https://contextily.readthedocs.io/en/latest/)
 - [panel](https://panel.holoviz.org/)
 - [hvplot](https://hvplot.holoviz.org/)
-  - [hvplot.pandas](https://hvplot.holoviz.org/user_guide/Plotting_with_Pandas.html)
-  - [hvplot.xarray](https://hvplot.holoviz.org/user_guide/Plotting_with_XArray.html)
+  - [hvplot.pandas](https://hvplot.holoviz.org/user_guide/Plotting_with_Pandas.html) ⚠️
+  - [hvplot.xarray](https://hvplot.holoviz.org/user_guide/Plotting_with_XArray.html) ⚠️
 - [plotnine](https://plotnine.readthedocs.io/en/stable/)
 
 ### Spatial Libraries
@@ -150,7 +150,7 @@ See `landmapy` [Plot Functions](plots.md).
   - [tqdm.notebook](https://tqdm.github.io/docs/notebook/)
 - [regionmask](https://regionmask.readthedocs.io/en/stable/)
 - [cartopy](https://scitools.org.uk/cartopy/docs/latest/)
-  - [cartopy.crs](https://scitools.org.uk/cartopy/docs/latest/crs/index.html)
+  - [cartopy.crs](https://scitools.org.uk/cartopy/docs/latest/crs/index.html) ⚠️
   - [geoplot](https://residentmario.github.io/geoplot/index.html)
 - [folium](https://python-visualization.github.io/folium/)
 - [geopy](https://geopy.readthedocs.io/en/stable/)
@@ -161,8 +161,8 @@ See `landmapy` [Plot Functions](plots.md).
 - [Creating an Animated GIF with Python](https://www.blog.pythonlibrary.org/2021/06/23/creating-an-animated-gif-with-python/)
   - [Create an Animated GIF Using Python Matplotlib](https://www.geeksforgeeks.org/create-an-animated-gif-using-python-matplotlib/)
   - [Create a GIF with Python](https://www.codedex.io/projects/create-a-gif-with-python)
-  - [Using Python to make an animated gif out of a collection of images](https://propolis.io/articles/make-animated-gif-using-python.html)
-  - [How to make a gif map using Python, Geopandas and Matplotlib](https://towardsdatascience.com/how-to-make-a-gif-map-using-python-geopandas-and-matplotlib-cd8827cefbc8)
+  - [Using Python to make an animated gif out of a collection of images](https://propolis.io/articles/make-animated-gif-using-python.html) ⚠️
+  - [How to make a gif map using Python, Geopandas and Matplotlib](https://towardsdatascience.com/how-to-make-a-gif-map-using-python-geopandas-and-matplotlib-cd8827cefbc8) ⚠️
   - [How to create animated GIF with Pillow in Python](https://note.nkmk.me/en/python-pillow-gif/)
 - [HoloViews Overview](https://dash.plotly.com/holoviews)
   - [HoloViews Gridded Dataset](https://holoviews.org/user_guide/Gridded_Datasets.html)
@@ -214,7 +214,7 @@ Many projects read and write to files.
 Following course guidelines, we use the `data_dir` variable to store data in a consistent location,
 which for EDA is `~/earth-analytics/data`.
 The
-[landmapy/initial.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/initial.py)
+[landmapy/initial.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/initial.py) ⚠️
 has function `create_data_dir()` to create a directory if it does not exist.
 
 ```python
@@ -267,13 +267,13 @@ else:
 #### Cached Data via Decorator
 
 The
-[landmapy/cached.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/cached.py)
+[landmapy/cached.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/cached.py) ⚠️
 decorator caches data in the `jars` directory `~/earth-analytics/data/jars/`.
 The decorator `@cached` is used to cache the results of a function.
 See examples in
 [clustering.qmd](https://github.com/earthlab-education/clustering-byandell/blob/main/clustering.qmd)
 using functions in the
-[landmapy/reflect.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/reflect.py)
+[landmapy/reflect.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/reflect.py) ⚠️
 module.
 Some explanation of decorators is in the next section.
 There is no need to use Store Magic with this decorator,
@@ -282,7 +282,7 @@ as it already caches the data in the `jars` directory.
 ### Decorators
 
 Code for a caching **decorator** is in
-[landmapy/cached.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/cached.py),
+[landmapy/cached.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/cached.py) ⚠️,
 which you can use in your code.
 This decorator will **pickle** the results of running a `do_something()` function,
 and only run the code if the results do not already exist.
@@ -290,9 +290,9 @@ To override the caching, for example temporarily after
 making changes to your code, set `override=True`.
 Note that to use the caching decorator, you must write your own function to perform each task.
 See examples in
-[landmapy/delta.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/delta.py)
+[landmapy/delta.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/delta.py) ⚠️
 and
-[landmapy/reflectance.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/reflectance.py).
+[landmapy/reflectance.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/reflectance.py) ⚠️.
 
 - [Clustering Project](https://github.com/earthlab-education/clustering-byandell/blob/main/clustering.qmd)
 - [Decorators in Python (Geeks4Geeks)](https://www.geeksforgeeks.org/decorators-in-python/)
@@ -337,10 +337,10 @@ and which returns the actual decorator (that will be applied to the decorated fu
 A decorator with arguments can be used in a notebook or document.
 However, in order to embed the arguments within a module takes a bit more care.
 For instance,
-[landmapy/reflect.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/reflect.py)
+[landmapy/reflect.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/reflect.py) ⚠️
 uses the `@cached` decorator
 from
-[landmapy/cached.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/cached.py)
+[landmapy/cached.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/cached.py) ⚠️
 to cache the results of the function.
 The original static use of the decorator was
 
@@ -416,7 +416,7 @@ The **init** method is a special method, known as the constructor,
 which is automatically called when an object of the class is created
 to initialize the object's attributes.
 
-- [Habitat Suitability Notes](https://github.com/earthlab-education/habitat-suitability-byandell/blob/main/notes.qmd)
+- [Habitat Suitability Notes](https://github.com/earthlab-education/habitat-suitability-byandell/blob/main/notes.qmd) ⚠️
 - [Python 3 Documentation](https://docs.python.org/3/)
   - [3. Data model](https://docs.python.org/3/reference/datamodel.html)
   - [9. Classes](https://docs.python.org/3/tutorial/classes.html)
@@ -424,4 +424,4 @@ to initialize the object's attributes.
 - [Python Classes: The Power of Object-Oriented Programming (RealPython)](https://realpython.com/python-classes/)
 - [Google's Python Class](https://developers.google.com/edu/python)
 - [earthpy](https://earthpy.readthedocs.io/en/latest/)
-  - [apppeears.py](https://github.com/earthlab/earthpy/blob/apppeears/earthpy/appeears.py) (class Elsa created in `earthpy` package)
+  - [apppeears.py](https://github.com/earthlab/earthpy/blob/apppeears/earthpy/appeears.py) ⚠️ (class Elsa created in `earthpy` package)

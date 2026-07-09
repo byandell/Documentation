@@ -17,7 +17,7 @@ Regression and analysis of variance (anova or ANOVA) are the basic work horses o
 
 Several useful packages have been developed for linear models:
 
-- [car package](https://cran.r-project.org/web/packages/car/) ([companion to Fox & Weisberg book](http://socserv.socsci.mcmaster.ca/jfox/Books/Companion/index.html))
+- [car package](https://cran.r-project.org/web/packages/car/) ([companion to Fox & Weisberg book](http://socserv.socsci.mcmaster.ca/jfox/Books/Companion/index.html) ⚠️)
 - [lsmeans package](https://cran.r-project.org/web/packages/lsmeans/)
 - [regress package](https://cran.r-project.org/web/packages/regress/)
 
@@ -26,7 +26,7 @@ Regression with more than one predictor gets complicated, and there is no one be
 - [multiple regression from Quick-R](http://www.statmethods.net/stats/regression.html)
 - [step: stepwise model fits](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/step.html)
 - [stepwise package](https://cran.r-project.org/web/packages/stepwise/)
-- [variable selection](http://www.stat.columbia.edu/~martin/W2024/R10.pdf)
+- [variable selection](http://www.stat.columbia.edu/~martin/W2024/R10.pdf) ⚠️
 
 
 ## Models that are not linear
@@ -51,7 +51,7 @@ Some models mix so-called fixed and random effects. Fixed are as above. Random e
 - [lmmlite](http://kbroman.org/lmmlite/)
 - [gemma](http://www.xzlab.org/software.html)
 - [glmmnet package](https://cran.r-project.org/web/packages/glmnet/)
-- [Andrew Gelman](http://www.stat.columbia.edu/~gelman/)'s [arm package](http://www.stat.columbia.edu/~gelman/arm/software/) & [stan Platform](http://mc-stan.org/)
+- [Andrew Gelman](http://www.stat.columbia.edu/~gelman/) ⚠️'s [arm package](http://www.stat.columbia.edu/~gelman/arm/software/) ⚠️ & [stan Platform](http://mc-stan.org/)
 - [Mixed Models in R: lme4, nlme, or both?](https://freshbiostats.wordpress.com/2013/07/28/mixed-models-in-r-lme4-nlme-both/)
 - [Statistics with R: Mixed Effects Models (Carpentries Style)](https://mq-software-carpentry.github.io/statistics-with-r/05-mixed-effects/index.html)
 - [Coding Club: Introduction to Linear Mixed Models](https://ourcodingclub.github.io/tutorials/mixed-models/)

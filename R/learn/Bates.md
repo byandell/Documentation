@@ -13,7 +13,7 @@ These notes were used in Fall 2014 and Fall 2015 (as Stat 627) in a course taugh
 
 ## R Introduction
 
-1. [Course Resources](https://github.com/dmbates/stat692/blob/master/Intro.Rmd)
+1. [Course Resources](https://github.com/dmbates/stat692/blob/master/Intro.Rmd) ⚠️
 2. [Data frames, examining structure](https://github.com/dmbates/stat692/blob/master/Data.Rmd)
 3. [Introduction to the Tidyverse (nee Hadleyverse)](https://github.com/dmbates/stat692/blob/master/Hadleyverse.Rmd)
 4. [The `ggplot2` graphics package](https://github.com/dmbates/stat692/blob/master/ggplot2.Rmd)

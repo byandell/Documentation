@@ -46,9 +46,9 @@ Jaron Lanier's [There is no AI](https://byandell.github.io/Jaron-Lanier-There-is
 ::: {.callout-tip}
 ### Core References
 - **NYT**: 
-  - [*Coding After Coders*](https://www.nytimes.com/2026/03/12/magazine/ai-coding-programming-jobs-claude-chatgpt.html) (Thompson)
-  - [*The Workers Letting AI Do Their Jobs*](https://www.nytimes.com/2026/04/14/podcasts/the-daily/ai-coders.html) (Daily)
-  - [*The Small-Business Owners Managing Armies of A.I. Employees*](https://www.nytimes.com/2026/06/04/magazine/ai-agents-openclaw-small-business.html) (Thompson)
+  - [*Coding After Coders*](https://www.nytimes.com/2026/03/12/magazine/ai-coding-programming-jobs-claude-chatgpt.html) ⚠️ (Thompson)
+  - [*The Workers Letting AI Do Their Jobs*](https://www.nytimes.com/2026/04/14/podcasts/the-daily/ai-coders.html) ⚠️ (Daily)
+  - [*The Small-Business Owners Managing Armies of A.I. Employees*](https://www.nytimes.com/2026/06/04/magazine/ai-agents-openclaw-small-business.html) ⚠️ (Thompson)
 - **Atlantic**:
   - [*AI Panic Cycle*](https://www.theatlantic.com/podcasts/2026/02/the-ai-panic-cycle-and-whats-actually-different-now/686077/) (Warzel)
   - [*What Do the People Building AI Believe?*](https://www.theatlantic.com/podcasts/2026/02/what-do-the-people-building-ai-believe/686173/) (Warzel)
@@ -102,8 +102,8 @@ Gleanings from the [ESIIL Network Slack Channel](https://esiil.slack.com/archive
 - [ESIIL AI Summit 2026](https://www.linkedin.com/posts/juanpedromaestre_esiil-2026-share-7463707566229991425-mPDk)
 - [Algorithmic Monocultures in Hiring](https://arxiv.org/abs/2605.27371)
 - [The Machine Consumes Itself](https://doi.org/10.1007/s42438-026-00666-0)
-- [Ecology is not yet ready for AI](https://doi.org/10.1073/pnas.2533976123)
-- [Legacies of foundation species](https://doi.org/10.1126/sciadv.aef9983)
+- [Ecology is not yet ready for AI](https://doi.org/10.1073/pnas.2533976123) ⚠️
+- [Legacies of foundation species](https://doi.org/10.1126/sciadv.aef9983) ⚠️
 :::
 
 ::: {.column width="50%"}
@@ -169,18 +169,18 @@ IDE version 2.0 does not carry over history automatically. See [Recovering Antig
 
 **Gemini Resources**:
 
-- [Prompt Design Strategies](https://ai.google.dev/gemini-api/docs/prompt-design)
-- [GitHub Repo Imports](https://kb.wisc.edu/ai/135575)
+- [Prompt Design Strategies](https://ai.google.dev/gemini-api/docs/prompt-design) ⚠️
+- [GitHub Repo Imports](https://kb.wisc.edu/ai/135575) ⚠️
 
 ## Standalone AI IDEs & Tools
 
 AI-native environments have quickly expanded beyond standard editor integrations:
 
-- **[Claude Code](https://www.anthropic.com/product/code)**: Anthropic's terminal-based coding agent.
+- **[Claude Code](https://www.anthropic.com/product/code) ⚠️**: Anthropic's terminal-based coding agent.
 - **[OpenAI Codex](https://openai.com/index/openai-codex/)**: Deeply integrated code generation models.
-- **[Positron](https://posit.co/products/open-source/positron/)**: Posit's next-generation IDE built for R and Python data science.
-- **[Windsurf](https://secondtalent.com/insights/windsurf-review-2026-the-ai-ide-redefining-coding-workflows/)**: Standalone AI editor optimizing code editing workflows.
-- **[Cursor](https://docs.cursor.sh/mcp)**: Advanced fork of VS Code featuring native MCP tool support.
+- **[Positron](https://posit.co/products/open-source/positron/) ⚠️**: Posit's next-generation IDE built for R and Python data science.
+- **[Windsurf](https://secondtalent.com/insights/windsurf-review-2026-the-ai-ide-redefining-coding-workflows/) ⚠️**: Standalone AI editor optimizing code editing workflows.
+- **[Cursor](https://docs.cursor.sh/mcp) ⚠️**: Advanced fork of VS Code featuring native MCP tool support.
 
 ::: {.callout-caution}
 Be careful when using terminal-based interactive interpreters (like
@@ -294,7 +294,7 @@ alongside background AI terminal execution.
 ### Model Sources (AI Verde)
 - **[glm-4.7-flash](https://ollama.com/library/glm-4.7-flash)** (Ollama)
 - **[Gemma 3 12B](https://openrouter.ai/models/google/gemma-3-12b)** (OpenRouter)
-- **[Phi-4](https://catalog.ngc.nvidia.com/models/nvidia/phi-4/overview)** (NVIDIA)
+- **[Phi-4](https://catalog.ngc.nvidia.com/models/nvidia/phi-4/overview) ⚠️** (NVIDIA)
 - **[Qwen3 Tech Report](https://arxiv.org/abs/2505.09388)** (arXiv)
 - **[MiniMax M2](https://openrouter.ai/models/minimax/minimax-m2)** (OpenRouter)
 - **[gpt-oss-120b](https://openrouter.ai/models/gpt-oss-120b)** (OpenRouter)

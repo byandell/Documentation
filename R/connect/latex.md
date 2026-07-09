@@ -25,15 +25,15 @@ statistical papers and books, developed by Don Knuth.
     Printing](http://www.stat.wisc.edu/~yandell/software/graphics.html#latex)
 - [Bold Font in Math Mode](#bf)
 - [Landscape Orientation](#landscape)
-- [Using Auc-TeX under EMACS](http://www.emacs.org/)
+- [Using Auc-TeX under EMACS](http://www.emacs.org/) ⚠️
 - [LaTeX for Windows (emTeX)](#emtex)
 - [Yandell's Notes on LaTeX](http://www.stat.wisc.edu/~yandell/software/latex.html)
 - [Comprehensive TeX Archive Network (CTAN)](http://www.ctan.org/)
 - [Lyx document processor](http://www.lyx.org/)
-- [Google-docs and Latex](http://docs.latexlab.org/)
+- [Google-docs and Latex](http://docs.latexlab.org/) ⚠️
 - [Latex Symbols](http://detexify.kirelabs.org/classify.html)
 - [Latex Symbols iPhone
-    App](http://www.macresearch.org/latex-help-iphone)
+    App](http://www.macresearch.org/latex-help-iphone) ⚠️
 - [LaTeX Math
     WikiBooks](http://en.wikibooks.org/wiki/LaTeX/Mathematics)
 
@@ -42,8 +42,8 @@ statistical papers and books, developed by Don Knuth.
 - [Help On BibTeX (O'Reilly &
     Associates)](http://www.ora.com/homepages/jasper/texhelp/BibTeX.html)
 - [Collection of Computer Science Bibliographies in BibTeX
-    Format](http://liinwww.ira.uka.de/bibliography/)
+    Format](http://liinwww.ira.uka.de/bibliography/) ⚠️
 - [Manipulating BibTeX
-    Bibliographies](http://www.cs.unc.edu/bibliography-mirror/Bib.Format.html)
+    Bibliographies](http://www.cs.unc.edu/bibliography-mirror/Bib.Format.html) ⚠️
 - [MA Inst Tech (MIT) IEEE BibTeX
     Database](ftp://theory.lcs.mit.edu/pub/meyer/lics.bib)

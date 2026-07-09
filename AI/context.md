@@ -118,7 +118,7 @@ See for instance these example `AGENTS.md` files with listed sections:
   - [Ad-Hoc Preprocessing](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#ad-hoc-preprocessing)
 - [openclaw_container `AGENTS.md`](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md) (CU ESIIL OASIS ScienceClaw)
   - [Core Operating Contract](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#core-operating-contract)
-  - [Default Workflow](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#default-workflow)
+  - [Default Workflow](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#default-workflow) ⚠️
   - [Documentation and Website Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#documentation-and-website-policy)
   - [Testing Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#testing-policy)
   - [Package and Structure Separation Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#package-and-structure-separation-policy)

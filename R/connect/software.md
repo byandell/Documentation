@@ -6,30 +6,30 @@ parent: "Connect Data Tools Beyond `R`"
 # Software Packages, Languages & Writing Tools
 
 - [Statistical Packages &
-    Languages](http://www.amstat.org/profession/index.cfm?fuseaction=software)
+    Languages](http://www.amstat.org/profession/index.cfm?fuseaction=software) ⚠️
 - [SWI Software Links](http://www.stat.wisc.edu/~yandell/www/wright/software.html)
 - [Writing, Editing and References](#writing)
 - [Graphics: Viewing and Printing](graphics.html)
-- [Statistical Reporting with S/R (Frank Harrell, Vanderbilt Medical Center)](http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/StatReport)
+- [Statistical Reporting with S/R (Frank Harrell, Vanderbilt Medical Center)](http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/StatReport) ⚠️
 - [UNIX Guides](unix.html)
 - [Auckland S Workshop](http://www.stat.auckland.ac.nz/S-Workshop/)
 - [Yandell's Software Page](./)
 
 ## Writing, Editing and References
 
-Most people use either [emacs](http://www.emacs.org/) or
-[vi](http://weber.u.washington.edu/~rells/R110/) as a full-screen editor
+Most people use either [emacs](http://www.emacs.org/) ⚠️ or
+[vi](http://weber.u.washington.edu/~rells/R110/) ⚠️ as a full-screen editor
 to develop documents. The [LaTeX](latex.html) system is widely used in
 the mathematical sciences for document preparation. Unfortunately, it is
 not WYSIWYG (What You See Is What You Get) -- you have to prepare your
 document in the LaTeX language. This is actually easy to learn, and
 there are some nice tools for previewing pages, as indicated below.
 
-[emacs](http://www.emacs.org/)
+[emacs](http://www.emacs.org/) ⚠️
 
 Richard M. Stallman (1986) GNU Emacs Manual. Free Software Foundation.
 
-[vi](http://weber.u.washington.edu/~rells/R110/)
+[vi](http://weber.u.washington.edu/~rells/R110/) ⚠️
 
 Visual Editor
 
@@ -45,12 +45,12 @@ document prepartion language
 latex2html
 
 See `man latex2html` and the longer document by [Nikos Drakos, U Leeds,
-UK](http://www.stat.wisc.edu/cgi-bin/finger?nikos@cbl.leeds.ac.uk),
+UK](http://www.stat.wisc.edu/cgi-bin/finger?nikos@cbl.leeds.ac.uk) ⚠️,
 which is available from
-[Bates](http://www.stat.wisc.edu/cgi-bin/finger?bates@stat.wisc.edu) or
-[Yandell](http://www.stat.wisc.edu/cgi-bin/finger?yandell@stat.wisc.edu).
+[Bates](http://www.stat.wisc.edu/cgi-bin/finger?bates@stat.wisc.edu) ⚠️ or
+[Yandell](http://www.stat.wisc.edu/cgi-bin/finger?yandell@stat.wisc.edu) ⚠️.
 Online documentation is available at the [U Leeds
-WWW](http://cbl.leeds.ac.uk/nikos/tex2html/tex2html.html). **Note:
+WWW](http://cbl.leeds.ac.uk/nikos/tex2html/tex2html.html) ⚠️. **Note:
 Filenames to latex2html must end in .tex and have an absolute address
 without symbolic links, such as**
 

@@ -126,6 +126,23 @@ Some tutorial files or academic papers (e.g., `http://www.stat.columbia.edu/~mar
   - Link to a archived snapshot of the page using the [Wayback Machine (Internet Archive)](https://web.archive.org/).
   - Replace the link with a newer, equivalent reference.
 
+## Annotating Broken Links with Warning Glyphs
+
+To make broken links visually identifiable to readers of the documentation site, you can append a warning glyph (like `⚠️`) to all broken URLs in the repository.
+
+A utility script [add_glyphs.py](../scripts/add_glyphs.py) is provided to automate this:
+
+```bash
+python3 scripts/add_glyphs.py
+```
+
+### How it Works
+1. Parses `link_check_report.md` to locate the files, line numbers, and broken URLs.
+2. Appends a yellow warning sign glyph (` ⚠️`) directly to each broken URL's location.
+3. Automatically inserts the glyph **outside** the markdown link parenthesis (i.e. `[Link text](url) ⚠️` or `<url> ⚠️`) to keep the markdown structural validity intact.
+4. Safely handles multiple broken URLs on a single line by modifying them from right to left.
+5. Is idempotent and prevents adding duplicate glyphs on subsequent runs.
+
 ---
 
 ### How we can proceed
@@ -134,3 +151,4 @@ If you want to start updating these, you can instruct me to fix a specific file 
 > *"Help me fix the broken links in [AI/prompt.md](file:///Users/brianyandell/Documents/GitHub/Documentation/AI/prompt.md) and [AI/env.md](file:///Users/brianyandell/Documents/GitHub/Documentation/AI/env.md)"*
 
 I will then use web search to find the correct active URLs, verify them, and update the markdown files directly. Would you like to do that for some of the files?
+

@@ -111,7 +111,7 @@ Many thanks to Douglas Bates and the COMBEE Study Group for co-teaching and shar
 ::: {.column width="60%"}
 ### Graphical Explorations
 - Understand key components of the **grammar of graphics**.
-- Visualize data relationships with the **[ggplot2](http://ggplot2.org/)** package.
+- Visualize data relationships with the **[ggplot2](http://ggplot2.org/) ⚠️** package.
 - Examine formatting/layout options for research graphics.
 - Create network observations in connected graphs.
 - Share results on the web with interactive **[shiny](../R/visualize/shiny.html)** apps.

@@ -74,20 +74,20 @@ The package has several analysis files used by shiny modules:
 
 The shiny modules in hierarchy of calling are:
 
-- [qtlServer.R](https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/qtlServer.R): QTL app
-  - [mainParServer.R](https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/mainParServer.R): main parameters
-    - [traitServer.R](https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/traitServer.R): break out display of `datasets` and return of `trait_list`
-  - [scanServer.R](https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/scanServer.R): QTL scan read from file
-  - [peakServer.R](https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/peakServer.R): QTL peaks read from file
+- [qtlServer.R](https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/qtlServer.R) ⚠️: QTL app
+  - [mainParServer.R](https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/mainParServer.R) ⚠️: main parameters
+    - [traitServer.R](https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/traitServer.R) ⚠️: break out display of `datasets` and return of `trait_list`
+  - [scanServer.R](https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/scanServer.R) ⚠️: QTL scan read from file
+  - [peakServer.R](https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/peakServer.R) ⚠️: QTL peaks read from file
 
 The deployable app
 [app.R](https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/inst/shinyApp/app.R)
 sources the file
-[qtlSetup.R](https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/inst/shinyApp/qtlSetup.R)
+[qtlSetup.R](https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/inst/shinyApp/qtlSetup.R) ⚠️
 to load data files and then calls the
-[qtlServer.R](https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/qtlServer.R).
+[qtlServer.R](https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/R/qtlServer.R) ⚠️.
 
-- [qtlSetup.R](https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/inst/shinyApp/qtlSetup.R): file setup
+- [qtlSetup.R](https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/inst/shinyApp/qtlSetup.R) ⚠️: file setup
 - [app.R](https://github.com/AttieLab-Systems-Genetics/qtlApp/blob/main/inst/shinyApp/app.R): app that calls the modules
 
 ## geyser: modular concepts and construction
@@ -109,18 +109,18 @@ About a half-dozen shiny modules in
 comprise the geyser R package, or library. These are of three types:
 
 - plots:
-[hist.R](https://github.com/byandell/geyser/blob/main/R/hist.R),
-[gghist.R](https://github.com/byandell/geyser/blob/main/R/gghist.R),
-[ggpoint.R](https://github.com/byandell/geyser/blob/main/R/ggpoint.R)
+[hist.R](https://github.com/byandell/geyser/blob/main/R/hist.R) ⚠️,
+[gghist.R](https://github.com/byandell/geyser/blob/main/R/gghist.R) ⚠️,
+[ggpoint.R](https://github.com/byandell/geyser/blob/main/R/ggpoint.R) ⚠️
 - data:
 data.R, datasets.R
-[data.R](https://github.com/byandell/geyser/blob/main/R/data.R),
-[datasets.R](https://github.com/byandell/geyser/blob/main/R/datasets.R)
+[data.R](https://github.com/byandell/geyser/blob/main/R/data.R) ⚠️,
+[datasets.R](https://github.com/byandell/geyser/blob/main/R/datasets.R) ⚠️
 - connections:
 rows.R, wrapper.R, switch.R
-[rows.R](https://github.com/byandell/geyser/blob/main/R/rows.R),
-[wrapper.R](https://github.com/byandell/geyser/blob/main/R/wrappeer.R),
-[switch.R](https://github.com/byandell/geyser/blob/main/R/switch.R)
+[rows.R](https://github.com/byandell/geyser/blob/main/R/rows.R) ⚠️,
+[wrapper.R](https://github.com/byandell/geyser/blob/main/R/wrappeer.R) ⚠️,
+[switch.R](https://github.com/byandell/geyser/blob/main/R/switch.R) ⚠️
 
 In addition, in the
 [connects_modules](https://github.com/byandell/geyser/tree/main/inst/connect_modules)
@@ -138,7 +138,7 @@ folder, there are multiple apps that illustrate different concepts of connecting
 - modules within modules:
 [app.R](https://github.com/byandell/geyser/blob/main/inst/connect_modules/app.R)
 (see deployed
-[Geyser Demo](https://connect.doit.wisc.edu/geyserDemo))
+[Geyser Demo](https://connect.doit.wisc.edu/geyserDemo) ⚠️)
 
 For more information that puts these in context, see the
 [Geyser Shiny Modules](https://connect.doit.wisc.edu/geyserShinyModules)
@@ -153,9 +153,9 @@ The
 [foundrShiny](https://github.com/AttieLab-Systems-Genetics/foundrShiny)
 repo is the basis of three tools actively used by the Attie Lab
 
-- <https://connect.doit.wisc.edu/FounderCalciumStudy/>
-- <https://connect.doit.wisc.edu/FounderDietStudy/> (requires password)
-- <https://connect.doit.wisc.edu/FounderLiverDietStudy/> (requires password)
+- <https://connect.doit.wisc.edu/FounderCalciumStudy/> ⚠️
+- <https://connect.doit.wisc.edu/FounderDietStudy/> ⚠️ (requires password)
+- <https://connect.doit.wisc.edu/FounderLiverDietStudy/> ⚠️ (requires password)
 
 This is an R package, which depends on another R package,
 [foundr](https://github.com/AttieLab-Systems-Genetics/foundr),
@@ -174,7 +174,7 @@ with Attie Lab members about use, function, and layout.
 
 Some of those modules could be used (almost) directly for creating new shiny modules.
 For instance, the
-[download.R](https://github.com/AttieLab-Systems-Genetics/foundrShiny/blob/main/R/download.R)
+[download.R](https://github.com/AttieLab-Systems-Genetics/foundrShiny/blob/main/R/download.R) ⚠️
 module takes a list containing filename, plot, and table objects and
 arranges downloads.
 There are also ideas about creating and visualizing plots and tables that could prove useful.
@@ -182,49 +182,49 @@ Further, there was a lot of work on figuring out how to organize input parameter
 across shiny modules to share inputs without duplication of code.
 
 - app infrastructure:
-[about.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/about.R),
-[foundr.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/foundr.R),
-[entry.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/entry.R),
-[download.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/download.R)
+[about.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/about.R) ⚠️,
+[foundr.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/foundr.R) ⚠️,
+[entry.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/entry.R) ⚠️,
+[download.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/download.R) ⚠️
 - plots:
-[biplot.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/biplot.R),
-[dotplot.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/dotplot.R),
-[volcano.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/volcano.R)
+[biplot.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/biplot.R) ⚠️,
+[dotplot.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/dotplot.R) ⚠️,
+[volcano.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/volcano.R) ⚠️
 - parameters:
-[mainPar.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/mainPar.R),
-[panelPar.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/panelPar.R),
-[plotPar.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/plotPar.R)
+[mainPar.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/mainPar.R) ⚠️,
+[panelPar.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/panelPar.R) ⚠️,
+[plotPar.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/plotPar.R) ⚠️
 - panels:
 see
-[panel.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/panel.R)
+[panel.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/panel.R) ⚠️
 or
-[foundr.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/foundr.R)
+[foundr.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/foundr.R) ⚠️
   - trait panel:
-[trait.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/trait.R),
-[traitNames.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/traitNames.R),
-[traitOrder.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/traitOrder.R),
-[traitPairs.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/traitPairs.R),
-[traitSolos.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/traitSolos.R),
-[traitTable.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/traitTable.R),
-[corPlot.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/corPlot.R),
-[corTable.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/corTable.R)
+[trait.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/trait.R) ⚠️,
+[traitNames.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/traitNames.R) ⚠️,
+[traitOrder.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/traitOrder.R) ⚠️,
+[traitPairs.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/traitPairs.R) ⚠️,
+[traitSolos.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/traitSolos.R) ⚠️,
+[traitTable.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/traitTable.R) ⚠️,
+[corPlot.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/corPlot.R) ⚠️,
+[corTable.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/corTable.R) ⚠️
   - stats panel:
-[stats.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/stats.R)
+[stats.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/stats.R) ⚠️
   - time panel:
-[time.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/time.R),
-[timePlot.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/timePlot.R),
-[timeTable.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/timeTable.R),
-[timeTraits.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/timeTraits.R)
+[time.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/time.R) ⚠️,
+[timePlot.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/timePlot.R) ⚠️,
+[timeTable.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/timeTable.R) ⚠️,
+[timeTraits.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/timeTraits.R) ⚠️
   - contrast panel:
-[contrast.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/contrast.R),
-[contrastGroup.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/contrastGroup.R),
-[contrastPlot.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/contrastPlot.R),
-[contrastTable.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/contrastTable.R),
-[contrastTime.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/contrastTime.R),
-[contrastTrait.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/contrastTrait.R)
+[contrast.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/contrast.R) ⚠️,
+[contrastGroup.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/contrastGroup.R) ⚠️,
+[contrastPlot.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/contrastPlot.R) ⚠️,
+[contrastTable.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/contrastTable.R) ⚠️,
+[contrastTime.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/contrastTime.R) ⚠️,
+[contrastTrait.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/contrastTrait.R) ⚠️
 - non-app helpers:
 [foundrSetup.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/foundrSetup.R),
-[foundr_helpers.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/foundr_helper.R)
+[foundr_helpers.R](https://github.com/byandell-sysgen/foundrShiny/blob/main/R/foundr_helper.R) ⚠️
 
 The `foundr` module draws together the other modules into the app to be deployed
 through the panel modules `contrast`, `stats`, `time`, `trait`.
@@ -338,7 +338,7 @@ repo was designed about a decade ago.
 It is currently working on a laptop with data organized in a particular fashion.
 However, one can view screenshots and the User's Guide.
 This repo has ~25 shiny modules in
-[qtl2shiny/R](https://github.com/byandell-sysgen/qtl2shiny/tree/main/R),
+[qtl2shiny/R](https://github.com/byandell-sysgen/qtl2shiny/tree/main/R) ⚠️,
 although they do not (yet) follow the conventional naming of
 server and UI functions, and they do not have app functions.
 Nevertheless, they have many features that are being considered in current development;
@@ -349,87 +349,87 @@ The hierarchy of module calling is approximately shown in the following figure
 
 ![](images/qtl2shiny.png)
 
-- [Main](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyMain.R):
-[Dash](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyDash.R),
-  - [Dash](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyDash.R):
-[Setup](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySetup.R),
-[Haplo](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyHaplo.R),
-[Diplo](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyDiplo.R)
-- [Setup](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySetup.R):
-[Project](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyProject.R),
-[Phenos](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPhenos.R),
-[Peaks](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPeaks.R)
-  - [Phenos](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPhenos.R):
-[PhenoPlot](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPhenoPlot.R)
-  - [Peaks](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPeaks.R):
-[Hotspot](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyHotspot.R)
-- [Haplo](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyHaplo.R):
-[Probs](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyProbs.R),
-[SNPSetup](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPSetup.R),
-[ScanCoef](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyScanCoef.R),
-[Mediate](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyMediate.R)
-  - [Mediate](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyMediate.R):
-[Triad](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyTriad.R)
-- [Diplo](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyDiplo.R):
-[PairProbs](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPairProbs.R),
-[SNPSetup](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPSetup.R),
-[Pattern](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPattern.R)
-  - [SNPSetup](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPSetup.R):
-[SNPProbs](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPProbs.R),
-[SNPPattern](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPPattern.R),
-[SNPGene](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPGene.R)
-    - [SNPPattern](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPPattern.R):
-[SNPFeature](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPFeature.R)
-    - [SNPGene](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPGene.R):
-[SNPSum](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPSum.R),
-[SNPPlot](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPPlot.R),
-[GeneRegion](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyGeneRegion.R),
-[GeneExon](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyGeneExon.R)
-  - [Pattern](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPattern.R):
-[Allele](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyAllele.R)
+- [Main](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyMain.R) ⚠️:
+[Dash](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyDash.R) ⚠️,
+  - [Dash](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyDash.R) ⚠️:
+[Setup](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySetup.R) ⚠️,
+[Haplo](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyHaplo.R) ⚠️,
+[Diplo](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyDiplo.R) ⚠️
+- [Setup](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySetup.R) ⚠️:
+[Project](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyProject.R) ⚠️,
+[Phenos](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPhenos.R) ⚠️,
+[Peaks](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPeaks.R) ⚠️
+  - [Phenos](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPhenos.R) ⚠️:
+[PhenoPlot](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPhenoPlot.R) ⚠️
+  - [Peaks](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPeaks.R) ⚠️:
+[Hotspot](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyHotspot.R) ⚠️
+- [Haplo](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyHaplo.R) ⚠️:
+[Probs](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyProbs.R) ⚠️,
+[SNPSetup](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPSetup.R) ⚠️,
+[ScanCoef](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyScanCoef.R) ⚠️,
+[Mediate](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyMediate.R) ⚠️
+  - [Mediate](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyMediate.R) ⚠️:
+[Triad](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyTriad.R) ⚠️
+- [Diplo](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyDiplo.R) ⚠️:
+[PairProbs](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPairProbs.R) ⚠️,
+[SNPSetup](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPSetup.R) ⚠️,
+[Pattern](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPattern.R) ⚠️
+  - [SNPSetup](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPSetup.R) ⚠️:
+[SNPProbs](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPProbs.R) ⚠️,
+[SNPPattern](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPPattern.R) ⚠️,
+[SNPGene](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPGene.R) ⚠️
+    - [SNPPattern](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPPattern.R) ⚠️:
+[SNPFeature](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPFeature.R) ⚠️
+    - [SNPGene](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPGene.R) ⚠️:
+[SNPSum](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPSum.R) ⚠️,
+[SNPPlot](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinySNPPlot.R) ⚠️,
+[GeneRegion](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyGeneRegion.R) ⚠️,
+[GeneExon](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyGeneExon.R) ⚠️
+  - [Pattern](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyPattern.R) ⚠️:
+[Allele](https://github.com/byandell-sysgen/qtl2shiny/blob/master/R/shinyAllele.R) ⚠️
 
 The above table is based on the `master` branch;
 the `byandell-refactor` branch is modernizing this code.
 Below are the branch links:
 
-- [main](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/mainServer.R):
-[dash](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/dashServer.R)
-  - [dash](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/dashServer.R):
-[setup](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/setupServer.R),
-[haplo](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/haploServer.R),
-[diplo](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/diploServer.R)
-- [setup](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/setupServer.R):
-[project](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/projectServer.R),
-[pheno](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/phenoServer.R),
-[peaks](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/peaksServer.R)
-  - [pheno](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/phenoServer.R):
-[phenoPlot](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/phenoPlotServer.R)
-  - [peaks](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/peaksServer.R):
-[hotspot](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/hotspotServer.R)
-- [haplo](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/haploServer.R):
-[probs](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/probsServer.R),
-[snpSetup](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpSetupServer.R),
-[scanCoef](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/scanCoefServer.R),
-[mediate](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/mediateServer.R)
-  - [mediate](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/mediateServer.R):
-[triad](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/triadServer.R)
-- [diplo](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/diploServer.R):
-[pairProbs](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/probsServer.R),
-[snpSetup](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpSetupServer.R),
-[pattern](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/patternServer.R)
-  - [snpSetup](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpSetupServer.R):
-[snpProbs](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/probsServer.R),
-[snpPattern](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpPatternServer.R),
-[snpGene](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpGeneServer.R)
-    - [snpPattern](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpPatternServer.R):
-[snpFeature](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpFeatureServer.R)
-    - [snpGene](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpGeneServer.R):
-[snpSum](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpSumServer.R),
-[snpPlot](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpPlotServer.R),
-[geneRegion](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/geneRegionServer.R),
-[geneExon](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/geneExonServer.R)
-  - [pattern](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/patternServer.R):
-[allele](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/alleleServer.R)
+- [main](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/mainServer.R) ⚠️:
+[dash](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/dashServer.R) ⚠️
+  - [dash](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/dashServer.R) ⚠️:
+[setup](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/setupServer.R) ⚠️,
+[haplo](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/haploServer.R) ⚠️,
+[diplo](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/diploServer.R) ⚠️
+- [setup](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/setupServer.R) ⚠️:
+[project](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/projectServer.R) ⚠️,
+[pheno](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/phenoServer.R) ⚠️,
+[peaks](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/peaksServer.R) ⚠️
+  - [pheno](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/phenoServer.R) ⚠️:
+[phenoPlot](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/phenoPlotServer.R) ⚠️
+  - [peaks](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/peaksServer.R) ⚠️:
+[hotspot](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/hotspotServer.R) ⚠️
+- [haplo](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/haploServer.R) ⚠️:
+[probs](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/probsServer.R) ⚠️,
+[snpSetup](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpSetupServer.R) ⚠️,
+[scanCoef](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/scanCoefServer.R) ⚠️,
+[mediate](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/mediateServer.R) ⚠️
+  - [mediate](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/mediateServer.R) ⚠️:
+[triad](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/triadServer.R) ⚠️
+- [diplo](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/diploServer.R) ⚠️:
+[pairProbs](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/probsServer.R) ⚠️,
+[snpSetup](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpSetupServer.R) ⚠️,
+[pattern](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/patternServer.R) ⚠️
+  - [snpSetup](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpSetupServer.R) ⚠️:
+[snpProbs](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/probsServer.R) ⚠️,
+[snpPattern](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpPatternServer.R) ⚠️,
+[snpGene](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpGeneServer.R) ⚠️
+    - [snpPattern](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpPatternServer.R) ⚠️:
+[snpFeature](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpFeatureServer.R) ⚠️
+    - [snpGene](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpGeneServer.R) ⚠️:
+[snpSum](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpSumServer.R) ⚠️,
+[snpPlot](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/snpPlotServer.R) ⚠️,
+[geneRegion](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/geneRegionServer.R) ⚠️,
+[geneExon](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/geneExonServer.R) ⚠️
+  - [pattern](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/patternServer.R) ⚠️:
+[allele](https://github.com/byandell-sysgen/qtl2shiny/blob/byandell-refactor/R/alleleServer.R) ⚠️
 
 The `main` module calls `dash`, which then invokes `setup`
 and the two primary modules,
@@ -437,17 +437,17 @@ and the two primary modules,
 Each of those call multiple other modules.
 The app has a side panel where switches among different types of analyses and plots are performed.
 Some shiny technology is older--would be good to switch from
-[shinydashboard to bslib](https://shiny.posit.co/blog/posts/bslib-dashboards/)--and
+[shinydashboard to bslib](https://shiny.posit.co/blog/posts/bslib-dashboards/) ⚠️--and
 more modularity is possible.
 Download operations are currently duplicated in multiple modules,
 but should be pulled out as was done for `foundShiny`,
 ideally using that same
-[download.R](https://github.com/AttieLab-Systems-Genetics/foundrShiny/blob/main/R/download.R)
+[download.R](https://github.com/AttieLab-Systems-Genetics/foundrShiny/blob/main/R/download.R) ⚠️
 module.
 See screenshots and guides:
 
 - [Screen Shots](http://pages.stat.wisc.edu/~yandell/software/qtl2shiny/screenshots.html)
-- [User Guide](https://github.com/byandell/qtl2shiny/blob/master/vignettes/UserGuide.Rmd)
+- [User Guide](https://github.com/byandell/qtl2shiny/blob/master/vignettes/UserGuide.Rmd) ⚠️
 - [Developer Guide](https://github.com/byandell/qtl2shiny/blob/master/vignettes/DeveloperGuide.Rmd)
 - [Data Preparation](https://github.com/byandell/qtl2shiny/blob/master/vignettes/qtl2shinyData.Rmd)
 

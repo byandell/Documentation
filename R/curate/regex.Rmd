@@ -10,9 +10,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 - <http://regexr.com>: Test out your reg expressions before you use them (specify your test expression and it will highlight in a sample document (which you can change) the matches.
-- [regex base-R cheat sheet](http://www.endmemo.com/program/R/grep.php)
+- [regex base-R cheat sheet](http://www.endmemo.com/program/R/grep.php) ⚠️
 - [Helpful examples on grouping](http://www.regular-expressions.info/rlanguage.html)
-- [Examples on subsetting matches](http://www.dummies.com/how-to/content/how-to-use-regular-expressions-in-r.html)
+- [Examples on subsetting matches](http://www.dummies.com/how-to/content/how-to-use-regular-expressions-in-r.html) ⚠️
 - [Getting strsplit in the right format with sapply](http://www.r-bloggers.com/regular-expressions-in-r-vs-rstudio/)
 - [RegexBuddy](http://www.regexbuddy.com/rlanguage.html) 
 

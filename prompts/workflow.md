@@ -9,7 +9,7 @@ nav_order: 4
 This was developed as I began using AI agents in creating the R package
 [sysgenAnalysis](https://github.com/AttieLab-Systems-Genetics/sysgenAnalysis)
 based on analysis workflows developed in the
-[Attie Lab](https://attie.lab.wisc.edu/).
+[Attie Lab](https://attie.lab.wisc.edu/) ⚠️.
 The goal was to refactor a set of analysis workflows, one at a time, into a modular R package structure.
 
 The process starts with a single-file analysis workflow script, say `[basename].R`,

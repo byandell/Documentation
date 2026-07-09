@@ -63,11 +63,11 @@ Professional Educators.
 - [BioPharmaceutical Technology Center Institute (BTCI),
     Madison](http://www.btci.org/courses/default.html)
   - [Computational Approaches to Analyzing Microarray
-        Data](http://www.btci.org/courses/intermediate/caamd/2012/caamd12.html)
+        Data](http://www.btci.org/courses/intermediate/caamd/2012/caamd12.html) ⚠️
 - [Master of Science in Biotechnology,
     UW-Madison](http://www.ms-biotech.wisc.edu/)
 - [Graduate Certificate in Complex Systems, U
-    MI](http://www.lsa.umich.edu/cscs/graduate/graduatecertificate)
+    MI](http://www.lsa.umich.edu/cscs/graduate/graduatecertificate) ⚠️
 - [Programs in Analytics](/analytics)
 
 [Return to Retreat Notes and Documents](/retreat)

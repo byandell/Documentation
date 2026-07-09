@@ -18,21 +18,21 @@ nav_order: 3
 
 - [RStudio (IDE for R)](http://www.rstudio.com/)
 - [knitr](http://yihui.name/knitr/),
-    [markdown](http://www.rstudio.com/ide/docs/authoring/using_markdown),
+    [markdown](http://www.rstudio.com/ide/docs/authoring/using_markdown) ⚠️,
     [pandoc](http://johnmacfarlane.net/pandoc/) &
-    [Sweave](http://www.stat.uni-muenchen.de/~leisch/Sweave/)
+    [Sweave](http://www.stat.uni-muenchen.de/~leisch/Sweave/) ⚠️
 - [R Commander (Rcmdr)](http://www.rcommander.com/)
 - [Sage Cell Server (Runs R
     Online)](http://www.sagemath.org/eval.html) | see [Jed Frees's
-    Course](https://courses.moodle.wisc.edu/prod/course/view.php?id=1231),
+    Course](https://courses.moodle.wisc.edu/prod/course/view.php?id=1231) ⚠️,
     Ch 6: [GLIM Example with
-    SageCell](http://flash.bus.wisc.edu/data/act_sci/PolandWebPages/FreqSevExamples/FreqSevExample_04August2013A.html)
+    SageCell](http://flash.bus.wisc.edu/data/act_sci/PolandWebPages/FreqSevExamples/FreqSevExample_04August2013A.html) ⚠️
 - [Seamless R & C++ Integration (Rcpp)](http://www.rcpp.org) (more
     advanced topic)
 - [Pretty Quick R (pqR)](http://radfordneal.github.io/pqR/) (faster
     version of R)
 - [Roxygen: Documentation System for R Literate
-    Programming](http://roxygen.org/)
+    Programming](http://roxygen.org/) ⚠️
 
 ## R Beginning & Advanced Guides & Tips
 
@@ -42,11 +42,11 @@ nav_order: 3
 - [R Data
     Import/Export](https://cran.r-project.org/doc/manuals/r-release/R-data.html)
 - [Karl Broman's Introduction to
-    R](http://www.biostat.wisc.edu/~kbroman/Rintro/)
+    R](http://www.biostat.wisc.edu/~kbroman/Rintro/) ⚠️
 - [Tom Lumley's UW-Seattle Short Course on
     R](http://faculty.washington.edu/tlumley/Rcourse/)
 - [John Gillett's Introductory Data Analysis with R (UW Stat
-    327)](http://pages.stat.wisc.edu/~jgillett/327-1/)
+    327)](http://pages.stat.wisc.edu/~jgillett/327-1/) ⚠️
 - [Roger Peng's Computing for Data Analysis
     (Coursera)](https://www.coursera.org/course/compdata)
 - R Training Videos
@@ -60,7 +60,7 @@ nav_order: 3
         Library)](https://www.youtube.com/watch?v=mMaGsVXFfv8&list=PL8uRYwFzTgG-VrVZaQK7htkfjxn3VnhzW)
 - [RStudio Training](http://www.rstudio.com/training/)
 - [Google's R Style
-    Guide](http://google-styleguide.googlecode.com/svn/trunk/Rguide.xml)
+    Guide](http://google-styleguide.googlecode.com/svn/trunk/Rguide.xml) ⚠️
 - [R Software Introduction for Stat 571](http://www.stat.wisc.edu/~yandell/st571/R/) | [R
     Appendices for Course Notes](http://www.stat.wisc.edu/~yandell/st571/R/append.html)
 - [Advanced Programming in R](http://adv-r.had.co.nz) ([Hadley
@@ -68,7 +68,7 @@ nav_order: 3
 - [Knitr Reproducible
     Research](https://github.com/umd-byob/presentations/tree/master/2013/0903-knitr_reproducible_research/README.md)
 - [Frank Harrell's Statistical Reporting
-    Tips](http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/StatReport)
+    Tips](http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/StatReport) ⚠️
 
 ## R, Bioconductor, Biology & Bioinformatics
 
@@ -81,7 +81,7 @@ nav_order: 3
 - [Advanced R Programming for Bioinformatics (Ken Rice & Tom Lumley's
     SISG Course)](http://faculty.washington.edu/kenrice/sisg-adv/)
 - [Interactive graphics for high-dimensional genetic data (Karl
-    Broman)](http://www.biostat.wisc.edu/~kbroman/talks/CTC2013/)
+    Broman)](http://www.biostat.wisc.edu/~kbroman/talks/CTC2013/) ⚠️
 - [Thirteen years of R/qtl: Just barely
     sustainable](http://arxiv.org/abs/1309.1192)
 
@@ -89,9 +89,9 @@ nav_order: 3
 
 - [R Frequently Asked Questions](http://cran.r-project.org/faqs.html)
 - [The R Project](http://www.r-project.org/)
-- [R Wiki](http://rwiki.sciviews.org/doku.php)
+- [R Wiki](http://rwiki.sciviews.org/doku.php) ⚠️
 - [R Bloggers: News & Tutorials](http://www.r-bloggers.com)
-- [inside-R: A Community Site for R](http://www.inside-r.org)
+- [inside-R: A Community Site for R](http://www.inside-r.org) ⚠️
 - [Quick-R (StatMethods)](http://www.statmethods.net)
 - [Software for Exploratory Data Analysis and Statistical Modelling
     with R (Weka Learn Studios)](http://www.wekaleamstudios.co.uk)
@@ -103,9 +103,9 @@ nav_order: 3
 - [R Forge](http://r-forge.r-project.org)
 - [Trending R Repositories in GitHub](https://github.com/trending?l=r)
 - [Revolution Analytics: R for the
-    Enterprise](http://www.revolutionanalytics.com)
-    ([Blog](http://blog.revolutionanalytics.com))
+    Enterprise](http://www.revolutionanalytics.com) ⚠️
+    ([Blog](http://blog.revolutionanalytics.com) ⚠️)
 - [R User
-    Groups](http://rwiki.sciviews.org/doku.php?id=rugs:r_user_groups)
+    Groups](http://rwiki.sciviews.org/doku.php?id=rugs:r_user_groups) ⚠️
   - [MadUseR (Madison R User
         Group)](https://groups.google.com/forum/?hl=en#!forum/maduser)

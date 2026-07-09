@@ -24,9 +24,9 @@ To do this well, researchers as data scientists need to be skilled with internet
   - create functions to collapse repeated steps into one-line "verbs"
   - write cleaned up data table out in CSV format
 - [visualize](../visualize/) data with plots
-  - visualize data with the [ggplot2](http://ggplot2.org/) package
+  - visualize data with the [ggplot2](http://ggplot2.org/) ⚠️ package
   - understand key components of the grammar of graphics
-  - develop interactive graphics with [plotly](https://plot.ly/ggplot2/) or [ggvis](http://blog.revolutionanalytics.com/2014/06/interactive-web-ready-ggplot2-style-graphics-with-ggvis.html)
+  - develop interactive graphics with [plotly](https://plot.ly/ggplot2/) or [ggvis](http://blog.revolutionanalytics.com/2014/06/interactive-web-ready-ggplot2-style-graphics-with-ggvis.html) ⚠️
   - examine related packages ([cowplot](https://github.com/wilkelab/cowplot), [GGally](https://ggobi.github.io/ggally/), [grid viewports](https://stat.ethz.ch/R-manual/R-devel/library/grid/doc/viewports.pdf))
   - create heatmaps ([pheatmap](https://github.com/raivokolde/pheatmap))
   - use [shiny](http://shiny.rstudio.com) to share results on the web

@@ -99,7 +99,7 @@ Sources researched by Gemini:
 
 - [glm-4.7-flash (Ollama)](https://ollama.com/library/glm-4.7-flash)
 - [Gemma 3 12B (OpenRouter)](https://openrouter.ai/models/google/gemma-3-12b)
-- [Phi-4 (NVIDIA)](https://catalog.ngc.nvidia.com/models/nvidia/phi-4/overview)
+- [Phi-4 (NVIDIA)](https://catalog.ngc.nvidia.com/models/nvidia/phi-4/overview) ⚠️
 - [[2505.09388] Qwen3 Technical Report (arXiv)](https://arxiv.org/abs/2505.09388)
 - [MiniMax M2 (OpenRouter)](https://openrouter.ai/models/minimax/minimax-m2)
 - [gpt-oss-120b (OpenRouter)](https://openrouter.ai/models/gpt-oss-120b)

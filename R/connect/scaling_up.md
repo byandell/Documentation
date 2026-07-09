@@ -18,22 +18,22 @@ This works best when tasks are "parallel" -- can be done independently of each o
 
 ## High Throughput & High Performance Computing
 
-- [R/parallel](http://www.rparallel.org/)
+- [R/parallel](http://www.rparallel.org/) ⚠️
 - [Parallel R book (Q. Ethan McCallum, Stephen Weston, 2011, O'Reilly
     Pub.)](http://shop.oreilly.com/product/0636920021421.do)
 - [Vaughan LK, Srinivasasainagendra V (2013) Where in the genome are
     we? A cautionary tale of database use in genomics research. Front.
     Genet. 4:38.](http://dx.doi.org/10.3389/fgene.2013.00038)
 - [Data-Intensive
-    Science](http://www.delsaglobal.org/news/publications/item/download/20_b530f9de17aca08b4fcee1d8bd78ea32)
+    Science](http://www.delsaglobal.org/news/publications/item/download/20_b530f9de17aca08b4fcee1d8bd78ea32) ⚠️
     think-piece from [Data-Enabled Life Science Research
-    (DELSA)](http://www.delsaglobal.org/)
+    (DELSA)](http://www.delsaglobal.org/) ⚠️
 - [Cloud Computing
     (Wikipedia)](http://en.wikipedia.org/wiki/Cloud_computing)
 - [Grid Computing (Wikipedia: see list of national
     projects](http://en.wikipedia.org/wiki/Grid_computing)
 - [Open Science
-    Grid](http://www.openscienhttp://en.wikipedia.org/wiki/Cloud_computingxucegrid.org)
+    Grid](http://www.openscienhttp://en.wikipedia.org/wiki/Cloud_computingxucegrid.org) ⚠️
 - [HTCondor Project](http://research.cs.wisc.edu/htcondor/) | [Center
     for High Throughput Computing, UW-Madison](http://chtc.cs.wisc.edu/)
 - [IEEE High Performance Computing
@@ -48,7 +48,7 @@ This works best when tasks are "parallel" -- can be done independently of each o
     Foundation](opendatafoundation.org)
 - [Algorithms, Machines, People (AMP Lab,
     UC-Berkeley)](http://amplab.cs.berkeley.edu/)
-- [BIGDATA: White House Initiative](http://www.stat.wisc.edu/bigdata)
+- [BIGDATA: White House Initiative](http://www.stat.wisc.edu/bigdata) ⚠️
 - [BackBlaze Online Backup](http://www.backblaze.com) ([BackBlaze
     Storage Pod
     Details](http://blog.backblaze.com/2011/07/20/petabytes-on-a-budget-v2-0revealing-more-secrets/))

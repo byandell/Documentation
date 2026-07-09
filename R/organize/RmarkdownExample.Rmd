@@ -22,7 +22,7 @@ Notice how a single paragraph break shows up as a space.
  
 ####You get the idea
  
-Including a link http://cran.mtu.edu/
+Including a link http://cran.mtu.edu/ ⚠️
  
 ```{r ThisLabelIsForYouItsNotShownNoSpaces}
 #This all shows up in a "code" grey box

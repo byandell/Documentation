@@ -137,7 +137,7 @@ Use [Raster Subtraction](https://www.earthdatascience.org/courses/use-data-open-
 - Creating animated GIFs using Python:
   - Pillow `Image` module.
   - Matplotlib animation frameworks.
-  - [Geopandas & Matplotlib tutorial](https://towardsdatascience.com/how-to-make-a-gif-map-using-python-geopandas-and-matplotlib-cd8827cefbc8) for animated maps.
+  - [Geopandas & Matplotlib tutorial](https://towardsdatascience.com/how-to-make-a-gif-map-using-python-geopandas-and-matplotlib-cd8827cefbc8) ⚠️ for animated maps.
 :::
 
 ::: {.column width="50%"}
@@ -219,7 +219,7 @@ else:
 
 ## Cached Data via Decorators {.compact-slide}
 
-An alternative to Store Magic is custom caching via python [decorators](../python/#decorators) (e.g., in [landmapy/cached.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/cached.py)):
+An alternative to Store Magic is custom caching via python [decorators](../python/#decorators) (e.g., in [landmapy/cached.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/cached.py) ⚠️):
 
 ### How `@cached` works:
 - Automatically **pickles** function results to `~/earth-analytics/data/jars/`.

@@ -177,7 +177,7 @@ register_google(key = "YOUR_API_KEY")
 
 ### Institutional Guidelines
 - [Get Static Maps API Key](https://developers.google.com/maps/documentation/maps-static/get-api-key/).
-- [UW-Madison Guidelines on Google Maps Embedding](https://wiscweb.wisc.edu/2018/11/30/events-calendar-embedded-map-display-changes/).
+- [UW-Madison Guidelines on Google Maps Embedding](https://wiscweb.wisc.edu/2018/11/30/events-calendar-embedded-map-display-changes/) ⚠️.
 :::
 :::
 
@@ -197,7 +197,7 @@ register_google(key = "YOUR_API_KEY")
 ### Key Books & Discussions
 - **[Spatial Data Science (Pebesma & Bivand)](https://r-spatial.org/book/)**: Core text for R spatial analysis.
 - **[Geospatial Vector with sf (Coding Club)](https://ourcodingclub.github.io/tutorials/spatial-vector-sf/)**.
-- **[stars vs terra package comparison](https://www.seascapemodels.org/rstats/2021/06/01/STARS.html)**.
+- **[stars vs terra package comparison](https://www.seascapemodels.org/rstats/2021/06/01/STARS.html) ⚠️**.
 :::
 :::
 
@@ -222,7 +222,7 @@ For advanced geospatial processing, combine R scripts with desktop GIS interface
 
 ::: {.column width="50%"}
 ### Other Platforms & Guides
-- **[ArcGIS Online](https://www.arcgis.com/sharing/rest/oauth2/signup?client_id=arcgisonline&response_type=token)**: Free accounts available for online map sharing and storage.
+- **[ArcGIS Online](https://www.arcgis.com/sharing/rest/oauth2/signup?client_id=arcgisonline&response_type=token) ⚠️**: Free accounts available for online map sharing and storage.
 - **[Land cover change mapping](https://www.unescap.org/resources/producing-land-cover-change-maps-and-statistics-step-step-guide-use-qgis-and-rstudio)** using QGIS and RStudio.
 - **[Columbia Library Guide](https://guides.library.columbia.edu/geotools/R)** on GIS & Cartography tools in R.
 :::
@@ -263,8 +263,8 @@ For advanced geospatial processing, combine R scripts with desktop GIS interface
 
 ::: {.column width="50%"}
 ### Repositories
-- **[ESIIL Data Library](https://data-library.esiil.org)**:
-  - Features [American Indian & Alaska Native Areas](https://data-library.esiil.org/indian_country/aiannh/AIANNH/) datasets.
+- **[ESIIL Data Library](https://data-library.esiil.org) ⚠️**:
+  - Features [American Indian & Alaska Native Areas](https://data-library.esiil.org/indian_country/aiannh/AIANNH/) ⚠️ datasets.
 - **[ESIIL Flood Data](https://cu-esiil.github.io/hackathon2023_datacube/code_for_building_cube/Pull_flood_data/)**: Flood and moisture layers.
 - **[datasets.csv](https://github.com/byandell/geospatial/blob/main/datasets.csv)**: Compiled dataset list.
 :::

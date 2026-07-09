@@ -20,22 +20,22 @@ after the designer of the first unix shell, Steve Bourne.
     Ramey)](http://tiswww.case.edu/php/chet/bash/article.pdf)
 
 - [Linux.org](http://www.linux.org) ([Beginner
-    Tutorials](http://www.linux.org/forums/beginner-tutorials.53/))
+    Tutorials](http://www.linux.org/forums/beginner-tutorials.53/) ⚠️)
 - [Wikipedia History of Linux](http://en.wikipedia.org/wiki/Linux)
 - [WikiBooks Linux Guide](http://en.wikibooks.org/wiki/Linux_Guide)
-- [Intro to Linux](http://www.tldp.org/LDP/intro-linux/html/) ([Linux
-    Documentation Project Guides](http://www.tldp.org/guides.html))
+- [Intro to Linux](http://www.tldp.org/LDP/intro-linux/html/) ⚠️ ([Linux
+    Documentation Project Guides](http://www.tldp.org/guides.html) ⚠️)
 - [WACM](http://wacm.cs.wisc.edu/): [Beginning Linux](http://wacm.cs.wisc.edu/docs/WACMExplains-IntroToLinux.pdf) | [Intermediate Linux](https://docs.google.com/document/d/1sCdWGN3WMVwVgjlKKWOA7vhW__1KGg4wU6xn1wcNNu8)
 - [TechRadar Beginner's Guide to
-    Linux](http://www.techradar.com/us/news/software/operating-systems/beginner-s-guide-to-linux-where-to-start-1066778)
+    Linux](http://www.techradar.com/us/news/software/operating-systems/beginner-s-guide-to-linux-where-to-start-1066778) ⚠️
 - [LifeHacker Getting Started with
-    Linux](http://lifehacker.com/5778882/getting-started-with-linux-the-complete-guide)
+    Linux](http://lifehacker.com/5778882/getting-started-with-linux-the-complete-guide) ⚠️
 - [Ultimate Linux Newbie Guide](http://linuxnewbieguide.org)
 - [U Surrey Unix/Linux Tutorial for
     Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)
 - [Linux.com Linux User
-    Guides](http://www.linux.com/learn/new-user-guides)
-- [SourceForge Linux Guide](http://linuxguide.sourceforge.net)
+    Guides](http://www.linux.com/learn/new-user-guides) ⚠️
+- [SourceForge Linux Guide](http://linuxguide.sourceforge.net) ⚠️
 - Linux Youtube Videos
   - [The Origins of Linux (Linus
         Torvalds)](http://www.youtube.com/watch?v=WVTWCPoUt8w)

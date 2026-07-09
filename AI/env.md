@@ -109,10 +109,10 @@ and
 [AI Verde API](https://aiverde-docs.cyverse.ai/api/).
 
 CyVerse and AI Verde use
-[Jetstream2](https://jetstream-2.iu.edu)
+[Jetstream2](https://jetstream-2.iu.edu) ⚠️
 to host computing tools at scale.
 Jetstream2 is part of the NSF-funded
-[ACCESS](https://access-ci.org),
+[ACCESS](https://access-ci.org) ⚠️,
 which provides free access to compute and AI resources at scale.
 These resources also include
 [HTCondor](https://htcondor.org)
@@ -158,10 +158,10 @@ See
 for a guide I wrote to recover them based on community response.
 
 - [Google Gemini](https://gemini.google.com/)
-  - [Generative AI Services at UW–Madison: Tools, Policies & Resources](https://kb.wisc.edu/ai/)
-  - [Prompt design strategies (Google AI for Developers)](https://ai.google.dev/gemini-api/docs/prompt-design)
-  - [File input methods (Google AI for Developers)](https://ai.google.dev/gemini-api/docs/file-inputs)
-  - [Import a GitHub repository & ask about it in the Gemini web app (UW-Madison)](https://kb.wisc.edu/ai/135575)
+  - [Generative AI Services at UW–Madison: Tools, Policies & Resources](https://kb.wisc.edu/ai/) ⚠️
+  - [Prompt design strategies (Google AI for Developers)](https://ai.google.dev/gemini-api/docs/prompt-design) ⚠️
+  - [File input methods (Google AI for Developers)](https://ai.google.dev/gemini-api/docs/file-inputs) ⚠️
+  - [Import a GitHub repository & ask about it in the Gemini web app (UW-Madison)](https://kb.wisc.edu/ai/135575) ⚠️
   - [Connect Box (Google Cloud)](https://cloud.google.com/gemini-enterprise/docs/connect-box)
 - [Antigravity](https://antigravity.google/)
   - [Google Antigravity Documentation](https://antigravity.google/docs/get-started)
@@ -175,11 +175,11 @@ for a guide I wrote to recover them based on community response.
 that integrate LLMs with collaboration on a user's local files and tools.
 Some have evolved away from these roots toward standalone apps.
 
-- [Anthropic's Claude Code](https://www.anthropic.com/product/code)
+- [Anthropic's Claude Code](https://www.anthropic.com/product/code) ⚠️
 - [Open AI's Codex](https://openai.com/index/openai-codex/)
-- [Posit's Positron](https://posit.co/products/open-source/positron/)
-- [Cursor MCP Docs](https://docs.cursor.sh/mcp)
-- [Windsurf Review 2026: The AI IDE Redefining Coding Workflows (Second Talent)](https://secondtalent.com/insights/windsurf-review-2026-the-ai-ide-redefining-coding-workflows/)
+- [Posit's Positron](https://posit.co/products/open-source/positron/) ⚠️
+- [Cursor MCP Docs](https://docs.cursor.sh/mcp) ⚠️
+- [Windsurf Review 2026: The AI IDE Redefining Coding Workflows (Second Talent)](https://secondtalent.com/insights/windsurf-review-2026-the-ai-ide-redefining-coding-workflows/) ⚠️
 
 See caution in [Using R in VS Code with Radian](../R/radian.md)
 about `radian` and AI environments.

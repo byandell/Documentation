@@ -94,12 +94,12 @@ and
 and
 [Three Rivers (2025)](https://cu-esiil.github.io/resilience-rare-hydrologic-events-management-innovation-summit-2025__15/).
 The Maka Sitomniya working group led to an ongoing collaboration with the
-[Sicangu Climate Center](https://sicangudata.org/).
+[Sicangu Climate Center](https://sicangudata.org/) ⚠️.
 Lately, I have joined the
 [Wopasi Pazo ESIIL Working Group](https://esiil.org/working-groups/wopasi-pazo)
 
 I began attending the Friday noon meetings of the
-[Oglala Lakota College (OLC) Math, Science, and Technology Department](https://www.olc.edu/current-students/degree-programs-areas-of-study/math-science-tech/),
+[Oglala Lakota College (OLC) Math, Science, and Technology Department](https://www.olc.edu/current-students/degree-programs-areas-of-study/math-science-tech/) ⚠️,
 which has included a collaboration on Tribal boundary maps, gathered in the
 [R](https://cran.r-project.org/) package
 [landmapr](https://github.com/byandell-envsys/landmapr).

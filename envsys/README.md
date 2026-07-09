@@ -123,7 +123,7 @@ are some tools in R.
 
 - [Quickstart Guide - Shapefiles and R(tmap)](https://www.kaggle.com/code/umeshnarayanappa/quickstart-guide-shapefiles-and-r-tmap)
 - [tmap: thematic maps in R](https://r-tmap.github.io/tmap/)
-- [tmap](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html) interactive maps
+- [tmap](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html) ⚠️ interactive maps
 - [tmap book](https://r-tmap.github.io/tmap-book/)
 - [tmap: using make-valid for multipolygons](https://stackoverflow.com/questions/76455486/impossible-to-plot-osm-multipolygons-in-tmap-and-leaflet)
 
@@ -136,4 +136,4 @@ Google maps can be used via `ggmap` but require a Google Map Key, which requires
   - [Get API Key](https://developers.google.com/maps/documentation/maps-static/get-api-key/)
   - [Securing an API Key](https://cloud.google.com/docs/authentication/api-keys#securing_an_api_key)
   - [usage and billing](https://developers.google.com/maps/documentation/maps-static/usage-and-billing/)
-  - [UW Guidelines on Google Maps API Key](https://wiscweb.wisc.edu/2018/11/30/events-calendar-embedded-map-display-changes/)
+  - [UW Guidelines on Google Maps API Key](https://wiscweb.wisc.edu/2018/11/30/events-calendar-embedded-map-display-changes/) ⚠️

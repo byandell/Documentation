@@ -15,9 +15,9 @@ organize your work (using Rstudio), how to build excellent graphics
 (using ggplot2) and how to document your work (using R markdown), among
 other things. This is being led by Brian Yandell and Doug Bates in Fall
 2015; see [moodle
-site](https://ay15-16.moodle.wisc.edu/prod/local/wiscservices/login/index.php),
+site](https://ay15-16.moodle.wisc.edu/prod/local/wiscservices/login/index.php) ⚠️,
 [Stat 627 Syllabus](http://www.stat.wisc.edu/~yandell/data_science/Stat627Syllabus.pdf) and
-[Jenny Bryan's Stat 545 at UBC](http://stat545-ubc.github.io). The
+[Jenny Bryan's Stat 545 at UBC](http://stat545-ubc.github.io) ⚠️. The
 course covers
 
 - installation of the RStudio application on personal computers and
@@ -41,7 +41,7 @@ following network tools to deliver information:
 [drupal](/network-skills) (open access web pages--this page);
 [box](https://uwmadison.app.box.com/files/0/f/1134810127/Stat_692_Network_Skills_for_Statisticians)
 (drop box for collaboration); and
-[moodle](https://courses.moodle.wisc.edu/prod/course/view.php?id=1758)
+[moodle](https://courses.moodle.wisc.edu/prod/course/view.php?id=1758) ⚠️
 (course collaboration environment).
 
 ## Resource Topics and Useful Links

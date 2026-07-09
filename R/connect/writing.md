@@ -10,18 +10,18 @@ Many of the links above have communication resources.
 ## Communication Skills (giving professional talks)
 
 - [Brad Efron's 13
-        Rules](http://www-stat.stanford.edu/~ckirby/brad/other/2013ThirteenRules.pdf)
+        Rules](http://www-stat.stanford.edu/~ckirby/brad/other/2013ThirteenRules.pdf) ⚠️
 - [Guidelines for Preparing Effective Presentations (Biometrics
-        ENAR Section)](http://www.enar.org/presentationguidelines.cfm)
+        ENAR Section)](http://www.enar.org/presentationguidelines.cfm) ⚠️
 - [James Gee's 14 Principles of Good
         Teaching](http://www.jamespaulgee.com/node/74) & [Good
         Learning](http://mason.gmu.edu/~lsmithg/jamespaulgee2print.html)
 - [Making Data Meaningful Guides(UN Econ Commission for
-        Europe)](http://www.unece.org/stats/documents/writing/)
+        Europe)](http://www.unece.org/stats/documents/writing/) ⚠️
 - [Presentation Tips
-        (About.com)](http://entrepreneurs.about.com/cs/marketing/a/presentingstats.htm)
+        (About.com)](http://entrepreneurs.about.com/cs/marketing/a/presentingstats.htm) ⚠️
 - [Tips for Effective Presentation (Accu
-        Conference)](http://www.accuconference.com/resources/effective-presentations.aspx)
+        Conference)](http://www.accuconference.com/resources/effective-presentations.aspx) ⚠️
 - [Statistical Presentation Guidelines (Nat U
         Singapore)](http://blog.nus.edu.sg/dsap/2010/12/15/statistical-presentation-guidelines/)
 - [Presenting Statistics on Web Sites (John Maslin,
@@ -32,17 +32,17 @@ Many of the links above have communication resources.
 - [Creativity and Learning: A Conversation with Lynda Barry
         (lynda.com)](http://www.lynda.com/Business-Illustration-tutorials/Creativity-Learning-Conversation-Lynda-Barry/136654-2.html)
 - The Care and Feeding of [the
-        Biostatistician](http://simplystatistics.org/2013/10/08/the-care-and-feeding-of-the-biostatistician/)
+        Biostatistician](http://simplystatistics.org/2013/10/08/the-care-and-feeding-of-the-biostatistician/) ⚠️
         & [the Scientist
-        Collaborator](http://simplystatistics.org/2013/10/09/the-care-and-feeding-of-your-scientist-collaborator/)
+        Collaborator](http://simplystatistics.org/2013/10/09/the-care-and-feeding-of-your-scientist-collaborator/) ⚠️
         (Elizabeth Matsui & Roger Peng)
 - [Biologist Talks to Statistician
         (video)](http://www.youtube.com/watch?v=Hz1fyhVOjr4)
 - [Communicating Statistical Findings to Consulting Clients
         Operating in a Decisionmaking Climate: Best and Worst Practices
-        (Ghement Stat Cons)](http://www.ghement.ca/jsm2014.html)
+        (Ghement Stat Cons)](http://www.ghement.ca/jsm2014.html) ⚠️
 - [ASA Statistical Consulting
-        Section](http://www.amstat.org/sections/cnsl)
+        Section](http://www.amstat.org/sections/cnsl) ⚠️
 
 ## Technical Writing
   
@@ -62,7 +62,7 @@ Many of the links above have communication resources.
         IJulia notebooks. These are interactive web documents but can be
         converted to static HTML pages. Doug Bates created [Mathjax
         static HTML for the MixedModels.jl Julia
-        package](http://dmbates.github.io/MixedModels.jl/). Wes Brooks
+        package](http://dmbates.github.io/MixedModels.jl/) ⚠️. Wes Brooks
         included [MathJax typesetting in a blog written in Markdown and
         served via
         Django](http://somesquares.org/blog/2013/4/integrating-mathjax-and-markdown-django).

@@ -18,11 +18,11 @@ _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
 - [Spatial Data Science book by Edzer Pebesma and Roger Bivand](https://r-spatial.org/book/)
 - [Geospatial Vector Data in R with SF (Coding Club)](https://ourcodingclub.github.io/tutorials/spatial-vector-sf/)
 - Online Comparisons of Some Spatial Packages
-  - [Comparison of terra and stars packages by Chris Brown](https://www.seascapemodels.org/rstats/2021/06/01/STARS.html)
+  - [Comparison of terra and stars packages by Chris Brown](https://www.seascapemodels.org/rstats/2021/06/01/STARS.html) ⚠️
   - [Marius Appel - Creating and Analyzing Multi-Variable Earth Observation Data Cubes in R (part 1)](https://www.youtube.com/watch?v=kE-se6zg6HE) (2 hours)
   - [Stack Overflow: stack geotiff with stars 'along' when 'band' dimension contains band + time information](https://stackoverflow.com/questions/75249639/stack-geotiff-with-stars-along-when-band-dimension-contains-band-time-info)
 
-- [ArcGIS Online](https://www.arcgis.com/sharing/rest/oauth2/signup?client_id=arcgisonline&response_type=token)
+- [ArcGIS Online](https://www.arcgis.com/sharing/rest/oauth2/signup?client_id=arcgisonline&response_type=token) ⚠️
   - Free online accounts, with new features added over time
 - [QGIS](https://qgis.org/en/site/)
   - [RPubs: R to QGIS workflow](https://rpubs.com/DUE-methods1/r-qgis)
@@ -69,8 +69,8 @@ Unsure about status of `raster` package.
 
 ## Data Repositories
 
-- <https://data-library.esiil.org>
-  - [American Indian and Alaska Native Areas](https://data-library.esiil.org/indian_country/aiannh/AIANNH/)
+- <https://data-library.esiil.org> ⚠️
+  - [American Indian and Alaska Native Areas](https://data-library.esiil.org/indian_country/aiannh/AIANNH/) ⚠️
 - See list on menu of
 <https://cu-esiil.github.io/hackathon2023_datacube/code_for_building_cube/Pull_flood_data/>
 

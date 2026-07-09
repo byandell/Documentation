@@ -49,7 +49,7 @@ The [tidyverse](http://tidyverse.org) provides a useful set of tools to organize
 
 - [Introduction to the Tidyverse (nee Hadleyverse) (Doug Bates)](https://github.com/dmbates/stat692/blob/master/Hadleyverse.Rmd)
 - [Aggregating and analyzing data with dplyr (Data Carpentry)](http://kbroman.org/datacarpentry_R_2017-01-10/02-dplyr.html)
-- [Data analysis 1 (Jenny Bryan)](http://stat545.com/topics.html) (see links under this topic)
+- [Data analysis 1 (Jenny Bryan)](http://stat545.com/topics.html) ⚠️ (see links under this topic)
 
 Right here would like to go through an example using `for/while/repeat`  loops, then base `apply` suite, then `dplyr` and `tidyr`, then `purrr`. The point would be that while the old way gets the job done, the newer tidyverse provides more compact ways of organizing the task that are more intuitive, once one overcomes the new way of thinking about the problem. 
 
@@ -58,21 +58,21 @@ Here is the basic idea. It might seem best to go a row and column at a time and 
 ### base R: `for` vs. `apply`
 
 - [apply examples](applyExample.Rmd)
-- [Apply and For Loops in R by Elizabeth McDaniel](http://rpubs.com/lizilla93/258391) ([Rmd source](https://github.com/lizilla1993/ComBEE-UW-Madison/blob/master/Spring2017/R/ComBEE-R-Apply-Session.Rmd))
+- [Apply and For Loops in R by Elizabeth McDaniel](http://rpubs.com/lizilla93/258391) ([Rmd source](https://github.com/lizilla1993/ComBEE-UW-Madison/blob/master/Spring2017/R/ComBEE-R-Apply-Session.Rmd) ⚠️)
 
 To answer the frequently asked question, 'How can I avoid this loop or make it faster?': Try to use simple vectorized operations; use the family of apply functions if appropriate; initialize objects to full length when using loops; and do not repeat calculations many times if performing them just once is sufficient. Measure execution time before making changes to code, and only make changes if the efficiency gain really matters. It is better to have readable code that is free of bugs than to waste hours optimizing code to gain a fraction of a second. Sometimes, in fact, a loop will provide a clear and efficient solution to a problem (considering both time and memory use). 
 (from <https://www.r-project.org/doc/Rnews/Rnews_2008-1.pdf>, p. 49)
 
 - [apply vs. for (Karl Broman)](https://kbroman.wordpress.com/2013/04/02/apply-vs-for/)
-- [Repeating things: looping and the apply family](http://nicercode.github.io/guides/repeating-things/)
+- [Repeating things: looping and the apply family](http://nicercode.github.io/guides/repeating-things/) ⚠️
 - [why to vectorize: using apply vs for](http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html)
 - [What you’re doing is rather desperate](https://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/)
 - [Guess who wins apply vs for](http://www.r-bloggers.com/guess-who-wins-apply-versus-for-loops-in-r/ )
 
-- [Another comprehensive list of all the apply functions](http://seananderson.ca/courses/12-plyr/plyr_2012.pdf)
-- [apply for Dummies](http://www.dummies.com/how-to/content/how-to-use-the-apply-family-of-functions-in-r.html) (towards the bottom)
+- [Another comprehensive list of all the apply functions](http://seananderson.ca/courses/12-plyr/plyr_2012.pdf) ⚠️
+- [apply for Dummies](http://www.dummies.com/how-to/content/how-to-use-the-apply-family-of-functions-in-r.html) ⚠️ (towards the bottom)
 
-- [Parallel apply (mclapply)](http://www.rforge.net/doc/packages/multicore/mclapply.html)
+- [Parallel apply (mclapply)](http://www.rforge.net/doc/packages/multicore/mclapply.html) ⚠️
 
 ### plyr
 
@@ -85,14 +85,14 @@ There is a package called [plyr](https://github.com/hadley/plyr), which seems to
 The `dplyr` package allows us to filter by rows and select columns, and to do tasks in groups organized by levels of columns. Further, these steps can be strung together using `pipes` as a coherent operation on a table, to create a new table. This new table may be stored, or might be used in another operation without ever being saved as a new object. See notes linked above, and the following.
 
 - [Intro to R Adapted to dplyr](R_intro_dplyr.html)
-- [Data Wrangling in R by Elizabeth McDaniel](http://rpubs.com/lizilla93/data-wrangling-dplyr) ([Rmd source](https://github.com/lizilla1993/ComBEE-UW-Madison/blob/master/Spring2017/R/Data-Wrangling.Rmd))
+- [Data Wrangling in R by Elizabeth McDaniel](http://rpubs.com/lizilla93/data-wrangling-dplyr) ([Rmd source](https://github.com/lizilla1993/ComBEE-UW-Madison/blob/master/Spring2017/R/Data-Wrangling.Rmd) ⚠️)
 - [dplyr on tidyverse](http://dplyr.tidyverse.org/)
 - [Data Transformation with dplyr](https://www.rstudio.com/resources/cheatsheets/) (scroll down)
 
 The latest release of `dplyr` (0.7.0) in its basic form appears unchanged. However, there is a new philosophy of "tidy evaluation" that will have a profound effect on how we use `dplyr` tools within functional programming. That is, the straightforward way to use `dplyr` is to reference table columns by name, which works great in an interactive setting. If the column names might change from table to table, and you want to create tools that leverage that, it will be important to learn about tidy evaluation.
 
 - [dplyr 0.7.0 release announcement](https://blog.rstudio.org/2017/06/13/dplyr-0-7-0/)
-- [tidy evaluation](http://rlang.tidyverse.org/articles/tidy-evaluation.html)
+- [tidy evaluation](http://rlang.tidyverse.org/articles/tidy-evaluation.html) ⚠️
 - [RStudio Webinars](https://www.rstudio.com/resources/webinars/) (see What's new in dplyr 0.7.0?)
 
 ### tidyr
@@ -112,7 +112,7 @@ Note: There used to be one Data Wrangling CheatSheet for `dplyr` and `tidyr`. It
 Some use the older [reshape2](https://github.com/hadley/reshape), which includes some column aggregations features that are not easily done in `tidyr`. See for instance:
 
 - [How to reshape data in R: tidyr vs reshape2](https://www.r-bloggers.com/how-to-reshape-data-in-r-tidyr-vs-reshape2/).
-- [An Introduction to reshape2](http://seananderson.ca/2013/10/19/reshape.html)
+- [An Introduction to reshape2](http://seananderson.ca/2013/10/19/reshape.html) ⚠️
 
 ### purrr
 
@@ -133,7 +133,7 @@ Some use the older [reshape2](https://github.com/hadley/reshape), which includes
 
 If you are new to programming, this subsection might be skipped. Experienced programmers who are new to `R` might find this useful. The basic argument: everything in R is a vector (no scalars!). See also
 
-- [Data analysis 2: vectors and files](http://stat545.com/topics.html) (scroll down to this topic)
+- [Data analysis 2: vectors and files](http://stat545.com/topics.html) ⚠️ (scroll down to this topic)
 
 
 Atomic vectors include integers, double-precision, strings (character), logical and a few others. 

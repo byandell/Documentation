@@ -182,7 +182,7 @@ For technical reasons (below), I put the function in a subfolder,
 also called `landmapy`.
 Further, I expect to have several initializing functions,
 so I placed `create_data_director()` in a file
-[initial.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/initial.py).
+[initial.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/initial.py) ⚠️.
 
 On my local machine, I have the code for function `create_data_directory()`
 in module (file)
@@ -324,7 +324,7 @@ These evolved as I started to use the new function
 in multiple settings in the same project.
 I realized that another function, `plot_gdf_da()` is now redundant.
 You can see these in
-[plot.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/plot.py).
+[plot.py](https://github.com/byandell-envsys/landmapy/blob/main/landmapy/plot.py) ⚠️.
 
 I could eliminate `plot_da()` and `plot_gdf_da()` and use `plot_das()` instead.
 However, I would need to go back to earlier projects where I used

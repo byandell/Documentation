@@ -16,7 +16,7 @@ nav_order: 7
 >
 > - use [unix/linux shell](linux.md) to search and modify project
 > - [initial steps toward reproducible research](http://kbroman.org/steps2rr/)
-> - [build a basic pipeline or workflow in the shell](http://stat545-ubc.github.io/automation00_index.html)
+> - [build a basic pipeline or workflow in the shell](http://stat545-ubc.github.io/automation00_index.html) ⚠️
 > - [Scaling up the split-apply-combine paradigm](scaling_up.md)
 >
 
@@ -43,7 +43,7 @@ nav_order: 7
 
 - [Software Carpentry Unix Shell](http://swcarpentry.github.io/shell-novice/)
 - [Software Carpentry Automation with Make](http://swcarpentry.github.io/make-novice/)
-- [Jenny Bryan pipeline automation](http://stat545-ubc.github.io/automation00_index.html)
+- [Jenny Bryan pipeline automation](http://stat545-ubc.github.io/automation00_index.html) ⚠️
 - [GNU Make Tutorial (Karl Broman)](http://kbroman.github.io/minimal_make)
 - [LaTeX Writing Language](latex.md)
 - [Reproducible Research Tools Links](reproducible.md)
@@ -52,4 +52,4 @@ nav_order: 7
 - [Going beyond R](beyondR.md)
 - <http://software-carpentry.org>
 - <http://chtc.cs.wisc.edu>
-- [history of teletype](https://en.wikipedia.org/wiki/Teleprinter) and relation to [short Unix command names](http://aplawrence.com/Unixart/newtounix.html#cryptic)
+- [history of teletype](https://en.wikipedia.org/wiki/Teleprinter) and relation to [short Unix command names](http://aplawrence.com/Unixart/newtounix.html#cryptic) ⚠️

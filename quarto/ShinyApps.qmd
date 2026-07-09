@@ -93,7 +93,7 @@ Uses the standard Old Faithful geyser app to illustrate module composition and c
 - **Over Pages**: `appPages.R`.
 - **Rows & Columns**: `appRows.R` / `appRowsModule.R`.
 - **Twin Reuse**: `appTwin.R` / `appDupe.R` / `appFlip.R`.
-- **Nested**: `app.R` (see deployed [Geyser Demo](https://connect.doit.wisc.edu/geyserDemo)).
+- **Nested**: `app.R` (see deployed [Geyser Demo](https://connect.doit.wisc.edu/geyserDemo) ⚠️).
 :::
 :::
 
@@ -108,7 +108,7 @@ See the [Geyser Shiny Modules Slides](https://connect.doit.wisc.edu/geyserShinyM
 Powers three active research portals for the Attie Lab:
 
 ::: {.incremental}
-- **Study Portals**: [Founder Calcium Study](https://connect.doit.wisc.edu/FounderCalciumStudy/), [Founder Diet Study](https://connect.doit.wisc.edu/FounderDietStudy/), and [Founder Liver Diet Study](https://connect.doit.wisc.edu/FounderLiverDietStudy/).
+- **Study Portals**: [Founder Calcium Study](https://connect.doit.wisc.edu/FounderCalciumStudy/) ⚠️, [Founder Diet Study](https://connect.doit.wisc.edu/FounderDietStudy/) ⚠️, and [Founder Liver Diet Study](https://connect.doit.wisc.edu/FounderLiverDietStudy/) ⚠️.
 - **Dependency**: Leverages the [foundr](https://github.com/AttieLab-Systems-Genetics/foundr) data analysis package.
 - **Scale**: Over **30 interconnected modules** (e.g. `download.R` for exports, `volcano.R` for plots).
 - **Iteration**: Evolved over **1.5 years** through collaboration on layouts, panel structures, and feature additions.
@@ -188,7 +188,7 @@ The modernization branch (`byandell-refactor`) reorganizes server calls:
 :::
 :::
 
-- See screenshots and vignettes in the [User Guide](https://github.com/byandell/qtl2shiny/blob/master/vignettes/UserGuide.Rmd) and [Developer Guide](https://github.com/byandell/qtl2shiny/blob/master/vignettes/DeveloperGuide.Rmd).
+- See screenshots and vignettes in the [User Guide](https://github.com/byandell/qtl2shiny/blob/master/vignettes/UserGuide.Rmd) ⚠️ and [Developer Guide](https://github.com/byandell/qtl2shiny/blob/master/vignettes/DeveloperGuide.Rmd).
 
 ## Dependencies & Reactive Debugging {.compact-slide}
 
@@ -196,7 +196,7 @@ The modernization branch (`byandell-refactor`) reorganizes server calls:
 ::: {.column width="50%"}
 ### qtl2 Package Stack
 - [qtl2](https://kbroman.org/qtl2/): Genotyping and mapping calculations.
-- [qtl2ggplot2](https://github.com/byandell-sysgen/qtl2ggplot2): ggplot2-based plotting extension.
+- [qtl2ggplot2](https://github.com/byandell-sysgen/qtl2ggplot2) ⚠️: ggplot2-based plotting extension.
 - [qtl2fst](https://github.com/byandell-sysgen/qtl2fst): Database storing scans.
 - [qtl2pattern](https://github.com/byandell-sysgen/qtl2pattern): SNP association patterns.
 - [qtl2mediate](https://github.com/byandell-sysgen/qtl2mediate) /
