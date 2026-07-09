@@ -168,7 +168,7 @@ working on the project.  Ask
 
 **Example:**
 
-- [Document Digital Tools `AGENTS.md`](/AGENTS.md)
+- [Document Digital Tools `AGENTS.md`](https://github.com/byandell/Documentation/blob/main/AGENTS.md)
 
 ### Create a Table of Contents for a File
 
