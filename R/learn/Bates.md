@@ -3,6 +3,7 @@ title: "Douglas Bates Stat 692 Notes"
 author: "Brian S. Yandell"
 date: 2017-07-03
 nav_order: 4
+parent: "Overview of R Material"
 ---
 
 # Douglas Bates Stat 692 Notes

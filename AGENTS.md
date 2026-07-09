@@ -1,3 +1,8 @@
+---
+title: "AGENTS.md — Documentation Repository"
+parent: "Document Digital Tools"
+---
+
 # AGENTS.md — Documentation Repository
 
 This is Brian Yandell's (`byandell`) personal documentation site, published at
