@@ -162,13 +162,16 @@ An
 file is basically a readme for AI agents that are
 working on the project.  Ask
 
-**Prompt:**
+**Prompts:**
 
 - "create `AGENTS.md` for this project"
+- "make a condensed version of `AGENTS.md` with a reasonable name to use with small LMMs
 
-**Example:**
+**Examples:**
 
-- [Document Digital Tools `AGENTS.md`](https://github.com/byandell/Documentation/blob/main/AGENTS.md)
+- [Document Digital Tools file `AGENTS.md`](https://github.com/byandell/Documentation/blob/main/AGENTS.md)
+- [Document Digital Tools file `AGENTS-mini.md`](https://github.com/byandell/Documentation/blob/main/AGENTS-mini.md)
+- [`byandell.github.io` file `AGENTS.md`](https://github.com/byandell/byandell.github.io/blob/master/AGENTS.md)
 
 ### Create a Table of Contents for a File
 
