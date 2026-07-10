@@ -29,6 +29,7 @@ the evolution of code-based tools and languages.
 This historical collection has many broken links,
 indicated by ⚠️ icons,
 which I plan to fix over time.
+See [Broken Links](./prompts/broken_links.md) for a summary.
 
 - [R Language](#r-language)
 - [Systems Genetics](#systems-genetics)

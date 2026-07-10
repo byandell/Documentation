@@ -7,6 +7,8 @@ nav_order: 7
 # Condensed Summary of Broken Links
 
 Below is the summary of link check results across all documentation files.
+Based on prompt and plan to
+[Check External Links](./check_links.md).
 
 ## Link Statistics by Folder (Summed across files)
 
