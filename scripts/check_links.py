@@ -60,6 +60,11 @@ def parse_args():
         "--file", "-f",
         help="Scan only a specific file instead of scanning the whole directory"
     )
+    parser.add_argument(
+        "--wayback-year",
+        type=int,
+        help="Find historical snapshots close to the specified year (e.g. 2017) using the Wayback Machine Availability API."
+    )
     return parser.parse_args()
 
 def scan_files(root_dir, extensions):
@@ -142,6 +147,21 @@ def check_link(url, timeout, ignore_ssl):
         return False, None, "Connection Error"
     except Exception as e:
         return False, None, f"Error: {str(e)}"
+
+def get_wayback_snapshot(url, year, timeout=5):
+    """Queries the Wayback Machine Availability API for a snapshot from a given year."""
+    api_url = f"https://archive.org/wayback/available?url={url}&timestamp={year}0101"
+    headers = {"User-Agent": DEFAULT_USER_AGENT}
+    try:
+        r = requests.get(api_url, headers=headers, timeout=timeout)
+        if r.status_code == 200:
+            data = r.json()
+            snapshots = data.get("archived_snapshots", {})
+            if "closest" in snapshots and snapshots["closest"].get("available"):
+                return snapshots["closest"].get("url")
+    except Exception:
+        pass
+    return None
 
 def run_checker():
     args = parse_args()
@@ -228,6 +248,25 @@ def run_checker():
     print(f"Broken references:     {broken_count}")
     print("="*50)
 
+    # Fetch Wayback Machine snapshots if requested
+    wayback_links = {}
+    if args.wayback_year and broken_count > 0:
+        broken_unique_urls = {item["url"] for item in broken_occurrences}
+        print(f"Querying Wayback Machine for snapshots from {args.wayback_year} for {len(broken_unique_urls)} broken URLs...")
+        with ThreadPoolExecutor(max_workers=args.threads) as executor:
+            future_to_url = {
+                executor.submit(get_wayback_snapshot, url, args.wayback_year, args.timeout): url
+                for url in broken_unique_urls
+            }
+            for future in as_completed(future_to_url):
+                url = future_to_url[future]
+                try:
+                    wb_url = future.result()
+                    if wb_url:
+                        wayback_links[url] = wb_url
+                except Exception as e:
+                    print(f"Failed to fetch Wayback snapshot for {url}: {e}", file=sys.stderr)
+
     # Generate Markdown Report
     if broken_count > 0:
         print(f"\nFound {broken_count} broken link references. Generating report...")
@@ -243,8 +282,12 @@ def run_checker():
                 rf.write(f"- **Broken Links**: {broken_count}\n\n")
                 
                 rf.write("## Broken Link Reference Details\n\n")
-                rf.write("| File | Line | Broken Link URL | Status Code / Error |\n")
-                rf.write("| :--- | :--- | :--- | :--- |\n")
+                if args.wayback_year:
+                    rf.write(f"| File | Line | Broken Link URL | Status Code / Error | Wayback {args.wayback_year} Link |\n")
+                    rf.write("| :--- | :--- | :--- | :--- | :--- |\n")
+                else:
+                    rf.write("| File | Line | Broken Link URL | Status Code / Error |\n")
+                    rf.write("| :--- | :--- | :--- | :--- |\n")
                 
                 # Sort broken references by file and line
                 sorted_broken = sorted(broken_occurrences, key=lambda x: (x["file"], x["line"]))
@@ -252,7 +295,12 @@ def run_checker():
                     rel_path = os.path.relpath(item["file"], args.dir)
                     # Create markdown link to file if possible (local syntax)
                     status_desc = f"{item['status_code']}" if item['status_code'] else f"{item['error']}"
-                    rf.write(f"| [{rel_path}]({rel_path}#L{item['line']}) | {item['line']} | `{item['url']}` | {status_desc} |\n")
+                    if args.wayback_year:
+                        wb_url = wayback_links.get(item['url'])
+                        wb_link_md = f"[Wayback Snapshot]({wb_url})" if wb_url else "N/A"
+                        rf.write(f"| [{rel_path}]({rel_path}#L{item['line']}) | {item['line']} | `{item['url']}` | {status_desc} | {wb_link_md} |\n")
+                    else:
+                        rf.write(f"| [{rel_path}]({rel_path}#L{item['line']}) | {item['line']} | `{item['url']}` | {status_desc} |\n")
             
             print(f"Markdown report generated: {args.report}")
         except Exception as e:
