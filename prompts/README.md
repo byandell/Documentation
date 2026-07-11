@@ -38,6 +38,7 @@ They illustrate a few principles along the way.
   - [Configure Just-the-Docs](./justthedocs.md)
   - [Check External Links](./check_links.md)
     - [Broken Links](./broken_links.md)
+  - [Create Developer's Guide to `qtl2shiny`](./devel_guide.md)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 
