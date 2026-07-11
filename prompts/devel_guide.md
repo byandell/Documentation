@@ -18,7 +18,7 @@ The developer's guide structure and content were developed interactively using t
 2. **Relative Links Conversion**: "Make links in `inst/doc/devel_guide/README.md` relative."
 3. **Table of Contents**: "Provide a TOC to `inst/doc/devel_guide/README.md`. After internal TOC, include a link to `./genoDataApp.md` in anticipation of more guide detail pages like this."
 4. **Genotypes Panel Expansion**: "Develop detailed guides for `genoApp`, `genoPlotApp` and `genoEffectApp`. Make this an expansion (and renaming) of `genoDataApp.md`, reusing material as possible."
-5. **Remaining Panel Guides**: "Using `genoApp.md` as a model, create developer's guides for the other panels."
+5. **Remaining Panel Guides**: "Using `genoApp.md` as a model, create developer's guides for the other panels, including a link back to the developer's guide main page (`README.md`)."
 6. **Prototype History**: "Add to `inst/doc/devel_guide.md` documentation of creating the initial `inst/doc/genoDataApp.md` as a prototype/model for the full developer's guide."
 7. **Prompts Documentation**: "Add a front section on `## Prompts` used to develop this process."
 
@@ -56,10 +56,11 @@ The success of the `genoDataApp.md` prototype in clarifying module logic led to 
      - **Complete File Index**: Indexed and linked every `R/*App.R` file to its corresponding module type (Entrypoint, Integral Submodule, Data Loader, Normalizer, Selector, DB Query, and Generic Utility).
 
 5. **Creation of Detailed Guides for Remaining Panels**:
-   - Created [inst/doc/devel_guide/hotspotApp.md](https://github.com/byandell-sysgen/qtl2shiny/blob/master/inst/doc/devel_guide/hotspotApp.md) for the Hotspots & Phenotypes panel.
-   - Created [inst/doc/devel_guide/scanApp.md](https://github.com/byandell-sysgen/qtl2shiny/blob/master/inst/doc/devel_guide/scanApp.md) for the Allele & SNP Scans panel.
-   - Created [inst/doc/devel_guide/patternApp.md](https://github.com/byandell-sysgen/qtl2shiny/blob/master/inst/doc/devel_guide/patternApp.md) for the SDP Pattern Analysis panel.
-   - Created [inst/doc/devel_guide/mediateApp.md](https://github.com/byandell-sysgen/qtl2shiny/blob/master/inst/doc/devel_guide/mediateApp.md) for the Mediation panel.
+   - Created the detailed guides for remaining panels, each including a link back to the developer's guide main page ([README.md](https://github.com/byandell-sysgen/qtl2shiny/blob/master/inst/doc/devel_guide/README.md)):
+     - [inst/doc/devel_guide/hotspotApp.md](https://github.com/byandell-sysgen/qtl2shiny/blob/master/inst/doc/devel_guide/hotspotApp.md) for the Hotspots & Phenotypes panel.
+     - [inst/doc/devel_guide/scanApp.md](https://github.com/byandell-sysgen/qtl2shiny/blob/master/inst/doc/devel_guide/scanApp.md) for the Allele & SNP Scans panel.
+     - [inst/doc/devel_guide/patternApp.md](https://github.com/byandell-sysgen/qtl2shiny/blob/master/inst/doc/devel_guide/patternApp.md) for the SDP Pattern Analysis panel.
+     - [inst/doc/devel_guide/mediateApp.md](https://github.com/byandell-sysgen/qtl2shiny/blob/master/inst/doc/devel_guide/mediateApp.md) for the Mediation panel.
 
 ## Rationale for Module Categorization
 
