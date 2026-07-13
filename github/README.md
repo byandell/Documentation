@@ -14,7 +14,8 @@ permalink: /github/
 - [CodeSpaces within GitHub](#codespaces-within-github)
 - Additional Pages
   - [Publish GitHub Pages](pages.md)
-  - [Automate with GitHub Actions](actions.md)
+  - [Deploy GitHub Pages with GitHub Actions](actions.md)
+    - [Shinylive Performance Tradeoffs](shinylive.md)
   - [Version GitHub Docs](version.md)
   - [Version GitHub Docs Prompt](../prompts/github.md)
 
