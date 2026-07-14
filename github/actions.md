@@ -38,7 +38,7 @@ All material must be self-contained in the app, including data.
 - [GitHub Pages Repository Settings](#github-pages-repository-settings)
 - Additional Pages
   - [Shinylive Performance Tradeoffs](shinylive.md)
-  - [Use `pkgdown` to Auto-Build GitHub Website](../prompts/pkgdown.md)
+  - [Use `pkgdown` to Auto-Build GitHub Website](pkgdown.md)
 
 ---
 

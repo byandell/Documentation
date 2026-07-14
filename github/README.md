@@ -16,6 +16,7 @@ permalink: /github/
   - [Publish GitHub Pages](pages.md)
   - [Deploy GitHub Pages with GitHub Actions](actions.md)
     - [Shinylive Performance Tradeoffs](shinylive.md)
+    - [Use `pkgdown` to Auto-Build GitHub Website](pkgdown.md)
   - [Version GitHub Docs](version.md)
   - [Version GitHub Docs Prompt](../prompts/github.md)
 
