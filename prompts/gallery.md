@@ -28,6 +28,7 @@ That is, separate files for the Posit Gallery Example and My Source Code App. I 
 - Create `docs/demos/connect_modules.qmd` using contents of folder `inst/connect_modules/demo`
 - Fix `inst/connect_modules/demo/app.R` to source all the `*.R` files in that folder. Update `docs/demos/connect_modules.qmd` accordingly.
 - I want to use `inst/build_module/app_hist.py` to build `docs/demos/python_module.qmd`. Please guide me. Make sure `shinylive` and `github actions` have what they need for this `python` code.
+- Create `docs/demos/quarto.qmd` using `inst/connect_modules/quarto/demo.qmd`. Since native Quarto Dashboards require a server and cannot be compiled directly in a static website project, embed the live Posit Connect app via an iframe and display the code below it.
 
 ---
 
@@ -270,6 +271,54 @@ To add a new demo:
    ```
 
 5. Update `index.qmd`'s `listing.contents` list if you want to explicitly place it in the display order.
+
+### 5. Handling Native Quarto Dashboards (`server: shiny`)
+
+If you want to demo a native Quarto Dashboard (`format: dashboard`, `server: shiny`), note that it cannot be compiled directly inside a static website project (such as a GitHub Pages site rendered with `quarto render docs/`). Quarto will throw an error:
+`ERROR: demos/quarto.qmd uses server: shiny so cannot be included in a website project (shiny documents require a backend server and so can't be published as static web content).`
+
+To resolve this and showcase a dashboard in your static web gallery:
+
+1. **Deploy the Dashboard Separately**: Deploy your interactive dashboard `.qmd` to a platform that supports a live R backend (such as **Posit Connect**, **shinyapps.io**, or a self-hosted **Shiny Server**).
+2. **Use Iframe Embedding in the Gallery**: Create a standard HTML page under `docs/demos/` (e.g., `docs/demos/quarto.qmd` with `format: html`) and embed the live dashboard URL via an `iframe`.
+3. **Display Source Code Below**: Read and display the source code of the dashboard from its actual location (e.g., `inst/connect_modules/quarto/demo.qmd`) in a panel tabset using `readLines`.
+
+Example `docs/demos/quarto.qmd`:
+
+```markdown
+---
+title: "Quarto Dashboard"
+description: "A native Quarto Dashboard layout showing Shiny module connections. Note: Runs via an embedded iframe from Posit Connect."
+toc: false
+---
+
+[← Back to Demos Gallery](index.qmd)
+
+This section displays the geyser Quarto Dashboard app hosted on Posit Connect, using an `iframe` embedding.
+
+<div class="shiny-app-frame" style="margin-bottom: 30px;">
+  <iframe src="https://connect.doit.wisc.edu/geyserQuartoDemo" style="width: 100%; height: 800px; border: 1px solid #ccc; border-radius: 4px;"></iframe>
+</div>
+
+## Source Code
+
+Below you can view the complete source file for the Quarto dashboard.
+
+::: {.panel-tabset}
+
+### demo.qmd
+\`\`\`{r}
+#| code: !expr readLines("../../inst/connect_modules/quarto/demo.qmd")
+#| eval: false
+\`\`\`
+
+:::
+```
+
+4. **Self-Contained Deployment Tip**:
+   When deploying the dashboard to Posit Connect or shinyapps.io, you must either:
+   - Use a `context: setup` block that installs the R package from GitHub (e.g., `pak::pak("byandell/geyser")`).
+   - Or bring in copies of the supporting `.R` module files from the package directory and place them alongside the dashboard file so they are bundled during deployment.
 
 ---
 
