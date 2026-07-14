@@ -29,19 +29,20 @@ All material must be self-contained in the app, including data.
 
 ## Table of Contents
 
-- [1. The GitHub Actions Workflow](#1-the-github-actions-workflow)
-- [2. Key Architecture Decisions & Gotchas](#2-key-architecture-decisions--gotchas)
-  - [Gotcha A: Subfolder Project Roots & Extension Paths](#gotcha-a-subfolder-project-roots--extension-paths)
-  - [Gotcha B: Jupyter/Python Kernel Fallbacks](#gotcha-b-jupyterpython-kernel-fallbacks)
-  - [Gotcha C: Jekyll Bypassing & Homepage (`index.html`) Missing](#gotcha-c-jekyll-bypassing--homepage-indexhtml-missing)
-  - [Gotcha D: Clean Git Repository & Local `.gitignore`](#gotcha-d-clean-git-repository--local-gitignore)
-- [3. GitHub Pages Repository Settings](#3-github-pages-repository-settings)
+- [GitHub Actions Workflow](#github-actions-workflow)
+- [Key Architecture Decisions & Gotchas](#key-architecture-decisions--gotchas)
+  - [Subfolder Project Roots & Extension Paths](#subfolder-project-roots--extension-paths)
+  - [Jupyter/Python Kernel Fallbacks](#jupyterpython-kernel-fallbacks)
+  - [Jekyll Bypassing & Homepage (`index.html`) Missing](#jekyll-bypassing--homepage-indexhtml-missing)
+  - [Clean Git Repository & Local `.gitignore`](#clean-git-repository--local-gitignore)
+- [GitHub Pages Repository Settings](#github-pages-repository-settings)
 - Additional Pages
   - [Shinylive Performance Tradeoffs](shinylive.md)
+  - [Use `pkgdown` to Auto-Build GitHub Website](../prompts/pkgdown.md)
 
 ---
 
-## 1. The GitHub Actions Workflow
+## GitHub Actions Workflow
 
 Create a file named `.github/workflows/deploy.yml` in your repository. This file automates checking out the repository, installing R and system dependencies, setting up Quarto, rendering the website, and deploying the compiled files.
 
@@ -117,11 +118,11 @@ jobs:
 
 ---
 
-## 2. Key Architecture Decisions & Gotchas
+## Key Architecture Decisions & Gotchas
 
 When migrating a Quarto site to build on a GitHub Actions runner, keep these common issues in mind:
 
-### Gotcha A: Subfolder Project Roots & Extension Paths
+### Subfolder Project Roots & Extension Paths
 
 If your Quarto project is located in a subdirectory (like `/docs`), Quarto treats that subdirectory as the root of the project (looking for `_quarto.yml` there).
 
@@ -134,7 +135,7 @@ If your Quarto project is located in a subdirectory (like `/docs`), Quarto treat
     run: quarto add --no-prompt quarto-ext/shinylive
   ```
 
-### Gotcha B: Jupyter/Python Kernel Fallbacks
+### Jupyter/Python Kernel Fallbacks
 
 When Quarto renders `.qmd` files containing code blocks, it evaluates which rendering engine to use. If it cannot resolve the Knitr package config, or if a Python/Jupyter syntax cell is detected, it will try to start a Python 3 Jupyter kernel. This will crash on a clean CI runner unless Jupyter and all package dependencies are pre-installed.
 
@@ -144,7 +145,7 @@ When Quarto renders `.qmd` files containing code blocks, it evaluates which rend
   engine: knitr
   ```
 
-### Gotcha C: Jekyll Bypassing & Homepage (`index.html`) Missing
+### Jekyll Bypassing & Homepage (`index.html`) Missing
 
 Historically, if you pushed a markdown file named `README.md` to GitHub Pages, the default Jekyll server automatically translated it to `index.html` to serve as the homepage.
 Because our Actions runner deploys pre-rendered HTML directly (bypassing Jekyll), **Quarto does not translate `README.md` to `index.html` by default**.
@@ -160,7 +161,7 @@ Because our Actions runner deploys pre-rendered HTML directly (bypassing Jekyll)
   {{< include README.md >}}
   ```
 
-### Gotcha D: Clean Git Repository & Local `.gitignore`
+### Clean Git Repository & Local `.gitignore`
 
 Since GitHub Actions compiles the site on every push, you should configure Git to ignore all locally generated HTML files and libraries so that your Git commits remain lightweight.
 
@@ -185,7 +186,7 @@ git commit -m "Untrack generated files"
 
 ---
 
-## 3. GitHub Pages Repository Settings
+## GitHub Pages Repository Settings
 
 After pushing your workflow file to GitHub:
 
