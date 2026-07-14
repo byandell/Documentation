@@ -55,3 +55,21 @@ We have successfully configured the repository to automatically build and deploy
 ### Package Build Check
 
 - Ran `R CMD build . --no-build-vignettes` which completed successfully and correctly excluded the `docs/` folder and `vignettes/devel_guide/` folder from the built package tarball.
+
+---
+
+## GitHub Settings Configuration
+
+To finalize the automated `pkgdown` deployment on GitHub:
+
+1. **Push the Changes**: Commit and push the `.github/workflows/pkgdown.yaml` and other configurations to your main branch (`main` or `master`). This will run the action and automatically create the `gh-pages` branch.
+2. **Configure GitHub Pages**:
+   - Go to **Settings → Pages** in your repository.
+   - Under **Build and deployment → Source**, select **Deploy from a branch**.
+   - Under **Branch**, select **`gh-pages`** and set the folder to **`/ (root)`**.
+   - Click **Save**.
+3. **Allow Write Permissions** (If deployment fails):
+   - Go to **Settings → Actions → General**.
+   - Scroll down to **Workflow permissions** and select **Read and write permissions**.
+   - Click **Save**.
+
