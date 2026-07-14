@@ -28,6 +28,7 @@ We have successfully configured the repository to automatically build and deploy
 2. **Updated `.Rbuildignore`**: Configured patterns to ignore the `_pkgdown.yml` configuration, `.github/` folder, and the source `vignettes/devel_guide/` files from the R package bundle.
 3. **Updated `.gitignore`**: Added `docs` to ignore the local compiled website output directory, keeping the repository git history clean.
 4. **Created `.github/workflows/pkgdown.yaml`**: Set up the official `pkgdown` GitHub Action workflow to build the website and deploy it to the `gh-pages` branch on every push.
+5. **Configured `Remotes` in `DESCRIPTION`**: Added a `Remotes:` block to identify non-CRAN packages (`downr`, `intermediate`, `qtl2mediate`, `qtl2ggplot`, `qtl2pattern`) on GitHub so they are successfully resolved and installed in the GitHub Actions runner.
 
 ### Documentation Files
 
