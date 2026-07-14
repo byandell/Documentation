@@ -18,7 +18,7 @@ permalink: /github/
     - [Shinylive Performance Tradeoffs](shinylive.md)
     - [Use `pkgdown` to Auto-Build GitHub Website](pkgdown.md)
   - [Version GitHub Docs](version.md)
-  - [Version GitHub Docs Prompt](../prompts/github.md)
+    - [Version GitHub Docs Prompt](../prompts/github.md)
 
 ## General GitHub and Git Information
 
