@@ -29,6 +29,7 @@ That is, separate files for the Posit Gallery Example and My Source Code App. I 
 - Fix `inst/connect_modules/demo/app.R` to source all the `*.R` files in that folder. Update `docs/demos/connect_modules.qmd` accordingly.
 - I want to use `inst/build_module/app_hist.py` to build `docs/demos/python_module.qmd`. Please guide me. Make sure `shinylive` and `github actions` have what they need for this `python` code.
 - Create `docs/demos/quarto.qmd` using `inst/connect_modules/quarto/demo.qmd`. Since native Quarto Dashboards require a server and cannot be compiled directly in a static website project, embed the live Posit Connect app via an iframe and display the code below it.
+- Why is there a gray rectangle above the name of each demo as part of the card? Can I adjust the card content and layout?
 
 ---
 
@@ -247,6 +248,27 @@ listing:
 
 Explore the interactive geyser demos below:
 ```
+
+#### Card Image Placeholders and Customization
+
+By default, the `grid` listing type creates preview cards that expect a thumbnail image. If a page does not specify a thumbnail, Quarto will display a placeholder gray rectangle.
+
+* **Assigning a Card Image**: To show an image on the card, add the `image` parameter to the frontmatter of that specific `.qmd` file, using a relative path to the image:
+  ```yaml
+  ---
+  title: "Quarto Dashboard"
+  image: "../images/pagesQmd.png"
+  ---
+  ```
+* **Hiding Card Images**: If you do not want to use images, you can customize the card content in `index.qmd` by using the `fields` key and omitting `image`:
+  ```yaml
+  listing:
+    type: grid
+    fields: [title, description, author] # Hides the image placeholder
+  ```
+* **Card Sizing and Layout**: You can adjust columns (`grid-columns: 3`) and alignment (`grid-item-align: top`) under the `listing` block.
+
+For a full list of card parameters and custom EJS templates, see the official [Quarto Document Listings Guide](https://quarto.org/docs/websites/website-listings.html#grid-layout).
 
 ### 4. Adding New Demos
 
