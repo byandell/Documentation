@@ -1,3 +1,8 @@
+---
+title: "Use `pkgdown` to Auto-Build GitHub Website"
+parent: "Publish GitHub Pages"
+---
+
 # Use `pkgdown` to Auto-Build GitHub Website
 
 ## Prompt
@@ -74,3 +79,32 @@ To finalize the automated `pkgdown` deployment on GitHub:
    - Scroll down to **Workflow permissions** and select **Read and write permissions**.
    - Click **Save**.
 
+---
+
+## Gotchas & Troubleshooting
+
+### Subdirectory Articles in `_pkgdown.yml`
+
+When grouping vignettes located in subdirectories (such as `vignettes/devel_guide/`) under the `contents:` field in `_pkgdown.yml`, you **must quote the paths**.
+
+- **Incorrect**:
+
+  ```yaml
+  articles:
+    - title: "Developer Documentation"
+      contents:
+        - devel_guide/index
+        - devel_guide/hotspot
+  ```
+
+  This causes `pkgdown` to evaluate the entry as code, interpreting the slash `/` as division or a function call, which results in the build error:
+  `! could not find function "/"`
+- **Correct**:
+
+  ```yaml
+  articles:
+    - title: "Developer Documentation"
+      contents:
+        - "devel_guide/index"
+        - "devel_guide/hotspot"
+  ```

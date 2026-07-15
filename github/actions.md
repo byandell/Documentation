@@ -1,10 +1,10 @@
 ---
-title: "Deploy GitHub Pages via GitHub Actions"
+title: "Deploy with GitHub Actions"
 parent: "Publish GitHub Pages"
 nav_order: 2
 ---
 
-# Deploy GitHub Pages via GitHub Actions
+# Deploy with GitHub Actions
 
 This guide explains how to set up a
 [GitHub Actions](https://github.com/features/actions)

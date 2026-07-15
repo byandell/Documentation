@@ -1,10 +1,10 @@
 ---
-title: "Showcase Shiny Apps and Code"
+title: "Create Shiny App Gallery"
 parent: "Prompt Examples"
 nav_order: 8
 ---
 
-# Showcase Shiny Apps and Code
+# Create Shiny App Gallery
 
 This guide explains how to display both a Shiny application and its source code side-by-side or on the same page, similar to the
 [Posit Shiny Gallery](https://shiny.posit.co/r/gallery/).
@@ -253,19 +253,23 @@ Explore the interactive geyser demos below:
 
 By default, the `grid` listing type creates preview cards that expect a thumbnail image. If a page does not specify a thumbnail, Quarto will display a placeholder gray rectangle.
 
-* **Assigning a Card Image**: To show an image on the card, add the `image` parameter to the frontmatter of that specific `.qmd` file, using a relative path to the image:
+- **Assigning a Card Image**: To show an image on the card, add the `image` parameter to the frontmatter of that specific `.qmd` file, using a relative path to the image:
+
   ```yaml
   ---
   title: "Quarto Dashboard"
   image: "../images/pagesQmd.png"
   ---
   ```
+
 * **Hiding Card Images**: If you do not want to use images, you can customize the card content in `index.qmd` by using the `fields` key and omitting `image`:
+
   ```yaml
   listing:
     type: grid
     fields: [title, description, author] # Hides the image placeholder
   ```
+
 * **Card Sizing and Layout**: You can adjust columns (`grid-columns: 3`) and alignment (`grid-item-align: top`) under the `listing` block.
 
 For a full list of card parameters and custom EJS templates, see the official [Quarto Document Listings Guide](https://quarto.org/docs/websites/website-listings.html#grid-layout).
@@ -337,7 +341,7 @@ Below you can view the complete source file for the Quarto dashboard.
 :::
 ```
 
-4. **Self-Contained Deployment Tip**:
+1. **Self-Contained Deployment Tip**:
    When deploying the dashboard to Posit Connect or shinyapps.io, you must either:
    - Use a `context: setup` block that installs the R package from GitHub (e.g., `pak::pak("byandell/geyser")`).
    - Or bring in copies of the supporting `.R` module files from the package directory and place them alongside the dashboard file so they are bundled during deployment.

@@ -39,7 +39,7 @@ They illustrate a few principles along the way.
   - [Check External Links](./check_links.md)
     - [Broken Links](./broken_links.md)
   - [Create Developer's Guide to `qtl2shiny`](./devel_guide.md)
-  - [Showcase Shiny Apps and Code](./gallery.md)
+  - [Create Shiny App Gallery](./gallery.md)
   - [Use `pkgdown` to Auto-Build GitHub Website](./github/pkgdown.md)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  

@@ -1,6 +1,6 @@
 ---
 title: "Shinylive Performance Tradeoffs"
-parent: "Deploy GitHub Pages with GitHub Actions"
+parent: "Publish GitHub Pages"
 ---
 
 # Shinylive Performance Tradeoffs
