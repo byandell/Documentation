@@ -7,8 +7,10 @@ nav_order: 7
 # Create Developer's Guide to `qtl2shiny`
 
 This file documents the prompts, process and design decisions made while building the developer's guide for the `qtl2shiny` package,
-which resides in
-[byandell-sysgen/qtl2shiny/inst/doc/devel_guide/](https://github.com/byandell-sysgen/qtl2shiny/tree/master/inst/doc/devel_guide).
+which resides as [qtl2shiny Developer Guide](https://byandell-sysgen.github.io/qtl2shiny/articles/DeveloperGuide.html)
+([source](https://github.com/byandell-sysgen/qtl2shiny/blob/master/vignettes/DeveloperGuide.Rmd)).
+See also
+[Use `pkgdown` to Auto-Build GitHub Website](https://byandell.github.io/Documentation/github/pkgdown.html).
 
 ## Prompts
 
