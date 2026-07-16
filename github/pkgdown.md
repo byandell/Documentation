@@ -30,7 +30,7 @@ We have successfully configured the repository to automatically build and deploy
 ### Configuration
 
 1. **Created `_pkgdown.yml`**: Added standard website structure, Bootstrap 5 templates, custom navigation dropdown menus under the "Guides" section, and mapped custom articles for the user and developer documentation.
-2. **Updated `.Rbuildignore`**: Configured patterns to ignore the `_pkgdown.yml` configuration, `.github/` folder, and the source `vignettes/devel_guide/` files from the R package bundle.
+2. **Updated `.Rbuildignore`**: Configured anchored regex patterns (`^_pkgdown\.yml$`, `^\.github$`, `^docs$`, and `^vignettes/devel_guide$`) to ignore the `_pkgdown.yml` configuration, `.github/` folder, local `docs/` folder, and the source `vignettes/devel_guide/` files from the R package bundle. Anchoring patterns (e.g., using `^` and `$`) is critical to prevent R from accidentally ignoring unrelated directories (such as `inst/doc/`).
 3. **Updated `.gitignore`**: Added `docs` to ignore the local compiled website output directory, keeping the repository git history clean.
 4. **Created `.github/workflows/pkgdown.yaml`**: Set up the official `pkgdown` GitHub Action workflow to build the website and deploy it to the `gh-pages` branch on every push.
 5. **Configured `Remotes` in `DESCRIPTION`**: Added a `Remotes:` block to identify non-CRAN packages (`downr`, `intermediate`, `qtl2mediate`, `qtl2ggplot`, `qtl2pattern`) on GitHub so they are successfully resolved and installed in the GitHub Actions runner.
@@ -108,3 +108,7 @@ When grouping vignettes located in subdirectories (such as `vignettes/devel_guid
         - "devel_guide/index"
         - "devel_guide/hotspot"
   ```
+
+### Relative Links Between Vignettes
+
+When linking between vignettes within a subdirectory, make sure relative links in the source `.Rmd` files point to the final `.html` output files (e.g., `[Architecture](./architecture.html)`) rather than `.Rmd` or `.md`. While R Markdown might render these locally as links to `.Rmd`, `pkgdown` compiles all of them to flat HTML pages where they must resolve to `.html` to navigate correctly.

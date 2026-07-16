@@ -1,10 +1,10 @@
 ---
-title: "Create Developer's Guide to `qtl2shiny`"
+title: "Create Developer Guide to `qtl2shiny`"
 parent: "Prompt Examples"
 nav_order: 7
 ---
 
-# Create Developer's Guide to `qtl2shiny`
+# Create Developer Guide to `qtl2shiny`
 
 This file documents the prompts, process and design decisions made while building the developer's guide for the `qtl2shiny` package,
 which resides as [qtl2shiny Developer Guide](https://byandell-sysgen.github.io/qtl2shiny/articles/DeveloperGuide.html)
@@ -16,11 +16,11 @@ See also
 
 The developer's guide structure and content were developed interactively using the following prompts:
 
-1. **Initial Setup**: "Create a developer's guide to `qtl2shiny` package in `inst/doc/devel_guide/` folder. This will have a high-level guide to the panels used in `R/qtl2shinyApp.R` and major sections for each of those panels. It should focus on `R/*App.R` files, noting how some are integral to a panel and other are more generic. Consider the `doc/genoDataApp.md` as a model, which should be moved into the folder. Include a `README.md` in that folder. Use this file `inst/doc/devel_guide.md` to document the process of creating this guide."
+1. **Initial Setup**: "Create a developer guide to `qtl2shiny` package in `inst/doc/devel_guide/` folder. This will have a high-level guide to the panels used in `R/qtl2shinyApp.R` and major sections for each of those panels. It should focus on `R/*App.R` files, noting how some are integral to a panel and other are more generic. Consider the `doc/genoDataApp.md` as a model, which should be moved into the folder. Include a `README.md` in that folder. Use this file `inst/doc/devel_guide.md` to document the process of creating this guide."
 2. **Relative Links Conversion**: "Make links in `inst/doc/devel_guide/README.md` relative."
 3. **Table of Contents**: "Provide a TOC to `inst/doc/devel_guide/README.md`. After internal TOC, include a link to `./genoDataApp.md` in anticipation of more guide detail pages like this."
 4. **Genotypes Panel Expansion**: "Develop detailed guides for `genoApp`, `genoPlotApp` and `genoEffectApp`. Make this an expansion (and renaming) of `genoDataApp.md`, reusing material as possible."
-5. **Remaining Panel Guides**: "Using `genoApp.md` as a model, create developer's guides for the other panels, including a link back to the developer's guide main page (`README.md`)."
+5. **Remaining Panel Guides**: "Using `genoApp.md` as a model, create developer guides for the other panels, including a link back to the developer's guide main page (`README.md`)."
 6. **Prototype History**: "Add to `inst/doc/devel_guide.md` documentation of creating the initial `inst/doc/genoDataApp.md` as a prototype/model for the full developer's guide."
 7. **Prompts Documentation**: "Add a front section on `## Prompts` used to develop this process."
 
