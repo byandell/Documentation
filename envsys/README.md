@@ -13,7 +13,7 @@ on [Earth Data Analytics](https://github.com/byandell-envsys/EarthDataAnalytics)
 To help me understand and organize code and ideas, I developed the
 [landmapy](https://github.com/byandell-envsys/landmapy) package.
 See also
-[Python Strategy](python_strategy.md).
+[Python Strategy](..python/strategy.md).
 
 - [View Environmental Systems Slides](https://byandell.github.io/Documentation/quarto/envsys.html)
 - [Earth Data Analytics](#earth-data-analytics)
@@ -21,7 +21,8 @@ See also
 - [Geospatial References](./geospatial.md)
 - [Google Maps Platform Access](#google-maps-platform-access)
 - Additional Pages
-  - [EDA Workbook on Python](python/#earth-data-analytics-eda-workbook)
+  - [EDA Workbook on Python](/python/#earth-data-analytics-eda-workbook)
+  - [Interactive Plots](../python/interactive.md)
   - [GitHub](../github/)
 
 ## Earth Data Analytics

@@ -17,14 +17,12 @@ Please offer suggestions to improve.
 
 - [View Python Slides](https://byandell.github.io/Documentation/quarto/python.html)
 - [Python Overview](#python-overview)
-- [Python Coding Strategy](./strategy.md)
 - [Earth Data Analytics (EDA) Workbook](#earth-data-analytics-eda-workbook)
   - [Coordinate Systems & Projections](#coordinate-systems--projections)
 - [Useful Python Libraries](#useful-python-libraries)
   - [Lists of Python Libraries](#lists-of-python-libraries)
 - [Plot Libraries and Systems](#plot-libraries-and-systems)
   - [Spatial Libraries](#spatial-libraries)
-  - [Interactive Plots](#interactive-plots)
 - [IPython Methods](#ipython-methods)
   - [Data](#data)
     - [Read and Write](#read-and-write)
@@ -32,6 +30,10 @@ Please offer suggestions to improve.
     - [Cached Data via Decorator](#cached-data-via-decorator)
   - [Decorators](#decorators)
   - [Classes](#classes)
+- Additional Pages
+  - [Python Coding Strategy](./strategy.md)
+  - [Interactive Plots](interactive.md)
+  - [Python Default Kernel for Quarto](kernel.md)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 
@@ -155,25 +157,6 @@ See `landmapy` [Plot Functions](plots.md).
 - [folium](https://python-visualization.github.io/folium/)
 - [geopy](https://geopy.readthedocs.io/en/stable/)
 - [pyproj](https://pyproj4.github.io/pyproj/stable/)
-
-### Interactive Plots
-
-- [Creating an Animated GIF with Python](https://www.blog.pythonlibrary.org/2021/06/23/creating-an-animated-gif-with-python/)
-  - [Create an Animated GIF Using Python Matplotlib](https://www.geeksforgeeks.org/create-an-animated-gif-using-python-matplotlib/)
-  - [Create a GIF with Python](https://www.codedex.io/projects/create-a-gif-with-python)
-  - [Using Python to make an animated gif out of a collection of images](https://propolis.io/articles/make-animated-gif-using-python.html) ⚠️
-  - [How to make a gif map using Python, Geopandas and Matplotlib](https://towardsdatascience.com/how-to-make-a-gif-map-using-python-geopandas-and-matplotlib-cd8827cefbc8) ⚠️
-  - [How to create animated GIF with Pillow in Python](https://note.nkmk.me/en/python-pillow-gif/)
-- [HoloViews Overview](https://dash.plotly.com/holoviews)
-  - [HoloViews Gridded Dataset](https://holoviews.org/user_guide/Gridded_Datasets.html)
-  - [HV Gridded getting started](https://holoviews.org/getting_started/Gridded_Datasets.html)
-  - [slider](https://stackoverflow.com/questions/76318661/holoviews-interactive-plot-of-gridded-data-with-slider-on-top)
-  - [Interactive plots using hvplot](https://tutorial.xarray.dev/intermediate/hvplot.html)
-  - [Dimensioned Containers](https://holoviews.org/user_guide/Dimensioned_Containers.html)
-- [matplotlib](https://matplotlib.org/)
-  - [matplotlib.widgets](https://matplotlib.org/stable/api/widgets_api.html) (`%matplotlib widget`)
-  - [ipympl](https://matplotlib.org/ipympl/)
-  - [Using `%matplotlib` widget](https://github.com/microsoft/vscode-jupyter/wiki/Using-%25matplotlib-widget-instead-of-%25matplotlib-notebook,tk,etc)
 
 ## IPython Methods
 

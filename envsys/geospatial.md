@@ -49,7 +49,7 @@ _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
   - <https://dieghernan.github.io/tidyterra/>
   - Extension of the `tidyverse` for `SpatRaster` and `SpatVector` objects of the `terra` package
 
-Packages to Access Data
+### Packages to Access Data
 
 - [rstac](https://cran.r-project.org/package=rstac): Access, search and download from SpatioTemporal Asset Catalog (STAC)
 - [osmdata](https://cran.r-project.org/package=osmdata): Download and import of 'OpenStreetMap' ('OSM') data
