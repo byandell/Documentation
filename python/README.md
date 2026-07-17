@@ -32,7 +32,7 @@ Please offer suggestions to improve.
   - [Classes](#classes)
 - Additional Pages
   - [Python Coding Strategy](./strategy.md)
-  - [Interactive Plots](interactive.md)
+  - [Interactive and Dynamic Plots](interactive.md)
   - [Python Default Kernel for Quarto](kernel.md)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  

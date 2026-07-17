@@ -204,6 +204,35 @@ occurrence_hvplot = hvplot_occurrence(occurrence_gdf)
 occurrence_hvplot.save('sandhill-crane-migration.html', embed=True)
 ```
 
+### Rendering Interactive Sliders on Static Websites (Quarto / GitHub Pages)
+
+When rendering `.qmd` files to static HTML sites (such as GitHub Pages), there is no active Python kernel in the background to handle the slider callbacks. Simply outputting the `occurrence_hvplot` object in a cell will result in a static plot with a non-functional slider.
+
+To solve this, the most robust and conflict-free approach is to:
+1. Save the plot to a standalone HTML file with `embed=True`.
+2. Disable evaluation for the cell displaying the plot (`eval: false`).
+3. Embed the generated HTML file using a standard HTML `<iframe>` tag.
+
+This isolates the Bokeh and Panel JavaScript contexts, avoiding version clashes or double-loading conflicts on the parent page (which otherwise often cause the plot to render as a blank space).
+
+#### Step 1: Save the plot with embedded states
+```python
+# Save the plot with all slider states pre-computed
+occurrence_hvplot.save('sandhill-crane-migration.html', embed=True)
+```
+
+#### Step 2: Display via iframe in your Markdown
+```python
+```{python}
+#| eval: false
+#| label: fig-monthly-occurrence
+# Shown as code reference but not evaluated to avoid duplication
+occurrence_hvplot
+```
+
+<iframe src="sandhill-crane-migration.html" width="100%" height="650px" style="border: none;"></iframe>
+```
+
 ---
 
 ## 3. Google Earth Engine (geemap) Time Slider
