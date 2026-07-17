@@ -1,7 +1,7 @@
 ---
 title: "Python Default Kernel for Quarto"
 parent: "Python Language"
-nav_order: 2
+nav_order: 3
 ---
 
 # Python Default Kernel for Quarto

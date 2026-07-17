@@ -1,3 +1,9 @@
+---
+title: "Interactive and Dynamic Plots"
+parent: "Python Language"
+nav_order: 2
+---
+
 # Interactive and Dynamic Plots
 
 When visualizing spatial data over time, we often want sliders, multiple plots arranged in a grid, or other dynamic elements. This page describes approaches for creating static multi-panel maps and interactive map sliders using packages like `matplotlib`, `hvplot` (HoloViews), `Panel`, and `geemap` (Google Earth Engine).
