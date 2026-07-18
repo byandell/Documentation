@@ -59,6 +59,9 @@ Other pages in this body address the mechanics of data visualization.
 
 - [Data Sovereignty](https://byandell.github.io/Data-Sovereignty/)
 - [Indigenous Data Science & Data Sovereignty](https://byandell.github.io/pages/indigenous/)
+- [US Indigenous Data Network (USIDN)](https://usindigenousdatanetwork.org/)
+- [Indigenous Data Alliance](https://indigenousdata.org/)
+- [CARE Data Maturity Model (Indigenous DataLab)](https://indigenousdatalab.org/care-data-maturity-model/)
 - [Tiered Sovereign Data Framework (Patrick Freeland)](https://atniclimate.github.io/TieredSovereignDataFramework/)
 ([source](https://github.com/atniclimate/TieredSovereignDataFramework))
 
