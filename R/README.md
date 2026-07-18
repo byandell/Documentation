@@ -28,7 +28,7 @@ Much of that content has migrated to these pages.
   - [Profile & Simulate](./profile/)
   - [Connect Data Tools Beyond `R`](./connect/)
 - Additional R Pages
-  - [Data Science](../datasci/)
+  - [Data Sciences](../datasci/)
   - [Environmental Systems](../envsys/)
     - [R for Open Street Map](../envsys/#open-street-map)
     - [R Geospatial Packages](../envsys/geospatial.md#r-packages)

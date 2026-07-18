@@ -3,6 +3,7 @@ title: "Analyze Data"
 parent: "R Language"
 author: "Brian S. Yandell"
 date: 2017-06-29
+permalink: /R/analyze/
 nav_order: 5
 ---
 

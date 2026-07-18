@@ -1,6 +1,6 @@
 ---
 title: "Big Data"
-parent: "Data Science"
+parent: "Data Sciences"
 ---
 
 ## Big Data

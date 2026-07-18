@@ -1,6 +1,6 @@
 ---
 title: "Data Repositories"
-parent: "Data Science"
+parent: "Data Sciences"
 ---
 
 ## Data Repositories

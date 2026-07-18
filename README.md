@@ -8,6 +8,7 @@ permalink: /
 
 - [My Documentation Journey](#my-documentation-journey)
 - [R Language](./R/) ([slides](./quarto/R.html))
+- [Data Science](./datasci/)
 - [Python Language](./python/) ([slides](./quarto/python.html))
 - [GitHub](./github/) ([slides](./quarto/github.html))
 - [Environmental Systems](./envsys/) ([slides](./quarto/envsys.html))
