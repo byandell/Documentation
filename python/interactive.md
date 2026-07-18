@@ -212,7 +212,8 @@ To solve this, the most robust and conflict-free approach is to:
 
 1. Save the plot to a standalone HTML file with `embed=True`.
 2. Disable evaluation for the cell displaying the plot (`eval: false`).
-3. Embed the generated HTML file using a standard HTML `<iframe>` tag.
+3. Embed the generated HTML file using a standard HTML
+[`<iframe>` tags](https://www.w3schools.com/tags/tag_iframe.asp).
 
 This isolates the
 [Bokeh](https://docs.bokeh.org/en/latest/)
