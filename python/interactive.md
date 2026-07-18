@@ -214,7 +214,18 @@ To solve this, the most robust and conflict-free approach is to:
 2. Disable evaluation for the cell displaying the plot (`eval: false`).
 3. Embed the generated HTML file using a standard HTML `<iframe>` tag.
 
-This isolates the Bokeh and Panel JavaScript contexts, avoiding version clashes or double-loading conflicts on the parent page (which otherwise often cause the plot to render as a blank space).
+This isolates the
+[Bokeh](https://docs.bokeh.org/en/latest/)
+and
+[Panel](https://panel.holoviz.org/)
+JavaScript contexts, avoiding version clashes or double-loading conflicts
+on the parent page (which otherwise often cause the plot to render as a blank space).
+This may still not work smoothly as all these
+tools may clash with each other;
+consider putting the plot in a separate web page
+as I did with
+[Dynamic Images from EDA Projects](https://byandell-envsys.github.io/landmapyr/images.html)
+([source](https://github.com/byandell-envsys/landmapyr/blob/main/docs/images.md)).
 
 #### Step 1: Save the plot with embedded states
 
@@ -231,6 +242,8 @@ occurrence_hvplot.save('sandhill-crane-migration.html', embed=True)
 # Shown as code reference but not evaluated to avoid duplication
 occurrence_hvplot
 ```
+
+#### Step 3: Embed HTML file using an iframe
 
 ```html
 <iframe src="sandhill-crane-migration.html" width="100%" height="650px"
