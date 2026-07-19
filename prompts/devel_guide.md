@@ -1,72 +1,167 @@
 ---
-title: "Create Developer Guide to `qtl2shiny`"
+title: "Create Developer Guides (Blueprint)"
 parent: "Prompt Examples"
-nav_order: 7
+nav_order: 6
 ---
 
-# Create Developer Guide to `qtl2shiny`
+# Create Developer Guides (Blueprint)
 
-This file documents the prompts, process and design decisions made while building the developer's guide for the `qtl2shiny` package,
-which resides as [qtl2shiny Developer Guide](https://byandell-sysgen.github.io/qtl2shiny/articles/DeveloperGuide.html)
-([source](https://github.com/byandell-sysgen/qtl2shiny/blob/master/vignettes/DeveloperGuide.Rmd)).
-See also
-[Use `pkgdown` to Auto-Build GitHub Website](https://byandell.github.io/Documentation/github/pkgdown.html).
+This document serves as a general blueprint for creating developer guides across different project structures: **R Packages**, **Python Projects**, **Documentation Projects**, and **Hybrid R/Python Projects**.
 
-## Prompts
+A developer guide clarifies codebase structure, module boundaries, data routing, reactivity flow, and custom design patterns. It helps human maintainers and AI pair-programming agents understand how to extend and debug the system without introducing architectural drift.
 
-The developer's guide structure and content were developed interactively using the following prompts:
+In addition to a Developer Guide, a project would benefit from the flowing
+complementary files:
 
-1. **Initial Setup**: "Create a developer guide to `qtl2shiny` package in `inst/doc/devel_guide/` folder. This will have a high-level guide to the panels used in `R/qtl2shinyApp.R` and major sections for each of those panels. It should focus on `R/*App.R` files, noting how some are integral to a panel and other are more generic. Consider the `doc/genoDataApp.md` as a model, which should be moved into the folder. Include a `README.md` in that folder. Use this file `inst/doc/devel_guide.md` to document the process of creating this guide."
-2. **Relative Links Conversion**: "Make links in `inst/doc/devel_guide/README.md` relative."
-3. **Table of Contents**: "Provide a TOC to `inst/doc/devel_guide/README.md`. After internal TOC, include a link to `./genoDataApp.md` in anticipation of more guide detail pages like this."
-4. **Genotypes Panel Expansion**: "Develop detailed guides for `genoApp`, `genoPlotApp` and `genoEffectApp`. Make this an expansion (and renaming) of `genoDataApp.md`, reusing material as possible."
-5. **Remaining Panel Guides**: "Using `genoApp.md` as a model, create developer guides for the other panels, including a link back to the developer's guide main page (`README.md`)."
-6. **Prototype History**: "Add to `inst/doc/devel_guide.md` documentation of creating the initial `inst/doc/genoDataApp.md` as a prototype/model for the full developer's guide."
-7. **Prompts Documentation**: "Add a front section on `## Prompts` used to develop this process."
+- [`AGENTS.md`](../AI/agents.md): Repository-level systems instructions and agent skills
+- `README.md`: Repository overview and quick start
+- `DEVELOPER.md`: Developer-facing notes and guidance
 
-## Prototype Development
+> [!TIP]
+> For a concrete, real-world case study of this blueprint applied to a mature R Shiny package, see the [qtl2shiny Developer Guide Reference](./devel_guide_qtl2shiny.md).
 
-Prior to launching the full developer's guide, a single-module documentation prototype was created: `inst/doc/genoDataApp.md` (which documented the genotype data submodule `genoDataApp`). This prototype served as a model for the entire developer's guide, establishing standard headings and design representations:
+---
 
-- **Module Hierarchy and Entrypoints**: Detailing the standalone entrypoint, the server module, and UI inputs/outputs.
-- **Data Dependencies**: Clarifying what RDS and SQLite files the module reads.
-- **Workflow Reactivity Diagrams**: Utilizing Mermaid flowcharts to visualize reactive logic.
-- **Defensive Design Patterns**: Explaining code defensive checks (e.g. updating sliders reactively to prevent out-of-bounds errors when chromosome coordinates reset).
+## 1. R Package Developer Guides (Vignette-Based)
 
-The success of the `genoDataApp.md` prototype in clarifying module logic led to the decision to expand it into a unified Genotypes guide (`genoApp.md`) and reproduce the same structured format for all other major panels.
+In mature R packages, developer guides are best placed as package vignettes so they render as part of the official package documentation (e.g., via `pkgdown`).
 
-## Steps Performed
+### Directory Layout
 
-1. **Analysis of File Structure**:
-   - Identified all 41 `R/*App.R` files on the filesystem.
-   - Traced their loading and execution hierarchy within [R/qtl2shinyApp.R](../R/qtl2shinyApp.R) and `inst/qtl2shinyApp/app.R`.
+```text
+my_package/
+├── vignettes/
+│   ├── DeveloperGuide.Rmd          # Master developer guide index
+│   └── devel/
+│       ├── data_flow.Rmd           # Detailed submodule guide
+│       └── custom_plots.Rmd        # Detailed plotting guide
+├── _pkgdown.yml                    # Configures navigation bar
+└── R/                              # Package source code
+```
 
-2. **Creation of Guide Directory**:
-   - Created the directory `inst/doc/devel_guide/` to house developer documentation.
+### Actionable Prompts
 
-3. **Relocation & Expansion of Genotypes Guide (`genoApp.md`)**:
-   - Relocated and renamed `inst/doc/genoDataApp.md` to [inst/doc/devel_guide/genoApp.md](https://github.com/byandell-sysgen/qtl2shiny/blob/master/inst/doc/devel_guide/genoApp.md).
-   - Expanded the document to provide detailed developer guides for `genoApp` (the container panel), `genoPlotApp` (genotype probability plotter), and `genoEffectApp` (phenotype association effect calculator), reusing the original `genoDataApp` documentation.
+1. **Directory & Index Setup**:
+   > "Create a master developer guide vignette `vignettes/DeveloperGuide.Rmd` (or `.qmd`). The guide should detail the high-level architecture of the package, including execution entrypoints and core dependencies. Provide an index of all `.R` source files and group them by function category (e.g., DB querying, data loading, plotting, UI panels). Document this creation process in `prompts/devel_guide.md`."
+2. **Sub-module/Panel Details**:
+   > "Develop a detailed developer sub-guide in `vignettes/devel/module_name.Rmd` describing `module_name`. Document the inputs and outputs, reactive logic, data dependencies, and custom defensive checks. Include a Mermaid reactivity flow diagram if applicable."
+3. **Internal Linking**:
+   > "Update `vignettes/DeveloperGuide.Rmd` to link to the new sub-guide `vignettes/devel/module_name.Rmd` and ensure all file links are relative. Register the vignettes in the `_pkgdown.yml` site config so they are visible under the articles tab."
 
-4. **Creation of the Master Guide (`README.md`)**:
-   - Created [inst/doc/devel_guide/README.md](https://github.com/byandell-sysgen/qtl2shiny/blob/master/inst/doc/devel_guide/README.md) as the high-level entrypoint.
-   - Documented:
-     - **UI Layout & Navigation**: The Bootstrap 5 layout, reactive linking across tabs, and standardizing panel names.
-     - **Data Routing & Downloader Integration**: How active tabs route plot/table outputs to the external `downr` downloader module.
-     - **Tab Panels & Submodules**: Divided into Hotspots & Phenotypes, Scans, Patterns, Genotypes, and Mediation.
-     - **Utility Classification**: Grouped global controls like `projectApp.R`, `setParApp.R`, `winParApp.R`, `dipParApp.R`, `snpListApp.R`, and data loaders like `probsApp.R` and `kinshipApp.R`.
-     - **Complete File Index**: Indexed and linked every `R/*App.R` file to its corresponding module type (Entrypoint, Integral Submodule, Data Loader, Normalizer, Selector, DB Query, and Generic Utility).
+### Steps to Perform
 
-5. **Creation of Detailed Guides for Remaining Panels**:
-   - Created the detailed guides for remaining panels, each including a link back to the developer's guide main page ([README.md](https://github.com/byandell-sysgen/qtl2shiny/blob/master/inst/doc/devel_guide/README.md)):
-     - [inst/doc/devel_guide/hotspotApp.md](https://github.com/byandell-sysgen/qtl2shiny/blob/master/inst/doc/devel_guide/hotspotApp.md) for the Hotspots & Phenotypes panel.
-     - [inst/doc/devel_guide/scanApp.md](https://github.com/byandell-sysgen/qtl2shiny/blob/master/inst/doc/devel_guide/scanApp.md) for the Allele & SNP Scans panel.
-     - [inst/doc/devel_guide/patternApp.md](https://github.com/byandell-sysgen/qtl2shiny/blob/master/inst/doc/devel_guide/patternApp.md) for the SDP Pattern Analysis panel.
-     - [inst/doc/devel_guide/mediateApp.md](https://github.com/byandell-sysgen/qtl2shiny/blob/master/inst/doc/devel_guide/mediateApp.md) for the Mediation panel.
+1. **Analyze File Structure**: Identify all source files in the `R/` directory. Trace their dependencies and namespace exports.
+2. **Create Vignettes Directory**: Ensure `vignettes/` (and subdirectories like `vignettes/devel/`) exists.
+3. **Build the Prototype**: Create a single sub-module guide (e.g., `vignettes/devel/geno_module.Rmd`) to serve as a format prototype.
+4. **Draft the Master Vignette**: Create `vignettes/DeveloperGuide.Rmd` with high-level architecture, module categorization, layout descriptions, and utility mappings.
+5. **Add Sub-module Guides**: Flesh out guides for remaining sub-modules, using the prototype as a blueprint.
+6. **Compile and Verify**: Run `devtools::build_vignettes()` to compile and `pkgdown::build_site()` to verify website navigation and layout.
 
-## Rationale for Module Categorization
+---
 
-To maintain a clean separation of concerns, the 41 files were categorized based on whether their lifecycle and data scope are self-contained within an analysis tab, or whether they serve coordinates and global states across multiple tabs:
+## 2. Python Project Developer Guides
 
-- **Integral Panel Modules**: Highly specific to a particular mathematical analysis (e.g. mediation computations, SDP pattern scans, LOD genome curves). They consume global reactives but do not mutate state consumed by other panels.
-- **Generic/Utility Modules**: Mutate global states (e.g., changing the chromosome or peak coordinate region via `winPar` / `snpList`) or load large disk-backed data objects (e.g., genotype probabilities via `probs` / `kinship`) that are consumed globally by all panels.
+Python developer guides are typically placed in a root-level `docs/` folder or formatted directly in a `DEVELOPER.md` or `AGENTS.md` (to serve as workspace instructions for AI coding assistants).
+
+### Directory Layout
+
+```text
+my_project/
+├── docs/
+│   ├── developer_guide.md          # Core architecture document
+│   ├── environment_setup.md        # Python environment & dependencies
+│   └── api/                        # API detail documents
+├── tests/                          # Test suite (pytest)
+├── pyproject.toml / setup.py       # Configuration and dependencies
+└── my_module/                      # Python package source code
+```
+
+### Actionable Prompts
+
+1. **Initial Architecture Map**:
+   > "Inspect the python package `my_module/` and map out the directory layout and core execution pathways (e.g., entrypoint `__main__.py` or class interfaces). Create a developer guide in `docs/developer_guide.md` detailing how classes interact and outline data processing pipelines."
+2. **Setup and Testing Instructions**:
+   > "Draft `docs/environment_setup.md` containing detailed commands to configure the python virtual environment (using venv, conda, or poetry), install developer dependencies, and execute the test suite via pytest. Note how code linting (ruff, black, flake8) is configured."
+3. **API & Extension Guide**:
+   > "Write documentation on how to extend the module. Outline class hierarchy interfaces (e.g., adding a new database engine or plot format) and define rules for code standards (e.g., docstrings style, type hints)."
+
+### Steps to Perform
+
+1. **Source Discovery**: Run `find my_module -name "*.py"` to map out files and subdirectories.
+2. **Trace Class Interfaces**: Inspect imports and inheritance relationships to map out object-oriented structures.
+3. **Create Environment Reference**: Document dependencies defined in `pyproject.toml`, `setup.py`, or `requirements.txt`.
+4. **Draft the Developer Guide**: Structure the files into Overview, Class/Module Architecture, Testing Workflows, and Extension Guidelines.
+5. **Code Style Definitions**: Detail constraints around docstring formats (Google, NumPy, Sphinx style) and type hinting protocols.
+
+---
+
+## 3. Documentation Projects
+
+For projects whose main deliverable is documentation (such as a Quarto book, Jupyter Book, or Just-the-Docs Jekyll site), the developer guide details site layout, configuration variables, page metadata, navigation structures, and automated checks.
+
+### Directory Layout
+
+```text
+documentation_site/
+├── guides.md                       # Navigation to user and developer guides
+├── AGENTS.md                       # Project-level constraints for AI agents
+├── _config.yml / _quarto.yml       # Site config files
+├── index.md / README.md            # Landing / index page
+└── scripts/
+    └── check_links.py              # Automated link-validation scripts
+```
+
+### Actionable Prompts
+
+1. **Site Layout Documentation**:
+   > "Map out the site's folder hierarchy and page navigation in a root `guides.md` file. Explain the purpose of key configuration files like `_config.yml` or `_quarto.yml` and how the side navigation menu is generated."
+2. **Metadata & Writing Conventions**:
+   > "Add rules to the top-level developer index or `AGENTS.md` specifying frontmatter metadata standards (e.g., `title`, `parent`, `nav_order`, and `permalink`). Establish conventions for markdown headers, cross-references, and slide inclusions."
+3. **Automation & Link Validation**:
+   > "Create documentation in `prompts/check_links.md` on how to run automated link verification scripts. Outline how to identify and prune broken internal relative links and external web URLs before publishing."
+
+### Steps to Perform
+
+1. **Identify Configuration Entrypoints**: Map YAML configuration properties to the resulting website structure (navigation menus, page hierarchies).
+2. **Define Frontmatter Conventions**: List required frontmatter elements for new pages to ensure correct layout and theme mapping.
+3. **Setup Link-Check Tools**: Implement automated checks (e.g., python or bash scripts) to parse markdown links and identify 404s.
+4. **Write guides.md / AGENTS.md**: Combine rules, templates, and procedures into readable documents for future editors and AI agents.
+
+---
+
+## 4. Hybrid R & Python Projects
+
+In research repositories (like `geyser` or `landmapyr`), R and Python code often sit side-by-side. The developer guide must reconcile both ecosystems, outlining boundaries and interfaces.
+
+### Directory Layout
+
+```text
+hybrid_project/
+├── DEVELOPER.md                    # Root architecture index for both languages
+├── r/                              # R package sub-project
+│   ├── R/
+│   └── vignettes/
+├── python/                         # Python package sub-project
+│   ├── pyproject.toml
+│   └── docs/
+└── data/                           # Shared raw / processed data artifacts
+```
+
+### Actionable Prompts
+
+1. **Bridge Architecture Map**:
+   > "Create a root `DEVELOPER.md` describing how the R and Python components cooperate. Trace the communication boundaries (e.g., reticulate, subprocess calls, REST APIs, or shared SQLite/Parquet files). Group files by language and function."
+2. **Dual-Environment Configuration**:
+   > "Create environment guides mapping out how to bootstrap both R and Python environments on a local machine. Document dependencies (e.g., a shared conda `environment.yml` or installation scripts)."
+3. **Shared Data & API Schemas**:
+   > "Document data structures shared between R and Python code. Define SQLite database schemas, HDF5 hierarchies, or Parquet column schemas, detailing validation checks on both sides."
+
+### Steps to Perform
+
+1. **Map Cross-Language Boundary**: Determine if languages communicate at runtime (e.g., via `reticulate` in R, web sockets, or system APIs) or offline (e.g., Python pre-processes data, R Shiny visualizes it).
+2. **Create Combined Root Guide**: Write a root `DEVELOPER.md` detailing directory splits, shared folder layouts, and build steps.
+3. **Draft Language-Specific Sub-Guides**:
+   - For R: Link to `r/vignettes/` developer docs.
+   - For Python: Link to `python/docs/` developer docs.
+4. **Define Dual-Testing Workflows**: Outline execution scripts that run both `pytest` and `devtools::test()` as part of verification.
+5. **Coordinate Shared Data Schemas**: Formulate explicit specifications for exchange file formats (CSV, Parquet, SQLite) to avoid data drift.

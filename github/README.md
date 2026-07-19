@@ -19,7 +19,8 @@ permalink: /github/
     - [Use `pkgdown` to Auto-Build GitHub Website](pkgdown.md)
   - [Version GitHub Docs](version.md)
   - [Prompt Examples](../prompts/)
-    - [Create Developer Guide to `qtl2shiny`](../prompts/devel_guide.md)
+    - [Create Developer Guides (Blueprint)](../prompts/devel_guide.md)
+      - [Create Developer Guide to `qtl2shiny` (Reference Case Study)](../prompts/devel_guide_qtl2shiny.md)
     - [Create Shiny App Gallery](../prompts/gallery.md)
     - [Version GitHub Docs Prompt](../prompts/github.md)
 

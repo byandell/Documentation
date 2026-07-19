@@ -9,9 +9,10 @@ nav_order: 5
 - [What is Context Engineering?](#what-is-context-engineering)
 - [Context Engineering References](#context-engineering-references)
 - [Comparison of Agent Skills and AGENTS.md](#comparison-of-agent-skills-and-agentsmd)
-  - [AGENTS.md (Repository Context)](#agentsmd-repository-context)
   - [Agent Skills / SKILL.md (Actionable Capabilities)](#agent-skills--skillmd-actionable-capabilities)
   - [Summary of Differences](#summary-of-differences)
+- Additional Pages
+  - [Agents and Workspace Rules](agents.md)
 
 ## What is Context Engineering?
 
@@ -33,19 +34,6 @@ than to have it read and retained,
 and then perhaps save that summary
 for use in subsequent conversations.
 
-Project-level systems instructions and agent skills,
-project context, etc.
-can be built into a project's
-"README for agents" called
-[AGENTS.md](https://agents.md/).
-The challenge with `AGENTS.md` is that it is automatically loaded into the
-context window by AI agents working in the project.
-Hence, it already fills up part of the context window,
-limiting space for your conversation prompts and results.
-One solution is to have a concise `AGENTS.md`
-(with perhaps a more detailed `AGENTS-LONG.md` loaded when needed)
-This works well as long as the concise version is sufficient.
-
 Another trick is to use `agent skills` located
 in one or more `skills` folders, each containing a `SKILL.md` file.
 These are reusable packages of knowledge that extend what an agent
@@ -64,7 +52,9 @@ can do to handle different aspects of a project.
 
 ## Comparison of Agent Skills and AGENTS.md
 
-Based on the technical paradigms for AI coding assistants (such as Claude Code, GitHub Copilot, Cursor, and Codex), **Agent Skills** (or `SKILL.md`) and **`AGENTS.md`** are two complementary standards used to provide context and capabilities to AI agents.
+Based on the technical paradigms for AI coding assistants (such as Claude Code, GitHub Copilot, Cursor, and Codex), **Agent Skills** (or `SKILL.md`) and
+[**`AGENTS.md`**](agents.md)
+are two complementary standards used to provide context and capabilities to AI agents.
 
 A comparative breakdown highlights their distinct roles, structures, and intended use cases:
 
@@ -76,58 +66,6 @@ A comparative breakdown highlights their distinct roles, structures, and intende
 | **Trigger Mechanism** | Loaded automatically when an agent begins working inside that repository. | Activated dynamically on-demand when the agent recognizes a relevant trigger phrase or task. |
 
 ---
-
-### `AGENTS.md` (Repository Context)
-
-Think of `AGENTS.md` as the **onboarding handbook** for an AI agent entering a specific project. It tells the agent _what_ the project is and _how_ it should behave to blend in seamlessly with human contributors.
-
-- **Target Audience:** The AI agent working _inside_ that specific codebase.
-- **Content Focus:**
-  - Tech stack definitions (e.g., React 18, TypeScript, Tailwind).
-  - Directory layout (where to find hooks, components, or API services).
-  - Design tokens and rigid rules (e.g., _"Do not introduce new dependencies," "Prefer existing `Button` component"_).
-- **Layering & Scope:** Can be nested. A root `AGENTS.md` might define company-wide standards, while a nested `services/api/AGENTS.md` layers on rules specific only to the backend service.
-
-#### AGENTS.md Examples
-
-Ask an AI agent to "create `AGENTS.md` for this project".
-I just did this for multiple projects, including this one.
-See for instance these example `AGENTS.md` files with listed sections:
-
-- [Document Digital Tools `AGENTS.md`](../AGENTS.md)
-  - Purpose
-  - Repository Structure
-  - Key Files
-  - Conventions
-  - Related Organizations & Repositories
-  - Code Preferences
-- [Working Group OASIS `AGENTS.md`](https://github.com/CU-ESIIL/Working_group_OASIS/blob/main/AGENTS.md) (CU ESIIL)
-  - Guidelines for agents
-  - Working Group OASIS and Project Group OASIS
-- [LLM lesson exemplar `AGENTS.md`](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md) (Cassie Buhler)
-  - [Repository Purpose](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#repository-purpose)
-  - [Step 1: Read the Example](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#step-1-read-the-example)
-  - [Core Steps](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#core-steps)
-  - [After It Runs](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#after-it-runs)
-  - [Directory Structure](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#directory-structure)
-  - [Region Boundaries](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#region-boundaries)
-  - [Required Script Header](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#required-script-header)
-  - [Output Requirements](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#output-requirements)
-  - [Failure Handling](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#failure-handling)
-  - [Resampling Rules](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#resampling-rules)
-  - [Ad-Hoc Preprocessing](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md#ad-hoc-preprocessing)
-- [openclaw_container `AGENTS.md`](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md) (CU ESIIL OASIS ScienceClaw)
-  - [Core Operating Contract](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#core-operating-contract)
-  - [Default Workflow](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#default-workflow) ⚠️
-  - [Documentation and Website Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#documentation-and-website-policy)
-  - [Testing Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#testing-policy)
-  - [Package and Structure Separation Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#package-and-structure-separation-policy)
-  - [Data Discovery and Data Use Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#data-discovery-and-data-use-policy)
-  - [Data Sovereignty and Intellectual Property Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#data-sovereignty-and-intellectual-property-policy)
-  - [Design and Usability Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#design-and-usability-policy)
-  - [Decision Logging](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#decision-logging)
-  - [OpenClaw Slack/Gateway Operations](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#openclaw-slackgateway-operations)
-  - [Model Routing Policy](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md#model-routing-policy)
 
 ### Agent Skills / `SKILL.md` (Actionable Capabilities)
 

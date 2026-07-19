@@ -38,7 +38,8 @@ They illustrate a few principles along the way.
   - [Configure Just-the-Docs](./justthedocs.md)
   - [Check External Links](./check_links.md)
     - [Broken Links](./broken_links.md)
-  - [Create Developer Guide to `qtl2shiny`](./devel_guide.md)
+  - [Create Developer Guides (Blueprint)](./devel_guide.md)
+    - [Create Developer Guide to `qtl2shiny` (Reference Case Study)](./devel_guide_qtl2shiny.md)
   - [Create Shiny App Gallery](./gallery.md)
   - [Use `pkgdown` to Auto-Build GitHub Website](./github/pkgdown.md)
 

@@ -11,6 +11,7 @@ permalink: /
 - [Data Science](./datasci/)
 - [Python Language](./python/) ([slides](./quarto/python.html))
 - [GitHub](./github/) ([slides](./quarto/github.html))
+  - [Guides](guides.md)
 - [Environmental Systems](./envsys/) ([slides](./quarto/envsys.html))
 - [Shiny Apps](./ShinyApps.md) ([slides](./quarto/ShinyApps.html))
 - [AI (Artificial Intelligence)](./AI/) ([slides](./quarto/AI.html))
