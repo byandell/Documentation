@@ -53,7 +53,9 @@ Other pages in this body address the mechanics of data visualization.
 - [Curate R Data](/R/curate/)
 - [Visualize Data with R](/R/visualize/)
 - [Analyze Data with R](/R/analyze/)
-- [Scatter Plots in Python with ggplot](https://byandell-envsys.github.io/landmapyr/climate.html#scatter-plots-with-ggplot)
+- Scatterplot Examples
+  - [SD Rain & Drought Analysis](https://byandell.github.io/rainDrought/)
+  - [Scatter Plots in Python with ggplot](https://byandell-envsys.github.io/landmapyr/climate.html#scatter-plots-with-ggplot)
 
 ## Data Sovereignty
 
