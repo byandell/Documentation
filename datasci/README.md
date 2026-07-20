@@ -49,10 +49,27 @@ My background is statistics, where data visualization and rigorous thinking
 about key questions and design are paramount.
 Other pages in this body address the mechanics of data visualization.
 
-- [R for Data Science by Garrett Grolemund, Mine Çetinkaya-Rundel and Hadley Wickham (2nd Edition)](https://r4ds.hadley.nz/)
-- [Curate R Data](/R/curate/)
-- [Visualize Data with R](/R/visualize/)
-- [Analyze Data with R](/R/analyze/)
+A question came up of how to relate rain and drought (or any other measures over time and space).
+I figured out how to create the plot I suggested from cumulative rain and drought.
+I used an example of two counties in SD, which are homes to Oglala Lakota (Pine Ridge in Oglala Lakota County)
+and Sicangu (Rosebud in Todd County).
+The published report
+[SD Rain & Drought Analysis](https://byandell.github.io/rainDrought/)
+uses `plotnine` in python.
+
+I think it is much better to show data explicitly (and do it early in a report) rather than talk about the concept.
+I also do not think correlation works well when considering processes over time and space,
+where there is substantial auto-correlation built in and variability due to the scale of measures.
+Cumulative measures are much better behaved for a variety of reasons.
+
+- Books
+  - [R for Data Science by Garrett Grolemund, Mine Çetinkaya-Rundel and Hadley Wickham (2nd Edition)](https://r4ds.hadley.nz/)
+  - [Practical Data Analysis for Designed Experiments by Brian S. Yandell (1997)](https://www.stat.wisc.edu/~yandell/pda/)
+  - [Visualizing Data by William S. Cleveland (1993)](https://archive.org/details/visualizingdata00will/)
+- [Document Digital Tools](/)
+  - [Curate R Data](/R/curate/)
+  - [Visualize Data with R](/R/visualize/)
+  - [Analyze Data with R](/R/analyze/)
 - Scatterplot Examples
   - [SD Rain & Drought Analysis](https://byandell.github.io/rainDrought/)
   - [Scatter Plots in Python with ggplot](https://byandell-envsys.github.io/landmapyr/climate.html#scatter-plots-with-ggplot)
