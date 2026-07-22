@@ -11,8 +11,8 @@ permalink: /github/
 - [General GitHub and Git Information](#general-github-and-git-information)
 - [Collaborate with GitHub Organizations](#collaborate-with-github-organizations)
 - [Connect with GitHub](#connect-with-github)
-- [CodeSpaces within GitHub](#codespaces-within-github)
 - Additional Pages
+  - [CodeSpaces within GitHub](codespace.md)
   - [Publish GitHub Pages](pages.md)
     - [Deploy with GitHub Actions](actions.md)
     - [Shinylive Performance Tradeoffs](shinylive.md)
@@ -121,13 +121,3 @@ renv::record("github_user/package_name")
 - [Manage dependencies with renv](https://www.r-bloggers.com/2021/03/new-on-techguides-manage-dependencies-with-renv/)
 - [Using renv with Posit Connect](https://pkgs.rstudio.com/renv/articles/rsconnect.html)
 - [R Package Management](https://docs.posit.co/connect/admin/r/package-management/)
-
-## CodeSpaces within GitHub
-
-Always stop a codespace when done to save resources!
-
-- [GitHub Codespaces overview](https://docs.github.com/en/codespaces/overview),
-[QuickStart](https://docs.github.com/en/codespaces/getting-started/quickstart) &
-[Documentation](https://docs.github.com/en/codespaces)
-- [GitHub Codespaces (Visual Studio Code)](https://code.visualstudio.com/docs/remote/codespaces)
-- [Stopping and starting a codespace](https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace#stopping-a-codespace)
