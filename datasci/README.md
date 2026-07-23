@@ -23,6 +23,20 @@ This page is an effort to pull together some practical tools in the context
 of my broader project to
 [Document Digital Tools](/).
 
+Examining relationships in complex systems presents many challenges.
+Many things are correlated, but not necessarily causally related.
+Measures over time and space are typically (auto)correlated,
+or correlated with each other.
+Sytems studies involve examining many different types of measurements,
+which raise issues of scaling, admixture or groupings,
+and even the conundrum that we don't know what is useful to measure,
+or whether what has been measured properly reflects underlying
+processes.
+Some of these ideas are examined (albeit incompletely) in
+[Making Sense of Data](#making-sense-of-data)
+and
+[Significance and Importance](./signif.md).
+
 There is a tension between data sovereignty, the inherent rights of peoples
 to control access and use of their own data, and the open data movement.
 Many communities are exploring ways to use open, notably public, data
