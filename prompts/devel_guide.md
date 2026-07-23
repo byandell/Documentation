@@ -131,7 +131,12 @@ documentation_site/
 
 ## 4. Hybrid R & Python Projects
 
-In research repositories (like `geyser` or `landmapyr`), R and Python code often sit side-by-side. The developer guide must reconcile both ecosystems, outlining boundaries and interfaces.
+In research repositories (like
+[]`geyser`](<https://byandell.github.io/geyser/>)
+or
+[landmapyr](https://byandell.github.io/landmapyr/)),
+R and Python code often sit side-by-side. The developer guide must
+reconcile both ecosystems, outlining boundaries and interfaces.
 
 ### Directory Layout
 
@@ -150,7 +155,10 @@ hybrid_project/
 ### Actionable Prompts
 
 1. **Bridge Architecture Map**:
-   > "Create a root `DEVELOPER.md` describing how the R and Python components cooperate. Trace the communication boundaries (e.g., reticulate, subprocess calls, REST APIs, or shared SQLite/Parquet files). Group files by language and function."
+   > "Create a root `DEVELOPER.md` describing how the R and Python components cooperate. Trace the communication boundaries (e.g.,
+   [`reticulate`](https://rstudio.github.io/reticulate/),
+   [`rpy2`](https://rpy2.readthedocs.io/en/latest/),
+   subprocess calls, REST APIs, or shared SQLite/Parquet files). Group files by language and function."
 2. **Dual-Environment Configuration**:
    > "Create environment guides mapping out how to bootstrap both R and Python environments on a local machine. Document dependencies (e.g., a shared conda `environment.yml` or installation scripts)."
 3. **Shared Data & API Schemas**:
@@ -163,5 +171,13 @@ hybrid_project/
 3. **Draft Language-Specific Sub-Guides**:
    - For R: Link to `r/vignettes/` developer docs.
    - For Python: Link to `python/docs/` developer docs.
-4. **Define Dual-Testing Workflows**: Outline execution scripts that run both `pytest` and `devtools::test()` as part of verification.
-5. **Coordinate Shared Data Schemas**: Formulate explicit specifications for exchange file formats (CSV, Parquet, SQLite) to avoid data drift.
+4. **Define Dual-Testing Workflows**: Outline execution scripts that run both
+[`pytest`](https://pytest.org/)
+and
+[`devtools::test`](https://testthat.r-lib.org/reference/test_package.html)
+as part of verification.
+5. **Coordinate Shared Data Schemas**: Formulate explicit specifications for exchange file formats
+([CSV](https://allthings.how/what-is-a-csv-file-and-how-to-open-or-create-it/),
+[Parquet](https://parquet.apache.org/),
+[SQLite](https://www.sqlite.org/))
+to avoid data drift.

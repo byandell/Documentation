@@ -13,7 +13,7 @@ Here are some examples:
 
 ## Table of Contents
 
-- [Digital Tools Guides & Prompts](#digital-tools-guides--prompts)
+- [Digital Tool Guides & Prompts](#digital-tools-guides--prompts)
   - [Prompts](#prompts)
   - [Guides and Overviews](#guides-and-overviews)
 - [Documentation Repo Developer Guide](#documentation-repo-developer-guide)
@@ -23,7 +23,7 @@ Here are some examples:
 
 ---
 
-## Digital Tools Guides & Prompts
+## Digital Tool Guides & Prompts
 
 ### Prompts
 
@@ -33,6 +33,9 @@ Here are some examples:
 
 ### Guides and Overviews
 
+- [this repo](https://byandell.github.io/Documentation)
+  - [Developer Guide](#documentation-repo-developer-guide)
+  - [AGENTS.md](AGENTS.md)
 - [`qtl2shiny`](https://byandell-sysgen.github.io/qtl2shiny/)
   - [Articles](https://byandell-sysgen.github.io/qtl2shiny/articles/)
   - [Developer Guide](https://byandell-sysgen.github.io/qtl2shiny/articles/devel_guide/index.html)
