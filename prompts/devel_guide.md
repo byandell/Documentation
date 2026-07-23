@@ -13,16 +13,21 @@ A developer guide clarifies codebase structure, module boundaries, data routing,
 In addition to a Developer Guide, a project would benefit from the flowing
 complementary files:
 
-- [`AGENTS.md`](../AI/agents.md): Repository-level systems instructions and agent skills
-- `README.md`: Repository overview and quick start
-- `DEVELOPER.md`: Developer-facing notes and guidance
+- [R Package Developer Guide](./R_package_developer_guide.md)
+- [Python Developer Guide](./python_developer_guide.md)
+- [Documentation Developer Guide](./documentation_developer_guide.md)
+- [Hybrid R & Python Developer Guide](./hybrid_r_python_developer_guide.md)
+- Additional Pages
+  - [`AGENTS.md`](../AI/agents.md): Repository-level systems instructions and agent skills
+  - `README.md`: Repository overview and quick start
+  - `DEVELOPER.md`: Developer-facing notes and guidance
 
 > [!TIP]
 > For a concrete, real-world case study of this blueprint applied to a mature R Shiny package, see the [qtl2shiny Developer Guide Reference](./devel_guide_qtl2shiny.md).
 
 ---
 
-## 1. R Package Developer Guides (Vignette-Based)
+## R Package Developer Guides (Vignette-Based)
 
 In mature R packages, developer guides are best placed as package vignettes so they render as part of the official package documentation (e.g., via `pkgdown`).
 
@@ -59,7 +64,7 @@ my_package/
 
 ---
 
-## 2. Python Project Developer Guides
+## Python Project Developer Guides
 
 Python developer guides are typically placed in a root-level `docs/` folder or formatted directly in a `DEVELOPER.md` or `AGENTS.md` (to serve as workspace instructions for AI coding assistants).
 
@@ -95,7 +100,7 @@ my_project/
 
 ---
 
-## 3. Documentation Projects
+## Documentation Projects
 
 For projects whose main deliverable is documentation (such as a Quarto book, Jupyter Book, or Just-the-Docs Jekyll site), the developer guide details site layout, configuration variables, page metadata, navigation structures, and automated checks.
 
@@ -129,7 +134,7 @@ documentation_site/
 
 ---
 
-## 4. Hybrid R & Python Projects
+## Hybrid R & Python Projects
 
 In research repositories (like
 []`geyser`](<https://byandell.github.io/geyser/>)
