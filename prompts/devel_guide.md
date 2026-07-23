@@ -10,7 +10,7 @@ This document serves as a general blueprint for creating developer guides across
 
 A developer guide clarifies codebase structure, module boundaries, data routing, reactivity flow, and custom design patterns. It helps human maintainers and AI pair-programming agents understand how to extend and debug the system without introducing architectural drift.
 
-In addition to a Developer Guide, a project would benefit from the flowing
+In addition to a Developer Guide, a project would benefit from the following
 complementary files:
 
 - [R Package Developer Guide](./R_package_developer_guide.md)
@@ -20,16 +20,16 @@ complementary files:
 - Additional Pages
   - [`AGENTS.md`](../AI/agents.md): Repository-level systems instructions and agent skills
   - `README.md`: Repository overview and quick start
-  - `DEVELOPER.md`: Developer-facing notes and guidance
+  - `DEVELOPER.md`: Developer-facing architecture notes and whole-repo guidance
 
 > [!TIP]
-> For a concrete, real-world case study of this blueprint applied to a mature R Shiny package, see the [qtl2shiny Developer Guide Reference](./devel_guide_qtl2shiny.md).
+> For a concrete case study of this blueprint applied to a mature R Shiny package, see the [qtl2shiny Developer Guide Reference](./devel_guide_qtl2shiny.md). For a hybrid R/Python package case study, see the [`geyser` developer documentation](https://byandell.github.io/geyser/DEVELOPER.html).
 
 ---
 
 ## R Package Developer Guides (Vignette-Based)
 
-In mature R packages, developer guides are best placed as package vignettes so they render as part of the official package documentation (e.g., via `pkgdown`).
+In mature R packages, developer guides are best placed as package vignettes (e.g., `vignettes/DeveloperGuide.Rmd`) so they render as part of the official package documentation (e.g., via `pkgdown`).
 
 ### Directory Layout
 
@@ -66,19 +66,21 @@ my_package/
 
 ## Python Project Developer Guides
 
-Python developer guides are typically placed in a root-level `docs/` folder or formatted directly in a `DEVELOPER.md` or `AGENTS.md` (to serve as workspace instructions for AI coding assistants).
+Python developer guides are typically placed in `docs/devel/` (e.g., `docs/devel/python.md` for website rendering via Quarto/MkDocs) or inside the Python package source directory (`my_module/README.md`) for package developers, anchored by a root `DEVELOPER.md`.
 
 ### Directory Layout
 
 ```text
 my_project/
+├── DEVELOPER.md                    # Root architecture & developer guide entrypoint
 ├── docs/
-│   ├── developer_guide.md          # Core architecture document
-│   ├── environment_setup.md        # Python environment & dependencies
-│   └── api/                        # API detail documents
+│   └── devel/
+│       ├── python.md               # Detailed Python Developer Guide (rendered on site)
+│       └── environment_setup.md    # Python environment & dependencies
 ├── tests/                          # Test suite (pytest)
 ├── pyproject.toml / setup.py       # Configuration and dependencies
 └── my_module/                      # Python package source code
+    └── README.md                   # Sub-directory developer reference inside Python package source
 ```
 
 ### Actionable Prompts
@@ -137,24 +139,46 @@ documentation_site/
 ## Hybrid R & Python Projects
 
 In research repositories (like
-[]`geyser`](<https://byandell.github.io/geyser/>)
+[`geyser`](https://byandell.github.io/geyser/)
 or
 [landmapyr](https://byandell.github.io/landmapyr/)),
 R and Python code often sit side-by-side. The developer guide must
 reconcile both ecosystems, outlining boundaries and interfaces.
 
+### Dual-Housing Documentation Strategy
+
+Based on experience with the `geyser` package, hybrid repositories succeed by adopting a **three-tier documentation strategy**:
+
+1. **Root Repository Guide (`DEVELOPER.md`)**:
+   - Primary entry point for developers of the overall project.
+   - Documents shared architecture, cross-language module mappings (e.g., R 5-function modules vs Python `@module.ui` / `@module.server`), execution entry points, setup commands (`devtools::load_all()` and `pip install -e .`), port discovery, and reserved file patterns.
+   - Links out to ecosystem-specific sub-guides.
+2. **R Package Sub-Guide (`vignettes/DeveloperGuide.Rmd`)**:
+   - Master vignette for R package compilation (`devtools::build_vignettes()`) and `pkgdown` articles rendering.
+   - Focuses on R reactive flow, S3/S4 object structures, and R Shiny module patterns.
+3. **Python Package Sub-Guide (`docs/devel/python.md` & `my_module/README.md`)**:
+   - Housed in `docs/devel/python.md` for web/Quarto site rendering (`byandell.github.io/<project>`).
+   - Housed in `my_module/README.md` as an in-source developer reference for Python package developers.
+   - Focuses on Python reactivity, async loops, Shinylive WebAssembly build flows, and `rpy2` / dataframe data exchange.
+4. **Planning & Execution Record (`guides.md`)**:
+   - Consolidates initial blueprint prompts, the implementation plan, and the execution walkthrough for auditability and pair-programming context.
+
 ### Directory Layout
 
 ```text
 hybrid_project/
-├── DEVELOPER.md                    # Root architecture index for both languages
-├── r/                              # R package sub-project
-│   ├── R/
-│   └── vignettes/
-├── python/                         # Python package sub-project
-│   ├── pyproject.toml
-│   └── docs/
-└── data/                           # Shared raw / processed data artifacts
+├── DEVELOPER.md                    # Root architecture index & hybrid guide (both R & Python)
+├── README.md                       # Repository overview & quickstart (links to DEVELOPER.md)
+├── guides.md                       # Consolidated blueprint prompts, plan, and walkthrough
+├── R/                              # R package source code
+├── vignettes/                      # R-centric Vignettes
+│   └── DeveloperGuide.Rmd          # Master R developer guide vignette
+├── my_module/                      # Python package source code
+│   ├── README.md                   # Python package sub-directory developer reference
+│   └── io.py, hist.py, etc.        # Python package modules
+└── docs/                           # Documentation & Quarto / MkDocs Website
+    └── devel/                      # Extended sub-guides directory
+        └── python.md               # Detailed Python Developer Guide (rendered on site)
 ```
 
 ### Actionable Prompts
@@ -163,26 +187,26 @@ hybrid_project/
    > "Create a root `DEVELOPER.md` describing how the R and Python components cooperate. Trace the communication boundaries (e.g.,
    [`reticulate`](https://rstudio.github.io/reticulate/),
    [`rpy2`](https://rpy2.readthedocs.io/en/latest/),
-   subprocess calls, REST APIs, or shared SQLite/Parquet files). Group files by language and function."
+   subprocess calls, REST APIs, or shared SQLite/Parquet files). Provide a side-by-side R and Python module cross-reference table mapping equivalent features across ecosystems."
 2. **Dual-Environment Configuration**:
-   > "Create environment guides mapping out how to bootstrap both R and Python environments on a local machine. Document dependencies (e.g., a shared conda `environment.yml` or installation scripts)."
+   > "Create environment guides mapping out how to bootstrap both R and Python environments on a local machine. Document installation commands (`devtools::load_all()` for R and `pip install -e .` for Python) and dependency declarations."
 3. **Shared Data & API Schemas**:
-   > "Document data structures shared between R and Python code. Define SQLite database schemas, HDF5 hierarchies, or Parquet column schemas, detailing validation checks on both sides."
+   > "Document data structures shared between R and Python code. Define SQLite database schemas, HDF5 hierarchies, or Parquet column schemas, detailing validation checks on both sides (e.g., `pandas.DataFrame` and R `data.frame` conversion rules)."
 
 ### Steps to Perform
 
-1. **Map Cross-Language Boundary**: Determine if languages communicate at runtime (e.g., via `reticulate` in R, web sockets, or system APIs) or offline (e.g., Python pre-processes data, R Shiny visualizes it).
-2. **Create Combined Root Guide**: Write a root `DEVELOPER.md` detailing directory splits, shared folder layouts, and build steps.
-3. **Draft Language-Specific Sub-Guides**:
-   - For R: Link to `r/vignettes/` developer docs.
-   - For Python: Link to `python/docs/` developer docs.
+1. **Establish Root Entry Point**: Create `DEVELOPER.md` in the repository root as the master developer guide indexing both R and Python architectures.
+2. **Implement R Vignette Guide**: Draft `vignettes/DeveloperGuide.Rmd` to document R package modules and integration with `pkgdown`.
+3. **Implement Python Sub-Guides**:
+   - Create `docs/devel/python.md` for site documentation (e.g., Quarto).
+   - Create `my_module/README.md` within the Python source folder for direct developer reference.
 4. **Define Dual-Testing Workflows**: Outline execution scripts that run both
 [`pytest`](https://pytest.org/)
 and
 [`devtools::test`](https://testthat.r-lib.org/reference/test_package.html)
 as part of verification.
-5. **Coordinate Shared Data Schemas**: Formulate explicit specifications for exchange file formats
+5. **Coordinate Shared Data Schemas & Planning**: Formulate explicit specifications for exchange file formats
 ([CSV](https://allthings.how/what-is-a-csv-file-and-how-to-open-or-create-it/),
 [Parquet](https://parquet.apache.org/),
 [SQLite](https://www.sqlite.org/))
-to avoid data drift.
+and maintain a `guides.md` file recording initial prompts, implementation plan, and completion walkthrough.
