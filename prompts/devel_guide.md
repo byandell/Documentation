@@ -147,14 +147,14 @@ reconcile both ecosystems, outlining boundaries and interfaces.
 
 ### Dual-Housing Documentation Strategy
 
-Based on experience with the `geyser` package, hybrid repositories succeed by adopting a **three-tier documentation strategy**:
+Based on experience with the `geyser` package, hybrid repositories succeed by adopting a **multi-tiered documentation and publishing strategy**:
 
 1. **Root Repository Guide (`DEVELOPER.md`)**:
    - Primary entry point for developers of the overall project.
    - Documents shared architecture, cross-language module mappings (e.g., R 5-function modules vs Python `@module.ui` / `@module.server`), execution entry points, setup commands (`devtools::load_all()` and `pip install -e .`), port discovery, and reserved file patterns.
    - Links out to ecosystem-specific sub-guides.
 2. **R Package Sub-Guide (`vignettes/DeveloperGuide.Rmd`)**:
-   - Master vignette for R package compilation (`devtools::build_vignettes()`) and `pkgdown` articles rendering.
+   - Master vignette for R package compilation (`devtools::build_vignettes()`) and `pkgdown` / Quarto site rendering.
    - Focuses on R reactive flow, S3/S4 object structures, and R Shiny module patterns.
 3. **Python Package Sub-Guide (`docs/devel/python.md` & `my_module/README.md`)**:
    - Housed in `docs/devel/python.md` for web/Quarto site rendering (`byandell.github.io/<project>`).
@@ -162,6 +162,10 @@ Based on experience with the `geyser` package, hybrid repositories succeed by ad
    - Focuses on Python reactivity, async loops, Shinylive WebAssembly build flows, and `rpy2` / dataframe data exchange.
 4. **Planning & Execution Record (`guides.md`)**:
    - Consolidates initial blueprint prompts, the implementation plan, and the execution walkthrough for auditability and pair-programming context.
+5. **Website Publishing & Dual-Linking**:
+   - Registers all developer guides (`DEVELOPER.md`, `vignettes/DeveloperGuide.Rmd`, `docs/devel/python.md`) in site render configurations (e.g., `_quarto.yml`).
+   - Integrates a **Developer Guides** dropdown menu into the website navbar linking to all three guides.
+   - Provides dual links in `README.md` to both the published website pages and the raw GitHub source code files.
 
 ### Directory Layout
 
@@ -192,11 +196,13 @@ hybrid_project/
    > "Create environment guides mapping out how to bootstrap both R and Python environments on a local machine. Document installation commands (`devtools::load_all()` for R and `pip install -e .` for Python) and dependency declarations."
 3. **Shared Data & API Schemas**:
    > "Document data structures shared between R and Python code. Define SQLite database schemas, HDF5 hierarchies, or Parquet column schemas, detailing validation checks on both sides (e.g., `pandas.DataFrame` and R `data.frame` conversion rules)."
+4. **Site Publishing & Navbar Integration**:
+   > "Configure site render targets (e.g., in `_quarto.yml` or `_pkgdown.yml`) to compile `DEVELOPER.md`, `vignettes/DeveloperGuide.Rmd`, and `docs/devel/python.md` into published HTML site pages. Add a 'Developer Guides' dropdown menu to the website navbar and update `README.md` with side-by-side links to both published site pages and GitHub source code."
 
 ### Steps to Perform
 
 1. **Establish Root Entry Point**: Create `DEVELOPER.md` in the repository root as the master developer guide indexing both R and Python architectures.
-2. **Implement R Vignette Guide**: Draft `vignettes/DeveloperGuide.Rmd` to document R package modules and integration with `pkgdown`.
+2. **Implement R Vignette Guide**: Draft `vignettes/DeveloperGuide.Rmd` to document R package modules and integration with `pkgdown`/Quarto.
 3. **Implement Python Sub-Guides**:
    - Create `docs/devel/python.md` for site documentation (e.g., Quarto).
    - Create `my_module/README.md` within the Python source folder for direct developer reference.
@@ -210,3 +216,4 @@ as part of verification.
 [Parquet](https://parquet.apache.org/),
 [SQLite](https://www.sqlite.org/))
 and maintain a `guides.md` file recording initial prompts, implementation plan, and completion walkthrough.
+6. **Publish & Integrate Navbar Navigation**: Add developer guide files to the site build targets (`_quarto.yml`), configure a **Developer Guides** navbar dropdown menu, and update `README.md` with dual links (Published Page + GitHub Source).
