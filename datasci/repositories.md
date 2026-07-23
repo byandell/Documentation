@@ -1,6 +1,7 @@
 ---
 title: "Data Repositories"
 parent: "Data Sciences"
+nav_order: 2
 ---
 
 ## Data Repositories

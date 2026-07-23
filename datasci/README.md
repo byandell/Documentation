@@ -33,6 +33,10 @@ I feel honored to be engaged in some of these conversations.
 - [Making Sense of Data](#making-sense-of-data)
 - [Data Sovereignty](#data-sovereignty)
 - [Open Data & Open Science](#open-data--open-science)
+- Additional Pages
+  - [Significance and Importance](signif.md)
+  - [Data Repositories](repositories.md)
+  - [Big Data](bigdata.md)
 
 ## What is Data Science?
 

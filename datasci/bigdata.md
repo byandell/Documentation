@@ -1,6 +1,7 @@
 ---
 title: "Big Data"
 parent: "Data Sciences"
+nav_order: 3
 ---
 
 ## Big Data
