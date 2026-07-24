@@ -10,91 +10,68 @@ This guide explains how to display both a Shiny application and its source code 
 [Posit Shiny Gallery](https://shiny.posit.co/r/gallery/).
 
 We cover two main approaches: using embedded client-side **Shinylive** apps in a Quarto page (highly recommended for hosting on static sites like GitHub Pages without folder clutter), and R's built-in **Showcase Mode** (best for local R console development).
-Below is a series of prompts that were used to develop this guide and add demo apps to the
-[byandell/geyser](https://github.com/byandell/geyser) repo.
-See also
-[GitHub Actions](../github/actions.md) for information on how to deploy the app.
 
-## Prompts
-
-- I would like to use the machinery of <https://shiny.posit.co/r/gallery/start-simple/faithful/> to display both an app and its code. Please help me understand how that is done and how I can modify this repo to create something similar. In the end, I want to be able to use this to demo R apps in this package. See for instance `inst/build_module/4_moduleServer/app.R` and `inst/build_module/4_moduleServer/moduleServer.R` for the app components.
-- Please use a `.github/deploy.yml` file for `GitHub Actions` to avoid having extraeneous folders (like `site_libs`) be part of the GitHub repo.
-- Make sure `README.md` in `/docs/` folder is not ignored by using a `/docs/index.qmd` file to cite it.
-- Develop a `demo_gallery.qmd` file that incorporates both the posit gallery faithful example app and my code. Make sure their files are in separate code tabs below each display.
-- Propose a way to reorganize as `docs/demos/`
-to accomodate multiple examples, each in its own `*.qmd` file.
-That is, separate files for the Posit Gallery Example and My Source Code App. I assume this folder will need a `index.qmd` canibalized from `demo_gallery.qmd`. Please advise on how to organize for further demos.
-- Is there a way I can specify order of blocks for display in docs/demos? Can I have a navigation link on those blocks to return to main demos page?
-- Create `docs/demos/connect_modules.qmd` using contents of folder `inst/connect_modules/demo`
-- Fix `inst/connect_modules/demo/app.R` to source all the `*.R` files in that folder. Update `docs/demos/connect_modules.qmd` accordingly.
-- I want to use `inst/build_module/app_hist.py` to build `docs/demos/python_module.qmd`. Please guide me. Make sure `shinylive` and `github actions` have what they need for this `python` code.
-- Create `docs/demos/quarto.qmd` using `inst/connect_modules/quarto/demo.qmd`. Since native Quarto Dashboards require a server and cannot be compiled directly in a static website project, embed the live Posit Connect app via an iframe and display the code below it.
-- Why is there a gray rectangle above the name of each demo as part of the card? Can I adjust the card content and layout?
+See also [GitHub Actions](../github/actions.md) for information on how to deploy the app.
 
 ---
 
 ## Method 1: Embedded Shinylive (Recommended for Web Galleries)
 
-By using the `{shinylive-r}` Quarto block, your app code is compiled and embedded directly inside the final HTML document. This eliminates the need for any extraneous folders or files in your git repository. It also provides an interactive, copyable, and runnable editor panel side-by-side (or stacked) with the live app.
+By using `{shinylive-r}` or `{shinylive-python}` Quarto blocks, your app code is compiled and embedded directly inside the rendered WebAssembly page. This provides an interactive, copyable, and runnable app directly inside the browser.
 
 > [!TIP]
-> **Customizing the Layout Components**:
+> **Customizing Layout Components**:
 >
 > - **Viewer-Only Mode (Default for Galleries)**: To hide the code editor entirely and only display the running app, set `#| components: [viewer]`. This is ideal when you want to show the code in separate static tabs below the app.
 > - **Interactive Code Editor**: To allow users to modify the code and run it inside their browser, set `#| components: [editor, viewer]`.
 
 ### 1. Configure the Quarto Document
 
-Create a `.qmd` file (like [docs/demos/build_module.qmd](demos/build_module.qmd)) that includes the `shinylive` filter in the YAML header (or share it across the directory via `_metadata.yml`):
+Create a `.qmd` file (e.g., `demos/my_app_demo.qmd`) that includes the `shinylive` filter in the YAML header (or share it across the directory via `_metadata.yml`):
 
 ```yaml
 ---
-title: "Build Module (Shinylive)"
+title: "Interactive App Demo (Shinylive)"
 filters:
   - shinylive
 ---
 ```
 
-### 2. Embed the App using `{shinylive-r}`
+### 2. Embed R Apps using `{shinylive-r}`
 
-Add your self-contained app code (combining your module server and main app) in a `{shinylive-r}` code chunk, specifying the `editor` and `viewer` components:
+Add your self-contained R Shiny code (combining module server and app UI) in a `{shinylive-r}` block:
 
 ```markdown
 \`\`\`{shinylive-r}
 #| standalone: true
 #| viewerHeight: 500
-#| components: [editor, viewer]
-#| layout: vertical
+#| components: [viewer]
 
 library(shiny)
 library(bslib)
 
 # --- Module definitions ---
-geyserServer <- function(id) { ... }
-geyserInput <- function(id) { ... }
-geyserOutput <- function(id) { ... }
-geyserUI <- function(id) { ... }
+myModuleServer <- function(id) { ... }
+myModuleInput <- function(id) { ... }
+myModuleOutput <- function(id) { ... }
 
-# --- App entry point ---
-ui <- bslib::page(
-  geyserInput(id = "geyser"), 
-  geyserOutput(id = "geyser"),
-  geyserUI(id = "geyser")
+# --- Main App ---
+ui <- bslib::page_sidebar(
+  sidebar = bslib::sidebar(myModuleInput("mod")),
+  bslib::card(myModuleOutput("mod"))
 )
+
 server <- function(input, output, session) {
-  geyserServer(id = "geyser")
+  myModuleServer("mod")
 }
+
 shiny::shinyApp(ui, server)
 \`\`\`
 ```
 
 ### 2b. Embed Python Apps using `{shinylive-python}`
 
-For Python-based Shiny apps, you can use the `{shinylive-python}` code block. The Quarto Shinylive filter handles compiling and packaging the Python code just like the R version.
-
-#### 1. Specifying Requirements
-
-Inside browser WebAssembly (Pyodide), packages are downloaded dynamically. You must declare any package requirements by creating a virtual `requirements.txt` file within the code block using the `## file:` header syntax:
+For Python-based Shiny apps, use `{shinylive-python}`. Declare package dependencies in `## file: requirements.txt` and define virtual multi-file apps using `## file:` headers:
 
 ```markdown
 \`\`\`{shinylive-python}
@@ -106,271 +83,263 @@ Inside browser WebAssembly (Pyodide), packages are downloaded dynamically. You m
 pandas
 numpy
 matplotlib
-scipy
+plotnine
 
-# Python code files here (e.g. ## file: app.py)...
+## file: my_module.py
+# custom module logic goes here...
+
+## file: app.py
+from shiny import App, ui
+from my_module import my_module_ui, my_module_server
+
+app_ui = ui.page_fluid(
+    my_module_ui("demo")
+)
+
+def server(input, output, session):
+    my_module_server("demo")
+
+app = App(app_ui, server)
 \`\`\`
 ```
 
-#### 2. Multi-File Apps and Local Packages
-
-You can structure multi-file Python applications using the same `## file:` header comment syntax. For example, if you want to import from a local package folder (like `geyser/hist.py`), define `geyser/__init__.py` and the module files within the code block:
-
-```markdown
-## file: app.py
-from shiny import App, ui
-from geyser.hist import hist_server, hist_input, hist_output, hist_ui
-
-app_ui = ui.page_fluid(
-    hist_input("hist"),
-    hist_output("hist"),
-    hist_ui("hist")
-)
-
-def app_server(input, output, session):
-    hist_server("hist")
-
-app = App(app_ui, app_server)
-
-## file: geyser/__init__.py
-# empty package marker
-
-## file: geyser/hist.py
-# custom module logic goes here...
-```
-
-#### 3. WebAssembly Gotchas (CORS & C-Extensions)
-
-When deploying Python Shinylive apps, be mindful of browser restrictions:
-
-- **CORS Policies**: Standard python code that fetches data from online repositories (e.g. `seaborn.load_dataset("geyser")`) will fail due to browser CORS restriction blocks. Mock the dataset call to return a local static `pandas.DataFrame`.
-- **C-Extensions**: Packages that compile C code locally (such as `rpy2` or custom DB connectors) are not compatible with standard Pyodide in the browser. You must mock those modules or replace them with native Python/browser equivalents.
+> [!NOTE]
+> **WebAssembly Restrictions (CORS & C-Extensions)**:
+> - **CORS Policies**: Fetching live remote data dynamically over `http` in browser Pyodide may fail due to browser CORS blocks. Mock data as static `pandas.DataFrame` or `data.frame`.
+> - **C-Extensions**: Packages compiling custom C libraries locally (e.g., custom DB drivers) cannot run directly inside Pyodide/webR. Use pure Python/R equivalents.
 
 ### 3. Rendering and Local Preview
 
-Modern web browsers block Service Workers and WebAssembly from running over the `file://` protocol. If you open the rendered `.html` page directly as a local file, the app will display as a blank page.
+Service Workers and WebAssembly do not run over local `file://` protocol URLs. To test your gallery locally, serve it using a local HTTP server:
 
-To preview and test the app locally, you must serve the files via a local HTTP server:
-
-- **Quarto Preview (Easiest)**: Run this in your terminal. It will render the page, start a local server, and open your browser:
-
+- **Quarto Preview**:
   ```bash
-  quarto preview docs/demos/build_module.qmd
+  quarto preview demos/index.qmd
   ```
-
-- **Python HTTP Server**: Serve the `docs/` folder from Python:
-
+- **Python HTTP Server**:
   ```bash
-  python3 -m http.server 8000 --directory docs
+  python3 -m http.server 8000
   ```
-
-  Then navigate to `http://localhost:8000/demos/build_module.html`.
-- **R `servr` Package**: Serve from R console:
-
-  ```r
-  servr::httd("docs")
-  ```
-
-### 4. Deploying to GitHub Pages
-
-To avoid committing large generated assets (like the 70MB `site_libs/` folder) to your Git repository, the website compilation and hosting are automated via a GitHub Actions pipeline.
-
-For detailed setup instructions, troubleshooting steps, and custom configurations, see the [Quarto GitHub Actions Deployment Guide](github_actions.md).
-
-> [!IMPORTANT]
-> **GitHub Actions & Python Shinylive**:
-> If your site includes `{shinylive-python}` blocks, the GitHub Actions deployment runner must have Python and the `shinylive` Python package installed to render them. Ensure your `.github/workflows/deploy.yml` includes:
->
-> ```yaml
-> - name: Set up Python
->   uses: actions/setup-python@v5
->   with:
->     python-version: '3.12'
-> - name: Install Python dependencies
->   run: |
->     pip install shinylive
-> ```
->
-> Otherwise, the build will fail with the error: `Error running 'shinylive' command`.
-
-Once set up, your live page will be automatically built and hosted at:
-`https://byandell.github.io/geyser/demos/index.html` (or `demos/build_module.html` for the direct app).
 
 ---
 
-## Organizing & Scaling Future Demos
+### 4. Deploying to GitHub Pages
 
-As your project grows and you add more modules or demo applications, keeping them in a dedicated `docs/demos/` subdirectory scales much better than single files.
+> [!WARNING]
+> **Do NOT use `embed-resources: true` or `self-contained: true`**:
+> Shinylive WebAssembly binaries (`webR`, Pyodide, service workers `shinylive-sw.js`, and `site_libs/shinylive`) **cannot** be base64-embedded into standalone single-file HTML pages. Setting `embed-resources: true` will break Shinylive app execution.
+> Always configure `output-dir: _site` in `_quarto.yml` and let GitHub Actions render and publish `_site/` dynamically.
 
-### 1. The Directory Layout
+#### Standard `.gitignore` Configuration
+Add build artifacts to `.gitignore` to keep your Git repository clean (do NOT commit 70MB `site_libs/` or generated HTML files):
 
-Organize the subdirectory with an index and shared metadata:
-
+```gitignore
+# Quarto output and build folders (built & deployed dynamically by GitHub Actions)
+_site/
+_extensions/
+.quarto/
+/.quarto/
+site_libs/
+index.html
+demos/*.html
+docs/demos/*.html
 ```
-docs/
-└── demos/
-    ├── _metadata.yml          # Shared Quarto settings for the directory
-    ├── index.qmd              # Demos landing/gallery index
-    ├── posit_gallery.qmd      # Individual demo (e.g. iframe embed)
-    ├── build_module.qmd       # Individual demo (e.g. Shinylive app)
-    ├── connect_modules.qmd    # Connected modules demo (multi-file Shinylive)
-    └── python_module.qmd      # Python module demo (Python Shinylive)
-```
 
-### 2. Sharing Configurations via `_metadata.yml`
-
-Instead of repeating the `shinylive` filter and `knitr` engine in every new `.qmd` file, you can create a `_metadata.yml` file in the subdirectory. Quarto automatically applies these settings to all documents in that directory:
+#### Automated GitHub Actions Pipeline (`.github/workflows/deploy.yml`)
+Create `.github/workflows/deploy.yml` to automatically compile the website and publish `_site` to GitHub Pages on every push to `main`:
 
 ```yaml
-# docs/demos/_metadata.yml
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install R package dependencies
+        run: |
+          install.packages(c("rmarkdown", "knitr", "shinylive", "bslib", "shiny", "ggplot2", "dplyr", "rlang"))
+        shell: Rscript {0}
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Install Quarto Shinylive Extension
+        run: |
+          quarto add --no-prompt quarto-ext/shinylive
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install shinylive plotnine plotly pandas numpy shinywidgets
+
+      - name: Render Website
+        run: |
+          quarto render .
+
+      - name: Prevent Jekyll Processing
+        run: |
+          touch _site/.nojekyll
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+---
+
+## Organizing Directory Layout Options
+
+Depending on your preference and GitHub Pages configuration, gallery demos can be organized into top-level `./demos/` or nested `./docs/demos/`.
+
+### Option A: Top-Level Layout (`./demos/`)
+Recommended when building a project website with GitHub Actions rendering from root.
+
+```
+repo_root/
+├── _quarto.yml                # Quarto website settings (output-dir: _site)
+├── index.qmd                  # Root page (includes README.md)
+├── README.md                  # README & demo cards table
+├── .gitignore                 # Ignores _site/, _extensions/, site_libs/
+├── .github/workflows/
+│   └── deploy.yml             # Automated CI/CD deployment
+└── demos/
+    ├── _metadata.yml          # Shared settings (filters: [shinylive])
+    ├── index.qmd              # Demos gallery listing grid (listing: type: grid)
+    ├── r_app.qmd              # R Shinylive app & code tabsets
+    └── python_app.qmd         # Python Shinylive app & code tabsets
+```
+
+- **Relative Paths**: Files inside `./demos/*.qmd` are **1 level deep** relative to root. Use `../` to access root assets (e.g. `image: "../images/preview.png"` or `readLines("../R/my_module.R")`).
+
+---
+
+### Option B: Docs-Level Layout (`./docs/demos/`)
+Recommended when publishing directly from the `/docs` directory branch on GitHub.
+
+```
+repo_root/
+├── _quarto.yml                # Quarto website settings (output-dir: _site or docs)
+├── index.qmd                  # Root page
+├── README.md                  # Landing page content
+└── docs/
+    └── demos/
+        ├── _metadata.yml      # Shared settings (filters: [shinylive])
+        ├── index.qmd          # Demos gallery listing grid
+        ├── r_app.qmd          # R Shinylive app
+        └── python_app.qmd     # Python Shinylive app
+```
+
+- **Relative Paths**: Files inside `./docs/demos/*.qmd` are **2 levels deep** relative to root. Use `../../` to access root assets (e.g. `image: "../../images/preview.png"` or `readLines("../../R/my_module.R")`).
+
+---
+
+### Shared Directory Settings (`_metadata.yml`)
+
+Create `_metadata.yml` in your demos directory (`demos/_metadata.yml` or `docs/demos/_metadata.yml`) so all demo pages inherit the `shinylive` filter:
+
+```yaml
 engine: knitr
 filters:
   - shinylive
 ```
 
-### 3. Automated Listing Galleries (`index.qmd`)
+---
 
-You can use Quarto's built-in **Listings** to automatically build a landing page grid. When you add a new demo `.qmd` file to the folder, Quarto will automatically detect it and render a preview card on the landing page, without requiring you to manually maintain list links.
+### Automated Listing Gallery Grid (`demos/index.qmd`)
 
-Example `docs/demos/index.qmd`:
+Quarto's built-in **Listings** feature automatically constructs gallery cards:
 
 ```yaml
 ---
-title: "Geyser Demos Gallery"
+title: "Demos Gallery"
 toc: false
 listing:
   contents:
-    - build_module.qmd         # List files in the exact order you want them displayed
-    - posit_gallery.qmd
-  type: grid                   # Renders a modern grid layout of card previews
-  categories: true             # Set to true to filter demos by tags (e.g., R, Python)
+    - r_app.qmd
+    - python_app.qmd
+  type: grid
+  categories: true
 ---
 
-Explore the interactive geyser demos below:
+Explore interactive WebAssembly application demos below:
 ```
 
-#### Card Image Placeholders and Customization
+#### Customizing Preview Card Images
 
-By default, the `grid` listing type creates preview cards that expect a thumbnail image. If a page does not specify a thumbnail, Quarto will display a placeholder gray rectangle.
-
-- **Assigning a Card Image**: To show an image on the card, add the `image` parameter to the frontmatter of that specific `.qmd` file, using a relative path to the image:
-
+- **Assigning Card Images**: Add `image` to frontmatter in each demo `.qmd` file:
   ```yaml
   ---
-  title: "Quarto Dashboard"
-  image: "../images/pagesQmd.png"
+  title: "R Scatter App"
+  image: "../images/r_scatter_preview.png"
   ---
   ```
 
-* **Hiding Card Images**: If you do not want to use images, you can customize the card content in `index.qmd` by using the `fields` key and omitting `image`:
-
-  ```yaml
-  listing:
-    type: grid
-    fields: [title, description, author] # Hides the image placeholder
-  ```
-
-* **Card Sizing and Layout**: You can adjust columns (`grid-columns: 3`) and alignment (`grid-item-align: top`) under the `listing` block.
-
-For a full list of card parameters and custom EJS templates, see the official [Quarto Document Listings Guide](https://quarto.org/docs/websites/website-listings.html#grid-layout).
-
-### 4. Adding New Demos
-
-To add a new demo:
-
-1. Create a new `.qmd` file under `docs/demos/` (e.g. `gghist_demo.qmd`).
-2. Add a simple YAML header specifying the title, description, and optional categories:
-
-   ```yaml
-   ---
-   title: "ggplot2 Histogram Demo"
-   description: "Interactive exploration of geyser wait times using ggplot2."
-   categories: [R, ggplot2]
-   ---
-   ```
-
-3. Use relative paths starting with `../../` to refer to root package assets (since files under `docs/demos/` are two levels deep relative to the project root).
-4. Add a navigation link back to the gallery page at the top of your page content:
-
-   ```markdown
-   [← Back to Demos Gallery](index.qmd)
-   ```
-
-5. Update `index.qmd`'s `listing.contents` list if you want to explicitly place it in the display order.
-
-### 5. Handling Native Quarto Dashboards (`server: shiny`)
-
-If you want to demo a native Quarto Dashboard (`format: dashboard`, `server: shiny`), note that it cannot be compiled directly inside a static website project (such as a GitHub Pages site rendered with `quarto render docs/`). Quarto will throw an error:
-`ERROR: demos/quarto.qmd uses server: shiny so cannot be included in a website project (shiny documents require a backend server and so can't be published as static web content).`
-
-To resolve this and showcase a dashboard in your static web gallery:
-
-1. **Deploy the Dashboard Separately**: Deploy your interactive dashboard `.qmd` to a platform that supports a live R backend (such as **Posit Connect**, **shinyapps.io**, or a self-hosted **Shiny Server**).
-2. **Use Iframe Embedding in the Gallery**: Create a standard HTML page under `docs/demos/` (e.g., `docs/demos/quarto.qmd` with `format: html`) and embed the live dashboard URL via an `iframe`.
-3. **Display Source Code Below**: Read and display the source code of the dashboard from its actual location (e.g., `inst/connect_modules/quarto/demo.qmd`) in a panel tabset using `readLines`.
-
-Example `docs/demos/quarto.qmd`:
-
-```markdown
----
-title: "Quarto Dashboard"
-description: "A native Quarto Dashboard layout showing Shiny module connections. Note: Runs via an embedded iframe from Posit Connect."
-toc: false
 ---
 
-[← Back to Demos Gallery](index.qmd)
+## Specific Reference Implementations
 
-This section displays the geyser Quarto Dashboard app hosted on Posit Connect, using an `iframe` embedding.
+Below are concrete repository examples demonstrating these gallery patterns:
 
-<div class="shiny-app-frame" style="margin-bottom: 30px;">
-  <iframe src="https://connect.doit.wisc.edu/geyserQuartoDemo" style="width: 100%; height: 800px; border: 1px solid #ccc; border-radius: 4px;"></iframe>
-</div>
+1. **`byandell/scattyr` (Option A: Top-Level `./demos/` Layout)**:
+   - Root Quarto website with Shinylive R and Python scatter plot modules.
+   - Files: `_quarto.yml`, `demos/index.qmd`, `demos/r_scatter_app.qmd`, `demos/python_scatter_app.qmd`, `.github/workflows/deploy.yml`.
 
-## Source Code
-
-Below you can view the complete source file for the Quarto dashboard.
-
-::: {.panel-tabset}
-
-### demo.qmd
-\`\`\`{r}
-#| code: !expr readLines("../../inst/connect_modules/quarto/demo.qmd")
-#| eval: false
-\`\`\`
-
-:::
-```
-
-1. **Self-Contained Deployment Tip**:
-   When deploying the dashboard to Posit Connect or shinyapps.io, you must either:
-   - Use a `context: setup` block that installs the R package from GitHub (e.g., `pak::pak("byandell/geyser")`).
-   - Or bring in copies of the supporting `.R` module files from the package directory and place them alongside the dashboard file so they are bundled during deployment.
+2. **`byandell/geyser` (Option B: Docs-Level `./docs/demos/` Layout)**:
+   - Quarto website gallery for Old Faithful Geyser R and Python modules.
+   - Files: `_quarto.yml`, `docs/demos/index.qmd`, `docs/demos/build_module.qmd`, `docs/demos/python_module.qmd`, `.github/workflows/deploy.yml`.
 
 ---
 
-## Method 2: Shiny Showcase Mode (Built-in R Shiny)
+## Method 2: Shiny Showcase Mode (Local R Console Development)
 
-If you are developing or running the app locally, R's built-in **Showcase Mode** is the easiest option. It puts the app in a frame, shows the code next to/below the app, and highlights reactive execution in real-time.
-
-### Running Showcase Mode
-
-To launch the app in showcase mode from your R console:
+For local R console debugging, Shiny's built-in **Showcase Mode** highlights reactive execution in real-time alongside your code:
 
 ```r
-shiny::runApp("inst/build_module/4_moduleServer", display.mode = "showcase")
+shiny::runApp("inst/app_folder", display.mode = "showcase")
 ```
 
-### Adding Metadata & Documentation
-
-To configure the showcase:
-
-1. Add a `DESCRIPTION` file to the app folder:
-
-   ```dcf
-   Title: Geyser Module Server App
-   Author: Brian S. Yandell
-   Description: Old Faithful geyser dataset module server demo.
-   DisplayMode: Showcase
-   ```
-
-2. Add a `README.md` to the app folder. Shiny will automatically render this markdown file directly below the code panel.
+Add a `DESCRIPTION` file to the app directory:
+```dcf
+Title: Module Demo App
+Author: Developer
+Description: Interactive Shiny module demo.
+DisplayMode: Showcase
+```
