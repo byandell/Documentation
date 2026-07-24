@@ -314,6 +314,19 @@ Explore interactive WebAssembly application demos below:
   ---
   ```
 
+- **Preventing Image Cropping (Different Shapes & Sizes)**: By default, Quarto grid cards apply `object-fit: cover` to thumbnail images, cropping images of varying aspect ratios. To display card images fully without cropping:
+  1. Specify `image-height` in your `listing:` configuration in `index.qmd` (e.g. `image-height: 180px`).
+  2. Add `object-fit: contain !important;` in a custom CSS stylesheet (e.g. `styles.css` linked in `_quarto.yml` under `format: html: css: styles.css`):
+     ```css
+     .quarto-grid-item .card-img-top img,
+     .quarto-grid-item .card-img-top,
+     .quarto-grid-item .card-img,
+     .quarto-grid-item .thumbnail-image {
+       object-fit: contain !important;
+       background-color: #f8f9fa;
+     }
+     ```
+
 ---
 
 ## Specific Reference Implementations
