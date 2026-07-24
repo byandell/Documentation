@@ -273,10 +273,12 @@ repo_root/
 
 ### Shared Directory Settings (`_metadata.yml`)
 
-Create `_metadata.yml` in your demos directory (`demos/_metadata.yml` or `docs/demos/_metadata.yml`) so all demo pages inherit the `shinylive` filter:
+Create `_metadata.yml` in your demos directory (`demos/_metadata.yml` or `docs/demos/_metadata.yml`) so all demo pages inherit wide display settings and the `shinylive` filter:
 
 ```yaml
 engine: knitr
+toc: false
+page-layout: full
 filters:
   - shinylive
 ```
