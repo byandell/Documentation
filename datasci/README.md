@@ -49,6 +49,7 @@ I feel honored to be engaged in some of these conversations.
 - [Open Data & Open Science](#open-data--open-science)
 - Additional Pages
   - [Significance and Importance](signif.md)
+    - [Scatter Plots to Relate Measurements](signif.md#scatter-plots-to-relate-measurements)
   - [Data Repositories](repositories.md)
   - [Big Data](bigdata.md)
 
@@ -88,9 +89,6 @@ Cumulative measures are much better behaved for a variety of reasons.
   - [Curate R Data](/R/curate/)
   - [Visualize Data with R](/R/visualize/)
   - [Analyze Data with R](/R/analyze/)
-- Scatterplot Examples
-  - [SD Rain & Drought Analysis](https://byandell.github.io/rainDrought/)
-  - [Scatter Plots in Python with ggplot](https://byandell-envsys.github.io/landmapyr/climate.html#scatter-plots-with-ggplot)
 
 ## Data Sovereignty
 

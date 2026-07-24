@@ -39,6 +39,10 @@ relationships that are practically meaningless.
 - [Spurious Association](#spurious-association)
 - [Multiple Testing](#multiple-testing)
 - [`p`-hacking and Data Dredging](#p-hacking-and-data-dredging)
+- Additional Pages
+  - [scattyr](https://byandell.github.io/scattyr/) (Scatter Plots in R and Python)
+  - [rainDrought](https://byandell.github.io/rainDrought/) (Scatter Plots of Cumulative Rain and Drought)
+  - [climate](https://byandell-envsys.github.io/landmapyr/climate.html#scatter-plots-with-ggplot) (Scatter Plots for Habitat Suitability Modeling)
 
 ## Measures over Time and Space
 
@@ -106,6 +110,13 @@ I think it is much better to show data explicitly (and do it early in a report) 
 I also do not think correlation works well when considering processes over time and space,
 where there is substantial auto-correlation built in and variability due to the scale of measures.
 Cumulative measures are much better behaved for a variety of reasons.
+
+The repo
+[scattyr](https://byandell.github.io/scattyr/)
+shows (with toy data) a way to create scatter plots in both
+[R](https://byandell.github.io/scattyr/demos/r_scatter_app.html)
+and
+[Python](https://byandell.github.io/scattyr/demos/python_scatter_app.html).
 
 I have another example using `plotnine` in the section
 [Scatter Plots with GGplot](https://byandell-envsys.github.io/landmapyr/climate.html#scatter-plots-with-ggplot)
