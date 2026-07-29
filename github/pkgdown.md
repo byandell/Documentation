@@ -104,6 +104,45 @@ To connect `pkgdown` and Quarto Shinylive galleries seamlessly:
            text: App 1
    ```
 
+### C. Mermaid Diagram Rendering in Vignettes & Articles
+
+`pkgdown` compiles ````mermaid` code blocks in `.Rmd` vignettes into `<pre class="mermaid"><code>...</code></pre>`. Because `pkgdown` does not natively load Mermaid.js, browser visitors will see plain text code blocks unless the library is explicitly injected into the HTML template.
+
+To enable automatic Mermaid rendering across all articles, add `in_header` script and CSS overrides to `_pkgdown.yml`:
+
+```yaml
+template:
+  bootstrap: 5
+  includes:
+    in_header: |
+      <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+      <style>
+        pre.mermaid {
+          background: transparent !important;
+          border: none !important;
+          box-shadow: none !important;
+          text-align: center;
+        }
+      </style>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          mermaid.initialize({ startOnLoad: true });
+        });
+      </script>
+```
+
+#### Usage in R Markdown Vignettes (`vignettes/*.Rmd`)
+
+Once configured in `_pkgdown.yml`, write standard `mermaid` code blocks directly in `.Rmd` files:
+
+```markdown
+```mermaid
+graph TD
+    A[Input Parameters] --> B[Simulation Engine]
+    B --> C[Spatial Output Map]
+```
+```
+
 ---
 
 ## GitHub Actions & Deployment Walkthrough
@@ -153,6 +192,10 @@ When grouping vignettes in subdirectories (e.g. `vignettes/devel_guide/`) under 
 ### Relative Links Between Vignettes
 
 In source `.Rmd` or `.qmd` files within subdirectories, format relative links to point to final `.html` destinations (e.g. `[Architecture](./architecture.html)`), not `.Rmd` or `.md`.
+
+### Mermaid Diagrams Not Displaying in `vignettes/`
+
+Because `pkgdown` builds static HTML into `docs/` and disables Jekyll (`touch docs/.nojekyll`), Jekyll `_config.yml` settings (such as `mermaid: version: "..."`) have **no effect**. Mermaid JS must be loaded via `template: includes: in_header:` in `_pkgdown.yml`.
 
 ---
 

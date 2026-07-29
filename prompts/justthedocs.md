@@ -15,7 +15,7 @@ Set up a standard Jekyll repository and apply the following configuration to ena
 theme, customize navigation hierarchy, and configure site metadata.
 
 **Prompt**:
-"Follow [Configure Just-the-Docs](justthedocs.md) to set up and configure the `just-the-docs` remote theme, establish a site-wide navigation structure, and enable page names in browser tabs."
+"Follow [Configure Just-the-Docs](justthedocs.md) to set up and configure the `just-the-docs` remote theme, establish a site-wide navigation structure, enable page names in browser tabs, and enable Mermaid diagram rendering."
 
 ---
 
@@ -36,6 +36,10 @@ baseurl: "/Documentation"
 
 # Theme setup
 remote_theme: just-the-docs/just-the-docs
+
+# Enable Mermaid diagram support
+mermaid:
+  version: "10.9.1"
 
 # Plugins for remote theme and relative links
 plugins:
@@ -118,3 +122,22 @@ To display tab titles in the browser as `Page Title | Site Title` (e.g. `Configu
 3. The `jekyll-seo-tag` plugin (which is loaded automatically by the
 [just-the-docs](https://just-the-docs.com/)
 theme through its `{% seo %}` block in `_includes/head.html`).
+
+### 4. Enabling Mermaid Diagrams
+
+To render interactive Mermaid diagrams (flowcharts, sequence diagrams, architecture trees) in Markdown, enable Mermaid in `_config.yml`:
+
+```yaml
+mermaid:
+  version: "10.9.1"
+```
+
+Once enabled, standard Markdown ` ```mermaid ` code blocks render automatically as responsive SVG diagrams:
+
+```mermaid
+graph TD
+    A[Markdown File] --> B[Jekyll / Just-the-Docs]
+    B --> C[Mermaid JS Engine]
+    C --> D[SVG Diagram Output]
+```
+
