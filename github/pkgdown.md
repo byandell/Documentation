@@ -80,6 +80,12 @@ shinylive_helpers.R script to bundle only the
 needed routines, such as is done with the
 [Shinylive Demos Guide for ewing Package](https://github.com/byandell/ewing/blob/master/inst/doc/demo_guide.md).
 
+On a broken page, it is possible to check the DevTools Console: Press `F12` (or `Cmd + Option + I`) in your browser and check the **Console** tab:
+
+* Look for red errors like `SharedArrayBuffer is not defined` (signals missing cross-origin isolation).
+* Look for `Uncaught (in promise)` or missing package binaries.
+
+
 ### B. Navigation & Cross-Site Link Integration
 
 To connect `pkgdown` and Quarto Shinylive galleries seamlessly:
