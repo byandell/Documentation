@@ -68,9 +68,17 @@ library(myPackage)
 
 myAppLauncher()
 ```
+
 ```
 
 This 5-line standard architecture enables `webR` to load the installed package namespace directly, ensuring 100% parity with package code without requiring build-time string splicing or file duplication.
+
+Unfortunately, if the `repository` is large or has
+multiple dependencies, this approach will be too
+burdensome. An alternative is to use some type of
+shinylive_helpers.R script to bundle only the
+needed routines, such as is done with the
+[Shinylive Demos Guide for ewing Package](https://github.com/byandell/ewing/blob/master/inst/doc/demo_guide.md).
 
 ### B. Navigation & Cross-Site Link Integration
 
@@ -90,7 +98,7 @@ To connect `pkgdown` and Quarto Shinylive galleries seamlessly:
          href: demos/index.html
    ```
 
-2. **Demos Site Return Navigation (`demos/_quarto.yml`)**:
+1. **Demos Site Return Navigation (`demos/_quarto.yml`)**:
    Point the **Home** link in Quarto's navbar back to `../index.html`:
 
    ```yaml
@@ -106,7 +114,7 @@ To connect `pkgdown` and Quarto Shinylive galleries seamlessly:
 
 ### C. Mermaid Diagram Rendering in Vignettes & Articles
 
-`pkgdown` compiles ````mermaid` code blocks in `.Rmd` vignettes into `<pre class="mermaid"><code>...</code></pre>`. Because `pkgdown` does not natively load Mermaid.js, browser visitors will see plain text code blocks unless the library is explicitly injected into the HTML template.
+`pkgdown` compiles ````mermaid` code blocks in `.Rmd` vignettes into `<pre class="mermaid"><code>...</code></pre>`. Because`pkgdown` does not natively load Mermaid.js, browser visitors will see plain text code blocks unless the library is explicitly injected into the HTML template.
 
 To enable automatic Mermaid rendering across all articles, add `in_header` script and CSS overrides to `_pkgdown.yml`:
 
@@ -141,6 +149,7 @@ graph TD
     A[Input Parameters] --> B[Simulation Engine]
     B --> C[Spatial Output Map]
 ```
+
 ```
 
 ---
@@ -159,6 +168,7 @@ Key setup tasks include:
    ^docs$
    ^vignettes/devel_guide$
    ```
+
    *Note*: Anchoring patterns with `^` and `$` is critical to prevent `R CMD check` from accidentally ignoring internal package paths (such as `inst/doc/`).
 3. **Updated `.gitignore`**: Added `docs` to keep local compiled HTML assets out of Git commits.
 4. **Created `.github/workflows/pkgdown.yaml`**: Set up automated `pkgdown` + `quarto render demos` deployment pipeline.
@@ -174,14 +184,17 @@ Key setup tasks include:
 When grouping vignettes in subdirectories (e.g. `vignettes/devel_guide/`) under `contents:` in `_pkgdown.yml`, **paths must be enclosed in quotes**:
 
 - **Incorrect**:
+
   ```yaml
   articles:
     - title: "Developer Documentation"
       contents:
         - devel_guide/index
   ```
+
   *Error*: `! could not find function "/"` (YAML evaluates unquoted slashes as division).
 - **Correct**:
+
   ```yaml
   articles:
     - title: "Developer Documentation"
