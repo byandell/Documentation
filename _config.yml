@@ -20,6 +20,9 @@ include:
 
 remote_theme: just-the-docs/just-the-docs
 
+mermaid:
+  version: "10.9.1"
+
 exclude:
   - "**/*.qmd"
   - "site_libs/*"
