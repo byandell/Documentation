@@ -5,110 +5,174 @@ parent: "Publish GitHub Pages"
 
 # Use `pkgdown` to Auto-Build GitHub Website
 
-## Prompt
+`pkgdown` is an R package designed to automatically generate a complete, searchable documentation website for R packages.
 
-- Modify repo so that `docs/` can be used for GitHub Pages.
-
-## What is `pkgdown`?
-
-[pkgdown](https://pkgdown.r-lib.org/)
-is an R package designed to automatically generate a complete, modern, and searchable documentation website for your R package.
-
-Specifically, it takes your package's existing files and compiles them into a static HTML site within the `docs/` folder, featuring:
-
-1. **Homepage**: Rendered directly from your root `README.md` (including badges, installation instructions, description, etc.).
-2. **Function Reference**: Formats all your package's documentation (`.Rd` files in the `man/` directory, typically written using `roxygen2`) into beautiful, easy-to-read pages with syntax highlighting for your code examples.
-3. **Articles & Vignettes**: Compiles your R Markdown and Markdown files in the `vignettes/` directory into hosted articles (like your `UserGuide.Rmd` and `DeveloperGuide.Rmd`).
-4. **News**: Parses your `NEWS.md` file (if available) to show a chronological changelog of release notes.
-
-By outputting this compiled website directly to `docs/` and committing it, **GitHub Pages** can host and serve the site automatically to the web (e.g., `https://byandell-sysgen.github.io/qtl2shiny/`).
-
-## Walkthrough
-
-We have successfully configured the repository to automatically build and deploy a `pkgdown` website on every push to the `main` or `master` branches using GitHub Actions, while keeping the repository clean of auto-generated HTML/JS/CSS assets.
-
-### Configuration
-
-1. **Created `_pkgdown.yml`**: Added standard website structure, Bootstrap 5 templates, custom navigation dropdown menus under the "Guides" section, and mapped custom articles for the user and developer documentation.
-2. **Updated `.Rbuildignore`**: Configured anchored regex patterns (`^_pkgdown\.yml$`, `^\.github$`, `^docs$`, and `^vignettes/devel_guide$`) to ignore the `_pkgdown.yml` configuration, `.github/` folder, local `docs/` folder, and the source `vignettes/devel_guide/` files from the R package bundle. Anchoring patterns (e.g., using `^` and `$`) is critical to prevent R from accidentally ignoring unrelated directories (such as `inst/doc/`).
-3. **Updated `.gitignore`**: Added `docs` to ignore the local compiled website output directory, keeping the repository git history clean.
-4. **Created `.github/workflows/pkgdown.yaml`**: Set up the official `pkgdown` GitHub Action workflow to build the website and deploy it to the `gh-pages` branch on every push.
-5. **Configured `Remotes` in `DESCRIPTION`**: Added a `Remotes:` block to identify non-CRAN packages (`downr`, `intermediate`, `qtl2mediate`, `qtl2ggplot`, `qtl2pattern`) on GitHub so they are successfully resolved and installed in the GitHub Actions runner.
-
-### Documentation Files
-
-1. **Relocated Developer Guides**: Relocated files from the `docs/devel_guide/` directory to the `vignettes/devel_guide/` directory to prevent them from being deleted during site builds.
-2. **Converted `.md` to `.Rmd`**: Renamed developer guide files in `vignettes/devel_guide/` from `.md` to `.Rmd` and injected standard package vignette YAML headers. This enables `pkgdown` to automatically recognize and build them as articles.
-3. **Adjusted Links**:
-   - Updated the relative links in `vignettes/devel_guide/index.Rmd` (formerly `README.md`) to point to `.html` destinations.
-   - Updated the link in root `README.md` to point to the rendered `articles/devel_guide/index.html` file.
-   - Removed the duplicate `docs/README.md`.
-
-### Bug Fixes
-
-- Fixed a bug in `inst/scripts/qtl2dag.Rmd` where it referred to `netModule` (which was not defined) instead of `net_server` in an `igraph` plot call. This was causing `vignettes/DeveloperGuide.Rmd` to fail rendering.
+When combined with Quarto WebAssembly Shinylive applications (e.g. in `demos/`), `pkgdown` serves as the primary portal for package reference, vignettes, and interactive demonstration applications.
 
 ---
 
-## Verification Results
+## Directory & Repository Layout
 
-### Automated and Manual Site Build
+In a dual `pkgdown` + Quarto Shinylive package repository, source files and build outputs are organized as follows:
 
-- Ran `Rscript -e "pkgdown::build_site()"` which built the documentation website successfully.
-- Verified that all article pages, reference manual pages, and homepage index files were successfully created inside `docs/` and `docs/articles/devel_guide/`.
-- Verified that relative links between the modules under `docs/articles/devel_guide/` resolve correctly.
-
-### Package Build Check
-
-- Ran `R CMD build . --no-build-vignettes` which completed successfully and correctly excluded the `docs/` folder and `vignettes/devel_guide/` folder from the built package tarball.
+```
+my-r-package/
+├── _pkgdown.yml              # Main pkgdown navbar & article configuration
+├── DESCRIPTION               # R package metadata & dependencies
+├── .Rbuildignore             # Anchored exclusions for pkgdown & CI/CD files
+├── .gitignore                # Untracked build directories (docs/)
+├── R/                        # R package source code
+├── vignettes/                # R Markdown & Quarto articles/vignettes
+├── demos/                    # Quarto Shinylive source project directory
+│   ├── _quarto.yml           # Quarto website config (output-dir: ../docs/demos)
+│   └── *.qmd                 # Interactive WebAssembly Shinylive apps
+└── docs/                     # Compiled static output directory (deployed to gh-pages)
+    ├── .nojekyll             # Disables GitHub Pages Jekyll processing
+    ├── index.html            # Main pkgdown homepage
+    ├── reference/            # Function reference pages
+    ├── articles/             # Rendered vignettes
+    └── demos/                # Compiled Quarto Shinylive gallery
+        ├── index.html        # Demos gallery landing page
+        ├── site_libs/        # Shinylive & WebAssembly JS/CSS assets
+        └── *.html            # Compiled app pages
+```
 
 ---
 
-## GitHub Settings Configuration
+## What `pkgdown` Generates
 
-To finalize the automated `pkgdown` deployment on GitHub:
+`pkgdown` compiles source files into `docs/` containing:
 
-1. **Push the Changes**: Commit and push the `.github/workflows/pkgdown.yaml` and other configurations to your main branch (`main` or `master`). This will run the action and automatically create the `gh-pages` branch.
-2. **Configure GitHub Pages**:
-   - Go to **Settings → Pages** in your repository.
-   - Under **Build and deployment → Source**, select **Deploy from a branch**.
-   - Under **Branch**, select **`gh-pages`** and set the folder to **`/ (root)`**.
-   - Click **Save**.
-3. **Allow Write Permissions** (If deployment fails):
-   - Go to **Settings → Actions → General**.
-   - Scroll down to **Workflow permissions** and select **Read and write permissions**.
-   - Click **Save**.
+1. **Homepage**: Rendered directly from your root `README.md`.
+2. **Function Reference**: Formats `.Rd` files (generated from `roxygen2` comments) into readable reference pages with syntax highlighting.
+3. **Articles & Vignettes**: Compiles R Markdown (`.Rmd`) and Quarto (`.qmd`) files in `vignettes/` into hosted articles.
+4. **News**: Parses `NEWS.md` to present a chronological changelog.
+5. **Interactive Demos (Optional)**: Integrates custom Quarto Shinylive apps rendered into `docs/demos/`.
+
+---
+
+## Engineering Design Patterns for Interactive Demos
+
+### A. WebAssembly Package Installation (`webr::install`)
+
+To eliminate code and data duplication between R package source files (`R/`, `data/`) and browser-side Shinylive applications, use `webr::install()` inside `{shinylive-r}` code blocks:
+
+```r
+```{shinylive-r}
+#| standalone: true
+#| viewerHeight: 800
+#| components: [viewer]
+
+webr::install("username/repository")
+library(myPackage)
+
+myAppLauncher()
+```
+```
+
+This 5-line standard architecture enables `webR` to load the installed package namespace directly, ensuring 100% parity with package code without requiring build-time string splicing or file duplication.
+
+### B. Navigation & Cross-Site Link Integration
+
+To connect `pkgdown` and Quarto Shinylive galleries seamlessly:
+
+1. **Main Site Navbar (`_pkgdown.yml`)**:
+   Add a top-level **Demos** tab in your main package navbar:
+
+   ```yaml
+   navbar:
+     structure:
+       left: [intro, reference, demos, articles, news]
+       right: [search, github]
+     components:
+       demos:
+         text: Demos
+         href: demos/index.html
+   ```
+
+2. **Demos Site Return Navigation (`demos/_quarto.yml`)**:
+   Point the **Home** link in Quarto's navbar back to `../index.html`:
+
+   ```yaml
+   website:
+     title: "Package Demos"
+     navbar:
+       left:
+         - href: ../index.html
+           text: Home
+         - href: app1.qmd
+           text: App 1
+   ```
+
+---
+
+## GitHub Actions & Deployment Walkthrough
+
+Detailed deployment workflow step-by-step instructions are documented in [Deploy with GitHub Actions](actions.md).
+
+Key setup tasks include:
+
+1. **Created `_pkgdown.yml`**: Configured Bootstrap 5 styling, custom navbar, and article grouping.
+2. **Updated `.Rbuildignore`**: Added anchored regex patterns to ignore config files from package builds:
+   ```regex
+   ^_pkgdown\.yml$
+   ^\.github$
+   ^docs$
+   ^vignettes/devel_guide$
+   ```
+   *Note*: Anchoring patterns with `^` and `$` is critical to prevent `R CMD check` from accidentally ignoring internal package paths (such as `inst/doc/`).
+3. **Updated `.gitignore`**: Added `docs` to keep local compiled HTML assets out of Git commits.
+4. **Created `.github/workflows/pkgdown.yaml`**: Set up automated `pkgdown` + `quarto render demos` deployment pipeline.
+5. **Configured `Remotes` in `DESCRIPTION`**: Specified non-CRAN GitHub dependencies so CI runners can resolve and install them automatically.
+6. **Disabled Jekyll (`.nojekyll`)**: Included `touch docs/.nojekyll` step in CI pipeline to prevent GitHub Pages from ignoring directories with leading underscores (like `_quarto.yml`, `_extensions/`, `site_libs/`) and causing 404 errors.
 
 ---
 
 ## Gotchas & Troubleshooting
 
-### Subdirectory Articles in `_pkgdown.yml`
+### Subdirectory Articles in `_pkgdown.yml` Must Be Quoted
 
-When grouping vignettes located in subdirectories (such as `vignettes/devel_guide/`) under the `contents:` field in `_pkgdown.yml`, you **must quote the paths**.
+When grouping vignettes in subdirectories (e.g. `vignettes/devel_guide/`) under `contents:` in `_pkgdown.yml`, **paths must be enclosed in quotes**:
 
 - **Incorrect**:
-
   ```yaml
   articles:
     - title: "Developer Documentation"
       contents:
         - devel_guide/index
-        - devel_guide/hotspot
   ```
-
-  This causes `pkgdown` to evaluate the entry as code, interpreting the slash `/` as division or a function call, which results in the build error:
-  `! could not find function "/"`
+  *Error*: `! could not find function "/"` (YAML evaluates unquoted slashes as division).
 - **Correct**:
-
   ```yaml
   articles:
     - title: "Developer Documentation"
       contents:
         - "devel_guide/index"
-        - "devel_guide/hotspot"
   ```
 
 ### Relative Links Between Vignettes
 
-When linking between vignettes within a subdirectory, make sure relative links in the source `.Rmd` files point to the final `.html` output files (e.g., `[Architecture](./architecture.html)`) rather than `.Rmd` or `.md`. While R Markdown might render these locally as links to `.Rmd`, `pkgdown` compiles all of them to flat HTML pages where they must resolve to `.html` to navigate correctly.
+In source `.Rmd` or `.qmd` files within subdirectories, format relative links to point to final `.html` destinations (e.g. `[Architecture](./architecture.html)`), not `.Rmd` or `.md`.
+
+---
+
+## Local Build & Verification Command
+
+Run the complete local build sequence from R and shell:
+
+```bash
+# 1. Build pkgdown documentation site
+Rscript -e "pkgdown::build_site_github_pages(new_process = FALSE, install = FALSE)"
+
+# 2. Render Quarto Shinylive demos (if applicable)
+mkdir -p docs/demos
+cd demos && quarto render && cd ..
+
+# 3. Disable Jekyll
+touch docs/.nojekyll
+
+# 4. Preview locally over HTTP
+python3 -m http.server 8000 --directory docs
+```
+
+Navigate to `http://localhost:8000/` to test site navigation and Shinylive apps.
