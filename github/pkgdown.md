@@ -146,6 +146,12 @@ template:
       </style>
       <script>
         document.addEventListener("DOMContentLoaded", function() {
+          document.querySelectorAll("pre.mermaid").forEach(function(el) {
+            var code = el.querySelector("code");
+            if (code) {
+              el.textContent = code.textContent;
+            }
+          });
           mermaid.initialize({ startOnLoad: true });
         });
       </script>
