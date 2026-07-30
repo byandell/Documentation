@@ -38,7 +38,7 @@ Based on prompt and plan to
 | Folder | File | Unique Broken Links | Total Unique Links | % Broken |
 | :--- | :--- | :---: | :---: | :---: |
 | `(root)/` | [README.md](../README.md) | 2 | 38 | 5.3% |
-| `(root)/` | [ShinyApps.md](../ShinyApps.md) | 103 | 152 | 67.8% |
+| `shiny/` | [README.md](../shiny/README.md) | 103 | 152 | 67.8% |
 | `(root)/` | [link_check_report.md](../link_check_report.md) | 2 | 556 | 0.4% |
 | `AI/` | [LLM.md](../AI/LLM.md) | 1 | 24 | 4.2% |
 | `AI/` | [README.md](../AI/README.md) | 9 | 49 | 18.4% |

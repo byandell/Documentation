@@ -30,7 +30,7 @@ rendered as GitHub Pages using the `just-the-docs` theme configured in
 | `datasci/` | Data science topics |
 | `images/` | Images used across pages |
 | `AI_prompts.md` | Detailed AI prompt examples (actively edited) |
-| `ShinyApps.md` | Notes on Shiny app development |
+| `shiny/` | Notes on Shiny app development |
 | `README.md` | Top-level site index / landing page |
 
 ## Key Files

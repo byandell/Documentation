@@ -9,7 +9,7 @@ Personal documentation site for Brian Yandell (`byandell`): [byandell.github.io/
 
 ## Structure
 
-- `R/`, `python/`, `github/`, `envsys/`, `AI/`, `prompts/`, `quarto/`, `datasci/`, `images/`
+- `R/`, `python/`, `github/`, `envsys/`, `shiny/`, `AI/`, `prompts/`, `quarto/`, `datasci/`, `images/`
 - `README.md` (Main site index; sync with `_quarto.yml`)
 - `AI_prompts.md` (AI prompts index; update when adding new ones)
 - `prompts/` (Saved prompts, e.g., `file_versions.md`)

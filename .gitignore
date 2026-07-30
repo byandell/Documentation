@@ -10,7 +10,9 @@
 *_files/
 *_cache/
 
-# *.html
+# Generated HTML files
+R/**/*.html
+python/**/*.html
 *.pptx
 
 /.quarto/

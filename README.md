@@ -13,7 +13,7 @@ permalink: /
 - [GitHub](./github/) ([slides](./quarto/github.html))
   - [Guides](guides.md)
 - [Environmental Systems](./envsys/) ([slides](./quarto/envsys.html))
-- [Shiny Apps](./ShinyApps.md) ([slides](./quarto/ShinyApps.html))
+- [Shiny Apps](./shiny/) ([slides](./quarto/ShinyApps.html))
 - [AI (Artificial Intelligence)](./AI/) ([slides](./quarto/AI.html))
   - [Prompt Examples](./prompts/) ([slides](./quarto/prompts.html))
 - [Quarto Slides & References](./quarto/)
@@ -132,7 +132,7 @@ attended the
 [rstudio::conf(2017)](https://global.rstudio.com/resources/rstudioconf-2017/)
 ([slides](https://github.com/rstudio/rstudio-conf/tree/main/2017)).
 Notes on my shiny apps are in
-[Shiny Apps](./ShinyApps.md).
+[Shiny Apps](./shiny/).
 I created the
 [geyser](https://github.com/byandell/geyser) repository
 to help me consolidate my understanding of `Shiny` with concrete examples in `R` and `Python`.
