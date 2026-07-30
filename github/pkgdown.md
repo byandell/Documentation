@@ -9,6 +9,12 @@ parent: "Publish GitHub Pages"
 
 When combined with Quarto WebAssembly Shinylive applications (e.g. in `demos/`), `pkgdown` serves as the primary portal for package reference, vignettes, and interactive demonstration applications.
 
+- [Directory & Repository Layout](#directory--repository-layout)
+- [What pkgdown Generates](#what-pkgdown-generates)
+- [Engineering Design Patterns for Interactive Demos](#engineering-design-patterns-for-interactive-demos)
+- [GitHub Actions & Deployment](#github-actions--deployment)
+- [Gotchas & Troubleshooting](#gotchas--troubleshooting)
+
 ---
 
 ## Directory & Repository Layout
@@ -149,25 +155,22 @@ template:
 
 Once configured in `_pkgdown.yml`, write standard `mermaid` code blocks directly in `.Rmd` files:
 
-```markdown
 ```mermaid
 graph TD
     A[Input Parameters] --> B[Simulation Engine]
     B --> C[Spatial Output Map]
 ```
 
-```
+## GitHub Actions & Deployment
 
----
+Detailed deployment workflow step-by-step instructions are documented in
+[Deploy with GitHub Actions](actions.md).
 
-## GitHub Actions & Deployment Walkthrough
-
-Detailed deployment workflow step-by-step instructions are documented in [Deploy with GitHub Actions](actions.md).
-
-Key setup tasks include:
+Key setup tasks for `pgkdown` include:
 
 1. **Created `_pkgdown.yml`**: Configured Bootstrap 5 styling, custom navbar, and article grouping.
 2. **Updated `.Rbuildignore`**: Added anchored regex patterns to ignore config files from package builds:
+
    ```regex
    ^_pkgdown\.yml$
    ^\.github$
@@ -181,7 +184,54 @@ Key setup tasks include:
 5. **Configured `Remotes` in `DESCRIPTION`**: Specified non-CRAN GitHub dependencies so CI runners can resolve and install them automatically.
 6. **Disabled Jekyll (`.nojekyll`)**: Included `touch docs/.nojekyll` step in CI pipeline to prevent GitHub Pages from ignoring directories with leading underscores (like `_quarto.yml`, `_extensions/`, `site_libs/`) and causing 404 errors.
 
+### Comparison Table
+
+Here is a side-by-side comparison of the two GitHub Pages deployment approaches for R packages (`pkgdown`):
+
+| Feature / Metric | Approach 1: `docs/` folder on `main` branch | Approach 2: `/` (root) on `gh-pages` branch via GitHub Actions |
+| --- | --- | --- |
+| **Site Generation** | **Manual / Local**: You run `pkgdown::build_site()` on your computer | **Automated (CI/CD)**: GitHub Actions builds the site in the cloud on `git push` |
+| **Git Commit Noise** | **High**: Every site build adds hundreds/thousands of HTML, CSS, JS lines to `main` history | **Zero on `main`**: Source branch remains clean; generated site sits on dedicated `gh-pages` branch |
+| **`.gitignore` Setup** | `docs/` must **NOT** be in `.gitignore` | `docs/` **IS** added to `.gitignore` |
+| **Risk of Stale Docs** | **Higher**: If you forget to run `pkgdown::build_site()` before pushing, website falls behind | **Zero**: Website automatically updates on every commit pushed to `main` |
+| **GitHub Pages Setting** | Source: `main` branch $\rightarrow$ `/docs` directory | Source: `gh-pages` branch $\rightarrow$ `/ (root)` directory |
+| **Ecosystem Standard** | Legacy / simple setup | Standard pattern used by `r-lib/actions` & `foundrHarmony` |
+
 ---
+
+### Detailed Breakdown
+
+#### Approach 1: `docs/` on `main` Branch (Local Build)
+
+- **Workflow**:
+  1. You edit code/vignettes locally.
+  2. You run `pkgdown::build_site()` locally to produce HTML files in `docs/`.
+  3. You run `git add docs/`, `git commit`, and `git push origin main`.
+  4. GitHub Pages serves static files directly from `main` $\rightarrow$ `/docs`.
+
+- **When to use**: Good for quick one-off projects or repositories where GitHub Actions CI/CD workflows are disabled.
+
+- **Drawbacks**:
+  - Inflates your git history with generated HTML/CSS binaries.
+  - Large diffs during code reviews (harder to see actual R code changes among generated HTML changes).
+  - Risk of human error (forgetting to rebuild `docs/` before pushing).
+
+---
+
+#### Approach 2: `gh-pages` Branch via GitHub Actions (Automated CI/CD)
+
+- **Workflow**:
+  1. You edit R code/vignettes locally.
+  2. You commit and push *only* your source code (`R/`, `vignettes/`, `DESCRIPTION`) to `main`.
+  3. GitHub Actions triggers automatically, builds the site in a cloud container, and pushes the output HTML to a separate `gh-pages` branch.
+  4. GitHub Pages serves the website from `gh-pages` $\rightarrow$ `/ (root)`.
+
+- **When to use**: Ideal for active R package development (and matches the setup in `foundrHarmony`).
+
+- **Advantages**:
+  - Keeps your `main` branch clean and lightweight.
+  - Eliminates git merge conflicts in documentation files.
+  - Guarantees website synchronization with your source code.
 
 ## Gotchas & Troubleshooting
 
