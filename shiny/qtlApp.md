@@ -1,7 +1,5 @@
 ---
-title: "qtlApp"
-parent: "Shiny Apps"
-nav_order: 1
+nav_exclude: true
 ---
 
 # qtlApp: modular QTL visualization app
