@@ -2,6 +2,7 @@
 title: "AI (Artificial Intelligence)"
 parent: "Document Digital Tools"
 nav_order: 6
+has_children: true
 permalink: /AI/
 ---
 

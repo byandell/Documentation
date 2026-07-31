@@ -1,7 +1,7 @@
 ---
-title: "Quarto Slides & References"
+title: "Quarto"
 parent: "Document Digital Tools"
-nav_order: 7
+has_children: true
 permalink: /quarto/
 ---
 

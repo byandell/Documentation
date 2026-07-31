@@ -1,7 +1,7 @@
 ---
 title: "qtl2shiny"
 parent: "Shiny Apps"
-nav_order: 4
+nav_order: 3
 ---
 
 # qtl2shiny: localized QTL analysis and visualization

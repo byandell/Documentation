@@ -1,7 +1,7 @@
 ---
 title: "geyser"
 parent: "Shiny Apps"
-nav_order: 2
+nav_order: 1
 ---
 
 # geyser: modular concepts and construction

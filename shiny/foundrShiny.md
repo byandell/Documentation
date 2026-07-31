@@ -1,7 +1,7 @@
 ---
 title: "foundrShiny"
 parent: "Shiny Apps"
-nav_order: 3
+nav_order: 2
 ---
 
 # foundrShiny: pragmatic code reuse driven by collaborators

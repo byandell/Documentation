@@ -2,6 +2,7 @@
 title: "Organize Projects with GitHub"
 parent: "Document Digital Tools"
 nav_order: 3
+has_children: true
 permalink: /github/
 ---
 

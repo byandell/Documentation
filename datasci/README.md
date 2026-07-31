@@ -1,6 +1,7 @@
 ---
 title: "Data Sciences"
 parent: "Document Digital Tools"
+has_children: true
 permalink: /datasci/
 ---
 

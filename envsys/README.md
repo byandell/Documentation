@@ -2,6 +2,7 @@
 title: "Environmental Systems"
 parent: "Document Digital Tools"
 nav_order: 4
+has_children: true
 permalink: /envsys/
 ---
 
@@ -21,7 +22,7 @@ See also
 - [Geospatial References](./geospatial.md)
 - [Google Maps Platform Access](#google-maps-platform-access)
 - Additional Pages
-  - [EDA Workbook on Python](/python/#earth-data-analytics-eda-workbook)
+  - [EDA Workbook on Python](../python/#earth-data-analytics-eda-workbook)
   - [Interactive Plots](../python/interactive.md)
   - [GitHub](../github/)
 
