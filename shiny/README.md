@@ -37,23 +37,20 @@ See also
 [Modularizing Shiny app code](https://shiny.rstudio.com/articles/modules.html).
 Yandell's key working repos that inform this document are
 
-- [Helper Apps](https://github.com/byandell/helperApps)
-- [Shiny app for QTL visualization](https://github.com/AttieLab-Systems-Genetics/qtlApp)
-- [Shiny Geyser App with and without Modules](https://github.com/byandell/geyser)
-- [Founder Shiny App](https://github.com/AttieLab-Systems-Genetics/foundrShiny)
-- [Shiny app for R/qtl2](https://github.com/byandell-sysgen/qtl2shiny)
-- [Learning about Shiny Modules](https://github.com/byandell/shiny_module)
-
-Below are discussions in reverse chronological order of these repos:
+## Shiny App Development repos
 
 - [helperApps: modules for reuse in other Shiny Apps](https://github.com/byandell/helperApps/blob/main/README.md)
-<!-- - [qtlApp: modular QTL visualization app](qtlApp.md) -->
 - [geyser: modular concepts and construction](geyser.md)
 - [foundrShiny: pragmatic code reuse driven by collaborators](foundrShiny.md)
 - [qtl2shiny: localized QTL analysis and visualization](qtl2shiny.md)
-- [shiny_module: learning about reactivity](shiny_module.md)
+<!-- - [shiny_module: learning about reactivity](shiny_module.md)
+<!-- - [qtlApp: modular QTL visualization app](qtlApp.md) -->
 
-Additional links on R in general can be found at
-[R for Data Sciences](https://github.com/UW-Madison-DataScience/R_for_data_sciences).
+## Shiny App Examples
 
-_[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_
+- [Shiny Geyser App with and without Modules](https://byandell.github.io/geyser/)
+- [Founder Shiny App](https://byandell-sysgen.github.io/foundrShiny)
+- [Shiny app for R/qtl2](https://byandell-sysgen.github.io/qtl2shiny)
+- [Learning about Shiny Modules](https://github.com/byandell/shiny_module)
+- [Helper Apps](https://github.com/byandell/helperApps)
+<!-- - [Shiny app for QTL visualization](https://github.com/AttieLab-Systems-Genetics/qtlApp) -->

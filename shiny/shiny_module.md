@@ -1,7 +1,5 @@
 ---
-title: "shiny_module"
-parent: "Shiny Apps"
-nav_order: 5
+nav_exclude: true
 ---
 
 # shiny_module: learning about reactivity
