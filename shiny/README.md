@@ -13,8 +13,6 @@ have subtle paradoxes caused by reactive elements.
 It is helpful to think carefully about how to modularize apps,
 much as we do with functions, so that we can debug piece by piece.
 
-- [View Shiny Apps Slides](https://byandell.github.io/Documentation/quarto/ShinyApps.html)
-
 R language apps developed with collaborators by [Brian Yandell](https://github.com/byandell)
 using the
 [Shiny](https://shiny.posit.co/)
@@ -39,6 +37,7 @@ Yandell's key working repos that inform this document are
 
 ## Shiny App Overviews
 
+- [View Shiny Apps Slides](https://byandell.github.io/Documentation/quarto/ShinyApps.html)
 - [geyser: modular concepts and construction](geyser.md)
 - [foundrShiny: pragmatic code reuse driven by collaborators](foundrShiny.md)
 - [qtl2shiny: localized QTL analysis and visualization](qtl2shiny.md)

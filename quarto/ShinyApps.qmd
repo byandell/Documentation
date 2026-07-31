@@ -35,83 +35,56 @@ format:
 :::
 :::
 
-- For multi-language comparisons, see python vs R implementations in the [Shiny Geyser App](https://github.com/byandell/geyser).
+- For multi-language comparisons, see R and Python implementations in [Shiny Geyser App](https://byandell.github.io/geyser/).
 
 ## Key Repositories Overview {.compact-slide}
 
 Several packages and applications illustrate an evolving design pattern aimed at improving usability, performance, and debuggability:
 
+- **[geyser](https://byandell.github.io/geyser/)**: Learning sandbox showcasing R & Python module connection patterns and Shinylive demos.
+- **[foundrShiny](https://byandell-sysgen.github.io/foundrShiny/)**: Multi-portal package driven by collaborator layout requirements.
+- **[qtl2shiny](https://byandell-sysgen.github.io/qtl2shiny/)**: Multi-module app for local genomic analysis.
 - **[helperApps](https://github.com/byandell/helperApps)**: General-purpose modules designed for direct reuse in other Shiny apps.
-- **[qtlApp](https://github.com/AttieLab-Systems-Genetics/qtlApp)**: Hierarchical module design for QTL visualization at scale.
-- **[geyser](https://github.com/byandell/geyser)**: Learning sandbox showcasing simple module connection patterns.
-- **[foundrShiny](https://github.com/AttieLab-Systems-Genetics/foundrShiny)**: Multi-portal package driven by collaborator layout requirements.
-- **[qtl2shiny](https://github.com/byandell-sysgen/qtl2shiny)**: Multi-module app for local genomic analysis.
-- **[shiny_module](https://github.com/byandell/shiny_module)**: Interactive repository for testing early reactivity concepts.
+- **[shiny_module](https://github.com/byandell/shiny_module)**: Sandbox for testing early reactivity concepts.
 
-# Case Studies: qtlApp & geyser {background-color="#e0f2fe"}
-
-## qtlApp: QTL Visualization at Scale {.compact-slide}
-
-Designed for QTL analysis at scale, organized as an R package with separate shiny modules.
-
-::: {.columns}
-::: {.column width="55%"}
-### Calling Hierarchy
-- **`qtlServer.R`**: Top-level server logic.
-  - **`mainParServer.R`**: Shared parameters.
-    - **`traitServer.R`**: Dataset display and returns `trait_list`.
-  - **`scanServer.R`**: Reads scans from files.
-  - **`peakServer.R`**: Reads peaks from files.
-:::
-
-::: {.column width="45%"}
-### Infrastructure & Setup
-- **`qtlSetup.R`**: Standard initialization script to locate and load files into the environment.
-- **`app.R`**: Deployable entry-point script calling the modules.
-- **Helper Scripts**: Decouple visualization (`QTL_plot_visualizer.R`) and analysis (`trait_scan.R`, `peak_finder.R`).
-:::
-:::
+# Case Study: geyser {background-color="#e0f2fe"}
 
 ## geyser: Modular Concepts {.compact-slide}
 
-Uses the standard Old Faithful geyser app to illustrate module composition and connection logic:
+Uses the standard Old Faithful geyser app to illustrate module composition, multi-language support, and WebAssembly deployment:
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Module Library (geyser/R)
-- **Plots**:
-  - `hist.R` / `gghist.R`: Base & ggplot histogram.
-  - `ggpoint.R`: Scatterplot modules.
-- **Data**:
-  - `data.R` / `datasets.R`: Data loader modules.
-- **Connections**:
-  - `rows.R` / `wrapper.R` / `switch.R`: Connect controllers.
+### Published Site & Demos
+- **[geyser Site](https://byandell.github.io/geyser/)**: Documentation, developer guides, and slide decks.
+- **[Shinylive Demos](https://byandell.github.io/geyser/docs/demos/)**: Interactive browser execution without a server.
+- **Dual Support**: Modules built for both R and Python (`shiny.express` & `shiny.ui`).
 :::
 
 ::: {.column width="50%"}
-### Connection Layout Apps
-- **Over Pages**: `appPages.R`.
-- **Rows & Columns**: `appRows.R` / `appRowsModule.R`.
-- **Twin Reuse**: `appTwin.R` / `appDupe.R` / `appFlip.R`.
-- **Nested**: `app.R` (see deployed [Geyser Demo](https://connect.doit.wisc.edu/geyserDemo) ⚠️).
+### Modular Progression
+- **1. Old Faithful Monolith**: Single-file app.
+- **2. UI & Server Split**: Function modularization.
+- **3. Single Module**: Server/UI module encapsulation.
+- **4. Connected Modules**: Modules over pages, grid rows/cols, twin reuse, and nested app layouts.
 :::
 :::
 
 ::: {.callout-tip}
-See the [Geyser Shiny Modules Slides](https://connect.doit.wisc.edu/geyserShinyModules) and [11 Dec 2024 Presentation](https://drive.google.com/file/d/1BGSIhihpBc-2TfRza5RGeXBCB55EC6-l) for walk-throughs.
+See the [R Shiny Modules Slide Deck](https://byandell.github.io/geyser/docs/geyserShinyR.html) and [Python Shiny Modules Slide Deck](https://byandell.github.io/geyser/docs/geyserShinyPython.html) for detailed walkthroughs.
 :::
 
 # foundrShiny: Collaborator-Driven Architecture {background-color="#e0f2fe"}
 
 ## foundrShiny: Lab Portals {.compact-slide}
 
-Powers three active research portals for the Attie Lab:
+Powers active research portals for the Attie Lab founder mouse studies:
 
 ::: {.incremental}
-- **Study Portals**: [Founder Calcium Study](https://connect.doit.wisc.edu/FounderCalciumStudy/) ⚠️, [Founder Diet Study](https://connect.doit.wisc.edu/FounderDietStudy/) ⚠️, and [Founder Liver Diet Study](https://connect.doit.wisc.edu/FounderLiverDietStudy/) ⚠️.
-- **Dependency**: Leverages the [foundr](https://github.com/AttieLab-Systems-Genetics/foundr) data analysis package.
-- **Scale**: Over **30 interconnected modules** (e.g. `download.R` for exports, `volcano.R` for plots).
-- **Iteration**: Evolved over **1.5 years** through collaboration on layouts, panel structures, and feature additions.
+- **Study Portals**: [Founder Calcium Study](https://connect.doit.wisc.edu/FounderCalciumStudy/), [Founder Diet Study](https://connect.doit.wisc.edu/FounderDietStudy/), and [Founder Liver Diet Study](https://connect.doit.wisc.edu/FounderLiverDietStudy/).
+- **Developer Guide**: [foundrShiny Articles](https://byandell-sysgen.github.io/foundrShiny/articles/devel_guide/).
+- **Dependency**: Leverages the core analytical package [foundr](https://github.com/AttieLab-Systems-Genetics/foundr).
+- **Scale**: Over **30 interconnected modules** implementing standard 5-function patterns (`*Input`, `*UI`, `*Output`, `*Server`, `*App`).
 :::
 
 ## Parameter Scoping & Hierarchy {.compact-slide}
@@ -126,7 +99,7 @@ To prevent code duplication, inputs are scoped at three distinct levels:
 :::
 
 ::: {.column width="45%"}
-### calling hierarchy
+### Calling Hierarchy
 - **foundr**: mainPar, about, download, entry, contrast, stats, time, trait
   - **contrast**: panelPar, contrastGroup, contrastTime, contrastTable, contrastTrait, timePlot
     - **contrastGroup**: contrastPlot
@@ -162,7 +135,7 @@ A key architectural shift was completely separating data analysis from the react
 :::
 :::
 
-- **R Helpers**: Analysis helpers are strictly organized by category (e.g. plotting, summary, calculation, and utilities).
+- **Developer Guide**: See [foundrShiny Data Pipeline & Reactivity Guide](https://byandell-sysgen.github.io/foundrShiny/articles/devel_guide/data_flow.html).
 
 # qtl2shiny: Scaling & Modernization {background-color="#e0f2fe"}
 
@@ -171,24 +144,26 @@ A key architectural shift was completely separating data analysis from the react
 Designed for local QTL investigations within a 1-4Mb peak region, including LOD scans, SNP association, and mediation:
 
 ::: {.columns}
-::: {.column width="60%"}
-### Server Refactoring Tree
-The modernization branch (`byandell-refactor`) reorganizes server calls:
-- **`mainServer.R`**
-  - **`dashServer.R`**
-    - **`setupServer.R`**: project, pheno, peaks.
-    - **`haploServer.R`**: probs, snpSetup, scanCoef, mediate.
-    - **`diploServer.R`**: pairProbs, snpSetup, pattern.
+::: {.column width="55%"}
+### Analysis Panel Architecture
+Organized across 6 dedicated analysis panels:
+- **`hotspotApp`**: Genome-wide hotspot count scans.
+- **`scanApp`**: LOD scans & founder allele effects.
+- **`patternApp`**: Strain distribution pattern grouping.
+- **`genoApp`**: Genotype probabilities & gene region tracks.
+- **`scatterApp`**: Bivariate mediator scatter plots.
+- **`mediateApp`**: Candidate gene mediation scans.
 :::
 
-::: {.column width="40%"}
+::: {.column width="45%"}
 ### Modernization Goals
-- **Dashboard Upgrades**: Transition older screens from `shinydashboard` layouts to modern, responsive `bslib` dashboards.
-- **Consolidation**: Eliminate duplicate download routines using the unified `download.R` module.
+- **`bslib` Dashboards**: Transition older screens from `shinydashboard` to modern, responsive `bslib` tabs.
+- **Developer Guide**: [qtl2shiny Articles](https://byandell-sysgen.github.io/qtl2shiny/articles/devel_guide/).
+- **Unified Downloads**: Integrated `downr` export widgets across panels.
 :::
 :::
 
-- See screenshots and vignettes in the [User Guide](https://github.com/byandell/qtl2shiny/blob/master/vignettes/UserGuide.Rmd) ⚠️ and [Developer Guide](https://github.com/byandell/qtl2shiny/blob/master/vignettes/DeveloperGuide.Rmd).
+- See the online [qtl2shiny Developer Guide Overview](https://byandell-sysgen.github.io/qtl2shiny/articles/devel_guide/index.html).
 
 ## Dependencies & Reactive Debugging {.compact-slide}
 
@@ -205,15 +180,13 @@ The modernization branch (`byandell-refactor`) reorganizes server calls:
 
 ::: {.column width="50%"}
 ### Sandbox Learning
-- **[`shiny_module`](https://github.com/byandell/shiny_module)`package`**:
+- **[`shiny_module`](https://github.com/byandell/shiny_module) package**:
   - Sandbox designed to understand core reactivity rules and event sequences.
   - Useful reference for tracing reactive logs and resolving unresponsive inputs.
 :::
 :::
 
-::: {.callout-warning}
-### Version Notes
-The original
-[qtl2shiny](https://github.com/byandell-sysgen/qtl2shiny)
-repository contains legacy module syntax. Active retooling is recommended to migrate functions into compliant server/UI wrappers for easier testing.
+::: {.callout-note}
+### Developer Guide Reference
+Explore the full architecture and module calling trees in the published [qtl2shiny Module Architecture Article](https://byandell-sysgen.github.io/qtl2shiny/articles/devel_guide/module.html).
 :::

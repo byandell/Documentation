@@ -442,7 +442,7 @@
   <meta name="generator" content="quarto-1.6.33">
 
   <meta name="author" content="Brian Yandell (byandell.github.io)">
-  <meta name="dcterms.date" content="2026-06-30">
+  <meta name="dcterms.date" content="2026-07-30">
   <title>Modular Shiny Applications</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -998,7 +998,7 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
 </div>
 </div>
 
-  <p class="date">2026-06-30</p>
+  <p class="date">2026-07-30</p>
 </section>
 <section>
 <section id="reactive-complexity-design" class="title-slide slide level1 center" data-background-color="#e0f2fe">
@@ -1034,80 +1034,43 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
 </div>
 </div></div>
 <ul>
-<li>For multi-language comparisons, see python vs R implementations in the <a href="https://github.com/byandell/geyser">Shiny Geyser App</a>.</li>
+<li>For multi-language comparisons, see R and Python implementations in <a href="https://byandell.github.io/geyser/">Shiny Geyser App</a>.</li>
 </ul>
 </section>
 <section id="key-repositories-overview" class="slide level2 compact-slide">
 <h2>Key Repositories Overview</h2>
 <p>Several packages and applications illustrate an evolving design pattern aimed at improving usability, performance, and debuggability:</p>
 <ul>
+<li><strong><a href="https://byandell.github.io/geyser/">geyser</a></strong>: Learning sandbox showcasing R &amp; Python module connection patterns and Shinylive demos.</li>
+<li><strong><a href="https://byandell-sysgen.github.io/foundrShiny/">foundrShiny</a></strong>: Multi-portal package driven by collaborator layout requirements.</li>
+<li><strong><a href="https://byandell-sysgen.github.io/qtl2shiny/">qtl2shiny</a></strong>: Multi-module app for local genomic analysis.</li>
 <li><strong><a href="https://github.com/byandell/helperApps">helperApps</a></strong>: General-purpose modules designed for direct reuse in other Shiny apps.</li>
-<li><strong><a href="https://github.com/AttieLab-Systems-Genetics/qtlApp">qtlApp</a></strong>: Hierarchical module design for QTL visualization at scale.</li>
-<li><strong><a href="https://github.com/byandell/geyser">geyser</a></strong>: Learning sandbox showcasing simple module connection patterns.</li>
-<li><strong><a href="https://github.com/AttieLab-Systems-Genetics/foundrShiny">foundrShiny</a></strong>: Multi-portal package driven by collaborator layout requirements.</li>
-<li><strong><a href="https://github.com/byandell-sysgen/qtl2shiny">qtl2shiny</a></strong>: Multi-module app for local genomic analysis.</li>
-<li><strong><a href="https://github.com/byandell/shiny_module">shiny_module</a></strong>: Interactive repository for testing early reactivity concepts.</li>
+<li><strong><a href="https://github.com/byandell/shiny_module">shiny_module</a></strong>: Sandbox for testing early reactivity concepts.</li>
 </ul>
 </section></section>
 <section>
-<section id="case-studies-qtlapp-geyser" class="title-slide slide level1 center" data-background-color="#e0f2fe">
-<h1>Case Studies: qtlApp &amp; geyser</h1>
+<section id="case-study-geyser" class="title-slide slide level1 center" data-background-color="#e0f2fe">
+<h1>Case Study: geyser</h1>
 
-</section>
-<section id="qtlapp-qtl-visualization-at-scale" class="slide level2 compact-slide">
-<h2>qtlApp: QTL Visualization at Scale</h2>
-<p>Designed for QTL analysis at scale, organized as an R package with separate shiny modules.</p>
-<div class="columns">
-<div class="column" style="width:55%;">
-<h3 id="calling-hierarchy">Calling Hierarchy</h3>
-<ul>
-<li><strong><code>qtlServer.R</code></strong>: Top-level server logic.
-<ul>
-<li><strong><code>mainParServer.R</code></strong>: Shared parameters.
-<ul>
-<li><strong><code>traitServer.R</code></strong>: Dataset display and returns <code>trait_list</code>.</li>
-</ul></li>
-<li><strong><code>scanServer.R</code></strong>: Reads scans from files.</li>
-<li><strong><code>peakServer.R</code></strong>: Reads peaks from files.</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:45%;">
-<h3 id="infrastructure-setup">Infrastructure &amp; Setup</h3>
-<ul>
-<li><strong><code>qtlSetup.R</code></strong>: Standard initialization script to locate and load files into the environment.</li>
-<li><strong><code>app.R</code></strong>: Deployable entry-point script calling the modules.</li>
-<li><strong>Helper Scripts</strong>: Decouple visualization (<code>QTL_plot_visualizer.R</code>) and analysis (<code>trait_scan.R</code>, <code>peak_finder.R</code>).</li>
-</ul>
-</div></div>
 </section>
 <section id="geyser-modular-concepts" class="slide level2 compact-slide">
 <h2>geyser: Modular Concepts</h2>
-<p>Uses the standard Old Faithful geyser app to illustrate module composition and connection logic:</p>
+<p>Uses the standard Old Faithful geyser app to illustrate module composition, multi-language support, and WebAssembly deployment:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="module-library-geyserr">Module Library (geyser/R)</h3>
+<h3 id="published-site-demos">Published Site &amp; Demos</h3>
 <ul>
-<li><strong>Plots</strong>:
-<ul>
-<li><code>hist.R</code> / <code>gghist.R</code>: Base &amp; ggplot histogram.</li>
-<li><code>ggpoint.R</code>: Scatterplot modules.</li>
-</ul></li>
-<li><strong>Data</strong>:
-<ul>
-<li><code>data.R</code> / <code>datasets.R</code>: Data loader modules.</li>
-</ul></li>
-<li><strong>Connections</strong>:
-<ul>
-<li><code>rows.R</code> / <code>wrapper.R</code> / <code>switch.R</code>: Connect controllers.</li>
-</ul></li>
+<li><strong><a href="https://byandell.github.io/geyser/">geyser Site</a></strong>: Documentation, developer guides, and slide decks.</li>
+<li><strong><a href="https://byandell.github.io/geyser/docs/demos/">Shinylive Demos</a></strong>: Interactive browser execution without a server.</li>
+<li><strong>Dual Support</strong>: Modules built for both R and Python (<code>shiny.express</code> &amp; <code>shiny.ui</code>).</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<h3 id="connection-layout-apps">Connection Layout Apps</h3>
+<h3 id="modular-progression">Modular Progression</h3>
 <ul>
-<li><strong>Over Pages</strong>: <code>appPages.R</code>.</li>
-<li><strong>Rows &amp; Columns</strong>: <code>appRows.R</code> / <code>appRowsModule.R</code>.</li>
-<li><strong>Twin Reuse</strong>: <code>appTwin.R</code> / <code>appDupe.R</code> / <code>appFlip.R</code>.</li>
-<li><strong>Nested</strong>: <code>app.R</code> (see deployed <a href="https://connect.doit.wisc.edu/geyserDemo">Geyser Demo</a>).</li>
+<li><strong>1. Old Faithful Monolith</strong>: Single-file app.</li>
+<li><strong>2. UI &amp; Server Split</strong>: Function modularization.</li>
+<li><strong>3. Single Module</strong>: Server/UI module encapsulation.</li>
+<li><strong>4. Connected Modules</strong>: Modules over pages, grid rows/cols, twin reuse, and nested app layouts.</li>
 </ul>
 </div></div>
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -1119,7 +1082,7 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
 <p><strong>Tip</strong></p>
 </div>
 <div class="callout-content">
-<p>See the <a href="https://connect.doit.wisc.edu/geyserShinyModules">Geyser Shiny Modules Slides</a> and <a href="https://drive.google.com/file/d/1BGSIhihpBc-2TfRza5RGeXBCB55EC6-l">11 Dec 2024 Presentation</a> for walk-throughs.</p>
+<p>See the <a href="https://byandell.github.io/geyser/docs/geyserShinyR.html">R Shiny Modules Slide Deck</a> and <a href="https://byandell.github.io/geyser/docs/geyserShinyPython.html">Python Shiny Modules Slide Deck</a> for detailed walkthroughs.</p>
 </div>
 </div>
 </div>
@@ -1131,13 +1094,13 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
 </section>
 <section id="foundrshiny-lab-portals" class="slide level2 compact-slide">
 <h2>foundrShiny: Lab Portals</h2>
-<p>Powers three active research portals for the Attie Lab:</p>
+<p>Powers active research portals for the Attie Lab founder mouse studies:</p>
 <div>
 <ul>
 <li class="fragment"><strong>Study Portals</strong>: <a href="https://connect.doit.wisc.edu/FounderCalciumStudy/">Founder Calcium Study</a>, <a href="https://connect.doit.wisc.edu/FounderDietStudy/">Founder Diet Study</a>, and <a href="https://connect.doit.wisc.edu/FounderLiverDietStudy/">Founder Liver Diet Study</a>.</li>
-<li class="fragment"><strong>Dependency</strong>: Leverages the <a href="https://github.com/AttieLab-Systems-Genetics/foundr">foundr</a> data analysis package.</li>
-<li class="fragment"><strong>Scale</strong>: Over <strong>30 interconnected modules</strong> (e.g. <code>download.R</code> for exports, <code>volcano.R</code> for plots).</li>
-<li class="fragment"><strong>Iteration</strong>: Evolved over <strong>1.5 years</strong> through collaboration on layouts, panel structures, and feature additions.</li>
+<li class="fragment"><strong>Developer Guide</strong>: <a href="https://byandell-sysgen.github.io/foundrShiny/articles/devel_guide/">foundrShiny Articles</a>.</li>
+<li class="fragment"><strong>Dependency</strong>: Leverages the core analytical package <a href="https://github.com/AttieLab-Systems-Genetics/foundr">foundr</a>.</li>
+<li class="fragment"><strong>Scale</strong>: Over <strong>30 interconnected modules</strong> implementing standard 5-function patterns (<code>*Input</code>, <code>*UI</code>, <code>*Output</code>, <code>*Server</code>, <code>*App</code>).</li>
 </ul>
 </div>
 </section>
@@ -1148,7 +1111,7 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
 <h3 id="input-scoping-levels">Input Scoping Levels</h3>
 <p>To prevent code duplication, inputs are scoped at three distinct levels: 1. <strong><code>mainPar</code></strong>: Shared parameters (e.g. dataset choice, height) globally available. 2. <strong><code>panelPar</code></strong>: Localized settings for a specific dashboard panel (e.g. strains, sex, facet overlays). 3. <strong><code>plotPar</code></strong>: Specific options limited to visualization plots.</p>
 </div><div class="column" style="width:45%;">
-<h3 id="calling-hierarchy-1">calling hierarchy</h3>
+<h3 id="calling-hierarchy">Calling Hierarchy</h3>
 <ul>
 <li><strong>foundr</strong>: mainPar, about, download, entry, contrast, stats, time, trait
 <ul>
@@ -1195,7 +1158,7 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
 </ul>
 </div></div>
 <ul>
-<li><strong>R Helpers</strong>: Analysis helpers are strictly organized by category (e.g. plotting, summary, calculation, and utilities).</li>
+<li><strong>Developer Guide</strong>: See <a href="https://byandell-sysgen.github.io/foundrShiny/articles/devel_guide/data_flow.html">foundrShiny Data Pipeline &amp; Reactivity Guide</a>.</li>
 </ul>
 </section></section>
 <section>
@@ -1207,18 +1170,19 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
 <h2>qtl2shiny: Local QTL Analytics</h2>
 <p>Designed for local QTL investigations within a 1-4Mb peak region, including LOD scans, SNP association, and mediation:</p>
 <div class="columns">
-<div class="column" style="width:60%;">
-<h3 id="server-refactoring-tree">Server Refactoring Tree</h3>
-<p>The modernization branch (<code>byandell-refactor</code>) reorganizes server calls: - <strong><code>mainServer.R</code></strong> - <strong><code>dashServer.R</code></strong> - <strong><code>setupServer.R</code></strong>: project, pheno, peaks. - <strong><code>haploServer.R</code></strong>: probs, snpSetup, scanCoef, mediate. - <strong><code>diploServer.R</code></strong>: pairProbs, snpSetup, pattern.</p>
-</div><div class="column" style="width:40%;">
+<div class="column" style="width:55%;">
+<h3 id="analysis-panel-architecture">Analysis Panel Architecture</h3>
+<p>Organized across 6 dedicated analysis panels: - <strong><code>hotspotApp</code></strong>: Genome-wide hotspot count scans. - <strong><code>scanApp</code></strong>: LOD scans &amp; founder allele effects. - <strong><code>patternApp</code></strong>: Strain distribution pattern grouping. - <strong><code>genoApp</code></strong>: Genotype probabilities &amp; gene region tracks. - <strong><code>scatterApp</code></strong>: Bivariate mediator scatter plots. - <strong><code>mediateApp</code></strong>: Candidate gene mediation scans.</p>
+</div><div class="column" style="width:45%;">
 <h3 id="modernization-goals">Modernization Goals</h3>
 <ul>
-<li><strong>Dashboard Upgrades</strong>: Transition older screens from <code>shinydashboard</code> layouts to modern, responsive <code>bslib</code> dashboards.</li>
-<li><strong>Consolidation</strong>: Eliminate duplicate download routines using the unified <code>download.R</code> module.</li>
+<li><strong><code>bslib</code> Dashboards</strong>: Transition older screens from <code>shinydashboard</code> to modern, responsive <code>bslib</code> tabs.</li>
+<li><strong>Developer Guide</strong>: <a href="https://byandell-sysgen.github.io/qtl2shiny/articles/devel_guide/">qtl2shiny Articles</a>.</li>
+<li><strong>Unified Downloads</strong>: Integrated <code>downr</code> export widgets across panels.</li>
 </ul>
 </div></div>
 <ul>
-<li>See screenshots and vignettes in the <a href="https://github.com/byandell/qtl2shiny/blob/master/vignettes/UserGuide.Rmd">User Guide</a> and <a href="https://github.com/byandell/qtl2shiny/blob/master/vignettes/DeveloperGuide.Rmd">Developer Guide</a>.</li>
+<li>See the online <a href="https://byandell-sysgen.github.io/qtl2shiny/articles/devel_guide/index.html">qtl2shiny Developer Guide Overview</a>.</li>
 </ul>
 </section>
 <section id="dependencies-reactive-debugging" class="slide level2 compact-slide">
@@ -1228,7 +1192,7 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
 <h3 id="qtl2-package-stack">qtl2 Package Stack</h3>
 <ul>
 <li><a href="https://kbroman.org/qtl2/">qtl2</a>: Genotyping and mapping calculations.</li>
-<li><a href="https://github.com/byandell-sysgen/qtl2ggplot2">qtl2ggplot2</a>: ggplot2-based plotting extension.</li>
+<li><a href="https://github.com/byandell-sysgen/qtl2ggplot2">qtl2ggplot2</a> ⚠️: ggplot2-based plotting extension.</li>
 <li><a href="https://github.com/byandell-sysgen/qtl2fst">qtl2fst</a>: Database storing scans.</li>
 <li><a href="https://github.com/byandell-sysgen/qtl2pattern">qtl2pattern</a>: SNP association patterns.</li>
 <li><a href="https://github.com/byandell-sysgen/qtl2mediate">qtl2mediate</a> / <a href="https://github.com/byandell-sysgen/intermediate">intermediate</a>: Mediation calculations.</li>
@@ -1236,23 +1200,23 @@ Brian Yandell (<a href="https://byandell.github.io"><em>byandell.github.io</em><
 </div><div class="column" style="width:50%;">
 <h3 id="sandbox-learning">Sandbox Learning</h3>
 <ul>
-<li><strong><a href="https://github.com/byandell/shiny_module"><code>shiny_module</code></a><code>package</code></strong>:
+<li><strong><a href="https://github.com/byandell/shiny_module"><code>shiny_module</code></a> package</strong>:
 <ul>
 <li>Sandbox designed to understand core reactivity rules and event sequences.</li>
 <li>Useful reference for tracing reactive logs and resolving unresponsive inputs.</li>
 </ul></li>
 </ul>
 </div></div>
-<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Version Notes</strong></p>
+<p><strong>Developer Guide Reference</strong></p>
 </div>
 <div class="callout-content">
-<p>The original <a href="https://github.com/byandell-sysgen/qtl2shiny">qtl2shiny</a> repository contains legacy module syntax. Active retooling is recommended to migrate functions into compliant server/UI wrappers for easier testing.</p>
+<p>Explore the full architecture and module calling trees in the published <a href="https://byandell-sysgen.github.io/qtl2shiny/articles/devel_guide/module.html">qtl2shiny Module Architecture Article</a>.</p>
 </div>
 </div>
 </div>
