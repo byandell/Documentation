@@ -20,6 +20,7 @@ can be built into a project's
 "README for agents" called
 [AGENTS.md](https://agents.md/).
 Think of `AGENTS.md` as the **onboarding handbook** for an AI agent entering a specific project. It tells the agent _what_ the project is and _how_ it should behave to blend in seamlessly with human contributors.
+Most modern AI assistants (including Antigravity) will read `AGENTS.md` in the project root.
 
 The challenge with `AGENTS.md` is that it is automatically loaded into the
 context window by AI agents working in the project.
@@ -28,7 +29,25 @@ limiting space for your conversation prompts and results.
 One solution is to have a concise `AGENTS-mini.md`
 (with perhaps a more detailed `AGENTS-LONG.md` loaded when needed)
 This works well as long as the concise version is sufficient
----
+
+### Purpose of the `.agents` folder
+
+Having both `AGENTS.md` and `.agents/AGENTS.md` is **partially redundant** depending on how tools read your workspace configuration. Here is why both were created and how they differ:
+
+#### Root `AGENTS.md` (Standard / Universal)
+
+* **Purpose**: Visible to developers browsing GitHub and recognized by standard AI coding assistants (e.g., Cursor, Gemini, Claude).
+- **Location**: Directly at the root of your repository (`qtl2pattern/AGENTS.md`).
+
+#### `.agents/AGENTS.md` (Antigravity System Directory)
+
+* **Purpose**: `.agents/` is a specific hidden folder used by the Antigravity engine as a **Workspace Customization Root** to automatically discover project-level skills (`.agents/skills/`) and agent rules (`.agents/AGENTS.md`).
+- **Suggestion**: Keep `AGENTS.md` as the main file, and make `.agents/AGENTS.md` a simple pointer:
+
+```markdown
+# Project AI Guidelines
+See [AGENTS.md](../AGENTS.md) at the repository root.
+```
 
 ## Comparing README.md, DEVELOPER.md, and AGENTS.md
 

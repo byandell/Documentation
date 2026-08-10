@@ -17,9 +17,10 @@ Here are some examples:
   - [Prompts](#prompts)
   - [Guides and Overviews](#guides-and-overviews)
 - [Documentation Repo Developer Guide](#documentation-repo-developer-guide)
-  - [1. Site Layout & Directory Map](#1-site-layout--directory-map)
-  - [2. Page Metadata & Frontmatter Standards](#2-page-metadata--frontmatter-standards)
-  - [3. Automation & Link Checking](#3-automation--link-checking)
+  - [Site Layout & Directory Map](#site-layout--directory-map)
+  - [Page Metadata & Frontmatter Standards](#page-metadata--frontmatter-standards)
+  - [Automation & Link Checking](#automation--link-checking)
+  - [DEVELOPER.md vs Full Developer Guide](#developermd-vs-full-developer-guide)
 
 ---
 
@@ -55,7 +56,7 @@ Here are some examples:
 
 This section serves as the developer guide for managing, editing, and checking the integrity of this `Documentation` repository.
 
-### 1. Site Layout & Directory Map
+### Site Layout & Directory Map
 
 The repository is built as a Jekyll static site using the `just-the-docs` theme, compiled automatically on GitHub Pages. Quarto is used to build slides.
 
@@ -79,14 +80,14 @@ Documentation/
     └── add_glyphs.py               # Glyphs addition helper
 ```
 
-### Configuration Files
+#### Configuration Files
 
 - **`_config.yml`**: Uses the `remote_theme: just-the-docs/just-the-docs`. It enables `jekyll-relative-links` (allowing markdown files to reference each other with standard relative links like `[text](folder/file.md)`) and auto-generates the side navigation tree based on metadata.
 - **`_quarto.yml`**: Configures Quarto slide projects to compile `.qmd` files in place (`output-dir: .`) so they can be processed and served alongside Jekyll markdown files.
 
 ---
 
-### 2. Page Metadata & Frontmatter Standards
+### Page Metadata & Frontmatter Standards
 
 To ensure Jekyll organizes the navigation sidebar and breadcrumbs correctly, every markdown and Quarto file must begin with standard YAML frontmatter:
 
@@ -99,7 +100,7 @@ permalink: /optional/custom/path/      # Absolute URL path override (optional)
 ---
 ```
 
-### Folder Conventions
+#### Folder Conventions
 
 - Save general conceptual notes as markdown files (`.md`) inside their respective folders (e.g. `github/`, `AI/`, `python/`).
 - Save slides as Quarto slides (`.qmd`) under `quarto/`.
@@ -107,11 +108,11 @@ permalink: /optional/custom/path/      # Absolute URL path override (optional)
 
 ---
 
-### 3. Automation & Link Checking
+### Automation & Link Checking
 
 To prevent dead references and broken links as external websites change, use the automated script in `scripts/check_links.py` to scan the repository.
 
-### Running the Link Checker
+#### Running the Link Checker
 
 Run the script from the repository root:
 
@@ -119,10 +120,41 @@ Run the script from the repository root:
 python3 scripts/check_links.py
 ```
 
-### Features
+#### Features
 
 - Scans all `.md`, `.qmd`, and `.Rmd` files in the repository.
 - Extracts and checks all `http://` and `https://` URLs in parallel using threaded execution.
 - If broken links are found, generates a detailed markdown report (`link_check_report.md` in the root) listing the file, line number, URL, and HTTP status code or connection error.
 
 For more details on link checking parameters (ignoring SSL errors, checking a single file, fetching historical Wayback Machine snapshots), see the [Check External Links Guide](prompts/check_links.md).
+
+### DEVELOPER.md vs Full Developer Guide
+
+Analysis: `qtl2pattern` vs `qtl2shiny` Developer Guides
+
+#### Why `qtl2shiny` Has an Extensive `vignettes/devel_guide/`
+
+`qtl2shiny` is an interactive Shiny application featuring complex reactive networks, multi-module UI/server contracts (`snpPatternApp`, `patternDataApp`, `patternPlotApp`, `scanApp`, `genoApp`, `mediateApp`, `hotspotApp`), and state management across tabs. Each Shiny module required a dedicated document (`pattern.Rmd`, `scan.Rmd`, `geno.Rmd`, etc.) to map out reactive inputs/outputs, server parameters, and Shiny UI hierarchies.
+
+#### Current State of `qtl2pattern`
+
+`qtl2pattern` is the underlying R computational engine (~29 R source files). The root **[DEVELOPER.md](file:///Users/brianyandell/Documents/Research/byandell-sysgen/qtl2pattern/DEVELOPER.md)** already provides a comprehensive single-page reference covering:
+
+- **System Architecture & Data Flow** (with Mermaid diagram)
+- **Subsystem Module Maps** (Pattern Conversions, Scanning, Feature Querying, `fst` Storage, `ggplot2` Extensions)
+- **R Coding Rules & Safety** (vector subsetting, namespacing, roxygen)
+- **Development & Verification Workflow**
+
+#### Comparison of Options
+
+| Feature / Goal | **Option A: Root `DEVELOPER.md` Only** (Current) | **Option B: Add `vignettes/devel_guide/`** |
+| :--- | :--- | :--- |
+| **Primary Audience** | GitHub contributors, AI agents, IDE developers | `pkgdown` site readers, CRAN/R vignette users |
+| **Maintenance Burden** | **Low** (Single document to update) | **Moderate** (Multiple Rmd files to sync) |
+| **Structure** | Single comprehensive Markdown document | `vignettes/devel_guide/index.Rmd` + sub-Rmds (`patterns.Rmd`, `scans.Rmd`, `features.Rmd`, `plots.Rmd`) |
+| **`pkgdown` Integration** | Markdown file in repo root | Built into package documentation / vignette menus |
+
+#### Recommendation
+
+- **If your goal is GitHub maintainability**: **Option A** (current [DEVELOPER.md](file:///Users/brianyandell/Documents/Research/byandell-sysgen/qtl2pattern/DEVELOPER.md)) is sufficient and easier to keep up to date.
+- **If you plan to build a `pkgdown` site or want vignette-indexed developer docs**: **Option B** can be created by splitting [DEVELOPER.md](file:///Users/brianyandell/Documents/Research/byandell-sysgen/qtl2pattern/DEVELOPER.md) into `vignettes/devel_guide/index.Rmd` alongside modular Rmds for the major subsystems (`patterns.Rmd`, `scans.Rmd`, `features.Rmd`, `plots.Rmd`).
