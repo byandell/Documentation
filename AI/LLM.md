@@ -7,7 +7,7 @@ nav_order: 2
 # Large Language Models (LLMs)
 
 - [What are large language models (LLMs)?](#what-are-large-language-models-llms)
-- [What are AI tokens?](#what-are-ai-tokens)
+- [What are AI tokens and embeddings?](#what-are-ai-tokens-and-embeddings)
 - [What is a Mixture of Experts (MoE)?](#what-is-a-mixture-of-experts-moe)
 - [Open Source LLMs](#open-source-llms)
   - [verde_models.csv](https://github.com/byandell/Documentation/blob/main/verde_models.csv) (Verde Model Spec Catalog)
@@ -37,7 +37,7 @@ through links below to find good explanations.
 - [GeeksforGeeks](https://www.geeksforgeeks.org/artificial-intelligence/large-language-model-llm/)
 - [AWS](https://aws.amazon.com/what-is/large-language-model/)
 
-## What are AI tokens?
+## What are AI tokens and embeddings?
 
 LLMs work by encoding text into numerical representations (tokens), then decoding them back into text.
 According to
@@ -63,6 +63,12 @@ The model can be further trained on specific tasks to improve its performance in
 - [Tokens Explained: The New Currency of Generative AI (Sentisight)](https://www.sentisight.ai/tokens-explained-new-currency-of-generative-ai/)
 - [The Invisible Building Blocks of AI: What You Need to Know About Tokenization (Medium: Data Science Collective)](https://medium.com/data-science-collective/the-invisible-building-blocks-of-ai-what-you-need-to-know-about-tokenization-acadd86a63ba)
 - [gpt-tokenizer playground](https://gpt-tokenizer.dev/)
+- [What is embedding? (IBM)](https://www.ibm.com/think/topics/embedding)
+- [What are embeddings in ML? (GeeksforGeeks)](https://www.geeksforgeeks.org/machine-learning/what-are-embeddings-in-machine-learning-2/)
+- [What are embeddings in ML? (AWS)](https://aws.amazon.com/what-is/embeddings-in-machine-learning/)
+- [What are embeddings? (Cloudflare)](https://www.cloudflare.com/learning/ai/what-are-embeddings/)
+- [Embeddings Crash Course (Google)](https://developers.google.com/machine-learning/crash-course/embeddings)
+- [Understanding embeddings (Labelbox)](https://labelbox.com/guides/ai-foundations-understanding-embeddings/)
 
 ## What is a Mixture of Experts (MoE)?
 
