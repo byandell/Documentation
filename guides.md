@@ -35,12 +35,13 @@ Here are some examples:
 ### Guides and Overviews
 
 - [this repo](https://byandell.github.io/Documentation)
+  - [DEVELOPER.md](DEVELOPER.md)
   - [Developer Guide](#documentation-repo-developer-guide)
   - [AGENTS.md](AGENTS.md)
 - [`qtl2shiny`](https://byandell-sysgen.github.io/qtl2shiny/)
   - [Articles](https://byandell-sysgen.github.io/qtl2shiny/articles/)
-  - [Developer Guide](https://byandell-sysgen.github.io/qtl2shiny/articles/devel_guide/index.html)
   - [DEVELOPER.md](https://github.com/byandell-sysgen/qtl2shiny/blob/main/DEVELOPER.md)
+  - [Developer Guide](https://byandell-sysgen.github.io/qtl2shiny/articles/devel_guide/index.html)
   - [AGENTS.md](https://github.com/byandell-sysgen/qtl2shiny/blob/main/AGENTS.md)
 - [`geyser`](https://byandell.github.io/geyser/)
   - [Architectural Overview (DEVELOPER.md)](https://byandell.github.io/geyser/DEVELOPER.html)
@@ -48,7 +49,11 @@ Here are some examples:
   - [Python Developer Guide (python.md)](https://byandell.github.io/geyser/docs/devel/python.html)
   - [AGENTS.md](https://github.com/byandell/geyser/blob/main/AGENTS.md)
 - [`landmapyr`](https://byandell-envsys=.github.io/landmapyr/)
+  - [DEVELOPER.md](https://github.com/byandell-envsys/landmapyr/blob/main/DEVELOPER.md)
   - [AGENTS.md](https://github.com/byandell-envsys/landmapyr/blob/main/AGENTS.md)
+- [`rainDrought`](https://byandell.github.io/rainDrought/)
+  - [DEVELOPER.md](https://byandell.github.io/rainDrought/DEVELOPER.html)
+  - [AGENTS.md](https://byandell.github.io/rainDrought/AGENTS.md)
 
 ---
 
