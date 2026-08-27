@@ -7,6 +7,8 @@ permalink: /datasci/
 
 # Data Sciences
 
+([slides](../quarto/datasci.html))
+
 We often speak about data science, but recognize that our approaches to data
 vary widely depending on context, discipline, background, goals, and available tools.
 This page catalogues some of my interests and resources that I have found useful.
@@ -68,6 +70,21 @@ I feel honored to be engaged in some of these conversations.
 My background is statistics, where data visualization and rigorous thinking
 about key questions and design are paramount.
 Other pages in this body address the mechanics of data visualization.
+
+Scatter plots are useful for investigating the relationship
+among measurements.
+A simple scatter plot is an XY-plot of two measurements, ideally augmented with color and trend lines and maybe even facets
+to emphasize additional measurements.
+Data scientists do this all the time in `R` with the
+[ggplot2](https://ggplot2.tidyverse.org/) package,
+which has a Python version as
+[plotnine](https://plotnine.readthedocs.io/).
+
+Here is a small repo with code for scatter plots in `R` and `Python` (hence the name `scattyr`).
+It shows how to use color, symbol shape and facets to help reveal patterns in data.
+
+- <https://byandell.github.io/scattyr/> (published report)
+- <https://github.com/byandell/scattyr> (GitHub repo)
 
 A question came up of how to relate rain and drought (or any other measures over time and space).
 I figured out how to create the plot I suggested from cumulative rain and drought.
