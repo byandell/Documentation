@@ -1,15 +1,14 @@
 ---
-title: "Create User and Developer Guides"
+title: "Create Guides"
 parent: "Document Digital Tools"
 nav_order: 6
 ---
 
-# Create User and Developer Guides
+# Create Guides
 
-User and Developer Guides are handy to provide overviews of projects
-by highlighting useful functions and approaches.
-In addition, `README.md` and `AGENTS.md` files are handy for overiews.
-Here are some examples:
+User and Developer Guides are handy to provide help users and developers understand projects
+by highlighting the features, functions and approaches.
+In addition, `README.md`, `DEVELOPER.md` and `AGENTS.md` files are handy for overiews.
 
 ## Table of Contents
 
@@ -34,26 +33,13 @@ Here are some examples:
 
 ### Guides and Overviews
 
-- [this repo](https://byandell.github.io/Documentation)
-  - [DEVELOPER.md](DEVELOPER.md)
-  - [Developer Guide](#documentation-repo-developer-guide)
-  - [AGENTS.md](AGENTS.md)
-- [`qtl2shiny`](https://byandell-sysgen.github.io/qtl2shiny/)
-  - [Articles](https://byandell-sysgen.github.io/qtl2shiny/articles/)
-  - [DEVELOPER.md](https://github.com/byandell-sysgen/qtl2shiny/blob/main/DEVELOPER.md)
-  - [Developer Guide](https://byandell-sysgen.github.io/qtl2shiny/articles/devel_guide/index.html)
-  - [AGENTS.md](https://github.com/byandell-sysgen/qtl2shiny/blob/main/AGENTS.md)
-- [`geyser`](https://byandell.github.io/geyser/)
-  - [Architectural Overview (DEVELOPER.md)](https://byandell.github.io/geyser/DEVELOPER.html)
-  - [R Developer Guide (DeveloperGuide.Rmd)](https://byandell.github.io/geyser/vignettes/DeveloperGuide.html)
-  - [Python Developer Guide (python.md)](https://byandell.github.io/geyser/docs/devel/python.html)
-  - [AGENTS.md](https://github.com/byandell/geyser/blob/main/AGENTS.md)
-- [`landmapyr`](https://byandell-envsys=.github.io/landmapyr/)
-  - [DEVELOPER.md](https://github.com/byandell-envsys/landmapyr/blob/main/DEVELOPER.md)
-  - [AGENTS.md](https://github.com/byandell-envsys/landmapyr/blob/main/AGENTS.md)
-- [`rainDrought`](https://byandell.github.io/rainDrought/)
-  - [DEVELOPER.md](https://byandell.github.io/rainDrought/DEVELOPER.html)
-  - [AGENTS.md](https://byandell.github.io/rainDrought/AGENTS.md)
+| Project / Repository | Architecture (`DEVELOPER.md`) | Developer & User Guides | AI Agent Rules (`AGENTS.md`) |
+| :--- | :--- | :--- | :--- |
+| **[Documentation](https://byandell.github.io/Documentation)** (`this repo`) | [`DEVELOPER.md`](DEVELOPER.md) | [Developer Guide](#documentation-repo-developer-guide) | [`AGENTS.md`](AGENTS.md) |
+| **[`qtl2shiny`](https://byandell-sysgen.github.io/qtl2shiny/)** | [`DEVELOPER.md`](https://github.com/byandell-sysgen/qtl2shiny/blob/main/DEVELOPER.md) | [Developer Guide](https://byandell-sysgen.github.io/qtl2shiny/articles/devel_guide/index.html) ([Articles](https://byandell-sysgen.github.io/qtl2shiny/articles/)) | [`AGENTS.md`](https://github.com/byandell-sysgen/qtl2shiny/blob/main/AGENTS.md) |
+| **[`geyser`](https://byandell.github.io/geyser/)** | [DEVELOPER.md](https://byandell.github.io/geyser/DEVELOPER.html) | [R Developer Guide](https://byandell.github.io/geyser/vignettes/DeveloperGuide.html)<br/>[Python Developer Guide](https://byandell.github.io/geyser/docs/devel/python.html) | [`AGENTS.md`](https://github.com/byandell/geyser/blob/main/AGENTS.md) |
+| **[`landmapyr`](https://byandell-envsys.github.io/landmapyr/)** | [`DEVELOPER.md`](https://github.com/byandell-envsys/landmapyr/blob/main/DEVELOPER.md) | — | [`AGENTS.md`](https://github.com/byandell-envsys/landmapyr/blob/main/AGENTS.md) |
+| **[`rainDrought`](https://byandell.github.io/rainDrought/)** | [DEVELOPER.md](https://byandell.github.io/rainDrought/DEVELOPER.html) | [User Guide](https://byandell.github.io/rainDrought/user_guide.html) | [AGENTS.md](https://byandell.github.io/rainDrought/AGENTS.md) |
 
 ---
 
