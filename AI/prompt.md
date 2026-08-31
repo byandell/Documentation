@@ -36,7 +36,7 @@ The next section shows how I used this approach to organize a somewhat complicat
 For some of my examples, see
 [Sharing Prompts instead of Code](https://byandell.github.io/Gravity-and-Antigravity/#sharing-prompts-instead-of-code)
 and
-[AI Prompt Examples](./prompts/).
+[Prompt Examples](../prompts/).
 
 ### Prompts to Organize Workflows
 

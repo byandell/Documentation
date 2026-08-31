@@ -38,6 +38,9 @@ Another trick is to use `agent skills` located
 in one or more `skills` folders, each containing a `SKILL.md` file.
 These are reusable packages of knowledge that extend what an agent
 can do to handle different aspects of a project.
+Typically, these are all housed in a project-level folder like `.agents/skills/`.
+See also
+[Agents and Workspace Rules](agents.md).
 
 ## Context Engineering References
 
