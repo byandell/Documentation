@@ -40,6 +40,7 @@ In addition, `README.md`, `DEVELOPER.md` and `AGENTS.md` files are handy for ove
 | **[`geyser`](https://byandell.github.io/geyser/)** | [DEVELOPER.md](https://byandell.github.io/geyser/DEVELOPER.html) | [R Developer Guide](https://byandell.github.io/geyser/vignettes/DeveloperGuide.html)<br/>[Python Developer Guide](https://byandell.github.io/geyser/docs/devel/python.html) | [`AGENTS.md`](https://github.com/byandell/geyser/blob/main/AGENTS.md) |
 | **[`landmapyr`](https://byandell-envsys.github.io/landmapyr/)** | [`DEVELOPER.md`](https://github.com/byandell-envsys/landmapyr/blob/main/DEVELOPER.md) | — | [`AGENTS.md`](https://github.com/byandell-envsys/landmapyr/blob/main/AGENTS.md) |
 | **[`rainDrought`](https://byandell.github.io/rainDrought/)** | [DEVELOPER.md](https://byandell.github.io/rainDrought/DEVELOPER.html) | [User Guide](https://byandell.github.io/rainDrought/user_guide.html) | [AGENTS.md](https://byandell.github.io/rainDrought/AGENTS.md) |
+| **[`byandell-sysgen`](https://byandell-sysgen.github.io/)** | [`DEVELOPER.md`](https://github.com/byandell-sysgen/.github/blob/main/DEVELOPER.md) | — | - |
 
 ---
 
