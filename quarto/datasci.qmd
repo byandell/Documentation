@@ -53,6 +53,79 @@ Insights from personal blog publications on the evolution of data science:
 - **[Data Science Quotes](https://byandell.github.io/Useful-Data-Science-Quotes/)**: Principles of data visualization, statistical caution, and scientific reasoning.
 :::
 
+## [What is Data Science?](https://byandell.github.io/What-is-Data-Science/)
+
+### Defining the Discipline & Roles
+- **Core Triangle**: Blends statistics, computer science, and applied math with deep domain inquiry.
+- **Data Literacy vs. Science**: Literacy reads and communicates with data; data science develops methods to reveal new insights.
+- **Roles in Practice**: Beyond titles (engineer vs. analyst vs. scientist), researchers are domain investigators tackling data mountains.
+
+### Historical Lineage & Thought Forms
+- **Biometry (Fisher, 1948)**: Active pursuit of biological knowledge by quantitative methods to understand variable phenomena.
+- **Data Analysis (Tukey, 1962)**: Moving beyond pure mathematical theory to exploratory analysis and computer-aided display.
+- **Iterative Investigation (Box, 1980)**: Statisticians as proactive partners in iterative deductive-inductive scientific inquiry.
+
+## [Data Evolve](https://byandell.github.io/Data-Evolve)
+
+### Data as a Process & Dynamic Verb
+- **Data as a Verb**: Inspired by Lakota language (Jhon Goes-in-Center), viewing data not as static nouns but as living, evolving processes.
+- **Contextual Meaning**: A single datum doesn't change, but its context, metadata, and provenance evolve its value over time.
+- **Harmonization**: Small data augmented by Big Data continually evolves the questions we are able to ask.
+
+### The Evolution of Software & Tools
+- **"Software Rots"**: Code cannot remain static; it must continuously adapt as data, systems, and questions shift.
+- **Daryl Pregibon's Progression**:
+  - *Equation* → *Algorithm* → *Code/Function* → *Package* → *Standalone Interactive Widgets*.
+- **Living Workflows**: Tools must facilitate direct collaboration and active exploration for domain scientists.
+
+## [Data Sciences Collaboratory](https://byandell.github.io/Data-Sciences-Collaboratory/)
+
+### From Consulting to Deep Collaboration
+- **Transformational Partnerships**: Evolving beyond one-off statistical advice to embedded, co-designed research programs.
+- **Team-Based Science**: Modern complex challenges (health, environment, energy) require interdisciplinary expertise across boundaries.
+- **Early Engagement**: Framing and design planning before encountering IT and computation bottlenecks.
+
+### Education, Training & Campus Infrastructure
+- **Workforce Retraining**: Developing curriculum targeted at domain researchers swamped by high-throughput data.
+- **Co-Advising Model**: Biometry MS model pairing students with mentors in both quantitative and biological fields.
+- **Campus Collaboratories**: Open creative spaces linking campus research with high-throughput cyberinfrastructure (CHTC, ACI).
+
+## [Data Science Across Liberal Arts](https://byandell.github.io/Data-Science-across-the-Liberal-Arts/)
+
+### Data Literacy as a 21st Century Civic Need
+- **Civic Literacy**: In an information age, liberal arts education requires data science to enable active, informed civic life.
+- **Storytelling with Data**: Training a new generation to extract generalizable knowledge and tell meaningful, ethical stories.
+- **Democratizing Access**: Expanding quantitative skills across humanities, journalism, sociology, and the arts.
+
+### Deep Grounding to Address Wicked Problems
+- **Context Dependence**: Technical methods are incomplete without deep grounding in history, culture, and domain knowledge.
+- **Beyond Monolithic Degrees**: Fostering versatile domain experts equipped with agile computational and communication skills.
+- **Tackling Complexities**: Addressing "wicked problems" through collaborative, cross-disciplinary synthesis.
+
+## [Strategic Planning: Data, Models & Statistics](https://byandell.github.io/Data-Models-and-Statistics/)
+
+### Statistics at the Center of the Data Surge
+- **Sense-Making in the Information Age**: IT advances generate massive data, but statistical thinking translates noise into meaning.
+- **Quantitative Core**: Statistical theory, experimental design, and modeling remain the bedrock of rigorous inquiry.
+- **Methodological Gaps**: Massive modern datasets require developing new statistical methods rather than relying on legacy tools.
+
+### George Box's Departmental Vision
+- **Core & Joint Architecture**: A strong central departmental core combined with specialists holding joint appointments across campus.
+- **Direct Domain Impact**: Embedding statistical faculty in forefront research (virology, genetics, agriculture, medicine).
+- **Institutional Strategy**: Continuous curriculum review and interdisciplinary alignment to meet emerging scientific needs.
+
+## [Useful Data Science Quotes](https://byandell.github.io/Useful-Data-Science-Quotes/)
+
+### Modeling, Skepticism & Design
+- **George E.P. Box**: *"All models are wrong, but some models are useful."* &mdash; Avoid falling blindly in love with models.
+- **Gertrude M. Cox**: The greatest statistical contribution is often persuading the investigator to explain *why* they do an experiment.
+- **Douglas M. Bates**: *"Statistics is the science of variation."*
+
+### Judgment, Reproducibility & Humility
+- **John M. Barry**: Scientific progress relies on *judgment* to distinguish reproducible, expandable findings from tortured data.
+- **Karl W. Broman**: High-dimensional biology requires tools enabling domain scientists to carry out their own investigations.
+- **William Cowper**: *"Knowledge is proud that he has learned so much, Wisdom is humble that he knows no more."*
+
 # Making Sense of Data & Statistical Significance {background-color="#e0f2fe"}
 
 ## Significance vs. Importance
@@ -128,6 +201,17 @@ Complex environmental and biological systems present unique analytical challenge
 })();
 </script>
 ```
+
+::: {.columns style="font-size: 0.65em; line-height: 1.15; margin-top: -0.3em;"}
+::: {.column width="50%"}
+- single-click on a year to add/remove
+- double-click on a year to isolate
+:::
+::: {.column width="50%"}
+- triple-click on a year to toggle isolate/remove
+- click `Reset View` to reset
+:::
+:::
 
 # Data Sovereignty & Open Science {background-color="#e0f2fe"}
 
