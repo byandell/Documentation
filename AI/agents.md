@@ -47,13 +47,14 @@ AI instructions operate under a cascading hierarchy where more specific rules ov
 
 Sets universal developer habits, safety boundaries, and global preferences across all projects on your machine.
 
-- **Single Source of Truth**: Use `~/.agents/AGENTS.md` (or `~/.gemini/config/AGENTS.md` for Gemini / Antigravity).
-- **Tool Bridging**: Symlink vendor-specific config files back to your canonical standard file if needed:
+- **Single Source of Truth**: Use `~/.agents/AGENTS.md` (see template in [Global AGENTS.md Template](../prompts/global_agents_template.md)).
+- **Tool Bridging**: Symlink vendor-specific config files back to your canonical standard file:
 
   ```bash
-  mkdir -p ~/.gemini/config ~/.claude
-  ln -s ~/.agents/AGENTS.md ~/.gemini/config/AGENTS.md
-  ln -s ~/.agents/AGENTS.md ~/.claude/CLAUDE.md
+  mkdir -p ~/.agents ~/.gemini/config ~/.claude
+  cp prompts/global_agents_template.md ~/.agents/AGENTS.md
+  ln -sf ~/.agents/AGENTS.md ~/.gemini/config/AGENTS.md
+  ln -sf ~/.agents/AGENTS.md ~/.claude/CLAUDE.md
   ```
 
 ### Project-Level Rules (`./AGENTS.md` & `.agents/`)
