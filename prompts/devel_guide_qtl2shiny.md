@@ -1,7 +1,7 @@
 ---
 title: "Create Developer Guide to `qtl2shiny`"
-parent: "Prompt Examples"
-nav_order: 7
+parent: "Create Developer Guides (Blueprint)"
+nav_order: 1
 ---
 
 # Create Developer Guide to `qtl2shiny` (Reference Case Study)

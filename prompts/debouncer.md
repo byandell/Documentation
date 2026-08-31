@@ -1,10 +1,10 @@
 ---
-title: "Plotly Legend Debouncer & Quarto Iframe Embedding"
+title: "Plotly Debouncer & Iframe Embedding"
 parent: "Prompt Examples"
-nav_order: 12
+nav_order: 8
 ---
 
-# Plotly Legend Debouncer & Quarto Iframe Embedding
+# Plotly Debouncer & Iframe Embedding
 
 This case study documents the diagnosis, iterative debugging, and resolution of two intertwined technical challenges encountered when embedding complex interactive Plotly dashboards across Quarto websites ([`rainDrought`](https://github.com/byandell/rainDrought)) and Quarto Reveal.js presentation slide decks ([`Documentation`](https://github.com/byandell/Documentation)):
 
@@ -68,7 +68,7 @@ sequenceDiagram
 Multiple iterations were attempted before arriving at the robust multi-tier solution. Understanding why each failed provides valuable insights for web and data science workflows:
 
 | Attempt | Approach | Why It Failed |
-|---|---|---|
+| --- | --- | --- |
 | **1. Built-in Layout Flags** | `legend.groupclick="togglegroup"`, `legend.itemdoubleclick="toggleothers"`, `config.doubleClickDelay` | Plotly's internal event loop still executes the single-click toggle callback on the first click of a double-click gesture before `itemdoubleclick` evaluates. |
 | **2. Naive JS Selector** | Custom listener attached to `document.getElementsByClassName('plotly-graph-div')[0]` | Pages with multiple figures (e.g. `plot_records.qmd` with 3 plots) only attached the debouncer to the first graph div. The 2nd and 3rd plots remained broken. |
 | **3. Partial Event Interception** | Intercepting `plotly_legendclick` with a 250ms timer without suppressing `plotly_legenddoubleclick` | Plotly's native isolate logic fired concurrently with the custom timer's double-click handler, leading to duplicate and conflicting `Plotly.restyle` mutations. |
@@ -321,6 +321,7 @@ resources:
 })();
 </script>
 ```
+
 ```
 
 ---

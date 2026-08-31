@@ -1,4 +1,10 @@
-# Global AI Assistant System Instructions (`~/.agents/AGENTS.md`)
+---
+title: "Global Agents Template"
+parent: "Prompt Examples"
+nav_order: 9
+---
+
+# Global Agents Template (`~/.agents/AGENTS.md`)
 
 This file defines the universal system instructions, safety boundaries, coding standards, and response preferences for AI assistants working across Brian Yandell's (`byandell`) repositories.
 

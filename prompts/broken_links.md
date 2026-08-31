@@ -1,10 +1,10 @@
 ---
 title: "Broken Links Summary"
-parent: "Prompt Examples"
-nav_order: 7
+parent: "Check External Links"
+nav_order: 1
 ---
 
-# Condensed Summary of Broken Links
+# Broken Links Summary
 
 Below is the summary of link check results across all documentation files.
 Based on prompt and plan to

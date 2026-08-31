@@ -1,7 +1,7 @@
 ---
 title: "Create Shiny App Gallery"
 parent: "Prompt Examples"
-nav_order: 8
+nav_order: 7
 ---
 
 # Create Shiny App Gallery
@@ -105,6 +105,7 @@ app = App(app_ui, server)
 
 > [!NOTE]
 > **WebAssembly Restrictions (CORS & C-Extensions)**:
+>
 > - **CORS Policies**: Fetching live remote data dynamically over `http` in browser Pyodide may fail due to browser CORS blocks. Mock data as static `pandas.DataFrame` or `data.frame`.
 > - **C-Extensions**: Packages compiling custom C libraries locally (e.g., custom DB drivers) cannot run directly inside Pyodide/webR. Use pure Python/R equivalents.
 
@@ -113,10 +114,13 @@ app = App(app_ui, server)
 Service Workers and WebAssembly do not run over local `file://` protocol URLs. To test your gallery locally, serve it using a local HTTP server:
 
 - **Quarto Preview**:
+
   ```bash
   quarto preview demos/index.qmd
   ```
+
 - **Python HTTP Server**:
+
   ```bash
   python3 -m http.server 8000
   ```
@@ -131,6 +135,7 @@ Service Workers and WebAssembly do not run over local `file://` protocol URLs. T
 > Always configure `output-dir: _site` in `_quarto.yml` and let GitHub Actions render and publish `_site/` dynamically.
 
 #### Standard `.gitignore` Configuration
+
 Add build artifacts to `.gitignore` to keep your Git repository clean (do NOT commit 70MB `site_libs/` or generated HTML files):
 
 ```gitignore
@@ -146,6 +151,7 @@ docs/demos/*.html
 ```
 
 #### Automated GitHub Actions Pipeline (`.github/workflows/deploy.yml`)
+
 Create `.github/workflows/deploy.yml` to automatically compile the website and publish `_site` to GitHub Pages on every push to `main`:
 
 ```yaml
@@ -230,6 +236,7 @@ jobs:
 Depending on your preference and GitHub Pages configuration, gallery demos can be organized into top-level `./demos/` or nested `./docs/demos/`.
 
 ### Option A: Top-Level Layout (`./demos/`)
+
 Recommended when building a project website with GitHub Actions rendering from root.
 
 ```
@@ -252,6 +259,7 @@ repo_root/
 ---
 
 ### Option B: Docs-Level Layout (`./docs/demos/`)
+
 Recommended when publishing directly from the `/docs` directory branch on GitHub.
 
 ```
@@ -307,6 +315,7 @@ Explore interactive WebAssembly application demos below:
 #### Customizing Preview Card Images
 
 - **Assigning Card Images**: Add `image` to frontmatter in each demo `.qmd` file:
+
   ```yaml
   ---
   title: "R Scatter App"
@@ -317,6 +326,7 @@ Explore interactive WebAssembly application demos below:
 - **Preventing Image Cropping (Different Shapes & Sizes)**: By default, Quarto grid cards apply `object-fit: cover` to thumbnail images, cropping images of varying aspect ratios. To display card images fully without cropping:
   1. Specify `image-height` in your `listing:` configuration in `index.qmd` (e.g. `image-height: 180px`).
   2. Add `object-fit: contain !important;` in a custom CSS stylesheet (e.g. `styles.css` linked in `_quarto.yml` under `format: html: css: styles.css`):
+
      ```css
      .quarto-grid-item .card-img-top img,
      .quarto-grid-item .card-img-top,
@@ -352,6 +362,7 @@ shiny::runApp("inst/app_folder", display.mode = "showcase")
 ```
 
 Add a `DESCRIPTION` file to the app directory:
+
 ```dcf
 Title: Module Demo App
 Author: Developer

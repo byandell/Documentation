@@ -1,9 +1,10 @@
 ---
-title: "AGENTS.md CRAFT Templates"
+title: "Agents CRAFT Templates"
 parent: "Prompt Examples"
+nav_order: 10
 ---
 
-# AGENTS.md CRAFT Templates by Repository Archetype
+# Agents CRAFT Templates by Repository Archetype
 
 This catalog provides concise, drop-in [CRAFT](https://tyson-swetnam.github.io/intro-gpt/prompts/#the-craft-framework) (**Context, Role, Action, Format, Tone**) templates for `AGENTS.md` across Brian Yandell's repository ecosystem.
 
