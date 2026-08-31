@@ -13,8 +13,11 @@ nav_order: 6
   - [Project-Level Rules (`./AGENTS.md` & `.agents/`)](#project-level-rules-agentsmd--agents)
   - [Subdirectory / Monorepo Rules](#subdirectory--monorepo-rules)
 - [What to Include at Each Level](#what-to-include-at-each-level)
+- [Structuring Project Rules with the CRAFT Framework](#structuring-project-rules-with-the-craft-framework)
+- [Repository Archetypes](#repository-archetypes)
 - [Real-World `AGENTS.md` Examples](#real-world-agentsmd-examples)
 - Additional Pages
+  - [AGENTS.md CRAFT Templates](../prompts/agents_craft_templates.md)
   - [Context Engineering](context.md)
   - [Prompt Engineering](prompt.md)
 
@@ -66,8 +69,9 @@ Sets universal developer habits, safety boundaries, and global preferences acros
 ### Subdirectory Rules
 
 Nested `AGENTS.md` files (e.g., in `packages/core/AGENTS.md` or `quarto/AGENTS.md`)
-apply targeted constraints to specific subdirectories without cluttering the
-top-level project rules.
+apply targeted constraints to specific subdirectories (or
+[monorepos](https://monorepo.tools/))
+without cluttering the top-level project rules.
 
 ## What to Include at Each Level
 
@@ -85,9 +89,33 @@ top-level project rules.
 - **Domain Conventions**: Package namespacing, specific data schemas.
 - **Version Rules**: Handling legacy files or migration patterns.
 
+## Structuring Project Rules with the CRAFT Framework
+
+To keep project `AGENTS.md` files token-efficient (20–35 lines) and structured for small and large language models alike, organize them using the **CRAFT** framework:
+
+| CRAFT Element | Purpose in `AGENTS.md` | Focus |
+| :--- | :--- | :--- |
+| **C — Context** | Repo identity & structure | Purpose, active URLs, key folders (`R/`, `python/`, `docs/`), config files |
+| **R — Role** | Persona & domain expertise | Specific role (e.g. *Bioinformatics R Developer*, *Geospatial Python Engineer*) |
+| **A — Action & Verification** | Build, test, & operational workflow | Local checks (`devtools::check()`, `pytest`, `quarto render`), boundaries |
+| **F — Format & Conventions** | Repo-specific style rules | Explicit namespacing (`pkg::func()`), roxygen2 tags, type hints, version rules |
+| **T — Tone & Collaboration** | Response constraints | Direct, concise, complete drop-in diffs, empirical verification |
+
+## Repository Archetypes
+
+Ready-to-use CRAFT templates for each archetype are cataloged in [AGENTS.md CRAFT Templates](../prompts/agents_craft_templates.md):
+
+1. [**Pure R Package / Shiny App**](../prompts/agents_craft_templates.md#1-pure-r-package--shiny-app): Context (`R/`, `man/`, `inst/`), Role (*R package developer & Shiny architect*), Action (`devtools::document()`, `devtools::test()`, `devtools::check()`).
+2. [**Pure Python / Data Science**](../prompts/agents_craft_templates.md#2-pure-python--geospatial-package): Context (`src/`, `tests/`, virtualenv), Role (*Scientific Python & ML engineer*), Action (`pytest`, `ruff check`, `mypy`).
+3. [**Dual R + Python Polyglot Repos**](../prompts/agents_craft_templates.md#3-dual-r--python-polyglot-repos): Context (multi-language layout), Role (*Polyglot software engineer*), Action (separate test suites for R and Python).
+4. [**Documentation & Publishing**](../prompts/agents_craft_templates.md#4-documentation--web-publishing): Context (`quarto/`, `_quarto.yml`, Jekyll), Role (*Technical documentation architect*), Action (`quarto render`, `.nojekyll`).
+5. [**Technical & Discursive Writing**](../prompts/agents_craft_templates.md#5-technical--discursive--academic-writing): Context (`manuscript/`, `notes/`), Role (*Academic co-author & research reviewer*), Action (structural verification, tracked revision diffs).
+
+
 ## Real-World `AGENTS.md` Examples
 
 - [Documentation `AGENTS.md`](../AGENTS.md): Site structure, Quarto rendering conventions, and multi-version commit workflows.
 - [Working Group OASIS](https://github.com/CU-ESIIL/Working_group_OASIS/blob/main/AGENTS.md) (CU ESIIL): Guidelines for collaborative research agents.
 - [LLM Lesson Exemplar](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md) (Cassie Buhler): Script headers, regional boundary rules, and failure handling.
 - [OASIS ScienceClaw `openclaw_container`](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md): Core operating contract, data sovereignty policy, and testing protocols.
+

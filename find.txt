@@ -1,0 +1,24 @@
+(base) brianyandell@Brians-MacBook-Pro Documentation % find ~/Documents/GitHub -name "AGENTS.md"
+/Users/brianyandell/Documents/GitHub/Documentation/AGENTS.md
+/Users/brianyandell/Documents/GitHub/landmapyr/AGENTS.md
+/Users/brianyandell/Documents/GitHub/rainDrought/AGENTS.md
+/Users/brianyandell/Documents/GitHub/hexmap/docs/AGENTS.md
+/Users/brianyandell/Documents/GitHub/hexmap/AGENTS.md
+/Users/brianyandell/Documents/GitHub/watershed/docs/AGENTS.md
+/Users/brianyandell/Documents/GitHub/watershed/AGENTS.md
+/Users/brianyandell/Documents/GitHub/geyser/AGENTS.md
+(base) brianyandell@Brians-MacBook-Pro Documentation % find ~/Documents/Research -name "AGENTS.md"
+/Users/brianyandell/Documents/Research/byandell-envsys/ESIIL/AGENTS.md
+/Users/brianyandell/Documents/Research/ewing/ewing/docs/AGENTS.md
+/Users/brianyandell/Documents/Research/ewing/ewing/AGENTS.md
+/Users/brianyandell/Documents/Research/byandell-sysgen/qtl2pattern/AGENTS.md
+/Users/brianyandell/Documents/Research/byandell-sysgen/qtl2shiny/docs/AGENTS.md
+/Users/brianyandell/Documents/Research/byandell-sysgen/qtl2shiny/AGENTS.md
+/Users/brianyandell/Documents/Research/byandell-sysgen/foundrShiny/docs/AGENTS.md
+/Users/brianyandell/Documents/Research/byandell-sysgen/foundrShiny/AGENTS.md
+/Users/brianyandell/Documents/Research/byandell-sysgen/foundrHarmony/docs/AGENTS.md
+/Users/brianyandell/Documents/Research/byandell-sysgen/foundrHarmony/AGENTS.md
+/Users/brianyandell/Documents/Research/byandell-sysgen/foundr/docs/AGENTS.md
+/Users/brianyandell/Documents/Research/byandell-sysgen/foundr/AGENTS.md
+/Users/brianyandell/Documents/Research/byandell.github.io/AGENTS.md
+/Users/brianyandell/Documents/Research/downr/AGENTS.md

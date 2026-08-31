@@ -43,6 +43,7 @@ They illustrate a few principles along the way.
   - [Create Shiny App Gallery](./gallery.md)
   - [Plotly Legend Debouncer & Quarto Iframe](./debouncer.md)
   - [Use `pkgdown` to Auto-Build GitHub Website](./github/pkgdown.md)
+  - [AGENTS.md CRAFT Templates](./agents_craft_templates.md)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
 
@@ -166,19 +167,21 @@ will help with later recall of how the project developed.
 
 An
 [AGENTS.md](https://agents.md/)
-file is basically a readme for AI agents that are
-working on the project.  Ask
+file serves as an onboarding handbook and operating contract for AI agents working in a repository.
+Pairing a global `~/.agents/AGENTS.md` (System Instructions) with a project-level `AGENTS.md` organized via the
+[CRAFT framework](../AI/agents.md#structuring-project-rules-with-the-craft-framework) keeps token counts low and instructions sharp.
 
 **Prompts:**
 
-- "create `AGENTS.md` for this project"
-- "make a condensed version of `AGENTS.md` with a reasonable name to use with small LMMs
+- "create `AGENTS.md` for this project following the CRAFT framework (Context, Role, Action, Format, Tone)"
+- "make a condensed version of `AGENTS.md` tailored for small LLMs"
 
 **Examples:**
 
-- [Document Digital Tools file `AGENTS.md`](https://github.com/byandell/Documentation/blob/main/AGENTS.md) ⚠️
-- [Document Digital Tools file `AGENTS-mini.md`](https://github.com/byandell/Documentation/blob/main/AGENTS-mini.md)
+- [Document Digital Tools `AGENTS.md`](https://github.com/byandell/Documentation/blob/main/AGENTS.md)
+- [Agents and Workspace Rules Guide](../AI/agents.md)
 - [`byandell.github.io` file `AGENTS.md`](https://github.com/byandell/byandell.github.io/blob/master/AGENTS.md)
+
 
 ### Create a Table of Contents for a File
 
