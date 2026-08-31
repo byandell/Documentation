@@ -104,7 +104,7 @@ To keep project `AGENTS.md` files token-efficient (20–35 lines) and structured
 
 ## Repository Archetypes
 
-Ready-to-use CRAFT templates for each archetype are cataloged in [AGENTS.md CRAFT Templates](../prompts/agents_craft_templates.md):
+Ready-to-use CRAFT templates for each archetype are cataloged in [Agents CRAFT Templates](../prompts/agents_craft_templates.md):
 
 1. [**Pure R Package / Shiny App**](../prompts/agents_craft_templates.md#1-pure-r-package--shiny-app): Context (`R/`, `man/`, `inst/`), Role (*R package developer & Shiny architect*), Action (`devtools::document()`, `devtools::test()`, `devtools::check()`).
 2. [**Pure Python / Data Science**](../prompts/agents_craft_templates.md#2-pure-python--geospatial-package): Context (`src/`, `tests/`, virtualenv), Role (*Scientific Python & ML engineer*), Action (`pytest`, `ruff check`, `mypy`).
@@ -112,11 +112,11 @@ Ready-to-use CRAFT templates for each archetype are cataloged in [AGENTS.md CRAF
 4. [**Documentation & Publishing**](../prompts/agents_craft_templates.md#4-documentation--web-publishing): Context (`quarto/`, `_quarto.yml`, Jekyll), Role (*Technical documentation architect*), Action (`quarto render`, `.nojekyll`).
 5. [**Technical & Discursive Writing**](../prompts/agents_craft_templates.md#5-technical--discursive--academic-writing): Context (`manuscript/`, `notes/`), Role (*Academic co-author & research reviewer*), Action (structural verification, tracked revision diffs).
 
-
 ## Real-World `AGENTS.md` Examples
 
-- [Documentation `AGENTS.md`](../AGENTS.md): Site structure, Quarto rendering conventions, and multi-version commit workflows.
+- [Documentation (this repo)](../AGENTS.md): CRAFT example for `R` package.
+- [qtl2shiny](https://github.com/byandell-sysgen/qtl2shiny/blob/master/AGENTS.md): Customized CRAFT for `R` Shiny modules.
+- [landmapyr](https://github.com/byandell-envsys/landmapyr/blob/main/AGENTS.md): CRAFT example for geospatial hybrid `Python`/`R` package.
 - [Working Group OASIS](https://github.com/CU-ESIIL/Working_group_OASIS/blob/main/AGENTS.md) (CU ESIIL): Guidelines for collaborative research agents.
 - [LLM Lesson Exemplar](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md) (Cassie Buhler): Script headers, regional boundary rules, and failure handling.
 - [OASIS ScienceClaw `openclaw_container`](https://github.com/CU-ESIIL/openclaw_container/blob/main/AGENTS.md): Core operating contract, data sovereignty policy, and testing protocols.
-
