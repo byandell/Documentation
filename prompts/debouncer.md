@@ -100,8 +100,8 @@ flowchart TD
     subgraph Exports["Tier 3: Standalone & Presentation Slides (Documentation)"]
         S1["Python write_html(post_script=...)"]
         S2["quarto/images/trajectories.html"]
-        S3["quarto/datasci.qmd: hosted HTTPS iframe URL"]
-        S4["datasci.html: embed-resources: true"]
+        S3["quarto/datasci.qmd: dynamic JS iframe src injection"]
+        S4["datasci.html: embed-resources: true preserved"]
         S1 --> S2 --> S3 --> S4
     end
 
@@ -285,9 +285,9 @@ fig.write_html(
 
 ### Embedding in Quarto Reveal.js (`datasci.qmd`)
 
-When building a standalone presentation slide deck with `embed-resources: true`, referencing a local HTML file via `<iframe src="images/trajectories.html">` causes Pandoc to base64-encode the 4.9MB widget into `src="data:text/html;base64,..."`. Modern web browsers reject large data URI frames due to memory boundaries and security sandboxing.
+When building a standalone presentation slide deck with `embed-resources: true`, referencing a local HTML file via direct `<iframe src="images/trajectories.html">` (or `<iframe data-src="...">`) causes Pandoc's resource scanner to encode the 4.9MB widget into an inline `data:text/html;base64,...` or `data:text/html,...` URI. Modern web browsers place `data:` URI iframes in sandboxed opaque origins, blocking Plotly JavaScript execution and causing the widget to fail in both preview mode and on GitHub Pages.
 
-**The Fix**: Use the hosted GitHub Pages URL in the `iframe` `src` while keeping `embed-resources: true` for the rest of the slide deck:
+**The Fix**: Keep the `<iframe>` tag without a static `src` attribute so Pandoc does not intercept or inline it, then assign `iframe.src = "images/trajectories.html"` dynamically at runtime via a small client-side `<script>` block. This allows the slide deck to retain `embed-resources: true` while loading the local interactive HTML file from the same origin on both local preview and published sites:
 
 ```markdown
 ---
@@ -302,11 +302,25 @@ resources:
 
 ## Cumulative Trajectories
 
-<iframe src="https://byandell.github.io/Documentation/quarto/images/trajectories.html" 
-        width="100%" 
-        height="500px" 
-        style="border:none;">
-</iframe>
+<iframe id="trajectories-iframe" width="100%" height="500px" style="border:none;"></iframe>
+
+```{=html}
+<script>
+(function() {
+  function loadFrame() {
+    var iframe = document.getElementById("trajectories-iframe");
+    if (iframe && (!iframe.src || iframe.src === "about:blank")) {
+      iframe.src = "images/trajectories.html";
+    }
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", loadFrame);
+  } else {
+    loadFrame();
+  }
+})();
+</script>
+```
 ```
 
 ---

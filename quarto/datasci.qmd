@@ -109,7 +109,25 @@ Complex environmental and biological systems present unique analytical challenge
 
 ## Cumulative Trajectories
 
-<iframe src="images/trajectories.html" width="100%" height="500px" style="border:none;"></iframe>
+<iframe id="trajectories-iframe" width="100%" height="500px" style="border:none;"></iframe>
+
+```{=html}
+<script>
+(function() {
+  function loadFrame() {
+    var iframe = document.getElementById("trajectories-iframe");
+    if (iframe && (!iframe.src || iframe.src === "about:blank")) {
+      iframe.src = "images/trajectories.html";
+    }
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", loadFrame);
+  } else {
+    loadFrame();
+  }
+})();
+</script>
+```
 
 # Data Sovereignty & Open Science {background-color="#e0f2fe"}
 
