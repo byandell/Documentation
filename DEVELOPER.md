@@ -128,6 +128,13 @@ bundle exec jekyll serve
 
 Access the preview locally at `http://localhost:4000/Documentation/`.
 
+### 5. Interactive Figures & Iframe Embedding in Standalone Slides
+
+When embedding multi-megabyte interactive HTML figures (e.g. Plotly dashboards) into standalone Quarto Reveal.js slide decks (`embed-resources: true`):
+- **Avoid Local File Iframes**: Referencing `<iframe src="images/widget.html">` causes Pandoc to convert the HTML widget into an inline `data:text/html;base64,...` URI, which modern web browsers block due to length limits and sandboxing policies.
+- **Use Hosted GitHub Pages URLs**: Use the absolute GitHub Pages URL in the iframe `src` (e.g. `https://byandell.github.io/Documentation/quarto/images/trajectories.html`) while keeping `resources: ["images/trajectories.html"]` in frontmatter.
+- **Plotly Legend Debouncing**: For multi-trace faceted subplots sharing `legendgroup`, see the cross-repo case study in [`prompts/debouncer.md`](prompts/debouncer.md).
+
 ---
 
 ## Code & Documentation Conventions

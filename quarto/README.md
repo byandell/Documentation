@@ -34,3 +34,4 @@ permalink: /quarto/
     - Tools: [JupyterLab](https://quarto.org/docs/tools/jupyter-lab.html) & [RStudio](https://quarto.org/docs/tools/rstudio.html) & [VS Code](https://quarto.org/docs/tools/vs-code.html) ⚠️
 - [my quarto repo](https://github.com/byandell/quarto)
 - [quarto examples in geyser repo](https://github.com/byandell/geyser/tree/main/inst/quarto) ⚠️
+- [Plotly Legend Debouncer & Iframe Embedding](../prompts/debouncer.md) (Cross-repo case study)

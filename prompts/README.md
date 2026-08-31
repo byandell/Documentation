@@ -41,6 +41,7 @@ They illustrate a few principles along the way.
   - [Create Developer Guides (Blueprint)](./devel_guide.md)
     - [Create Developer Guide to `qtl2shiny` (Reference Case Study)](./devel_guide_qtl2shiny.md)
   - [Create Shiny App Gallery](./gallery.md)
+  - [Plotly Legend Debouncer & Quarto Iframe](./debouncer.md)
   - [Use `pkgdown` to Auto-Build GitHub Website](./github/pkgdown.md)
 
 _[byandell.github.io/Documentation](https://byandell.github.io/Documentation)_  
