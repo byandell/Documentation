@@ -21,6 +21,10 @@ In addition, `README.md`, `DEVELOPER.md` and `AGENTS.md` files are handy for ove
   - [Page Metadata & Frontmatter Standards](#page-metadata--frontmatter-standards)
   - [Automation & Link Checking](#automation--link-checking)
   - [DEVELOPER.md vs Full Developer Guide](#developermd-vs-full-developer-guide)
+- Additional Pages
+  - [Developer Architecture & Maintenance Guide (`DEVELOPER.md`)](DEVELOPER.md)
+  - [Create Developer Guides (Blueprint)](../prompts/devel_guide.md)
+    - [Create Developer Guide to `qtl2shiny` (Reference Case Study)](../prompts/devel_guide_qtl2shiny.md)
 
 ---
 
