@@ -2,6 +2,7 @@
 title: "Quarto"
 parent: "Document Digital Tools"
 has_children: true
+nav_order: 9
 permalink: /quarto/
 ---
 

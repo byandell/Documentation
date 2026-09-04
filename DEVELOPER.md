@@ -1,6 +1,7 @@
 ---
 title: "Developer Architecture & Maintenance Guide"
-nav_order: 10
+parent: "Create Guides"
+nav_order: 1
 ---
 
 # Developer Architecture & Maintenance Guide
@@ -50,7 +51,7 @@ flowchart TD
 The codebase is organized into topic-focused folders, each backed by a dedicated `README.md` index file:
 
 | Path | Description | Key Reference Files |
-|---|---|---|
+| --- | --- | --- |
 | [`R/`](R/README.md) | R programming notes, data structures, and packages | [`R/README.md`](R/README.md), [`R/radian.md`](R/radian.md) |
 | [`python/`](python/README.md) | Python programming notes, scripts, and environments | [`python/README.md`](python/README.md), [`python/strategy.md`](python/strategy.md) |
 | [`github/`](github/README.md) | Git, GitHub Pages, Actions, Shinylive & web publishing | [`github/README.md`](github/README.md), [`github/pages.md`](github/pages.md), [`github/shinylive.md`](github/shinylive.md) |
@@ -89,6 +90,7 @@ python3 scripts/check_links.py --update-report
 ```
 
 Key arguments for [`scripts/check_links.py`](scripts/check_links.py):
+
 - `--timeout 15`: Set request timeout in seconds (default: 10).
 - `--threads 20`: Adjust thread pool size (default: 16).
 - `--file <path>`: Audit a single file instead of the full workspace.
@@ -131,6 +133,7 @@ Access the preview locally at `http://localhost:4000/Documentation/`.
 ### 5. Interactive Figures & Iframe Embedding in Standalone Slides
 
 When embedding multi-megabyte interactive HTML figures (e.g. Plotly dashboards) into standalone Quarto Reveal.js slide decks (`embed-resources: true`):
+
 - **Avoid Local File Iframes**: Referencing `<iframe src="images/widget.html">` causes Pandoc to convert the HTML widget into an inline `data:text/html;base64,...` URI, which modern web browsers block due to length limits and sandboxing policies.
 - **Use Hosted GitHub Pages URLs**: Use the absolute GitHub Pages URL in the iframe `src` (e.g. `https://byandell.github.io/Documentation/quarto/images/trajectories.html`) while keeping `resources: ["images/trajectories.html"]` in frontmatter.
 - **Plotly Legend Debouncing**: For multi-trace faceted subplots sharing `legendgroup`, see the cross-repo case study in [`prompts/debouncer.md`](prompts/debouncer.md).

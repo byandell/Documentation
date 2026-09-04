@@ -2,6 +2,7 @@
 title: "Data Sciences"
 parent: "Document Digital Tools"
 has_children: true
+nav_order: 8
 permalink: /datasci/
 ---
 

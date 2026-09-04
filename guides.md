@@ -1,18 +1,19 @@
 ---
 title: "Create Guides"
 parent: "Document Digital Tools"
-nav_order: 6
+nav_order: 7
+has_children: true
 ---
 
 # Create Guides
 
 User and Developer Guides are handy to provide help users and developers understand projects
 by highlighting the features, functions and approaches.
-In addition, `README.md`, `DEVELOPER.md` and `AGENTS.md` files are handy for overiews.
+In addition, `README.md`, `DEVELOPER.md` and `AGENTS.md` files are handy for overviews.
 
 ## Table of Contents
 
-- [Digital Tool Guides & Prompts](#digital-tools-guides--prompts)
+- [Digital Tool Guides & Prompts](#digital-tool-guides--prompts)
   - [Prompts](#prompts)
   - [Guides and Overviews](#guides-and-overviews)
 - [Documentation Repo Developer Guide](#documentation-repo-developer-guide)
@@ -130,7 +131,7 @@ Analysis: `qtl2pattern` vs `qtl2shiny` Developer Guides
 
 #### Current State of `qtl2pattern`
 
-`qtl2pattern` is the underlying R computational engine (~29 R source files). The root **[DEVELOPER.md](file:///Users/brianyandell/Documents/Research/byandell-sysgen/qtl2pattern/DEVELOPER.md)** already provides a comprehensive single-page reference covering:
+`qtl2pattern` is the underlying R computational engine (~29 R source files). The root **[DEVELOPER.md](https://github.com/byandell-sysgen/qtl2pattern/blob/main/DEVELOPER.md)** already provides a comprehensive single-page reference covering:
 
 - **System Architecture & Data Flow** (with Mermaid diagram)
 - **Subsystem Module Maps** (Pattern Conversions, Scanning, Feature Querying, `fst` Storage, `ggplot2` Extensions)
@@ -148,5 +149,5 @@ Analysis: `qtl2pattern` vs `qtl2shiny` Developer Guides
 
 #### Recommendation
 
-- **If your goal is GitHub maintainability**: **Option A** (current [DEVELOPER.md](file:///Users/brianyandell/Documents/Research/byandell-sysgen/qtl2pattern/DEVELOPER.md)) is sufficient and easier to keep up to date.
-- **If you plan to build a `pkgdown` site or want vignette-indexed developer docs**: **Option B** can be created by splitting [DEVELOPER.md](file:///Users/brianyandell/Documents/Research/byandell-sysgen/qtl2pattern/DEVELOPER.md) into `vignettes/devel_guide/index.Rmd` alongside modular Rmds for the major subsystems (`patterns.Rmd`, `scans.Rmd`, `features.Rmd`, `plots.Rmd`).
+- **If your goal is GitHub maintainability**: **Option A** (current [DEVELOPER.md](https://github.com/byandell-sysgen/qtl2pattern/blob/main/DEVELOPER.md)) is sufficient and easier to keep up to date.
+- **If you plan to build a `pkgdown` site or want vignette-indexed developer docs**: **Option B** can be created by splitting [DEVELOPER.md](https://github.com/byandell-sysgen/qtl2pattern/blob/main/DEVELOPER.md) into `vignettes/devel_guide/index.Rmd` alongside modular Rmds for the major subsystems (`patterns.Rmd`, `scans.Rmd`, `features.Rmd`, `plots.Rmd`).
