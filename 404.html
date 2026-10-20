@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting to DocumentTools...</title>
+  <script>
+    const newBase = "https://byandell.github.io/DocumentTools";
+    const oldBase = "/Documentation";
+    let path = window.location.pathname;
+    if (path.startsWith(oldBase)) {
+      path = path.slice(oldBase.length);
+    }
+    window.location.replace(newBase + path + window.location.search + window.location.hash);
+  </script>
+</head>
+<body>
+  <p>Redirecting to <a href="https://byandell.github.io/DocumentTools/">DocumentTools</a>...</p>
+</body>
+</html>
